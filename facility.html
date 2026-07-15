@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>リクラフト・アルケミア 施設カタログ v90.8.181</title>
+<style>
+:root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
+header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 0 8px}.hero,.panel{background:rgba(255,250,240,.94);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}.hero{padding:20px}.build{font-size:12px;color:var(--muted);margin-bottom:6px}h1{font-size:clamp(24px,4vw,38px);margin:0 0 7px}.subtitle{margin:0;color:var(--muted);line-height:1.7}.panel{padding:16px;margin:14px 0}.unlock-grid{display:grid;grid-template-columns:minmax(220px,1fr) auto auto;gap:8px;align-items:end}.field label{display:block;font-size:12px;font-weight:800;color:var(--muted);margin:0 0 5px}input{width:100%;border:1px solid var(--line);border-radius:12px;background:#fffdf8;padding:10px 12px;font:inherit;color:var(--ink)}button{border:0;border-radius:999px;padding:10px 14px;font:inherit;font-weight:800;color:white;background:var(--accent);cursor:pointer;white-space:normal}button.secondary{background:var(--green)}button.ghost{background:#f2e5d2;color:var(--ink);border:1px solid var(--line)}button:hover{filter:brightness(.98);transform:translateY(-1px)}button:disabled{opacity:.55;cursor:not-allowed;transform:none}.status{margin-top:10px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;color:var(--muted);background:#fffdf8}.status.ok{color:#356346;border-color:#acd0b7;background:#f2fff5}.status.bad{color:var(--danger);border-color:#dfb2ac;background:#fff3f1}.facility-switch,.section-tabs{display:flex;flex-wrap:wrap;gap:8px}.facility-switch{margin-bottom:12px}.facility-switch button.active,.section-tabs button.active{background:var(--accent);color:white}.facility-switch button,.section-tabs button{background:#efe1cc;color:var(--ink);border:1px solid var(--line)}.section-tabs{padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:12px}.summary-line{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap;margin-bottom:12px}.summary-line h2{margin:0}.muted{color:var(--muted);font-size:13px;line-height:1.65}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{border:1px solid #e5d2b8;border-radius:16px;background:#fffdf8;padding:14px;min-width:0}.card.locked{background:repeating-linear-gradient(135deg,#fffaf2,#fffaf2 12px,#f6ecdd 12px,#f6ecdd 24px)}.card h3{margin:0 0 8px;font-size:17px;overflow-wrap:anywhere}.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:9px}.chip{display:inline-flex;border:1px solid #dec9ab;background:#f7ead7;border-radius:999px;padding:3px 8px;font-size:11px;font-weight:800}.card dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 9px;margin:0;font-size:13px;line-height:1.6}.card dt{font-weight:800;color:#5f4935}.card dd{margin:0;overflow-wrap:anywhere;white-space:pre-wrap}.empty{grid-column:1/-1;padding:26px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}footer{padding:12px 0 40px;color:var(--muted);font-size:12px;text-align:center}@media(max-width:720px){.unlock-grid{grid-template-columns:1fr 1fr}.unlock-grid .field{grid-column:1/-1}.cards{grid-template-columns:1fr}}@media(max-width:430px){header,main{width:min(100% - 16px,1120px)}.unlock-grid{grid-template-columns:1fr}.unlock-grid button{width:100%}.card dl{grid-template-columns:1fr}.card dd{margin-bottom:5px}}
+</style>
+</head>
+<body>
+<header><div class="hero"><div class="build">Version：v90.8.181 / 最終更新日：2026年7月15日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋と薬屋の商品・作成・素材加工を確認できます。装備強化はこのページでは扱いません。</p></div></header>
+<main>
+<section class="panel">
+  <div class="unlock-grid">
+    <div class="field"><label for="unlockKey">解放キー</label><input id="unlockKey" autocomplete="off" spellcheck="false" placeholder="GMから受け取ったキーを入力"></div>
+    <button id="applyKey" type="button">キーを適用</button><button id="resetKey" class="ghost" type="button">初期状態へ戻す</button>
+  </div>
+  <div id="unlockStatus" class="status">施設データを読み込んでいます。</div>
+</section>
+<section class="panel">
+  <div class="facility-switch"><button data-facility="smith" class="active">鍛冶屋</button><button data-facility="apothecary">薬屋</button></div>
+  <div id="sectionTabs" class="section-tabs"></div>
+  <div class="summary-line"><div><h2 id="sectionTitle">販売商品</h2><div id="sectionDescription" class="muted"></div></div><button id="reloadDb" class="secondary" type="button">DB再読み込み</button></div>
+  <div id="cards" class="cards"></div>
+</section>
+</main><footer>解放判定と未解放データのマスクはGAS側で行います。</footer>
+<script>
+'use strict';
+const DEFAULT_GAS_WEB_APP_URL='https://script.google.com/macros/s/AKfycbyjIIKXTXZGf8RFOt7wQcenYEuVP68ijTU83e6rioqX21EKW075xjDjB5pTucyVcrc/exec';
+const STORAGE_KEY='recraft_alchemia.player_facility.unlock_key';
+const SECTION_DEFS={
+ smith:[['sales','販売商品','鍛冶屋で購入できる品です。'],['craft','装備・道具作成','武器・防具・盾・バッグ・矢筒・装飾品・仕掛けなどの作成です。'],['materials','素材加工','鍛冶で使う中間素材の加工です。'],['branches','武器派生','未解放の派生は存在だけを表示し、名称・素材・効果を伏せます。']],
+ apothecary:[['sales','販売商品','薬屋で購入できる調合品と調合道具です。'],['alchemy','調合品作成','薬品・香・爆弾・瓶などの調合です。'],['materials','素材加工','調合に必要な中間素材の加工です。']]
+};
+let catalog={smith:{sales:[],craft:[],materials:[],branches:[]},apothecary:{sales:[],alchemy:[],materials:[]}};
+let currentFacility='smith',currentSection='sales',currentKey='';
+const $=id=>document.getElementById(id);
+function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function rankLabel(v){return `★${Math.max(1,Math.floor(Number(v)||1))}`;}
+function setStatus(text,kind=''){const el=$('unlockStatus');el.className='status'+(kind?' '+kind:'');el.textContent=text;}
+function jsonp(key){return new Promise((resolve,reject)=>{const cb='raFacilityCb_'+Date.now()+'_'+Math.random().toString(36).slice(2);const sc=document.createElement('script');const timer=setTimeout(()=>{clean();reject(new Error('通信がタイムアウトしました。'));},20000);function clean(){clearTimeout(timer);try{delete window[cb]}catch(e){}sc.remove();}window[cb]=j=>{clean();resolve(j)};const u=new URL(DEFAULT_GAS_WEB_APP_URL);u.searchParams.set('api','1');u.searchParams.set('action','facilityCatalog');u.searchParams.set('unlockKey',key||'');u.searchParams.set('callback',cb);sc.onerror=()=>{clean();reject(new Error('施設DBへ接続できませんでした。'));};sc.src=u.toString();document.head.appendChild(sc);});}
+function itemCard(r){const chips=[rankLabel(r.rank),r.itemType||r.dataKind||'',r.itemCategory||r.materialCategory||''].filter(Boolean);const rows=[['価格',String(r.price||'')?`${r.price}G`:'未設定'],['説明',r.description],['効果',r.effect]].filter(x=>String(x[1]||'').trim());return `<article class="card"><h3>${esc(r.name)}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
+function recipeCard(r){const chips=[rankLabel(r.rank),r.craftType,r.category,r.branchType].filter(Boolean);const pairs=[];if(r.baseItem)pairs.push(['派生元',r.baseItem]);pairs.push(['必要素材',r.requiredMaterials||'未設定']);if(String(r.price||''))pairs.push(['施設依頼',`${r.price}G`]);if(!r.locked){if(String(r.requiredTools||''))pairs.push(['必要道具',`${rankLabel(r.requiredTools)}以上`]);if(r.difficulty)pairs.push(['作成難易度',r.difficulty]);if(r.description)pairs.push(['説明',r.description]);}if(r.effect)pairs.push(['効果',r.effect]);return `<article class="card ${r.locked?'locked':''}"><h3>${esc(r.resultItem||r.name||'名称未設定')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
+function renderTabs(){const defs=SECTION_DEFS[currentFacility];if(!defs.some(d=>d[0]===currentSection))currentSection=defs[0][0];$('sectionTabs').innerHTML=defs.map(([id,label])=>`<button data-section="${esc(id)}" class="${id===currentSection?'active':''}">${esc(label)}</button>`).join('');const cur=defs.find(d=>d[0]===currentSection);$('sectionTitle').textContent=cur[1];$('sectionDescription').textContent=cur[2];}
+function render(){renderTabs();const rows=(catalog[currentFacility]&&catalog[currentFacility][currentSection])||[];$('cards').innerHTML=rows.length?rows.map(r=>currentSection==='sales'?itemCard(r):recipeCard(r)).join(''):'<div class="empty">現在の解放範囲で表示できる内容はありません。</div>';}
+async function loadCatalog(key,save){setStatus('施設DBからデータを読み込んでいます。');$('applyKey').disabled=true;$('reloadDb').disabled=true;try{const j=await jsonp(key);if(!j||!j.ok)throw new Error(j&&j.error?j.error:'施設データを取得できませんでした。');catalog=j.catalog||catalog;currentKey=key||'';if(save){if(currentKey)localStorage.setItem(STORAGE_KEY,currentKey);else localStorage.removeItem(STORAGE_KEY);}setStatus(`現在の解放範囲：${j.areaName||'初期エリア'}まで`,'ok');render();return true;}catch(e){setStatus(String(e.message||e),'bad');return false;}finally{$('applyKey').disabled=false;$('reloadDb').disabled=false;}}
+$('applyKey').addEventListener('click',()=>loadCatalog($('unlockKey').value.trim(),true));
+$('unlockKey').addEventListener('keydown',e=>{if(e.key==='Enter')loadCatalog($('unlockKey').value.trim(),true);});
+$('resetKey').addEventListener('click',()=>{$('unlockKey').value='';loadCatalog('',true);});
+$('reloadDb').addEventListener('click',()=>loadCatalog(currentKey,false));
+document.addEventListener('click',e=>{const f=e.target.closest('[data-facility]');if(f){currentFacility=f.dataset.facility;currentSection=SECTION_DEFS[currentFacility][0][0];document.querySelectorAll('[data-facility]').forEach(b=>b.classList.toggle('active',b===f));render();return;}const s=e.target.closest('[data-section]');if(s){currentSection=s.dataset.section;render();}});
+const saved=localStorage.getItem(STORAGE_KEY)||'';$('unlockKey').value=saved;loadCatalog(saved,false).then(ok=>{if(!ok&&saved){$('unlockKey').value='';localStorage.removeItem(STORAGE_KEY);loadCatalog('',false);}});
+</script>
+</body></html>
