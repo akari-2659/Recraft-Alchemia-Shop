@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.225</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.229</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -14,7 +14,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 .recipe-category-groups{display:grid;gap:12px}.recipe-category-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.recipe-category-group>summary{cursor:pointer;list-style:none;padding:13px 15px;font-weight:900;background:#f6e8d4}.recipe-category-group>summary::-webkit-details-marker{display:none}.recipe-category-body{padding:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:720px){.recipe-category-body{grid-template-columns:1fr}}</style>
 </head>
 <body>
-<header><div class="hero"><div class="build">Version：v90.8.225 / 最終更新日：2026年7月21日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理を確認できます。装備強化はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="build">Version：v90.8.229 / 最終更新日：2026年7月21日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理を確認できます。装備強化はこのページでは扱いません。</p></div></header>
 <main>
 <section class="panel">
   <div class="unlock-grid">
@@ -53,13 +53,13 @@ function setStatus(text,kind=''){const el=$('unlockStatus');el.className='status
 function jsonp(key){return new Promise((resolve,reject)=>{const cb='raFacilityCb_'+Date.now()+'_'+Math.random().toString(36).slice(2);const sc=document.createElement('script');const timer=setTimeout(()=>{clean();reject(new Error('通信がタイムアウトしました。'));},20000);function clean(){clearTimeout(timer);try{delete window[cb]}catch(e){}sc.remove();}window[cb]=j=>{clean();resolve(j)};const u=new URL(DEFAULT_GAS_WEB_APP_URL);u.searchParams.set('api','1');u.searchParams.set('action','facilityCatalog');u.searchParams.set('unlockKey',key||'');u.searchParams.set('callback',cb);sc.onerror=()=>{clean();reject(new Error('施設DBへ接続できませんでした。'));};sc.src=u.toString();document.head.appendChild(sc);});}
 function performanceHtml(rows){return Array.isArray(rows)&&rows.length?`<div class="performance">${rows.map(x=>`<span class="chip">${esc(x.label)} ${esc(x.value)}</span>`).join('')}</div>`:'';}
 function itemTextRows(r){return [['説明',r.description],['効果',r.effect]].filter(x=>String(x[1]||'').trim());}
-function itemCard(r){const chips=[rankLabel(r.rank),r.itemType||r.dataKind||'',r.itemCategory||r.materialCategory||'',r.equipSlot?`枠:${r.equipSlot}`:''].filter(Boolean);const rows=[['価格',String(r.price||'')?`${r.price}G`:'未設定'],...itemTextRows(r)];return `<article class="card"><h3>${esc(r.name)}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<dl>${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
+function itemCard(r){const chips=[rankLabel(r.rank),r.itemType||r.dataKind||'',r.itemCategory||r.materialCategory||'',r.equipSlot?`枠:${r.equipSlot}`:''].filter(Boolean);const bundleCount=Number(r.bundleCount)||0,bundlePrice=Number(r.bundlePrice)||0;const rows=[[bundleCount?'単品価格':'価格',String(r.price||'')?`${r.price}G`:'未設定'],...(bundleCount&&bundlePrice?[['まとめ買い',`${bundleCount}本セット ${bundlePrice}G`]]:[]),...itemTextRows(r)];return `<article class="card"><h3>${esc(r.name)}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<dl>${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
 function scrollPriceCard(r){const price=String(r.price||'')?`${r.price}G`:'未設定';return `<article class="card"><h3>未鑑定スクロール ${esc(rankLabel(r.rank))}</h3><div class="chips"><span class="chip">${esc(rankLabel(r.rank))}</span><span class="chip">ランダム販売</span></div><dl><dt>価格</dt><dd>${esc(price)}</dd></dl></article>`;}
 function recipeCard(r){const chips=[rankLabel(r.rank),r.craftType,r.category,r.itemType,r.itemCategory].filter(Boolean);const pairs=[];if(r.baseItem)pairs.push(['派生元',r.baseItem]);pairs.push(['必要素材',r.requiredMaterials||'未設定']);if(String(r.resultCount||''))pairs.push(['完成数',r.resultCount]);if(String(r.price||''))pairs.push([currentFacility==='eatery'?(currentSection==='recommendations'?'おすすめ価格':'調理代'):'施設依頼',`${r.price}G`]);if(!r.locked&&r.difficulty)pairs.push(['作成難易度',r.difficulty]);if(!r.locked&&r.description)pairs.push(['説明',r.description]);if(r.effect)pairs.push(['効果',r.effect]);return `<article class="card ${r.locked?'locked':''}"><h3>${esc(r.resultItem||r.name||'名称未設定')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${!r.locked?performanceHtml(r.performance):''}<dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
 
 function recipeCategoryLabel(r){
   const type=String(r.itemType||'').trim(), cat=String(r.itemCategory||r.category||'').trim();
-  if(type==='武器'||type==='術式装備')return '武器・術式装備';
+  if(type==='武器'||type==='術式装備')return '武器';
   if(type==='防具'||type==='盾')return '防具・盾';
   if(type==='装飾品')return '装飾品';
   if(type==='バッグ'||type==='矢筒')return 'バッグ・矢筒';
