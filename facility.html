@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.242</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.254</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -14,7 +14,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 .recipe-category-groups{display:grid;gap:12px}.recipe-category-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.recipe-category-group>summary{cursor:pointer;list-style:none;padding:13px 15px;font-weight:900;background:#f6e8d4}.recipe-category-group>summary::-webkit-details-marker{display:none}.recipe-category-body{padding:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:720px){.recipe-category-body{grid-template-columns:1fr}}</style>
 </head>
 <body>
-<header><div class="hero"><div class="build">Version：v90.8.242 / 最終更新日：2026年7月22日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理を確認できます。装備強化はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="build">Version：v90.8.254 / 最終更新日：2026年7月23日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理を確認できます。装備強化はこのページでは扱いません。</p></div></header>
 <main>
 <section class="panel">
   <div class="unlock-grid">
@@ -26,7 +26,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 <section class="panel">
   <div class="facility-switch"><button data-facility="smith" class="active">鍛冶屋</button><button data-facility="apothecary">薬屋</button><button data-facility="antique">骨董屋</button><button data-facility="eatery">食事処</button></div>
   <div id="sectionTabs" class="section-tabs"></div>
-  <div class="summary-line"><div><h2 id="sectionTitle">販売商品</h2><div id="sectionDescription" class="muted"></div></div><button id="reloadDb" class="secondary" type="button">DB再読み込み</button></div>
+  <div class="summary-line"><div><h2 id="sectionTitle">販売商品</h2><div id="sectionDescription" class="muted"></div></div><button id="reloadDb" class="secondary" type="button">共通DBを再読込</button></div>
   <div id="branchControls" class="branch-controls" hidden>
     <div class="branch-search"><label for="branchSearch">名前・素材検索</label><input id="branchSearch" type="search" autocomplete="off" placeholder="派生名・武器名・元武器名・素材名で検索"></div>
     <div id="weaponCategoryTabs" class="weapon-category-tabs"></div>
@@ -37,7 +37,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
   </div>
   <div id="cards" class="cards"></div>
 </section>
-</main><footer>解放判定と未解放データのマスクはGAS側で行います。</footer>
+</main><footer>固定マスターはGitHub共通DBから取得し、解放キーの確認はGASで行います。未解放表示は施設ページ内で処理します。</footer>
 <script>
 'use strict';
 const DEFAULT_GAS_WEB_APP_URL='https://script.google.com/macros/s/AKfycbyjIIKXTXZGf8RFOt7wQcenYEuVP68ijTU83e6rioqX21EKW075xjDjB5pTucyVcrc/exec';
@@ -59,7 +59,418 @@ function rankMatches(row){return currentRank==='all'||rankValue(row&&row.rank)==
 function collectRanks(rows,branches){const ranks=new Set();if(branches){(rows||[]).forEach(cat=>{(cat.baseWeapons||[]).forEach(w=>ranks.add(rankValue(w.rank)));(cat.branches||[]).forEach(branch=>(branch.lines||[]).forEach(line=>(line.nodes||[]).forEach(n=>ranks.add(rankValue(n.rank)))));});}else{(rows||[]).forEach(r=>ranks.add(rankValue(r.rank)));}return [...ranks].sort((a,b)=>a-b);}
 function renderRankControls(rows,branches){const ranks=collectRanks(rows,branches);const wrap=$('catalogRankControls'),box=$('rankFilterButtons');if(ranks.length<2){currentRank='all';wrap.hidden=true;box.innerHTML='';return;}if(currentRank!=='all'&&!ranks.includes(Number(currentRank)))currentRank='all';wrap.hidden=false;box.innerHTML=[`<button type="button" data-rank-filter="all" class="${currentRank==='all'?'active':''}">すべて</button>`,...ranks.map(rank=>`<button type="button" data-rank-filter="${rank}" class="${Number(currentRank)===rank?'active':''}">★${rank}</button>`)].join('');}
 function setStatus(text,kind=''){const el=$('unlockStatus');el.className='status'+(kind?' '+kind:'');el.textContent=text;}
-function jsonp(key){return new Promise((resolve,reject)=>{const cb='raFacilityCb_'+Date.now()+'_'+Math.random().toString(36).slice(2);const sc=document.createElement('script');const timer=setTimeout(()=>{clean();reject(new Error('通信がタイムアウトしました。'));},20000);function clean(){clearTimeout(timer);try{delete window[cb]}catch(e){}sc.remove();}window[cb]=j=>{clean();resolve(j)};const u=new URL(DEFAULT_GAS_WEB_APP_URL);u.searchParams.set('api','1');u.searchParams.set('action','facilityCatalog');u.searchParams.set('unlockKey',key||'');u.searchParams.set('callback',cb);sc.onerror=()=>{clean();reject(new Error('施設DBへ接続できませんでした。'));};sc.src=u.toString();document.head.appendChild(sc);});}
+function jsonpAction(action,key){return new Promise((resolve,reject)=>{const cb='raFacilityCb_'+Date.now()+'_'+Math.random().toString(36).slice(2);const sc=document.createElement('script');const timer=setTimeout(()=>{clean();reject(new Error('通信がタイムアウトしました。'));},20000);function clean(){clearTimeout(timer);try{delete window[cb]}catch(e){}sc.remove();}window[cb]=j=>{clean();resolve(j)};const u=new URL(DEFAULT_GAS_WEB_APP_URL);u.searchParams.set('api','1');u.searchParams.set('action',action);u.searchParams.set('unlockKey',key||'');u.searchParams.set('callback',cb);sc.onerror=()=>{clean();reject(new Error('施設データへ接続できませんでした。'));};sc.src=u.toString();document.head.appendChild(sc);});}
+
+const GITHUB_COMMON_DB_BASE='https://akari-2659.github.io/Recraft-Alchemia-Manager/data/public/';
+const GITHUB_COMMON_DB_MANIFEST_URL=GITHUB_COMMON_DB_BASE+'manifest.json';
+let commonMasterPromise=null;
+
+function facilityEnabled(row){
+  return String(row&&row.enabled!==undefined?row.enabled:'TRUE').trim().toUpperCase()!=='FALSE';
+}
+function facilityText(row){
+  return [row&&row.source,row&&row.unlockFacility,row&&row.recipeSource,row&&row.tags,row&&row.usageTags]
+    .map(v=>String(v||'')).join(' / ');
+}
+function facilityBundle(row){
+  const text=[row&&row.tags,row&&row.usageTags,row&&row.notes].map(v=>String(v||'')).join(',');
+  const match=text.match(/まとめ買い\s*(\d+)本\s*(\d+)G/u);
+  return match?{count:Number(match[1])||0,price:Number(match[2])||0}:{count:0,price:0};
+}
+function facilityModifierLabel(key){
+  const labels={
+    hit:'命中',
+    'skill:force':'力業','skill:melee':'近接','skill:shoot':'射撃','skill:throw':'投擲',
+    'skill:guard':'防御技能','skill:evade':'回避','skill:resist':'抵抗',
+    'combat:defense':'防御','combat:guardAction':'防御行動値','combat:evasion':'回避',
+    'combat:initiative':'先制値',combatGuardAction:'防御行動値',guardAction:'防御行動値',
+    combatDefense:'防御','resource:maxHp':'最大HP','resource:maxMp':'最大MP'
+  };
+  return labels[String(key||'').trim()]||String(key||'').trim();
+}
+function facilityPerformance(item){
+  const rows=[];
+  if(!item)return rows;
+  function add(label,value,suffix=''){
+    const text=String(value===undefined||value===null?'':value).trim();
+    if(!text||text==='0'||text.toUpperCase()==='FALSE')return;
+    rows.push({label,value:text+suffix});
+  }
+  if(String(item.power||'').trim())add(String(item.itemType||'')==='武器'?'ダメージ':'威力',item.power);
+  String(item.modifiers||'').split(/\r?\n/u).forEach(line=>{
+    const clean=String(line||'').trim();
+    if(!clean)return;
+    const parts=clean.split(/\t+|\s{2,}/u).map(v=>String(v||'').trim()).filter(Boolean);
+    let key='',value='';
+    if(parts.length>=2){key=parts[0];value=parts[1];}
+    else{
+      const match=clean.match(/^(\S+)\s+(.+)$/u);
+      if(!match)return;
+      key=match[1];value=match[2];
+    }
+    add(facilityModifierLabel(key),value);
+  });
+  add('使用技能',item.skill);
+  add('対象',item.target);
+  add('判定',String(item.checkType||'').replace(/回避値/g,'回避').replace(/抵抗値/g,'抵抗').replace(/常時防御値/g,'防御'));
+  add('属性',item.element);
+  add('副手追撃',item.offhandBonus);
+  add('装填ターン',item.reloadTurns,'ターン');
+  add('最大スタック',item.maxStack);
+  add('矢弾消費',item.ammoUse);
+  add('矢弾種別',item.ammoKind);
+  add('対応武器種',item.compatibleWeaponTypes);
+  add('矢筒収納種類数',item.quiverCapacity);
+  add('所持品枠',item.bagCapacity);
+  if(String(item.toolRank||'').trim())add('使用可能上限','★'+String(item.toolRank)+'以下');
+  if(String(item.guaranteeUpgradeMaxRank||'').trim())add('強化確定上限','★'+String(item.guaranteeUpgradeMaxRank)+'以下');
+  if(String(item.spellSlots||'').trim())add('術式追加枠','+'+String(item.spellSlots));
+  return rows;
+}
+function facilitySafeItem(row){
+  const bundle=facilityBundle(row||{});
+  return{
+    name:row.name||'',rank:Number(row.rank)||1,price:row.price||'',
+    bundleCount:bundle.count,bundlePrice:bundle.price,
+    itemType:row.itemType||'',itemCategory:row.itemCategory||'',dataKind:row.dataKind||'',
+    materialCategory:row.materialCategory||'',equipSlot:row.equipSlot||'',
+    guaranteeUpgradeMaxRank:row.guaranteeUpgradeMaxRank||'',
+    description:row.description||'',effect:row.effect||'',
+    performance:facilityPerformance(row)
+  };
+}
+function facilitySafeShopRecipe(row){
+  const resultName=String(row.resultItem||row.name||'名称未設定').trim();
+  return{
+    name:resultName+'のレシピ',rank:Number(row.rank)||1,price:row.recipePrice||'',
+    itemType:'レシピ',
+    itemCategory:[row.craftType,row.category].map(v=>String(v||'').trim()).filter(Boolean).join(' / '),
+    dataKind:'アイテム',materialCategory:'',equipSlot:'',guaranteeUpgradeMaxRank:'',
+    description:row.description||'',effect:row.effect||'',performance:[]
+  };
+}
+function facilitySafeRecipe(row,locked,safeBaseItem,resultItem){
+  if(locked){
+    return{
+      locked:true,resultItem:'？？？',name:'？？？',rank:Number(row.rank)||1,
+      craftType:'武器派生',category:row.category||'',branchType:'',
+      baseItem:safeBaseItem||'？？？',requiredMaterials:'？？？',price:row.price||'',
+      resultCount:row.resultCount||'',difficulty:'',description:'',effect:'？？？',performance:[]
+    };
+  }
+  const item=resultItem||{};
+  return{
+    locked:false,resultItem:row.resultItem||row.name||'',name:row.name||'',rank:Number(row.rank)||1,
+    craftType:row.craftType||'',category:row.category||'',branchType:row.branchType||'',
+    baseItem:row.baseItem||'',requiredMaterials:row.requiredMaterials||'',price:row.price||'',
+    resultCount:row.resultCount||'',difficulty:row.difficulty||'',
+    itemType:item.itemType||item.dataKind||'',itemCategory:item.itemCategory||item.materialCategory||'',
+    description:resultItem?(item.description||''):(row.description||''),
+    effect:resultItem?(item.effect||''):(row.effect||''),
+    performance:facilityPerformance(item),unlockOrder:Number(row._facilityUnlockOrder||1)||1
+  };
+}
+function facilityBranchLabel(value){
+  const text=String(value||'').trim();
+  if(!text)return '派生';
+  return text.replace(/(?:系統|派生)$/u,'').trim()||'派生';
+}
+function facilityMaterialParts(text,itemByName,unlockedFn,fullyUnlocked){
+  const parts=String(text||'').split(/[,、\n]+/u).map(v=>String(v||'').trim()).filter(Boolean);
+  if(!parts.length)return '未設定';
+  return parts.map(part=>{
+    if(fullyUnlocked)return part;
+    const match=part.match(/^(.*?)[×xX*]\s*([0-9]+)\s*$/u);
+    const materialName=String(match?match[1]:part).trim();
+    const material=itemByName[materialName];
+    return material&&unlockedFn(material)?part:'？？？';
+  }).join(', ');
+}
+async function fetchGithubCommonMaster({force=false}={}){
+  if(commonMasterPromise&&!force)return commonMasterPromise;
+  const task=(async()=>{
+    const manifestResponse=await fetch(GITHUB_COMMON_DB_MANIFEST_URL,{cache:'no-store'});
+    if(!manifestResponse.ok)throw new Error(`共通DBのmanifest取得に失敗しました（HTTP ${manifestResponse.status}）。`);
+    const manifest=await manifestResponse.json();
+    const masterFile=String(manifest.master||'').trim();
+    if(!masterFile||masterFile.includes('..')||masterFile.includes('\\'))throw new Error('共通DBのmasterファイル名が不正です。');
+    const masterResponse=await fetch(new URL(masterFile,GITHUB_COMMON_DB_BASE).toString(),{cache:force?'reload':'force-cache'});
+    if(!masterResponse.ok)throw new Error(`共通DB本体の取得に失敗しました（HTTP ${masterResponse.status}）。`);
+    const masterDocument=await masterResponse.json();
+    const manifestVersion=String(manifest.version||'').trim();
+    const masterVersion=String(masterDocument.version||'').trim();
+    if(manifestVersion&&masterVersion&&manifestVersion!==masterVersion){
+      throw new Error(`共通DBのバージョンが一致しません（manifest ${manifestVersion} / master ${masterVersion}）。`);
+    }
+    const data=masterDocument&&masterDocument.data&&typeof masterDocument.data==='object'?masterDocument.data:masterDocument;
+    if(!Array.isArray(data.items)||!Array.isArray(data.recipes)||!Array.isArray(data.exploration_areas)){
+      throw new Error('共通DBに施設表示用データがありません。');
+    }
+    return{manifest,document:masterDocument,data,version:manifestVersion||masterVersion};
+  })();
+  commonMasterPromise=task;
+  try{return await task;}
+  catch(error){
+    if(commonMasterPromise===task)commonMasterPromise=null;
+    throw error;
+  }
+}
+function buildFacilityCatalogFromGithub(commonMaster,unlockState){
+  const data=commonMaster.data||{};
+  const areas=(Array.isArray(data.exploration_areas)?data.exploration_areas:[])
+    .filter(facilityEnabled)
+    .sort((a,b)=>{
+      const aOptional=String(a.areaType||'').trim()==='異界';
+      const bOptional=String(b.areaType||'').trim()==='異界';
+      if(aOptional!==bOptional)return aOptional?1:-1;
+      return (Number(a.unlockOrder)||999)-(Number(b.unlockOrder)||999);
+    });
+  if(!areas.length)throw new Error('共通DBに探索エリアが登録されていません。');
+  const stateArea=unlockState&&unlockState.area||{};
+  const currentArea=areas.find(a=>String(a.id||'')===String(stateArea.id||''))
+    ||areas.find(a=>String(a.unlockKey||'')===String(unlockState&&unlockState.unlockKey||''))
+    ||(!String(unlockState&&unlockState.unlockKey||'').trim()?areas[0]:null);
+  if(!currentArea)throw new Error('GASの解放状態と共通DBの探索エリアが一致しません。');
+  const currentOrder=Number(currentArea.unlockOrder)||1;
+  const areaById={};
+  areas.forEach(a=>{areaById[String(a.id||'')]=a;});
+  function requiredOrder(row){
+    const areaId=String(row&&row.unlockAreaKey||'').trim();
+    if(!areaId)return Number(areas[0].unlockOrder)||1;
+    return Number(areaById[areaId]&&areaById[areaId].unlockOrder)||1;
+  }
+  function unlocked(row){
+    const areaId=String(row&&row.unlockAreaKey||'').trim();
+    const targetArea=areaById[areaId]||areas[0];
+    const currentIsOptional=String(currentArea.areaType||'').trim()==='異界';
+    const targetIsOptional=String(targetArea.areaType||'').trim()==='異界';
+    if(targetIsOptional)return String(targetArea.id||'')===String(currentArea.id||'');
+    const mainOrder=currentIsOptional?Math.floor(currentOrder):currentOrder;
+    return requiredOrder(row)<=mainOrder;
+  }
+  function facilityMatch(row,facilityName){return facilityText(row).includes(facilityName);}
+  function isRandomUnidentifiedScroll(row){
+    return String(row&&row.itemCategory||'').includes('未鑑定')||String(row&&row.tags||'').includes('ランダム販売');
+  }
+  function sortRows(a,b){
+    const ao=requiredOrder(a),bo=requiredOrder(b);
+    if(ao!==bo)return ao-bo;
+    const ar=Number(a.rank)||1,br=Number(b.rank)||1;
+    if(ar!==br)return ar-br;
+    return String(a.resultItem||a.name||'').localeCompare(String(b.resultItem||b.name||''),'ja');
+  }
+
+  const items=(Array.isArray(data.items)?data.items:[]).filter(facilityEnabled);
+  const recipes=(Array.isArray(data.recipes)?data.recipes:[]).filter(facilityEnabled);
+  const branchResultNames={};
+  const branchByResult={};
+  recipes.forEach(r=>{
+    if(String(r.craftType||'')==='武器派生'){
+      const resultName=String(r.resultItem||'');
+      if(resultName){branchResultNames[resultName]=true;branchByResult[resultName]=r;}
+    }
+  });
+  function sales(facilityName){
+    const saleItems=items.filter(r=>{
+      if(!String(r.name||'').trim()||!facilityMatch(r,facilityName)||!unlocked(r))return false;
+      if(facilityName==='鍛冶屋'&&branchResultNames[String(r.name||'')])return false;
+      if(facilityName==='骨董屋'&&isRandomUnidentifiedScroll(r))return false;
+      return true;
+    }).sort(sortRows).map(facilitySafeItem);
+    const saleRecipes=recipes.filter(r=>{
+      const price=Number(String(r.recipePrice||'').trim());
+      return String(r.recipeSource||'').includes(facilityName)&&Number.isFinite(price)&&price>0&&unlocked(r);
+    }).sort(sortRows).map(facilitySafeShopRecipe);
+    return saleItems.concat(saleRecipes);
+  }
+  function antiqueScrollPrices(){
+    const byRank={};
+    items.filter(r=>facilityMatch(r,'骨董屋')&&isRandomUnidentifiedScroll(r)&&unlocked(r)).forEach(r=>{
+      const rank=Number(r.rank)||1;
+      const price=Number(r.price)||0;
+      if(!byRank[rank])byRank[rank]=[];
+      if(price>0&&!byRank[rank].includes(price))byRank[rank].push(price);
+    });
+    return Object.keys(byRank).map(rank=>{
+      const prices=byRank[rank].slice().sort((a,b)=>a-b);
+      return{rank:Number(rank),price:prices[0]||'',priceVariants:prices};
+    }).sort((a,b)=>a.rank-b.rank);
+  }
+  const itemByName={};
+  items.forEach(item=>{
+    const name=String(item.name||'').trim();
+    if(name)itemByName[name]=item;
+  });
+  function normalRecipes(facilityName,types){
+    return recipes.filter(r=>types.includes(String(r.craftType||''))&&facilityMatch(r,facilityName)&&unlocked(r))
+      .sort(sortRows)
+      .map(r=>{
+        const resultItem=items.find(item=>String(item.name||'')===String(r.resultItem||r.name||''))||null;
+        return facilitySafeRecipe({...r,_facilityUnlockOrder:requiredOrder(r)},false,r.baseItem||'',resultItem);
+      });
+  }
+  function mealRows(){
+    return recipes.filter(r=>String(r.craftType||'')==='料理'&&facilityMatch(r,'食事処')&&unlocked(r))
+      .sort(sortRows)
+      .map(r=>{
+        const safe=facilitySafeRecipe({...r,_facilityUnlockOrder:requiredOrder(r)},false,'',null);
+        safe.cookingPrice=Number(r.price)||0;
+        safe.price=safe.cookingPrice;
+        safe.isRecommended=false;
+        return safe;
+      });
+  }
+  function branchWeaponCategory(recipe){
+    const resultName=String(recipe.resultItem||'').trim();
+    const baseName=String(recipe.baseItem||'').trim();
+    const resultItem=itemByName[resultName]||null;
+    const baseItem=itemByName[baseName]||null;
+    const category=String(
+      resultItem&&resultItem.itemCategory||
+      baseItem&&baseItem.itemCategory||
+      recipe.category||
+      'その他'
+    ).trim();
+    return category&&category!=='異界派生'?category:'その他';
+  }
+  function branchRootName(recipe){
+    let base=String(recipe.baseItem||'').trim();
+    const seen={};
+    while(base&&branchByResult[base]&&!seen[base]){
+      seen[base]=true;
+      base=String(branchByResult[base].baseItem||'').trim();
+    }
+    return base||String(recipe.baseItem||recipe.resultItem||'その他').trim();
+  }
+  function branchDepth(recipe){
+    let depth=1;
+    let base=String(recipe.baseItem||'').trim();
+    const seen={};
+    while(base&&branchByResult[base]&&!seen[base]){
+      seen[base]=true;
+      depth+=1;
+      base=String(branchByResult[base].baseItem||'').trim();
+    }
+    return depth;
+  }
+
+  const rawBranchRows=recipes.filter(r=>String(r.craftType||'')==='武器派生'&&facilityMatch(r,'鍛冶屋'));
+  const equipmentCategories=(Array.isArray(data.equipment_categories)?data.equipment_categories:[]).filter(facilityEnabled);
+  const categoryOrder={};
+  equipmentCategories.forEach(row=>{
+    const name=String(row.name||'').trim();
+    if(name)categoryOrder[name]=Number(row.sortOrder)||999;
+  });
+  const groupedBranches={};
+  rawBranchRows.forEach(r=>{
+    const category=branchWeaponCategory(r);
+    const label=facilityBranchLabel(r.branchType);
+    const rootName=branchRootName(r);
+    if(!groupedBranches[category])groupedBranches[category]={};
+    if(!groupedBranches[category][label])groupedBranches[category][label]={};
+    if(!groupedBranches[category][label][rootName])groupedBranches[category][label][rootName]=[];
+    groupedBranches[category][label][rootName].push(r);
+  });
+  const branchRows=Object.keys(groupedBranches).map(categoryName=>{
+    const branchGroups=Object.keys(groupedBranches[categoryName]).map(label=>{
+      const roots=groupedBranches[categoryName][label];
+      const allRecipes=[];
+      Object.keys(roots).forEach(rootName=>allRecipes.push(...roots[rootName]));
+      const labelVisible=allRecipes.some(recipe=>unlocked(recipe));
+      const lines=Object.keys(roots).map(rootName=>{
+        const recipesInLine=roots[rootName].slice().sort((a,b)=>{
+          const ad=branchDepth(a),bd=branchDepth(b);
+          return ad!==bd?ad-bd:sortRows(a,b);
+        });
+        return{
+          nodes:recipesInLine.map(r=>{
+            const locked=!unlocked(r);
+            const resultName=String(r.resultItem||r.name||'').trim();
+            const resultItem=itemByName[resultName]||null;
+            return{
+              locked,depth:branchDepth(r),
+              resultItem:locked?'？？？':resultName,
+              rank:Number(r.rank)||1,
+              requiredMaterials:facilityMaterialParts(r.requiredMaterials,itemByName,unlocked,!locked),
+              price:r.price||'',
+              difficulty:locked?'':(r.difficulty||''),
+              description:locked?'':(resultItem?(resultItem.description||''):(r.description||'')),
+              effect:locked?'？？？':(resultItem?(resultItem.effect||''):(r.effect||'')),
+              performance:locked?[]:facilityPerformance(resultItem),
+              unlockOrder:requiredOrder(r)
+            };
+          })
+        };
+      }).sort((a,b)=>{
+        const an=a.nodes&&a.nodes[0]?String(a.nodes[0].requiredMaterials||''):'';
+        const bn=b.nodes&&b.nodes[0]?String(b.nodes[0].requiredMaterials||''):'';
+        return an.localeCompare(bn,'ja');
+      });
+      return{
+        label:labelVisible?label:'？？？',
+        unlockOrder:Math.min(...allRecipes.map(requiredOrder)),
+        lines
+      };
+    }).sort((a,b)=>{
+      const ao=Number(a.unlockOrder)||999,bo=Number(b.unlockOrder)||999;
+      if(ao!==bo)return ao-bo;
+      if(a.label==='？？？'&&b.label!=='？？？')return 1;
+      if(b.label==='？？？'&&a.label!=='？？？')return-1;
+      return String(a.label).localeCompare(String(b.label),'ja');
+    });
+    const rootNames={};
+    Object.keys(groupedBranches[categoryName]).forEach(label=>{
+      Object.keys(groupedBranches[categoryName][label]).forEach(rootName=>{rootNames[rootName]=true;});
+    });
+    const baseWeapons=Object.keys(rootNames).map(name=>itemByName[name]||null).filter(Boolean).map(facilitySafeItem);
+    return{
+      category:categoryName,
+      sortOrder:categoryOrder[categoryName]||999,
+      baseWeapons,
+      branches:branchGroups
+    };
+  }).sort((a,b)=>{
+    const ao=Number(a.sortOrder)||999,bo=Number(b.sortOrder)||999;
+    if(ao!==bo)return ao-bo;
+    return String(a.category||'').localeCompare(String(b.category||''),'ja');
+  });
+
+  return{
+    areaName:currentArea.name||unlockState.areaName||'初期エリア',
+    version:commonMaster.version||'',
+    catalog:{
+      smith:{
+        sales:sales('鍛冶屋'),
+        craft:normalRecipes('鍛冶屋',['鍛冶','防具製作','バッグ製作','細工']),
+        materials:normalRecipes('鍛冶屋',['素材加工']),
+        branches:branchRows
+      },
+      apothecary:{
+        sales:sales('薬屋'),
+        alchemy:normalRecipes('薬屋',['調合']),
+        materials:normalRecipes('薬屋',['素材加工'])
+      },
+      antique:{
+        sales:sales('骨董屋'),
+        scrolls:antiqueScrollPrices()
+      },
+      eatery:{
+        meals:mealRows()
+      }
+    }
+  };
+}
+async function loadUnlockState(key){
+  const result=await jsonpAction('facilityUnlockState',key);
+  if(!result||!result.ok)throw new Error(result&&result.error?result.error:'解放キーを確認できませんでした。');
+  return result;
+}
+async function loadLegacyCatalog(key){
+  const result=await jsonpAction('facilityCatalog',key);
+  if(!result||!result.ok)throw new Error(result&&result.error?result.error:'施設データを取得できませんでした。');
+  return result;
+}
+
 function performanceHtml(rows){return Array.isArray(rows)&&rows.length?`<div class="performance">${rows.map(x=>`<span class="chip">${esc(x.label)} ${esc(x.value)}</span>`).join('')}</div>`:'';}
 function itemTextRows(r){return [['説明',r.description],['効果',r.effect]].filter(x=>String(x[1]||'').trim());}
 function itemCard(r){const chips=uniqueChips([rankLabel(r.rank),r.itemType||r.dataKind||'',r.itemCategory||r.materialCategory||'',r.equipSlot?`枠:${r.equipSlot}`:'']);const bundleCount=Number(r.bundleCount)||0,bundlePrice=Number(r.bundlePrice)||0;const rows=[[bundleCount?'単品価格':'価格',String(r.price||'')?`${r.price}G`:'未設定'],...(bundleCount&&bundlePrice?[['まとめ買い',`${bundleCount}本セット ${bundlePrice}G`]]:[]),...itemTextRows(r)];return `<article class="card"><h3>${esc(r.name)}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<dl>${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
@@ -110,11 +521,51 @@ function branchCatalog(categories){
 }
 function renderTabs(){const defs=SECTION_DEFS[currentFacility];if(!defs.some(d=>d[0]===currentSection))currentSection=defs[0][0];$('sectionTabs').innerHTML=defs.map(([id,label])=>`<button data-section="${esc(id)}" class="${id===currentSection?'active':''}">${esc(label)}</button>`).join('');const cur=defs.find(d=>d[0]===currentSection);$('sectionTitle').textContent=cur[1];$('sectionDescription').textContent=cur[2];}
 function render(){renderTabs();const rows=(catalog[currentFacility]&&catalog[currentFacility][currentSection])||[];const branches=currentSection==='branches',scrolls=currentSection==='scrolls';$('branchControls').hidden=!branches;renderRankControls(rows,branches);const filtered=branches?rows:rows.filter(rankMatches);$('cards').className=branches?'':'cards';$('cards').innerHTML=branches?branchCatalog(rows):(filtered.length?(scrolls?filtered.map(scrollPriceCard).join(''):currentSection==='sales'?filtered.map(itemCard).join(''):recipeCatalog(filtered)):'<div class="empty">現在の検索・★ランク条件に一致する内容はありません。</div>');}
-async function loadCatalog(key,save){setStatus('施設DBからデータを読み込んでいます。');$('applyKey').disabled=true;$('reloadDb').disabled=true;try{const j=await jsonp(key);if(!j||!j.ok)throw new Error(j&&j.error?j.error:'施設データを取得できませんでした。');catalog=j.catalog||catalog;currentKey=key||'';if(save){if(currentKey)localStorage.setItem(STORAGE_KEY,currentKey);else localStorage.removeItem(STORAGE_KEY);}setStatus(`現在の解放範囲：${j.areaName||'初期エリア'}まで`,'ok');render();return true;}catch(e){setStatus(String(e.message||e),'bad');return false;}finally{$('applyKey').disabled=false;$('reloadDb').disabled=false;}}
+async function loadCatalog(key,save,{force=false}={}){
+  setStatus('GitHub共通DBと解放範囲を確認しています。');
+  $('applyKey').disabled=true;
+  $('reloadDb').disabled=true;
+  try{
+    try{
+      const [commonMaster,unlockState]=await Promise.all([
+        fetchGithubCommonMaster({force}),
+        loadUnlockState(key)
+      ]);
+      const built=buildFacilityCatalogFromGithub(commonMaster,unlockState);
+      catalog=built.catalog||catalog;
+      currentKey=key||'';
+      if(save){
+        if(currentKey)localStorage.setItem(STORAGE_KEY,currentKey);
+        else localStorage.removeItem(STORAGE_KEY);
+      }
+      setStatus(`現在の解放範囲：${built.areaName||'初期エリア'}まで / GitHub共通DB${built.version?' v'+built.version:''}`,'ok');
+      render();
+      return true;
+    }catch(primaryError){
+      console.warn('共通DB方式を利用できないため、従来のGAS施設カタログへ切り替えます。',primaryError);
+      const legacy=await loadLegacyCatalog(key);
+      catalog=legacy.catalog||catalog;
+      currentKey=key||'';
+      if(save){
+        if(currentKey)localStorage.setItem(STORAGE_KEY,currentKey);
+        else localStorage.removeItem(STORAGE_KEY);
+      }
+      setStatus(`現在の解放範囲：${legacy.areaName||'初期エリア'}まで / GASフォールバック`,'ok');
+      render();
+      return true;
+    }
+  }catch(error){
+    setStatus(String(error.message||error),'bad');
+    return false;
+  }finally{
+    $('applyKey').disabled=false;
+    $('reloadDb').disabled=false;
+  }
+}
 $('applyKey').addEventListener('click',()=>loadCatalog($('unlockKey').value.trim(),true));
 $('unlockKey').addEventListener('keydown',e=>{if(e.key==='Enter')loadCatalog($('unlockKey').value.trim(),true);});
 $('resetKey').addEventListener('click',()=>{$('unlockKey').value='';loadCatalog('',true);});
-$('reloadDb').addEventListener('click',()=>loadCatalog(currentKey,false));
+$('reloadDb').addEventListener('click',()=>loadCatalog(currentKey,false,{force:true}));
 document.addEventListener('click',e=>{const f=e.target.closest('[data-facility]');if(f){currentFacility=f.dataset.facility;currentSection=SECTION_DEFS[currentFacility][0][0];currentWeaponCategory='';currentRank='all';document.querySelectorAll('[data-facility]').forEach(b=>b.classList.toggle('active',b===f));render();return;}const s=e.target.closest('[data-section]');if(s){currentSection=s.dataset.section;currentRank='all';if(currentSection==='branches')currentWeaponCategory='';render();return;}const c=e.target.closest('[data-weapon-category]');if(c){currentWeaponCategory=c.dataset.weaponCategory||'';render();return;}const r=e.target.closest('[data-rank-filter]');if(r){currentRank=r.dataset.rankFilter||'all';render();}});
 $('branchSearch').addEventListener('input',e=>{branchSearch=e.target.value||'';render();});
 const saved=localStorage.getItem(STORAGE_KEY)||'';$('unlockKey').value=saved;loadCatalog(saved,false).then(ok=>{if(!ok&&saved){$('unlockKey').value='';localStorage.removeItem(STORAGE_KEY);loadCatalog('',false);}});
