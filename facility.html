@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.277</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.278</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -14,7 +14,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 .recipe-category-groups{display:grid;gap:12px}.recipe-category-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.recipe-category-group>summary{cursor:pointer;list-style:none;padding:13px 15px;font-weight:900;background:#f6e8d4}.recipe-category-group>summary::-webkit-details-marker{display:none}.recipe-category-body{padding:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:720px){.recipe-category-body{grid-template-columns:1fr}}</style>
 </head>
 <body>
-<header><div class="hero"><div class="build">Version：v90.8.277 / 最終更新日：2026年7月26日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="build">Version：v90.8.278 / 最終更新日：2026年7月26日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <section class="panel">
   <div class="unlock-grid">
@@ -186,27 +186,60 @@ function facilityMaterialParts(text,itemByName,unlockedFn,fullyUnlocked){
     return material&&unlockedFn(material)?part:'？？？';
   }).join(', ');
 }
+function facilityGithubDelay(ms){return new Promise(resolve=>setTimeout(resolve,ms));}
+function facilityValidateGithubMaster(masterDocument,manifest={}){
+  const data=masterDocument&&masterDocument.data&&typeof masterDocument.data==='object'?masterDocument.data:masterDocument;
+  if(!Array.isArray(data.items)||!Array.isArray(data.recipes)||!Array.isArray(data.exploration_areas)){
+    throw new Error('共通DBに施設表示用データがありません。');
+  }
+  const manifestVersion=String(manifest.version||'').trim();
+  const masterVersion=String(masterDocument&&masterDocument.version||'').trim();
+  return{
+    manifest,document:masterDocument,data,version:masterVersion||manifestVersion,
+    versionWarning:manifestVersion&&masterVersion&&manifestVersion!==masterVersion
+      ?`manifest ${manifestVersion} / master ${masterVersion}`:''
+  };
+}
+async function facilityFetchGithubJson(url){
+  const response=await fetch(url,{cache:'no-store'});
+  if(!response.ok)throw new Error(`HTTP ${response.status}`);
+  return response.json();
+}
 async function fetchGithubCommonMaster({force=false}={}){
   if(commonMasterPromise&&!force)return commonMasterPromise;
   const task=(async()=>{
-    const manifestResponse=await fetch(GITHUB_COMMON_DB_MANIFEST_URL,{cache:'no-store'});
-    if(!manifestResponse.ok)throw new Error(`共通DBのmanifest取得に失敗しました（HTTP ${manifestResponse.status}）。`);
-    const manifest=await manifestResponse.json();
-    const masterFile=String(manifest.master||'').trim();
-    if(!masterFile||masterFile.includes('..')||masterFile.includes('\\'))throw new Error('共通DBのmasterファイル名が不正です。');
-    const masterResponse=await fetch(new URL(masterFile,GITHUB_COMMON_DB_BASE).toString(),{cache:force?'reload':'force-cache'});
-    if(!masterResponse.ok)throw new Error(`共通DB本体の取得に失敗しました（HTTP ${masterResponse.status}）。`);
-    const masterDocument=await masterResponse.json();
-    const manifestVersion=String(manifest.version||'').trim();
-    const masterVersion=String(masterDocument.version||'').trim();
-    if(manifestVersion&&masterVersion&&manifestVersion!==masterVersion){
-      throw new Error(`共通DBのバージョンが一致しません（manifest ${manifestVersion} / master ${masterVersion}）。`);
+    let lastError=null;
+    let usableMismatch=null;
+    for(let attempt=0;attempt<4;attempt++){
+      const token=`${Date.now()}_${attempt}_${Math.random().toString(36).slice(2)}`;
+      try{
+        const manifestUrl=new URL(GITHUB_COMMON_DB_MANIFEST_URL);
+        manifestUrl.searchParams.set('_ra',token);
+        const manifest=await facilityFetchGithubJson(manifestUrl.toString());
+        const masterFile=String(manifest.master||'').trim();
+        if(!masterFile||masterFile.includes('..')||masterFile.includes('\\'))throw new Error('共通DBのmasterファイル名が不正です。');
+        const masterUrl=new URL(masterFile,GITHUB_COMMON_DB_BASE);
+        masterUrl.searchParams.set('_ra',`${String(manifest.sha256||manifest.version||'master')}_${token}`);
+        const masterDocument=await facilityFetchGithubJson(masterUrl.toString());
+        const result=facilityValidateGithubMaster(masterDocument,manifest);
+        if(!result.versionWarning)return result;
+        usableMismatch=result;
+        lastError=new Error(`共通DBの更新反映待ちです（${result.versionWarning}）。`);
+      }catch(error){
+        lastError=error;
+      }
+      if(attempt<3)await facilityGithubDelay(350*(attempt+1));
     }
-    const data=masterDocument&&masterDocument.data&&typeof masterDocument.data==='object'?masterDocument.data:masterDocument;
-    if(!Array.isArray(data.items)||!Array.isArray(data.recipes)||!Array.isArray(data.exploration_areas)){
-      throw new Error('共通DBに施設表示用データがありません。');
+    // GitHub Pagesのmanifestだけが一時的に古い／取得不能でも、固定名のmaster本体が正常ならGASへ落とさない。
+    try{
+      const directUrl=new URL('recraft_alchemia_master.json',GITHUB_COMMON_DB_BASE);
+      directUrl.searchParams.set('_ra',`${Date.now()}_direct_${Math.random().toString(36).slice(2)}`);
+      const masterDocument=await facilityFetchGithubJson(directUrl.toString());
+      return facilityValidateGithubMaster(masterDocument,{master:'recraft_alchemia_master.json'});
+    }catch(directError){
+      if(usableMismatch)return usableMismatch;
+      throw new Error([lastError&&lastError.message,directError&&directError.message].filter(Boolean).join(' / ')||'GitHub共通DBを取得できませんでした。');
     }
-    return{manifest,document:masterDocument,data,version:manifestVersion||masterVersion};
   })();
   commonMasterPromise=task;
   try{return await task;}
@@ -539,7 +572,7 @@ async function loadCatalog(key,save,{force=false}={}){
         if(currentKey)localStorage.setItem(STORAGE_KEY,currentKey);
         else localStorage.removeItem(STORAGE_KEY);
       }
-      setStatus(`現在の解放範囲：${built.areaName||'初期エリア'}まで / GitHub共通DB${built.version?' v'+built.version:''}`,'ok');
+      setStatus(`現在の解放範囲：${built.areaName||'初期エリア'}まで / GitHub共通DB${built.version?' v'+built.version:''}${commonMaster.versionWarning?'（更新反映待ち）':''}`,commonMaster.versionWarning?'':'ok');
       render();
       return true;
     }catch(primaryError){
