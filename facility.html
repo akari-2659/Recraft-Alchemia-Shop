@@ -66,6 +66,7 @@ html{scrollbar-gutter:stable}
 @media(max-width:600px){.branch-table th,.branch-table td{min-width:165px;padding:7px}.branch-table .branch-table-label{min-width:128px;max-width:148px}.branch-table-node{width:148px}}
 
 /* v90.8.310: モンハン風派生図・武器種プルダウン・詳細モーダル */
+/* 派生線修正2: 分岐点を矢印手前へ固定し、矢印から枝線が伸びて見える重なりを防止 */
 .branch-controls{grid-template-columns:minmax(220px,1fr) minmax(190px,280px);align-items:end}
 .weapon-category-select-wrap{display:grid;gap:6px}.weapon-category-select-wrap label{font-size:12px;font-weight:800;color:var(--muted)}
 select{width:100%;border:1px solid var(--line);border-radius:12px;background:#fffdf8;padding:10px 36px 10px 12px;font:inherit;color:var(--ink)}
@@ -76,7 +77,7 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 .branch-graph-label.base{background:rgba(239,226,207,.98)}
 .branch-rank-band{z-index:0;border-radius:14px;background:linear-gradient(180deg,rgba(249,240,226,.5),rgba(255,253,248,.1));border:1px dashed rgba(205,180,146,.42)}
 .branch-graph-svg{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:visible}
-.branch-graph-edge{fill:none;stroke:#9a7652;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 0 #fff)}
+.branch-graph-edge{fill:none;stroke:#9a7652;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 0 #fff)}.branch-graph-trunk,.branch-graph-branch{stroke-linecap:butt}
 .branch-graph-node{z-index:3;align-self:center;display:flex;flex-direction:column;justify-content:space-between;gap:8px;width:176px;min-height:86px;padding:10px;border:1px solid #dfc4a3;border-radius:13px;background:#fffaf3;box-shadow:0 4px 11px rgba(80,50,20,.09)}
 .branch-graph-node.locked{background:repeating-linear-gradient(135deg,#fffaf2,#fffaf2 10px,#f2e6d5 10px,#f2e6d5 20px)}
 .branch-graph-node-name{font-weight:1000;line-height:1.4;overflow-wrap:anywhere}.branch-graph-node-rank{font-size:11px;color:var(--muted);font-weight:900}
@@ -839,23 +840,38 @@ function drawBranchConnections(){
     childrenByParent.get(parentName).children.push(child);
   });
   const paths=[];
+  const nodeGap=15;          // 矢印の先端と武器カードの間隔
+  const arrowClearance=38;   // 分岐点から矢印まで必ず空ける距離
+  const parentStub=22;       // 派生元カードから最初に伸ばす最短距離
   childrenByParent.forEach(({parent,children})=>{
     const pr=parent.getBoundingClientRect();
     const sx=pr.right-canvasRect.left,sy=pr.top-canvasRect.top+pr.height/2;
-    const points=children.map(child=>{const cr=child.getBoundingClientRect();return{ex:cr.left-canvasRect.left,ey:cr.top-canvasRect.top+cr.height/2};}).sort((a,b)=>a.ey-b.ey||a.ex-b.ex);
+    const points=children.map(child=>{
+      const cr=child.getBoundingClientRect();
+      const ex=cr.left-canvasRect.left;
+      return{ex,ey:cr.top-canvasRect.top+cr.height/2,endX:ex-nodeGap};
+    }).sort((a,b)=>Math.abs(a.ey-sy)-Math.abs(b.ey-sy)||a.endX-b.endX||a.ey-b.ey);
     if(points.length===1){
-      const {ex,ey}=points[0],trunkX=Math.max(sx+18,Math.min(ex-22,sx+34));
-      const d=ex>sx+42?`M ${sx} ${sy} H ${trunkX} V ${ey} H ${ex-9}`:`M ${sx} ${sy} H ${sx+20} V ${ey} H ${ex-9}`;
+      const {ey,endX}=points[0];
+      const bendX=Math.max(sx+parentStub,Math.min(endX-arrowClearance,sx+46));
+      const safeBendX=Math.min(bendX,endX-18);
+      const d=Math.abs(ey-sy)<1
+        ?`M ${sx} ${sy} H ${endX}`
+        :`M ${sx} ${sy} H ${safeBendX} V ${ey} H ${endX}`;
       paths.push(`<path class="branch-graph-edge" d="${d}" marker-end="url(#branchArrow)"></path>`);
       return;
     }
-    const minChildX=Math.min(...points.map(p=>p.ex));
-    const trunkX=Math.max(sx+18,Math.min(minChildX-22,sx+34));
+    // 親と同じ高さに最も近い派生先を主線とし、その矢印より十分手前で全枝を分岐させる。
+    const primary=points[0];
+    const earliestEndX=Math.min(...points.map(p=>p.endX));
+    const preferredBranchX=Math.min(primary.endX-arrowClearance,earliestEndX-arrowClearance);
+    const latestBranchX=earliestEndX-30;
+    const branchX=Math.min(latestBranchX,Math.max(sx+parentStub,preferredBranchX));
     const ys=[sy,...points.map(p=>p.ey)],minY=Math.min(...ys),maxY=Math.max(...ys);
-    paths.push(`<path class="branch-graph-edge" d="M ${sx} ${sy} H ${trunkX}${maxY>minY?` M ${trunkX} ${minY} V ${maxY}`:''}"></path>`);
-    points.forEach(({ex,ey})=>{
-      const endX=Math.max(trunkX+8,ex-9);
-      paths.push(`<path class="branch-graph-edge" d="M ${trunkX} ${ey} H ${endX}" marker-end="url(#branchArrow)"></path>`);
+    // 幹線は1本だけ。矢印そのものを分岐点にせず、矢印の38px以上手前に縦幹線を置く。
+    paths.push(`<path class="branch-graph-edge branch-graph-trunk" d="M ${sx} ${sy} H ${branchX}${maxY>minY?` M ${branchX} ${minY} V ${maxY}`:''}"></path>`);
+    points.forEach(({endX,ey})=>{
+      paths.push(`<path class="branch-graph-edge branch-graph-branch" d="M ${branchX} ${ey} H ${endX}" marker-end="url(#branchArrow)"></path>`);
     });
   });
   svg.innerHTML=`<defs><marker id="branchArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#9a7652"></path></marker></defs>${paths.join('')}`;
