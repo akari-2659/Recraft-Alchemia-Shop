@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.303</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.307</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -11,7 +11,33 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 
 .branch-controls{display:grid;gap:10px;margin:0 0 12px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#fffdf8}.branch-controls[hidden]{display:none}.branch-search{display:grid;grid-template-columns:minmax(220px,1fr);gap:6px}.branch-search label{font-size:12px;font-weight:800;color:var(--muted)}.weapon-category-tabs{display:flex;flex-wrap:wrap;gap:7px}.weapon-category-tabs button{background:#f1e4d1;color:var(--ink);border:1px solid var(--line);padding:8px 12px}.weapon-category-tabs button.active{background:var(--accent);color:#fff}.weapon-category-tabs .count{font-size:11px;opacity:.78;margin-left:4px}
 .branch-groups{display:grid;gap:12px}.branch-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.branch-group>summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:900;display:flex;gap:8px;align-items:center;justify-content:space-between;background:#f6e8d4}.branch-group>summary::-webkit-details-marker{display:none}.branch-group>summary::before{content:"▶";margin-right:7px;transition:transform .15s}.branch-group[open]>summary::before{transform:rotate(90deg)}.branch-summary-main{display:flex;gap:8px;align-items:center;flex-wrap:wrap;min-width:0}.branch-body{padding:13px;display:grid;gap:14px}.branch-line{display:grid;gap:8px;border-left:4px solid #b98956;padding:4px 0 4px 12px}.branch-node{position:relative;border:1px solid #e5d2b8;border-radius:14px;background:#fffaf3;padding:12px;margin-left:calc((var(--depth,1) - 1) * 22px)}.branch-node::before{content:"┗";position:absolute;left:-19px;top:12px;color:#9a7652;font-weight:900}.branch-node.locked{background:repeating-linear-gradient(135deg,#fffaf2,#fffaf2 12px,#f6ecdd 12px,#f6ecdd 24px)}.branch-node h3{margin:0 0 7px;font-size:16px}.performance{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.performance .chip{background:#e7f0e7;border-color:#bdd1bf}.base-weapons{display:grid;gap:8px;margin:0 0 12px}.base-weapon{border:1px solid #c9b18f;border-radius:15px;background:#fffdf8;overflow:hidden}.base-weapon>summary{cursor:pointer;list-style:none;padding:12px 14px;font-weight:900;background:#efe2cf}.base-weapon>summary::-webkit-details-marker{display:none}.base-weapon-body{padding:12px}.base-weapon-body dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 9px;margin:0;font-size:13px;line-height:1.6}.base-weapon-body dt{font-weight:800;color:#5f4935}.base-weapon-body dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.branch-node dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 9px;margin:0;font-size:13px;line-height:1.6}.branch-node dt{font-weight:800;color:#5f4935}.branch-node dd{margin:0;overflow-wrap:anywhere;white-space:pre-wrap}@media(max-width:520px){.branch-node{margin-left:calc((var(--depth,1) - 1) * 12px)}.branch-node dl{grid-template-columns:1fr}.branch-node dd{margin-bottom:5px}}
-.recipe-category-groups{display:grid;gap:12px}.recipe-category-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.recipe-category-group>summary{cursor:pointer;list-style:none;padding:13px 15px;font-weight:900;background:#f6e8d4}.recipe-category-group>summary::-webkit-details-marker{display:none}.recipe-category-body{padding:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:720px){.recipe-category-body{grid-template-columns:1fr}}</style>
+.recipe-category-groups{display:grid;gap:12px}.recipe-category-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.recipe-category-group>summary{cursor:pointer;list-style:none;padding:13px 15px;font-weight:900;background:#f6e8d4}.recipe-category-group>summary::-webkit-details-marker{display:none}.recipe-category-body{padding:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:720px){.recipe-category-body{grid-template-columns:1fr}}
+/* v90.8.307: 派生先遷移・10件ページング・折り畳み矢印固定 */
+html{scrollbar-gutter:stable}
+.branch-group>summary::before,.base-weapon>summary::before,.recipe-category-group>summary::before,.unlock-panel>summary::before{
+  content:"▶";display:inline-grid;place-items:center;flex:0 0 1.05rem;width:1.05rem;height:1.05rem;
+  margin:0 .42rem 0 0;line-height:1;font-size:.72rem;color:var(--accent);transform:rotate(0deg);
+  transform-origin:50% 50%;transition:transform .16s ease
+}
+.branch-group[open]>summary::before,.base-weapon[open]>summary::before,.recipe-category-group[open]>summary::before,.unlock-panel[open]>summary::before{transform:rotate(90deg)}
+.branch-group>summary,.base-weapon>summary,.recipe-category-group>summary,.unlock-panel>summary{display:flex;align-items:center}
+.branch-group>summary::before{margin-right:.42rem}
+.branch-summary-main{flex:1 1 auto}
+.branch-pager{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;padding:4px 0 1px}
+.branch-pager button{min-width:2.25rem;padding:7px 10px;background:#f1e4d1;color:var(--ink);border:1px solid var(--line)}
+.branch-pager button.active{background:var(--accent);color:#fff}
+.branch-pager button:disabled{opacity:.45}
+.branch-page-status{font-size:12px;color:var(--muted);font-weight:800;margin:0 3px}
+.next-branches{margin-top:12px;padding-top:10px;border-top:1px dashed #d8c3a5}
+.next-branches h4{margin:0 0 8px;font-size:13px;color:#5f4935}
+.next-branch-list{display:grid;gap:7px}
+.next-branch-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 9px;border:1px solid #e2cfb4;border-radius:11px;background:#fffdf8}
+.next-branch-name{font-weight:900;overflow-wrap:anywhere}
+.next-branch-row button{padding:7px 10px;flex:0 0 auto}
+.branch-node.branch-focus{animation:branchFocusPulse 1.8s ease;outline:3px solid rgba(169,111,55,.45);outline-offset:2px}
+@keyframes branchFocusPulse{0%,100%{box-shadow:none}35%{box-shadow:0 0 0 8px rgba(169,111,55,.16)}}
+@media(max-width:520px){.next-branch-row{align-items:flex-start;flex-direction:column}.next-branch-row button{width:100%}}
+</style>
 
 <style id="raMaintenanceV287">
 .build{font-size:12px}.hero{padding:14px!important}.hero h1{font-size:clamp(22px,3vw,32px)!important;margin-bottom:4px}.subtitle{font-size:.84rem;line-height:1.5}
@@ -23,7 +49,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 </style>
 </head>
 <body>
-<header><div class="hero"><div class="build">v90.8.303｜更新：2026年7月29日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="build">v90.8.307｜更新：2026年7月29日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>解放範囲</span><span id="unlockSummary">確認中</span></summary>
@@ -67,6 +93,8 @@ const SECTION_DEFS={
 };
 let catalog={smith:{sales:[],craft:[],materials:[],crystal:[],branches:[]},apothecary:{sales:[],alchemy:[],materials:[]},antique:{sales:[],scrolls:[]},eatery:{meals:[]}};
 let currentFacility='smith',currentSection='sales',currentKey='',currentWeaponCategory='',branchSearch='',currentRank='all',catalogSearch='';
+const BRANCH_PAGE_SIZE=10;
+let branchPageByKey=Object.create(null),openBranchKey='',pendingBranchFocus='';
 const $=id=>document.getElementById(id);
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function rankValue(v){return Math.max(1,Math.floor(Number(v)||1));}
@@ -487,11 +515,15 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState){
             const resultItem=itemByName[resultName]||null;
             return{
               locked,depth:branchDepth(r),
+              actualResultItem:resultName,
+              baseItem:String(r.baseItem||'').trim(),
               resultItem:locked?'？？？':resultName,
               rank:Number(r.rank)||1,
               requiredMaterials:facilityMaterialParts(r.requiredMaterials,itemByName,unlocked,!locked),
               price:r.price||'',
               difficulty:locked?'':(r.difficulty||''),
+              craftSkill:locked?'':(r.craftSkill||'細工'),
+              craftType:r.craftType||'武器派生',
               description:locked?'':(resultItem?(resultItem.description||''):(r.description||'')),
               effect:locked?'？？？':(resultItem?(resultItem.effect||''):(r.effect||'')),
               performance:locked?[]:facilityPerformance(resultItem),
@@ -531,6 +563,39 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState){
     const ao=Number(a.sortOrder)||999,bo=Number(b.sortOrder)||999;
     if(ao!==bo)return ao-bo;
     return String(a.category||'').localeCompare(String(b.category||''),'ja');
+  });
+
+  const branchNodeIndex=Object.create(null);
+  branchRows.forEach(cat=>{
+    (cat.branches||[]).forEach((branch,branchIndex)=>{
+      branch.key=`branch-${Number(cat.sortOrder)||999}-${branchIndex}`;
+      let nodeIndex=0;
+      (branch.lines||[]).forEach(line=>(line.nodes||[]).forEach(node=>{
+        node.category=cat.category;
+        node.branchKey=branch.key;
+        node.branchNodeIndex=nodeIndex++;
+        const actual=String(node.actualResultItem||node.resultItem||'').trim();
+        if(actual&&actual!=='？？？')branchNodeIndex[actual]=node;
+      }));
+    });
+  });
+  Object.keys(branchNodeIndex).forEach(name=>{
+    const node=branchNodeIndex[name];
+    node.nextBranches=[];
+  });
+  Object.keys(branchNodeIndex).forEach(name=>{
+    const child=branchNodeIndex[name];
+    const parent=branchNodeIndex[String(child.baseItem||'').trim()];
+    if(!parent)return;
+    parent.nextBranches.push({
+      locked:!!child.locked,
+      resultItem:child.locked?'？？？':child.resultItem,
+      rank:Number(child.rank)||1,
+      category:child.category,
+      branchKey:child.branchKey,
+      targetWeapon:child.locked?'':String(child.actualResultItem||child.resultItem||''),
+      targetPage:Math.floor((Number(child.branchNodeIndex)||0)/10)+1
+    });
   });
 
   return{
@@ -614,6 +679,13 @@ function recipeCatalog(rows){
   rows.forEach(r=>{const key=recipeCategoryLabel(r);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(r);});
   return `<div class="recipe-category-groups">${[...groups.entries()].map(([label,list],idx)=>`<details class="recipe-category-group" ${idx===0?'open':''}><summary>${esc(label)}（${list.length}）</summary><div class="recipe-category-body">${list.map(recipeCard).join('')}</div></details>`).join('')}</div>`;
 }
+function nextBranchesHtml(n){
+  if(n.locked||!Array.isArray(n.nextBranches)||!n.nextBranches.length)return'';
+  return `<section class="next-branches"><h4>次の派生先</h4><div class="next-branch-list">${n.nextBranches.map(next=>{
+    const title=`${esc(next.resultItem||'？？？')}　${next.locked?'':esc(rankLabel(next.rank))}`.trim();
+    return `<div class="next-branch-row"><span class="next-branch-name">${title}</span>${next.locked?'':`<button type="button" class="ghost" data-next-branch-detail data-target-category="${esc(next.category||'')}" data-target-branch="${esc(next.branchKey||'')}" data-target-weapon="${esc(next.targetWeapon||'')}" data-target-page="${Math.max(1,Number(next.targetPage)||1)}">詳細を見る</button>`}</div>`;
+  }).join('')}</div></section>`;
+}
 function branchNode(n){
   const pairs=[['必要素材',n.requiredMaterials||'未設定']];
   if(String(n.price||''))pairs.push(['施設依頼',`${n.price}G`]);
@@ -630,12 +702,40 @@ function branchNode(n){
     if(n.description)pairs.push(['説明',n.description]);
     if(n.effect)pairs.push(['効果',n.effect]);
   }else pairs.push(['効果','？？？']);
-  return `<article class="branch-node ${n.locked?'locked':''}" style="--depth:${Math.max(1,Number(n.depth)||1)}"><h3>${esc(n.resultItem||'？？？')}</h3><div class="chips"><span class="chip">${esc(rankLabel(n.rank))}</span>${n.locked?'<span class="chip">未解放</span>':''}</div>${!n.locked?performanceHtml(n.performance):''}<dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;
+  const nodeId=!n.locked?String(n.actualResultItem||n.resultItem||''):'';
+  return `<article class="branch-node ${n.locked?'locked':''}" ${nodeId?`data-branch-node-id="${esc(nodeId)}"`:''} style="--depth:${Math.max(1,Number(n.depth)||1)}"><h3>${esc(n.resultItem||'？？？')}</h3><div class="chips"><span class="chip">${esc(rankLabel(n.rank))}</span>${n.locked?'<span class="chip">未解放</span>':''}</div>${!n.locked?performanceHtml(n.performance):''}<dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>${nextBranchesHtml(n)}</article>`;
 }
 function baseWeaponCard(w){const rows=itemTextRows(w),chips=uniqueChips([w.itemCategory,w.equipSlot?`枠:${w.equipSlot}`:'']);return `<details class="base-weapon"><summary>初期武器：${esc(w.name||'名称未設定')}（${esc(rankLabel(w.rank))}）</summary><div class="base-weapon-body"><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${performanceHtml(w.performance)}<dl>${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></div></details>`;}
 function searchNorm(v){return String(v||'').normalize('NFKC').toLocaleLowerCase('ja').replace(/\s+/g,'');}
 function branchSearchText(branch){const parts=[branch.label];(branch.lines||[]).forEach(line=>(line.nodes||[]).forEach(n=>{parts.push(n.resultItem,n.requiredMaterials);}));return searchNorm(parts.filter(Boolean).join(' '));}
 function branchMatches(branch,query){return !query||branchSearchText(branch).includes(query);}
+function branchNodeCount(branch){return (branch.lines||[]).reduce((sum,line)=>sum+(line.nodes||[]).length,0);}
+function branchPageLines(branch,page){
+  const start=(page-1)*BRANCH_PAGE_SIZE,end=start+BRANCH_PAGE_SIZE;
+  let cursor=0;
+  return (branch.lines||[]).map(line=>{
+    const selected=(line.nodes||[]).filter(()=>{const index=cursor++;return index>=start&&index<end;});
+    return {...line,nodes:selected};
+  }).filter(line=>line.nodes.length);
+}
+function branchPager(branch,page,totalPages){
+  if(totalPages<=1)return'';
+  const key=String(branch.key||'');
+  const buttons=[];
+  buttons.push(`<button type="button" data-branch-page-key="${esc(key)}" data-branch-page="${page-1}" ${page<=1?'disabled':''}>前へ</button>`);
+  for(let p=1;p<=totalPages;p++)buttons.push(`<button type="button" data-branch-page-key="${esc(key)}" data-branch-page="${p}" class="${p===page?'active':''}">${p}</button>`);
+  buttons.push(`<button type="button" data-branch-page-key="${esc(key)}" data-branch-page="${page+1}" ${page>=totalPages?'disabled':''}>次へ</button>`);
+  return `<nav class="branch-pager" aria-label="派生武器ページ">${buttons.join('')}<span class="branch-page-status">${page} / ${totalPages}</span></nav>`;
+}
+function branchGroupHtml(branch,idx){
+  const total=branchNodeCount(branch),totalPages=Math.max(1,Math.ceil(total/BRANCH_PAGE_SIZE));
+  const key=String(branch.key||`branch-${idx}`);
+  let page=Math.max(1,Math.min(totalPages,Number(branchPageByKey[key])||1));
+  branchPageByKey[key]=page;
+  const lines=branchPageLines(branch,page);
+  const isOpen=openBranchKey?openBranchKey===key:idx===0;
+  return `<details class="branch-group" data-branch-key="${esc(key)}" ${isOpen?'open':''}><summary><span class="branch-summary-main"><span>${esc(branch.label||'？？？')}派生</span></span><span class="muted">${total}件</span></summary><div class="branch-body">${lines.map(line=>`<div class="branch-line">${(line.nodes||[]).map(branchNode).join('')}</div>`).join('')}${branchPager(branch,page,totalPages)}</div></details>`;
+}
 function branchCatalog(categories){
   if(!categories.length){$('weaponCategoryTabs').innerHTML='';return '<div class="empty">武器派生は登録されていません。</div>';}
   const query=searchNorm(branchSearch);
@@ -646,19 +746,32 @@ function branchCatalog(categories){
       const lines=(branch.lines||[]).map(line=>({...line,nodes:(line.nodes||[]).filter(rankMatches)})).filter(line=>line.nodes.length);
       return {...branch,lines};
     }).filter(branch=>branch.lines.length);
-    const count=baseWeapons.length+matched.reduce((sum,branch)=>sum+(branch.lines||[]).reduce((s,line)=>s+(line.nodes||[]).length,0),0);
+    const count=baseWeapons.length+matched.reduce((sum,branch)=>sum+branchNodeCount(branch),0);
     return {...cat,baseWeapons,matched,count};
   }).filter(cat=>cat.count>0);
   if(!available.length){$('weaponCategoryTabs').innerHTML='';return '<div class="empty">検索・★ランク条件に一致する武器派生はありません。</div>';}
-  if(!available.some(cat=>cat.category===currentWeaponCategory))currentWeaponCategory=available[0].category;
+  if(!available.some(cat=>cat.category===currentWeaponCategory)){currentWeaponCategory=available[0].category;openBranchKey='';}
   $('weaponCategoryTabs').innerHTML=available.map(cat=>`<button type="button" data-weapon-category="${esc(cat.category)}" class="${cat.category===currentWeaponCategory?'active':''}">${esc(cat.category)}<span class="count">${cat.count}</span></button>`).join('');
   const current=available.find(cat=>cat.category===currentWeaponCategory)||available[0];
   const bases=current.baseWeapons.length?`<div class="base-weapons">${current.baseWeapons.map(baseWeaponCard).join('')}</div>`:'';
-  const groups=current.matched.length?`<div class="branch-groups">${current.matched.map((branch,idx)=>`<details class="branch-group" ${idx===0?'open':''}><summary><span class="branch-summary-main"><span>${esc(branch.label||'？？？')}派生</span></span><span class="muted">${(branch.lines||[]).reduce((sum,line)=>sum+(line.nodes||[]).length,0)}件</span></summary><div class="branch-body">${(branch.lines||[]).map(line=>`<div class="branch-line">${(line.nodes||[]).map(branchNode).join('')}</div>`).join('')}</div></details>`).join('')}</div>`:'';
+  const groups=current.matched.length?`<div class="branch-groups">${current.matched.map(branchGroupHtml).join('')}</div>`:'';
   return bases+groups;
 }
+function focusPendingBranchNode(){
+  if(!pendingBranchFocus)return;
+  const targetName=pendingBranchFocus;
+  pendingBranchFocus='';
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    const node=[...document.querySelectorAll('[data-branch-node-id]')].find(el=>el.dataset.branchNodeId===targetName);
+    if(!node)return;
+    const group=node.closest('.branch-group');if(group)group.open=true;
+    node.classList.add('branch-focus');
+    node.scrollIntoView({behavior:'smooth',block:'center'});
+    setTimeout(()=>node.classList.remove('branch-focus'),1900);
+  }));
+}
 function renderTabs(){const defs=SECTION_DEFS[currentFacility];if(!defs.some(d=>d[0]===currentSection))currentSection=defs[0][0];$('sectionTabs').innerHTML=defs.map(([id,label])=>`<button data-section="${esc(id)}" class="${id===currentSection?'active':''}">${esc(label)}</button>`).join('');const cur=defs.find(d=>d[0]===currentSection);$('sectionTitle').textContent=cur[1];$('sectionDescription').textContent=cur[2];}
-function catalogRowMatches(row){const q=searchNorm(catalogSearch);if(!q)return true;return searchNorm(Object.values(row||{}).filter(v=>typeof v!=='object').join(' ')).includes(q);}function render(){renderTabs();const rows=(catalog[currentFacility]&&catalog[currentFacility][currentSection])||[];const branches=currentSection==='branches',scrolls=currentSection==='scrolls',crystal=currentSection==='crystal';$('branchControls').hidden=!branches;$('catalogSearchControls').hidden=branches;renderRankControls(rows,branches);const filtered=branches?rows:rows.filter(rankMatches).filter(catalogRowMatches);if($('catalogSearchCount'))$('catalogSearchCount').textContent=branches?'':`${filtered.length}件表示`;$('cards').className=branches?'':'cards';$('cards').innerHTML=branches?branchCatalog(rows):(filtered.length?(scrolls?filtered.map(scrollPriceCard).join(''):currentSection==='sales'?filtered.map(itemCard).join(''):crystal?filtered.map(crystalCard).join(''):recipeCatalog(filtered)):'<div class="empty">現在の検索・★ランク条件に一致する内容はありません。</div>');}
+function catalogRowMatches(row){const q=searchNorm(catalogSearch);if(!q)return true;return searchNorm(Object.values(row||{}).filter(v=>typeof v!=='object').join(' ')).includes(q);}function render(){renderTabs();const rows=(catalog[currentFacility]&&catalog[currentFacility][currentSection])||[];const branches=currentSection==='branches',scrolls=currentSection==='scrolls',crystal=currentSection==='crystal';$('branchControls').hidden=!branches;$('catalogSearchControls').hidden=branches;renderRankControls(rows,branches);const filtered=branches?rows:rows.filter(rankMatches).filter(catalogRowMatches);if($('catalogSearchCount'))$('catalogSearchCount').textContent=branches?'':`${filtered.length}件表示`;$('cards').className=branches?'':'cards';$('cards').innerHTML=branches?branchCatalog(rows):(filtered.length?(scrolls?filtered.map(scrollPriceCard).join(''):currentSection==='sales'?filtered.map(itemCard).join(''):crystal?filtered.map(crystalCard).join(''):recipeCatalog(filtered)):'<div class="empty">現在の検索・★ランク条件に一致する内容はありません。</div>');;if(branches)focusPendingBranchNode();}
 async function loadCatalog(key,save,{force=false}={}){
   setStatus('GitHub共通DBと解放範囲を確認しています。');
   $('applyKey').disabled=true;
@@ -704,8 +817,28 @@ $('applyKey').addEventListener('click',()=>loadCatalog($('unlockKey').value.trim
 $('unlockKey').addEventListener('keydown',e=>{if(e.key==='Enter')loadCatalog($('unlockKey').value.trim(),true);});
 $('resetKey').addEventListener('click',()=>{$('unlockKey').value='';loadCatalog('',true);});
 $('reloadDb').addEventListener('click',()=>loadCatalog(currentKey,false,{force:true}));
-document.addEventListener('click',e=>{const f=e.target.closest('[data-facility]');if(f){currentFacility=f.dataset.facility;currentSection=SECTION_DEFS[currentFacility][0][0];currentWeaponCategory='';currentRank='all';document.querySelectorAll('[data-facility]').forEach(b=>b.classList.toggle('active',b===f));render();return;}const s=e.target.closest('[data-section]');if(s){currentSection=s.dataset.section;currentRank='all';if(currentSection==='branches')currentWeaponCategory='';render();return;}const c=e.target.closest('[data-weapon-category]');if(c){currentWeaponCategory=c.dataset.weaponCategory||'';render();return;}const r=e.target.closest('[data-rank-filter]');if(r){currentRank=r.dataset.rankFilter||'all';render();}});
-$('branchSearch').addEventListener('input',e=>{branchSearch=e.target.value||'';render();});$('catalogSearch').addEventListener('input',e=>{catalogSearch=e.target.value||'';render();});
+document.addEventListener('click',e=>{
+  const next=e.target.closest('[data-next-branch-detail]');
+  if(next){
+    currentFacility='smith';currentSection='branches';currentWeaponCategory=next.dataset.targetCategory||'';
+    currentRank='all';branchSearch='';$('branchSearch').value='';
+    openBranchKey=next.dataset.targetBranch||'';
+    if(openBranchKey)branchPageByKey[openBranchKey]=Math.max(1,Number(next.dataset.targetPage)||1);
+    pendingBranchFocus=next.dataset.targetWeapon||'';
+    document.querySelectorAll('[data-facility]').forEach(b=>b.classList.toggle('active',b.dataset.facility==='smith'));
+    render();return;
+  }
+  const pager=e.target.closest('[data-branch-page-key]');
+  if(pager&&!pager.disabled){
+    const key=pager.dataset.branchPageKey||'';branchPageByKey[key]=Math.max(1,Number(pager.dataset.branchPage)||1);openBranchKey=key;render();return;
+  }
+  const f=e.target.closest('[data-facility]');if(f){currentFacility=f.dataset.facility;currentSection=SECTION_DEFS[currentFacility][0][0];currentWeaponCategory='';currentRank='all';openBranchKey='';branchPageByKey=Object.create(null);document.querySelectorAll('[data-facility]').forEach(b=>b.classList.toggle('active',b===f));render();return;}
+  const sectionButton=e.target.closest('[data-section]');if(sectionButton){currentSection=sectionButton.dataset.section;currentRank='all';openBranchKey='';branchPageByKey=Object.create(null);if(currentSection==='branches')currentWeaponCategory='';render();return;}
+  const c=e.target.closest('[data-weapon-category]');if(c){currentWeaponCategory=c.dataset.weaponCategory||'';openBranchKey='';branchPageByKey=Object.create(null);render();return;}
+  const r=e.target.closest('[data-rank-filter]');if(r){currentRank=r.dataset.rankFilter||'all';openBranchKey='';branchPageByKey=Object.create(null);render();}
+});
+document.addEventListener('toggle',e=>{const group=e.target&&e.target.closest?e.target.closest('.branch-group'):null;if(!group||e.target!==group)return;if(group.open)openBranchKey=group.dataset.branchKey||'';else if(openBranchKey===(group.dataset.branchKey||''))openBranchKey='';},true);
+$('branchSearch').addEventListener('input',e=>{branchSearch=e.target.value||'';openBranchKey='';branchPageByKey=Object.create(null);render();});$('catalogSearch').addEventListener('input',e=>{catalogSearch=e.target.value||'';render();});
 const saved=localStorage.getItem(STORAGE_KEY)||'';$('unlockKey').value=saved;loadCatalog(saved,false).then(ok=>{if(!ok&&saved){$('unlockKey').value='';localStorage.removeItem(STORAGE_KEY);loadCatalog('',false);}});
 </script>
 
