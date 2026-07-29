@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.296</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.298</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -23,7 +23,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 </style>
 </head>
 <body>
-<header><div class="hero"><div class="build">v90.8.296｜更新：2026年7月29日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="build">v90.8.298｜更新：2026年7月29日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>解放範囲</span><span id="unlockSummary">確認中</span></summary>
@@ -95,8 +95,9 @@ function craftingToolName(craftSkill='',craftType=''){
   const skill=String(craftSkill||'').trim();
   const type=String(craftType||'').trim();
   if(skill==='調合'||type==='調合') return '調合道具';
-  if(skill==='細工'||type==='細工'||type==='仕掛け製作') return '細工道具';
-  if(skill==='設計'||skill==='鍛冶'||['武器派生','防具製作','盾製作','装飾品製作','バッグ製作','矢筒製作','素材加工','鍛冶製作'].includes(type)) return '鍛冶道具';
+  if(type==='細工'||type==='仕掛け製作'||skill==='設計') return '細工道具';
+  if(['武器派生','防具製作','盾製作','装飾品製作','バッグ製作','矢筒製作','鍛冶製作','鍛冶'].includes(type)) return '鍛冶道具';
+  if(skill==='細工') return '細工道具';
   return '対応道具';
 }
 function uniqueChips(values){const seen=new Set();return values.map(v=>String(v??'').trim()).filter(v=>{if(!v)return false;const key=v.normalize('NFKC').replace(/\s+/g,'');if(seen.has(key))return false;seen.add(key);return true;});}
@@ -584,7 +585,7 @@ function recipeCard(r){
   if(!r.locked&&r.difficulty){
     const difficultyRows=craftingDifficultyRows(r.rank,r.difficulty);
     if(difficultyRows.length){
-      pairs.push(['使用技能',r.craftSkill||'設計']);
+      pairs.push(['製作技能',r.craftSkill||'細工']);
       pairs.push(['使用道具',craftingToolName(r.craftSkill,r.craftType)]);
       pairs.push(['基礎作成難易度',r.difficulty]);
       pairs.push(['道具使用時',craftingDifficultySummary(r.rank,r.difficulty)]);
@@ -620,7 +621,7 @@ function branchNode(n){
     if(n.difficulty){
       const difficultyRows=craftingDifficultyRows(n.rank,n.difficulty);
       if(difficultyRows.length){
-        pairs.push(['使用技能',n.craftSkill||'設計']);
+        pairs.push(['製作技能',n.craftSkill||'細工']);
         pairs.push(['使用道具',craftingToolName(n.craftSkill,n.craftType)]);
         pairs.push(['基礎作成難易度',n.difficulty]);
         pairs.push(['道具使用時',craftingDifficultySummary(n.rank,n.difficulty)]);
