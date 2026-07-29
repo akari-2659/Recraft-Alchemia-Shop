@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.299</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.303</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -23,7 +23,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 </style>
 </head>
 <body>
-<header><div class="hero"><div class="build">v90.8.299｜更新：2026年7月29日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="build">v90.8.303｜更新：2026年7月29日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>解放範囲</span><span id="unlockSummary">確認中</span></summary>
@@ -179,7 +179,7 @@ function facilitySafeItem(row){
     name:row.name||'',rank:Number(row.rank)||1,price:row.price||'',
     bundleCount:bundle.count,bundlePrice:bundle.price,
     itemType:row.itemType||'',itemCategory:row.itemCategory||'',dataKind:row.dataKind||'',
-    materialCategory:row.materialCategory||'',equipSlot:row.equipSlot||'',
+    materialType:row.materialType||'',materialCategory:row.materialCategory||'',equipSlot:row.equipSlot||'',
     guaranteeUpgradeMaxRank:row.guaranteeUpgradeMaxRank||'',
     description:row.description||'',effect:row.effect||'',
     performance:facilityPerformance(row)
@@ -191,7 +191,7 @@ function facilitySafeShopRecipe(row){
     name:resultName+'のレシピ',rank:Number(row.rank)||1,price:row.recipePrice||'',
     itemType:'レシピ',
     itemCategory:[row.craftType,row.category].map(v=>String(v||'').trim()).filter(Boolean).join(' / '),
-    dataKind:'アイテム',materialCategory:'',equipSlot:'',guaranteeUpgradeMaxRank:'',
+    dataKind:'アイテム',materialType:'',materialCategory:'',equipSlot:'',guaranteeUpgradeMaxRank:'',
     description:row.description||'',effect:row.effect||'',performance:[]
   };
 }
@@ -572,7 +572,7 @@ async function loadLegacyCatalog(key){
 
 function performanceHtml(rows){return Array.isArray(rows)&&rows.length?`<div class="performance">${rows.map(x=>`<span class="chip">${esc(x.label)} ${esc(x.value)}</span>`).join('')}</div>`:'';}
 function itemTextRows(r){return [['説明',r.description],['効果',r.effect]].filter(x=>String(x[1]||'').trim());}
-function itemCard(r){const chips=uniqueChips([rankLabel(r.rank),r.itemType||r.dataKind||'',r.itemCategory||r.materialCategory||'',r.equipSlot?`枠:${r.equipSlot}`:'']);const bundleCount=Number(r.bundleCount)||0,bundlePrice=Number(r.bundlePrice)||0;const rows=[[bundleCount?'単品価格':'価格',String(r.price||'')?`${r.price}G`:'未設定'],...(bundleCount&&bundlePrice?[['まとめ買い',`${bundleCount}本セット ${bundlePrice}G`]]:[]),...itemTextRows(r)];return `<article class="card"><h3>${esc(r.name)}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<dl>${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
+function itemCard(r){const chips=uniqueChips([rankLabel(r.rank),r.dataKind==='素材'?(r.materialType||'素材'):(r.itemType||r.dataKind||''),r.dataKind==='素材'?(r.materialCategory||''):(r.itemCategory||r.materialCategory||''),r.equipSlot?`枠:${r.equipSlot}`:'']);const bundleCount=Number(r.bundleCount)||0,bundlePrice=Number(r.bundlePrice)||0;const rows=[[bundleCount?'単品価格':'価格',String(r.price||'')?`${r.price}G`:'未設定'],...(bundleCount&&bundlePrice?[['まとめ買い',`${bundleCount}本セット ${bundlePrice}G`]]:[]),...itemTextRows(r)];return `<article class="card"><h3>${esc(r.name)}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<dl>${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
 function scrollPriceCard(r){const price=String(r.price||'')?`${r.price}G`:'未設定';const title=String(r.name||`未鑑定の${r.type||'術式'}スクロール`).trim();return `<article class="card"><h3>${esc(title)}：${esc(rankLabel(r.rank))}</h3><div class="chips"><span class="chip">${esc(r.type||'術式')}</span><span class="chip">${esc(rankLabel(r.rank))}</span><span class="chip">ランダム販売</span></div><dl><dt>価格</dt><dd>${esc(price)}</dd></dl></article>`;}
 function crystalCard(r){const chips=uniqueChips([rankLabel(r.rank),'スキルクリスタル',r.craftType]);const pairs=[['強化段階',`${r.baseItem||'?'} → ${r.resultItem||'?'}`],['必要素材',r.requiredMaterials||'未設定'],['強化費用',String(r.price||'')?`${r.price}G`:'未設定']];if(r.description)pairs.push(['説明',r.description]);if(r.effect)pairs.push(['効果',r.effect]);return `<article class="card"><h3>${esc(r.name||'クリスタル強化')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
 function recipeCard(r){
