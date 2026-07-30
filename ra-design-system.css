@@ -1535,3 +1535,144 @@ body.ra-facility :is(.sales-category-groups,.recipe-category-groups) {
   width:100%;
   min-width:0;
 }
+
+
+/* v90.8.318 mobile weapon detail modal hotfix */
+html.weapon-modal-open,
+html.weapon-modal-open body {
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+}
+body.ra-facility .weapon-modal {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  padding: max(14px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) max(14px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left)) !important;
+}
+body.ra-facility .weapon-modal-dialog {
+  display: flex !important;
+  flex-direction: column !important;
+  width: min(720px, 100%) !important;
+  max-height: min(88dvh, 900px) !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
+body.ra-facility .weapon-modal-header {
+  position: relative !important;
+  top: auto !important;
+  z-index: 3 !important;
+  flex: 0 0 auto !important;
+  min-width: 0 !important;
+  padding: 14px 126px 14px 18px !important;
+}
+body.ra-facility .weapon-modal-header > div {
+  min-width: 0 !important;
+}
+body.ra-facility .weapon-modal-header h3 {
+  overflow-wrap: anywhere !important;
+}
+body.ra-facility .weapon-modal-header::after {
+  right: 66px !important;
+  width: 48px !important;
+  height: 46px !important;
+  opacity: .18 !important;
+}
+body.ra-facility .weapon-modal-close {
+  position: absolute !important;
+  top: 10px !important;
+  right: 12px !important;
+  z-index: 5 !important;
+  display: grid !important;
+  place-items: center !important;
+  flex: none !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  max-width: 42px !important;
+  height: 42px !important;
+  min-height: 42px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  line-height: 1 !important;
+  transform: none !important;
+}
+body.ra-facility .weapon-modal-close:hover:not(:disabled),
+body.ra-facility .weapon-modal-close:active:not(:disabled) {
+  transform: none !important;
+}
+body.ra-facility .weapon-modal-body {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 15px !important;
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  overscroll-behavior-y: contain !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-y !important;
+  scrollbar-gutter: stable !important;
+}
+body.ra-facility .weapon-modal-body > * {
+  flex: 0 0 auto !important;
+  min-height: auto !important;
+}
+body.ra-facility .weapon-modal-body .weapon-modal-details {
+  overflow: visible !important;
+}
+@media (max-width: 720px) {
+  body.ra-facility .weapon-modal {
+    align-items: stretch !important;
+    padding: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left)) !important;
+  }
+  body.ra-facility .weapon-modal-dialog {
+    width: 100% !important;
+    height: calc(100vh - 16px) !important;
+    height: calc(100dvh - 16px) !important;
+    max-height: calc(100vh - 16px) !important;
+    max-height: calc(100dvh - 16px) !important;
+    border-radius: 14px !important;
+  }
+  body.ra-facility .weapon-modal-header {
+    min-height: 66px !important;
+    padding: 11px 58px 10px 14px !important;
+  }
+  body.ra-facility .weapon-modal-header::after {
+    display: none !important;
+  }
+  body.ra-facility .weapon-modal-header .muted {
+    font-size: 11px !important;
+    line-height: 1.35 !important;
+  }
+  body.ra-facility .weapon-modal-header h3 {
+    margin-top: 1px !important;
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+  }
+  body.ra-facility .weapon-modal-close {
+    top: 10px !important;
+    right: 10px !important;
+    width: 40px !important;
+    min-width: 40px !important;
+    max-width: 40px !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    font-size: 22px !important;
+  }
+  body.ra-facility .weapon-modal-body {
+    padding: 14px 14px calc(22px + env(safe-area-inset-bottom)) !important;
+  }
+}
+
+
+/* v90.8.318 modal initial-state fix 2
+   Keep the backdrop completely absent while the native hidden state is set.
+   This must come after the flex modal layout because that rule uses !important. */
+body.ra-facility .weapon-modal[hidden],
+body.ra-facility .weapon-modal[aria-hidden="true"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

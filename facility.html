@@ -83,7 +83,7 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 .branch-graph-node.locked{background:repeating-linear-gradient(135deg,#fffaf2,#fffaf2 10px,#f2e6d5 10px,#f2e6d5 20px)}
 .branch-graph-node-name{font-weight:1000;line-height:1.4;overflow-wrap:anywhere}.branch-graph-node-rank{font-size:11px;color:var(--muted);font-weight:900}
 .branch-graph-node button{width:100%;padding:7px 9px;font-size:12px}.branch-graph-node.branch-focus{outline:3px solid rgba(169,111,55,.45);outline-offset:2px}
-.weapon-modal[hidden]{display:none}.weapon-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:18px;background:rgba(35,25,17,.56);backdrop-filter:blur(4px)}
+.weapon-modal[hidden]{display:none!important}.weapon-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:18px;background:rgba(35,25,17,.56);backdrop-filter:blur(4px)}
 .weapon-modal-dialog{width:min(720px,100%);max-height:min(88vh,900px);overflow:auto;border:1px solid #d4b895;border-radius:20px;background:#fffaf0;box-shadow:0 24px 70px rgba(35,22,12,.34)}
 .weapon-modal-header{position:sticky;top:0;z-index:2;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:16px 18px;border-bottom:1px solid #e3cfb4;background:rgba(255,250,240,.97);backdrop-filter:blur(8px)}
 .weapon-modal-header h3{margin:2px 0 0;font-size:22px}.weapon-modal-close{flex:0 0 auto;width:42px;height:42px;padding:0;border-radius:50%;font-size:24px;line-height:1}
@@ -106,10 +106,10 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 @media(max-width:720px){.build{text-align:left}.hero{padding:11px!important}.subtitle{display:none}.section-tabs{top:58px}.catalog-search-controls{grid-template-columns:1fr}.catalog-search-controls label,.catalog-search-controls span{font-size:.75rem}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.318-routefix1">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.318-modalfix2">
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.318｜更新：2026年7月30日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.318｜更新：2026年7月31日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>解放範囲</span><span id="unlockSummary">確認中</span></summary>
@@ -1079,9 +1079,37 @@ function weaponModalHtml(entry){
 }
 function openWeaponModal(name,trigger=null){
   const entry=branchDetailIndex[String(name||'').trim()];if(!entry||entry.locked)return;
-  const modal=$('weaponDetailModal');if(!weaponModalLastFocus&&trigger)weaponModalLastFocus=trigger;$('weaponModalTitle').textContent=`${entry.actualResultItem||entry.name||entry.resultItem||'武器詳細'}　${rankLabel(entry.rank)}`;$('weaponModalBody').innerHTML=weaponModalHtml(entry);modal.hidden=false;modal.setAttribute('aria-hidden','false');requestAnimationFrame(()=>modal.querySelector('[data-close-weapon-modal]')?.focus());
+  const modal=$('weaponDetailModal');
+  const body=$('weaponModalBody');
+  if(!weaponModalLastFocus&&trigger)weaponModalLastFocus=trigger;
+  $('weaponModalTitle').textContent=`${entry.actualResultItem||entry.name||entry.resultItem||'武器詳細'}　${rankLabel(entry.rank)}`;
+  body.innerHTML=weaponModalHtml(entry);
+  body.scrollTop=0;
+  modal.hidden=false;
+  modal.setAttribute('aria-hidden','false');
+  document.documentElement.classList.add('weapon-modal-open');
+  requestAnimationFrame(()=>{
+    body.scrollTop=0;
+    modal.querySelector('[data-close-weapon-modal]')?.focus({preventScroll:true});
+  });
 }
-function closeWeaponModal(){const modal=$('weaponDetailModal');if(modal.hidden)return;modal.hidden=true;modal.setAttribute('aria-hidden','true');const focus=weaponModalLastFocus;weaponModalLastFocus=null;if(focus&&document.contains(focus))focus.focus();}
+function closeWeaponModal(options={}){
+  const modal=$('weaponDetailModal');
+  if(modal){
+    modal.hidden=true;
+    modal.setAttribute('aria-hidden','true');
+  }
+  document.documentElement.classList.remove('weapon-modal-open');
+  const focus=weaponModalLastFocus;weaponModalLastFocus=null;
+  if(options.restoreFocus!==false&&focus&&document.contains(focus))focus.focus({preventScroll:true});
+}
+function resetWeaponModalState(){
+  closeWeaponModal({restoreFocus:false});
+  const body=$('weaponModalBody');
+  if(body){body.innerHTML='';body.scrollTop=0;}
+}
+resetWeaponModalState();
+window.addEventListener('pageshow',resetWeaponModalState);
 function branchCatalog(categories){
   const select=$('weaponCategorySelect');
   if(!categories.length){select.innerHTML='';branchDetailIndex=Object.create(null);return '<div class="empty">武器派生は登録されていません。</div>';}
