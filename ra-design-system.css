@@ -974,3 +974,60 @@ body.ra-facility .branch-graph-node-locked-label {
     transition: none !important;
   }
 }
+
+
+/* Branch label integrity: keep the full "派生" suffix on one horizontal line. */
+body.ra-facility .branch-graph-canvas {
+  --branch-label-width: 64px !important;
+}
+body.ra-facility .branch-graph-label {
+  width: var(--branch-label-width) !important;
+  min-width: var(--branch-label-width) !important;
+  max-width: var(--branch-label-width) !important;
+  padding: 1px 3px !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+  line-height: 1.05 !important;
+}
+body.ra-facility .branch-graph-label > span {
+  display: block;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+body.ra-facility .branch-graph-scroll.branch-labels-collapsed .branch-graph-canvas {
+  --branch-label-width: 20px !important;
+}
+body.ra-facility .branch-graph-scroll.branch-labels-collapsed .branch-graph-label {
+  min-width: 20px !important;
+  max-width: 20px !important;
+  width: 20px !important;
+  padding: 0 !important;
+}
+body.ra-facility .branch-graph-scroll.branch-labels-collapsed .branch-graph-label > span {
+  display: none !important;
+}
+body.ra-facility .branch-label-toggle {
+  min-height: 34px;
+  padding: 6px 10px !important;
+}
+@media (max-width: 720px) {
+  body.ra-facility .branch-graph-canvas {
+    --branch-label-width: 60px !important;
+  }
+  body.ra-facility .branch-graph-label {
+    width: var(--branch-label-width) !important;
+    min-width: var(--branch-label-width) !important;
+    max-width: var(--branch-label-width) !important;
+    font-size: 9.5px !important;
+  }
+  body.ra-facility .branch-label-toggle-wrap {
+    grid-template-columns: max-content minmax(0,1fr);
+    align-items: center;
+  }
+  body.ra-facility .branch-label-toggle-label {
+    margin: 0;
+  }
+}
