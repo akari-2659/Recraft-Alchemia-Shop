@@ -106,10 +106,10 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 @media(max-width:720px){.build{text-align:left}.hero{padding:11px!important}.subtitle{display:none}.section-tabs{top:58px}.catalog-search-controls{grid-template-columns:1fr}.catalog-search-controls label,.catalog-search-controls span{font-size:.75rem}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.318-routefix1">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.318-modalfix1">
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.318｜更新：2026年7月30日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.318｜更新：2026年7月31日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>解放範囲</span><span id="unlockSummary">確認中</span></summary>
@@ -1079,9 +1079,27 @@ function weaponModalHtml(entry){
 }
 function openWeaponModal(name,trigger=null){
   const entry=branchDetailIndex[String(name||'').trim()];if(!entry||entry.locked)return;
-  const modal=$('weaponDetailModal');if(!weaponModalLastFocus&&trigger)weaponModalLastFocus=trigger;$('weaponModalTitle').textContent=`${entry.actualResultItem||entry.name||entry.resultItem||'武器詳細'}　${rankLabel(entry.rank)}`;$('weaponModalBody').innerHTML=weaponModalHtml(entry);modal.hidden=false;modal.setAttribute('aria-hidden','false');requestAnimationFrame(()=>modal.querySelector('[data-close-weapon-modal]')?.focus());
+  const modal=$('weaponDetailModal');
+  const body=$('weaponModalBody');
+  if(!weaponModalLastFocus&&trigger)weaponModalLastFocus=trigger;
+  $('weaponModalTitle').textContent=`${entry.actualResultItem||entry.name||entry.resultItem||'武器詳細'}　${rankLabel(entry.rank)}`;
+  body.innerHTML=weaponModalHtml(entry);
+  body.scrollTop=0;
+  modal.hidden=false;
+  modal.setAttribute('aria-hidden','false');
+  document.documentElement.classList.add('weapon-modal-open');
+  requestAnimationFrame(()=>{
+    body.scrollTop=0;
+    modal.querySelector('[data-close-weapon-modal]')?.focus({preventScroll:true});
+  });
 }
-function closeWeaponModal(){const modal=$('weaponDetailModal');if(modal.hidden)return;modal.hidden=true;modal.setAttribute('aria-hidden','true');const focus=weaponModalLastFocus;weaponModalLastFocus=null;if(focus&&document.contains(focus))focus.focus();}
+function closeWeaponModal(){
+  const modal=$('weaponDetailModal');if(modal.hidden)return;
+  modal.hidden=true;modal.setAttribute('aria-hidden','true');
+  document.documentElement.classList.remove('weapon-modal-open');
+  const focus=weaponModalLastFocus;weaponModalLastFocus=null;
+  if(focus&&document.contains(focus))focus.focus({preventScroll:true});
+}
 function branchCatalog(categories){
   const select=$('weaponCategorySelect');
   if(!categories.length){select.innerHTML='';branchDetailIndex=Object.create(null);return '<div class="empty">武器派生は登録されていません。</div>';}
