@@ -519,7 +519,7 @@ body.ra-app .toast { color: var(--ra-ink); border-color: #9c8048 !important; bac
   }
 }
 
-/* v90.8.313 legibility + compact weapon tree revision */
+/* v90.8.315 legibility + compact weapon tree revision */
 :root {
   --ra-desk: #e6dfd2;
   --ra-desk-2: #f2ece1;
@@ -814,7 +814,7 @@ body.ra-facility .weapon-modal-header h3 { color: #2a414f !important; }
 }
 
 
-/* v90.8.313 UI performance and spacing pass */
+/* v90.8.315 UI performance and spacing pass */
 /* Large disclosures use a paint-only fade instead of intrinsic-height interpolation. */
 body.ra-app details::details-content {
   block-size: auto !important;
@@ -1015,7 +1015,7 @@ body.ra-facility .branch-label-side-toggle {
   line-height: 1 !important;
 }
 
-/* v90.8.313: progression-based branch graph without duplicate rank headers. */
+/* v90.8.315: progression-based branch graph without duplicate rank headers. */
 body.ra-facility .branch-graph-canvas {
   justify-content: center !important;
   gap: 10px 26px !important;
@@ -1032,5 +1032,94 @@ body.ra-facility .branch-graph-node {
   body.ra-facility .branch-graph-canvas {
     gap: 9px 20px !important;
     padding: 6px 12px 18px 6px !important;
+  }
+}
+
+
+/* v90.8.315: designed branch selectors, equal control height, scroll chaining, and cleaner graph spacing. */
+body.ra-facility .branch-controls {
+  align-items: end !important;
+  padding: 13px 14px !important;
+  border: 1px solid #a98b58 !important;
+  background:
+    linear-gradient(135deg, rgba(180,142,79,.09), transparent 30%, transparent 72%, rgba(97,127,145,.075)),
+    repeating-linear-gradient(0deg, rgba(80,62,35,.024) 0 1px, transparent 1px 25px),
+    linear-gradient(180deg, #f8f1e3, #eadfca) !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.82), 0 4px 11px rgba(66,50,30,.13) !important;
+}
+body.ra-facility :is(.branch-search,.weapon-category-select-wrap) {
+  position: relative;
+  display: grid !important;
+  grid-template-rows: 20px 44px !important;
+  gap: 5px !important;
+  min-width: 0;
+}
+body.ra-facility :is(.branch-search,.weapon-category-select-wrap) label {
+  display: flex;
+  align-items: center;
+  min-height: 20px;
+  margin: 0 !important;
+  color: #43525b !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: .025em;
+}
+body.ra-facility :is(#branchSearch,#weaponCategorySelect) {
+  width: 100% !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  max-height: 44px !important;
+  margin: 0 !important;
+  padding-top: 9px !important;
+  padding-bottom: 9px !important;
+  line-height: 24px !important;
+  border: 1px solid #887145 !important;
+  border-radius: 7px !important;
+  box-shadow: inset 0 1px 2px rgba(67,49,24,.12), 0 1px 0 rgba(255,255,255,.82) !important;
+}
+body.ra-facility #branchSearch {
+  padding-left: 13px !important;
+  padding-right: 13px !important;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.96), rgba(246,238,220,.88)),
+    repeating-linear-gradient(0deg, rgba(81,63,34,.018) 0 1px, transparent 1px 19px) !important;
+}
+body.ra-facility #weaponCategorySelect {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  padding-left: 13px !important;
+  padding-right: 48px !important;
+  background-color: #fffdf6 !important;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #405a68 50%),
+    linear-gradient(135deg, #405a68 50%, transparent 50%),
+    linear-gradient(180deg, rgba(222,207,174,.58), rgba(184,159,108,.34)),
+    linear-gradient(180deg, rgba(255,255,255,.96), rgba(246,238,220,.88)) !important;
+  background-position:
+    calc(100% - 20px) calc(50% - 1px),
+    calc(100% - 14px) calc(50% - 1px),
+    100% 0,
+    0 0 !important;
+  background-size: 6px 6px, 6px 6px, 40px 100%, 100% 100% !important;
+  background-repeat: no-repeat !important;
+}
+body.ra-facility :is(#branchSearch,#weaponCategorySelect):hover {
+  border-color: #5f4d2e !important;
+}
+body.ra-facility :is(#branchSearch,#weaponCategorySelect):focus {
+  border-color: #536f80 !important;
+  box-shadow: 0 0 0 3px rgba(83,111,128,.20), inset 0 1px 2px rgba(67,49,24,.08) !important;
+}
+body.ra-facility .branch-graph-scroll,
+body.ra-facility .branch-table-scroll {
+  overscroll-behavior: auto !important;
+  overscroll-behavior-y: auto !important;
+}
+body.ra-facility .branch-graph-canvas {
+  row-gap: 12px !important;
+}
+@media (max-width: 720px) {
+  body.ra-facility :is(.branch-search,.weapon-category-select-wrap) {
+    grid-template-rows: 20px 44px !important;
   }
 }
