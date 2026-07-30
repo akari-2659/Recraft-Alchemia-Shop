@@ -430,13 +430,7 @@ body.ra-facility .branch-graph-scroll {
     #fffaf0 !important;
   box-shadow: inset 0 0 0 3px rgba(226,198,116,.23), var(--ra-shadow-sm) !important;
 }
-body.ra-facility .branch-graph-rank {
-  color: #fff7d8 !important;
-  background: var(--ra-navy) !important;
-  border: 1px solid #172a3e !important;
-  box-shadow: 0 2px 5px rgba(18,28,39,.25) !important;
-  font-weight: 800 !important;
-}
+body.ra-facility .branch-graph-rank { display: none !important; }
 body.ra-facility .branch-graph-label {
   color: #2d2417 !important;
   background: #dfca8d !important;
@@ -445,10 +439,7 @@ body.ra-facility .branch-graph-label {
   font-weight: 800 !important;
 }
 body.ra-facility .branch-graph-label.base { background: #c9ad65 !important; }
-body.ra-facility .branch-rank-band {
-  background: linear-gradient(180deg, rgba(226,198,116,.18), rgba(255,250,240,.02)) !important;
-  border-color: rgba(125,96,44,.34) !important;
-}
+body.ra-facility .branch-rank-band { display: none !important; }
 body.ra-facility .branch-graph-edge {
   stroke: #263e58 !important;
   stroke-width: 2.25 !important;
@@ -681,18 +672,11 @@ body.ra-facility .branch-graph-scroll {
 }
 body.ra-facility .branch-graph-canvas {
   --branch-label-width: 68px !important;
-  gap: 14px 18px !important;
-  padding: 8px !important;
+  justify-content: center !important;
+  gap: 10px 28px !important;
+  padding: 8px 18px 22px 8px !important;
 }
-body.ra-facility .branch-graph-rank {
-  min-height: 30px !important;
-  padding: 4px 7px !important;
-  color: #fff !important;
-  background: #698696 !important;
-  border-color: #4f6e7f !important;
-  box-shadow: 0 1px 4px rgba(50,72,84,.17) !important;
-  font-size: 12px !important;
-}
+body.ra-facility .branch-graph-rank { display: none !important; }
 body.ra-facility .branch-graph-label {
   min-width: 0 !important;
   width: var(--branch-label-width) !important;
@@ -706,16 +690,14 @@ body.ra-facility .branch-graph-label {
   letter-spacing: 0 !important;
 }
 body.ra-facility .branch-graph-label.base { background: #ddcba7 !important; }
-body.ra-facility .branch-rank-band {
-  background: linear-gradient(180deg, rgba(105,134,150,.08), rgba(255,255,255,0)) !important;
-  border-color: rgba(102,125,137,.18) !important;
-}
+body.ra-facility .branch-rank-band { display: none !important; }
 body.ra-facility .branch-graph-edge {
   stroke: #496675 !important;
   stroke-width: 2.15 !important;
   filter: drop-shadow(0 1px 0 #fff) !important;
 }
 body.ra-facility .branch-graph-node {
+  justify-self: center !important;
   width: 164px !important;
   min-height: 48px !important;
   padding: 5px 6px !important;
@@ -812,8 +794,8 @@ body.ra-facility .weapon-modal-header h3 { color: #2a414f !important; }
   }
   body.ra-facility .branch-graph-canvas {
     --branch-label-width: 56px !important;
-    gap: 10px 14px !important;
-    padding: 6px !important;
+    gap: 9px 20px !important;
+    padding: 6px 12px 18px 6px !important;
   }
   body.ra-facility .branch-graph-label {
     width: var(--branch-label-width) !important;
@@ -998,20 +980,16 @@ body.ra-facility .branch-graph-label > span {
   word-break: keep-all !important;
 }
 body.ra-facility .branch-graph-scroll.branch-labels-collapsed .branch-graph-canvas {
-  --branch-label-width: 20px !important;
+  --branch-label-width: 28px !important;
 }
 body.ra-facility .branch-graph-scroll.branch-labels-collapsed .branch-graph-label {
-  min-width: 20px !important;
-  max-width: 20px !important;
-  width: 20px !important;
+  min-width: 28px !important;
+  max-width: 28px !important;
+  width: 28px !important;
   padding: 0 !important;
 }
 body.ra-facility .branch-graph-scroll.branch-labels-collapsed .branch-graph-label > span {
   display: none !important;
-}
-body.ra-facility .branch-label-toggle {
-  min-height: 34px;
-  padding: 6px 10px !important;
 }
 @media (max-width: 720px) {
   body.ra-facility .branch-graph-canvas {
@@ -1023,11 +1001,36 @@ body.ra-facility .branch-label-toggle {
     max-width: var(--branch-label-width) !important;
     font-size: 9.5px !important;
   }
-  body.ra-facility .branch-label-toggle-wrap {
-    grid-template-columns: max-content minmax(0,1fr);
-    align-items: center;
-  }
-  body.ra-facility .branch-label-toggle-label {
-    margin: 0;
+}
+
+
+/* Branch label inline toggle: placed in the graph's upper-left blank cell. */
+body.ra-facility .branch-label-side-toggle {
+  min-width: 0 !important;
+  width: 100% !important;
+  height: 30px !important;
+  padding: 0 !important;
+  border-radius: 0 8px 8px 0 !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+}
+
+/* v90.8.312: progression-based branch graph without duplicate rank headers. */
+body.ra-facility .branch-graph-canvas {
+  justify-content: center !important;
+  gap: 10px 26px !important;
+  padding: 8px 18px 22px 8px !important;
+}
+body.ra-facility .branch-graph-rank,
+body.ra-facility .branch-rank-band {
+  display: none !important;
+}
+body.ra-facility .branch-graph-node {
+  justify-self: center !important;
+}
+@media (max-width: 720px) {
+  body.ra-facility .branch-graph-canvas {
+    gap: 9px 20px !important;
+    padding: 6px 12px 18px 6px !important;
   }
 }
