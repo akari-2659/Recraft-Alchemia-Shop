@@ -519,7 +519,7 @@ body.ra-app .toast { color: var(--ra-ink); border-color: #9c8048 !important; bac
   }
 }
 
-/* v90.8.311 legibility + compact weapon tree revision */
+/* v90.8.313 legibility + compact weapon tree revision */
 :root {
   --ra-desk: #e6dfd2;
   --ra-desk-2: #f2ece1;
@@ -814,7 +814,7 @@ body.ra-facility .weapon-modal-header h3 { color: #2a414f !important; }
 }
 
 
-/* v90.8.311 UI performance and spacing pass */
+/* v90.8.313 UI performance and spacing pass */
 /* Large disclosures use a paint-only fade instead of intrinsic-height interpolation. */
 body.ra-app details::details-content {
   block-size: auto !important;
@@ -1015,7 +1015,7 @@ body.ra-facility .branch-label-side-toggle {
   line-height: 1 !important;
 }
 
-/* v90.8.312: progression-based branch graph without duplicate rank headers. */
+/* v90.8.313: progression-based branch graph without duplicate rank headers. */
 body.ra-facility .branch-graph-canvas {
   justify-content: center !important;
   gap: 10px 26px !important;
