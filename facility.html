@@ -106,7 +106,7 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 @media(max-width:720px){.build{text-align:left}.hero{padding:11px!important}.subtitle{display:none}.section-tabs{top:58px}.catalog-search-controls{grid-template-columns:1fr}.catalog-search-controls label,.catalog-search-controls span{font-size:.75rem}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.318-branchgraph1">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.318-routefix1">
 </head>
 <body class="ra-app ra-player ra-facility">
 <header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.318｜更新：2026年7月30日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
@@ -994,10 +994,9 @@ function drawBranchConnections(){
         return group.every(p=>!segmentHitsNode(anchorX,p.ey,p.endX,p.ey,new Set([parent,p.child])));
       });
       if(cleanAnchor!=null){
-        paths.push(`<path class="branch-graph-edge branch-graph-trunk" data-edge-from="${esc(parentName)}" d="M ${cleanAnchor} ${startY} V ${endY}"></path>`);
         group.forEach(({child,ey,endX})=>{
           const childName=child.dataset.weaponNode||'';
-          paths.push(`<path class="branch-graph-edge branch-graph-branch" data-edge-from="${esc(parentName)}" data-edge-to="${esc(childName)}" d="M ${cleanAnchor} ${ey} H ${endX}" marker-end="url(#branchArrow)"></path>`);
+          paths.push(`<path class="branch-graph-edge" data-edge-from="${esc(parentName)}" data-edge-to="${esc(childName)}" d="M ${cleanAnchor} ${startY} V ${ey} H ${endX}" marker-end="url(#branchArrow)"></path>`);
         });
         return;
       }
@@ -1015,33 +1014,45 @@ function drawBranchConnections(){
   svg.innerHTML=`<defs><marker id="branchArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#496675"></path></marker></defs>${paths.join('')}`;
 }
 function scheduleBranchConnections(){cancelAnimationFrame(branchGraphFrame);branchGraphFrame=requestAnimationFrame(()=>requestAnimationFrame(drawBranchConnections));}
-function clearBranchRouteFocus(){
-  const scroll=document.querySelector('.branch-graph-scroll');if(!scroll)return;
+function clearBranchRouteFocus(scroll=document.querySelector('.branch-graph-scroll')){
+  if(!scroll)return;
   scroll.classList.remove('has-route-focus');
   scroll.querySelectorAll('.route-focus').forEach(el=>el.classList.remove('route-focus'));
 }
-function focusBranchRoute(name){
-  const scroll=document.querySelector('.branch-graph-scroll');if(!scroll||!name)return;
-  const focusNodes=new Set([name]),focusEdges=new Set();
-  let current=branchDetailIndex[name],guard=0;
-  while(current&&current.parentName&&guard++<30){
-    const currentName=String(current.actualResultItem||current.name||current.resultItem||'').trim();
-    const parentName=String(current.parentName||'').trim();
-    if(!parentName)break;
-    focusNodes.add(parentName);focusEdges.add(`${parentName}\u0000${currentName}`);
-    current=branchDetailIndex[parentName];
-  }
-  const entry=branchDetailIndex[name];
-  (entry&&Array.isArray(entry.nextBranches)?entry.nextBranches:[]).forEach(child=>{
-    const childName=String(child.actualResultItem||child.name||child.resultItem||'').trim();
-    if(childName){focusNodes.add(childName);focusEdges.add(`${name}\u0000${childName}`);}
+function focusBranchRoute(target){
+  const selectedNode=target instanceof Element
+    ?target.closest('.branch-graph-node[data-weapon-node]')
+    :[...document.querySelectorAll('.branch-graph-node[data-weapon-node]')].find(el=>(el.dataset.weaponNode||'')===String(target||''));
+  const scroll=selectedNode&&selectedNode.closest('.branch-graph-scroll');
+  if(!scroll||!selectedNode)return;
+
+  // 表示中の親子関係だけを祖先方向へ辿る。
+  // 子孫・兄弟・別分岐は強調対象へ含めない。
+  const nodeMap=new Map();
+  scroll.querySelectorAll('.branch-graph-node[data-weapon-node]').forEach(el=>{
+    const nodeName=String(el.dataset.weaponNode||'').trim();
+    if(nodeName)nodeMap.set(nodeName,el);
   });
+  const focusNodes=new Set(),focusEdges=new Set();
+  let currentNode=selectedNode,guard=0;
+  while(currentNode&&guard++<40){
+    const currentName=String(currentNode.dataset.weaponNode||'').trim();
+    if(!currentName||focusNodes.has(currentName))break;
+    focusNodes.add(currentName);
+    const parentName=String(currentNode.dataset.parentWeapon||'').trim();
+    if(!parentName)break;
+    const parentNode=nodeMap.get(parentName);
+    if(!parentNode)break;
+    focusEdges.add(`${parentName}\u0000${currentName}`);
+    currentNode=parentNode;
+  }
+
+  clearBranchRouteFocus(scroll);
   scroll.classList.add('has-route-focus');
-  scroll.querySelectorAll('[data-weapon-node]').forEach(el=>el.classList.toggle('route-focus',focusNodes.has(el.dataset.weaponNode||'')));
-  scroll.querySelectorAll('[data-edge-from]').forEach(el=>{
-    const from=el.dataset.edgeFrom||'',to=el.dataset.edgeTo||'';
-    const active=to?focusEdges.has(`${from}\u0000${to}`):[...focusEdges].some(key=>key.startsWith(`${from}\u0000`));
-    el.classList.toggle('route-focus',active);
+  nodeMap.forEach((el,nodeName)=>el.classList.toggle('route-focus',focusNodes.has(nodeName)));
+  scroll.querySelectorAll('[data-edge-from][data-edge-to]').forEach(el=>{
+    const edgeKey=`${String(el.dataset.edgeFrom||'').trim()}\u0000${String(el.dataset.edgeTo||'').trim()}`;
+    el.classList.toggle('route-focus',focusEdges.has(edgeKey));
   });
 }
 function modalLinkHtml(entry,label){
@@ -1148,21 +1159,37 @@ $('applyKey').addEventListener('click',()=>loadCatalog($('unlockKey').value.trim
 $('unlockKey').addEventListener('keydown',e=>{if(e.key==='Enter')loadCatalog($('unlockKey').value.trim(),true);});
 $('resetKey').addEventListener('click',()=>{$('unlockKey').value='';loadCatalog('',true);});
 $('reloadDb').addEventListener('click',()=>loadCatalog(currentKey,false,{force:true}));
+let branchRouteHoverNode=null;
 document.addEventListener('pointerover',e=>{
   const node=e.target.closest('.branch-graph-node[data-weapon-node]');
-  if(node)focusBranchRoute(node.dataset.weaponNode||'');
+  if(!node||node.contains(e.relatedTarget))return;
+  branchRouteHoverNode=node;
+  focusBranchRoute(node);
 });
 document.addEventListener('pointerout',e=>{
   const node=e.target.closest('.branch-graph-node[data-weapon-node]');
-  if(node&&!node.contains(e.relatedTarget))clearBranchRouteFocus();
+  if(!node||node.contains(e.relatedTarget))return;
+  if(branchRouteHoverNode===node)branchRouteHoverNode=null;
+  const focused=document.activeElement&&document.activeElement.closest
+    ?document.activeElement.closest('.branch-graph-node[data-weapon-node]')
+    :null;
+  if(focused)focusBranchRoute(focused);else clearBranchRouteFocus(node.closest('.branch-graph-scroll'));
 });
 document.addEventListener('focusin',e=>{
+  if(branchRouteHoverNode)return;
   const node=e.target.closest('.branch-graph-node[data-weapon-node]');
-  if(node)focusBranchRoute(node.dataset.weaponNode||'');
+  if(node)focusBranchRoute(node);
 });
 document.addEventListener('focusout',e=>{
   const node=e.target.closest('.branch-graph-node[data-weapon-node]');
-  if(node&&!node.contains(e.relatedTarget))clearBranchRouteFocus();
+  if(!node||node.contains(e.relatedTarget)||branchRouteHoverNode)return;
+  requestAnimationFrame(()=>{
+    if(branchRouteHoverNode)return;
+    const focused=document.activeElement&&document.activeElement.closest
+      ?document.activeElement.closest('.branch-graph-node[data-weapon-node]')
+      :null;
+    if(focused)focusBranchRoute(focused);else clearBranchRouteFocus(node.closest('.branch-graph-scroll'));
+  });
 });
 document.addEventListener('click',e=>{
   const labelToggle=e.target.closest('[data-toggle-branch-labels]');if(labelToggle){
