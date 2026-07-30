@@ -519,7 +519,7 @@ body.ra-app .toast { color: var(--ra-ink); border-color: #9c8048 !important; bac
   }
 }
 
-/* v90.8.315 legibility + compact weapon tree revision */
+/* v90.8.316 legibility + compact weapon tree revision */
 :root {
   --ra-desk: #e6dfd2;
   --ra-desk-2: #f2ece1;
@@ -814,7 +814,7 @@ body.ra-facility .weapon-modal-header h3 { color: #2a414f !important; }
 }
 
 
-/* v90.8.315 UI performance and spacing pass */
+/* v90.8.316 UI performance and spacing pass */
 /* Large disclosures use a paint-only fade instead of intrinsic-height interpolation. */
 body.ra-app details::details-content {
   block-size: auto !important;
@@ -1015,7 +1015,7 @@ body.ra-facility .branch-label-side-toggle {
   line-height: 1 !important;
 }
 
-/* v90.8.315: progression-based branch graph without duplicate rank headers. */
+/* v90.8.316: progression-based branch graph without duplicate rank headers. */
 body.ra-facility .branch-graph-canvas {
   justify-content: center !important;
   gap: 10px 26px !important;
@@ -1036,7 +1036,7 @@ body.ra-facility .branch-graph-node {
 }
 
 
-/* v90.8.315: designed branch selectors, equal control height, scroll chaining, and cleaner graph spacing. */
+/* v90.8.316: designed branch selectors, equal control height, scroll chaining, and cleaner graph spacing. */
 body.ra-facility .branch-controls {
   align-items: end !important;
   padding: 13px 14px !important;
@@ -1121,5 +1121,221 @@ body.ra-facility .branch-graph-canvas {
 @media (max-width: 720px) {
   body.ra-facility :is(.branch-search,.weapon-category-select-wrap) {
     grid-template-rows: 20px 44px !important;
+  }
+}
+
+/* v90.8.316: paper texture, facility emblems, subtle alchemy watermarks, rank guides, and route focus. */
+body.ra-app > main,
+body.ra-facility :is(.panel,.card,.facility-work-block,.facility-summary,.branch-controls,.branch-graph-scroll,.weapon-modal-dialog) {
+  background-image:
+    linear-gradient(90deg, rgba(112,82,35,.035), transparent 22%, transparent 78%, rgba(112,82,35,.035)),
+    url("assets/ui/paper-texture.webp") !important;
+  background-repeat:no-repeat,repeat !important;
+  background-size:100% 100%,512px 512px !important;
+}
+body.ra-facility main > .panel {
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+}
+body.ra-facility main > .panel > * { position:relative; z-index:2; }
+body.ra-facility main > .panel::after {
+  content:"";
+  position:absolute;
+  right:-28px;
+  top:54px;
+  width:250px;
+  height:210px;
+  background:center/contain no-repeat url("assets/ui/emblem-blacksmith.png");
+  opacity:.075;
+  pointer-events:none;
+  z-index:0;
+}
+body.ra-facility[data-facility="apothecary"] main > .panel::after { background-image:url("assets/ui/emblem-apothecary.png"); }
+body.ra-facility[data-facility="antique"] main > .panel::after { background-image:url("assets/ui/emblem-antique.png"); }
+body.ra-facility[data-facility="eatery"] main > .panel::after { background-image:url("assets/ui/emblem-eatery.png"); }
+body.ra-facility .facility-switch button {
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:7px !important;
+}
+body.ra-facility .facility-switch button::before {
+  content:"";
+  flex:0 0 29px;
+  width:29px;
+  height:29px;
+  background:center/contain no-repeat url("assets/ui/emblem-blacksmith.png");
+  opacity:.72;
+}
+body.ra-facility .facility-switch button[data-facility="apothecary"]::before { background-image:url("assets/ui/emblem-apothecary.png"); }
+body.ra-facility .facility-switch button[data-facility="antique"]::before { background-image:url("assets/ui/emblem-antique.png"); }
+body.ra-facility .facility-switch button[data-facility="eatery"]::before { background-image:url("assets/ui/emblem-eatery.png"); }
+body.ra-facility .facility-switch button.active::before { filter:brightness(0) invert(1); opacity:.94; }
+body.ra-facility .summary-line {
+  position:relative;
+  min-height:72px;
+  padding-right:116px !important;
+}
+body.ra-facility .summary-line::after {
+  content:"";
+  position:absolute;
+  right:8px;
+  top:50%;
+  width:96px;
+  height:74px;
+  transform:translateY(-50%);
+  background:center/contain no-repeat url("assets/ui/emblem-blacksmith.png");
+  opacity:.22;
+  pointer-events:none;
+}
+body.ra-facility[data-facility="apothecary"] .summary-line::after { background-image:url("assets/ui/emblem-apothecary.png"); }
+body.ra-facility[data-facility="antique"] .summary-line::after { background-image:url("assets/ui/emblem-antique.png"); }
+body.ra-facility[data-facility="eatery"] .summary-line::after { background-image:url("assets/ui/emblem-eatery.png"); }
+body.ra-facility .branch-controls::after {
+  content:"";
+  position:absolute;
+  right:8px;
+  bottom:0;
+  width:132px;
+  height:92px;
+  background:center/contain no-repeat url("assets/ui/alchemy-watermark-2.png");
+  opacity:.055;
+  pointer-events:none;
+}
+body.ra-facility .branch-rank-band {
+  display:block !important;
+  position:relative;
+  align-self:stretch;
+  z-index:0;
+  border-left:1px dashed rgba(73,102,117,.18);
+  border-right:1px dashed rgba(73,102,117,.10);
+  background:linear-gradient(180deg,rgba(97,127,145,.055),rgba(181,138,56,.018));
+  pointer-events:none;
+}
+body.ra-facility .branch-rank-band > span {
+  position:sticky;
+  top:3px;
+  display:block;
+  width:max-content;
+  margin:3px auto 0;
+  padding:1px 7px;
+  color:rgba(53,75,88,.62);
+  background:rgba(251,248,239,.8);
+  border:1px solid rgba(95,124,140,.18);
+  border-radius:999px;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.03em;
+}
+body.ra-facility .branch-graph-node,
+body.ra-facility .branch-graph-edge {
+  transition:opacity .14s ease, filter .14s ease, border-color .14s ease, box-shadow .14s ease !important;
+}
+body.ra-facility .branch-graph-scroll.has-route-focus .branch-graph-node:not(.route-focus),
+body.ra-facility .branch-graph-scroll.has-route-focus .branch-graph-edge:not(.route-focus) {
+  opacity:.22 !important;
+}
+body.ra-facility .branch-graph-scroll.has-route-focus .branch-graph-node.route-focus {
+  opacity:1 !important;
+  border-color:#7c4652 !important;
+  box-shadow:0 0 0 2px rgba(181,138,56,.22),0 5px 13px rgba(62,43,47,.18) !important;
+}
+body.ra-facility .branch-graph-scroll.has-route-focus .branch-graph-edge.route-focus {
+  opacity:1 !important;
+  stroke:#7c4652 !important;
+  stroke-width:2.9 !important;
+  filter:drop-shadow(0 1px 0 #fff) drop-shadow(0 0 2px rgba(124,70,82,.28)) !important;
+}
+body.ra-facility .weapon-modal-dialog {
+  overflow:hidden;
+  border:1px solid #896a34 !important;
+  box-shadow:0 24px 70px rgba(24,27,29,.42), inset 0 0 0 3px rgba(255,250,229,.72) !important;
+}
+body.ra-facility .weapon-modal-header {
+  position:relative;
+  padding-right:90px !important;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.12),transparent),
+    linear-gradient(135deg,#28465b,#385f76 68%,#653541) !important;
+  border-bottom:2px solid #c49a43 !important;
+}
+body.ra-facility .weapon-modal-header::after {
+  content:"";
+  position:absolute;
+  right:42px;
+  top:50%;
+  width:62px;
+  height:54px;
+  transform:translateY(-50%);
+  background:center/contain no-repeat url("assets/ui/emblem-blacksmith.png");
+  filter:brightness(0) invert(1);
+  opacity:.24;
+  pointer-events:none;
+}
+body.ra-facility .weapon-modal-header h3,
+body.ra-facility .weapon-modal-header .muted { color:#fff7dc !important; }
+body.ra-facility .weapon-modal-performance {
+  margin:10px 0 14px !important;
+  padding:12px !important;
+  border:1px solid rgba(181,138,56,.45);
+  border-left:5px solid #6c2f3d;
+  background:rgba(255,250,238,.82);
+}
+body.ra-facility .weapon-modal-details {
+  overflow:hidden;
+  border:1px solid rgba(151,119,63,.35);
+  border-radius:7px;
+}
+body.ra-facility .weapon-modal-details dt {
+  color:#344b5b;
+  background:rgba(222,207,174,.42);
+  border-bottom:1px solid rgba(151,119,63,.22);
+}
+body.ra-facility .weapon-modal-details dd {
+  background:rgba(255,253,247,.72);
+  border-bottom:1px solid rgba(151,119,63,.22);
+}
+body.ra-app :is(.empty,.loading-state,[data-empty-state]) {
+  min-height:130px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:30px;
+  color:#66645c;
+  border:1px dashed rgba(145,111,54,.55);
+  border-radius:8px;
+  background:
+    center/160px auto no-repeat url("assets/ui/alchemy-watermark-3.png"),
+    rgba(255,252,243,.78) !important;
+}
+@media(max-width:720px){
+  body.ra-facility .summary-line{padding-right:70px !important}
+  body.ra-facility .summary-line::after{width:62px;height:55px;right:2px}
+  body.ra-facility .facility-switch button::before{width:22px;height:22px;flex-basis:22px}
+}
+
+/* Keep the decorative watermark behind the branch controls. */
+body.ra-facility .branch-controls { position:relative; isolation:isolate; overflow:hidden; }
+body.ra-facility .branch-controls > * { position:relative; z-index:1; }
+body.ra-facility .branch-controls::after { z-index:0; }
+
+/* v90.8.316: keep the two facility navigation bars in normal document flow before they become sticky. */
+@media (min-width:721px) {
+  body.ra-facility main > .panel > .facility-switch {
+    position:sticky !important;
+    top:0 !important;
+    z-index:40 !important;
+  }
+  body.ra-facility main > .panel > .section-tabs {
+    position:sticky !important;
+    top:69px !important;
+    z-index:39 !important;
+  }
+}
+@media (max-width:720px) {
+  body.ra-facility main > .panel > .facility-switch,
+  body.ra-facility main > .panel > .section-tabs {
+    position:relative !important;
+    top:auto !important;
   }
 }
