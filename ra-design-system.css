@@ -519,7 +519,7 @@ body.ra-app .toast { color: var(--ra-ink); border-color: #9c8048 !important; bac
   }
 }
 
-/* v90.8.318 legibility + compact weapon tree revision */
+/* v90.8.319 legibility + compact weapon tree revision */
 :root {
   --ra-desk: #e6dfd2;
   --ra-desk-2: #f2ece1;
@@ -814,7 +814,7 @@ body.ra-facility .weapon-modal-header h3 { color: #2a414f !important; }
 }
 
 
-/* v90.8.318 UI performance and spacing pass */
+/* v90.8.319 UI performance and spacing pass */
 /* Large disclosures use a paint-only fade instead of intrinsic-height interpolation. */
 body.ra-app details::details-content {
   block-size: auto !important;
@@ -1015,7 +1015,7 @@ body.ra-facility .branch-label-side-toggle {
   line-height: 1 !important;
 }
 
-/* v90.8.318: progression-based branch graph without duplicate rank headers. */
+/* v90.8.319: progression-based branch graph without duplicate rank headers. */
 body.ra-facility .branch-graph-canvas {
   justify-content: center !important;
   gap: 10px 26px !important;
@@ -1036,7 +1036,7 @@ body.ra-facility .branch-graph-node {
 }
 
 
-/* v90.8.318: designed branch selectors, equal control height, scroll chaining, and cleaner graph spacing. */
+/* v90.8.319: designed branch selectors, equal control height, scroll chaining, and cleaner graph spacing. */
 body.ra-facility .branch-controls {
   align-items: end !important;
   padding: 13px 14px !important;
@@ -1124,7 +1124,7 @@ body.ra-facility .branch-graph-canvas {
   }
 }
 
-/* v90.8.318: paper texture, facility emblems, subtle alchemy watermarks, rank guides, and route focus. */
+/* v90.8.319: paper texture, facility emblems, subtle alchemy watermarks, rank guides, and route focus. */
 body.ra-app > main,
 body.ra-facility :is(.panel,.card,.facility-work-block,.facility-summary,.branch-controls,.branch-graph-scroll,.weapon-modal-dialog) {
   background-image:
@@ -1319,7 +1319,7 @@ body.ra-facility .branch-controls { position:relative; isolation:isolate; overfl
 body.ra-facility .branch-controls > * { position:relative; z-index:1; }
 body.ra-facility .branch-controls::after { z-index:0; }
 
-/* v90.8.318: keep the two facility navigation bars in normal document flow before they become sticky. */
+/* v90.8.319: keep the two facility navigation bars in normal document flow before they become sticky. */
 @media (min-width:721px) {
   body.ra-facility main > .panel > .facility-switch {
     position:sticky !important;
@@ -1340,7 +1340,7 @@ body.ra-facility .branch-controls::after { z-index:0; }
   }
 }
 
-/* v90.8.318: clean facility layout, non-overlapping emblems, stable navigation, and category-folded sales. */
+/* v90.8.319: clean facility layout, non-overlapping emblems, stable navigation, and category-folded sales. */
 body.ra-facility .hero {
   padding: 18px 20px !important;
   overflow: visible !important;
@@ -1537,7 +1537,7 @@ body.ra-facility :is(.sales-category-groups,.recipe-category-groups) {
 }
 
 
-/* v90.8.318 mobile weapon detail modal hotfix */
+/* v90.8.319 mobile weapon detail modal hotfix */
 html.weapon-modal-open,
 html.weapon-modal-open body {
   overflow: hidden !important;
@@ -1667,7 +1667,7 @@ body.ra-facility .weapon-modal-body .weapon-modal-details {
 }
 
 
-/* v90.8.318 modal initial-state fix 2
+/* v90.8.319 modal initial-state fix 2
    Keep the backdrop completely absent while the native hidden state is set.
    This must come after the flex modal layout because that rule uses !important. */
 body.ra-facility .weapon-modal[hidden],
