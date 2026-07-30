@@ -101,7 +101,7 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 @media(max-width:720px){.build{text-align:left}.hero{padding:11px!important}.subtitle{display:none}.section-tabs{top:58px}.catalog-search-controls{grid-template-columns:1fr}.catalog-search-controls label,.catalog-search-controls span{font-size:.75rem}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.311-grimoire2">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.311-grimoire3">
 </head>
 <body class="ra-app ra-player ra-facility">
 <header><div class="hero"><div class="build">v90.8.311｜更新：2026年7月30日</div><h1>施設カタログ</h1><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
@@ -793,8 +793,12 @@ function graphNodeHtml(entry,row,col,{base=false}={}){
   const name=String(entry.actualResultItem||entry.name||entry.resultItem||'').trim();
   const locked=!!entry.locked;
   const title=locked?'？？？':name||'名称未設定';
+  const rank=rankLabel(entry.rank);
   const parent=String(entry.baseItem||'').trim();
-  return `<article class="branch-graph-node ${locked?'locked':''}" style="grid-row:${row};grid-column:${col}" data-weapon-node="${esc(name)}" ${parent?`data-parent-weapon="${esc(parent)}"`:''}><div><div class="branch-graph-node-name">${esc(title)}</div><div class="branch-graph-node-rank">${esc(rankLabel(entry.rank))}</div></div>${locked?'':`<button type="button" class="ghost" data-open-weapon-modal="${esc(name)}">詳細を見る</button>`}</article>`;
+  const label=locked
+    ?`<div class="branch-graph-node-locked-label"><span class="branch-graph-node-rank-inline">${esc(rank)}</span><span class="branch-graph-node-name-inline">${esc(title)}</span></div>`
+    :`<button type="button" class="branch-graph-node-trigger" data-open-weapon-modal="${esc(name)}" title="${esc(`${rank} ${title}`)}" aria-label="${esc(`${rank} ${title}の詳細を開く`)}"><span class="branch-graph-node-rank-inline">${esc(rank)}</span><span class="branch-graph-node-name-inline">${esc(title)}</span></button>`;
+  return `<article class="branch-graph-node ${locked?'locked':''}" style="grid-row:${row};grid-column:${col}" data-weapon-node="${esc(name)}" ${parent?`data-parent-weapon="${esc(parent)}"`:''}>${label}</article>`;
 }
 function branchGraphCatalog(current){
   const branches=current.matched||[];
@@ -818,7 +822,7 @@ function branchGraphCatalog(current){
   const rankStart=new Map();let cursor=2;
   for(let r=minRank;r<=maxRank;r++){rankStart.set(r,cursor);cursor+=rankSlots.get(r)||1;}
   const totalNodeCols=cursor-2,totalRows=ordered.length+1;
-  const style=`grid-template-columns:var(--branch-label-width) repeat(${totalNodeCols},190px);grid-template-rows:46px repeat(${totalRows},minmax(102px,auto))`;
+  const style=`grid-template-columns:var(--branch-label-width) repeat(${totalNodeCols},174px);grid-template-rows:36px repeat(${totalRows},minmax(66px,auto))`;
   const bands=[];const headers=[];
   for(let r=minRank;r<=maxRank;r++){
     const start=rankStart.get(r),span=rankSlots.get(r)||1;
