@@ -830,3 +830,147 @@ body.ra-facility .weapon-modal-header h3 { color: #2a414f !important; }
   body.ra-facility .branch-graph-node-rank-inline,
   body.ra-facility .branch-graph-node-name-inline { font-size: 11px !important; }
 }
+
+
+/* v90.8.311 UI performance and spacing pass */
+/* Large disclosures use a paint-only fade instead of intrinsic-height interpolation. */
+body.ra-app details::details-content {
+  block-size: auto !important;
+  max-block-size: none !important;
+  overflow: clip !important;
+  opacity: 0;
+  transform: translateY(-2px);
+  content-visibility: hidden;
+  contain: paint;
+  will-change: auto !important;
+  transition:
+    opacity .12s ease-out,
+    transform .12s ease-out,
+    content-visibility .12s allow-discrete !important;
+}
+body.ra-app details[open]::details-content {
+  block-size: auto !important;
+  opacity: 1;
+  transform: translateY(0);
+  content-visibility: visible;
+}
+@starting-style {
+  body.ra-app details[open]::details-content {
+    block-size: auto !important;
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+}
+body.ra-character :is(
+  details.big-section > summary,
+  .skill-category-title,
+  .inventory-registration-card > summary,
+  .inventory-filter-panel > summary,
+  .carry-item-edit > summary,
+  .spell-detail > summary,
+  .inventory-card-head,
+  #tabEquipment .equipment-card-toggle::before
+)::before {
+  transition-duration: .15s !important;
+  transition-timing-function: ease-out !important;
+}
+
+/* Avoid expensive sticky blur/repaint while switching the character pages. */
+body.ra-character .editor-tabs {
+  background: #f1e6d3 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  contain: paint;
+}
+body.ra-character .editor-tab-btn {
+  transform: none !important;
+  transition: color .08s linear, background .08s linear, border-color .08s linear, box-shadow .08s linear !important;
+}
+body.ra-character .editor-tab-page {
+  background: transparent;
+  contain: layout paint;
+}
+body.ra-character .editor-tab-page.active {
+  animation: none !important;
+}
+
+/* Give sticky facility selectors breathing room from the panel edge. */
+body.ra-facility .facility-switch,
+body.ra-facility .section-tabs {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+body.ra-facility .section-tabs {
+  padding-top: 8px !important;
+  padding-bottom: 10px !important;
+}
+
+/* Denser weapon tree: branch labels and weapon nodes share the same compact row rhythm. */
+body.ra-facility .branch-graph-canvas {
+  --branch-label-width: 54px !important;
+  gap: 8px 14px !important;
+  padding: 6px !important;
+}
+body.ra-facility .branch-graph-rank {
+  min-height: 27px !important;
+  padding: 3px 6px !important;
+  border-radius: 7px !important;
+  font-size: 11px !important;
+  line-height: 1.15 !important;
+}
+body.ra-facility .branch-graph-label {
+  padding: 1px !important;
+  border-radius: 0 7px 7px 0 !important;
+  font-size: 10.5px !important;
+  line-height: 1.1 !important;
+}
+body.ra-facility .branch-graph-node,
+body.ra-facility .branch-graph-node.locked {
+  width: 154px !important;
+  min-height: 36px !important;
+  padding: 2px 4px !important;
+  border-radius: 7px !important;
+  box-shadow: 0 1px 4px rgba(46,63,73,.11) !important;
+}
+body.ra-facility .branch-graph-node-trigger,
+body.ra-facility .branch-graph-node-locked-label {
+  gap: 4px !important;
+  min-height: 30px !important;
+  padding: 2px 3px !important;
+  line-height: 1.15 !important;
+}
+body.ra-facility .branch-graph-node-rank-inline,
+body.ra-facility .branch-graph-node-name-inline,
+body.ra-facility .branch-graph-node-locked-label {
+  font-size: 11px !important;
+}
+
+@media (max-width: 720px) {
+  body.ra-facility .facility-switch,
+  body.ra-facility .section-tabs {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
+  body.ra-facility .branch-graph-canvas {
+    --branch-label-width: 46px !important;
+    gap: 7px 12px !important;
+    padding: 4px !important;
+  }
+  body.ra-facility .branch-graph-label {
+    padding: 1px 0 !important;
+    font-size: 9.5px !important;
+  }
+  body.ra-facility .branch-graph-node,
+  body.ra-facility .branch-graph-node.locked {
+    width: 144px !important;
+    min-height: 34px !important;
+    padding: 2px 3px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.ra-app details::details-content,
+  body.ra-character .editor-tab-btn {
+    transition: none !important;
+  }
+}
