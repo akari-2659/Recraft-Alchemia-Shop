@@ -1676,3 +1676,20 @@ body.ra-facility .weapon-modal[aria-hidden="true"] {
   visibility: hidden !important;
   pointer-events: none !important;
 }
+
+/* v90.8.342: one visible shared trunk per branch group; transparent overlays are used only for selected-route highlighting. */
+body.ra-facility .branch-graph-edge-route {
+  opacity:0 !important;
+  stroke:transparent !important;
+  filter:none !important;
+}
+body.ra-facility .branch-graph-scroll.has-route-focus .branch-graph-edge-route.route-focus {
+  opacity:1 !important;
+  stroke:#7c4652 !important;
+  stroke-width:3.1 !important;
+  filter:drop-shadow(0 1px 0 #fff) drop-shadow(0 0 2px rgba(124,70,82,.28)) !important;
+}
+body.ra-facility .branch-graph-scroll.has-route-focus .branch-graph-trunk,
+body.ra-facility .branch-graph-scroll.has-route-focus .branch-graph-branch {
+  opacity:.22 !important;
+}
