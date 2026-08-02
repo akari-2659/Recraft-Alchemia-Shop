@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.353</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.354</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -12,7 +12,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 .branch-controls{display:grid;gap:10px;margin:0 0 12px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#fffdf8}.branch-controls[hidden]{display:none}.branch-search{display:grid;grid-template-columns:minmax(220px,1fr);gap:6px}.branch-search label{font-size:12px;font-weight:800;color:var(--muted)}.weapon-category-tabs{display:flex;flex-wrap:wrap;gap:7px}.weapon-category-tabs button{background:#f1e4d1;color:var(--ink);border:1px solid var(--line);padding:8px 12px}.weapon-category-tabs button.active{background:var(--accent);color:#fff}.weapon-category-tabs .count{font-size:11px;opacity:.78;margin-left:4px}
 .branch-groups{display:grid;gap:12px}.branch-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.branch-group>summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:900;display:flex;gap:8px;align-items:center;justify-content:space-between;background:#f6e8d4}.branch-group>summary::-webkit-details-marker{display:none}.branch-group>summary::before{content:"▶";margin-right:7px;transition:transform .15s}.branch-group[open]>summary::before{transform:rotate(90deg)}.branch-summary-main{display:flex;gap:8px;align-items:center;flex-wrap:wrap;min-width:0}.branch-body{padding:13px;display:grid;gap:14px}.branch-line{display:grid;gap:8px;border-left:4px solid #b98956;padding:4px 0 4px 12px}.branch-node{position:relative;border:1px solid #e5d2b8;border-radius:14px;background:#fffaf3;padding:12px;margin-left:calc((var(--depth,1) - 1) * 22px)}.branch-node::before{content:"┗";position:absolute;left:-19px;top:12px;color:#9a7652;font-weight:900}.branch-node.locked{background:repeating-linear-gradient(135deg,#fffaf2,#fffaf2 12px,#f6ecdd 12px,#f6ecdd 24px)}.branch-node h3{margin:0 0 7px;font-size:16px}.performance{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.performance .chip{background:#e7f0e7;border-color:#bdd1bf}.base-weapons{display:grid;gap:8px;margin:0 0 12px}.base-weapon{border:1px solid #c9b18f;border-radius:15px;background:#fffdf8;overflow:hidden}.base-weapon>summary{cursor:pointer;list-style:none;padding:12px 14px;font-weight:900;background:#efe2cf}.base-weapon>summary::-webkit-details-marker{display:none}.base-weapon-body{padding:12px}.base-weapon-body dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 9px;margin:0;font-size:13px;line-height:1.6}.base-weapon-body dt{font-weight:800;color:#5f4935}.base-weapon-body dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.branch-node dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 9px;margin:0;font-size:13px;line-height:1.6}.branch-node dt{font-weight:800;color:#5f4935}.branch-node dd{margin:0;overflow-wrap:anywhere;white-space:pre-wrap}@media(max-width:520px){.branch-node{margin-left:calc((var(--depth,1) - 1) * 12px)}.branch-node dl{grid-template-columns:1fr}.branch-node dd{margin-bottom:5px}}
 .recipe-category-groups{display:grid;gap:12px}.recipe-category-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.recipe-category-group>summary{cursor:pointer;list-style:none;padding:13px 15px;font-weight:900;background:#f6e8d4}.recipe-category-group>summary::-webkit-details-marker{display:none}.recipe-category-body{padding:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:720px){.recipe-category-body{grid-template-columns:1fr}}
-/* v90.8.353: 派生先遷移・10件ページング・折り畳み矢印固定 */
+/* v90.8.354: 派生先遷移・10件ページング・折り畳み矢印固定 */
 html{scrollbar-gutter:stable}
 .branch-group>summary::before,.base-weapon>summary::before,.recipe-category-group>summary::before,.unlock-panel>summary::before{
   content:"▶";display:inline-grid;place-items:center;flex:0 0 1.05rem;width:1.05rem;height:1.05rem;
@@ -37,7 +37,7 @@ html{scrollbar-gutter:stable}
 .branch-node.branch-focus{animation:branchFocusPulse 1.8s ease;outline:3px solid rgba(169,111,55,.45);outline-offset:2px}
 @keyframes branchFocusPulse{0%,100%{box-shadow:none}35%{box-shadow:0 0 0 8px rgba(169,111,55,.16)}}
 @media(max-width:520px){.next-branch-row{align-items:flex-start;flex-direction:column}.next-branch-row button{width:100%}}
-/* v90.8.353: 武器派生図表示 */
+/* v90.8.354: 武器派生図表示 */
 .branch-view-switch{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
 .branch-view-switch .catalog-filter-label{margin-right:3px}
 .branch-view-switch button{padding:7px 11px;background:#f1e4d1;color:var(--ink);border:1px solid var(--line)}
@@ -65,7 +65,7 @@ html{scrollbar-gutter:stable}
 .branch-table-empty{color:#b8a58d;text-align:center}
 @media(max-width:600px){.branch-table th,.branch-table td{min-width:165px;padding:7px}.branch-table .branch-table-label{min-width:128px;max-width:148px}.branch-table-node{width:148px}}
 
-/* v90.8.353: ★ランク帯配置・同一★内連続列・自然な折れ線・強いランク見出し帯を廃止 */
+/* v90.8.354: ★ランク帯配置・同一★内連続列・自然な折れ線・強いランク見出し帯を廃止 */
 /* 派生線修正2: 分岐点を矢印手前へ固定し、矢印から枝線が伸びて見える重なりを防止 */
 .branch-controls{grid-template-columns:minmax(220px,1fr) minmax(190px,280px);align-items:end}
 .branch-label-side-toggle{position:sticky;left:0;top:0;z-index:12;align-self:stretch;display:grid;place-items:center;width:100%;min-width:0;height:30px;padding:0;border:1px solid #d8bea0;border-left:0;border-radius:0 9px 9px 0;background:rgba(237,216,188,.98);color:#68492f;font-size:14px;font-weight:1000;line-height:1;box-shadow:4px 3px 9px rgba(80,50,20,.07);transform:none}
@@ -106,10 +106,10 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 @media(max-width:720px){.build{text-align:left}.hero{padding:11px!important}.subtitle{display:none}.section-tabs{top:58px}.catalog-search-controls{grid-template-columns:1fr}.catalog-search-controls label,.catalog-search-controls span{font-size:.75rem}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.353-modalfix2">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.354-modalfix2">
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.353｜更新：2026年8月2日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.354｜更新：2026年8月2日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>解放範囲</span><span id="unlockSummary">確認中</span></summary>
@@ -750,12 +750,13 @@ function performanceHtml(rows){return Array.isArray(rows)&&rows.length?`<div cla
 function facilityUpgradeDisplayName(r={}){
   const effect=String(r.equipmentUpgradeEffect||'').trim();
   const value=String(r.equipmentUpgradeValue||'').trim();
+  if(effect.startsWith('特殊効果：'))return effect;
   return effect==='特殊効果' ? `特殊効果：${value||'名称未設定'}` : effect;
 }
 function itemTextRows(r){
   const rows=[['説明',r.description],['効果',r.effect]];
   if(String(r.dataKind||'')==='素材'&&String(r.equipmentUpgradeEffect||'').trim()){
-    const special=String(r.equipmentUpgradeEffect||'').trim()==='特殊効果';
+    const special=/^特殊効果(?:：|$)/.test(String(r.equipmentUpgradeEffect||'').trim());
     const value=String(r.equipmentUpgradeValue||'').trim();
     rows.push(['装備強化',facilityUpgradeDisplayName(r)]);
     if(!special&&value)rows.push(['強化値',value]);
@@ -921,147 +922,58 @@ function branchGraphCatalog(current){
   const baseWeapons=current.baseWeapons||[];
   const allNodes=ordered.flatMap(meta=>branchFlatNodes(meta.branch));
   if(!baseWeapons.length&&!allNodes.length)return '<div class="empty">検索・★ランク条件に一致する武器派生はありません。</div>';
-
-  // v90.8.344: ★ランクを横方向の大枠として維持する。
-  // 同一★内で派生が続く場合だけ、その★の中に追加列を作って右へ進める。
-  // これにより★3と★5が同じ縦列へ重なることを防ぎつつ、強い見出し帯や区切り線は置かず、薄いランクガイドだけを表示する。
-  const placements=[];
-  const rankSlots=new Map();
-  const entryByName=Object.create(null);
-  const sameRankStageCache=Object.create(null);
-  const entryName=entry=>String(entry&&entry.actualResultItem||entry&&entry.name||entry&&entry.resultItem||'').trim();
-  [...baseWeapons,...allNodes].forEach(entry=>{const name=entryName(entry);if(name&&name!=='？？？')entryByName[name]=entry;});
-  function sameRankStage(entry,visiting=new Set()){
-    const name=entryName(entry);
-    if(name&&Object.prototype.hasOwnProperty.call(sameRankStageCache,name))return sameRankStageCache[name];
-    if(name&&visiting.has(name))return 0;
-    const next=new Set(visiting);if(name)next.add(name);
-    const parent=entryByName[String(entry&&entry.baseItem||'').trim()]||null;
-    const stage=parent&&rankValue(parent.rank)===rankValue(entry&&entry.rank)?sameRankStage(parent,next)+1:0;
-    if(name)sameRankStageCache[name]=stage;
-    return stage;
-  }
-  function placeRow(entries,row){
-    const occupiedByRank=new Map();
-    entries.slice().sort((a,b)=>rankValue(a.rank)-rankValue(b.rank)||sameRankStage(a)-sameRankStage(b)||Number(a.depth)-Number(b.depth)||Number(a.branchNodeIndex)-Number(b.branchNodeIndex)||Number(a.unlockOrder)-Number(b.unlockOrder)||entryName(a).localeCompare(entryName(b),'ja')).forEach(entry=>{
-      const rank=rankValue(entry.rank);
-      const used=occupiedByRank.get(rank)||new Set();
-      let slot=sameRankStage(entry);
-      while(used.has(slot))slot+=1;
-      used.add(slot);occupiedByRank.set(rank,used);
-      rankSlots.set(rank,Math.max(rankSlots.get(rank)||1,slot+1));
-      placements.push({entry,row,rank,slot});
+  const entryByName=Object.create(null),baseByName=Object.create(null);
+  baseWeapons.forEach(w=>{const n=String(w.name||'').trim();if(n){baseByName[n]=w;entryByName[n]=w;}});
+  allNodes.forEach(n=>{const name=String(n.actualResultItem||n.resultItem||'').trim();if(name&&name!=='？？？')entryByName[name]=n;});
+  const routes=[];
+  ordered.forEach(meta=>{
+    const own=branchFlatNodes(meta.branch),ownNames=new Set(own.map(n=>String(n.actualResultItem||n.resultItem||'').trim()));
+    const parentNames=new Set(own.map(n=>String(n.baseItem||'').trim()));
+    let leaves=own.filter(n=>!parentNames.has(String(n.actualResultItem||n.resultItem||'').trim()));
+    if(!leaves.length&&own.length)leaves=[own[own.length-1]];
+    leaves.forEach((leaf,leafIndex)=>{
+      const path=[],seen=new Set();let cur=leaf;
+      while(cur){
+        const name=String(cur.actualResultItem||cur.name||cur.resultItem||'').trim();
+        if(!name||seen.has(name))break;seen.add(name);path.unshift(cur);
+        const parentName=String(cur.baseItem||'').trim();cur=entryByName[parentName]||baseByName[parentName]||null;
+      }
+      routes.push({branch:meta.branch,path,leafIndex});
     });
-  }
-  placeRow(baseWeapons,2);
-  ordered.forEach((meta,index)=>placeRow(branchFlatNodes(meta.branch),index+3));
-
-  const visibleRanks=[...rankSlots.keys()].sort((a,b)=>a-b);
-  const rankStart=new Map();
-  let cursor=2;
-  visibleRanks.forEach(rank=>{
-    rankStart.set(rank,cursor);
-    cursor+=rankSlots.get(rank)||1;
   });
-  const totalNodeCols=Math.max(1,cursor-2),totalRows=ordered.length+1;
-  const style=`grid-template-columns:var(--branch-label-width) repeat(${totalNodeCols},178px);grid-template-rows:30px repeat(${totalRows},minmax(42px,auto))`;
-  const labels=[`<div class="branch-graph-label base" style="grid-column:1;grid-row:2"><span>基礎武器</span></div>`];
-  ordered.forEach((meta,index)=>labels.push(`<div class="branch-graph-label ${meta.branch.isBossBranch?'boss':''}" style="grid-column:1;grid-row:${index+3}"><span>${esc(meta.branch.label||'？？？')}派生</span></div>`));
-  const rankBands=visibleRanks.map(rank=>{
-    const start=rankStart.get(rank)||2;
-    const span=rankSlots.get(rank)||1;
-    return `<div class="branch-rank-band" style="grid-column:${start} / span ${span};grid-row:1 / ${totalRows+2}"><span>★${rank}</span></div>`;
-  }).join('');
-  const nodes=placements.map(p=>graphNodeHtml(p.entry,p.row,(rankStart.get(p.rank)||2)+p.slot,{base:p.row===2})).join('');
-  const toggleIcon=branchLabelsCollapsed?'◀':'▶';
-  const toggleLabel=branchLabelsCollapsed?'派生名欄を開く':'派生名欄をたたむ';
-  const labelToggle=`<button type="button" class="branch-label-side-toggle" data-toggle-branch-labels aria-expanded="${branchLabelsCollapsed?'false':'true'}" aria-label="${toggleLabel}" title="${toggleLabel}" style="grid-column:1;grid-row:1">${toggleIcon}</button>`;
-  return `<div class="branch-graph-scroll ${branchLabelsCollapsed?'branch-labels-collapsed':''}"><div class="branch-graph-canvas" style="${style}">${labelToggle}${labels.join('')}${rankBands}<svg class="branch-graph-svg" aria-hidden="true"></svg>${nodes}</div></div>`;
+  const rankSlots=new Map(),stageCache=Object.create(null);
+  function entryName(e){return String(e&&e.actualResultItem||e&&e.name||e&&e.resultItem||'').trim();}
+  function stage(e,seen=new Set()){
+    const n=entryName(e);if(n&&stageCache[n]!==undefined)return stageCache[n];if(!n||seen.has(n))return 0;
+    const next=new Set(seen);next.add(n);const p=entryByName[String(e.baseItem||'').trim()]||baseByName[String(e.baseItem||'').trim()]||null;
+    const v=p&&rankValue(p.rank)===rankValue(e.rank)?stage(p,next)+1:0;stageCache[n]=v;return v;
+  }
+  [...baseWeapons,...allNodes].forEach(e=>{const r=rankValue(e.rank),st=stage(e);rankSlots.set(r,Math.max(rankSlots.get(r)||1,st+1));});
+  const ranks=[...rankSlots.keys()].sort((a,b)=>a-b),rankStart=new Map();let cursor=2;
+  ranks.forEach(r=>{rankStart.set(r,cursor);cursor+=rankSlots.get(r)||1;});
+  const totalCols=Math.max(1,cursor-2),totalRows=routes.length;
+  const style=`grid-template-columns:var(--branch-label-width) repeat(${totalCols},178px);grid-template-rows:30px repeat(${totalRows},minmax(42px,auto))`;
+  const labels=[],nodes=[];
+  routes.forEach((route,i)=>{
+    const row=i+2,label=route.branch.label||'？？？';labels.push(`<div class="branch-graph-label ${route.branch.isBossBranch?'boss':''}" style="grid-column:1;grid-row:${row}"><span>${esc(label)}派生</span></div>`);
+    route.path.forEach((entry,j)=>{
+      const r=rankValue(entry.rank),col=(rankStart.get(r)||2)+stage(entry),name=entryName(entry),locked=!!entry.locked,title=locked?'？？？':name||'名称未設定';
+      const rank=rankLabel(entry.rank),nodeId=`route-${i}-node-${j}`;
+      const labelHtml=locked?`<div class="branch-graph-node-locked-label"><span class="branch-graph-node-rank-inline">${esc(rank)}</span><span class="branch-graph-node-name-inline">${esc(title)}</span></div>`:`<button type="button" class="branch-graph-node-trigger" data-open-weapon-modal="${esc(name)}" title="${esc(`${rank} ${title}`)}"><span class="branch-graph-node-rank-inline">${esc(rank)}</span><span class="branch-graph-node-name-inline">${esc(title)}</span></button>`;
+      nodes.push(`<article class="branch-graph-node ${locked?'locked':''} ${entry.isBossBranch?'boss-branch':''}" style="grid-row:${row};grid-column:${col}" data-route-node="${nodeId}" data-route-index="${i}" data-route-position="${j}" data-weapon-node="${esc(name)}">${labelHtml}</article>`);
+    });
+  });
+  const bands=ranks.map(r=>`<div class="branch-rank-band" style="grid-column:${rankStart.get(r)} / span ${rankSlots.get(r)||1};grid-row:1 / ${totalRows+2}"><span>★${r}</span></div>`).join('');
+  const toggleIcon=branchLabelsCollapsed?'◀':'▶',toggleLabel=branchLabelsCollapsed?'派生名欄を開く':'派生名欄をたたむ';
+  const toggle=`<button type="button" class="branch-label-side-toggle" data-toggle-branch-labels aria-expanded="${branchLabelsCollapsed?'false':'true'}" aria-label="${toggleLabel}" title="${toggleLabel}" style="grid-column:1;grid-row:1">${toggleIcon}</button>`;
+  return `<div class="branch-graph-scroll ${branchLabelsCollapsed?'branch-labels-collapsed':''}"><div class="branch-graph-canvas" style="${style}">${toggle}${labels.join('')}${bands}<svg class="branch-graph-svg" aria-hidden="true"></svg>${nodes.join('')}</div></div>`;
 }
 function drawBranchConnections(){
   const canvas=document.querySelector('.branch-graph-canvas'),svg=canvas&&canvas.querySelector('.branch-graph-svg');if(!canvas||!svg)return;
-  const canvasRect=canvas.getBoundingClientRect(),width=Math.max(canvas.scrollWidth,canvasRect.width),height=Math.max(canvas.scrollHeight,canvasRect.height);
-  svg.setAttribute('width',String(width));svg.setAttribute('height',String(height));svg.setAttribute('viewBox',`0 0 ${width} ${height}`);
-  const nodeMap=Object.create(null),childrenByParent=new Map();
-  canvas.querySelectorAll('[data-weapon-node]').forEach(el=>{const name=el.dataset.weaponNode||'';if(name)nodeMap[name]=el;});
-  Object.values(nodeMap).forEach(child=>{
-    const parentName=child.dataset.parentWeapon||'',parent=nodeMap[parentName];if(!parent)return;
-    if(!childrenByParent.has(parentName))childrenByParent.set(parentName,{parent,children:[]});
-    childrenByParent.get(parentName).children.push(child);
-  });
-  const paths=[],routePaths=[];
-  const nodeGap=14;
-  const rowTolerance=7;
-  const obstacleRects=[...canvas.querySelectorAll('[data-weapon-node]')].map(el=>{
-    const r=el.getBoundingClientRect();
-    return{el,left:r.left-canvasRect.left,right:r.right-canvasRect.left,top:r.top-canvasRect.top,bottom:r.bottom-canvasRect.top};
-  });
-  function segmentHitsNode(x1,y1,x2,y2,ignored){
-    const minX=Math.min(x1,x2),maxX=Math.max(x1,x2),minY=Math.min(y1,y2),maxY=Math.max(y1,y2),pad=5;
-    return obstacleRects.some(r=>{
-      if(ignored.has(r.el))return false;
-      if(Math.abs(y1-y2)<.5)return y1>r.top-pad&&y1<r.bottom+pad&&maxX>r.left-pad&&minX<r.right+pad;
-      if(Math.abs(x1-x2)<.5)return x1>r.left-pad&&x1<r.right+pad&&maxY>r.top-pad&&minY<r.bottom+pad;
-      return false;
-    });
-  }
-  childrenByParent.forEach(({parent,children},parentName)=>{
-    const pr=parent.getBoundingClientRect();
-    const left=pr.left-canvasRect.left,right=pr.right-canvasRect.left;
-    const top=pr.top-canvasRect.top,bottom=pr.bottom-canvasRect.top;
-    const sy=top+pr.height/2;
-    const points=children.map(child=>{
-      const cr=child.getBoundingClientRect();
-      const ex=cr.left-canvasRect.left;
-      return{child,ey:cr.top-canvasRect.top+cr.height/2,endX:ex-nodeGap};
-    }).sort((a,b)=>a.ey-b.ey||a.endX-b.endX);
-    const same=points.filter(p=>Math.abs(p.ey-sy)<=rowTolerance);
-    const above=points.filter(p=>p.ey<sy-rowTolerance);
-    const below=points.filter(p=>p.ey>sy+rowTolerance);
-
-    // 同じ行は、派生元と派生先を一本の水平線で結ぶ。
-    same.forEach(({child,endX})=>{
-      const childName=child.dataset.weaponNode||'';
-      const d=`M ${right} ${sy} H ${endX}`;
-      paths.push(`<path class="branch-graph-edge branch-graph-branch" d="${d}" marker-end="url(#branchArrow)"></path>`);
-      routePaths.push(`<path class="branch-graph-edge branch-graph-edge-route" data-edge-from="${esc(parentName)}" data-edge-to="${esc(childName)}" d="${d}"></path>`);
-    });
-
-    // 別行は、空きがある限り「下／上へ一本 → 派生先へ長い横線」のL字で結ぶ。
-    // カードが経路を塞ぐ場合に限り、カード外側の短い退避経路を使う。
-    function drawVerticalGroup(group,direction){
-      if(!group.length)return;
-      const startY=direction>0?bottom:top;
-      const endY=direction>0?Math.max(...group.map(p=>p.ey)):Math.min(...group.map(p=>p.ey));
-      const ignoredAll=new Set([parent,...group.map(p=>p.child)]);
-      const candidates=[left+pr.width*.72,right-18,left+pr.width*.54];
-      const cleanAnchor=candidates.find(anchorX=>{
-        if(segmentHitsNode(anchorX,startY,anchorX,endY,ignoredAll))return false;
-        return group.every(p=>!segmentHitsNode(anchorX,p.ey,p.endX,p.ey,new Set([parent,p.child])));
-      });
-      if(cleanAnchor!=null){
-        paths.push(`<path class="branch-graph-edge branch-graph-trunk" d="M ${cleanAnchor} ${startY} V ${endY}"></path>`);
-        group.forEach(({child,ey,endX})=>{
-          const childName=child.dataset.weaponNode||'';
-          paths.push(`<path class="branch-graph-edge branch-graph-branch" d="M ${cleanAnchor} ${ey} H ${endX}" marker-end="url(#branchArrow)"></path>`);
-          routePaths.push(`<path class="branch-graph-edge branch-graph-edge-route" data-edge-from="${esc(parentName)}" data-edge-to="${esc(childName)}" d="M ${cleanAnchor} ${startY} V ${ey} H ${endX}"></path>`);
-        });
-        return;
-      }
-      const anchorX=right-16;
-      const bendY=startY+direction*9;
-      const outsideX=Math.max(right+12,Math.min(Math.min(...group.map(p=>p.endX))-22,right+30));
-      paths.push(`<path class="branch-graph-edge branch-graph-trunk" d="M ${anchorX} ${startY} V ${bendY} H ${outsideX} V ${endY}"></path>`);
-      group.forEach(({child,ey,endX})=>{
-        const childName=child.dataset.weaponNode||'';
-        paths.push(`<path class="branch-graph-edge branch-graph-branch" d="M ${outsideX} ${ey} H ${endX}" marker-end="url(#branchArrow)"></path>`);
-        routePaths.push(`<path class="branch-graph-edge branch-graph-edge-route" data-edge-from="${esc(parentName)}" data-edge-to="${esc(childName)}" d="M ${anchorX} ${startY} V ${bendY} H ${outsideX} V ${ey} H ${endX}"></path>`);
-      });
-    }
-    drawVerticalGroup(above,-1);
-    drawVerticalGroup(below,1);
-  });
-  svg.innerHTML=`<defs><marker id="branchArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#496675"></path></marker></defs>${paths.join('')}${routePaths.join('')}`;
+  const cr=canvas.getBoundingClientRect(),width=Math.max(canvas.scrollWidth,cr.width),height=Math.max(canvas.scrollHeight,cr.height);svg.setAttribute('width',width);svg.setAttribute('height',height);svg.setAttribute('viewBox',`0 0 ${width} ${height}`);
+  const routes=new Map();canvas.querySelectorAll('[data-route-node]').forEach(el=>{const i=Number(el.dataset.routeIndex)||0;if(!routes.has(i))routes.set(i,[]);routes.get(i).push(el);});
+  const paths=[];routes.forEach(list=>{list.sort((a,b)=>(Number(a.dataset.routePosition)||0)-(Number(b.dataset.routePosition)||0));for(let i=1;i<list.length;i++){const a=list[i-1].getBoundingClientRect(),b=list[i].getBoundingClientRect();const x1=a.right-cr.left,y1=a.top-cr.top+a.height/2,x2=b.left-cr.left-14,y2=b.top-cr.top+b.height/2;const d=Math.abs(y1-y2)<1?`M ${x1} ${y1} H ${x2}`:`M ${x1} ${y1} H ${x1+12} V ${y2} H ${x2}`;paths.push(`<path class="branch-graph-edge branch-graph-branch" d="${d}" marker-end="url(#branchArrow)"></path>`);}});
+  svg.innerHTML=`<defs><marker id="branchArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#496675"></path></marker></defs>${paths.join('')}`;
 }
 function scheduleBranchConnections(){cancelAnimationFrame(branchGraphFrame);branchGraphFrame=requestAnimationFrame(()=>requestAnimationFrame(drawBranchConnections));}
 function clearBranchRouteFocus(scroll=document.querySelector('.branch-graph-scroll')){
