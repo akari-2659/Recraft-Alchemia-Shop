@@ -1,6 +1,6 @@
 {
   "format": "recraft-alchemia-initial-data",
-  "version": "90.8.373",
+  "version": "90.8.374",
   "encoding": "UTF-8",
   "description": "Recraft-Alchemia 公開共通マスター。施設表示用の固定データ。探索エリア解放キーそのものは公開データに含めない。明るい画像資産レイアウト、管理HTMLでの非ボス宝箱レシピ限定の「レシピ販売」選出、薬屋の魔導インク・祈祷紙レシピ販売に対応。",
   "data": {
