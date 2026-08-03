@@ -1693,7 +1693,7 @@ body.ra-facility .branch-graph-scroll.has-route-focus .branch-graph-branch {
 }
 
 /* ========================================================================== */
-/* v90.8.372 — 工房掲示板 / 錬金術施設レイアウト                              */
+/* v90.8.373 — 工房掲示板 / 錬金術施設レイアウト                              */
 /* 旧「開いた魔導書」型の一枚面を廃止し、画像資産を使った独立パネル構成へ変更。 */
 /* ========================================================================== */
 body.ra-app{
@@ -1897,7 +1897,7 @@ body.ra-app footer{color:#d8cbb8 !important;text-shadow:0 1px 2px rgba(0,0,0,.45
 }
 
 /* ========================================================================== */
-/* v90.8.372 — 明るい工房回廊 / 施設カードレイアウト                           */
+/* v90.8.373 — 明るい工房回廊 / 施設カードレイアウト                           */
 /* 暗い壁面表現を廃止し、紙テクスチャと既存紋章画像を淡い背景へ配置する。       */
 /* ========================================================================== */
 html{background:#f5efe3 !important;color-scheme:light !important}
@@ -2029,7 +2029,7 @@ body.ra-facility .daily-recipe-card::after{content:"";position:absolute;right:10
   body.ra-app .hero::before,body.ra-app .title-card::before,body.ra-app .header-inner::before{opacity:.075 !important}
 }
 
-/* v90.8.372: version information is shown once at the page top, never floating. */
+/* v90.8.373: version information is shown once at the page top, never floating. */
 body.ra-app .ra-build-info{
   position:static !important;inset:auto !important;z-index:auto !important;
   width:min(1180px,calc(100% - 28px));margin:6px auto 0 !important;padding:4px 2px !important;
@@ -2038,6 +2038,26 @@ body.ra-app .ra-build-info{
 }
 @media(max-width:720px){body.ra-app .ra-build-info{text-align:left !important;width:min(100% - 20px,1180px)}}
 
-/* v90.8.372: compact unlock controls. */
+/* v90.8.373: compact unlock controls. */
 body.ra-facility .facility-unlock-grid input{min-height:38px !important;height:38px !important;padding:7px 10px !important;font-size:.88rem !important}
 body.ra-facility .facility-unlock-grid button{min-height:38px !important;height:auto !important;padding:7px 11px !important;border-radius:10px !important;font-size:.84rem !important;width:auto !important}
+
+
+/* v90.8.373: fine spacing and edge readability */
+body.ra-app > main{padding:clamp(18px,2.4vw,30px)!important;}
+body.ra-app :is(.panel,.big-section,.tab-panel){padding:clamp(15px,2vw,24px)!important;}
+body.ra-app :is(.card,.mini-card,.status-box,.notice,.result,.facility-summary,.facility-work-block,.facility-product-body,.help-body){padding:clamp(11px,1.5vw,17px)!important;}
+body.ra-app :is(.panel,.card,.notice,.status-box,.result,.facility-product,.facility-upgrade-box,.table-wrap,.modal-card,.weapon-modal-dialog){overflow-clip-margin:8px;}
+body.ra-app :is(.panel,.card,.facility-product-body,.modal-body,.weapon-modal-body)>:first-child{margin-top:0!important;}
+body.ra-app :is(.panel,.card,.facility-product-body,.modal-body,.weapon-modal-body)>:last-child{margin-bottom:0!important;}
+body.ra-app :is(.buttons,.tabs,.subtabs,.tab-nav,.quest-category-bar,.section-actions,.filter-actions,.facility-actions,.help-actions,.monster-output-actions,.modal-foot){gap:10px!important;margin-block:12px!important;padding:2px!important;}
+body.ra-app :is(button,.tab,.subtab,.tab-btn,.quest-category-btn){min-height:40px;padding:8px 13px!important;line-height:1.35;}
+body.ra-app :is(input,select,textarea){min-height:40px;padding:8px 10px!important;}
+body.ra-app :is(label,.field){min-width:0;}
+body.ra-app :is(table th,table td){padding:9px 10px!important;}
+body.ra-app details>summary{padding:10px 12px!important;}
+body.ra-app .facility-product-meta{gap:7px!important;margin-block:8px!important;}
+body.ra-app .facility-chip,body.ra-app .pill{padding:4px 8px!important;line-height:1.35;}
+body.ra-app :is(.modal-body,.weapon-modal-body,.dialog-body){padding:16px!important;}
+body.ra-app :is(.modal-head,.weapon-modal-header,.dialog-head){padding:13px 16px!important;}
+@media(max-width:720px){body.ra-app>main{padding:13px!important}body.ra-app :is(.panel,.big-section,.tab-panel){padding:13px!important}body.ra-app :is(.card,.mini-card,.status-box,.notice,.result,.facility-product-body,.help-body){padding:11px!important}}
