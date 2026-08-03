@@ -1304,9 +1304,7 @@ body.ra-app :is(.empty,.loading-state,[data-empty-state]) {
   color:#66645c;
   border:1px dashed rgba(145,111,54,.55);
   border-radius:8px;
-  background:
-    center/160px auto no-repeat url("assets/ui/alchemy-watermark-3.png"),
-    rgba(255,252,243,.78) !important;
+  background:rgba(255,252,243,.78) !important;
 }
 @media(max-width:720px){
   body.ra-facility .summary-line{padding-right:70px !important}
@@ -1695,7 +1693,7 @@ body.ra-facility .branch-graph-scroll.has-route-focus .branch-graph-branch {
 }
 
 /* ========================================================================== */
-/* v90.8.371 — 工房掲示板 / 錬金術施設レイアウト                              */
+/* v90.8.372 — 工房掲示板 / 錬金術施設レイアウト                              */
 /* 旧「開いた魔導書」型の一枚面を廃止し、画像資産を使った独立パネル構成へ変更。 */
 /* ========================================================================== */
 body.ra-app{
@@ -1899,7 +1897,7 @@ body.ra-app footer{color:#d8cbb8 !important;text-shadow:0 1px 2px rgba(0,0,0,.45
 }
 
 /* ========================================================================== */
-/* v90.8.371 — 明るい工房回廊 / 施設カードレイアウト                           */
+/* v90.8.372 — 明るい工房回廊 / 施設カードレイアウト                           */
 /* 暗い壁面表現を廃止し、紙テクスチャと既存紋章画像を淡い背景へ配置する。       */
 /* ========================================================================== */
 html{background:#f5efe3 !important;color-scheme:light !important}
@@ -2030,3 +2028,16 @@ body.ra-facility .daily-recipe-card::after{content:"";position:absolute;right:10
   body.ra-app::before,body.ra-app::after{opacity:.04 !important}
   body.ra-app .hero::before,body.ra-app .title-card::before,body.ra-app .header-inner::before{opacity:.075 !important}
 }
+
+/* v90.8.372: version information is shown once at the page top, never floating. */
+body.ra-app .ra-build-info{
+  position:static !important;inset:auto !important;z-index:auto !important;
+  width:min(1180px,calc(100% - 28px));margin:6px auto 0 !important;padding:4px 2px !important;
+  border:0 !important;border-radius:0 !important;background:transparent !important;box-shadow:none !important;
+  color:var(--ra-muted,#70665b) !important;text-align:right !important;backdrop-filter:none !important;
+}
+@media(max-width:720px){body.ra-app .ra-build-info{text-align:left !important;width:min(100% - 20px,1180px)}}
+
+/* v90.8.372: compact unlock controls. */
+body.ra-facility .facility-unlock-grid input{min-height:38px !important;height:38px !important;padding:7px 10px !important;font-size:.88rem !important}
+body.ra-facility .facility-unlock-grid button{min-height:38px !important;height:auto !important;padding:7px 11px !important;border-radius:10px !important;font-size:.84rem !important;width:auto !important}
