@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.366</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.371</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -12,7 +12,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 .branch-controls{display:grid;gap:10px;margin:0 0 12px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#fffdf8}.branch-controls[hidden]{display:none}.branch-search{display:grid;grid-template-columns:minmax(220px,1fr);gap:6px}.branch-search label{font-size:12px;font-weight:800;color:var(--muted)}.weapon-category-tabs{display:flex;flex-wrap:wrap;gap:7px}.weapon-category-tabs button{background:#f1e4d1;color:var(--ink);border:1px solid var(--line);padding:8px 12px}.weapon-category-tabs button.active{background:var(--accent);color:#fff}.weapon-category-tabs .count{font-size:11px;opacity:.78;margin-left:4px}
 .branch-groups{display:grid;gap:12px}.branch-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.branch-group>summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:900;display:flex;gap:8px;align-items:center;justify-content:space-between;background:#f6e8d4}.branch-group>summary::-webkit-details-marker{display:none}.branch-group>summary::before{content:"▶";margin-right:7px;transition:transform .15s}.branch-group[open]>summary::before{transform:rotate(90deg)}.branch-summary-main{display:flex;gap:8px;align-items:center;flex-wrap:wrap;min-width:0}.branch-body{padding:13px;display:grid;gap:14px}.branch-line{display:grid;gap:8px;border-left:4px solid #b98956;padding:4px 0 4px 12px}.branch-node{position:relative;border:1px solid #e5d2b8;border-radius:14px;background:#fffaf3;padding:12px;margin-left:calc((var(--depth,1) - 1) * 22px)}.branch-node::before{content:"┗";position:absolute;left:-19px;top:12px;color:#9a7652;font-weight:900}.branch-node.locked{background:repeating-linear-gradient(135deg,#fffaf2,#fffaf2 12px,#f6ecdd 12px,#f6ecdd 24px)}.branch-node h3{margin:0 0 7px;font-size:16px}.performance{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.performance .chip{background:#e7f0e7;border-color:#bdd1bf}.base-weapons{display:grid;gap:8px;margin:0 0 12px}.base-weapon{border:1px solid #c9b18f;border-radius:15px;background:#fffdf8;overflow:hidden}.base-weapon>summary{cursor:pointer;list-style:none;padding:12px 14px;font-weight:900;background:#efe2cf}.base-weapon>summary::-webkit-details-marker{display:none}.base-weapon-body{padding:12px}.base-weapon-body dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 9px;margin:0;font-size:13px;line-height:1.6}.base-weapon-body dt{font-weight:800;color:#5f4935}.base-weapon-body dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.branch-node dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 9px;margin:0;font-size:13px;line-height:1.6}.branch-node dt{font-weight:800;color:#5f4935}.branch-node dd{margin:0;overflow-wrap:anywhere;white-space:pre-wrap}@media(max-width:520px){.branch-node{margin-left:calc((var(--depth,1) - 1) * 12px)}.branch-node dl{grid-template-columns:1fr}.branch-node dd{margin-bottom:5px}}
 .recipe-category-groups{display:grid;gap:12px}.recipe-category-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.recipe-category-group>summary{cursor:pointer;list-style:none;padding:13px 15px;font-weight:900;background:#f6e8d4}.recipe-category-group>summary::-webkit-details-marker{display:none}.recipe-category-body{padding:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:720px){.recipe-category-body{grid-template-columns:1fr}}
-/* v90.8.366: 派生先遷移・10件ページング・折り畳み矢印固定 */
+/* v90.8.371: 派生先遷移・10件ページング・折り畳み矢印固定 */
 html{scrollbar-gutter:stable}
 .branch-group>summary::before,.base-weapon>summary::before,.recipe-category-group>summary::before,.unlock-panel>summary::before{
   content:"▶";display:inline-grid;place-items:center;flex:0 0 1.05rem;width:1.05rem;height:1.05rem;
@@ -37,7 +37,7 @@ html{scrollbar-gutter:stable}
 .branch-node.branch-focus{animation:branchFocusPulse 1.8s ease;outline:3px solid rgba(169,111,55,.45);outline-offset:2px}
 @keyframes branchFocusPulse{0%,100%{box-shadow:none}35%{box-shadow:0 0 0 8px rgba(169,111,55,.16)}}
 @media(max-width:520px){.next-branch-row{align-items:flex-start;flex-direction:column}.next-branch-row button{width:100%}}
-/* v90.8.366: 武器派生図表示 */
+/* v90.8.371: 武器派生図表示 */
 .branch-view-switch{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
 .branch-view-switch .catalog-filter-label{margin-right:3px}
 .branch-view-switch button{padding:7px 11px;background:#f1e4d1;color:var(--ink);border:1px solid var(--line)}
@@ -65,7 +65,7 @@ html{scrollbar-gutter:stable}
 .branch-table-empty{color:#b8a58d;text-align:center}
 @media(max-width:600px){.branch-table th,.branch-table td{min-width:165px;padding:7px}.branch-table .branch-table-label{min-width:128px;max-width:148px}.branch-table-node{width:148px}}
 
-/* v90.8.366: ★ランク帯配置・同一★内連続列・自然な折れ線・強いランク見出し帯を廃止 */
+/* v90.8.371: ★ランク帯配置・同一★内連続列・自然な折れ線・強いランク見出し帯を廃止 */
 /* 派生線修正2: 分岐点を矢印手前へ固定し、矢印から枝線が伸びて見える重なりを防止 */
 .branch-controls{grid-template-columns:minmax(220px,1fr) minmax(190px,280px);align-items:end}
 .branch-label-side-toggle{position:sticky;left:0;top:0;z-index:12;align-self:stretch;display:grid;place-items:center;width:100%;min-width:0;height:30px;padding:0;border:1px solid #d8bea0;border-left:0;border-radius:0 9px 9px 0;background:rgba(237,216,188,.98);color:#68492f;font-size:14px;font-weight:1000;line-height:1;box-shadow:4px 3px 9px rgba(80,50,20,.07);transform:none}
@@ -95,6 +95,7 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-label::after{content:'◆';font-size:8px;line-height:1;color:#7b5d3e}
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-label.base::after{content:'◇'}
 @media(max-width:720px){.branch-controls{grid-template-columns:1fr}.branch-graph-canvas{--branch-label-width:74px;gap:10px 22px}.branch-graph-label{padding:6px 2px;font-size:11px}.branch-graph-node{width:150px}.weapon-modal-details{grid-template-columns:1fr}.weapon-modal-link{align-items:flex-start;flex-direction:column}.weapon-modal-link button{width:100%}}
+
 </style>
 
 <style id="raMaintenanceV287">
@@ -104,21 +105,32 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 .catalog-search-controls{display:grid;grid-template-columns:max-content minmax(180px,1fr) max-content;gap:8px;align-items:center;margin:0 0 12px;padding:10px 12px;border:1px solid var(--line);border-radius:14px;background:#fffdf8}.catalog-search-controls label{font-size:12px;font-weight:900;color:var(--muted)}.catalog-search-controls[hidden]{display:none}
 .card{content-visibility:auto;contain-intrinsic-size:220px}.summary-line{align-items:center}.summary-line .secondary{padding:8px 12px}
 @media(max-width:720px){.build{text-align:left}.hero{padding:11px!important}.subtitle{display:none}.section-tabs{top:58px}.catalog-search-controls{grid-template-columns:1fr}.catalog-search-controls label,.catalog-search-controls span{font-size:.75rem}}
+
+/* v90.8.371: プレイヤー別・個別解放キー蓄積UI */
+.facility-unlock-grid{grid-template-columns:minmax(240px,1.15fr) auto minmax(240px,1fr) auto auto}
+.saved-area-block{margin-top:12px;padding:11px 12px;border:1px solid var(--line);border-radius:14px;background:rgba(255,253,248,.78)}
+.saved-area-label{font-size:12px;font-weight:900;color:var(--muted);margin-bottom:7px}.unlocked-area-list{display:flex;gap:7px;flex-wrap:wrap}.unlocked-area-list .chip.otherworld{border-style:dashed;background:#eef4f5}
+@media(max-width:980px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/-1}}
+@media(max-width:520px){.facility-unlock-grid{grid-template-columns:1fr}.facility-unlock-grid button{width:100%}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.366-modalfix2">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.371-modalfix2">
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.366｜更新：2026年8月2日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理、スキルクリスタル強化を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.371｜更新：2026年8月3日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
-  <summary><span>解放範囲</span><span id="unlockSummary">確認中</span></summary>
+  <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
   <div class="unlock-panel-body">
-    <div class="unlock-grid">
-      <div class="field"><label for="unlockKey">解放キー</label><input id="unlockKey" autocomplete="off" spellcheck="false" placeholder="GMから受け取ったキーを入力"></div>
-      <button id="applyKey" type="button">キーを適用</button><button id="resetKey" class="ghost" type="button">初期状態へ戻す</button>
+    <div class="unlock-grid facility-unlock-grid">
+      <div class="field player-key-field"><label for="playerKey">プレイヤーキー</label><input id="playerKey" type="password" autocomplete="off" spellcheck="false" placeholder="キャラクター保存で使用しているプレイヤーキー"></div>
+      <button id="loadState" class="secondary" type="button">保存状態を読込</button>
+      <div class="field unlock-key-field"><label for="unlockKey">追加する解放キー</label><input id="unlockKey" autocomplete="off" spellcheck="false" placeholder="GMから受け取った解放キー"></div>
+      <button id="applyKey" type="button">解放キーを追加</button>
+      <button id="resetKey" class="ghost" type="button">解放状態を初期化</button>
     </div>
-    <div id="unlockStatus" class="status">施設データを読み込んでいます。</div>
+    <div class="saved-area-block"><div class="saved-area-label">現在保存されているエリア</div><div id="unlockedAreas" class="unlocked-area-list"><span class="chip">初期エリア</span></div></div>
+    <div id="unlockStatus" class="status">プレイヤーキーを入力すると、保存済みの解放状態を読み込めます。</div>
   </div>
 </details>
 <section class="panel facility-catalog-panel">
@@ -152,14 +164,14 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
     <div id="weaponModalBody" class="weapon-modal-body"></div>
   </div>
 </div>
-</main><footer>固定マスターはGitHub共通DBから取得し、解放キーの確認はGASで行います。未解放表示は施設ページ内で処理します。</footer>
+</main><footer>固定マスターはGitHub共通DBから取得し、プレイヤー別の解放キー履歴はGASへ保存します。入力済みの各キーに対応するエリアだけが追加解放されます。</footer>
 <script>
 'use strict';
 const DEFAULT_GAS_WEB_APP_URL='https://script.google.com/macros/s/AKfycbyjIIKXTXZGf8RFOt7wQcenYEuVP68ijTU83e6rioqX21EKW075xjDjB5pTucyVcrc/exec';
-const STORAGE_KEY='recraft_alchemia.player_facility.unlock_key';
+const PLAYER_KEY_STORAGE_KEY='recraft_alchemia.player_facility.player_key';
 const SECTION_DEFS={
  smith:[['sales','販売商品','鍛冶屋で購入できる品です。'],['craft','装備・道具作成','武器・防具・盾・バッグ・矢筒・装飾品・仕掛けなどの作成です。'],['materials','素材加工','自作はレシピ不要で、対応する鍛冶道具と判定成功が必要です。施設依頼は判定不要ですが加工依頼費が必要です。'],['crystal','クリスタル強化','現在の解放エリアで利用できる、スキルクリスタルの強化段階・必要素材・費用です。'],['branches','武器派生','武器種を選び、大枠の素材系統と順当強化・分岐を矢印でつないだ派生図を確認できます。武器の詳細では強化枠、必要素材、派生元、次の派生先を確認できます。未解放の派生先は「？？？」で表示します。']],
- apothecary:[['sales','販売商品','薬屋で購入できる調合品と調合道具です。'],['alchemy','調合品作成','薬品・香・爆弾・瓶などの調合です。'],['materials','素材加工','一般の加工素材はレシピ不要です。魔導インク・祈祷紙は対応レシピが必要な特殊加工としてここに表示します。施設依頼はどちらもレシピ不要・判定不要です。']],
+ apothecary:[['sales','販売商品','薬屋で購入できる調合品・調合道具・常設販売レシピです。魔導インクと祈祷紙のレシピもここで購入できます。'],['alchemy','調合品作成','薬品・香・爆弾・瓶などの調合です。'],['materials','素材加工','一般の加工素材はレシピ不要です。魔導インク・祈祷紙は対応レシピが必要な特殊加工としてここに表示します。施設依頼はどちらもレシピ不要・判定不要です。']],
  antique:[['sales','常設販売','骨董屋で常時購入できる品と店売りレシピです。'],['scrolls','未鑑定スクロール価格','販売内容はランダムのため、各ランクの価格だけを表示します。']],
  eatery:[['meals','食材持ち込み料理','必要食材と調理代を確認できます。食事効果は次の探索・依頼から帰還するまで継続し、同時に1種類のみ有効です。']]
 };
@@ -170,7 +182,7 @@ const raStorage={
   set(key,value){try{if(window.localStorage)window.localStorage.setItem(key,value);}catch(error){console.warn('保存情報を書き込めませんでした。',error);}},
   remove(key){try{if(window.localStorage)window.localStorage.removeItem(key);}catch(error){console.warn('保存情報を削除できませんでした。',error);}}
 };
-let currentFacility='smith',currentSection='sales',currentKey='',currentWeaponCategory=raStorage.get('recraft_alchemia.player_facility.weapon_category')||'',branchSearch='',currentRank='all',catalogSearch='',branchLabelsCollapsed=raStorage.get(BRANCH_LABEL_COLLAPSE_STORAGE_KEY)==='1';
+let currentFacility='smith',currentSection='sales',currentPlayerKey='',currentUnlockState={unlockedAreaIds:[],unlockedAreas:[]},currentWeaponCategory=raStorage.get('recraft_alchemia.player_facility.weapon_category')||'',branchSearch='',currentRank='all',catalogSearch='',branchLabelsCollapsed=raStorage.get(BRANCH_LABEL_COLLAPSE_STORAGE_KEY)==='1';
 const WEAPON_CATEGORY_STORAGE_KEY='recraft_alchemia.player_facility.weapon_category';
 let branchDetailIndex=Object.create(null),branchGraphFrame=0,weaponModalLastFocus=null;
 const $=id=>document.getElementById(id);
@@ -223,7 +235,7 @@ function rankMatches(row){return currentRank==='all'||rankValue(row&&row.rank)==
 function collectRanks(rows,branches){const ranks=new Set();if(branches){(rows||[]).forEach(cat=>{(cat.baseWeapons||[]).forEach(w=>ranks.add(rankValue(w.rank)));(cat.branches||[]).forEach(branch=>(branch.lines||[]).forEach(line=>(line.nodes||[]).forEach(n=>ranks.add(rankValue(n.rank)))));});}else{(rows||[]).forEach(r=>ranks.add(rankValue(r.rank)));}return [...ranks].sort((a,b)=>a-b);}
 function renderRankControls(rows,branches){const ranks=collectRanks(rows,branches);const wrap=$('catalogRankControls'),box=$('rankFilterButtons');if(ranks.length<2){currentRank='all';wrap.hidden=true;box.innerHTML='';return;}if(currentRank!=='all'&&!ranks.includes(Number(currentRank)))currentRank='all';wrap.hidden=false;box.innerHTML=[`<button type="button" data-rank-filter="all" class="${currentRank==='all'?'active':''}">すべて</button>`,...ranks.map(rank=>`<button type="button" data-rank-filter="${rank}" class="${Number(currentRank)===rank?'active':''}">★${rank}</button>`)].join('');}
 function setStatus(text,kind=''){const el=$('unlockStatus');el.className='status'+(kind?' '+kind:'');el.textContent=text;}
-function jsonpAction(action,key){return new Promise((resolve,reject)=>{const cb='raFacilityCb_'+Date.now()+'_'+Math.random().toString(36).slice(2);const sc=document.createElement('script');const timer=setTimeout(()=>{clean();reject(new Error('通信がタイムアウトしました。'));},20000);function clean(){clearTimeout(timer);try{delete window[cb]}catch(e){}sc.remove();}window[cb]=j=>{clean();resolve(j)};const u=new URL(DEFAULT_GAS_WEB_APP_URL);u.searchParams.set('api','1');u.searchParams.set('action',action);u.searchParams.set('unlockKey',key||'');u.searchParams.set('callback',cb);sc.onerror=()=>{clean();reject(new Error('施設データへ接続できませんでした。'));};sc.src=u.toString();document.head.appendChild(sc);});}
+function jsonpAction(action,params={}){return new Promise((resolve,reject)=>{const cb='raFacilityCb_'+Date.now()+'_'+Math.random().toString(36).slice(2);const sc=document.createElement('script');const timer=setTimeout(()=>{clean();reject(new Error('通信がタイムアウトしました。'));},20000);function clean(){clearTimeout(timer);try{delete window[cb]}catch(e){}sc.remove();}window[cb]=j=>{clean();resolve(j)};const u=new URL(DEFAULT_GAS_WEB_APP_URL);u.searchParams.set('api','1');u.searchParams.set('action',action);Object.entries(params||{}).forEach(([key,value])=>{if(value!==undefined&&value!==null)u.searchParams.set(key,String(value));});u.searchParams.set('callback',cb);sc.onerror=()=>{clean();reject(new Error('施設データへ接続できませんでした。'));};sc.src=u.toString();document.head.appendChild(sc);});}
 
 const GITHUB_COMMON_DB_BASE='https://akari-2659.github.io/Recraft-Alchemia-Manager/data/public/';
 const GITHUB_COMMON_DB_MANIFEST_URL=GITHUB_COMMON_DB_BASE+'manifest.json';
@@ -416,7 +428,7 @@ async function fetchGithubCommonMaster({force=false}={}){
     throw error;
   }
 }
-function buildFacilityCatalogFromGithub(commonMaster,unlockState){
+function buildFacilityCatalogFromGithub(commonMaster,unlockState={}){
   const data=commonMaster.data||{};
   const areas=(Array.isArray(data.exploration_areas)?data.exploration_areas:[])
     .filter(facilityEnabled)
@@ -427,25 +439,27 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState){
       return String(a.name||a.id||'').localeCompare(String(b.name||b.id||''),'ja');
     });
   if(!areas.length)throw new Error('共通DBに探索エリアが登録されていません。');
-  const stateArea=unlockState&&unlockState.area||{};
-  const currentArea=areas.find(a=>String(a.id||'')===String(stateArea.id||''))
-    ||areas.find(a=>String(a.unlockKey||'')===String(unlockState&&unlockState.unlockKey||''))
-    ||(!String(unlockState&&unlockState.unlockKey||'').trim()?areas[0]:null);
-  if(!currentArea)throw new Error('GASの解放状態と共通DBの探索エリアが一致しません。');
-  const currentOrder=Number(currentArea.unlockOrder)||1;
-  const areaById={};
-  areas.forEach(a=>{areaById[String(a.id||'')]=a;});
-  function requiredOrder(row){
-    const explicit=Number(row&&row.unlockOrder);
-    if(Number.isFinite(explicit)&&explicit>0)return explicit;
+  const areaById={};areas.forEach(area=>{areaById[String(area.id||'')]=area;});
+  const unlockedAreaIds=[...new Set((Array.isArray(unlockState.unlockedAreaIds)?unlockState.unlockedAreaIds:[]).map(String).filter(id=>areaById[id]))];
+  const initialId=String(areas[0].id||'');
+  if(initialId&&!unlockedAreaIds.includes(initialId))unlockedAreaIds.unshift(initialId);
+  const unlockedAreaSet=new Set(unlockedAreaIds);
+  const unlockedAreas=areas.filter(area=>unlockedAreaSet.has(String(area.id||'')));
+  function requiredAreaId(row){
     const areaId=String(row&&row.unlockAreaKey||'').trim();
-    if(!areaId)return Number(areas[0].unlockOrder)||1;
-    const area=areaById[areaId];
-    return area?Number(area.unlockOrder)||1:Infinity;
+    if(areaId)return areaById[areaId]?areaId:'__missing_area__';
+    const explicit=Number(row&&row.unlockOrder);
+    if(Number.isFinite(explicit)&&explicit>0){
+      const matched=areas.find(area=>Number(area.unlockOrder)===explicit&&String(area.areaType||'')!=='異界');
+      if(matched)return String(matched.id||'');
+    }
+    return initialId;
   }
-  function unlocked(row){
-    return requiredOrder(row)<=currentOrder;
+  function requiredOrder(row){
+    const area=areaById[requiredAreaId(row)];
+    return area?Number(area.unlockOrder)||1:999;
   }
+  function unlocked(row){return unlockedAreaSet.has(requiredAreaId(row));}
   function facilityMatch(row,facilityName){return facilityText(row).includes(facilityName);}
   function isRandomUnidentifiedScroll(row){
     return String(row&&row.itemCategory||'').includes('未鑑定')||String(row&&row.tags||'').includes('ランダム販売');
@@ -461,11 +475,10 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState){
     return '術式';
   }
   function maxAntiqueScrollRank(){
-    // 骨董屋解放（森）で★1、湿地・水庭で★2、鉱山で★3。★4は現行エリアでは未販売。
-    if(currentOrder<2)return 0;
-    if(currentOrder<3)return 1;
-    if(currentOrder<4)return 2;
-    return 3;
+    if(unlockedAreaSet.has('area_wind_swept_highland'))return 3;
+    if(unlockedAreaSet.has('area_waterside_wetland')||unlockedAreaSet.has('area_reflection_water_garden')||unlockedAreaSet.has('area_foothill_old_mine'))return 2;
+    if(unlockedAreaSet.has('area_nearby_forest'))return 1;
+    return 0;
   }
   function sortRows(a,b){
     const ao=requiredOrder(a),bo=requiredOrder(b);
@@ -720,7 +733,9 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState){
   });
 
   return{
-    areaName:currentArea.name||unlockState.areaName||'初期エリア',
+    areaName:unlockedAreas.map(area=>area.name).join('・')||'初期エリア',
+    unlockedAreaIds,
+    unlockedAreas,
     version:commonMaster.version||'',
     catalog:{
       smith:{
@@ -745,15 +760,26 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState){
     }
   };
 }
-async function loadUnlockState(key){
-  const result=await jsonpAction('facilityUnlockState',key);
-  if(!result||!result.ok)throw new Error(result&&result.error?result.error:'解放キーを確認できませんでした。');
+async function loadUnlockState(playerKey,unlockKey=''){
+  const result=await jsonpAction('facilityUnlockState',{playerKey,unlockKey});
+  if(!result||!result.ok)throw new Error(result&&result.error?result.error:'解放状態を確認できませんでした。');
   return result;
 }
-async function loadLegacyCatalog(key){
-  const result=await jsonpAction('facilityCatalog',key);
+async function resetUnlockState(playerKey){
+  const result=await jsonpAction('facilityUnlockReset',{playerKey});
+  if(!result||!result.ok)throw new Error(result&&result.error?result.error:'解放状態を初期化できませんでした。');
+  return result;
+}
+async function loadLegacyCatalog(playerKey){
+  const result=await jsonpAction('facilityCatalog',{playerKey});
   if(!result||!result.ok)throw new Error(result&&result.error?result.error:'施設データを取得できませんでした。');
   return result;
+}
+function renderUnlockedAreas(state={}){
+  const rows=Array.isArray(state.unlockedAreas)?state.unlockedAreas:[];
+  const box=$('unlockedAreas');
+  if(box)box.innerHTML=rows.length?rows.map(area=>`<span class="chip${String(area.areaType||'')==='異界'?' otherworld':''}">${esc(area.name||'名称未設定')}</span>`).join(''):'<span class="chip">初期エリア</span>';
+  if($('unlockSummary'))$('unlockSummary').textContent=`${Math.max(1,rows.length)}エリア`;
 }
 
 function performanceHtml(rows){return Array.isArray(rows)&&rows.length?`<div class="performance">${rows.map(x=>`<span class="chip">${esc(x.label)} ${esc(x.value)}</span>`).join('')}</div>`:'';}
@@ -1204,52 +1230,79 @@ function syncBranchLabelToggle(){
   });
 }
 function renderTabs(){document.body.dataset.facility=currentFacility;syncBranchLabelToggle();const defs=SECTION_DEFS[currentFacility];if(!defs.some(d=>d[0]===currentSection))currentSection=defs[0][0];$('sectionTabs').innerHTML=defs.map(([id,label])=>`<button type="button" data-section="${esc(id)}" class="${id===currentSection?'active':''}">${esc(label)}</button>`).join('');const cur=defs.find(d=>d[0]===currentSection);$('sectionTitle').textContent=cur[1];$('sectionDescription').textContent=cur[2];}
-function catalogRowMatches(row){const q=searchNorm(catalogSearch);if(!q)return true;return searchNorm(Object.values(row||{}).filter(v=>typeof v!=='object').join(' ')).includes(q);}function render(){renderTabs();const rows=(catalog[currentFacility]&&catalog[currentFacility][currentSection])||[];const branches=currentSection==='branches',scrolls=currentSection==='scrolls',crystal=currentSection==='crystal';$('branchControls').hidden=!branches;$('catalogSearchControls').hidden=branches;renderRankControls(rows,branches);const filtered=branches?rows:rows.filter(rankMatches).filter(catalogRowMatches);if($('catalogSearchCount'))$('catalogSearchCount').textContent=branches?'':`${filtered.length}件表示`;$('cards').className=branches?'':'cards';$('cards').innerHTML=branches?branchCatalog(rows):(filtered.length?(scrolls?filtered.map(scrollPriceCard).join(''):currentSection==='sales'?salesCatalog(filtered):crystal?filtered.map(crystalCard).join(''):recipeCatalog(filtered)):'<div class="empty">現在の検索・★ランク条件に一致する内容はありません。</div>');;if(branches)focusPendingBranchNode();}
-async function loadCatalog(key,save,{force=false}={}){
-  setStatus('GitHub共通DBと解放範囲を確認しています。');
-  $('applyKey').disabled=true;
-  $('reloadDb').disabled=true;
+function catalogRowMatches(row){const q=searchNorm(catalogSearch);if(!q)return true;return searchNorm(Object.values(row||{}).filter(v=>typeof v!=='object').join(' ')).includes(q);}function render(){renderTabs();const rows=(catalog[currentFacility]&&catalog[currentFacility][currentSection])||[];const branches=currentSection==='branches',scrolls=currentSection==='scrolls',crystal=currentSection==='crystal';$('branchControls').hidden=!branches;$('catalogSearchControls').hidden=branches;renderRankControls(rows,branches);const filtered=branches?rows:rows.filter(rankMatches).filter(catalogRowMatches);if($('catalogSearchCount'))$('catalogSearchCount').textContent=branches?'':`${filtered.length}件表示`;$('cards').className=branches?'':'cards';$('cards').innerHTML=branches?branchCatalog(rows):(filtered.length?(scrolls?filtered.map(scrollPriceCard).join(''):currentSection==='sales'?salesCatalog(filtered):crystal?filtered.map(crystalCard).join(''):recipeCatalog(filtered)):'<div class="empty">現在の検索・★ランク条件に一致する内容はありません。</div>');if(branches)focusPendingBranchNode();}
+async function loadCatalog(playerKey,{unlockKey='',force=false,reset=false}={}){
+  const cleanPlayerKey=String(playerKey||'').trim();
+  setStatus(cleanPlayerKey?'GitHub共通DBと保存済みの解放状態を確認しています。':'初期エリアの施設データを読み込んでいます。');
+  ['applyKey','loadState','resetKey','reloadDb'].forEach(id=>{if($(id))$(id).disabled=true;});
   try{
-    try{
-      const [commonMaster,unlockState]=await Promise.all([
-        fetchGithubCommonMaster({force}),
-        loadUnlockState(key)
-      ]);
-      const built=buildFacilityCatalogFromGithub(commonMaster,unlockState);
-      catalog=built.catalog||catalog;
-      currentKey=key||'';
-      if(save){
-        if(currentKey)raStorage.set(STORAGE_KEY,currentKey);
-        else raStorage.remove(STORAGE_KEY);
-      }
-      setStatus(`現在の解放範囲：${built.areaName||'初期エリア'}まで / GitHub共通DB${built.version?' v'+built.version:''}${commonMaster.versionWarning?'（更新反映待ち）':''}`,commonMaster.versionWarning?'':'ok');if($('unlockSummary'))$('unlockSummary').textContent=`${built.areaName||'初期エリア'}まで`;if($('unlockPanel'))$('unlockPanel').open=false;
-      render();
-      return true;
-    }catch(primaryError){
-      console.warn('共通DB方式を利用できないため、従来のGAS施設カタログへ切り替えます。',primaryError);
-      const legacy=await loadLegacyCatalog(key);
-      catalog=legacy.catalog||catalog;
-      currentKey=key||'';
-      if(save){
-        if(currentKey)raStorage.set(STORAGE_KEY,currentKey);
-        else raStorage.remove(STORAGE_KEY);
-      }
-      setStatus(`現在の解放範囲：${legacy.areaName||'初期エリア'}まで / GASフォールバック`,'ok');
-      render();
-      return true;
+    const commonMaster=await fetchGithubCommonMaster({force});
+    let unlockState;
+    if(cleanPlayerKey){
+      unlockState=reset?await resetUnlockState(cleanPlayerKey):await loadUnlockState(cleanPlayerKey,unlockKey);
+      currentPlayerKey=cleanPlayerKey;
+      currentUnlockState=unlockState;
+      raStorage.set(PLAYER_KEY_STORAGE_KEY,cleanPlayerKey);
+    }else{
+      unlockState={unlockedAreaIds:[],unlockedAreas:[]};
+      currentPlayerKey='';
+      currentUnlockState=unlockState;
     }
-  }catch(error){
-    setStatus(String(error.message||error),'bad');
+    const built=buildFacilityCatalogFromGithub(commonMaster,unlockState);
+    catalog=built.catalog||catalog;
+    const displayState={...unlockState,unlockedAreaIds:built.unlockedAreaIds||[],unlockedAreas:built.unlockedAreas||[]};
+    currentUnlockState=displayState;
+    renderUnlockedAreas(displayState);
+    if(cleanPlayerKey){
+      const added=unlockState.addedAreaName?`「${unlockState.addedAreaName}」を追加しました。 `:'';
+      setStatus(`${added}保存済み：${(built.unlockedAreas||[]).map(area=>area.name).join('・')||'初期エリア'} / GitHub共通DB${built.version?' v'+built.version:''}${commonMaster.versionWarning?'（更新反映待ち）':''}`,commonMaster.versionWarning?'':'ok');
+      if(unlockKey)$('unlockKey').value='';
+      if($('unlockPanel'))$('unlockPanel').open=false;
+    }else{
+      setStatus('プレイヤーキー未設定のため、初期エリアだけを表示しています。プレイヤーキーを入力すると保存済みの解放状態を読み込めます。');
+    }
+    render();
+    return true;
+  }catch(primaryError){
+    console.warn('共通DB方式の読み込みに失敗しました。',primaryError);
+    if(cleanPlayerKey){
+      try{
+        const legacy=await loadLegacyCatalog(cleanPlayerKey);
+        catalog=legacy.catalog||catalog;
+        currentPlayerKey=cleanPlayerKey;
+        currentUnlockState=legacy;
+        raStorage.set(PLAYER_KEY_STORAGE_KEY,cleanPlayerKey);
+        renderUnlockedAreas(legacy);
+        setStatus(`保存済み：${(legacy.unlockedAreas||[]).map(area=>area.name).join('・')||legacy.areaName||'初期エリア'} / GASフォールバック`,'ok');
+        render();
+        return true;
+      }catch(legacyError){
+        setStatus(String(legacyError.message||legacyError),'bad');
+        return false;
+      }
+    }
+    setStatus(String(primaryError.message||primaryError),'bad');
     return false;
   }finally{
-    $('applyKey').disabled=false;
-    $('reloadDb').disabled=false;
+    ['applyKey','loadState','resetKey','reloadDb'].forEach(id=>{if($(id))$(id).disabled=false;});
   }
 }
-$('applyKey').addEventListener('click',()=>loadCatalog($('unlockKey').value.trim(),true));
-$('unlockKey').addEventListener('keydown',e=>{if(e.key==='Enter')loadCatalog($('unlockKey').value.trim(),true);});
-$('resetKey').addEventListener('click',()=>{$('unlockKey').value='';loadCatalog('',true);});
-$('reloadDb').addEventListener('click',()=>loadCatalog(currentKey,false,{force:true}));
+function playerKeyValue(){return String($('playerKey')?.value||'').trim();}
+$('loadState').addEventListener('click',()=>loadCatalog(playerKeyValue()));
+$('playerKey').addEventListener('keydown',e=>{if(e.key==='Enter')loadCatalog(playerKeyValue());});
+$('applyKey').addEventListener('click',()=>{
+  const playerKey=playerKeyValue(),unlockKey=String($('unlockKey').value||'').trim();
+  if(!playerKey){setStatus('先にプレイヤーキーを入力してください。','bad');$('playerKey').focus();return;}
+  if(!unlockKey){setStatus('追加する解放キーを入力してください。','bad');$('unlockKey').focus();return;}
+  loadCatalog(playerKey,{unlockKey});
+});
+$('unlockKey').addEventListener('keydown',e=>{if(e.key==='Enter')$('applyKey').click();});
+$('resetKey').addEventListener('click',()=>{
+  const playerKey=playerKeyValue();
+  if(!playerKey){setStatus('先にプレイヤーキーを入力してください。','bad');return;}
+  if(window.confirm('このプレイヤーキーに保存された解放状態を、初期エリアだけに戻しますか？'))loadCatalog(playerKey,{reset:true});
+});
+$('reloadDb').addEventListener('click',()=>loadCatalog(playerKeyValue(),{force:true}));
 let branchRouteHoverNode=null;
 document.addEventListener('pointerover',e=>{
   const node=e.target.closest('.branch-graph-node[data-weapon-node]');
@@ -1304,7 +1357,7 @@ $('weaponCategorySelect').addEventListener('change',e=>{closeWeaponModal();curre
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeWeaponModal();});
 window.addEventListener('resize',scheduleBranchConnections,{passive:true});
 $('branchSearch').addEventListener('input',e=>{closeWeaponModal();branchSearch=e.target.value||'';render();});$('catalogSearch').addEventListener('input',e=>{catalogSearch=e.target.value||'';render();});
-const saved=raStorage.get(STORAGE_KEY)||'';$('unlockKey').value=saved;loadCatalog(saved,false).then(ok=>{if(!ok&&saved){$('unlockKey').value='';raStorage.remove(STORAGE_KEY);loadCatalog('',false);}});
+const savedPlayerKey=raStorage.get(PLAYER_KEY_STORAGE_KEY)||'';$('playerKey').value=savedPlayerKey;loadCatalog(savedPlayerKey);
 </script>
 
 <script id="raMaintenanceV287Script">
