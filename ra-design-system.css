@@ -1693,7 +1693,7 @@ body.ra-facility .branch-graph-scroll.has-route-focus .branch-graph-branch {
 }
 
 /* ========================================================================== */
-/* v90.8.383 — 工房掲示板 / 錬金術施設レイアウト                              */
+/* v90.8.384 — 工房掲示板 / 錬金術施設レイアウト                              */
 /* 旧「開いた魔導書」型の一枚面を廃止し、画像資産を使った独立パネル構成へ変更。 */
 /* ========================================================================== */
 body.ra-app{
@@ -1897,7 +1897,7 @@ body.ra-app footer{color:#d8cbb8 !important;text-shadow:0 1px 2px rgba(0,0,0,.45
 }
 
 /* ========================================================================== */
-/* v90.8.383 — 明るい工房回廊 / 施設カードレイアウト                           */
+/* v90.8.384 — 明るい工房回廊 / 施設カードレイアウト                           */
 /* 暗い壁面表現を廃止し、紙テクスチャと既存紋章画像を淡い背景へ配置する。       */
 /* ========================================================================== */
 html{background:#f5efe3 !important;color-scheme:light !important}
@@ -2029,7 +2029,7 @@ body.ra-facility .daily-recipe-card::after{content:"";position:absolute;right:10
   body.ra-app .hero::before,body.ra-app .title-card::before,body.ra-app .header-inner::before{opacity:.075 !important}
 }
 
-/* v90.8.383: version information is shown once at the page top, never floating. */
+/* v90.8.384: version information is shown once at the page top, never floating. */
 body.ra-app .ra-build-info{
   position:static !important;inset:auto !important;z-index:auto !important;
   width:min(1180px,calc(100% - 28px));margin:6px auto 0 !important;padding:4px 2px !important;
@@ -2038,12 +2038,12 @@ body.ra-app .ra-build-info{
 }
 @media(max-width:720px){body.ra-app .ra-build-info{text-align:left !important;width:min(100% - 20px,1180px)}}
 
-/* v90.8.383: compact unlock controls. */
+/* v90.8.384: compact unlock controls. */
 body.ra-facility .facility-unlock-grid input{min-height:38px !important;height:38px !important;padding:7px 10px !important;font-size:.88rem !important}
 body.ra-facility .facility-unlock-grid button{min-height:38px !important;height:auto !important;padding:7px 11px !important;border-radius:10px !important;font-size:.84rem !important;width:auto !important}
 
 
-/* v90.8.383: fine spacing and edge readability */
+/* v90.8.384: fine spacing and edge readability */
 body.ra-app > main{padding:clamp(18px,2.4vw,30px)!important;}
 body.ra-app :is(.panel,.big-section,.tab-panel){padding:clamp(15px,2vw,24px)!important;}
 body.ra-app :is(.card,.mini-card,.status-box,.notice,.result,.facility-summary,.facility-work-block,.facility-product-body,.help-body){padding:clamp(11px,1.5vw,17px)!important;}
@@ -2063,7 +2063,7 @@ body.ra-app :is(.modal-head,.weapon-modal-header,.dialog-head){padding:13px 16px
 @media(max-width:720px){body.ra-app>main{padding:13px!important}body.ra-app :is(.panel,.big-section,.tab-panel){padding:13px!important}body.ra-app :is(.card,.mini-card,.status-box,.notice,.result,.facility-product-body,.help-body){padding:11px!important}}
 
 
-/* v90.8.383: encounter-first drops and event acquisition */
+/* v90.8.384: encounter-first drops and event acquisition */
 body.ra-app .ra-inline-fold{margin:16px 0;border:1px solid var(--line);border-radius:13px;background:rgba(255,253,248,.72);overflow:visible}
 body.ra-app .ra-inline-fold>summary{cursor:pointer;padding:12px 14px;font-weight:900;list-style:none;background:rgba(244,235,220,.72)}
 body.ra-app .ra-inline-fold>summary::-webkit-details-marker{display:none}
@@ -2084,7 +2084,7 @@ body.ra-app .individual-drop-fold{margin-top:18px}
 body.ra-app .encounter-drop-title{padding-right:0!important}
 @media(max-width:680px){body.ra-app .event-reward-row,body.ra-app .event-reward-total{display:grid;grid-template-columns:1fr}body.ra-app .event-reward-choice{width:100%;max-width:none}body.ra-app .event-reward-choice select{width:100%}}
 
-/* v90.8.383: フォーム部品の種類別サイズを分離。テキスト入力用の width:100% をチェックボックスへ適用しない。 */
+/* v90.8.384: フォーム部品の種類別サイズを分離。テキスト入力用の width:100% をチェックボックスへ適用しない。 */
 body.ra-app input[type="checkbox"],
 body.ra-app input[type="radio"]{
   appearance:auto!important;
@@ -2115,4 +2115,29 @@ body.ra-progress #questShowOffWrap{
   white-space:normal!important;
 }
 body.ra-progress #questShowOffWrap input{margin:0!important}
+
+/* v90.8.384: branch graph card geometry and full-card hit target fix. */
+body.ra-facility .branch-graph-node,
+body.ra-facility .branch-graph-node.locked{
+  position:relative !important;
+  padding:0 !important;
+  gap:0 !important;
+  overflow:hidden !important;
+}
+body.ra-facility .branch-graph-node > .branch-graph-node-trigger,
+body.ra-facility .branch-graph-node > .branch-graph-node-locked-label{
+  position:absolute !important;
+  inset:0 !important;
+  box-sizing:border-box !important;
+  width:auto !important;
+  height:auto !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  margin:0 !important;
+  padding:4px 7px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:4px !important;
+}
 

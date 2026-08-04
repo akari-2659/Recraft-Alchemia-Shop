@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.383</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.384</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -12,7 +12,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 .branch-controls{display:grid;gap:10px;margin:0 0 12px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#fffdf8}.branch-controls[hidden]{display:none}.branch-search{display:grid;grid-template-columns:minmax(220px,1fr);gap:6px}.branch-search label{font-size:12px;font-weight:800;color:var(--muted)}.weapon-category-tabs{display:flex;flex-wrap:wrap;gap:7px}.weapon-category-tabs button{background:#f1e4d1;color:var(--ink);border:1px solid var(--line);padding:8px 12px}.weapon-category-tabs button.active{background:var(--accent);color:#fff}.weapon-category-tabs .count{font-size:11px;opacity:.78;margin-left:4px}
 .branch-groups{display:grid;gap:12px}.branch-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.branch-group>summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:900;display:flex;gap:8px;align-items:center;justify-content:space-between;background:#f6e8d4}.branch-group>summary::-webkit-details-marker{display:none}.branch-group>summary::before{content:"▶";margin-right:7px;transition:transform .15s}.branch-group[open]>summary::before{transform:rotate(90deg)}.branch-summary-main{display:flex;gap:8px;align-items:center;flex-wrap:wrap;min-width:0}.branch-body{padding:13px;display:grid;gap:14px}.branch-line{display:grid;gap:8px;border-left:4px solid #b98956;padding:4px 0 4px 12px}.branch-node{position:relative;border:1px solid #e5d2b8;border-radius:14px;background:#fffaf3;padding:12px;margin-left:calc((var(--depth,1) - 1) * 22px)}.branch-node::before{content:"┗";position:absolute;left:-19px;top:12px;color:#9a7652;font-weight:900}.branch-node.locked{background:repeating-linear-gradient(135deg,#fffaf2,#fffaf2 12px,#f6ecdd 12px,#f6ecdd 24px)}.branch-node h3{margin:0 0 7px;font-size:16px}.performance{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.performance .chip{background:#e7f0e7;border-color:#bdd1bf}.base-weapons{display:grid;gap:8px;margin:0 0 12px}.base-weapon{border:1px solid #c9b18f;border-radius:15px;background:#fffdf8;overflow:hidden}.base-weapon>summary{cursor:pointer;list-style:none;padding:12px 14px;font-weight:900;background:#efe2cf}.base-weapon>summary::-webkit-details-marker{display:none}.base-weapon-body{padding:12px}.base-weapon-body dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 9px;margin:0;font-size:13px;line-height:1.6}.base-weapon-body dt{font-weight:800;color:#5f4935}.base-weapon-body dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.branch-node dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 9px;margin:0;font-size:13px;line-height:1.6}.branch-node dt{font-weight:800;color:#5f4935}.branch-node dd{margin:0;overflow-wrap:anywhere;white-space:pre-wrap}@media(max-width:520px){.branch-node{margin-left:calc((var(--depth,1) - 1) * 12px)}.branch-node dl{grid-template-columns:1fr}.branch-node dd{margin-bottom:5px}}
 .recipe-category-groups{display:grid;gap:12px}.recipe-category-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.recipe-category-group>summary{cursor:pointer;list-style:none;padding:13px 15px;font-weight:900;background:#f6e8d4}.recipe-category-group>summary::-webkit-details-marker{display:none}.recipe-category-body{padding:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:720px){.recipe-category-body{grid-template-columns:1fr}}
-/* v90.8.383: 派生先遷移・10件ページング・折り畳み矢印固定 */
+/* v90.8.384: 派生先遷移・10件ページング・折り畳み矢印固定 */
 html{scrollbar-gutter:stable}
 .branch-group>summary::before,.base-weapon>summary::before,.recipe-category-group>summary::before,.unlock-panel>summary::before{
   content:"▶";display:inline-grid;place-items:center;flex:0 0 1.05rem;width:1.05rem;height:1.05rem;
@@ -37,7 +37,7 @@ html{scrollbar-gutter:stable}
 .branch-node.branch-focus{animation:branchFocusPulse 1.8s ease;outline:3px solid rgba(169,111,55,.45);outline-offset:2px}
 @keyframes branchFocusPulse{0%,100%{box-shadow:none}35%{box-shadow:0 0 0 8px rgba(169,111,55,.16)}}
 @media(max-width:520px){.next-branch-row{align-items:flex-start;flex-direction:column}.next-branch-row button{width:100%}}
-/* v90.8.383: 武器派生図表示 */
+/* v90.8.384: 武器派生図表示 */
 .branch-view-switch{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
 .branch-view-switch .catalog-filter-label{margin-right:3px}
 .branch-view-switch button{padding:7px 11px;background:#f1e4d1;color:var(--ink);border:1px solid var(--line)}
@@ -65,7 +65,7 @@ html{scrollbar-gutter:stable}
 .branch-table-empty{color:#b8a58d;text-align:center}
 @media(max-width:600px){.branch-table th,.branch-table td{min-width:165px;padding:7px}.branch-table .branch-table-label{min-width:128px;max-width:148px}.branch-table-node{width:148px}}
 
-/* v90.8.383: ★ランク帯配置・同一★内連続列・自然な折れ線・強いランク見出し帯を廃止 */
+/* v90.8.384: ★ランク帯配置・同一★内連続列・自然な折れ線・強いランク見出し帯を廃止 */
 /* 派生線修正2: 分岐点を矢印手前へ固定し、矢印から枝線が伸びて見える重なりを防止 */
 .branch-controls{grid-template-columns:minmax(220px,1fr) minmax(190px,280px);align-items:end}
 .branch-label-side-toggle{position:sticky;left:0;top:0;z-index:12;align-self:stretch;display:grid;place-items:center;width:100%;min-width:0;height:30px;padding:0;border:1px solid #d8bea0;border-left:0;border-radius:0 9px 9px 0;background:rgba(237,216,188,.98);color:#68492f;font-size:14px;font-weight:1000;line-height:1;box-shadow:4px 3px 9px rgba(80,50,20,.07);transform:none}
@@ -96,6 +96,19 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-label.base::after{content:'◇'}
 @media(max-width:720px){.branch-controls{grid-template-columns:1fr}.branch-graph-canvas{--branch-label-width:74px;gap:10px 22px}.branch-graph-label{padding:6px 2px;font-size:11px}.branch-graph-node{width:150px}.weapon-modal-details{grid-template-columns:1fr}.weapon-modal-link{align-items:flex-start;flex-direction:column}.weapon-modal-link button{width:100%}}
 
+
+/* v90.8.384: 派生図の表示座標・タップ判定と素材入手先表示 */
+.branch-graph-node{position:relative!important;padding:0!important;overflow:hidden}
+.branch-graph-node-trigger,.branch-graph-node-locked-label{width:100%!important;height:100%!important;min-height:36px!important;padding:5px 7px!important}
+.branch-graph-node-trigger{border-radius:inherit!important}
+.weapon-material-parts{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.weapon-material-part{display:inline-flex;align-items:center;min-height:30px;padding:4px 8px;border:1px solid #dfccb2;border-radius:999px;background:#fffdf8;color:inherit;font-size:13px;font-weight:800}
+button.weapon-material-part{color:#315f70;background:#eef8fa;border-color:#a9c9d2;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;cursor:pointer}
+button.weapon-material-part:hover{background:#e2f2f5;transform:none}
+.material-source-modal[hidden]{display:none!important}.material-source-modal{position:fixed;inset:0;z-index:1100;display:grid;place-items:center;padding:18px;background:rgba(35,25,17,.62);backdrop-filter:blur(5px)}
+.material-source-dialog{width:min(680px,100%);max-height:min(84vh,820px);display:flex;flex-direction:column;overflow:hidden;border:1px solid #b99662;border-radius:18px;background:#fffaf0;box-shadow:0 26px 76px rgba(28,20,14,.42)}
+.material-source-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid #dfccb2;background:#f4e6d0}.material-source-header h3{margin:2px 0 0}.material-source-header button{flex:0 0 auto}
+.material-source-body{overflow:auto;padding:14px 16px 18px}.material-source-note{margin:0 0 11px;color:var(--muted);font-size:12px}.material-source-list{display:grid;gap:9px}.material-source-row{padding:10px 11px;border:1px solid #e2cfb5;border-radius:12px;background:#fffdf8}.material-source-row strong{display:block;margin-bottom:4px}.material-source-meta{font-size:12px;color:var(--muted);line-height:1.55}.material-source-result{margin-top:5px;font-size:13px;line-height:1.55;white-space:pre-wrap}
 </style>
 
 <style id="raMaintenanceV287">
@@ -106,7 +119,7 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 .card{content-visibility:auto;contain-intrinsic-size:220px}.summary-line{align-items:center}.summary-line .secondary{padding:8px 12px}
 @media(max-width:720px){.build{text-align:left}.hero{padding:11px!important}.subtitle{display:none}.section-tabs{top:58px}.catalog-search-controls{grid-template-columns:1fr}.catalog-search-controls label,.catalog-search-controls span{font-size:.75rem}}
 
-/* v90.8.383: プレイヤー別・個別解放キー蓄積UI */
+/* v90.8.384: プレイヤー別・個別解放キー蓄積UI */
 .facility-unlock-grid{grid-template-columns:minmax(190px,280px) auto minmax(190px,280px) auto auto;justify-content:start;align-items:end;gap:7px}
 .facility-unlock-grid input{height:38px;padding:7px 10px;border-radius:10px;font-size:.88rem}
 .facility-unlock-grid button{min-height:38px;padding:7px 11px;border-radius:10px;font-size:.84rem;line-height:1.15}
@@ -125,10 +138,10 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 @media(max-width:620px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/2}.facility-unlock-grid button{width:auto}.facility-unlock-grid #resetKey{grid-column:1/3;justify-self:start}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.383-modalfix2">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.384-modalfix2">
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.383｜更新：2026年8月4日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.384｜更新：2026年8月4日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -175,6 +188,12 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
     <div id="weaponModalBody" class="weapon-modal-body"></div>
   </div>
 </div>
+<div id="materialSourceModal" class="material-source-modal" hidden aria-hidden="true">
+  <div class="material-source-dialog" role="dialog" aria-modal="true" aria-labelledby="materialSourceTitle">
+    <header class="material-source-header"><div><div class="muted">エリアイベント・魔物ドロップ</div><h3 id="materialSourceTitle">素材の入手可能場所</h3></div><button type="button" class="ghost" data-close-material-source aria-label="閉じる">×</button></header>
+    <div id="materialSourceBody" class="material-source-body"></div>
+  </div>
+</div>
 <div id="unlockedAreaModal" class="unlock-area-modal" hidden aria-hidden="true">
   <div class="unlock-area-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="unlockedAreaModalTitle">
     <header class="unlock-area-modal-header"><h3 id="unlockedAreaModalTitle">解放済みエリア</h3><button type="button" class="ghost" data-close-unlocked-area-modal aria-label="閉じる">×</button></header>
@@ -203,7 +222,7 @@ const raStorage={
 let currentFacility='smith',currentSection='sales',currentPlayerKey='',currentUnlockState={unlockedAreaIds:[],unlockedAreas:[]},currentWeaponCategory=raStorage.get('recraft_alchemia.player_facility.weapon_category')||'',branchSearch='',currentRank='all',catalogSearch='',branchLabelsCollapsed=raStorage.get(BRANCH_LABEL_COLLAPSE_STORAGE_KEY)==='1';
 const GM_ALL_AREAS_MARKER='__GM_ALL_AREAS__';
 const WEAPON_CATEGORY_STORAGE_KEY='recraft_alchemia.player_facility.weapon_category';
-let branchDetailIndex=Object.create(null),branchGraphFrame=0,weaponModalLastFocus=null;
+let branchDetailIndex=Object.create(null),materialSourceIndex=Object.create(null),branchGraphFrame=0,weaponModalLastFocus=null,branchGraphResizeObserver=null;
 const $=id=>document.getElementById(id);
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function rankValue(v){return Math.max(1,Math.floor(Number(v)||1));}
@@ -620,6 +639,48 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState={}){
     const name=String(item.name||'').trim();
     if(name)itemByName[name]=item;
   });
+  const itemById={};items.forEach(item=>{const id=String(item.id||'').trim();if(id)itemById[id]=item;});
+  function addMaterialSource(materialName,source){
+    const name=String(materialName||'').trim();if(!name)return;
+    if(!materialSourceIndex[name])materialSourceIndex[name]=[];
+    const key=[source.areaId,source.kind,source.detail,source.rate,source.quantity,source.result].map(v=>String(v||'')).join('\u0000');
+    if(materialSourceIndex[name].some(row=>row._key===key))return;
+    materialSourceIndex[name].push({...source,_key:key});
+  }
+  materialSourceIndex=Object.create(null);
+  const monsterByName={};(Array.isArray(data.monsters)?data.monsters:[]).forEach(monster=>{const name=String(monster.name||'').trim();if(name)monsterByName[name]=monster;});
+  areas.filter(area=>unlockedAreaSet.has(String(area.id||''))).forEach(area=>{
+    const areaId=String(area.id||''),areaName=String(area.name||areaId);
+    const monsterNames=String(area.mainMonsters||'').split(/[、,，\n]+/u).map(v=>v.trim()).filter(Boolean);
+    monsterNames.forEach(monsterName=>{
+      const monster=monsterByName[monsterName];if(!monster)return;
+      String(monster.drops||'').split(/\r?\n/).forEach(line=>{
+        const parts=line.split('\t');if(parts.length<4)return;
+        const material=itemById[String(parts[2]||'').trim()]||itemByName[String(parts[3]||'').trim()]||null;
+        if(!material)return;
+        addMaterialSource(material.name,{areaId,areaName,kind:'monster',detail:monsterName,rate:String(parts[4]||''),quantity:String(parts[5]||'')});
+      });
+    });
+    (Array.isArray(data.event_tables)?data.event_tables:[]).filter(event=>String(event.areaName||'').trim()===areaName).forEach(event=>{
+      const result=String(event.result||'').trim();if(!result)return;
+      // 単なる噂・説明文・別アイテム名の一部を入手先として誤認しない。
+      // 「素材名×個数」があり、同じ文に入手・追加・回収・発見・獲得の記述がある場合だけ採用する。
+      const acquired=new Set();
+      result.split(/[。！？\n]+/u).map(v=>v.trim()).filter(Boolean).forEach(sentence=>{
+        if(!/(?:入手|追加|回収|発見|獲得|手に入)/u.test(sentence))return;
+        Object.keys(itemByName).sort((a,b)=>b.length-a.length).forEach(materialName=>{
+          let offset=sentence.indexOf(materialName);
+          while(offset>=0){
+            const tail=sentence.slice(offset+materialName.length);
+            if(/^\s*[×xX*]/u.test(tail)){acquired.add(materialName);break;}
+            offset=sentence.indexOf(materialName,offset+materialName.length);
+          }
+        });
+      });
+      acquired.forEach(materialName=>addMaterialSource(materialName,{areaId,areaName,kind:'event',detail:String(event.eventName||event.id||'エリアイベント'),result}));
+    });
+  });
+  Object.values(materialSourceIndex).forEach(rows=>rows.sort((a,b)=>Number(areaById[a.areaId]?.unlockOrder||999)-Number(areaById[b.areaId]?.unlockOrder||999)||String(a.kind).localeCompare(String(b.kind))||String(a.detail).localeCompare(String(b.detail),'ja')));
   function normalRecipes(facilityName,types){
     return recipes.filter(r=>types.includes(String(r.craftType||''))&&!isRecipeBasedSpecialProcessing(r)&&facilityMatch(r,facilityName)&&unlocked(r))
       .sort(sortRows)
@@ -1099,7 +1160,7 @@ function graphNodeHtml(entry,row,col,{base=false}={}){
   const label=locked
     ?`<div class="branch-graph-node-locked-label"><span class="branch-graph-node-rank-inline">${esc(rank)}</span><span class="branch-graph-node-name-inline">${esc(title)}</span></div>`
     :`<button type="button" class="branch-graph-node-trigger" data-open-weapon-modal="${esc(name)}" title="${esc(`${rank} ${title}`)}" aria-label="${esc(`${rank} ${title}の詳細を開く`)}"><span class="branch-graph-node-rank-inline">${esc(rank)}</span><span class="branch-graph-node-name-inline">${esc(title)}</span></button>`;
-  return `<article class="branch-graph-node ${locked?'locked':''} ${entry.isBossBranch?'boss-branch':''}" style="grid-row:${row};grid-column:${col}" data-weapon-node="${esc(name)}" ${parent?`data-parent-weapon="${esc(parent)}"`:''}>${label}</article>`;
+  return `<article class="branch-graph-node ${locked?'locked':''} ${entry.isBossBranch?'boss-branch':''}" style="grid-row:${row};grid-column:${col}" data-weapon-node="${esc(name)}" ${!locked?`data-open-weapon-card="${esc(name)}"`:''} ${parent?`data-parent-weapon="${esc(parent)}"`:''}>${label}</article>`;
 }
 function branchGraphCatalog(current){
   const branches=current.matched||[];
@@ -1176,7 +1237,7 @@ function branchGraphCatalog(current){
 }
 function drawBranchConnections(){
   const canvas=document.querySelector('.branch-graph-canvas'),svg=canvas&&canvas.querySelector('.branch-graph-svg');if(!canvas||!svg)return;
-  const canvasRect=canvas.getBoundingClientRect(),width=Math.max(canvas.scrollWidth,canvasRect.width),height=Math.max(canvas.scrollHeight,canvasRect.height);
+  const width=Math.max(canvas.scrollWidth,canvas.clientWidth),height=Math.max(canvas.scrollHeight,canvas.clientHeight);
   svg.setAttribute('width',String(width));svg.setAttribute('height',String(height));svg.setAttribute('viewBox',`0 0 ${width} ${height}`);
   const nodeMap=Object.create(null),childrenByParent=new Map();
   canvas.querySelectorAll('[data-weapon-node]').forEach(el=>{const name=String(el.dataset.weaponNode||'').trim();if(name&&!nodeMap[name])nodeMap[name]=el;});
@@ -1187,12 +1248,10 @@ function drawBranchConnections(){
   });
   const paths=[],routePaths=[],nodeGap=14,rowTolerance=7;
   childrenByParent.forEach(({parent,children},parentName)=>{
-    const pr=parent.getBoundingClientRect();
-    const right=pr.right-canvasRect.left,sy=pr.top-canvasRect.top+pr.height/2;
-    const points=children.map(child=>{
-      const cr=child.getBoundingClientRect();
-      return{child,ey:cr.top-canvasRect.top+cr.height/2,endX:cr.left-canvasRect.left-nodeGap};
-    }).sort((a,b)=>a.ey-b.ey||a.endX-b.endX);
+    const right=parent.offsetLeft+parent.offsetWidth,sy=parent.offsetTop+parent.offsetHeight/2;
+    const points=children.map(child=>({
+      child,ey:child.offsetTop+child.offsetHeight/2,endX:child.offsetLeft-nodeGap
+    })).sort((a,b)=>a.ey-b.ey||a.endX-b.endX);
     const same=points.filter(p=>Math.abs(p.ey-sy)<=rowTolerance);
     const above=points.filter(p=>p.ey<sy-rowTolerance);
     const below=points.filter(p=>p.ey>sy+rowTolerance);
@@ -1219,7 +1278,15 @@ function drawBranchConnections(){
   });
   svg.innerHTML=`<defs><marker id="branchArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#496675"></path></marker></defs>${paths.join('')}${routePaths.join('')}`;
 }
-function scheduleBranchConnections(){cancelAnimationFrame(branchGraphFrame);branchGraphFrame=requestAnimationFrame(()=>requestAnimationFrame(drawBranchConnections));}
+function scheduleBranchConnections(){
+  cancelAnimationFrame(branchGraphFrame);
+  branchGraphFrame=requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    drawBranchConnections();
+    const canvas=document.querySelector('.branch-graph-canvas');
+    if(branchGraphResizeObserver){branchGraphResizeObserver.disconnect();branchGraphResizeObserver=null;}
+    if(canvas&&window.ResizeObserver){branchGraphResizeObserver=new ResizeObserver(()=>{cancelAnimationFrame(branchGraphFrame);branchGraphFrame=requestAnimationFrame(drawBranchConnections);});branchGraphResizeObserver.observe(canvas);}
+  }));
+}
 function clearBranchRouteFocus(scroll=document.querySelector('.branch-graph-scroll')){
   if(!scroll)return;
   scroll.classList.remove('has-route-focus');
@@ -1266,6 +1333,32 @@ function modalLinkHtml(entry,label){
   const name=String(entry.actualResultItem||entry.name||entry.resultItem||'').trim();
   return `<div class="weapon-modal-link"><strong>${esc(name)}　${esc(rankLabel(entry.rank))}</strong><button type="button" class="ghost" data-modal-weapon="${esc(name)}">${esc(label)}</button></div>`;
 }
+function weaponMaterialPartsHtml(text){
+  const parts=String(text||'').split(/[,、\n]+/u).map(v=>v.trim()).filter(Boolean);
+  if(!parts.length)return '<span class="weapon-material-part">未設定</span>';
+  return `<div class="weapon-material-parts">${parts.map(part=>{
+    if(part==='？？？')return '<span class="weapon-material-part">？？？</span>';
+    const match=part.match(/^(.*?)[×xX*]\s*([0-9]+)\s*$/u);
+    const name=String(match?match[1]:part).trim();
+    const sources=materialSourceIndex[name]||[];
+    return sources.length?`<button type="button" class="weapon-material-part" data-material-source="${esc(name)}" title="${esc(name)}の入手可能場所を表示">${esc(part)}</button>`:`<span class="weapon-material-part">${esc(part)}</span>`;
+  }).join('')}</div>`;
+}
+function materialSourceRowHtml(row){
+  const heading=row.kind==='monster'?`${row.areaName}：${row.detail}`:`${row.areaName}：${row.detail}`;
+  const meta=row.kind==='monster'?`魔物ドロップ${row.rate?` / ${row.rate}`:''}${row.quantity?` / ${row.quantity}`:''}`:'エリアイベント';
+  return `<article class="material-source-row"><strong>${esc(heading)}</strong><div class="material-source-meta">${esc(meta)}</div>${row.result?`<div class="material-source-result">${esc(row.result)}</div>`:''}</article>`;
+}
+function openMaterialSourceModal(name){
+  const modal=$('materialSourceModal'),body=$('materialSourceBody');if(!modal||!body)return;
+  const rows=materialSourceIndex[String(name||'').trim()]||[];
+  $('materialSourceTitle').textContent=`${name}の入手可能場所`;
+  body.innerHTML=`<p class="material-source-note">宝箱・店売り・加工は除外し、現在解放済みのエリアイベントと、そのエリアに出現する魔物のドロップだけを表示します。</p><div class="material-source-list">${rows.length?rows.map(materialSourceRowHtml).join(''):'<div class="empty">対象となるエリアイベント・魔物ドロップはありません。</div>'}</div>`;
+  modal.hidden=false;modal.setAttribute('aria-hidden','false');
+  requestAnimationFrame(()=>modal.querySelector('[data-close-material-source]')?.focus({preventScroll:true}));
+}
+function closeMaterialSourceModal(){const modal=$('materialSourceModal');if(!modal)return;modal.hidden=true;modal.setAttribute('aria-hidden','true');}
+function weaponModalDetailRowsHtml(pairs=[]){return pairs.map(([k,v,isHtml])=>`<dt>${esc(k)}</dt><dd>${isHtml?v:esc(v)}</dd>`).join('');}
 function weaponModalHtml(entry){
   const isBase=!!entry.isBase;
   const chips=uniqueChips([rankLabel(entry.rank),isBase?'基礎武器':`${entry.branchLabel||''}派生`,entry.itemCategory]);
@@ -1273,7 +1366,7 @@ function weaponModalHtml(entry){
   if(isBase){pairs=itemTextRows(entry);if(String(entry.upgradeLimit||'').trim())pairs.unshift(['強化枠',`${entry.upgradeLimit}枠`]);}
   else{
     if(String(entry.upgradeLimit||'').trim())pairs.push(['強化枠',`${entry.upgradeLimit}枠`]);
-    pairs.push(['必要素材',entry.requiredMaterials||'未設定']);
+    pairs.push(['必要素材',weaponMaterialPartsHtml(entry.requiredMaterials||'未設定'),true]);
     if(String(entry.price||''))pairs.push(['施設依頼',`${entry.price}G`]);
     if(entry.difficulty){pairs.push(['製作技能',entry.craftSkill||'細工']);pairs.push(['基礎作成難易度',entry.difficulty]);}
     if(entry.description)pairs.push(['説明',entry.description]);if(entry.effect)pairs.push(['効果',entry.effect]);
@@ -1282,7 +1375,7 @@ function weaponModalHtml(entry){
   const parentHtml=parent?`<section class="weapon-modal-links"><h4>派生元</h4>${modalLinkHtml(parent,'派生元の詳細を見る')}</section>`:'';
   const next=Array.isArray(entry.nextBranches)?entry.nextBranches:[];
   const nextHtml=next.length?`<section class="weapon-modal-links"><h4>次の派生先</h4>${next.map(child=>modalLinkHtml(child,'詳細を見る')).join('')}</section>`:'';
-  return `<div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${entry.performance&&entry.performance.length?`<div class="weapon-modal-performance">${performanceHtml(entry.performance)}</div>`:''}<dl class="weapon-modal-details">${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>${parentHtml}${nextHtml}`;
+  return `<div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${entry.performance&&entry.performance.length?`<div class="weapon-modal-performance">${performanceHtml(entry.performance)}</div>`:''}<dl class="weapon-modal-details">${weaponModalDetailRowsHtml(pairs)}</dl>${parentHtml}${nextHtml}`;
 }
 function openWeaponModal(name,trigger=null){
   const entry=branchDetailIndex[String(name||'').trim()];if(!entry||entry.locked)return;
@@ -1301,6 +1394,7 @@ function openWeaponModal(name,trigger=null){
   });
 }
 function closeWeaponModal(options={}){
+  closeMaterialSourceModal();
   const modal=$('weaponDetailModal');
   if(modal){
     modal.hidden=true;
@@ -1500,7 +1594,11 @@ document.addEventListener('click',e=>{
     scheduleBranchConnections();
     return;
   }
+  const materialSource=e.target.closest('[data-material-source]');if(materialSource){openMaterialSourceModal(materialSource.dataset.materialSource||'');return;}
+  if(e.target.closest('[data-close-material-source]')){closeMaterialSourceModal();return;}
+  const sourceModal=$('materialSourceModal');if(e.target===sourceModal){closeMaterialSourceModal();return;}
   const open=e.target.closest('[data-open-weapon-modal]');if(open){openWeaponModal(open.dataset.openWeaponModal||'',open);return;}
+  const openCard=e.target.closest('[data-open-weapon-card]');if(openCard&&!e.target.closest('button')){openWeaponModal(openCard.dataset.openWeaponCard||'',openCard.querySelector('button')||openCard);return;}
   const modalLink=e.target.closest('[data-modal-weapon]');if(modalLink){openWeaponModal(modalLink.dataset.modalWeapon||'',modalLink);return;}
   if(e.target.closest('[data-close-weapon-modal]')){closeWeaponModal();return;}
   const modal=$('weaponDetailModal');if(e.target===modal){closeWeaponModal();return;}
@@ -1509,10 +1607,10 @@ document.addEventListener('click',e=>{
   const r=e.target.closest('[data-rank-filter]');if(r){closeWeaponModal();currentRank=r.dataset.rankFilter||'all';render();return;}
 });
 $('weaponCategorySelect').addEventListener('change',e=>{closeWeaponModal();currentWeaponCategory=e.target.value||'';raStorage.set(WEAPON_CATEGORY_STORAGE_KEY,currentWeaponCategory);render();});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeWeaponModal();closeUnlockedAreaModal();}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('materialSourceModal')?.hidden){closeMaterialSourceModal();return;}closeWeaponModal();closeUnlockedAreaModal();}});
 $('openUnlockedAreas').addEventListener('click',openUnlockedAreaModal);
 $('unlockedAreaModal').addEventListener('click',e=>{if(e.target===$('unlockedAreaModal')||e.target.closest('[data-close-unlocked-area-modal]'))closeUnlockedAreaModal();});
-window.addEventListener('resize',scheduleBranchConnections,{passive:true});
+window.addEventListener('resize',scheduleBranchConnections,{passive:true});if(document.fonts&&document.fonts.ready)document.fonts.ready.then(scheduleBranchConnections);
 $('branchSearch').addEventListener('input',e=>{closeWeaponModal();branchSearch=e.target.value||'';render();});$('catalogSearch').addEventListener('input',e=>{catalogSearch=e.target.value||'';render();});
 const savedPlayerKey=raStorage.get(PLAYER_KEY_STORAGE_KEY)||'';$('playerKey').value=savedPlayerKey;loadCatalog(savedPlayerKey);
 </script>
