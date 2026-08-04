@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.379</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.383</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -12,7 +12,7 @@ header,main{width:min(1120px,calc(100% - 24px));margin:auto}header{padding:22px 
 .branch-controls{display:grid;gap:10px;margin:0 0 12px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#fffdf8}.branch-controls[hidden]{display:none}.branch-search{display:grid;grid-template-columns:minmax(220px,1fr);gap:6px}.branch-search label{font-size:12px;font-weight:800;color:var(--muted)}.weapon-category-tabs{display:flex;flex-wrap:wrap;gap:7px}.weapon-category-tabs button{background:#f1e4d1;color:var(--ink);border:1px solid var(--line);padding:8px 12px}.weapon-category-tabs button.active{background:var(--accent);color:#fff}.weapon-category-tabs .count{font-size:11px;opacity:.78;margin-left:4px}
 .branch-groups{display:grid;gap:12px}.branch-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.branch-group>summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:900;display:flex;gap:8px;align-items:center;justify-content:space-between;background:#f6e8d4}.branch-group>summary::-webkit-details-marker{display:none}.branch-group>summary::before{content:"▶";margin-right:7px;transition:transform .15s}.branch-group[open]>summary::before{transform:rotate(90deg)}.branch-summary-main{display:flex;gap:8px;align-items:center;flex-wrap:wrap;min-width:0}.branch-body{padding:13px;display:grid;gap:14px}.branch-line{display:grid;gap:8px;border-left:4px solid #b98956;padding:4px 0 4px 12px}.branch-node{position:relative;border:1px solid #e5d2b8;border-radius:14px;background:#fffaf3;padding:12px;margin-left:calc((var(--depth,1) - 1) * 22px)}.branch-node::before{content:"┗";position:absolute;left:-19px;top:12px;color:#9a7652;font-weight:900}.branch-node.locked{background:repeating-linear-gradient(135deg,#fffaf2,#fffaf2 12px,#f6ecdd 12px,#f6ecdd 24px)}.branch-node h3{margin:0 0 7px;font-size:16px}.performance{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.performance .chip{background:#e7f0e7;border-color:#bdd1bf}.base-weapons{display:grid;gap:8px;margin:0 0 12px}.base-weapon{border:1px solid #c9b18f;border-radius:15px;background:#fffdf8;overflow:hidden}.base-weapon>summary{cursor:pointer;list-style:none;padding:12px 14px;font-weight:900;background:#efe2cf}.base-weapon>summary::-webkit-details-marker{display:none}.base-weapon-body{padding:12px}.base-weapon-body dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 9px;margin:0;font-size:13px;line-height:1.6}.base-weapon-body dt{font-weight:800;color:#5f4935}.base-weapon-body dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.branch-node dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 9px;margin:0;font-size:13px;line-height:1.6}.branch-node dt{font-weight:800;color:#5f4935}.branch-node dd{margin:0;overflow-wrap:anywhere;white-space:pre-wrap}@media(max-width:520px){.branch-node{margin-left:calc((var(--depth,1) - 1) * 12px)}.branch-node dl{grid-template-columns:1fr}.branch-node dd{margin-bottom:5px}}
 .recipe-category-groups{display:grid;gap:12px}.recipe-category-group{border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;overflow:hidden}.recipe-category-group>summary{cursor:pointer;list-style:none;padding:13px 15px;font-weight:900;background:#f6e8d4}.recipe-category-group>summary::-webkit-details-marker{display:none}.recipe-category-body{padding:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:720px){.recipe-category-body{grid-template-columns:1fr}}
-/* v90.8.379: 派生先遷移・10件ページング・折り畳み矢印固定 */
+/* v90.8.383: 派生先遷移・10件ページング・折り畳み矢印固定 */
 html{scrollbar-gutter:stable}
 .branch-group>summary::before,.base-weapon>summary::before,.recipe-category-group>summary::before,.unlock-panel>summary::before{
   content:"▶";display:inline-grid;place-items:center;flex:0 0 1.05rem;width:1.05rem;height:1.05rem;
@@ -37,7 +37,7 @@ html{scrollbar-gutter:stable}
 .branch-node.branch-focus{animation:branchFocusPulse 1.8s ease;outline:3px solid rgba(169,111,55,.45);outline-offset:2px}
 @keyframes branchFocusPulse{0%,100%{box-shadow:none}35%{box-shadow:0 0 0 8px rgba(169,111,55,.16)}}
 @media(max-width:520px){.next-branch-row{align-items:flex-start;flex-direction:column}.next-branch-row button{width:100%}}
-/* v90.8.379: 武器派生図表示 */
+/* v90.8.383: 武器派生図表示 */
 .branch-view-switch{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
 .branch-view-switch .catalog-filter-label{margin-right:3px}
 .branch-view-switch button{padding:7px 11px;background:#f1e4d1;color:var(--ink);border:1px solid var(--line)}
@@ -65,7 +65,7 @@ html{scrollbar-gutter:stable}
 .branch-table-empty{color:#b8a58d;text-align:center}
 @media(max-width:600px){.branch-table th,.branch-table td{min-width:165px;padding:7px}.branch-table .branch-table-label{min-width:128px;max-width:148px}.branch-table-node{width:148px}}
 
-/* v90.8.379: ★ランク帯配置・同一★内連続列・自然な折れ線・強いランク見出し帯を廃止 */
+/* v90.8.383: ★ランク帯配置・同一★内連続列・自然な折れ線・強いランク見出し帯を廃止 */
 /* 派生線修正2: 分岐点を矢印手前へ固定し、矢印から枝線が伸びて見える重なりを防止 */
 .branch-controls{grid-template-columns:minmax(220px,1fr) minmax(190px,280px);align-items:end}
 .branch-label-side-toggle{position:sticky;left:0;top:0;z-index:12;align-self:stretch;display:grid;place-items:center;width:100%;min-width:0;height:30px;padding:0;border:1px solid #d8bea0;border-left:0;border-radius:0 9px 9px 0;background:rgba(237,216,188,.98);color:#68492f;font-size:14px;font-weight:1000;line-height:1;box-shadow:4px 3px 9px rgba(80,50,20,.07);transform:none}
@@ -106,7 +106,7 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 .card{content-visibility:auto;contain-intrinsic-size:220px}.summary-line{align-items:center}.summary-line .secondary{padding:8px 12px}
 @media(max-width:720px){.build{text-align:left}.hero{padding:11px!important}.subtitle{display:none}.section-tabs{top:58px}.catalog-search-controls{grid-template-columns:1fr}.catalog-search-controls label,.catalog-search-controls span{font-size:.75rem}}
 
-/* v90.8.379: プレイヤー別・個別解放キー蓄積UI */
+/* v90.8.383: プレイヤー別・個別解放キー蓄積UI */
 .facility-unlock-grid{grid-template-columns:minmax(190px,280px) auto minmax(190px,280px) auto auto;justify-content:start;align-items:end;gap:7px}
 .facility-unlock-grid input{height:38px;padding:7px 10px;border-radius:10px;font-size:.88rem}
 .facility-unlock-grid button{min-height:38px;padding:7px 11px;border-radius:10px;font-size:.84rem;line-height:1.15}
@@ -125,10 +125,10 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 @media(max-width:620px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/2}.facility-unlock-grid button{width:auto}.facility-unlock-grid #resetKey{grid-column:1/3;justify-self:start}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.379-modalfix2">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.383-modalfix2">
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.379｜更新：2026年8月4日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.383｜更新：2026年8月4日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処の商品、作成、素材加工、料理を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -181,11 +181,12 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
     <ul id="unlockedAreaModalList" class="unlocked-area-modal-list"><li>初期エリア</li></ul>
   </div>
 </div>
-</main><footer>固定マスターはGitHub共通DBから取得し、プレイヤー別の解放キー履歴はGASへ保存します。入力済みの各キーに対応するエリアだけが追加解放されます。</footer>
+</main><footer>固定マスターと解放キー照合用ハッシュはGitHub共通DBから取得します。解放済みエリアは端末へ即時保存し、GASにはエリアIDだけをクラウド同期します。</footer>
 <script>
 'use strict';
 const DEFAULT_GAS_WEB_APP_URL='https://script.google.com/macros/s/AKfycbyjIIKXTXZGf8RFOt7wQcenYEuVP68ijTU83e6rioqX21EKW075xjDjB5pTucyVcrc/exec';
 const PLAYER_KEY_STORAGE_KEY='recraft_alchemia.player_facility.player_key';
+const UNLOCK_STATE_STORAGE_PREFIX='recraft_alchemia.player_facility.unlocked_area_ids:';
 const SECTION_DEFS={
  smith:[['sales','販売商品','鍛冶屋で購入できる品です。'],['craft','装備・道具作成','武器・防具・盾・バッグ・矢筒・装飾品・仕掛けなどの作成です。'],['materials','素材加工','自作はレシピ不要で、対応する鍛冶道具と判定成功が必要です。施設依頼は判定不要ですが加工依頼費が必要です。'],['crystal','クリスタル強化','現在の解放エリアで利用できる、スキルクリスタルの強化段階・必要素材・費用です。'],['branches','武器派生','武器種を選び、大枠の素材系統と順当強化・分岐を矢印でつないだ派生図を確認できます。武器の詳細では強化枠、必要素材、派生元、次の派生先を確認できます。未解放の派生先は「？？？」で表示します。']],
  apothecary:[['sales','販売商品','薬屋で購入できる調合品・調合道具・常設販売レシピです。魔導インクと祈祷紙のレシピもここで購入できます。'],['alchemy','調合品作成','薬品・香・爆弾・瓶などの調合です。'],['materials','素材加工','一般の加工素材はレシピ不要です。魔導インク・祈祷紙は対応レシピが必要な特殊加工としてここに表示します。施設依頼はどちらもレシピ不要・判定不要です。']],
@@ -200,6 +201,7 @@ const raStorage={
   remove(key){try{if(window.localStorage)window.localStorage.removeItem(key);}catch(error){console.warn('保存情報を削除できませんでした。',error);}}
 };
 let currentFacility='smith',currentSection='sales',currentPlayerKey='',currentUnlockState={unlockedAreaIds:[],unlockedAreas:[]},currentWeaponCategory=raStorage.get('recraft_alchemia.player_facility.weapon_category')||'',branchSearch='',currentRank='all',catalogSearch='',branchLabelsCollapsed=raStorage.get(BRANCH_LABEL_COLLAPSE_STORAGE_KEY)==='1';
+const GM_ALL_AREAS_MARKER='__GM_ALL_AREAS__';
 const WEAPON_CATEGORY_STORAGE_KEY='recraft_alchemia.player_facility.weapon_category';
 let branchDetailIndex=Object.create(null),branchGraphFrame=0,weaponModalLastFocus=null;
 const $=id=>document.getElementById(id);
@@ -252,6 +254,60 @@ function rankMatches(row){return currentRank==='all'||rankValue(row&&row.rank)==
 function collectRanks(rows,branches){const ranks=new Set();if(branches){(rows||[]).forEach(cat=>{(cat.baseWeapons||[]).forEach(w=>ranks.add(rankValue(w.rank)));(cat.branches||[]).forEach(branch=>(branch.lines||[]).forEach(line=>(line.nodes||[]).forEach(n=>ranks.add(rankValue(n.rank)))));});}else{(rows||[]).forEach(r=>ranks.add(rankValue(r.rank)));}return [...ranks].sort((a,b)=>a-b);}
 function renderRankControls(rows,branches){const ranks=collectRanks(rows,branches);const wrap=$('catalogRankControls'),box=$('rankFilterButtons');if(ranks.length<2){currentRank='all';wrap.hidden=true;box.innerHTML='';return;}if(currentRank!=='all'&&!ranks.includes(Number(currentRank)))currentRank='all';wrap.hidden=false;box.innerHTML=[`<button type="button" data-rank-filter="all" class="${currentRank==='all'?'active':''}">すべて</button>`,...ranks.map(rank=>`<button type="button" data-rank-filter="${rank}" class="${Number(currentRank)===rank?'active':''}">★${rank}</button>`)].join('');}
 function setStatus(text,kind=''){const el=$('unlockStatus');el.className='status'+(kind?' '+kind:'');el.textContent=text;}
+function normalizeFacilityUnlockKey(value=''){
+  return String(value||'').normalize('NFKC').toUpperCase().replace(/[‐‑‒–—―−－]/g,'-').replace(/[\s\u200B-\u200D\uFEFF]/g,'');
+}
+async function facilitySha256Hex(value=''){
+  const textValue=String(value||'');
+  if(globalThis.crypto?.subtle){
+    const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(textValue));
+    return Array.from(new Uint8Array(digest)).map(v=>v.toString(16).padStart(2,'0')).join('');
+  }
+  throw new Error('このブラウザでは解放キーの安全な照合を利用できません。HTTPSの公開ページから開いてください。');
+}
+function localUnlockStorageKey(playerKey=''){return UNLOCK_STATE_STORAGE_PREFIX+encodeURIComponent(String(playerKey||'').trim());}
+function normalizeStoredUnlockIds(ids=[]){
+  const unique=[...new Set((ids||[]).map(String).filter(Boolean))];
+  return unique.includes(GM_ALL_AREAS_MARKER)?[GM_ALL_AREAS_MARKER]:unique;
+}
+function mergeStoredUnlockIds(...groups){
+  return normalizeStoredUnlockIds(groups.flatMap(group=>Array.isArray(group)?group:[]));
+}
+function readLocalUnlockedAreaIds(playerKey=''){
+  const key=String(playerKey||'').trim();if(!key)return[];
+  try{const parsed=JSON.parse(raStorage.get(localUnlockStorageKey(key))||'[]');return Array.isArray(parsed)?normalizeStoredUnlockIds(parsed):[];}catch(_error){return[];}
+}
+function writeLocalUnlockedAreaIds(playerKey='',ids=[]){
+  const key=String(playerKey||'').trim();if(!key)return;
+  raStorage.set(localUnlockStorageKey(key),JSON.stringify(normalizeStoredUnlockIds(ids)));
+}
+function storageUnlockIds(state={}){
+  return state&&state.gmAllAreas?[GM_ALL_AREAS_MARKER]:normalizeStoredUnlockIds(state&&state.unlockedAreaIds||[]);
+}
+function facilityAreasFromMaster(commonMaster={}){
+  return (Array.isArray(commonMaster?.data?.exploration_areas)?commonMaster.data.exploration_areas:[]).filter(facilityEnabled).slice().sort((a,b)=>{
+    const ao=Number(a.unlockOrder),bo=Number(b.unlockOrder);if(Number.isFinite(ao)&&Number.isFinite(bo)&&ao!==bo)return ao-bo;if(Number.isFinite(ao)!==Number.isFinite(bo))return Number.isFinite(ao)?-1:1;return String(a.name||a.id||'').localeCompare(String(b.name||b.id||''),'ja');
+  });
+}
+function unlockStateFromIds(commonMaster={},ids=[],addedAreaName=''){
+  const areas=facilityAreasFromMaster(commonMaster),areaById=Object.fromEntries(areas.map(a=>[String(a.id||''),a]));
+  const initialId=String(areas[0]?.id||'');
+  const stored=normalizeStoredUnlockIds(ids||[]);
+  const gmAllAreas=stored.includes(GM_ALL_AREAS_MARKER);
+  const valid=gmAllAreas?areas.map(area=>String(area.id||'')).filter(Boolean):[...new Set(stored.filter(id=>areaById[id]))];
+  if(initialId&&!valid.includes(initialId))valid.unshift(initialId);
+  const unlockedAreas=areas.filter(area=>valid.includes(String(area.id||''))).map(area=>({id:String(area.id||''),name:String(area.name||''),unlockOrder:Number(area.unlockOrder)||1,areaType:String(area.areaType||'')}));
+  return{ok:true,version:String(commonMaster.version||''),gmAllAreas,storedUnlockAreaIds:gmAllAreas?[GM_ALL_AREAS_MARKER]:unlockedAreas.map(a=>a.id),unlockedAreaIds:unlockedAreas.map(a=>a.id),unlockedAreas,areaName:unlockedAreas.map(a=>a.name).join('・'),addedAreaName};
+}
+async function matchAreaByUnlockKey(commonMaster={},unlockKey=''){
+  const normalized=normalizeFacilityUnlockKey(unlockKey);if(!normalized)throw new Error('追加する解放キーを入力してください。');
+  const hash=await facilitySha256Hex(normalized);
+  const gmHash=String(commonMaster?.document?.gmAllUnlockKeyHash||commonMaster?.gmAllUnlockKeyHash||'').toLowerCase();
+  if(gmHash&&gmHash===hash)return{id:GM_ALL_AREAS_MARKER,name:'GM全エリア解放',gmAllAreas:true};
+  const area=facilityAreasFromMaster(commonMaster).find(row=>String(row.unlockKeyHash||'').toLowerCase()===hash);
+  if(!area)throw new Error('解放キーが一致しません。');
+  return area;
+}
 function jsonpActionOnce(action,params={},timeoutMs=35000){return new Promise((resolve,reject)=>{const cb='raFacilityCb_'+Date.now()+'_'+Math.random().toString(36).slice(2);const sc=document.createElement('script');const timer=setTimeout(()=>{clean();const error=new Error('通信がタイムアウトしました。');error.code='RA_TIMEOUT';reject(error);},timeoutMs);function clean(){clearTimeout(timer);try{delete window[cb]}catch(e){}sc.remove();}window[cb]=j=>{clean();resolve(j)};const u=new URL(DEFAULT_GAS_WEB_APP_URL);u.searchParams.set('api','1');u.searchParams.set('action',action);Object.entries(params||{}).forEach(([key,value])=>{if(value!==undefined&&value!==null)u.searchParams.set(key,String(value));});u.searchParams.set('callback',cb);u.searchParams.set('_t',String(Date.now()));sc.onerror=()=>{clean();const error=new Error('施設データへ接続できませんでした。');error.code='RA_NETWORK';reject(error);};sc.src=u.toString();document.head.appendChild(sc);});}
 async function jsonpAction(action,params={},options={}){const attempts=Math.max(1,Number(options.attempts)||2),timeoutMs=Math.max(15000,Number(options.timeoutMs)||35000);let lastError=null;for(let attempt=1;attempt<=attempts;attempt++){try{return await jsonpActionOnce(action,params,timeoutMs);}catch(error){lastError=error;if(attempt>=attempts||!['RA_TIMEOUT','RA_NETWORK'].includes(error&&error.code))break;await new Promise(resolve=>setTimeout(resolve,500*attempt));}}throw lastError||new Error('施設データへ接続できませんでした。');}
 
@@ -467,7 +523,8 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState={}){
     });
   if(!areas.length)throw new Error('共通DBに探索エリアが登録されていません。');
   const areaById={};areas.forEach(area=>{areaById[String(area.id||'')]=area;});
-  const unlockedAreaIds=[...new Set((Array.isArray(unlockState.unlockedAreaIds)?unlockState.unlockedAreaIds:[]).map(String).filter(id=>areaById[id]))];
+  const gmAllAreas=!!unlockState.gmAllAreas||normalizeStoredUnlockIds(unlockState.storedUnlockAreaIds||[]).includes(GM_ALL_AREAS_MARKER);
+  const unlockedAreaIds=gmAllAreas?areas.map(area=>String(area.id||'')).filter(Boolean):[...new Set((Array.isArray(unlockState.unlockedAreaIds)?unlockState.unlockedAreaIds:[]).map(String).filter(id=>areaById[id]))];
   const initialId=String(areas[0].id||'');
   if(initialId&&!unlockedAreaIds.includes(initialId))unlockedAreaIds.unshift(initialId);
   const unlockedAreaSet=new Set(unlockedAreaIds);
@@ -761,6 +818,8 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState={}){
 
   return{
     areaName:unlockedAreas.map(area=>area.name).join('・')||'初期エリア',
+    gmAllAreas,
+    storedUnlockAreaIds:gmAllAreas?[GM_ALL_AREAS_MARKER]:unlockedAreaIds,
     unlockedAreaIds,
     unlockedAreas,
     version:commonMaster.version||'',
@@ -787,13 +846,18 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState={}){
     }
   };
 }
-async function loadUnlockState(playerKey,unlockKey=''){
-  const result=await jsonpAction('facilityUnlockState',{playerKey,unlockKey});
+async function loadUnlockState(playerKey){
+  const result=await jsonpAction('facilityUnlockState',{playerKey},{attempts:1,timeoutMs:15000});
   if(!result||!result.ok)throw new Error(result&&result.error?result.error:'解放状態を確認できませんでした。');
   return result;
 }
+async function syncUnlockState(playerKey,unlockedAreaIds=[]){
+  const result=await jsonpAction('facilityUnlockSync',{playerKey,unlockedAreaIds:JSON.stringify(unlockedAreaIds)},{attempts:1,timeoutMs:15000});
+  if(!result||!result.ok)throw new Error(result&&result.error?result.error:'解放状態をクラウド保存できませんでした。');
+  return result;
+}
 async function resetUnlockState(playerKey){
-  const result=await jsonpAction('facilityUnlockReset',{playerKey});
+  const result=await jsonpAction('facilityUnlockReset',{playerKey},{attempts:1,timeoutMs:15000});
   if(!result||!result.ok)throw new Error(result&&result.error?result.error:'解放状態を初期化できませんでした。');
   return result;
 }
@@ -806,7 +870,10 @@ function renderUnlockedAreas(state={}){
   const rows=Array.isArray(state.unlockedAreas)?state.unlockedAreas:[];
   const count=Math.max(1,rows.length);
   const list=$('unlockedAreaModalList');
-  if(list)list.innerHTML=rows.length?rows.map(area=>`<li class="${String(area.areaType||'')==='異界'?'otherworld':''}"><span>${esc(area.name||'名称未設定')}</span><small>${esc(area.areaType||'通常エリア')}</small></li>`).join(''):'<li><span>初期エリア</span><small>通常エリア</small></li>';
+  if(list){
+    const gmNote=state.gmAllAreas?'<li><span>GM全エリア解放</span><small>今後追加されるエリアにも自動追従</small></li>':'';
+    list.innerHTML=gmNote+(rows.length?rows.map(area=>`<li class="${String(area.areaType||'')==='異界'?'otherworld':''}"><span>${esc(area.name||'名称未設定')}</span><small>${esc(area.areaType||'通常エリア')}</small></li>`).join(''):'<li><span>初期エリア</span><small>通常エリア</small></li>');
+  }
   if($('unlockSummary'))$('unlockSummary').textContent=`${count}エリア`;
   if($('unlockedAreaCount'))$('unlockedAreaCount').textContent=`${count}エリア`;
 }
@@ -1289,60 +1356,92 @@ async function loadCatalog(playerKey,{unlockKey='',force=false,reset=false}={}){
   setStatus(cleanPlayerKey?'GitHub共通DBと保存済みの解放状態を確認しています。':'初期エリアの施設データを読み込んでいます。');
   ['applyKey','loadState','resetKey','reloadDb'].forEach(id=>{if($(id))$(id).disabled=true;});
   try{
-    let commonMaster=null,unlockState={unlockedAreaIds:[],unlockedAreas:[]};
-    if(cleanPlayerKey){
-      // 2.2MBの共通DB取得とGASの解放状態取得を直列に待たず、同時に開始する。
-      const masterTask=fetchGithubCommonMaster({force});
-      const unlockTask=reset?resetUnlockState(cleanPlayerKey):loadUnlockState(cleanPlayerKey,unlockKey);
-      const [masterResult,unlockResult]=await Promise.allSettled([masterTask,unlockTask]);
-      if(unlockResult.status!=='fulfilled')throw unlockResult.reason;
-      unlockState=unlockResult.value;
-      if(masterResult.status==='fulfilled')commonMaster=masterResult.value;
-      else{
-        // GitHub共通DBだけが失敗した場合に限り、従来のGASカタログへフォールバックする。
-        const legacy=await loadLegacyCatalog(cleanPlayerKey);
-        catalog=legacy.catalog||catalog;
-        currentPlayerKey=cleanPlayerKey;
-        currentUnlockState=legacy;
-        raStorage.set(PLAYER_KEY_STORAGE_KEY,cleanPlayerKey);
-        renderUnlockedAreas(legacy);
-        setStatus(`解放状態を読み込みました（${Math.max(1,(legacy.unlockedAreas||[]).length)}エリア） / GASフォールバック`,'ok');
-        render();
-        return true;
+    const masterTask=fetchGithubCommonMaster({force});
+    const cloudTask=cleanPlayerKey&&!reset?loadUnlockState(cleanPlayerKey):Promise.resolve({unlockedAreaIds:[],unlockedAreas:[]});
+    const commonMaster=await masterTask;
+    let mergedIds=cleanPlayerKey?readLocalUnlockedAreaIds(cleanPlayerKey):[];
+    let addedAreaName='';
+    if(reset){
+      mergedIds=[];
+    }else if(unlockKey){
+      const matched=await matchAreaByUnlockKey(commonMaster,unlockKey);
+      if(matched.gmAllAreas){
+        mergedIds=[GM_ALL_AREAS_MARKER];
+        addedAreaName='GM全エリア解放';
+      }else{
+        const areaId=String(matched.id||'');
+        if(areaId&&!mergedIds.includes(GM_ALL_AREAS_MARKER)&&!mergedIds.includes(areaId)){mergedIds.push(areaId);addedAreaName=String(matched.name||'');}
       }
-      currentPlayerKey=cleanPlayerKey;
-      currentUnlockState=unlockState;
-      raStorage.set(PLAYER_KEY_STORAGE_KEY,cleanPlayerKey);
-    }else{
-      commonMaster=await fetchGithubCommonMaster({force});
-      currentPlayerKey='';
-      currentUnlockState=unlockState;
     }
-    const built=buildFacilityCatalogFromGithub(commonMaster,unlockState);
+
+    // キー照合はGitHub公開DBだけで完結させ、GASの応答を待たず端末へ即時反映する。
+    let displayState=unlockStateFromIds(commonMaster,mergedIds,addedAreaName);
+    if(cleanPlayerKey)writeLocalUnlockedAreaIds(cleanPlayerKey,storageUnlockIds(displayState));
+    let built=buildFacilityCatalogFromGithub(commonMaster,displayState);
     catalog=built.catalog||catalog;
-    const displayState={...unlockState,unlockedAreaIds:built.unlockedAreaIds||[],unlockedAreas:built.unlockedAreas||[]};
+    displayState={...displayState,gmAllAreas:!!built.gmAllAreas,storedUnlockAreaIds:built.storedUnlockAreaIds||storageUnlockIds(displayState),unlockedAreaIds:built.unlockedAreaIds||[],unlockedAreas:built.unlockedAreas||[]};
+    currentPlayerKey=cleanPlayerKey;
     currentUnlockState=displayState;
+    if(cleanPlayerKey)raStorage.set(PLAYER_KEY_STORAGE_KEY,cleanPlayerKey);
     renderUnlockedAreas(displayState);
-    if(cleanPlayerKey){
-      const added=unlockState.addedAreaName?`「${unlockState.addedAreaName}」を追加しました。 `:'';
-      setStatus(`${added}解放状態を保存しました（${Math.max(1,(built.unlockedAreas||[]).length)}エリア） / GitHub共通DB${built.version?' v'+built.version:''}${commonMaster.versionWarning?'（更新反映待ち）':''}`,commonMaster.versionWarning?'':'ok');
-      if(unlockKey)$('unlockKey').value='';
-    }else{
-      setStatus('プレイヤーキー未設定のため、初期エリアだけを表示しています。プレイヤーキーを入力すると保存済みの解放状態を読み込めます。');
-    }
     render();
+    if(unlockKey)$('unlockKey').value='';
+
+    if(!cleanPlayerKey){
+      setStatus('プレイヤーキー未設定のため、初期エリアだけを表示しています。プレイヤーキーを入力すると保存済みの解放状態を読み込めます。');
+      return true;
+    }
+
+    if(reset){
+      setStatus('解放状態を端末上で初期エリアだけに戻しました。クラウドへ同期しています。','ok');
+      try{
+        const synced=await resetUnlockState(cleanPlayerKey);
+        const syncedState=unlockStateFromIds(commonMaster,synced.unlockedAreaIds||[],'');
+        writeLocalUnlockedAreaIds(cleanPlayerKey,storageUnlockIds(syncedState));
+        currentUnlockState=syncedState;renderUnlockedAreas(syncedState);
+        setStatus('解放状態を初期エリアだけに戻し、クラウド保存へ同期しました。','ok');
+      }catch(error){
+        setStatus(`端末上の解放状態は初期化しましたが、クラウド保存への同期に失敗しました：${String(error&&error.message||error)}`,'bad');
+      }
+      return true;
+    }
+
+    const prefix=addedAreaName==='GM全エリア解放'?`GM全エリア解放キーを登録しました。現在存在する全エリアを解放し、今後追加されるエリアにも自動追従します。 `:(addedAreaName?`「${addedAreaName}」を解放しました。 `:'');
+    setStatus(`${prefix}${Math.max(1,displayState.unlockedAreas.length)}エリアを端末へ保存しました。クラウド状態を確認しています。`,'ok');
+
+    let cloudState={unlockedAreaIds:[],unlockedAreas:[]},cloudError=null;
+    try{cloudState=await cloudTask;}catch(error){cloudError=error;}
+    if(!cloudError){
+      const merged=mergeStoredUnlockIds(storageUnlockIds(displayState),cloudState.unlockedAreaIds||[]);
+      displayState=unlockStateFromIds(commonMaster,merged,addedAreaName);
+      writeLocalUnlockedAreaIds(cleanPlayerKey,storageUnlockIds(displayState));
+      built=buildFacilityCatalogFromGithub(commonMaster,displayState);
+      catalog=built.catalog||catalog;
+      displayState={...displayState,gmAllAreas:!!built.gmAllAreas,storedUnlockAreaIds:built.storedUnlockAreaIds||storageUnlockIds(displayState),unlockedAreaIds:built.unlockedAreaIds||[],unlockedAreas:built.unlockedAreas||[]};
+      currentUnlockState=displayState;renderUnlockedAreas(displayState);render();
+    }
+
+    try{
+      const synced=await syncUnlockState(cleanPlayerKey,storageUnlockIds(displayState));
+      const syncedState=unlockStateFromIds(commonMaster,mergeStoredUnlockIds(storageUnlockIds(displayState),synced.unlockedAreaIds||[]),addedAreaName);
+      writeLocalUnlockedAreaIds(cleanPlayerKey,storageUnlockIds(syncedState));
+      currentUnlockState=syncedState;renderUnlockedAreas(syncedState);
+      setStatus(`${prefix}${Math.max(1,syncedState.unlockedAreas.length)}エリアを表示し、クラウド保存へ同期しました。 / GitHub共通DB${built.version?' v'+built.version:''}${commonMaster.versionWarning?'（更新反映待ち）':''}`,commonMaster.versionWarning?'':'ok');
+    }catch(error){
+      const cloudReadNote=cloudError?` クラウド読込にも失敗しています：${String(cloudError&&cloudError.message||cloudError)}`:'';
+      setStatus(`${prefix}端末への保存と表示は完了しましたが、クラウド保存への同期に失敗しました：${String(error&&error.message||error)}${cloudReadNote}`,'bad');
+    }
     return true;
   }catch(error){
     console.warn('施設の解放状態または共通DBの読み込みに失敗しました。',error);
     const text=String(error&&error.message||error||'施設データを読み込めませんでした。');
-    setStatus(text==='通信がタイムアウトしました。'?'解放状態の通信が完了しませんでした。自動再試行にも失敗したため、数秒待ってもう一度実行してください。':text,'bad');
+    setStatus(text==='通信がタイムアウトしました。'?'解放状態の通信が完了しませんでした。数秒待ってもう一度実行してください。':text,'bad');
     return false;
   }finally{
     ['applyKey','loadState','resetKey','reloadDb'].forEach(id=>{if($(id))$(id).disabled=false;});
     restoreFacilityViewState(viewState);
   }
 }
-
 function playerKeyValue(){return String($('playerKey')?.value||'').trim();}
 $('loadState').addEventListener('click',()=>loadCatalog(playerKeyValue()));
 $('playerKey').addEventListener('keydown',e=>{if(e.key==='Enter')loadCatalog(playerKeyValue());});
