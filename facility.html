@@ -222,7 +222,7 @@ const raStorage={
 let currentFacility='smith',currentSection='sales',currentPlayerKey='',currentUnlockState={unlockedAreaIds:[],unlockedAreas:[]},currentWeaponCategory=raStorage.get('recraft_alchemia.player_facility.weapon_category')||'',branchSearch='',currentRank='all',catalogSearch='',branchLabelsCollapsed=raStorage.get(BRANCH_LABEL_COLLAPSE_STORAGE_KEY)==='1';
 const GM_ALL_AREAS_MARKER='__GM_ALL_AREAS__';
 const WEAPON_CATEGORY_STORAGE_KEY='recraft_alchemia.player_facility.weapon_category';
-let branchDetailIndex=Object.create(null),materialSourceIndex=Object.create(null),branchGraphFrame=0,weaponModalLastFocus=null,branchGraphResizeObserver=null;
+let branchDetailIndex=Object.create(null),materialSourceIndex=Object.create(null),branchGraphFrame=0,weaponModalLastFocus=null,branchGraphResizeObserver=null,branchRouteHoverNode=null,branchRouteRestoredFocus=null;
 const $=id=>document.getElementById(id);
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function rankValue(v){return Math.max(1,Math.floor(Number(v)||1));}
@@ -1287,6 +1287,17 @@ function clearBranchRouteFocus(scroll=document.querySelector('.branch-graph-scro
   scroll.classList.remove('has-route-focus');
   scroll.querySelectorAll('.route-focus').forEach(el=>el.classList.remove('route-focus'));
 }
+function clearAllBranchRouteFocus(){
+  document.querySelectorAll('.branch-graph-scroll').forEach(clearBranchRouteFocus);
+}
+function refreshBranchGraphAfterModal(){
+  clearAllBranchRouteFocus();
+  scheduleBranchConnections();
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    drawBranchConnections();
+    clearAllBranchRouteFocus();
+  }));
+}
 function focusBranchRoute(target){
   const selectedNode=target instanceof Element
     ?target.closest('.branch-graph-node[data-weapon-node]')
@@ -1378,6 +1389,9 @@ function openWeaponModal(name,trigger=null){
   const modal=$('weaponDetailModal');
   const body=$('weaponModalBody');
   if(!weaponModalLastFocus&&trigger)weaponModalLastFocus=trigger;
+  branchRouteHoverNode=null;
+  branchRouteRestoredFocus=null;
+  clearAllBranchRouteFocus();
   $('weaponModalTitle').textContent=`${entry.actualResultItem||entry.name||entry.resultItem||'武器詳細'}　${rankLabel(entry.rank)}`;
   body.innerHTML=weaponModalHtml(entry);
   body.scrollTop=0;
@@ -1397,8 +1411,20 @@ function closeWeaponModal(options={}){
     modal.setAttribute('aria-hidden','true');
   }
   document.documentElement.classList.remove('weapon-modal-open');
+  branchRouteHoverNode=null;
+  clearAllBranchRouteFocus();
   const focus=weaponModalLastFocus;weaponModalLastFocus=null;
-  if(options.restoreFocus!==false&&focus&&document.contains(focus))focus.focus({preventScroll:true});
+  if(options.restoreFocus!==false&&focus&&document.contains(focus)){
+    // モーダルを閉じた際のフォーカス復帰はアクセシビリティ上維持するが、
+    // その「復帰フォーカス」を経路ホバー状態として扱わない。
+    branchRouteRestoredFocus=focus;
+    focus.focus({preventScroll:true});
+  }else{
+    branchRouteRestoredFocus=null;
+  }
+  clearAllBranchRouteFocus();
+  // overflow:hidden の解除でグラフ座標が微妙に変わるため、閉じた後の実寸で線を引き直す。
+  refreshBranchGraphAfterModal();
 }
 function resetWeaponModalState(){
   closeWeaponModal({restoreFocus:false});
@@ -1548,7 +1574,7 @@ $('resetKey').addEventListener('click',()=>{
   if(window.confirm('このプレイヤーキーに保存された解放状態を、初期エリアだけに戻しますか？'))loadCatalog(playerKey,{reset:true});
 });
 $('reloadDb').addEventListener('click',()=>loadCatalog(playerKeyValue(),{force:true}));
-let branchRouteHoverNode=null;
+// v90.8.407: 詳細モーダル開閉後の経路強調残留・線座標ずれをリセットする。
 document.addEventListener('pointerover',e=>{
   const node=e.target.closest('.branch-graph-node[data-weapon-node]');
   if(!node||node.contains(e.relatedTarget))return;
@@ -1562,22 +1588,36 @@ document.addEventListener('pointerout',e=>{
   const focused=document.activeElement&&document.activeElement.closest
     ?document.activeElement.closest('.branch-graph-node[data-weapon-node]')
     :null;
-  if(focused)focusBranchRoute(focused);else clearBranchRouteFocus(node.closest('.branch-graph-scroll'));
+  const restoredNode=branchRouteRestoredFocus&&branchRouteRestoredFocus.closest
+    ?branchRouteRestoredFocus.closest('.branch-graph-node[data-weapon-node]')
+    :null;
+  if(focused&&focused!==restoredNode)focusBranchRoute(focused);else clearBranchRouteFocus(node.closest('.branch-graph-scroll'));
 });
 document.addEventListener('focusin',e=>{
   if(branchRouteHoverNode)return;
   const node=e.target.closest('.branch-graph-node[data-weapon-node]');
-  if(node)focusBranchRoute(node);
+  const restoredNode=branchRouteRestoredFocus&&branchRouteRestoredFocus.closest
+    ?branchRouteRestoredFocus.closest('.branch-graph-node[data-weapon-node]')
+    :null;
+  if(node&&node===restoredNode)return;
+  if(node){branchRouteRestoredFocus=null;focusBranchRoute(node);}
 });
 document.addEventListener('focusout',e=>{
   const node=e.target.closest('.branch-graph-node[data-weapon-node]');
   if(!node||node.contains(e.relatedTarget)||branchRouteHoverNode)return;
+  const restoredNode=branchRouteRestoredFocus&&branchRouteRestoredFocus.closest
+    ?branchRouteRestoredFocus.closest('.branch-graph-node[data-weapon-node]')
+    :null;
+  if(node===restoredNode)branchRouteRestoredFocus=null;
   requestAnimationFrame(()=>{
     if(branchRouteHoverNode)return;
     const focused=document.activeElement&&document.activeElement.closest
       ?document.activeElement.closest('.branch-graph-node[data-weapon-node]')
       :null;
-    if(focused)focusBranchRoute(focused);else clearBranchRouteFocus(node.closest('.branch-graph-scroll'));
+    const ignoredNode=branchRouteRestoredFocus&&branchRouteRestoredFocus.closest
+      ?branchRouteRestoredFocus.closest('.branch-graph-node[data-weapon-node]')
+      :null;
+    if(focused&&focused!==ignoredNode)focusBranchRoute(focused);else clearBranchRouteFocus(node.closest('.branch-graph-scroll'));
   });
 });
 document.addEventListener('click',e=>{
@@ -1713,7 +1753,7 @@ function run(){
 
  // 経路強調がポインター離脱後に残らないよう、グラフ外へ出た時点で必ずリセット。
  let keyboardMode=false;document.addEventListener('keydown',()=>{keyboardMode=true},true);document.addEventListener('pointerdown',()=>{keyboardMode=false},true);
- function hardClear(graph){if(!graph)return;try{branchRouteHoverNode=null}catch(_){};try{clearBranchRouteFocus(graph)}catch(_){};if(!keyboardMode){const active=document.activeElement;if(active?.closest?.('.branch-graph-scroll')===graph)active.blur()}requestAnimationFrame(()=>{try{clearBranchRouteFocus(graph)}catch(_){}})}
+ function hardClear(graph){if(!graph)return;try{branchRouteHoverNode=null;branchRouteRestoredFocus=null}catch(_){};try{clearBranchRouteFocus(graph)}catch(_){};if(!keyboardMode){const active=document.activeElement;if(active?.closest?.('.branch-graph-scroll')===graph)active.blur()}requestAnimationFrame(()=>{try{clearBranchRouteFocus(graph)}catch(_){}})}
  document.addEventListener('pointerleave',e=>{if(e.target?.matches?.('.branch-graph-scroll'))hardClear(e.target)},true);
  document.addEventListener('pointerout',e=>{const graph=e.target?.closest?.('.branch-graph-scroll');if(graph&&!graph.contains(e.relatedTarget))hardClear(graph)},true);
  document.addEventListener('click',e=>{if(!e.target.closest('.branch-graph-node'))document.querySelectorAll('.branch-graph-scroll').forEach(hardClear)},true);
@@ -1724,27 +1764,19 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 </script>
 
 <style id="raDaggerAtlasPrototypeStyle">
-/* v90.8.406: 透過修正版の短剣19種アトラス実装 */
+/* v90.8.408: 武器画像は詳細モーダル内でのみ表示 */
 .ra-dagger-atlas-icon{
   --ra-atlas-x:0%;
   --ra-atlas-y:0%;
-  display:inline-block;
+  display:none;
   flex:0 0 auto;
-  width:52px;
-  height:52px;
-  border:1px solid rgba(151,112,70,.30);
-  border-radius:11px;
   background-image:url("assets/items/weapons/dagger-atlas.webp");
   background-repeat:no-repeat;
   background-size:800% 800%;
   background-position:var(--ra-atlas-x) var(--ra-atlas-y);
-  box-shadow:0 3px 10px rgba(66,43,22,.12);
   vertical-align:middle;
 }
-.ra-dagger-atlas-icon.ra-atlas-xs{width:38px;height:38px;border-radius:8px}
-.ra-dagger-atlas-icon.ra-atlas-sm{width:48px;height:48px}
-.ra-dagger-atlas-icon.ra-atlas-md{width:78px;height:78px;border-radius:14px}
-.ra-dagger-atlas-icon.ra-atlas-lg{width:min(220px,64vw);height:min(220px,64vw);border-radius:18px}
+.weapon-modal-body .ra-dagger-atlas-icon{display:inline-block}
 .ra-dagger-atlas-preview{
   display:flex;
   justify-content:center;
@@ -1754,17 +1786,6 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 </style>
 
 <style id="raDaggerAtlasFacilityLayout">
-.branch-graph-node-trigger.ra-has-dagger-atlas{
-  display:grid!important;
-  grid-template-columns:48px minmax(0,1fr)!important;
-  grid-template-rows:auto auto!important;
-  column-gap:7px!important;
-  align-items:center!important;
-  text-align:left!important;
-}
-.branch-graph-node-trigger.ra-has-dagger-atlas>.ra-dagger-atlas-icon{grid-column:1;grid-row:1/3}
-.branch-graph-node-trigger.ra-has-dagger-atlas>.branch-graph-node-rank-inline{grid-column:2;grid-row:1}
-.branch-graph-node-trigger.ra-has-dagger-atlas>.branch-graph-node-name-inline{grid-column:2;grid-row:2}
 .weapon-modal-body>.ra-dagger-atlas-preview{
   width:min(225px,72vw);
   aspect-ratio:1/1;
@@ -1777,7 +1798,7 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   background-size:100% 100%;
   filter:drop-shadow(0 5px 12px rgba(77,48,24,.10));
 }
-.weapon-modal-body>.ra-dagger-atlas-preview>.ra-dagger-atlas-icon.ra-atlas-lg{
+.weapon-modal-body>.ra-dagger-atlas-preview>.ra-dagger-atlas-icon{
   width:100%;
   height:100%;
   border:0;
@@ -1786,8 +1807,6 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   background-color:transparent;
 }
 @media(max-width:720px){
-  .branch-graph-node-trigger.ra-has-dagger-atlas{grid-template-columns:42px minmax(0,1fr)!important}
-  .branch-graph-node-trigger.ra-has-dagger-atlas>.ra-dagger-atlas-icon{width:42px;height:42px}
   .weapon-modal-body>.ra-dagger-atlas-preview{width:min(210px,78vw);margin-bottom:14px}
 }
 </style>
@@ -1805,12 +1824,12 @@ function raDaggerAtlasSlotByName(value){
   const hit=names.find(name=>text.includes(name));
   return hit?RA_DAGGER_ATLAS_NAME_SLOTS[hit]:0;
 }
-function raCreateDaggerAtlasIcon(slot,size='sm',label='短剣画像'){
+function raCreateDaggerAtlasIcon(slot,label='短剣画像'){
   const n=Number(slot)||0;
   if(n<1||n>64)return null;
   const col=(n-1)%8,row=Math.floor((n-1)/8);
   const span=document.createElement('span');
-  span.className=`ra-dagger-atlas-icon ra-atlas-${size}`;
+  span.className='ra-dagger-atlas-icon';
   span.style.setProperty('--ra-atlas-x',`${(col*100/7).toFixed(6)}%`);
   span.style.setProperty('--ra-atlas-y',`${(row*100/7).toFixed(6)}%`);
   span.setAttribute('role','img');
@@ -1818,55 +1837,38 @@ function raCreateDaggerAtlasIcon(slot,size='sm',label='短剣画像'){
   span.dataset.raDaggerSlot=String(n);
   return span;
 }
-
-function decorateFacilityDaggerImages(root=document){
-  root.querySelectorAll('.branch-graph-node[data-weapon-node]').forEach(node=>{
-    const name=String(node.dataset.weaponNode||'').trim();
-    const slot=raDaggerAtlasSlotByName(name);
-    const host=node.querySelector('.branch-graph-node-trigger');
-    if(!host)return;
-    const old=host.querySelector(':scope > .ra-dagger-atlas-icon');
-    if(!slot){old?.remove();host.classList.remove('ra-has-dagger-atlas');return;}
-    host.classList.add('ra-has-dagger-atlas');
-    if(old?.dataset.raDaggerSlot===String(slot))return;
-    old?.remove();
-    host.prepend(raCreateDaggerAtlasIcon(slot,'sm',`${name}の画像`));
-  });
-  root.querySelectorAll('.card h3,.branch-node h3').forEach(title=>{
-    const name=title.textContent?.trim()||'';
-    const slot=raDaggerAtlasSlotByName(name);
-    const card=title.closest('.card,.branch-node');
-    if(!card)return;
-    const old=card.querySelector(':scope > .ra-dagger-atlas-preview');
-    if(!slot){old?.remove();return;}
-    if(old?.dataset.raDaggerSlot===String(slot))return;
-    old?.remove();
-    const wrap=document.createElement('div');
-    wrap.className='ra-dagger-atlas-preview';
-    wrap.dataset.raDaggerSlot=String(slot);
-    wrap.appendChild(raCreateDaggerAtlasIcon(slot,'md',`${name}の画像`));
-    card.prepend(wrap);
-  });
-  const modal=document.getElementById('weaponModalBody');
-  const modalTitle=document.getElementById('weaponModalTitle')?.textContent?.trim()||'';
-  if(modal){
-    const slot=raDaggerAtlasSlotByName(modalTitle);
-    const old=modal.querySelector(':scope > .ra-dagger-atlas-preview');
-    if(!slot){old?.remove();}
-    else if(old?.dataset.raDaggerSlot!==String(slot)){
-      old?.remove();
-      const wrap=document.createElement('div');
-      wrap.className='ra-dagger-atlas-preview';
-      wrap.dataset.raDaggerSlot=String(slot);
-      wrap.appendChild(raCreateDaggerAtlasIcon(slot,'lg',`${modalTitle}の画像`));
-      modal.prepend(wrap);
-    }
-  }
+function removeNonModalWeaponImages(){
+  document.querySelectorAll('.branch-graph-node-trigger > .ra-dagger-atlas-icon, .card > .ra-dagger-atlas-preview, .branch-node > .ra-dagger-atlas-preview').forEach(el=>el.remove());
+  document.querySelectorAll('.branch-graph-node-trigger.ra-has-dagger-atlas').forEach(el=>el.classList.remove('ra-has-dagger-atlas'));
 }
-const observer=new MutationObserver(()=>decorateFacilityDaggerImages());
+function decorateFacilityDaggerModal(){
+  removeNonModalWeaponImages();
+  const modalWrap=document.getElementById('weaponDetailModal');
+  const modal=document.getElementById('weaponModalBody');
+  if(!modal)return;
+  const old=modal.querySelector(':scope > .ra-dagger-atlas-preview');
+  if(!modalWrap||modalWrap.hidden){old?.remove();return;}
+  const modalTitle=document.getElementById('weaponModalTitle')?.textContent?.trim()||'';
+  const slot=raDaggerAtlasSlotByName(modalTitle);
+  if(!slot){old?.remove();return;}
+  if(old?.dataset.raDaggerSlot===String(slot))return;
+  old?.remove();
+  const wrap=document.createElement('div');
+  wrap.className='ra-dagger-atlas-preview';
+  wrap.dataset.raDaggerSlot=String(slot);
+  wrap.appendChild(raCreateDaggerAtlasIcon(slot,`${modalTitle}の画像`));
+  modal.prepend(wrap);
+}
 function start(){
-  decorateFacilityDaggerImages();
-  observer.observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:['hidden','data-weapon-node']});
+  removeNonModalWeaponImages();
+  decorateFacilityDaggerModal();
+  const modalWrap=document.getElementById('weaponDetailModal');
+  const modalBody=document.getElementById('weaponModalBody');
+  const modalTitle=document.getElementById('weaponModalTitle');
+  const observer=new MutationObserver(decorateFacilityDaggerModal);
+  if(modalWrap)observer.observe(modalWrap,{attributes:true,attributeFilter:['hidden','aria-hidden']});
+  if(modalBody)observer.observe(modalBody,{childList:true});
+  if(modalTitle)observer.observe(modalTitle,{childList:true,subtree:true,characterData:true});
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
 })();
