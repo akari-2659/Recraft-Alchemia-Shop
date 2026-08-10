@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.478</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.479</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -74,8 +74,9 @@ html{scrollbar-gutter:stable}
 .weapon-category-select-wrap{display:grid;gap:6px}.weapon-category-select-wrap label{font-size:12px;font-weight:800;color:var(--muted)}
 select{width:100%;border:1px solid var(--line);border-radius:12px;background:#fffdf8;padding:10px 36px 10px 12px;font:inherit;color:var(--ink)}
 .branch-graph-scroll{max-height:min(76vh,820px);overflow:auto;border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;scrollbar-gutter:stable both-edges;overscroll-behavior:contain}
-.branch-graph-canvas{--branch-label-width:96px;position:relative;display:grid;width:max-content;min-width:100%;justify-content:center;gap:12px 28px;padding:10px 22px 28px 8px;isolation:isolate}
+.branch-graph-canvas{--branch-label-width:138px;position:relative;display:grid;width:max-content;min-width:100%;justify-content:center;gap:12px 28px;padding:10px 22px 28px 8px;isolation:isolate}
 .branch-graph-label{position:sticky;left:0;z-index:7;align-self:stretch;display:flex;align-items:center;justify-content:center;width:100%;min-width:0;max-width:none;padding:7px 4px;border:1px solid #dec8a9;border-left:0;border-radius:0 10px 10px 0;background:rgba(246,232,212,.97);font-size:12px;line-height:1.2;text-align:center;font-weight:1000;white-space:nowrap;word-break:keep-all;overflow-wrap:normal;writing-mode:horizontal-tb;text-orientation:mixed;box-shadow:4px 0 9px rgba(80,50,20,.07)}
+.branch-graph-label>span{display:block;min-width:max-content;white-space:nowrap;word-break:keep-all;overflow-wrap:normal;writing-mode:horizontal-tb;text-orientation:mixed}
 .branch-graph-label.base{background:rgba(239,226,207,.98)}.branch-graph-label.boss{border-color:#b78665;background:rgba(247,224,211,.98);color:#713c2b}.branch-graph-node.boss-branch{border-color:#c19170;background:#fff6ef}
 .branch-graph-svg{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:visible}
 .branch-graph-edge{fill:none;stroke:#9a7652;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 0 #fff)}.branch-graph-trunk,.branch-graph-branch{stroke-linecap:butt}.branch-graph-edge-route{stroke:transparent;filter:none;opacity:0}
@@ -94,7 +95,7 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-label{font-size:0;padding:0;border-radius:0 5px 5px 0}
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-label::after{content:'◆';font-size:8px;line-height:1;color:#7b5d3e}
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-label.base::after{content:'◇'}
-@media(max-width:720px){.branch-controls{grid-template-columns:1fr}.branch-graph-canvas{--branch-label-width:74px;gap:10px 22px}.branch-graph-label{padding:6px 2px;font-size:11px}.branch-graph-node{width:150px}.weapon-modal-details{grid-template-columns:1fr}.weapon-modal-link{align-items:flex-start;flex-direction:column}.weapon-modal-link button{width:100%}}
+@media(max-width:720px){.branch-controls{grid-template-columns:1fr}.branch-graph-canvas{--branch-label-width:112px;gap:10px 22px}.branch-graph-label{padding:6px 2px;font-size:11px}.branch-graph-node{width:150px}.weapon-modal-details{grid-template-columns:1fr}.weapon-modal-link{align-items:flex-start;flex-direction:column}.weapon-modal-link button{width:100%}}
 
 
 /* v90.8.404: 派生図の表示座標・タップ判定と素材入手先表示 */
@@ -138,19 +139,17 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 @media(max-width:620px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/2}.facility-unlock-grid button{width:auto}.facility-unlock-grid #resetKey{grid-column:1/3;justify-self:start}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.478-encounter-quest-progress1">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.479-full-audit1">
 
 <style id="raFortuneCommunityV474">
-.fortune-rule,.community-rule{grid-column:1/-1;border:1px solid var(--line);border-radius:14px;background:#fffaf3;padding:12px;line-height:1.7}
-.fortune-card .fortune-oracle{font-family:Georgia,'Times New Roman','Yu Mincho','Hiragino Mincho ProN',serif;color:#5b3a54;font-style:italic;line-height:1.75;margin:7px 0 10px}
-.fortune-range{font-weight:900;color:var(--accent2)}
+.community-rule{grid-column:1/-1;border:1px solid var(--line);border-radius:14px;background:#fffaf3;padding:12px;line-height:1.7}
 .community-card .community-head{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:8px}.community-status{font-size:12px;font-weight:900;border:1px solid var(--line);border-radius:999px;padding:3px 8px;background:#f5ead8}.community-status.complete{background:#f0fff6;color:#356346;border-color:#9bcdad}
 .community-progress{height:10px;border-radius:999px;background:#eadfce;overflow:hidden;margin:10px 0}.community-progress>span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--green));border-radius:inherit}
 .community-reqs{display:grid;gap:6px;margin-top:10px}.community-req{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed #e4d3bb;padding-bottom:4px}.community-req:last-child{border-bottom:0}.community-output{border:1px solid #b8d5c1;background:#f4fff7;border-radius:12px;padding:10px;margin-top:10px;line-height:1.65}
 </style>
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.478｜更新：2026年8月11日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処に加え、占い屋と広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.479｜更新：2026年8月11日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -168,7 +167,7 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 </details>
 <section class="panel facility-catalog-panel">
   <div class="facility-nav-stack">
-    <div class="facility-switch"><button type="button" data-facility="smith" class="active">鍛冶屋</button><button type="button" data-facility="apothecary">薬屋</button><button type="button" data-facility="antique">骨董屋</button><button type="button" data-facility="eatery">食事処</button><button type="button" data-facility="fortune">占い屋</button><button type="button" data-facility="plaza">広場</button></div>
+    <div class="facility-switch"><button type="button" data-facility="smith" class="active">鍛冶屋</button><button type="button" data-facility="apothecary">薬屋</button><button type="button" data-facility="antique">骨董屋</button><button type="button" data-facility="eatery">食事処</button><button type="button" data-facility="plaza">広場</button></div>
     <div id="sectionTabs" class="section-tabs"></div>
   </div>
   <div class="summary-line">
@@ -220,10 +219,9 @@ const SECTION_DEFS={
  apothecary:[['sales','販売商品','薬屋で購入できる調合品・調合道具と、その段階で解放される常設店売りレシピです。宝箱限定レシピはここには表示しません。'],['alchemy','調合品作成','薬品・香・爆弾・瓶などの調合です。'],['materials','素材加工','一般の加工素材はレシピ不要です。魔導インク・祈祷紙は対応レシピが必要な特殊加工としてここに表示します。施設依頼はどちらもレシピ不要・判定不要です。']],
  antique:[['sales','常設販売','骨董屋で常時購入できる品と店売りレシピです。'],['scrolls','未鑑定スクロール価格','販売内容はランダムのため、各ランクの価格だけを表示します。']],
  eatery:[['meals','食材持ち込み料理','必要食材と調理代を確認できます。食事効果は次の探索・依頼から帰還するまで継続し、同時に1種類のみ有効です。']],
- fortune:[['reading','本日の占い','1人1日1回・15G。1D100でその日の運勢を決定し、効果はその日いっぱい有効です。']],
  plaza:[['gathering','共同採取設備','通常エリアの到達に応じて整備計画が増えます。全員で納品数を共有し、完成後は1人1日1回、卓上で採取量を決定できます。異界では共同採取設備は増えません。']]
 };
-let catalog={smith:{sales:[],craft:[],materials:[],crystal:[],branches:[]},apothecary:{sales:[],alchemy:[],materials:[]},antique:{sales:[],scrolls:[]},eatery:{meals:[]},fortune:{reading:[]},plaza:{gathering:[]}};
+let catalog={smith:{sales:[],craft:[],materials:[],crystal:[],branches:[]},apothecary:{sales:[],alchemy:[],materials:[]},antique:{sales:[],scrolls:[]},eatery:{meals:[]},plaza:{gathering:[]}};
 const BRANCH_LABEL_COLLAPSE_STORAGE_KEY='recraft_alchemia.player_facility.branch_labels_collapsed';
 const raStorage={
   get(key){try{return window.localStorage?window.localStorage.getItem(key):null;}catch(error){console.warn('保存情報を読み込めませんでした。',error);return null;}},
@@ -1488,27 +1486,6 @@ function syncBranchLabelToggle(){
   });
 }
 
-const FORTUNE_PRICE=15;
-const FORTUNE_ROWS=[
- {from:1,to:4,name:'星巡りの幸運',oracle:'遠い星々が、今日はあなたの歩みに寄り添っているようです。',effect:'1日1回、判定前に宣言して任意の判定+2。'},
- {from:5,to:7,name:'双星の祝福',oracle:'二つの星が同じ道を照らしています。小さな幸運を分けて使うとよいでしょう。',effect:'1日2回、判定前に宣言して任意の判定+1。'},
- {from:8,to:10,name:'運命輪の巡り',oracle:'止まっていた輪が、ほんの少しだけあなたの方へ回り始めました。',effect:'1日1回、失敗した判定を振り直す。振り直した結果を採用する。'},
- {from:11,to:16,name:'剣星の導き',oracle:'刃の先に細い光が見えます。狙いを定めるなら今日でしょう。',effect:'1日2回、命中判定+1。'},
- {from:17,to:22,name:'隠者の灯火',oracle:'見落としていた足跡を、小さな灯りが照らしてくれそうです。',effect:'1日2回、探索・感知・追跡のいずれかの判定+1。'},
- {from:23,to:28,name:'豊穣杯の恵み',oracle:'満ちた杯は、手を伸ばした者へ少し多くの実りを返します。',effect:'1日2回、採取判定+1。'},
- {from:29,to:34,name:'魔術師の指先',oracle:'今日は道具がよく手になじむ日。細かな仕事ほど冴えるでしょう。',effect:'1日2回、調合・鍛冶・細工のいずれかの判定+1。'},
- {from:35,to:39,name:'獅子座の加護',oracle:'胸の奥に力が満ちています。身体を使う仕事なら追い風になるでしょう。',effect:'1日2回、力業・運動のいずれかの判定+1。'},
- {from:40,to:45,name:'梟書の啓示',oracle:'閉じた頁の間から、必要な答えだけが覗いています。',effect:'1日2回、知識判定+1。'},
- {from:46,to:54,name:'暁星の兆し',oracle:'最初の一歩だけ、夜明けの星が強く照らしてくれます。',effect:'その日の最初に行う判定+1。'},
- {from:55,to:62,name:'均衡の天秤',oracle:'わずかな傾きが結果を変える日。最後のひと押しを見逃さないで。',effect:'1日1回、判定後・成否確定前に達成値+1。'},
- {from:63,to:70,name:'幸運の残り火',oracle:'小さな火は消えにくいもの。役目を果たすまで手元に残るでしょう。',effect:'1日1回、判定前に宣言して判定+1。その判定に失敗した場合、この運勢の使用回数を消費しない。'},
- {from:71,to:78,name:'薄雲の影',oracle:'薄い雲が一度だけ光を遮ります。避けるより、軽いうちに通り過ぎるのがよさそうです。',effect:'その日のうち1回、任意の判定に-1を適用しなければならない。'},
- {from:79,to:84,name:'絡み糸の兆し',oracle:'細い糸が二度、足元へ絡みます。大事な場面まで残さない方がよいでしょう。',effect:'その日のうち2回、任意の判定に-1を適用しなければならない。'},
- {from:85,to:89,name:'欠けた杯',oracle:'器の縁に小さな欠けがあります。今日は手仕事と採集に少し注意を。',effect:'その日のうち1回、調合・鍛冶・細工・採取のいずれかの判定に-2を適用しなければならない。'},
- {from:90,to:95,name:'迷い月の囁き',oracle:'月の光が道を二つに見せています。手掛かりを追う時ほど迷いが入りそうです。',effect:'その日のうち1回、探索・感知・追跡のいずれかの判定に-2を適用しなければならない。'},
- {from:96,to:98,name:'黒星の宣告',oracle:'黒い星がひとつ落ちています。避け切るより、受ける場所を選ぶべき日です。',effect:'その日のうち1回、任意の判定に-2を適用しなければならない。'},
- {from:99,to:100,name:'崩塔の凶兆',oracle:'高く積み上げたものほど、小さな揺らぎを恐れるもの。今日は足元をよくご覧なさい。',effect:'その日のうち3回、任意の判定に-1を適用しなければならない。'}
-];
 let communityGatheringState={facilities:[],error:''};
 async function loadCommunityGatheringState({quiet=false}={}){
   try{
@@ -1518,10 +1495,6 @@ async function loadCommunityGatheringState({quiet=false}={}){
   }catch(error){communityGatheringState={facilities:communityGatheringState.facilities||[],error:String(error&&error.message||error||'共同設備進捗を取得できませんでした。')};}
   if(currentFacility==='plaza')render();
   return communityGatheringState;
-}
-function fortuneCatalog(){
-  const rule=`<div class="fortune-rule"><b>利用料：${FORTUNE_PRICE}G / 1人1日1回</b><br>卓上で1D100を振り、該当する運勢をその日いっぱい適用します。良い運勢は指定回数まで任意のタイミングで使用できます。悪い運勢はその日のうちに指定回数を判定へ適用してください。未消化の凶運が残った場合、未消化1回につき10Gの厄払い代を支払います。支払えない場合は翌日の最初の判定-1です。</div>`;
-  return rule+FORTUNE_ROWS.map(row=>`<article class="card fortune-card"><div class="chips"><span class="chip fortune-range">1D100：${row.from===row.to?row.from:`${row.from}～${row.to}`}</span></div><h3>${esc(row.name)}</h3><div class="fortune-oracle">「${esc(row.oracle)}」</div><dl><dt>効果</dt><dd>${esc(row.effect)}</dd></dl></article>`).join('');
 }
 function communityAreaUnlocked(areaId){
   const ids=Array.isArray(currentUnlockState?.unlockedAreaIds)?currentUnlockState.unlockedAreaIds:[];
@@ -1539,11 +1512,11 @@ function communityGatheringCatalog(){
   }).join('');
 }
 function renderSpecialFacility(){
-  if(currentFacility!=='fortune'&&currentFacility!=='plaza')return false;
+  if(currentFacility!=='plaza')return false;
   $('branchControls').hidden=true;$('catalogSearchControls').hidden=true;$('catalogRankControls').hidden=true;
   if($('catalogSearchCount'))$('catalogSearchCount').textContent='';
   $('cards').className='cards';
-  $('cards').innerHTML=currentFacility==='fortune'?fortuneCatalog():communityGatheringCatalog();
+  $('cards').innerHTML=communityGatheringCatalog();
   return true;
 }
 function renderTabs(){document.body.dataset.facility=currentFacility;syncBranchLabelToggle();const defs=SECTION_DEFS[currentFacility];if(!defs.some(d=>d[0]===currentSection))currentSection=defs[0][0];$('sectionTabs').innerHTML=defs.map(([id,label])=>`<button type="button" data-section="${esc(id)}" class="${id===currentSection?'active':''}">${esc(label)}</button>`).join('');const cur=defs.find(d=>d[0]===currentSection);$('sectionTitle').textContent=cur[1];$('sectionDescription').textContent=cur[2];}
@@ -1780,7 +1753,7 @@ function run(){
    let wrap=document.getElementById('catalogAreaControls');
    const searchControls=document.getElementById('catalogSearchControls');
    if(!wrap){wrap=document.createElement('div');wrap.id='catalogAreaControls';wrap.className='ra-area-filter';wrap.innerHTML='<div class="ra-area-filter-label">解放エリアで絞り込み</div><div class="ra-area-filter-tabs"></div>';(searchControls?.parentNode||document.getElementById('catalogPanel')||document.querySelector('main'))?.insertBefore(wrap,searchControls?.nextSibling||null)}
-   const branches=typeof currentSection!=='undefined'&&currentSection==='branches';const special=['fortune','plaza'].includes(String(currentFacility||''));wrap.hidden=branches||special;if(branches||special)return;
+   const branches=typeof currentSection!=='undefined'&&currentSection==='branches';const special=String(currentFacility||'')==='plaza';wrap.hidden=branches||special;if(branches||special)return;
    const rows=areaRows();const ids=new Set(rows.map(a=>txt(a.id)));if(currentCatalogArea!=='all'&&!ids.has(currentCatalogArea))currentCatalogArea='all';
    wrap.querySelector('.ra-area-filter-tabs').innerHTML=[`<button type="button" data-ra-area="all" class="${currentCatalogArea==='all'?'active':''}">すべて</button>`,...rows.map(a=>`<button type="button" data-ra-area="${escHtml(a.id)}" class="${currentCatalogArea===txt(a.id)?'active':''}">${escHtml(a.name||'名称未設定')}</button>`)].join('');
  }
