@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.514</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.515</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -139,7 +139,7 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 @media(max-width:620px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/2}.facility-unlock-grid button{width:auto}.facility-unlock-grid #resetKey{grid-column:1/3;justify-self:start}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.514-accessory-rank-grid">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.515-accessory-all-graph">
 
 <style id="raFortuneCommunityV474">
 .community-rule{grid-column:1/-1;border:1px solid var(--line);border-radius:14px;background:#fffaf3;padding:12px;line-height:1.7}
@@ -149,17 +149,17 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 </style>
 
 <style id="raAccessoryBranchStyle">
-/* v90.8.514: 装飾品強化は武器派生図と同じく、★ランク列を固定した単一の横スクロール図で表示する。 */
-.accessory-branch-scroll{max-height:min(76vh,820px);overflow:auto;border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;scrollbar-gutter:stable both-edges;overscroll-behavior:contain}.accessory-branch-canvas{position:relative;display:grid;width:max-content;min-width:100%;justify-content:center;align-items:center;gap:12px 30px;padding:10px 24px 28px;isolation:isolate}.accessory-branch-svg{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:visible}.accessory-branch-edge{fill:none;stroke:#9a7652;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 0 #fff)}
-.accessory-branch-node{position:relative;z-index:2;width:176px;min-height:88px;border:1px solid #c9ad86;border-radius:13px;background:#fffaf3;box-shadow:0 4px 11px rgba(80,50,20,.09);overflow:hidden}
+/* v90.8.515: 全装飾品の作成・段階強化を、★ランク列を固定した単一の横スクロール派生図で表示する。 */
+.catalog-wide{display:block;width:100%;min-width:0}.accessory-branch-scroll{width:100%;max-width:100%;max-height:min(76vh,820px);overflow:auto;border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;scrollbar-gutter:stable both-edges;overscroll-behavior:contain}.accessory-branch-canvas{position:relative;display:grid;width:100%;justify-content:stretch;align-items:center;gap:12px 30px;padding:10px 24px 28px;isolation:isolate}.accessory-branch-svg{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:visible}.accessory-branch-edge{fill:none;stroke:#9a7652;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 0 #fff)}
+.accessory-branch-node{position:relative;z-index:2;width:min(220px,calc(100% - 16px));min-width:150px;min-height:88px;justify-self:center;border:1px solid #c9ad86;border-radius:13px;background:#fffaf3;box-shadow:0 4px 11px rgba(80,50,20,.09);overflow:hidden}
 body.ra-facility .accessory-branch-node button{width:100%!important;height:100%!important;min-height:88px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:4px!important;padding:9px 11px!important;border:0!important;border-radius:inherit!important;background:#fffaf3!important;color:#273746!important;box-shadow:none!important;text-align:left!important;transform:none!important}
 body.ra-facility .accessory-branch-node button:hover{background:#f5e6d1!important;color:#1f2f3d!important;box-shadow:none!important;transform:none!important}body.ra-facility .accessory-branch-node button:focus-visible{background:#f5e6d1!important;color:#1f2f3d!important;outline:3px solid rgba(169,111,55,.42)!important;outline-offset:-3px!important;box-shadow:none!important}
 .accessory-branch-rank{font-size:11px;font-weight:900;color:#735d46!important}.accessory-branch-name{font-weight:1000;line-height:1.35;color:#273746!important}.accessory-branch-effect{font-size:11px;line-height:1.35;color:#5d6670!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.accessory-upgrade-dialog{width:min(720px,calc(100vw - 24px))}.accessory-upgrade-dialog dl{display:grid;grid-template-columns:auto 1fr;gap:8px 12px}.accessory-upgrade-dialog dt{font-weight:900;color:var(--muted)}.accessory-upgrade-dialog dd{margin:0;white-space:pre-wrap}
-@media(max-width:720px){.accessory-branch-canvas{gap:10px 22px;padding:10px 18px 24px}.accessory-branch-node{width:150px}.accessory-upgrade-dialog dl{grid-template-columns:1fr}.accessory-upgrade-dialog dd{margin-bottom:7px}}
+@media(max-width:720px){.accessory-branch-canvas{gap:10px 22px;padding:10px 18px 24px}.accessory-branch-node{width:min(180px,calc(100% - 10px));min-width:140px}.accessory-upgrade-dialog dl{grid-template-columns:1fr}.accessory-upgrade-dialog dd{margin-bottom:7px}}
 </style>
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.514｜更新：2026年8月12日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.515｜更新：2026年8月12日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -224,7 +224,7 @@ body.ra-facility .accessory-branch-node button:hover{background:#f5e6d1!importan
 </div>
 <div id="accessoryUpgradeDetailModal" class="material-source-modal" hidden aria-hidden="true">
   <div class="material-source-dialog accessory-upgrade-dialog" role="dialog" aria-modal="true" aria-labelledby="accessoryUpgradeDetailTitle">
-    <header class="material-source-header"><div><div class="muted">装飾品強化</div><h3 id="accessoryUpgradeDetailTitle">装飾品の詳細</h3></div><button type="button" class="ghost" data-close-accessory-upgrade aria-label="閉じる">×</button></header>
+    <header class="material-source-header"><div><div class="muted">装飾品</div><h3 id="accessoryUpgradeDetailTitle">装飾品の詳細</h3></div><button type="button" class="ghost" data-close-accessory-upgrade aria-label="閉じる">×</button></header>
     <div id="accessoryUpgradeDetailBody" class="material-source-body"></div>
   </div>
 </div>
@@ -241,13 +241,13 @@ const DEFAULT_GAS_WEB_APP_URL='https://script.google.com/macros/s/AKfycbyjIIKXTX
 const PLAYER_KEY_STORAGE_KEY='recraft_alchemia.player_facility.player_key';
 const UNLOCK_STATE_STORAGE_PREFIX='recraft_alchemia.player_facility.unlocked_area_ids:';
 const SECTION_DEFS={
- smith:[['sales','販売商品','鍛冶屋で購入できる品と、その段階で解放される常設店売りレシピです。宝箱限定レシピはここには表示しません。'],['craft','装備・道具作成','武器・防具・盾・バッグ・矢筒・既存装飾品・仕掛けなどの作成です。'],['accessory','装飾品強化','固有効果そのものを段階的に強くしていく装飾品の新規製作・段階強化です。強化後は同系統でも固有名称が変化します。'],['materials','素材加工','自作はレシピ不要で、対応する鍛冶道具と判定成功が必要です。施設依頼は判定不要ですが加工依頼費が必要です。'],['crystal','クリスタル強化','現在の解放エリアで利用できる、スキルクリスタルの強化段階・必要素材・費用です。'],['branches','武器派生','武器種を選び、大枠の素材系統と順当強化・分岐を矢印でつないだ派生図を確認できます。武器の詳細では強化枠、必要素材、派生元、次の派生先を確認できます。未解放の派生先は「？？？」で表示します。']],
+ smith:[['sales','販売商品','鍛冶屋で購入できる品と、その段階で解放される常設店売りレシピです。宝箱限定レシピはここには表示しません。'],['craft','装備・道具作成','武器・防具・盾・バッグ・矢筒・仕掛けなどの作成です。装飾品は「装飾品」の派生図へまとめています。'],['accessory','装飾品','作成できる装飾品と段階強化を、★ランク列に揃えたひとつの派生図で確認できます。各装飾品を選ぶと必要素材・費用・難易度などの詳細を確認できます。'],['materials','素材加工','自作はレシピ不要で、対応する鍛冶道具と判定成功が必要です。施設依頼は判定不要ですが加工依頼費が必要です。'],['crystal','クリスタル強化','現在の解放エリアで利用できる、スキルクリスタルの強化段階・必要素材・費用です。'],['branches','武器派生','武器種を選び、大枠の素材系統と順当強化・分岐を矢印でつないだ派生図を確認できます。武器の詳細では強化枠、必要素材、派生元、次の派生先を確認できます。未解放の派生先は「？？？」で表示します。']],
  apothecary:[['sales','販売商品','薬屋で購入できる調合品・調合道具と、その段階で解放される常設店売りレシピです。宝箱限定レシピはここには表示しません。'],['alchemy','調合品作成','薬品・香・爆弾・瓶などの調合です。'],['materials','素材加工','一般の加工素材はレシピ不要です。魔導インク・祈祷紙は対応レシピが必要な特殊加工としてここに表示します。施設依頼はどちらもレシピ不要・判定不要です。']],
  antique:[['sales','常設販売','骨董屋で常時購入できる品と店売りレシピです。'],['scrolls','未鑑定スクロール価格','販売内容はランダムのため、各ランクの価格だけを表示します。']],
  eatery:[['meals','食材持ち込み料理','必要食材と調理代を確認できます。食事効果は次の探索・依頼から帰還するまで継続し、同時に1種類のみ有効です。']],
  plaza:[['gathering','共同採取設備','通常エリアの到達に応じて整備計画が増えます。全員で納品数を共有し、完成後は1人1日1回、卓上で採取量を決定できます。異界では共同採取設備は増えません。']]
 };
-let catalog={smith:{sales:[],craft:[],materials:[],crystal:[],branches:[]},apothecary:{sales:[],alchemy:[],materials:[]},antique:{sales:[],scrolls:[]},eatery:{meals:[]},plaza:{gathering:[]}};
+let catalog={smith:{sales:[],craft:[],accessory:[],materials:[],crystal:[],branches:[]},apothecary:{sales:[],alchemy:[],materials:[]},antique:{sales:[],scrolls:[]},eatery:{meals:[]},plaza:{gathering:[]}};
 const BRANCH_LABEL_COLLAPSE_STORAGE_KEY='recraft_alchemia.player_facility.branch_labels_collapsed';
 const raStorage={
   get(key){try{return window.localStorage?window.localStorage.getItem(key):null;}catch(error){console.warn('保存情報を読み込めませんでした。',error);return null;}},
@@ -743,6 +743,16 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState={}){
         return facilitySafeRecipe({...r,_facilityUnlockOrder:requiredOrder(r),_facilityUnlockAreaId:requiredAreaId(r),_facilityUnlockAreaName:String(areaById[requiredAreaId(r)]?.name||'初期エリア')},false,r.baseItem||'',resultItem);
       });
   }
+  function recipesByResultItemType(facilityName,itemType){
+    const target=String(itemType||'').trim();
+    return recipes.filter(r=>!isRecipeBasedSpecialProcessing(r)&&facilityMatch(r,facilityName)&&unlocked(r))
+      .sort(sortRows)
+      .map(r=>{
+        const resultItem=items.find(item=>String(item.name||'')===String(r.resultItem||r.name||''))||null;
+        return facilitySafeRecipe({...r,_facilityUnlockOrder:requiredOrder(r),_facilityUnlockAreaId:requiredAreaId(r),_facilityUnlockAreaName:String(areaById[requiredAreaId(r)]?.name||'初期エリア')},false,r.baseItem||'',resultItem);
+      })
+      .filter(r=>String(r.itemType||'').trim()===target);
+  }
   function processingMaterials(facilityName){
     const ordinary=items.filter(row=>String(row.materialType||'').trim()==='加工素材'&&String(row.processingRequiredMaterials||'').trim()&&facilityMatch(row,facilityName)&&unlocked(row))
       .sort(sortRows)
@@ -943,8 +953,8 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState={}){
     catalog:{
       smith:{
         sales:sales('鍛冶屋'),
-        craft:normalRecipes('鍛冶屋',['鍛冶','防具製作','バッグ製作','細工']),
-        accessory:normalRecipes('鍛冶屋',['装飾品製作','装飾品強化']),
+        craft:normalRecipes('鍛冶屋',['鍛冶','防具製作','バッグ製作','細工']).filter(r=>String(r.itemType||'').trim()!=='装飾品'),
+        accessory:recipesByResultItemType('鍛冶屋','装飾品'),
         materials:processingMaterials('鍛冶屋'),
         crystal:normalRecipes('鍛冶屋',['クリスタル強化']),
         branches:branchRows
@@ -1070,7 +1080,7 @@ function closeAccessoryUpgradeModal(){const modal=$('accessoryUpgradeDetailModal
 function accessoryUpgradeCatalog(rows=[]){
   accessoryDetailIndex=Object.create(null);
   const list=(rows||[]).filter(Boolean);
-  if(!list.length)return '<div class="empty">装飾品強化は登録されていません。</div>';
+  if(!list.length)return '<div class="empty">装飾品は登録されていません。</div>';
   const entryName=r=>String(r&&r.resultItem||r&&r.name||'').trim();
   list.forEach(r=>{const name=entryName(r);if(name)accessoryDetailIndex[name]=r;});
   const byResult=new Map(list.map(r=>[entryName(r),r]).filter(([name])=>name));
@@ -1105,7 +1115,9 @@ function accessoryUpgradeCatalog(rows=[]){
   const visibleRanks=[...rankSlots.keys()].sort((a,b)=>a-b);const rankStart=new Map();let cursor=1;
   visibleRanks.forEach(rank=>{rankStart.set(rank,cursor);cursor+=rankSlots.get(rank)||1;});
   const totalNodeCols=Math.max(1,cursor-1),totalRows=Math.max(1,rootOrder.length);
-  const style=`grid-template-columns:repeat(${totalNodeCols},176px);grid-template-rows:30px repeat(${totalRows},minmax(88px,auto))`;
+  const minColumnWidth=176,columnGap=30,horizontalPadding=48;
+  const minCanvasWidth=totalNodeCols*minColumnWidth+Math.max(0,totalNodeCols-1)*columnGap+horizontalPadding;
+  const style=`min-width:${minCanvasWidth}px;grid-template-columns:repeat(${totalNodeCols},minmax(${minColumnWidth}px,1fr));grid-template-rows:30px repeat(${totalRows},minmax(88px,auto))`;
   const rankBands=visibleRanks.map(rank=>{const start=rankStart.get(rank)||1,span=rankSlots.get(rank)||1;return `<div class="branch-rank-band" style="grid-column:${start} / span ${span};grid-row:1 / ${totalRows+2}"><span>★${rank}</span></div>`;}).join('');
   const nodes=placements.map(p=>{const r=p.entry,name=entryName(r),parent=String(r.baseItem||'').trim(),parentVisible=parent&&byResult.has(parent);const col=(rankStart.get(p.rank)||1)+p.slot;return `<article class="accessory-branch-node" style="grid-column:${col};grid-row:${p.row}" data-accessory-node="${esc(name)}" ${parentVisible?`data-parent-accessory="${esc(parent)}"`:''}><button type="button" data-open-accessory-upgrade="${esc(name)}" aria-label="${esc(`${name}の詳細を開く`)}"><span class="accessory-branch-rank">${esc(rankLabel(r.rank))}</span><span class="accessory-branch-name">${esc(name)}</span>${r.effect?`<span class="accessory-branch-effect">${esc(r.effect)}</span>`:''}</button></article>`;}).join('');
   return `<div class="accessory-branch-scroll"><div class="accessory-branch-canvas" style="${style}">${rankBands}<svg class="accessory-branch-svg" aria-hidden="true"></svg>${nodes}</div></div>`;
@@ -1653,7 +1665,7 @@ function renderSpecialFacility(){
   return true;
 }
 function renderTabs(){document.body.dataset.facility=currentFacility;syncBranchLabelToggle();const defs=SECTION_DEFS[currentFacility];if(!defs.some(d=>d[0]===currentSection))currentSection=defs[0][0];$('sectionTabs').innerHTML=defs.map(([id,label])=>`<button type="button" data-section="${esc(id)}" class="${id===currentSection?'active':''}">${esc(label)}</button>`).join('');const cur=defs.find(d=>d[0]===currentSection);$('sectionTitle').textContent=cur[1];$('sectionDescription').textContent=cur[2];}
-function catalogRowMatches(row){const q=searchNorm(catalogSearch);if(!q)return true;return searchNorm(Object.values(row||{}).filter(v=>typeof v!=='object').join(' ')).includes(q);}function render(){renderTabs();if(renderSpecialFacility())return;const rows=(catalog[currentFacility]&&catalog[currentFacility][currentSection])||[];const branches=currentSection==='branches',scrolls=currentSection==='scrolls',crystal=currentSection==='crystal',accessory=currentSection==='accessory';$('branchControls').hidden=!branches;$('catalogSearchControls').hidden=branches;renderRankControls(rows,branches);const categoryBase=branches?[]:rows.filter(rankMatches).filter(catalogRowMatches);const categoryOptions=branches?[]:syncCatalogCategoryState(categoryBase);if($('catalogCategoryControls'))$('catalogCategoryControls').hidden=branches||categoryOptions.length<2;if($('catalogCategoryPickerLabel'))$('catalogCategoryPickerLabel').textContent=currentCatalogCategory==='all'?'全て':currentCatalogCategory;const filtered=branches?rows:categoryBase.filter(catalogCategoryMatches);if($('catalogSearchCount'))$('catalogSearchCount').textContent=branches?'':`${filtered.length}件表示`;$('cards').className=branches?'':'cards';$('cards').innerHTML=branches?branchCatalog(rows):(filtered.length?(scrolls?filtered.map(scrollPriceCard).join(''):currentSection==='sales'?salesCatalog(filtered):crystal?filtered.map(crystalCard).join(''):accessory?accessoryUpgradeCatalog(filtered):recipeCatalog(filtered)):'<div class="empty">現在の検索・★ランク・カテゴリ条件に一致する内容はありません。</div>');if(branches)focusPendingBranchNode();if(accessory)scheduleAccessoryConnections();}
+function catalogRowMatches(row){const q=searchNorm(catalogSearch);if(!q)return true;return searchNorm(Object.values(row||{}).filter(v=>typeof v!=='object').join(' ')).includes(q);}function render(){renderTabs();if(renderSpecialFacility())return;const rows=(catalog[currentFacility]&&catalog[currentFacility][currentSection])||[];const branches=currentSection==='branches',scrolls=currentSection==='scrolls',crystal=currentSection==='crystal',accessory=currentSection==='accessory';$('branchControls').hidden=!branches;$('catalogSearchControls').hidden=branches;renderRankControls(rows,branches);const categoryBase=branches?[]:rows.filter(rankMatches).filter(catalogRowMatches);const categoryOptions=branches?[]:syncCatalogCategoryState(categoryBase);if($('catalogCategoryControls'))$('catalogCategoryControls').hidden=branches||accessory||categoryOptions.length<2;if($('catalogCategoryPickerLabel'))$('catalogCategoryPickerLabel').textContent=currentCatalogCategory==='all'?'全て':currentCatalogCategory;const filtered=branches?rows:(accessory?categoryBase:categoryBase.filter(catalogCategoryMatches));if($('catalogSearchCount'))$('catalogSearchCount').textContent=branches?'':`${filtered.length}件表示`;$('cards').className=(branches||accessory)?'catalog-wide':'cards';$('cards').innerHTML=branches?branchCatalog(rows):(filtered.length?(scrolls?filtered.map(scrollPriceCard).join(''):currentSection==='sales'?salesCatalog(filtered):crystal?filtered.map(crystalCard).join(''):accessory?accessoryUpgradeCatalog(filtered):recipeCatalog(filtered)):'<div class="empty">現在の検索・★ランク・カテゴリ条件に一致する内容はありません。</div>');if(branches)focusPendingBranchNode();if(accessory)scheduleAccessoryConnections();}
 let facilityCloudSyncGeneration=0;
 function facilityUnlockIdsEqual(a=[],b=[]){
   const aa=normalizeStoredUnlockIds(a).slice().sort(),bb=normalizeStoredUnlockIds(b).slice().sort();

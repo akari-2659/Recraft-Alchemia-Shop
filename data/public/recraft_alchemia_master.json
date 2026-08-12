@@ -1,9 +1,9 @@
 {
   "format": "recraft-alchemia-public-master",
-  "version": "90.8.514",
-  "updatedAt": "2026-08-12T19:39:00+09:00",
-  "generatedAt": "2026-08-12T19:39:00+09:00",
-  "description": "Recraft-Alchemia public master v90.8.514（DB実データ変更なし。施設HTMLの装飾品強化表示改善に追従）",
+  "version": "90.8.515",
+  "updatedAt": "2026-08-12T22:55:00+09:00",
+  "generatedAt": "2026-08-12T22:55:00+09:00",
+  "description": "Recraft-Alchemia public master v90.8.515（DB実データ変更なし。施設HTMLで全装飾品の作成・段階強化を単一派生図へ統合）",
   "recordCount": 2596,
   "data": {
     "item_types": [
