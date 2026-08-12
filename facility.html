@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.513</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.514</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -139,7 +139,7 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 @media(max-width:620px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/2}.facility-unlock-grid button{width:auto}.facility-unlock-grid #resetKey{grid-column:1/3;justify-self:start}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.513-facility-sync-accessory-graph">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.514-accessory-rank-grid">
 
 <style id="raFortuneCommunityV474">
 .community-rule{grid-column:1/-1;border:1px solid var(--line);border-radius:14px;background:#fffaf3;padding:12px;line-height:1.7}
@@ -149,14 +149,17 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 </style>
 
 <style id="raAccessoryBranchStyle">
-.accessory-branch-groups{display:grid;gap:20px}.accessory-branch-group{min-width:0}.accessory-branch-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 8px;padding:9px 12px;border:1px solid var(--line);border-radius:12px;background:#f6e8d4}.accessory-branch-heading h3{margin:0;font-size:16px}.accessory-branch-heading span{font-size:12px;font-weight:900;color:var(--muted)}
-.accessory-branch-scroll{overflow:auto;border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;scrollbar-gutter:stable both-edges}.accessory-branch-canvas{position:relative;display:grid;width:max-content;min-width:100%;justify-content:center;align-items:center;gap:18px 58px;padding:24px 32px;isolation:isolate}.accessory-branch-svg{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:visible}.accessory-branch-edge{fill:none;stroke:#9a7652;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 0 #fff)}
-.accessory-branch-node{position:relative;z-index:2;width:190px;min-height:104px;border:1px solid #dfc4a3;border-radius:14px;background:#fffaf3;box-shadow:0 4px 11px rgba(80,50,20,.09);overflow:hidden}.accessory-branch-node button{width:100%;height:100%;min-height:104px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;padding:10px 12px;border:0;border-radius:inherit;background:transparent;color:var(--ink);box-shadow:none;text-align:left}.accessory-branch-node button:hover,.accessory-branch-node button:focus-visible{background:#f8ead8;outline:2px solid rgba(169,111,55,.35);outline-offset:-2px}.accessory-branch-rank{font-size:11px;font-weight:900;color:var(--muted)}.accessory-branch-name{font-weight:1000;line-height:1.35}.accessory-branch-effect{font-size:11px;line-height:1.35;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.accessory-upgrade-dialog{width:min(720px,calc(100vw - 24px))}.accessory-upgrade-dialog dl{display:grid;grid-template-columns:auto 1fr;gap:8px 12px}.accessory-upgrade-dialog dt{font-weight:900;color:var(--muted)}.accessory-upgrade-dialog dd{margin:0;white-space:pre-wrap}
-@media(max-width:720px){.accessory-branch-canvas{gap:14px 42px;padding:18px 22px}.accessory-branch-node{width:165px}.accessory-upgrade-dialog dl{grid-template-columns:1fr}.accessory-upgrade-dialog dd{margin-bottom:7px}}
+/* v90.8.514: 装飾品強化は武器派生図と同じく、★ランク列を固定した単一の横スクロール図で表示する。 */
+.accessory-branch-scroll{max-height:min(76vh,820px);overflow:auto;border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;scrollbar-gutter:stable both-edges;overscroll-behavior:contain}.accessory-branch-canvas{position:relative;display:grid;width:max-content;min-width:100%;justify-content:center;align-items:center;gap:12px 30px;padding:10px 24px 28px;isolation:isolate}.accessory-branch-svg{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:visible}.accessory-branch-edge{fill:none;stroke:#9a7652;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 0 #fff)}
+.accessory-branch-node{position:relative;z-index:2;width:176px;min-height:88px;border:1px solid #c9ad86;border-radius:13px;background:#fffaf3;box-shadow:0 4px 11px rgba(80,50,20,.09);overflow:hidden}
+body.ra-facility .accessory-branch-node button{width:100%!important;height:100%!important;min-height:88px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:4px!important;padding:9px 11px!important;border:0!important;border-radius:inherit!important;background:#fffaf3!important;color:#273746!important;box-shadow:none!important;text-align:left!important;transform:none!important}
+body.ra-facility .accessory-branch-node button:hover{background:#f5e6d1!important;color:#1f2f3d!important;box-shadow:none!important;transform:none!important}body.ra-facility .accessory-branch-node button:focus-visible{background:#f5e6d1!important;color:#1f2f3d!important;outline:3px solid rgba(169,111,55,.42)!important;outline-offset:-3px!important;box-shadow:none!important}
+.accessory-branch-rank{font-size:11px;font-weight:900;color:#735d46!important}.accessory-branch-name{font-weight:1000;line-height:1.35;color:#273746!important}.accessory-branch-effect{font-size:11px;line-height:1.35;color:#5d6670!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.accessory-upgrade-dialog{width:min(720px,calc(100vw - 24px))}.accessory-upgrade-dialog dl{display:grid;grid-template-columns:auto 1fr;gap:8px 12px}.accessory-upgrade-dialog dt{font-weight:900;color:var(--muted)}.accessory-upgrade-dialog dd{margin:0;white-space:pre-wrap}
+@media(max-width:720px){.accessory-branch-canvas{gap:10px 22px;padding:10px 18px 24px}.accessory-branch-node{width:150px}.accessory-upgrade-dialog dl{grid-template-columns:1fr}.accessory-upgrade-dialog dd{margin-bottom:7px}}
 </style>
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.513｜更新：2026年8月12日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.514｜更新：2026年8月12日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -1068,31 +1071,44 @@ function accessoryUpgradeCatalog(rows=[]){
   accessoryDetailIndex=Object.create(null);
   const list=(rows||[]).filter(Boolean);
   if(!list.length)return '<div class="empty">装飾品強化は登録されていません。</div>';
-  list.forEach(r=>{const name=String(r.resultItem||r.name||'').trim();if(name)accessoryDetailIndex[name]=r;});
-  const groups=new Map();
-  list.forEach(r=>{const key=String(r.branchType||r.itemCategory||'装飾品').trim()||'装飾品';if(!groups.has(key))groups.set(key,[]);groups.get(key).push(r);});
-  return `<div class="accessory-branch-groups">${[...groups.entries()].map(([groupName,groupRows])=>{
-    const byResult=new Map(groupRows.map(r=>[String(r.resultItem||r.name||'').trim(),r]).filter(([name])=>name));
-    const children=new Map();
-    groupRows.forEach(r=>{const child=String(r.resultItem||r.name||'').trim(),base=String(r.baseItem||'').trim();if(child&&base&&byResult.has(base)){if(!children.has(base))children.set(base,[]);children.get(base).push(child);}});
-    const roots=groupRows.map(r=>String(r.resultItem||r.name||'').trim()).filter(name=>name&&!groupRows.some(x=>String(x.resultItem||x.name||'').trim()===name&&String(x.baseItem||'').trim()&&byResult.has(String(x.baseItem||'').trim())));
-    const uniqueRoots=[...new Set(roots)];
-    const layout=new Map();let leafSlot=1,maxDepth=0;
-    function place(name,depth=0,seen=new Set()){
-      if(!name||seen.has(name))return leafSlot*2;
-      maxDepth=Math.max(maxDepth,depth);const nextSeen=new Set(seen);nextSeen.add(name);
-      const kids=(children.get(name)||[]).slice().sort((a,b)=>{const ar=Number(byResult.get(a)?.rank)||0,br=Number(byResult.get(b)?.rank)||0;return ar-br||a.localeCompare(b,'ja');});
-      let row;
-      if(!kids.length){row=leafSlot*2;leafSlot+=1;}else{const childRows=kids.map(k=>place(k,depth+1,nextSeen));row=childRows.length===1?childRows[0]:Math.round((childRows[0]+childRows[childRows.length-1])/2);}
-      layout.set(name,{row,col:depth+1});return row;
+  const entryName=r=>String(r&&r.resultItem||r&&r.name||'').trim();
+  list.forEach(r=>{const name=entryName(r);if(name)accessoryDetailIndex[name]=r;});
+  const byResult=new Map(list.map(r=>[entryName(r),r]).filter(([name])=>name));
+  const sameRankStageCache=Object.create(null);
+  function sameRankStage(entry,visiting=new Set()){
+    const name=entryName(entry);if(name&&Object.prototype.hasOwnProperty.call(sameRankStageCache,name))return sameRankStageCache[name];
+    if(name&&visiting.has(name))return 0;
+    const next=new Set(visiting);if(name)next.add(name);
+    const parent=byResult.get(String(entry&&entry.baseItem||'').trim())||null;
+    const stage=parent&&rankValue(parent.rank)===rankValue(entry&&entry.rank)?sameRankStage(parent,next)+1:0;
+    if(name)sameRankStageCache[name]=stage;return stage;
+  }
+  function rootName(entry){
+    let current=entry,root=entryName(entry),seen=new Set();
+    while(current){
+      const name=entryName(current);if(name){if(seen.has(name))break;seen.add(name);root=name;}
+      const base=String(current.baseItem||'').trim();if(!base||!byResult.has(base))break;current=byResult.get(base);
     }
-    uniqueRoots.forEach(name=>place(name,0,new Set()));
-    // フィルターで親だけ消えたケースなど、未配置ノードも必ず表示する。
-    [...byResult.keys()].forEach(name=>{if(!layout.has(name))place(name,0,new Set());});
-    const nodes=[...layout.entries()].map(([name,pos])=>{const r=byResult.get(name)||accessoryDetailIndex[name]||{};const parent=String(r.baseItem||'').trim();return `<article class="accessory-branch-node" style="grid-column:${pos.col};grid-row:${pos.row}" data-accessory-node="${esc(name)}" ${parent&&layout.has(parent)?`data-parent-accessory="${esc(parent)}"`:''}><button type="button" data-open-accessory-upgrade="${esc(name)}" aria-label="${esc(`${name}の詳細を開く`)}"><span class="accessory-branch-rank">${esc(rankLabel(r.rank))}</span><span class="accessory-branch-name">${esc(name)}</span>${r.effect?`<span class="accessory-branch-effect">${esc(r.effect)}</span>`:''}</button></article>`;}).join('');
-    const cols=Math.max(1,maxDepth+1),rowsCount=Math.max(2,leafSlot*2);
-    return `<section class="accessory-branch-group"><div class="accessory-branch-heading"><h3>${esc(groupName)}</h3><span>${groupRows.length}段階</span></div><div class="accessory-branch-scroll"><div class="accessory-branch-canvas" style="grid-template-columns:repeat(${cols},190px);grid-template-rows:repeat(${rowsCount},auto)"><svg class="accessory-branch-svg" aria-hidden="true"></svg>${nodes}</div></div></section>`;
-  }).join('')}</div>`;
+    return root;
+  }
+  const rootOrder=[];const rowsByRoot=new Map();
+  list.slice().sort((a,b)=>rankValue(a.rank)-rankValue(b.rank)||entryName(a).localeCompare(entryName(b),'ja')).forEach(r=>{
+    const root=rootName(r)||entryName(r);if(!rowsByRoot.has(root)){rowsByRoot.set(root,[]);rootOrder.push(root);}rowsByRoot.get(root).push(r);
+  });
+  const placements=[];const rankSlots=new Map();
+  rootOrder.forEach((root,rowIndex)=>{
+    const occupiedByRank=new Map();
+    (rowsByRoot.get(root)||[]).slice().sort((a,b)=>rankValue(a.rank)-rankValue(b.rank)||sameRankStage(a)-sameRankStage(b)||entryName(a).localeCompare(entryName(b),'ja')).forEach(entry=>{
+      const rank=rankValue(entry.rank),used=occupiedByRank.get(rank)||new Set();let slot=sameRankStage(entry);while(used.has(slot))slot+=1;used.add(slot);occupiedByRank.set(rank,used);rankSlots.set(rank,Math.max(rankSlots.get(rank)||1,slot+1));placements.push({entry,row:rowIndex+2,rank,slot});
+    });
+  });
+  const visibleRanks=[...rankSlots.keys()].sort((a,b)=>a-b);const rankStart=new Map();let cursor=1;
+  visibleRanks.forEach(rank=>{rankStart.set(rank,cursor);cursor+=rankSlots.get(rank)||1;});
+  const totalNodeCols=Math.max(1,cursor-1),totalRows=Math.max(1,rootOrder.length);
+  const style=`grid-template-columns:repeat(${totalNodeCols},176px);grid-template-rows:30px repeat(${totalRows},minmax(88px,auto))`;
+  const rankBands=visibleRanks.map(rank=>{const start=rankStart.get(rank)||1,span=rankSlots.get(rank)||1;return `<div class="branch-rank-band" style="grid-column:${start} / span ${span};grid-row:1 / ${totalRows+2}"><span>★${rank}</span></div>`;}).join('');
+  const nodes=placements.map(p=>{const r=p.entry,name=entryName(r),parent=String(r.baseItem||'').trim(),parentVisible=parent&&byResult.has(parent);const col=(rankStart.get(p.rank)||1)+p.slot;return `<article class="accessory-branch-node" style="grid-column:${col};grid-row:${p.row}" data-accessory-node="${esc(name)}" ${parentVisible?`data-parent-accessory="${esc(parent)}"`:''}><button type="button" data-open-accessory-upgrade="${esc(name)}" aria-label="${esc(`${name}の詳細を開く`)}"><span class="accessory-branch-rank">${esc(rankLabel(r.rank))}</span><span class="accessory-branch-name">${esc(name)}</span>${r.effect?`<span class="accessory-branch-effect">${esc(r.effect)}</span>`:''}</button></article>`;}).join('');
+  return `<div class="accessory-branch-scroll"><div class="accessory-branch-canvas" style="${style}">${rankBands}<svg class="accessory-branch-svg" aria-hidden="true"></svg>${nodes}</div></div>`;
 }
 function drawAccessoryConnections(){
   document.querySelectorAll('.accessory-branch-canvas').forEach((canvas,index)=>{
