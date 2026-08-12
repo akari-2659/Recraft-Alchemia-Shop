@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.512</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.513</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -139,7 +139,7 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 @media(max-width:620px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/2}.facility-unlock-grid button{width:auto}.facility-unlock-grid #resetKey{grid-column:1/3;justify-self:start}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.512-focus-hit-skill-bonus-terms">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.513-facility-sync-accessory-graph">
 
 <style id="raFortuneCommunityV474">
 .community-rule{grid-column:1/-1;border:1px solid var(--line);border-radius:14px;background:#fffaf3;padding:12px;line-height:1.7}
@@ -147,9 +147,16 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 .community-progress{height:10px;border-radius:999px;background:#eadfce;overflow:hidden;margin:10px 0}.community-progress>span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--green));border-radius:inherit}
 .community-reqs{display:grid;gap:6px;margin-top:10px}.community-req{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed #e4d3bb;padding-bottom:4px}.community-req:last-child{border-bottom:0}.community-output{border:1px solid #b8d5c1;background:#f4fff7;border-radius:12px;padding:10px;margin-top:10px;line-height:1.65}
 </style>
+
+<style id="raAccessoryBranchStyle">
+.accessory-branch-groups{display:grid;gap:20px}.accessory-branch-group{min-width:0}.accessory-branch-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 8px;padding:9px 12px;border:1px solid var(--line);border-radius:12px;background:#f6e8d4}.accessory-branch-heading h3{margin:0;font-size:16px}.accessory-branch-heading span{font-size:12px;font-weight:900;color:var(--muted)}
+.accessory-branch-scroll{overflow:auto;border:1px solid #dec8a9;border-radius:16px;background:#fffdf8;scrollbar-gutter:stable both-edges}.accessory-branch-canvas{position:relative;display:grid;width:max-content;min-width:100%;justify-content:center;align-items:center;gap:18px 58px;padding:24px 32px;isolation:isolate}.accessory-branch-svg{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:visible}.accessory-branch-edge{fill:none;stroke:#9a7652;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 0 #fff)}
+.accessory-branch-node{position:relative;z-index:2;width:190px;min-height:104px;border:1px solid #dfc4a3;border-radius:14px;background:#fffaf3;box-shadow:0 4px 11px rgba(80,50,20,.09);overflow:hidden}.accessory-branch-node button{width:100%;height:100%;min-height:104px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;padding:10px 12px;border:0;border-radius:inherit;background:transparent;color:var(--ink);box-shadow:none;text-align:left}.accessory-branch-node button:hover,.accessory-branch-node button:focus-visible{background:#f8ead8;outline:2px solid rgba(169,111,55,.35);outline-offset:-2px}.accessory-branch-rank{font-size:11px;font-weight:900;color:var(--muted)}.accessory-branch-name{font-weight:1000;line-height:1.35}.accessory-branch-effect{font-size:11px;line-height:1.35;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.accessory-upgrade-dialog{width:min(720px,calc(100vw - 24px))}.accessory-upgrade-dialog dl{display:grid;grid-template-columns:auto 1fr;gap:8px 12px}.accessory-upgrade-dialog dt{font-weight:900;color:var(--muted)}.accessory-upgrade-dialog dd{margin:0;white-space:pre-wrap}
+@media(max-width:720px){.accessory-branch-canvas{gap:14px 42px;padding:18px 22px}.accessory-branch-node{width:165px}.accessory-upgrade-dialog dl{grid-template-columns:1fr}.accessory-upgrade-dialog dd{margin-bottom:7px}}
+</style>
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.512｜更新：2026年8月12日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.513｜更新：2026年8月12日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -210,6 +217,12 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
   <div class="material-source-dialog" role="dialog" aria-modal="true" aria-labelledby="materialSourceTitle">
     <header class="material-source-header"><div><div class="muted">エリアイベント・魔物ドロップ</div><h3 id="materialSourceTitle">素材の入手可能場所</h3></div><button type="button" class="ghost" data-close-material-source aria-label="閉じる">×</button></header>
     <div id="materialSourceBody" class="material-source-body"></div>
+  </div>
+</div>
+<div id="accessoryUpgradeDetailModal" class="material-source-modal" hidden aria-hidden="true">
+  <div class="material-source-dialog accessory-upgrade-dialog" role="dialog" aria-modal="true" aria-labelledby="accessoryUpgradeDetailTitle">
+    <header class="material-source-header"><div><div class="muted">装飾品強化</div><h3 id="accessoryUpgradeDetailTitle">装飾品の詳細</h3></div><button type="button" class="ghost" data-close-accessory-upgrade aria-label="閉じる">×</button></header>
+    <div id="accessoryUpgradeDetailBody" class="material-source-body"></div>
   </div>
 </div>
 <div id="unlockedAreaModal" class="unlock-area-modal" hidden aria-hidden="true">
@@ -291,7 +304,7 @@ function weaponCraftSupportText(){
 function uniqueChips(values){const seen=new Set();return values.map(v=>String(v??'').trim()).filter(v=>{if(!v)return false;const key=v.normalize('NFKC').replace(/\s+/g,'');if(seen.has(key))return false;seen.add(key);return true;});}
 function rankMatches(row){return currentRank==='all'||rankValue(row&&row.rank)===Number(currentRank);}
 function collectRanks(rows,branches){const ranks=new Set();if(branches){(rows||[]).forEach(cat=>{(cat.baseWeapons||[]).forEach(w=>ranks.add(rankValue(w.rank)));(cat.branches||[]).forEach(branch=>(branch.lines||[]).forEach(line=>(line.nodes||[]).forEach(n=>ranks.add(rankValue(n.rank)))));});}else{(rows||[]).forEach(r=>ranks.add(rankValue(r.rank)));}return [...ranks].sort((a,b)=>a-b);}
-function renderRankControls(rows,branches){const ranks=collectRanks(rows,branches);const wrap=$('catalogRankControls'),box=$('rankFilterButtons');if(ranks.length<2){currentRank='all';wrap.hidden=true;box.innerHTML='';return;}if(currentRank!=='all'&&!ranks.includes(Number(currentRank)))currentRank='all';wrap.hidden=false;box.innerHTML=[`<button type="button" data-rank-filter="all" class="${currentRank==='all'?'active':''}">すべて</button>`,...ranks.map(rank=>`<button type="button" data-rank-filter="${rank}" class="${Number(currentRank)===rank?'active':''}">★${rank}</button>`)].join('');}
+function renderRankControls(rows,branches){const ranks=collectRanks(rows,branches);const wrap=$('catalogRankControls'),box=$('rankFilterButtons');if(ranks.length<2){currentRank='all';wrap.hidden=true;box.innerHTML='';return;}if(currentRank!=='all'&&!ranks.includes(Number(currentRank)))currentRank='all';wrap.hidden=false;box.innerHTML=[`<button type="button" data-rank-filter="all" class="${currentRank==='all'?'active':''}">全て</button>`,...ranks.map(rank=>`<button type="button" data-rank-filter="${rank}" class="${Number(currentRank)===rank?'active':''}">★${rank}</button>`)].join('');}
 function setStatus(text,kind=''){const el=$('unlockStatus');el.className='status'+(kind?' '+kind:'');el.textContent=text;}
 function normalizeFacilityUnlockKey(value=''){
   return String(value||'').normalize('NFKC').toUpperCase().replace(/[‐‑‒–—―−－]/g,'-').replace(/[\s\u200B-\u200D\uFEFF]/g,'');
@@ -1020,23 +1033,83 @@ function itemTextRows(r){
 function itemCard(r){const chips=uniqueChips([rankLabel(r.rank),r.dataKind==='素材'?(r.materialType||'素材'):(r.itemType||r.dataKind||''),r.dataKind==='素材'?(r.materialCategory||''):(r.itemCategory||r.materialCategory||''),r.equipSlot?`枠:${r.equipSlot}`:'']);const bundleCount=Number(r.bundleCount)||0,bundlePrice=Number(r.bundlePrice)||0;const isRecipe=String(r.itemType||'')==='レシピ';const buy=String(r.buyPrice||r.price||'');const sell=String(r.sellPrice||'');const rows=[[bundleCount?'単品買値':'買値',buy?`${buy}G`:'未設定'],...(sell?[['売値',`${sell}G`]]:[]),...(bundleCount&&bundlePrice?[['まとめ買い',`${bundleCount}本セット ${bundlePrice}G`]]:[]),...itemTextRows(r)];return `<article class="card"><h3>${esc(r.name)}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<dl>${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
 function scrollPriceCard(r){const price=String(r.price||'')?`${r.price}G`:'未設定';const title=String(r.name||`未鑑定の${r.type||'術式'}スクロール`).trim();return `<article class="card"><h3>${esc(title)}：${esc(rankLabel(r.rank))}</h3><div class="chips"><span class="chip">${esc(r.type||'術式')}</span><span class="chip">${esc(rankLabel(r.rank))}</span><span class="chip">ランダム販売</span></div><dl><dt>価格</dt><dd>${esc(price)}</dd></dl></article>`;}
 function crystalCard(r){const chips=uniqueChips([rankLabel(r.rank),'スキルクリスタル',r.craftType]);const pairs=[['強化段階',`${r.baseItem||'?'} → ${r.resultItem||'?'}`],['必要素材',r.requiredMaterials||'未設定'],['強化費用',String(r.price||'')?`${r.price}G`:'未設定']];if(r.description)pairs.push(['説明',r.description]);if(r.effect)pairs.push(['効果',r.effect]);return `<article class="card"><h3>${esc(r.name||'クリスタル強化')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
-function accessoryUpgradeCard(r){
+let accessoryDetailIndex=Object.create(null);
+function accessoryUpgradeDetailPairs(r={}){
   const isUpgrade=String(r.craftType||'').trim()==='装飾品強化';
-  const chips=uniqueChips([rankLabel(r.rank),'装飾品',isUpgrade?'段階強化':'新規製作',r.branchType||r.itemCategory||'装飾品']);
   const pairs=[];
+  pairs.push(['区分',isUpgrade?'段階強化':'新規製作']);
   if(isUpgrade)pairs.push(['強化段階',`${r.baseItem||'?'} → ${r.resultItem||'?'}`]);
   else pairs.push(['完成品',r.resultItem||r.name||'未設定']);
+  if(r.effect)pairs.push(['効果',r.effect]);
+  if(Array.isArray(r.performance)&&r.performance.length)pairs.push(['性能',r.performance.map(x=>`${x.label} ${x.value}`).join(' / ')]);
   pairs.push(['必要素材',r.requiredMaterials||'未設定']);
-  if(String(r.price||''))pairs.push(['施設依頼',`${r.price}G`]);
+  if(String(r.price||''))pairs.push(['施設依頼',`${r.price}G・判定不要`]);
   if(r.difficulty){
-    pairs.push(['製作技能',r.craftSkill||'細工']);
+    pairs.push(['自作技能',r.craftSkill||'細工']);
     pairs.push(['基礎作成難易度',r.difficulty]);
     pairs.push(['使用道具',craftingToolName(r.craftSkill,r.craftType)]);
   }
+  if(r.unlockAreaName)pairs.push(['解放',r.unlockAreaName]);
   if(r.description)pairs.push(['説明',r.description]);
-  if(r.effect)pairs.push(['効果',r.effect]);
-  return `<article class="card"><h3>${esc(r.resultItem||r.name||'装飾品')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;
+  return pairs.filter(([,v])=>String(v||'').trim());
 }
+function openAccessoryUpgradeModal(name){
+  const row=accessoryDetailIndex[String(name||'').trim()];
+  const modal=$('accessoryUpgradeDetailModal'),title=$('accessoryUpgradeDetailTitle'),body=$('accessoryUpgradeDetailBody');
+  if(!row||!modal||!title||!body)return;
+  const display=String(row.resultItem||row.name||'装飾品').trim();
+  title.textContent=display;
+  const pairs=accessoryUpgradeDetailPairs(row);
+  body.innerHTML=`<div class="chips">${uniqueChips([rankLabel(row.rank),row.branchType||row.itemCategory||'装飾品',String(row.craftType||'').trim()==='装飾品強化'?'段階強化':'新規製作']).map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`;
+  modal.hidden=false;modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
+}
+function closeAccessoryUpgradeModal(){const modal=$('accessoryUpgradeDetailModal');if(!modal)return;modal.hidden=true;modal.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+function accessoryUpgradeCatalog(rows=[]){
+  accessoryDetailIndex=Object.create(null);
+  const list=(rows||[]).filter(Boolean);
+  if(!list.length)return '<div class="empty">装飾品強化は登録されていません。</div>';
+  list.forEach(r=>{const name=String(r.resultItem||r.name||'').trim();if(name)accessoryDetailIndex[name]=r;});
+  const groups=new Map();
+  list.forEach(r=>{const key=String(r.branchType||r.itemCategory||'装飾品').trim()||'装飾品';if(!groups.has(key))groups.set(key,[]);groups.get(key).push(r);});
+  return `<div class="accessory-branch-groups">${[...groups.entries()].map(([groupName,groupRows])=>{
+    const byResult=new Map(groupRows.map(r=>[String(r.resultItem||r.name||'').trim(),r]).filter(([name])=>name));
+    const children=new Map();
+    groupRows.forEach(r=>{const child=String(r.resultItem||r.name||'').trim(),base=String(r.baseItem||'').trim();if(child&&base&&byResult.has(base)){if(!children.has(base))children.set(base,[]);children.get(base).push(child);}});
+    const roots=groupRows.map(r=>String(r.resultItem||r.name||'').trim()).filter(name=>name&&!groupRows.some(x=>String(x.resultItem||x.name||'').trim()===name&&String(x.baseItem||'').trim()&&byResult.has(String(x.baseItem||'').trim())));
+    const uniqueRoots=[...new Set(roots)];
+    const layout=new Map();let leafSlot=1,maxDepth=0;
+    function place(name,depth=0,seen=new Set()){
+      if(!name||seen.has(name))return leafSlot*2;
+      maxDepth=Math.max(maxDepth,depth);const nextSeen=new Set(seen);nextSeen.add(name);
+      const kids=(children.get(name)||[]).slice().sort((a,b)=>{const ar=Number(byResult.get(a)?.rank)||0,br=Number(byResult.get(b)?.rank)||0;return ar-br||a.localeCompare(b,'ja');});
+      let row;
+      if(!kids.length){row=leafSlot*2;leafSlot+=1;}else{const childRows=kids.map(k=>place(k,depth+1,nextSeen));row=childRows.length===1?childRows[0]:Math.round((childRows[0]+childRows[childRows.length-1])/2);}
+      layout.set(name,{row,col:depth+1});return row;
+    }
+    uniqueRoots.forEach(name=>place(name,0,new Set()));
+    // フィルターで親だけ消えたケースなど、未配置ノードも必ず表示する。
+    [...byResult.keys()].forEach(name=>{if(!layout.has(name))place(name,0,new Set());});
+    const nodes=[...layout.entries()].map(([name,pos])=>{const r=byResult.get(name)||accessoryDetailIndex[name]||{};const parent=String(r.baseItem||'').trim();return `<article class="accessory-branch-node" style="grid-column:${pos.col};grid-row:${pos.row}" data-accessory-node="${esc(name)}" ${parent&&layout.has(parent)?`data-parent-accessory="${esc(parent)}"`:''}><button type="button" data-open-accessory-upgrade="${esc(name)}" aria-label="${esc(`${name}の詳細を開く`)}"><span class="accessory-branch-rank">${esc(rankLabel(r.rank))}</span><span class="accessory-branch-name">${esc(name)}</span>${r.effect?`<span class="accessory-branch-effect">${esc(r.effect)}</span>`:''}</button></article>`;}).join('');
+    const cols=Math.max(1,maxDepth+1),rowsCount=Math.max(2,leafSlot*2);
+    return `<section class="accessory-branch-group"><div class="accessory-branch-heading"><h3>${esc(groupName)}</h3><span>${groupRows.length}段階</span></div><div class="accessory-branch-scroll"><div class="accessory-branch-canvas" style="grid-template-columns:repeat(${cols},190px);grid-template-rows:repeat(${rowsCount},auto)"><svg class="accessory-branch-svg" aria-hidden="true"></svg>${nodes}</div></div></section>`;
+  }).join('')}</div>`;
+}
+function drawAccessoryConnections(){
+  document.querySelectorAll('.accessory-branch-canvas').forEach((canvas,index)=>{
+    const svg=canvas.querySelector('.accessory-branch-svg');if(!svg)return;
+    const rect=canvas.getBoundingClientRect(),width=Math.max(canvas.scrollWidth,canvas.clientWidth),height=Math.max(canvas.scrollHeight,canvas.clientHeight);svg.setAttribute('width',width);svg.setAttribute('height',height);svg.setAttribute('viewBox',`0 0 ${width} ${height}`);
+    const markerId=`accessoryArrow${index}`;const paths=[];
+    canvas.querySelectorAll('.accessory-branch-node[data-parent-accessory]').forEach(child=>{
+      const parentName=String(child.dataset.parentAccessory||''),parent=[...canvas.querySelectorAll('.accessory-branch-node[data-accessory-node]')].find(el=>String(el.dataset.accessoryNode||'')===parentName);if(!parent)return;
+      const pr=parent.getBoundingClientRect(),cr=child.getBoundingClientRect();const sx=pr.right-rect.left,sy=pr.top-rect.top+pr.height/2,ex=cr.left-rect.left,ey=cr.top-rect.top+cr.height/2,mid=Math.max(sx+14,(sx+ex)/2);
+      paths.push(`<path class="accessory-branch-edge" d="M ${sx} ${sy} H ${mid} V ${ey} H ${ex}" marker-end="url(#${markerId})"></path>`);
+    });
+    svg.innerHTML=`<defs><marker id="${markerId}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#9a7652"></path></marker></defs>${paths.join('')}`;
+  });
+}
+let accessoryConnectionFrame=0;
+function scheduleAccessoryConnections(){cancelAnimationFrame(accessoryConnectionFrame);accessoryConnectionFrame=requestAnimationFrame(()=>requestAnimationFrame(drawAccessoryConnections));}
+
 function recipeCard(r){
   const chips=uniqueChips([rankLabel(r.rank),r.craftType,r.category,r.itemType,r.itemCategory]);
   const pairs=[];
@@ -1564,16 +1637,20 @@ function renderSpecialFacility(){
   return true;
 }
 function renderTabs(){document.body.dataset.facility=currentFacility;syncBranchLabelToggle();const defs=SECTION_DEFS[currentFacility];if(!defs.some(d=>d[0]===currentSection))currentSection=defs[0][0];$('sectionTabs').innerHTML=defs.map(([id,label])=>`<button type="button" data-section="${esc(id)}" class="${id===currentSection?'active':''}">${esc(label)}</button>`).join('');const cur=defs.find(d=>d[0]===currentSection);$('sectionTitle').textContent=cur[1];$('sectionDescription').textContent=cur[2];}
-function catalogRowMatches(row){const q=searchNorm(catalogSearch);if(!q)return true;return searchNorm(Object.values(row||{}).filter(v=>typeof v!=='object').join(' ')).includes(q);}function render(){renderTabs();if(renderSpecialFacility())return;const rows=(catalog[currentFacility]&&catalog[currentFacility][currentSection])||[];const branches=currentSection==='branches',scrolls=currentSection==='scrolls',crystal=currentSection==='crystal',accessory=currentSection==='accessory';$('branchControls').hidden=!branches;$('catalogSearchControls').hidden=branches;renderRankControls(rows,branches);const categoryBase=branches?[]:rows.filter(rankMatches).filter(catalogRowMatches);const categoryOptions=branches?[]:syncCatalogCategoryState(categoryBase);if($('catalogCategoryControls'))$('catalogCategoryControls').hidden=branches||categoryOptions.length<2;if($('catalogCategoryPickerLabel'))$('catalogCategoryPickerLabel').textContent=currentCatalogCategory==='all'?'全て':currentCatalogCategory;const filtered=branches?rows:categoryBase.filter(catalogCategoryMatches);if($('catalogSearchCount'))$('catalogSearchCount').textContent=branches?'':`${filtered.length}件表示`;$('cards').className=branches?'':'cards';$('cards').innerHTML=branches?branchCatalog(rows):(filtered.length?(scrolls?filtered.map(scrollPriceCard).join(''):currentSection==='sales'?salesCatalog(filtered):crystal?filtered.map(crystalCard).join(''):accessory?filtered.map(accessoryUpgradeCard).join(''):recipeCatalog(filtered)):'<div class="empty">現在の検索・★ランク・カテゴリ条件に一致する内容はありません。</div>');if(branches)focusPendingBranchNode();}
+function catalogRowMatches(row){const q=searchNorm(catalogSearch);if(!q)return true;return searchNorm(Object.values(row||{}).filter(v=>typeof v!=='object').join(' ')).includes(q);}function render(){renderTabs();if(renderSpecialFacility())return;const rows=(catalog[currentFacility]&&catalog[currentFacility][currentSection])||[];const branches=currentSection==='branches',scrolls=currentSection==='scrolls',crystal=currentSection==='crystal',accessory=currentSection==='accessory';$('branchControls').hidden=!branches;$('catalogSearchControls').hidden=branches;renderRankControls(rows,branches);const categoryBase=branches?[]:rows.filter(rankMatches).filter(catalogRowMatches);const categoryOptions=branches?[]:syncCatalogCategoryState(categoryBase);if($('catalogCategoryControls'))$('catalogCategoryControls').hidden=branches||categoryOptions.length<2;if($('catalogCategoryPickerLabel'))$('catalogCategoryPickerLabel').textContent=currentCatalogCategory==='all'?'全て':currentCatalogCategory;const filtered=branches?rows:categoryBase.filter(catalogCategoryMatches);if($('catalogSearchCount'))$('catalogSearchCount').textContent=branches?'':`${filtered.length}件表示`;$('cards').className=branches?'':'cards';$('cards').innerHTML=branches?branchCatalog(rows):(filtered.length?(scrolls?filtered.map(scrollPriceCard).join(''):currentSection==='sales'?salesCatalog(filtered):crystal?filtered.map(crystalCard).join(''):accessory?accessoryUpgradeCatalog(filtered):recipeCatalog(filtered)):'<div class="empty">現在の検索・★ランク・カテゴリ条件に一致する内容はありません。</div>');if(branches)focusPendingBranchNode();if(accessory)scheduleAccessoryConnections();}
+let facilityCloudSyncGeneration=0;
+function facilityUnlockIdsEqual(a=[],b=[]){
+  const aa=normalizeStoredUnlockIds(a).slice().sort(),bb=normalizeStoredUnlockIds(b).slice().sort();
+  return aa.length===bb.length&&aa.every((value,index)=>value===bb[index]);
+}
 async function loadCatalog(playerKey,{unlockKey='',force=false,reset=false}={}){
   const viewState=captureFacilityViewState();
   const cleanPlayerKey=String(playerKey||'').trim();
-  setStatus(cleanPlayerKey?'GitHub共通DBと保存済みの解放状態を確認しています。':'初期エリアの施設データを読み込んでいます。');
+  const generation=++facilityCloudSyncGeneration;
+  setStatus(cleanPlayerKey?'GitHub共通DBと端末保存の解放状態を読み込んでいます。':'初期エリアの施設データを読み込んでいます。');
   ['applyKey','loadState','resetKey','reloadDb'].forEach(id=>{if($(id))$(id).disabled=true;});
   try{
-    const masterTask=fetchGithubCommonMaster({force});
-    const cloudTask=cleanPlayerKey&&!reset?loadUnlockState(cleanPlayerKey):Promise.resolve({unlockedAreaIds:[],unlockedAreas:[]});
-    const commonMaster=await masterTask;
+    const commonMaster=await fetchGithubCommonMaster({force});
     let mergedIds=cleanPlayerKey?readLocalUnlockedAreaIds(cleanPlayerKey):[];
     let addedAreaName='';
     if(reset){
@@ -1589,7 +1666,7 @@ async function loadCatalog(playerKey,{unlockKey='',force=false,reset=false}={}){
       }
     }
 
-    // キー照合はGitHub公開DBだけで完結させ、GASの応答を待たず端末へ即時反映する。
+    // 表示はGitHub共通DB＋端末保存だけで完了させる。GAS同期は読み込みを止めずバックグラウンドで行う。
     let displayState=unlockStateFromIds(commonMaster,mergedIds,addedAreaName);
     if(cleanPlayerKey)writeLocalUnlockedAreaIds(cleanPlayerKey,storageUnlockIds(displayState));
     let built=buildFacilityCatalogFromGithub(commonMaster,displayState);
@@ -1608,56 +1685,74 @@ async function loadCatalog(playerKey,{unlockKey='',force=false,reset=false}={}){
       return true;
     }
 
+    const prefix=addedAreaName==='GM全エリア解放'?`GM全エリア解放キーを登録しました。現在存在する全エリアを解放し、今後追加されるエリアにも自動追従します。 `:(addedAreaName?`「${addedAreaName}」を解放しました。 `:'');
+    setStatus(`${prefix}${Math.max(1,displayState.unlockedAreas.length)}エリアを表示しました。クラウド同期はバックグラウンドで確認します。`,'ok');
+
     if(reset){
-      setStatus('解放状態を端末上で初期エリアだけに戻しました。クラウドへ同期しています。','ok');
-      try{
-        const synced=await resetUnlockState(cleanPlayerKey);
-        const syncedState=unlockStateFromIds(commonMaster,synced.unlockedAreaIds||[],'');
-        writeLocalUnlockedAreaIds(cleanPlayerKey,storageUnlockIds(syncedState));
-        currentUnlockState=syncedState;renderUnlockedAreas(syncedState);
-        setStatus('解放状態を初期エリアだけに戻し、クラウド保存へ同期しました。','ok');
-      }catch(error){
-        setStatus(`端末上の解放状態は初期化しましたが、クラウド保存への同期に失敗しました：${String(error&&error.message||error)}`,'bad');
-      }
+      void (async()=>{
+        try{
+          const synced=await resetUnlockState(cleanPlayerKey);
+          if(generation!==facilityCloudSyncGeneration)return;
+          const syncedState=unlockStateFromIds(commonMaster,synced.unlockedAreaIds||[],'');
+          writeLocalUnlockedAreaIds(cleanPlayerKey,storageUnlockIds(syncedState));
+          currentUnlockState=syncedState;renderUnlockedAreas(syncedState);
+          setStatus('解放状態を初期エリアだけに戻し、クラウド保存へ同期しました。','ok');
+        }catch(error){
+          if(generation!==facilityCloudSyncGeneration)return;
+          setStatus(`初期エリアの表示は完了しています。クラウド保存への同期だけ失敗しました：${String(error&&error.message||error)}`,'bad');
+        }
+      })();
       return true;
     }
 
-    const prefix=addedAreaName==='GM全エリア解放'?`GM全エリア解放キーを登録しました。現在存在する全エリアを解放し、今後追加されるエリアにも自動追従します。 `:(addedAreaName?`「${addedAreaName}」を解放しました。 `:'');
-    setStatus(`${prefix}${Math.max(1,displayState.unlockedAreas.length)}エリアを端末へ保存しました。クラウド状態を確認しています。`,'ok');
-
-    let cloudState={unlockedAreaIds:[],unlockedAreas:[]},cloudError=null;
-    try{cloudState=await cloudTask;}catch(error){cloudError=error;}
-    if(!cloudError){
-      const merged=mergeStoredUnlockIds(storageUnlockIds(displayState),cloudState.unlockedAreaIds||[]);
-      displayState=unlockStateFromIds(commonMaster,merged,addedAreaName);
-      writeLocalUnlockedAreaIds(cleanPlayerKey,storageUnlockIds(displayState));
-      built=buildFacilityCatalogFromGithub(commonMaster,displayState);
+    const localAtDisplay=storageUnlockIds(displayState);
+    void (async()=>{
+      let cloudState=null;
+      try{
+        cloudState=await loadUnlockState(cleanPlayerKey);
+      }catch(error){
+        if(generation!==facilityCloudSyncGeneration)return;
+        setStatus(`${prefix}${Math.max(1,currentUnlockState?.unlockedAreas?.length||displayState.unlockedAreas.length)}エリアは表示済みです。クラウド解放状態の確認だけ完了しませんでした：${String(error&&error.message||error)}`,'bad');
+        return;
+      }
+      if(generation!==facilityCloudSyncGeneration)return;
+      const cloudIds=storageUnlockIds({gmAllAreas:!!cloudState.gmAllAreas,unlockedAreaIds:cloudState.unlockedAreaIds||[]});
+      const merged=mergeStoredUnlockIds(localAtDisplay,cloudIds);
+      let reconciled=unlockStateFromIds(commonMaster,merged,addedAreaName);
+      writeLocalUnlockedAreaIds(cleanPlayerKey,storageUnlockIds(reconciled));
+      built=buildFacilityCatalogFromGithub(commonMaster,reconciled);
       catalog=built.catalog||catalog;
-      displayState={...displayState,gmAllAreas:!!built.gmAllAreas,storedUnlockAreaIds:built.storedUnlockAreaIds||storageUnlockIds(displayState),unlockedAreaIds:built.unlockedAreaIds||[],unlockedAreas:built.unlockedAreas||[]};
-      currentUnlockState=displayState;renderUnlockedAreas(displayState);render();
-    }
-
-    try{
-      const synced=await syncUnlockState(cleanPlayerKey,storageUnlockIds(displayState));
-      const syncedState=unlockStateFromIds(commonMaster,mergeStoredUnlockIds(storageUnlockIds(displayState),synced.unlockedAreaIds||[]),addedAreaName);
-      writeLocalUnlockedAreaIds(cleanPlayerKey,storageUnlockIds(syncedState));
-      currentUnlockState=syncedState;renderUnlockedAreas(syncedState);
-      setStatus(`${prefix}${Math.max(1,syncedState.unlockedAreas.length)}エリアを表示し、クラウド保存へ同期しました。 / GitHub共通DB${built.version?' v'+built.version:''}${commonMaster.versionWarning?'（更新反映待ち）':''}`,commonMaster.versionWarning?'':'ok');
-    }catch(error){
-      const cloudReadNote=cloudError?` クラウド読込にも失敗しています：${String(cloudError&&cloudError.message||cloudError)}`:'';
-      setStatus(`${prefix}端末への保存と表示は完了しましたが、クラウド保存への同期に失敗しました：${String(error&&error.message||error)}${cloudReadNote}`,'bad');
-    }
+      reconciled={...reconciled,gmAllAreas:!!built.gmAllAreas,storedUnlockAreaIds:built.storedUnlockAreaIds||storageUnlockIds(reconciled),unlockedAreaIds:built.unlockedAreaIds||[],unlockedAreas:built.unlockedAreas||[]};
+      currentUnlockState=reconciled;renderUnlockedAreas(reconciled);render();
+      const mergedIdsForCloud=storageUnlockIds(reconciled);
+      if(facilityUnlockIdsEqual(cloudIds,mergedIdsForCloud)){
+        setStatus(`${prefix}${Math.max(1,reconciled.unlockedAreas.length)}エリアを表示しました。 / GitHub共通DB${built.version?' v'+built.version:''}${commonMaster.versionWarning?'（更新反映待ち）':''}`,commonMaster.versionWarning?'':'ok');
+        return;
+      }
+      try{
+        const synced=await syncUnlockState(cleanPlayerKey,mergedIdsForCloud);
+        if(generation!==facilityCloudSyncGeneration)return;
+        const syncedState=unlockStateFromIds(commonMaster,mergeStoredUnlockIds(mergedIdsForCloud,synced.unlockedAreaIds||[]),addedAreaName);
+        writeLocalUnlockedAreaIds(cleanPlayerKey,storageUnlockIds(syncedState));
+        currentUnlockState=syncedState;renderUnlockedAreas(syncedState);
+        setStatus(`${prefix}${Math.max(1,syncedState.unlockedAreas.length)}エリアを表示し、変更分だけクラウド保存へ同期しました。 / GitHub共通DB${built.version?' v'+built.version:''}${commonMaster.versionWarning?'（更新反映待ち）':''}`,commonMaster.versionWarning?'':'ok');
+      }catch(error){
+        if(generation!==facilityCloudSyncGeneration)return;
+        setStatus(`${prefix}${Math.max(1,reconciled.unlockedAreas.length)}エリアは表示済みです。クラウドへの変更分同期だけ失敗しました：${String(error&&error.message||error)}`,'bad');
+      }
+    })();
     return true;
   }catch(error){
-    console.warn('施設の解放状態または共通DBの読み込みに失敗しました。',error);
+    console.warn('施設の共通DB読み込みに失敗しました。',error);
     const text=String(error&&error.message||error||'施設データを読み込めませんでした。');
-    setStatus(text==='通信がタイムアウトしました。'?'解放状態の通信が完了しませんでした。数秒待ってもう一度実行してください。':text,'bad');
+    setStatus(text,'bad');
     return false;
   }finally{
     ['applyKey','loadState','resetKey','reloadDb'].forEach(id=>{if($(id))$(id).disabled=false;});
     restoreFacilityViewState(viewState);
   }
 }
+
 function playerKeyValue(){return String($('playerKey')?.value||'').trim();}
 $('loadState').addEventListener('click',()=>loadCatalog(playerKeyValue()));
 $('playerKey').addEventListener('keydown',e=>{if(e.key==='Enter')loadCatalog(playerKeyValue());});
@@ -1730,6 +1825,9 @@ document.addEventListener('click',e=>{
     scheduleBranchConnections();
     return;
   }
+  const accessoryDetail=e.target.closest('[data-open-accessory-upgrade]');if(accessoryDetail){openAccessoryUpgradeModal(accessoryDetail.dataset.openAccessoryUpgrade||'');return;}
+  if(e.target.closest('[data-close-accessory-upgrade]')){closeAccessoryUpgradeModal();return;}
+  const accessoryModal=$('accessoryUpgradeDetailModal');if(e.target===accessoryModal){closeAccessoryUpgradeModal();return;}
   const materialSource=e.target.closest('[data-material-source]');if(materialSource){openMaterialSourceModal(materialSource.dataset.materialSource||'');return;}
   if(e.target.closest('[data-close-material-source]')){closeMaterialSourceModal();return;}
   const sourceModal=$('materialSourceModal');if(e.target===sourceModal){closeMaterialSourceModal();return;}
@@ -1738,15 +1836,15 @@ document.addEventListener('click',e=>{
   const modalLink=e.target.closest('[data-modal-weapon]');if(modalLink){openWeaponModal(modalLink.dataset.modalWeapon||'',modalLink);return;}
   if(e.target.closest('[data-close-weapon-modal]')){closeWeaponModal();return;}
   const modal=$('weaponDetailModal');if(e.target===modal){closeWeaponModal();return;}
-  const f=e.target.closest('.facility-switch [data-facility]');if(f){closeWeaponModal();currentFacility=f.dataset.facility;currentSection=SECTION_DEFS[currentFacility][0][0];currentRank='all';document.querySelectorAll('.facility-switch [data-facility]').forEach(b=>b.classList.toggle('active',b===f));render();if(currentFacility==='plaza')loadCommunityGatheringState({quiet:true});return;}
-  const sectionButton=e.target.closest('[data-section]');if(sectionButton){closeWeaponModal();currentSection=sectionButton.dataset.section;currentRank='all';render();return;}
+  const f=e.target.closest('.facility-switch [data-facility]');if(f){closeWeaponModal();closeAccessoryUpgradeModal();currentFacility=f.dataset.facility;currentSection=SECTION_DEFS[currentFacility][0][0];currentRank='all';document.querySelectorAll('.facility-switch [data-facility]').forEach(b=>b.classList.toggle('active',b===f));render();if(currentFacility==='plaza')loadCommunityGatheringState({quiet:true});return;}
+  const sectionButton=e.target.closest('[data-section]');if(sectionButton){closeWeaponModal();closeAccessoryUpgradeModal();currentSection=sectionButton.dataset.section;currentRank='all';render();return;}
   const r=e.target.closest('[data-rank-filter]');if(r){closeWeaponModal();currentRank=r.dataset.rankFilter||'all';render();return;}
 });
 $('weaponCategorySelect').addEventListener('change',e=>{closeWeaponModal();currentWeaponCategory=e.target.value||'';raStorage.set(WEAPON_CATEGORY_STORAGE_KEY,currentWeaponCategory);render();});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('materialSourceModal')?.hidden){closeMaterialSourceModal();return;}closeWeaponModal();closeUnlockedAreaModal();}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('accessoryUpgradeDetailModal')?.hidden){closeAccessoryUpgradeModal();return;}if(!$('materialSourceModal')?.hidden){closeMaterialSourceModal();return;}closeWeaponModal();closeUnlockedAreaModal();}});
 $('openUnlockedAreas').addEventListener('click',openUnlockedAreaModal);
 $('unlockedAreaModal').addEventListener('click',e=>{if(e.target===$('unlockedAreaModal')||e.target.closest('[data-close-unlocked-area-modal]'))closeUnlockedAreaModal();});
-window.addEventListener('resize',scheduleBranchConnections,{passive:true});if(document.fonts&&document.fonts.ready)document.fonts.ready.then(scheduleBranchConnections);
+window.addEventListener('resize',()=>{scheduleBranchConnections();scheduleAccessoryConnections();},{passive:true});if(document.fonts&&document.fonts.ready)document.fonts.ready.then(scheduleBranchConnections);
 $('branchSearch').addEventListener('input',e=>{closeWeaponModal();branchSearch=e.target.value||'';render();});$('catalogSearch').addEventListener('input',e=>{catalogSearch=e.target.value||'';render();});
 const catalogCategoryModal=$('catalogCategoryModal'),catalogCategoryModalList=$('catalogCategoryModalList');
 function renderCatalogCategoryModal(){const rows=((catalog[currentFacility]&&catalog[currentFacility][currentSection])||[]).filter(rankMatches).filter(catalogRowMatches),options=catalogCategoryOptions(rows);catalogCategoryModalList.innerHTML=[`<button type="button" class="ra-category-choice ${currentCatalogCategory==='all'?'active':''}" data-catalog-category="all">全て</button>`,...options.map(label=>`<button type="button" class="ra-category-choice ${currentCatalogCategory===label?'active':''}" data-catalog-category="${esc(label)}">${esc(label)}</button>`)].join('');}
@@ -1804,7 +1902,7 @@ function run(){
    if(!wrap){wrap=document.createElement('div');wrap.id='catalogAreaControls';wrap.className='ra-area-filter';wrap.innerHTML='<div class="ra-area-filter-label">解放エリアで絞り込み</div><div class="ra-area-filter-tabs"></div>';(searchControls?.parentNode||document.getElementById('catalogPanel')||document.querySelector('main'))?.insertBefore(wrap,searchControls?.nextSibling||null)}
    const branches=typeof currentSection!=='undefined'&&currentSection==='branches';const special=String(currentFacility||'')==='plaza';wrap.hidden=branches||special;if(branches||special)return;
    const rows=areaRows();const ids=new Set(rows.map(a=>txt(a.id)));if(currentCatalogArea!=='all'&&!ids.has(currentCatalogArea))currentCatalogArea='all';
-   wrap.querySelector('.ra-area-filter-tabs').innerHTML=[`<button type="button" data-ra-area="all" class="${currentCatalogArea==='all'?'active':''}">すべて</button>`,...rows.map(a=>`<button type="button" data-ra-area="${escHtml(a.id)}" class="${currentCatalogArea===txt(a.id)?'active':''}">${escHtml(a.name||'名称未設定')}</button>`)].join('');
+   wrap.querySelector('.ra-area-filter-tabs').innerHTML=[`<button type="button" data-ra-area="all" class="${currentCatalogArea==='all'?'active':''}">全て</button>`,...rows.map(a=>`<button type="button" data-ra-area="${escHtml(a.id)}" class="${currentCatalogArea===txt(a.id)?'active':''}">${escHtml(a.name||'名称未設定')}</button>`)].join('');
  }
  if(typeof render==='function'&&!render.__raArea398){
    const originalRender=render;

@@ -1,9 +1,9 @@
 {
   "format": "recraft-alchemia-public-master",
-  "version": "90.8.512",
-  "updatedAt": "2026-08-12T16:32:00+09:00",
-  "generatedAt": "2026-08-12T16:32:00+09:00",
-  "description": "Recraft-Alchemia public master v90.8.512（集中攻撃の命中補正継承と技能補正の+X別項表示に対応）",
+  "version": "90.8.513",
+  "updatedAt": "2026-08-12T18:12:00+09:00",
+  "generatedAt": "2026-08-12T18:12:00+09:00",
+  "description": "Recraft-Alchemia public master v90.8.513（DB実データ変更なし。施設同期・装飾品強化表示・管理モーダルUI更新に追従）",
   "recordCount": 2596,
   "data": {
     "item_types": [
