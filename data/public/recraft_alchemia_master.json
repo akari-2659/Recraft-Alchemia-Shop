@@ -1,9 +1,9 @@
 {
   "format": "recraft-alchemia-public-master",
-  "version": "90.8.525",
+  "version": "90.8.527",
   "updatedAt": "2026-08-13",
-  "generatedAt": "2026-08-13T04:08:00Z",
-  "description": "Recraft-Alchemia public master v90.8.525（エリアボスは唯一個体。勝利時に実力を認められ、採取・解体不要の無施錠・無罠の褒賞箱から固有素材確率抽選＋ランダム報酬を得る）",
+  "generatedAt": "2026-08-13T13:36:00+09:00",
+  "description": "Recraft-Alchemia public master v90.8.527（既存買値を維持し、売値側を再調整。通常は買値の80%以下、自作品は素材売値120%基準を優先）",
   "recordCount": 2596,
   "data": {
     "item_types": [
@@ -1675,7 +1675,7 @@
         "materialCategory": "",
         "name": "未鑑定の祈祷スクロール：★1",
         "csVisible": "TRUE",
-        "price": "275",
+        "price": "240",
         "rank": 1,
         "equipSlot": "",
         "skill": "",
@@ -1709,7 +1709,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "275",
+        "sellPrice": "240",
         "buyPrice": "300"
       },
       {
@@ -1722,7 +1722,7 @@
         "materialCategory": "",
         "name": "未鑑定の祈祷スクロール：★2",
         "csVisible": "TRUE",
-        "price": "820",
+        "price": "720",
         "rank": 2,
         "equipSlot": "",
         "skill": "",
@@ -1756,7 +1756,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "820",
+        "sellPrice": "720",
         "buyPrice": "900"
       },
       {
@@ -1769,7 +1769,7 @@
         "materialCategory": "",
         "name": "未鑑定の祈祷スクロール：★3",
         "csVisible": "TRUE",
-        "price": "2455",
+        "price": "2160",
         "rank": 3,
         "equipSlot": "",
         "skill": "",
@@ -1803,7 +1803,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "2455",
+        "sellPrice": "2160",
         "buyPrice": "2700"
       },
       {
@@ -1816,7 +1816,7 @@
         "materialCategory": "",
         "name": "未鑑定の祈祷スクロール：★4",
         "csVisible": "TRUE",
-        "price": "7275",
+        "price": "6400",
         "rank": 4,
         "equipSlot": "",
         "skill": "",
@@ -1850,7 +1850,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "7275",
+        "sellPrice": "6400",
         "buyPrice": "8000"
       },
       {
@@ -1863,7 +1863,7 @@
         "materialCategory": "",
         "name": "未鑑定の魔法スクロール：★1",
         "csVisible": "TRUE",
-        "price": "275",
+        "price": "240",
         "rank": 1,
         "equipSlot": "",
         "skill": "",
@@ -1897,7 +1897,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "275",
+        "sellPrice": "240",
         "buyPrice": "300"
       },
       {
@@ -1910,7 +1910,7 @@
         "materialCategory": "",
         "name": "未鑑定の魔法スクロール：★2",
         "csVisible": "TRUE",
-        "price": "820",
+        "price": "720",
         "rank": 2,
         "equipSlot": "",
         "skill": "",
@@ -1944,7 +1944,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "820",
+        "sellPrice": "720",
         "buyPrice": "900"
       },
       {
@@ -1957,7 +1957,7 @@
         "materialCategory": "",
         "name": "未鑑定の魔法スクロール：★3",
         "csVisible": "TRUE",
-        "price": "2455",
+        "price": "2160",
         "rank": 3,
         "equipSlot": "",
         "skill": "",
@@ -1991,7 +1991,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "2455",
+        "sellPrice": "2160",
         "buyPrice": "2700"
       },
       {
@@ -2004,7 +2004,7 @@
         "materialCategory": "",
         "name": "未鑑定の魔法スクロール：★4",
         "csVisible": "TRUE",
-        "price": "7275",
+        "price": "6400",
         "rank": 4,
         "equipSlot": "",
         "skill": "",
@@ -2038,7 +2038,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "7275",
+        "sellPrice": "6400",
         "buyPrice": "8000"
       },
       {
@@ -3178,7 +3178,7 @@
         "materialCategory": "",
         "name": "簡素なバッグ",
         "csVisible": "TRUE",
-        "price": "90",
+        "price": "80",
         "rank": 1,
         "equipSlot": "",
         "maxStack": "",
@@ -3202,7 +3202,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "90",
+        "sellPrice": "80",
         "buyPrice": "100"
       },
       {
@@ -3450,7 +3450,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "アイアンガントレット",
-        "price": "210",
+        "price": "184",
         "rank": 1,
         "equipSlot": "両手",
         "skill": "近接",
@@ -3479,7 +3479,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "210",
+        "sellPrice": "184",
         "buyPrice": "230"
       },
       {
@@ -3492,7 +3492,7 @@
         "materialCategory": "",
         "name": "アクアランナーナックル",
         "csVisible": "TRUE",
-        "price": 650,
+        "price": 576,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -3529,7 +3529,7 @@
         "branchClass": "通常派生",
         "branchType": "水鱗",
         "branchDisplayOrder": 3,
-        "sellPrice": 650,
+        "sellPrice": 576,
         "buyPrice": 720
       },
       {
@@ -3540,7 +3540,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ウィングブレイサー",
-        "price": 520,
+        "price": 460,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -3573,7 +3573,7 @@
         "branchClass": "通常派生",
         "branchType": "甲殻",
         "branchDisplayOrder": 6,
-        "sellPrice": 520,
+        "sellPrice": 460,
         "buyPrice": 575
       },
       {
@@ -3584,7 +3584,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "エコーブレイサー",
-        "price": 4650,
+        "price": 4092,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -3618,7 +3618,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 8,
-        "sellPrice": 4650,
+        "sellPrice": 4092,
         "buyPrice": 5115
       },
       {
@@ -3629,7 +3629,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "カラパスナックル",
-        "price": 1085,
+        "price": 956,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -3662,7 +3662,7 @@
         "branchClass": "通常派生",
         "branchType": "水鱗",
         "branchDisplayOrder": 3,
-        "sellPrice": 1085,
+        "sellPrice": 956,
         "buyPrice": 1195
       },
       {
@@ -3675,7 +3675,7 @@
         "materialCategory": "",
         "name": "フェラスナックル",
         "csVisible": "TRUE",
-        "price": 1395,
+        "price": 1228,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -3712,7 +3712,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 1,
-        "sellPrice": 1395,
+        "sellPrice": 1228,
         "buyPrice": 1535
       },
       {
@@ -3725,7 +3725,7 @@
         "materialCategory": "",
         "name": "グランドナックル",
         "csVisible": "TRUE",
-        "price": 2925,
+        "price": 2576,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "両手",
@@ -3762,7 +3762,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 2,
-        "sellPrice": 2925,
+        "sellPrice": 2576,
         "buyPrice": 3220
       },
       {
@@ -3775,7 +3775,7 @@
         "materialCategory": "",
         "name": "シルヴァングリーヴ",
         "csVisible": "TRUE",
-        "price": 1370,
+        "price": 1208,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -3812,7 +3812,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 9,
-        "sellPrice": 1370,
+        "sellPrice": 1208,
         "buyPrice": 1510
       },
       {
@@ -3825,7 +3825,7 @@
         "materialCategory": "",
         "name": "バグナク",
         "csVisible": "TRUE",
-        "price": 485,
+        "price": 428,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -3862,7 +3862,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 11,
-        "sellPrice": 485,
+        "sellPrice": 428,
         "buyPrice": 535
       },
       {
@@ -3873,7 +3873,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フェイズナックル",
-        "price": 1235,
+        "price": 1088,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -3907,7 +3907,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 4,
-        "sellPrice": 1235,
+        "sellPrice": 1088,
         "buyPrice": 1360
       },
       {
@@ -3920,7 +3920,7 @@
         "materialCategory": "",
         "name": "ホーンブレイサー",
         "csVisible": "TRUE",
-        "price": 1200,
+        "price": 1056,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -3957,7 +3957,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 12,
-        "sellPrice": 1200,
+        "sellPrice": 1056,
         "buyPrice": 1320
       },
       {
@@ -3970,7 +3970,7 @@
         "materialCategory": "",
         "name": "ボグブレイサー",
         "csVisible": "TRUE",
-        "price": 1640,
+        "price": 1444,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4007,7 +4007,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 7,
-        "sellPrice": 1640,
+        "sellPrice": 1444,
         "buyPrice": 1805
       },
       {
@@ -4020,7 +4020,7 @@
         "materialCategory": "",
         "name": "エルダーガード",
         "csVisible": "TRUE",
-        "price": 1930,
+        "price": 1700,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4057,7 +4057,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 5,
-        "sellPrice": 1930,
+        "sellPrice": 1700,
         "buyPrice": 2125
       },
       {
@@ -4068,7 +4068,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "カラパスグレート",
-        "price": 645,
+        "price": 568,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -4099,7 +4099,7 @@
         "branchClass": "通常派生",
         "branchType": "甲殻",
         "branchDisplayOrder": 8,
-        "sellPrice": 645,
+        "sellPrice": 568,
         "buyPrice": 710
       },
       {
@@ -4112,7 +4112,7 @@
         "materialCategory": "",
         "name": "クレイモア",
         "csVisible": "TRUE",
-        "price": 545,
+        "price": 480,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4149,7 +4149,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 10,
-        "sellPrice": 545,
+        "sellPrice": 480,
         "buyPrice": 600
       },
       {
@@ -4162,7 +4162,7 @@
         "materialCategory": "",
         "name": "フェラスクレイモア",
         "csVisible": "TRUE",
-        "price": 1620,
+        "price": 1428,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4199,7 +4199,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 10,
-        "sellPrice": 1620,
+        "sellPrice": 1428,
         "buyPrice": 1785
       },
       {
@@ -4212,7 +4212,7 @@
         "materialCategory": "",
         "name": "グラステンペスト",
         "csVisible": "TRUE",
-        "price": 1365,
+        "price": 1204,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4249,7 +4249,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 6,
-        "sellPrice": 1365,
+        "sellPrice": 1204,
         "buyPrice": 1505
       },
       {
@@ -4260,7 +4260,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "グレートソード",
-        "price": "200",
+        "price": "176",
         "rank": 1,
         "equipSlot": "両手",
         "skill": "近接",
@@ -4284,7 +4284,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "200",
+        "sellPrice": "176",
         "buyPrice": "220",
         "updatedAt": "2026-08-11"
       },
@@ -4296,7 +4296,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ファングクレイモア",
-        "price": 590,
+        "price": 520,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -4327,7 +4327,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 2,
-        "sellPrice": 590,
+        "sellPrice": 520,
         "buyPrice": 650
       },
       {
@@ -4340,7 +4340,7 @@
         "materialCategory": "",
         "name": "ボグクレイモア",
         "csVisible": "TRUE",
-        "price": 2045,
+        "price": 1800,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4377,7 +4377,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 7,
-        "sellPrice": 2045,
+        "sellPrice": 1800,
         "buyPrice": 2250
       },
       {
@@ -4388,7 +4388,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミラークレイモア",
-        "price": 1340,
+        "price": 1180,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -4419,7 +4419,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 4,
-        "sellPrice": 1340,
+        "sellPrice": 1180,
         "buyPrice": 1475
       },
       {
@@ -4432,7 +4432,7 @@
         "materialCategory": "",
         "name": "リフトクレイモア",
         "csVisible": "TRUE",
-        "price": 3360,
+        "price": 2960,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4469,7 +4469,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 11,
-        "sellPrice": 3360,
+        "sellPrice": 2960,
         "buyPrice": 3700
       },
       {
@@ -4480,7 +4480,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リフレクトブレイカー",
-        "price": 4890,
+        "price": 4304,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -4511,7 +4511,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 9,
-        "sellPrice": 4890,
+        "sellPrice": 4304,
         "buyPrice": 5380
       },
       {
@@ -4522,7 +4522,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "アビススコーピオン",
-        "price": 5520,
+        "price": 4860,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -4553,7 +4553,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 5,
-        "sellPrice": 5520,
+        "sellPrice": 4860,
         "buyPrice": 6075
       },
       {
@@ -4566,7 +4566,7 @@
         "materialCategory": "",
         "name": "ウィンドラスクロスボウ",
         "csVisible": "TRUE",
-        "price": 775,
+        "price": 684,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4603,7 +4603,7 @@
         "branchClass": "通常派生",
         "branchType": "甲殻",
         "branchDisplayOrder": 6,
-        "sellPrice": 775,
+        "sellPrice": 684,
         "buyPrice": 855
       },
       {
@@ -4616,7 +4616,7 @@
         "materialCategory": "",
         "name": "グランドバリスタ",
         "csVisible": "TRUE",
-        "price": 3920,
+        "price": 3452,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4653,7 +4653,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 14,
-        "sellPrice": 3920,
+        "sellPrice": 3452,
         "buyPrice": 4315
       },
       {
@@ -4666,7 +4666,7 @@
         "materialCategory": "",
         "name": "グランドホーン",
         "csVisible": "TRUE",
-        "price": 1170,
+        "price": 1032,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4703,7 +4703,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 3,
-        "sellPrice": 1170,
+        "sellPrice": 1032,
         "buyPrice": 1290
       },
       {
@@ -4716,7 +4716,7 @@
         "materialCategory": "",
         "name": "トンネルブレイカー",
         "csVisible": "TRUE",
-        "price": 2065,
+        "price": 1820,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4753,7 +4753,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 13,
-        "sellPrice": 2065,
+        "sellPrice": 1820,
         "buyPrice": 2275
       },
       {
@@ -4766,7 +4766,7 @@
         "materialCategory": "",
         "name": "フォレストバスティオン",
         "csVisible": "TRUE",
-        "price": 2155,
+        "price": 1900,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4803,7 +4803,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 4,
-        "sellPrice": 2155,
+        "sellPrice": 1900,
         "buyPrice": 2375
       },
       {
@@ -4814,7 +4814,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フォートレスアーバレスト",
-        "price": 875,
+        "price": 772,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -4845,7 +4845,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 13,
-        "sellPrice": 875,
+        "sellPrice": 772,
         "buyPrice": 965
       },
       {
@@ -4856,7 +4856,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ヘヴィクロスボウ",
-        "price": "365",
+        "price": "320",
         "rank": 1,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -4881,7 +4881,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "365",
+        "sellPrice": "320",
         "buyPrice": "400"
       },
       {
@@ -4892,7 +4892,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "マイアカノン",
-        "price": 885,
+        "price": 780,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -4923,7 +4923,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 9,
-        "sellPrice": 885,
+        "sellPrice": 780,
         "buyPrice": 975
       },
       {
@@ -4936,7 +4936,7 @@
         "materialCategory": "",
         "name": "マイアバリスタ",
         "csVisible": "TRUE",
-        "price": 2970,
+        "price": 2616,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -4973,7 +4973,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 12,
-        "sellPrice": 2970,
+        "sellPrice": 2616,
         "buyPrice": 3270
       },
       {
@@ -4984,7 +4984,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リフトデストロイヤー",
-        "price": 1665,
+        "price": 1468,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -5015,7 +5015,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 2,
-        "sellPrice": 1665,
+        "sellPrice": 1468,
         "buyPrice": 1835
       },
       {
@@ -5026,7 +5026,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "アビスマウル",
-        "price": 5095,
+        "price": 4484,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -5057,7 +5057,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 5,
-        "sellPrice": 5095,
+        "sellPrice": 4484,
         "buyPrice": 5605
       },
       {
@@ -5070,7 +5070,7 @@
         "materialCategory": "",
         "name": "ウォーモール",
         "csVisible": "TRUE",
-        "price": 630,
+        "price": 556,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -5107,7 +5107,7 @@
         "branchClass": "通常派生",
         "branchType": "甲殻",
         "branchDisplayOrder": 1,
-        "sellPrice": 630,
+        "sellPrice": 556,
         "buyPrice": 695
       },
       {
@@ -5120,7 +5120,7 @@
         "materialCategory": "",
         "name": "グランドモール",
         "csVisible": "TRUE",
-        "price": 4890,
+        "price": 4304,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "両手",
@@ -5157,7 +5157,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 14,
-        "sellPrice": 4890,
+        "sellPrice": 4304,
         "buyPrice": 5380
       },
       {
@@ -5168,7 +5168,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "グレートハンマー",
-        "price": "240",
+        "price": "208",
         "rank": 1,
         "equipSlot": "両手",
         "skill": "近接",
@@ -5192,7 +5192,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "240",
+        "sellPrice": "208",
         "buyPrice": "260",
         "updatedAt": "2026-08-11"
       },
@@ -5206,7 +5206,7 @@
         "materialCategory": "",
         "name": "コアクラッシャー",
         "csVisible": "TRUE",
-        "price": 740,
+        "price": 652,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -5243,7 +5243,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 8,
-        "sellPrice": 740,
+        "sellPrice": 652,
         "buyPrice": 815
       },
       {
@@ -5256,7 +5256,7 @@
         "materialCategory": "",
         "name": "ハートウッドモール",
         "csVisible": "TRUE",
-        "price": 2010,
+        "price": 1772,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -5293,7 +5293,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 7,
-        "sellPrice": 2010,
+        "sellPrice": 1772,
         "buyPrice": 2215
       },
       {
@@ -5304,7 +5304,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フォージハンマー",
-        "price": 675,
+        "price": 596,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -5335,7 +5335,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 11,
-        "sellPrice": 675,
+        "sellPrice": 596,
         "buyPrice": 745
       },
       {
@@ -5346,7 +5346,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ホーンブレイカー",
-        "price": 1440,
+        "price": 1268,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -5377,7 +5377,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 13,
-        "sellPrice": 1440,
+        "sellPrice": 1268,
         "buyPrice": 1585
       },
       {
@@ -5390,7 +5390,7 @@
         "materialCategory": "",
         "name": "マイアモール",
         "csVisible": "TRUE",
-        "price": 2820,
+        "price": 2484,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -5427,7 +5427,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 10,
-        "sellPrice": 2820,
+        "sellPrice": 2484,
         "buyPrice": 3105
       },
       {
@@ -5438,7 +5438,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リフトモール",
-        "price": 1390,
+        "price": 1224,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -5469,7 +5469,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 3,
-        "sellPrice": 1390,
+        "sellPrice": 1224,
         "buyPrice": 1530
       },
       {
@@ -5482,7 +5482,7 @@
         "materialCategory": "",
         "name": "ロックブレイカーモール",
         "csVisible": "TRUE",
-        "price": 2895,
+        "price": 2548,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -5519,7 +5519,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 11,
-        "sellPrice": 2895,
+        "sellPrice": 2548,
         "buyPrice": 3185
       },
       {
@@ -5532,7 +5532,7 @@
         "materialCategory": "",
         "name": "アイヴィサイス",
         "csVisible": "TRUE",
-        "price": 3740,
+        "price": 3292,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -5569,7 +5569,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 14,
-        "sellPrice": 3740,
+        "sellPrice": 3292,
         "buyPrice": 4115
       },
       {
@@ -5580,7 +5580,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "アビスリーパー",
-        "price": 4845,
+        "price": 4264,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -5614,7 +5614,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 4,
-        "sellPrice": 4845,
+        "sellPrice": 4264,
         "buyPrice": 5330
       },
       {
@@ -5627,7 +5627,7 @@
         "materialCategory": "",
         "name": "ウォーサイス",
         "csVisible": "TRUE",
-        "price": 550,
+        "price": 484,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -5664,7 +5664,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 5,
-        "sellPrice": 550,
+        "sellPrice": 484,
         "buyPrice": 605
       },
       {
@@ -5677,7 +5677,7 @@
         "materialCategory": "",
         "name": "ストラタサイズ",
         "csVisible": "TRUE",
-        "price": 3225,
+        "price": 2840,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "両手",
@@ -5714,7 +5714,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 8,
-        "sellPrice": 3225,
+        "sellPrice": 2840,
         "buyPrice": 3550
       },
       {
@@ -5725,7 +5725,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "スポアサイス",
-        "price": 1485,
+        "price": 1308,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -5758,7 +5758,7 @@
         "branchClass": "通常派生",
         "branchType": "菌核",
         "branchDisplayOrder": 13,
-        "sellPrice": 1485,
+        "sellPrice": 1308,
         "buyPrice": 1635
       },
       {
@@ -5769,7 +5769,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "バトルサイズ",
-        "price": "190",
+        "price": "168",
         "rank": 1,
         "equipSlot": "両手",
         "skill": "近接",
@@ -5798,7 +5798,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "190",
+        "sellPrice": "168",
         "buyPrice": "210"
       },
       {
@@ -5809,7 +5809,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ファングリーパー",
-        "price": 1690,
+        "price": 1488,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -5842,7 +5842,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 12,
-        "sellPrice": 1690,
+        "sellPrice": 1488,
         "buyPrice": 1860
       },
       {
@@ -5855,7 +5855,7 @@
         "materialCategory": "",
         "name": "ミアズマサイス",
         "csVisible": "TRUE",
-        "price": 2015,
+        "price": 1776,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -5892,7 +5892,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 10,
-        "sellPrice": 2015,
+        "sellPrice": 1776,
         "buyPrice": 2220
       },
       {
@@ -5903,7 +5903,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミラージュサイズ",
-        "price": 1275,
+        "price": 1124,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -5937,7 +5937,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 1,
-        "sellPrice": 1275,
+        "sellPrice": 1124,
         "buyPrice": 1405
       },
       {
@@ -5950,7 +5950,7 @@
         "materialCategory": "",
         "name": "ヴェインサイズ",
         "csVisible": "TRUE",
-        "price": 1650,
+        "price": 1456,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -5987,7 +5987,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 5,
-        "sellPrice": 1650,
+        "sellPrice": 1456,
         "buyPrice": 1820
       },
       {
@@ -6000,7 +6000,7 @@
         "materialCategory": "",
         "name": "ヴェノムサイス",
         "csVisible": "TRUE",
-        "price": 805,
+        "price": 712,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6037,7 +6037,7 @@
         "branchClass": "通常派生",
         "branchType": "毒腺",
         "branchDisplayOrder": 2,
-        "sellPrice": 805,
+        "sellPrice": 712,
         "buyPrice": 890
       },
       {
@@ -6050,7 +6050,7 @@
         "materialCategory": "",
         "name": "アイアンストリング",
         "csVisible": "TRUE",
-        "price": 1215,
+        "price": 1072,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6087,7 +6087,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 1,
-        "sellPrice": 1215,
+        "sellPrice": 1072,
         "buyPrice": 1340
       },
       {
@@ -6100,7 +6100,7 @@
         "materialCategory": "",
         "name": "アクアリフレイン",
         "csVisible": "TRUE",
-        "price": 1115,
+        "price": 984,
         "rank": 2,
         "equipSlot": "両手",
         "maxStack": "",
@@ -6131,7 +6131,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 6,
-        "sellPrice": 1115,
+        "sellPrice": 984,
         "buyPrice": 1230
       },
       {
@@ -6144,7 +6144,7 @@
         "materialCategory": "",
         "name": "エコーストリング",
         "csVisible": "TRUE",
-        "price": 2705,
+        "price": 2384,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6181,7 +6181,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 5,
-        "sellPrice": 2705,
+        "sellPrice": 2384,
         "buyPrice": 2980
       },
       {
@@ -6194,7 +6194,7 @@
         "materialCategory": "",
         "name": "エルダーリーフ",
         "csVisible": "TRUE",
-        "price": 1960,
+        "price": 1728,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6231,7 +6231,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 10,
-        "sellPrice": 1960,
+        "sellPrice": 1728,
         "buyPrice": 2160
       },
       {
@@ -6244,7 +6244,7 @@
         "materialCategory": "",
         "name": "コンポジットボウ",
         "csVisible": "TRUE",
-        "price": 345,
+        "price": 304,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6281,7 +6281,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 8,
-        "sellPrice": 345,
+        "sellPrice": 304,
         "buyPrice": 380
       },
       {
@@ -6292,7 +6292,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ショートボウ",
-        "price": "125",
+        "price": "112",
         "rank": 1,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -6316,7 +6316,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "125",
+        "sellPrice": "112",
         "buyPrice": "140",
         "updatedAt": "2026-08-11"
       },
@@ -6328,7 +6328,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルフィードアーチ",
-        "price": 370,
+        "price": 328,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -6359,7 +6359,7 @@
         "branchClass": "通常派生",
         "branchType": "風射",
         "branchDisplayOrder": 11,
-        "sellPrice": 370,
+        "sellPrice": 328,
         "buyPrice": 410
       },
       {
@@ -6370,7 +6370,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ビーストボウ",
-        "price": 430,
+        "price": 380,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -6401,7 +6401,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 4,
-        "sellPrice": 430,
+        "sellPrice": 380,
         "buyPrice": 475
       },
       {
@@ -6414,7 +6414,7 @@
         "materialCategory": "",
         "name": "マレアリフレイン",
         "csVisible": "TRUE",
-        "price": 1775,
+        "price": 1564,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6451,7 +6451,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 7,
-        "sellPrice": 1775,
+        "sellPrice": 1564,
         "buyPrice": 1955
       },
       {
@@ -6464,7 +6464,7 @@
         "materialCategory": "",
         "name": "ヴェルデストライド",
         "csVisible": "TRUE",
-        "price": 725,
+        "price": 640,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6501,7 +6501,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 3,
-        "sellPrice": 725,
+        "sellPrice": 640,
         "buyPrice": 800
       },
       {
@@ -6514,7 +6514,7 @@
         "materialCategory": "",
         "name": "ヴォイドレクイエム",
         "csVisible": "TRUE",
-        "price": 3180,
+        "price": 2800,
         "rank": 3,
         "equipSlot": "両手",
         "maxStack": "",
@@ -6545,7 +6545,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 9,
-        "sellPrice": 3180,
+        "sellPrice": 2800,
         "buyPrice": 3500
       },
       {
@@ -6558,7 +6558,7 @@
         "materialCategory": "",
         "name": "アーバレスト",
         "csVisible": "TRUE",
-        "price": 495,
+        "price": 436,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6595,7 +6595,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 12,
-        "sellPrice": 495,
+        "sellPrice": 436,
         "buyPrice": 545
       },
       {
@@ -6606,7 +6606,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "クロスボウ",
-        "price": "220",
+        "price": "192",
         "rank": 1,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -6631,7 +6631,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "220",
+        "sellPrice": "192",
         "buyPrice": "240"
       },
       {
@@ -6644,7 +6644,7 @@
         "materialCategory": "",
         "name": "グリーンワーデン",
         "csVisible": "TRUE",
-        "price": 1425,
+        "price": 1256,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6681,7 +6681,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 9,
-        "sellPrice": 1425,
+        "sellPrice": 1256,
         "buyPrice": 1570
       },
       {
@@ -6692,7 +6692,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シェルブレイカー",
-        "price": 590,
+        "price": 520,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -6723,7 +6723,7 @@
         "branchClass": "通常派生",
         "branchType": "甲殻",
         "branchDisplayOrder": 1,
-        "sellPrice": 590,
+        "sellPrice": 520,
         "buyPrice": 650
       },
       {
@@ -6734,7 +6734,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゼファーボルター",
-        "price": 580,
+        "price": 512,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -6765,7 +6765,7 @@
         "branchClass": "通常派生",
         "branchType": "風射",
         "branchDisplayOrder": 4,
-        "sellPrice": 580,
+        "sellPrice": 512,
         "buyPrice": 640
       },
       {
@@ -6776,7 +6776,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ファントムピアサー",
-        "price": 4690,
+        "price": 4128,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -6807,7 +6807,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 10,
-        "sellPrice": 4690,
+        "sellPrice": 4128,
         "buyPrice": 5160
       },
       {
@@ -6820,7 +6820,7 @@
         "materialCategory": "",
         "name": "マレアボルター",
         "csVisible": "TRUE",
-        "price": 2970,
+        "price": 2616,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6857,7 +6857,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 11,
-        "sellPrice": 2970,
+        "sellPrice": 2616,
         "buyPrice": 3270
       },
       {
@@ -6868,7 +6868,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミラージュボルター",
-        "price": 1290,
+        "price": 1136,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -6899,7 +6899,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 6,
-        "sellPrice": 1290,
+        "sellPrice": 1136,
         "buyPrice": 1420
       },
       {
@@ -6912,7 +6912,7 @@
         "materialCategory": "",
         "name": "ロックドリラー",
         "csVisible": "TRUE",
-        "price": 2960,
+        "price": 2608,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6949,7 +6949,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 13,
-        "sellPrice": 2960,
+        "sellPrice": 2608,
         "buyPrice": 3260
       },
       {
@@ -6962,7 +6962,7 @@
         "materialCategory": "",
         "name": "ロックボーラー",
         "csVisible": "TRUE",
-        "price": 1430,
+        "price": 1260,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -6999,7 +6999,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 12,
-        "sellPrice": 1430,
+        "sellPrice": 1260,
         "buyPrice": 1575
       },
       {
@@ -7012,7 +7012,7 @@
         "materialCategory": "",
         "name": "ヴェルデボルター",
         "csVisible": "TRUE",
-        "price": 895,
+        "price": 788,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -7049,7 +7049,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 3,
-        "sellPrice": 895,
+        "sellPrice": 788,
         "buyPrice": 985
       },
       {
@@ -7060,7 +7060,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ウッドスタッフ",
-        "price": "80",
+        "price": "72",
         "rank": 1,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -7086,7 +7086,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "80",
+        "sellPrice": "72",
         "buyPrice": "90"
       },
       {
@@ -7099,7 +7099,7 @@
         "materialCategory": "",
         "name": "クォータースタッフ",
         "csVisible": "TRUE",
-        "price": 280,
+        "price": 248,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -7136,7 +7136,7 @@
         "branchClass": "通常派生",
         "branchType": "魔晶",
         "branchDisplayOrder": 7,
-        "sellPrice": 280,
+        "sellPrice": 248,
         "buyPrice": 310
       },
       {
@@ -7149,7 +7149,7 @@
         "materialCategory": "",
         "name": "シルヴァンロッド",
         "csVisible": "TRUE",
-        "price": 3225,
+        "price": 2840,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -7186,7 +7186,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 6,
-        "sellPrice": 3225,
+        "sellPrice": 2840,
         "buyPrice": 3550
       },
       {
@@ -7199,7 +7199,7 @@
         "materialCategory": "",
         "name": "ジオクリスタルロッド",
         "csVisible": "TRUE",
-        "price": 2600,
+        "price": 2292,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -7236,7 +7236,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 8,
-        "sellPrice": 2600,
+        "sellPrice": 2292,
         "buyPrice": 2865
       },
       {
@@ -7247,7 +7247,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "スポアスタッフ",
-        "price": 1220,
+        "price": 1076,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -7278,7 +7278,7 @@
         "branchClass": "通常派生",
         "branchType": "菌核",
         "branchDisplayOrder": 5,
-        "sellPrice": 1220,
+        "sellPrice": 1076,
         "buyPrice": 1345
       },
       {
@@ -7289,7 +7289,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "バブルロッド",
-        "price": 545,
+        "price": 480,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -7320,7 +7320,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 11,
-        "sellPrice": 545,
+        "sellPrice": 480,
         "buyPrice": 600
       },
       {
@@ -7331,7 +7331,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フェイズロッド",
-        "price": 4290,
+        "price": 3776,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -7362,7 +7362,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 10,
-        "sellPrice": 4290,
+        "sellPrice": 3776,
         "buyPrice": 4720
       },
       {
@@ -7375,7 +7375,7 @@
         "materialCategory": "",
         "name": "ホーンセプター",
         "csVisible": "TRUE",
-        "price": 685,
+        "price": 604,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -7412,7 +7412,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 1,
-        "sellPrice": 685,
+        "sellPrice": 604,
         "buyPrice": 755
       },
       {
@@ -7425,7 +7425,7 @@
         "materialCategory": "",
         "name": "ミアズマロッド",
         "csVisible": "TRUE",
-        "price": 2365,
+        "price": 2084,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -7462,7 +7462,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 12,
-        "sellPrice": 2365,
+        "sellPrice": 2084,
         "buyPrice": 2605
       },
       {
@@ -7473,7 +7473,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミストスタッフ",
-        "price": 1060,
+        "price": 936,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -7504,7 +7504,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 9,
-        "sellPrice": 1060,
+        "sellPrice": 936,
         "buyPrice": 1170
       },
       {
@@ -7517,7 +7517,7 @@
         "materialCategory": "",
         "name": "リンショウスタッフ",
         "csVisible": "TRUE",
-        "price": 1125,
+        "price": 992,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -7554,7 +7554,7 @@
         "branchClass": "通常派生",
         "branchType": "魔晶",
         "branchDisplayOrder": 7,
-        "sellPrice": 1125,
+        "sellPrice": 992,
         "buyPrice": 1240
       },
       {
@@ -7565,7 +7565,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "カラパスセイバー",
-        "price": 420,
+        "price": 372,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -7596,7 +7596,7 @@
         "branchClass": "通常派生",
         "branchType": "甲殻",
         "branchDisplayOrder": 11,
-        "sellPrice": 420,
+        "sellPrice": 372,
         "buyPrice": 465
       },
       {
@@ -7609,7 +7609,7 @@
         "materialCategory": "",
         "name": "フェラスセイバー",
         "csVisible": "TRUE",
-        "price": 1210,
+        "price": 1068,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -7646,7 +7646,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 10,
-        "sellPrice": 1210,
+        "sellPrice": 1068,
         "buyPrice": 1335
       },
       {
@@ -7659,7 +7659,7 @@
         "materialCategory": "",
         "name": "シルヴァンガード",
         "csVisible": "TRUE",
-        "price": 2235,
+        "price": 1968,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -7696,7 +7696,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 7,
-        "sellPrice": 2235,
+        "sellPrice": 1968,
         "buyPrice": 2460
       },
       {
@@ -7709,7 +7709,7 @@
         "materialCategory": "",
         "name": "ブロードソード",
         "csVisible": "TRUE",
-        "price": 380,
+        "price": 336,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -7746,7 +7746,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 10,
-        "sellPrice": 380,
+        "sellPrice": 336,
         "buyPrice": 420
       },
       {
@@ -7759,7 +7759,7 @@
         "materialCategory": "",
         "name": "ホーンレガリア",
         "csVisible": "TRUE",
-        "price": 770,
+        "price": 680,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -7796,7 +7796,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 5,
-        "sellPrice": 770,
+        "sellPrice": 680,
         "buyPrice": 850
       },
       {
@@ -7809,7 +7809,7 @@
         "materialCategory": "",
         "name": "マイアセイバー",
         "csVisible": "TRUE",
-        "price": 2850,
+        "price": 2512,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -7846,7 +7846,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 9,
-        "sellPrice": 2850,
+        "sellPrice": 2512,
         "buyPrice": 3140
       },
       {
@@ -7859,7 +7859,7 @@
         "materialCategory": "",
         "name": "ミラーエッジ",
         "csVisible": "TRUE",
-        "price": 1040,
+        "price": 916,
         "rank": 2,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -7890,7 +7890,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 4,
-        "sellPrice": 1040,
+        "sellPrice": 916,
         "buyPrice": 1145
       },
       {
@@ -7903,7 +7903,7 @@
         "materialCategory": "",
         "name": "リフレクトセイバー",
         "csVisible": "TRUE",
-        "price": 4165,
+        "price": 3668,
         "rank": 3,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -7934,7 +7934,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 8,
-        "sellPrice": 4165,
+        "sellPrice": 3668,
         "buyPrice": 4585
       },
       {
@@ -7945,7 +7945,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ルートセイバー",
-        "price": 510,
+        "price": 452,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -7976,7 +7976,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 3,
-        "sellPrice": 510,
+        "sellPrice": 452,
         "buyPrice": 565
       },
       {
@@ -7989,7 +7989,7 @@
         "materialCategory": "",
         "name": "レイラインセイバー",
         "csVisible": "TRUE",
-        "price": 2700,
+        "price": 2380,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -8026,7 +8026,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 13,
-        "sellPrice": 2700,
+        "sellPrice": 2380,
         "buyPrice": 2975
       },
       {
@@ -8037,7 +8037,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ロングソード",
-        "price": "145",
+        "price": "128",
         "rank": 1,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -8063,7 +8063,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "145",
+        "sellPrice": "128",
         "buyPrice": "160"
       },
       {
@@ -8076,7 +8076,7 @@
         "materialCategory": "",
         "name": "エルダーハチェット",
         "csVisible": "TRUE",
-        "price": 2325,
+        "price": 2048,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -8113,7 +8113,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 12,
-        "sellPrice": 2325,
+        "sellPrice": 2048,
         "buyPrice": 2560
       },
       {
@@ -8126,7 +8126,7 @@
         "materialCategory": "",
         "name": "グラスクリーヴァ",
         "csVisible": "TRUE",
-        "price": 1140,
+        "price": 1004,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -8163,7 +8163,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 8,
-        "sellPrice": 1140,
+        "sellPrice": 1004,
         "buyPrice": 1255
       },
       {
@@ -8174,7 +8174,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ハンドアックス",
-        "price": "190",
+        "price": "168",
         "rank": 1,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -8200,7 +8200,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "190",
+        "sellPrice": "168",
         "buyPrice": "210"
       },
       {
@@ -8213,7 +8213,7 @@
         "materialCategory": "",
         "name": "バトルアックス",
         "csVisible": "TRUE",
-        "price": 430,
+        "price": 380,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -8250,7 +8250,7 @@
         "branchClass": "通常派生",
         "branchType": "甲殻",
         "branchDisplayOrder": 10,
-        "sellPrice": 430,
+        "sellPrice": 380,
         "buyPrice": 475
       },
       {
@@ -8261,7 +8261,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ファングアックス",
-        "price": 460,
+        "price": 408,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -8292,7 +8292,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 4,
-        "sellPrice": 460,
+        "sellPrice": 408,
         "buyPrice": 510
       },
       {
@@ -8303,7 +8303,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ブランチハチェット",
-        "price": 565,
+        "price": 500,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -8334,7 +8334,7 @@
         "branchClass": "通常派生",
         "branchType": "疾駆",
         "branchDisplayOrder": 11,
-        "sellPrice": 565,
+        "sellPrice": 500,
         "buyPrice": 625
       },
       {
@@ -8347,7 +8347,7 @@
         "materialCategory": "",
         "name": "ボグクリーヴァ",
         "csVisible": "TRUE",
-        "price": 2945,
+        "price": 2592,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -8384,7 +8384,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 9,
-        "sellPrice": 2945,
+        "sellPrice": 2592,
         "buyPrice": 3240
       },
       {
@@ -8395,7 +8395,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リフトハチェット",
-        "price": 1200,
+        "price": 1056,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -8426,7 +8426,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 1,
-        "sellPrice": 1200,
+        "sellPrice": 1056,
         "buyPrice": 1320
       },
       {
@@ -8439,7 +8439,7 @@
         "materialCategory": "",
         "name": "ロックハチェット",
         "csVisible": "TRUE",
-        "price": 2885,
+        "price": 2540,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -8476,7 +8476,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 2,
-        "sellPrice": 2885,
+        "sellPrice": 2540,
         "buyPrice": 3175
       },
       {
@@ -8489,7 +8489,7 @@
         "materialCategory": "",
         "name": "ロックリーヴァ",
         "csVisible": "TRUE",
-        "price": 4710,
+        "price": 4148,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -8526,7 +8526,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 3,
-        "sellPrice": 4710,
+        "sellPrice": 4148,
         "buyPrice": 5185
       },
       {
@@ -8537,7 +8537,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ヴォイドクリーバー",
-        "price": 4425,
+        "price": 3896,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -8568,7 +8568,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 5,
-        "sellPrice": 4425,
+        "sellPrice": 3896,
         "buyPrice": 4870
       },
       {
@@ -8579,7 +8579,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ウォーハンマー",
-        "price": "155",
+        "price": "136",
         "rank": 1,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -8605,7 +8605,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "155",
+        "sellPrice": "136",
         "buyPrice": "170"
       },
       {
@@ -8618,7 +8618,7 @@
         "materialCategory": "",
         "name": "ウッドランドメイス",
         "csVisible": "TRUE",
-        "price": 1735,
+        "price": 1528,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -8655,7 +8655,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 14,
-        "sellPrice": 1735,
+        "sellPrice": 1528,
         "buyPrice": 1910
       },
       {
@@ -8666,7 +8666,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "エコーメイス",
-        "price": 1095,
+        "price": 964,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -8697,7 +8697,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 7,
-        "sellPrice": 1095,
+        "sellPrice": 964,
         "buyPrice": 1205
       },
       {
@@ -8710,7 +8710,7 @@
         "materialCategory": "",
         "name": "クエイクメイス",
         "csVisible": "TRUE",
-        "price": 2715,
+        "price": 2392,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -8747,7 +8747,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 4,
-        "sellPrice": 2715,
+        "sellPrice": 2392,
         "buyPrice": 2990
       },
       {
@@ -8758,7 +8758,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "クリスタルメイス",
-        "price": 385,
+        "price": 340,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -8789,7 +8789,7 @@
         "branchClass": "通常派生",
         "branchType": "晶石",
         "branchDisplayOrder": 13,
-        "sellPrice": 385,
+        "sellPrice": 340,
         "buyPrice": 425
       },
       {
@@ -8800,7 +8800,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "コアハンマー",
-        "price": 475,
+        "price": 420,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -8831,7 +8831,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 3,
-        "sellPrice": 475,
+        "sellPrice": 420,
         "buyPrice": 525
       },
       {
@@ -8842,7 +8842,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "サイレンスマレット",
-        "price": 4305,
+        "price": 3792,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -8873,7 +8873,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 12,
-        "sellPrice": 4305,
+        "sellPrice": 3792,
         "buyPrice": 4740
       },
       {
@@ -8886,7 +8886,7 @@
         "materialCategory": "",
         "name": "フランジドメイス",
         "csVisible": "TRUE",
-        "price": 380,
+        "price": 336,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -8923,7 +8923,7 @@
         "branchClass": "通常派生",
         "branchType": "甲殻",
         "branchDisplayOrder": 1,
-        "sellPrice": 380,
+        "sellPrice": 336,
         "buyPrice": 420
       },
       {
@@ -8936,7 +8936,7 @@
         "materialCategory": "",
         "name": "ホーンクラッシャー",
         "csVisible": "TRUE",
-        "price": 1040,
+        "price": 916,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -8973,7 +8973,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 9,
-        "sellPrice": 1040,
+        "sellPrice": 916,
         "buyPrice": 1145
       },
       {
@@ -8986,7 +8986,7 @@
         "materialCategory": "",
         "name": "マイアクラッシャー",
         "csVisible": "TRUE",
-        "price": 1390,
+        "price": 1224,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9023,7 +9023,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 6,
-        "sellPrice": 1390,
+        "sellPrice": 1224,
         "buyPrice": 1530
       },
       {
@@ -9036,7 +9036,7 @@
         "materialCategory": "",
         "name": "ロアメイス",
         "csVisible": "TRUE",
-        "price": 1220,
+        "price": 1076,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9073,7 +9073,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 2,
-        "sellPrice": 1220,
+        "sellPrice": 1076,
         "buyPrice": 1345
       },
       {
@@ -9084,7 +9084,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ウィングスピア",
-        "price": 445,
+        "price": 392,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -9115,7 +9115,7 @@
         "branchClass": "通常派生",
         "branchType": "甲殻",
         "branchDisplayOrder": 9,
-        "sellPrice": 445,
+        "sellPrice": 392,
         "buyPrice": 490
       },
       {
@@ -9128,7 +9128,7 @@
         "materialCategory": "",
         "name": "クリスタルスピア",
         "csVisible": "TRUE",
-        "price": 480,
+        "price": 424,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9165,7 +9165,7 @@
         "branchClass": "通常派生",
         "branchType": "晶石",
         "branchDisplayOrder": 1,
-        "sellPrice": 480,
+        "sellPrice": 424,
         "buyPrice": 530
       },
       {
@@ -9176,7 +9176,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "グラスランサー",
-        "price": 1125,
+        "price": 992,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -9207,7 +9207,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 4,
-        "sellPrice": 1125,
+        "sellPrice": 992,
         "buyPrice": 1240
       },
       {
@@ -9220,7 +9220,7 @@
         "materialCategory": "",
         "name": "グランドピアサー",
         "csVisible": "TRUE",
-        "price": 2700,
+        "price": 2380,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9257,7 +9257,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 10,
-        "sellPrice": 2700,
+        "sellPrice": 2380,
         "buyPrice": 2975
       },
       {
@@ -9268,7 +9268,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ショートスピア",
-        "price": "180",
+        "price": "160",
         "rank": 1,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -9294,7 +9294,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "180",
+        "sellPrice": "160",
         "buyPrice": "200"
       },
       {
@@ -9307,7 +9307,7 @@
         "materialCategory": "",
         "name": "パルチザン",
         "csVisible": "TRUE",
-        "price": 390,
+        "price": 344,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9344,7 +9344,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 5,
-        "sellPrice": 390,
+        "sellPrice": 344,
         "buyPrice": 430
       },
       {
@@ -9357,7 +9357,7 @@
         "materialCategory": "",
         "name": "マイアスピア",
         "csVisible": "TRUE",
-        "price": 1865,
+        "price": 1644,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9394,7 +9394,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 6,
-        "sellPrice": 1865,
+        "sellPrice": 1644,
         "buyPrice": 2055
       },
       {
@@ -9405,7 +9405,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リフレクトパルチザン",
-        "price": 4380,
+        "price": 3856,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -9436,7 +9436,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 7,
-        "sellPrice": 4380,
+        "sellPrice": 3856,
         "buyPrice": 4820
       },
       {
@@ -9447,7 +9447,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ルートランス",
-        "price": 1730,
+        "price": 1524,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -9478,7 +9478,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 12,
-        "sellPrice": 1730,
+        "sellPrice": 1524,
         "buyPrice": 1905
       },
       {
@@ -9491,7 +9491,7 @@
         "materialCategory": "",
         "name": "ロックピアサー",
         "csVisible": "TRUE",
-        "price": 1210,
+        "price": 1068,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9528,7 +9528,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 2,
-        "sellPrice": 1210,
+        "sellPrice": 1068,
         "buyPrice": 1335
       },
       {
@@ -9541,7 +9541,7 @@
         "materialCategory": "",
         "name": "ヴェルデランサー",
         "csVisible": "TRUE",
-        "price": 1020,
+        "price": 900,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9578,7 +9578,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 11,
-        "sellPrice": 1020,
+        "sellPrice": 900,
         "buyPrice": 1125
       },
       {
@@ -9591,7 +9591,7 @@
         "materialCategory": "",
         "name": "フェラススティレット",
         "csVisible": "TRUE",
-        "price": 1095,
+        "price": 964,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9628,7 +9628,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 1,
-        "sellPrice": 1095,
+        "sellPrice": 964,
         "buyPrice": 1205
       },
       {
@@ -9641,7 +9641,7 @@
         "materialCategory": "",
         "name": "グランドファング",
         "csVisible": "TRUE",
-        "price": 2560,
+        "price": 2256,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9678,7 +9678,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 2,
-        "sellPrice": 2560,
+        "sellPrice": 2256,
         "buyPrice": 2820
       },
       {
@@ -9689,7 +9689,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ショートダガー",
-        "price": "145",
+        "price": "128",
         "rank": 1,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -9715,7 +9715,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "145",
+        "sellPrice": "128",
         "buyPrice": "160"
       },
       {
@@ -9728,7 +9728,7 @@
         "materialCategory": "",
         "name": "シルヴァエッジ",
         "csVisible": "TRUE",
-        "price": 1110,
+        "price": 980,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9765,7 +9765,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 8,
-        "sellPrice": 1110,
+        "sellPrice": 980,
         "buyPrice": 1225
       },
       {
@@ -9778,7 +9778,7 @@
         "materialCategory": "",
         "name": "スティレット",
         "csVisible": "TRUE",
-        "price": 325,
+        "price": 288,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9815,7 +9815,7 @@
         "branchClass": "通常派生",
         "branchType": "晶石",
         "branchDisplayOrder": 13,
-        "sellPrice": 325,
+        "sellPrice": 288,
         "buyPrice": 360
       },
       {
@@ -9826,7 +9826,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ファングナイフ",
-        "price": 375,
+        "price": 332,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -9857,7 +9857,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 3,
-        "sellPrice": 375,
+        "sellPrice": 332,
         "buyPrice": 415
       },
       {
@@ -9868,7 +9868,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フェイズダガー",
-        "price": 1030,
+        "price": 908,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -9899,7 +9899,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 11,
-        "sellPrice": 1030,
+        "sellPrice": 908,
         "buyPrice": 1135
       },
       {
@@ -9912,7 +9912,7 @@
         "materialCategory": "",
         "name": "マイアスティング",
         "csVisible": "TRUE",
-        "price": 1790,
+        "price": 1576,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -9949,7 +9949,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 12,
-        "sellPrice": 1790,
+        "sellPrice": 1576,
         "buyPrice": 1970
       },
       {
@@ -9960,7 +9960,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ヴェノムニードル",
-        "price": 575,
+        "price": 508,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -9991,7 +9991,7 @@
         "branchClass": "通常派生",
         "branchType": "毒腺",
         "branchDisplayOrder": 9,
-        "sellPrice": 575,
+        "sellPrice": 508,
         "buyPrice": 635
       },
       {
@@ -10004,7 +10004,7 @@
         "materialCategory": "",
         "name": "ヴェルデスティング",
         "csVisible": "TRUE",
-        "price": 975,
+        "price": 860,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "右手/左手",
@@ -10041,7 +10041,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 4,
-        "sellPrice": 975,
+        "sellPrice": 860,
         "buyPrice": 1075
       },
       {
@@ -10052,7 +10052,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ヴォイドスティンガー",
-        "price": 4065,
+        "price": 3580,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -10083,7 +10083,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 14,
-        "sellPrice": 4065,
+        "sellPrice": 3580,
         "buyPrice": 4475
       },
       {
@@ -10096,7 +10096,7 @@
         "materialCategory": "",
         "name": "アビサルリタニー",
         "csVisible": "TRUE",
-        "price": 4380,
+        "price": 3856,
         "rank": 3,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -10127,7 +10127,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 8,
-        "sellPrice": 4380,
+        "sellPrice": 3856,
         "buyPrice": 4820
       },
       {
@@ -10138,7 +10138,7 @@
         "itemCategory": "祈祷書",
         "name": "イージスリタニー",
         "csVisible": "TRUE",
-        "price": 795,
+        "price": 700,
         "rank": 2,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -10166,7 +10166,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 4,
-        "sellPrice": 795,
+        "sellPrice": 700,
         "buyPrice": 875
       },
       {
@@ -10177,7 +10177,7 @@
         "itemCategory": "祈祷書",
         "name": "ガーディアンミサル",
         "csVisible": "TRUE",
-        "price": 3250,
+        "price": 2864,
         "rank": 5,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -10205,7 +10205,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 3,
-        "sellPrice": 3250,
+        "sellPrice": 2864,
         "buyPrice": 3580
       },
       {
@@ -10216,7 +10216,7 @@
         "itemCategory": "祈祷書",
         "name": "クリスタルリタニー",
         "csVisible": "TRUE",
-        "price": 850,
+        "price": 752,
         "rank": 2,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -10245,7 +10245,7 @@
         "branchClass": "通常派生",
         "branchType": "魔晶",
         "branchDisplayOrder": 2,
-        "sellPrice": 850,
+        "sellPrice": 752,
         "buyPrice": 940
       },
       {
@@ -10256,7 +10256,7 @@
         "itemCategory": "祈祷書",
         "name": "サルヴェミサル",
         "csVisible": "TRUE",
-        "price": 770,
+        "price": 680,
         "rank": 2,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -10284,7 +10284,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 7,
-        "sellPrice": 770,
+        "sellPrice": 680,
         "buyPrice": 850
       },
       {
@@ -10295,7 +10295,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルヴァンミサル",
-        "price": 3025,
+        "price": 2664,
         "rank": 3,
         "equipSlot": "右手/左手",
         "effect": "祈祷によるHP回復量+1。対象の現在HPが最大HPの半分以下の場合、さらにHP回復量+1。祈祷で味方1体のHPを回復した時、その対象が次に抵抗値を参照される際、抵抗+2。その行動の解決後に解除し、重複しない。",
@@ -10325,7 +10325,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 9,
-        "sellPrice": 3025,
+        "sellPrice": 2664,
         "buyPrice": 3330
       },
       {
@@ -10336,7 +10336,7 @@
         "itemCategory": "祈祷書",
         "name": "マイアリタニー",
         "csVisible": "TRUE",
-        "price": 3160,
+        "price": 2784,
         "rank": 3,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -10365,7 +10365,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 6,
-        "sellPrice": 3160,
+        "sellPrice": 2784,
         "buyPrice": 3480
       },
       {
@@ -10376,7 +10376,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミサル",
-        "price": "275",
+        "price": "240",
         "rank": 1,
         "equipSlot": "右手/左手",
         "effect": "",
@@ -10402,7 +10402,7 @@
         "equipmentUpgradeTarget": "",
         "skill": "祈祷",
         "checkType": "",
-        "sellPrice": "275",
+        "sellPrice": "240",
         "buyPrice": "300"
       },
       {
@@ -10415,7 +10415,7 @@
         "materialCategory": "",
         "name": "リフレクトミサル",
         "csVisible": "TRUE",
-        "price": 1740,
+        "price": 1532,
         "rank": 2,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -10446,7 +10446,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 5,
-        "sellPrice": 1740,
+        "sellPrice": 1532,
         "buyPrice": 1915
       },
       {
@@ -10457,7 +10457,7 @@
         "itemCategory": "祈祷書",
         "name": "レイラインミサル",
         "csVisible": "TRUE",
-        "price": 1690,
+        "price": 1488,
         "rank": 3,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -10485,7 +10485,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 1,
-        "sellPrice": 1690,
+        "sellPrice": 1488,
         "buyPrice": 1860
       },
       {
@@ -10496,7 +10496,7 @@
         "itemCategory": "祈祷書",
         "name": "ヴェルダントミサル",
         "csVisible": "TRUE",
-        "price": 1695,
+        "price": 1492,
         "rank": 3,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -10525,7 +10525,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 10,
-        "sellPrice": 1695,
+        "sellPrice": 1492,
         "buyPrice": 1865
       },
       {
@@ -10574,7 +10574,7 @@
         "materialCategory": "",
         "name": "カラパスランス",
         "csVisible": "TRUE",
-        "price": 590,
+        "price": 520,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -10611,7 +10611,7 @@
         "branchClass": "通常派生",
         "branchType": "甲殻",
         "branchDisplayOrder": 7,
-        "sellPrice": 590,
+        "sellPrice": 520,
         "buyPrice": 650
       },
       {
@@ -10624,7 +10624,7 @@
         "materialCategory": "",
         "name": "クリスタルランス",
         "csVisible": "TRUE",
-        "price": 545,
+        "price": 480,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -10661,7 +10661,7 @@
         "branchClass": "通常派生",
         "branchType": "晶石",
         "branchDisplayOrder": 2,
-        "sellPrice": 545,
+        "sellPrice": 480,
         "buyPrice": 600
       },
       {
@@ -10674,7 +10674,7 @@
         "materialCategory": "",
         "name": "グランドランサー",
         "csVisible": "TRUE",
-        "price": 2920,
+        "price": 2572,
         "rank": 5,
         "toolRank": "",
         "equipSlot": "両手",
@@ -10711,7 +10711,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 10,
-        "sellPrice": 2920,
+        "sellPrice": 2572,
         "buyPrice": 3215
       },
       {
@@ -10724,7 +10724,7 @@
         "materialCategory": "",
         "name": "パイク",
         "csVisible": "TRUE",
-        "price": 485,
+        "price": 428,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -10761,7 +10761,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 3,
-        "sellPrice": 485,
+        "sellPrice": 428,
         "buyPrice": 535
       },
       {
@@ -10772,7 +10772,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フェイズパイク",
-        "price": 1275,
+        "price": 1124,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -10803,7 +10803,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 6,
-        "sellPrice": 1275,
+        "sellPrice": 1124,
         "buyPrice": 1405
       },
       {
@@ -10814,7 +10814,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ホーンランス",
-        "price": 1210,
+        "price": 1068,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -10845,7 +10845,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 4,
-        "sellPrice": 1210,
+        "sellPrice": 1068,
         "buyPrice": 1335
       },
       {
@@ -10858,7 +10858,7 @@
         "materialCategory": "",
         "name": "マイアランサー",
         "csVisible": "TRUE",
-        "price": 2000,
+        "price": 1760,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -10895,7 +10895,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 13,
-        "sellPrice": 2000,
+        "sellPrice": 1760,
         "buyPrice": 2200
       },
       {
@@ -10908,7 +10908,7 @@
         "materialCategory": "",
         "name": "モスガードパイク",
         "csVisible": "TRUE",
-        "price": 610,
+        "price": 540,
         "rank": 2,
         "toolRank": "",
         "equipSlot": "両手",
@@ -10945,7 +10945,7 @@
         "branchClass": "通常派生",
         "branchType": "守護",
         "branchDisplayOrder": 5,
-        "sellPrice": 610,
+        "sellPrice": 540,
         "buyPrice": 675
       },
       {
@@ -10956,7 +10956,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リフトランス",
-        "price": 4830,
+        "price": 4252,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -10987,7 +10987,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 12,
-        "sellPrice": 4830,
+        "sellPrice": 4252,
         "buyPrice": 5315
       },
       {
@@ -10998,7 +10998,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ルートパイク",
-        "price": 1480,
+        "price": 1304,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -11029,7 +11029,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 8,
-        "sellPrice": 1480,
+        "sellPrice": 1304,
         "buyPrice": 1630
       },
       {
@@ -11042,7 +11042,7 @@
         "materialCategory": "",
         "name": "レイラインパイク",
         "csVisible": "TRUE",
-        "price": 1395,
+        "price": 1228,
         "rank": 3,
         "toolRank": "",
         "equipSlot": "両手",
@@ -11079,7 +11079,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 3,
-        "sellPrice": 1395,
+        "sellPrice": 1228,
         "buyPrice": 1535
       },
       {
@@ -11090,7 +11090,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ロングスピア",
-        "price": "200",
+        "price": "176",
         "rank": 1,
         "equipSlot": "両手",
         "skill": "近接",
@@ -11114,7 +11114,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "200",
+        "sellPrice": "176",
         "buyPrice": "220",
         "updatedAt": "2026-08-11"
       },
@@ -11140,7 +11140,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "アイヴィウィップ",
-        "price": 2250,
+        "price": 1980,
         "rank": 3,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11165,7 +11165,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 10,
-        "sellPrice": 2250,
+        "sellPrice": 1980,
         "buyPrice": 2475
       },
       {
@@ -11190,7 +11190,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "グラスホーンアンカー",
-        "price": 765,
+        "price": 676,
         "rank": 3,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11215,7 +11215,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 2,
-        "sellPrice": 765,
+        "sellPrice": 676,
         "buyPrice": 845
       },
       {
@@ -11240,7 +11240,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "サンダークラック",
-        "price": 525,
+        "price": 464,
         "rank": 2,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11265,7 +11265,7 @@
         "branchClass": "通常派生",
         "branchType": "雷糸",
         "branchDisplayOrder": 8,
-        "sellPrice": 525,
+        "sellPrice": 464,
         "buyPrice": 580
       },
       {
@@ -11290,7 +11290,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "スチールワイヤー",
-        "price": 1445,
+        "price": 1272,
         "rank": 3,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11315,7 +11315,7 @@
         "branchClass": "通常派生",
         "branchType": "鎖鋼",
         "branchDisplayOrder": 3,
-        "sellPrice": 1445,
+        "sellPrice": 1272,
         "buyPrice": 1590
       },
       {
@@ -11340,7 +11340,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "ソーンウィップ",
-        "price": 525,
+        "price": 464,
         "rank": 2,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11365,7 +11365,7 @@
         "branchClass": "通常派生",
         "branchType": "荊棘",
         "branchDisplayOrder": 9,
-        "sellPrice": 525,
+        "sellPrice": 464,
         "buyPrice": 580
       },
       {
@@ -11390,7 +11390,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "チェインウィップ",
-        "price": 515,
+        "price": 456,
         "rank": 2,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11415,7 +11415,7 @@
         "branchClass": "通常派生",
         "branchType": "鎖鋼",
         "branchDisplayOrder": 3,
-        "sellPrice": 515,
+        "sellPrice": 456,
         "buyPrice": 570
       },
       {
@@ -11428,7 +11428,7 @@
         "materialCategory": "",
         "name": "フェイズウィップ",
         "csVisible": "TRUE",
-        "price": 1075,
+        "price": 948,
         "rank": 2,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11459,7 +11459,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 1,
-        "sellPrice": 1075,
+        "sellPrice": 948,
         "buyPrice": 1185
       },
       {
@@ -11484,7 +11484,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "ミアズマウィップ",
-        "price": 1825,
+        "price": 1608,
         "rank": 3,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11509,7 +11509,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 7,
-        "sellPrice": 1825,
+        "sellPrice": 1608,
         "buyPrice": 2010
       },
       {
@@ -11522,7 +11522,7 @@
         "materialCategory": "",
         "name": "リフトアンカー",
         "csVisible": "TRUE",
-        "price": 4215,
+        "price": 3712,
         "rank": 3,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11553,7 +11553,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 5,
-        "sellPrice": 4215,
+        "sellPrice": 3712,
         "buyPrice": 4640
       },
       {
@@ -11578,7 +11578,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "レイラインチェイン",
-        "price": 2980,
+        "price": 2624,
         "rank": 5,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11603,7 +11603,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 4,
-        "sellPrice": 2980,
+        "sellPrice": 2624,
         "buyPrice": 3280
       },
       {
@@ -11628,7 +11628,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "レザーホイップ",
-        "price": "135",
+        "price": "120",
         "rank": 1,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11650,7 +11650,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "135",
+        "sellPrice": "120",
         "buyPrice": "150"
       },
       {
@@ -11675,7 +11675,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "ヴェノムラッシュ",
-        "price": 655,
+        "price": 580,
         "rank": 2,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11700,7 +11700,7 @@
         "branchClass": "通常派生",
         "branchType": "毒腺",
         "branchDisplayOrder": 11,
-        "sellPrice": 655,
+        "sellPrice": 580,
         "buyPrice": 725
       },
       {
@@ -11713,7 +11713,7 @@
         "materialCategory": "",
         "name": "アストラルコーデックス",
         "csVisible": "TRUE",
-        "price": 6270,
+        "price": 5520,
         "rank": 3,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -11744,7 +11744,7 @@
         "branchClass": "ボス派生",
         "branchType": "鏡淵",
         "branchDisplayOrder": 10,
-        "sellPrice": 6270,
+        "sellPrice": 5520,
         "buyPrice": 6900
       },
       {
@@ -11755,7 +11755,7 @@
         "itemCategory": "魔導書",
         "name": "アルカナコーデックス",
         "csVisible": "TRUE",
-        "price": 800,
+        "price": 708,
         "rank": 2,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -11780,7 +11780,7 @@
         "branchClass": "通常派生",
         "branchType": "魔晶",
         "branchDisplayOrder": 5,
-        "sellPrice": 800,
+        "sellPrice": 708,
         "buyPrice": 885
       },
       {
@@ -11791,7 +11791,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "グリモア",
-        "price": "275",
+        "price": "240",
         "rank": 1,
         "equipSlot": "右手/左手",
         "effect": "",
@@ -11817,7 +11817,7 @@
         "equipmentUpgradeTarget": "",
         "skill": "魔法",
         "checkType": "",
-        "sellPrice": "275",
+        "sellPrice": "240",
         "buyPrice": "300"
       },
       {
@@ -11828,7 +11828,7 @@
         "itemCategory": "魔導書",
         "name": "グリモワール",
         "csVisible": "TRUE",
-        "price": 790,
+        "price": 696,
         "rank": 2,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -11853,7 +11853,7 @@
         "branchClass": "通常派生",
         "branchType": "魔導",
         "branchDisplayOrder": 4,
-        "sellPrice": 790,
+        "sellPrice": 696,
         "buyPrice": 870
       },
       {
@@ -11864,7 +11864,7 @@
         "itemCategory": "魔導書",
         "name": "シルヴァンコーデックス",
         "csVisible": "TRUE",
-        "price": 2010,
+        "price": 1772,
         "rank": 3,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -11891,7 +11891,7 @@
         "branchClass": "ボス派生",
         "branchType": "樹心",
         "branchDisplayOrder": 12,
-        "sellPrice": 2010,
+        "sellPrice": 1772,
         "buyPrice": 2215
       },
       {
@@ -11902,7 +11902,7 @@
         "itemCategory": "魔導書",
         "name": "ジオクリスタルグリモア",
         "csVisible": "TRUE",
-        "price": 3750,
+        "price": 3300,
         "rank": 5,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -11928,7 +11928,7 @@
         "branchClass": "ボス派生",
         "branchType": "穿岩",
         "branchDisplayOrder": 8,
-        "sellPrice": 3750,
+        "sellPrice": 3300,
         "buyPrice": 4125
       },
       {
@@ -11939,7 +11939,7 @@
         "itemCategory": "魔導書",
         "name": "マイアグリモア",
         "csVisible": "TRUE",
-        "price": 2510,
+        "price": 2212,
         "rank": 3,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -11966,7 +11966,7 @@
         "branchClass": "ボス派生",
         "branchType": "沼核",
         "branchDisplayOrder": 14,
-        "sellPrice": 2510,
+        "sellPrice": 2212,
         "buyPrice": 2765
       },
       {
@@ -11977,7 +11977,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "マイセリアグリモア",
-        "price": 920,
+        "price": 812,
         "rank": 2,
         "equipSlot": "右手/左手",
         "effect": "身体・精神・状態を対象とする魔法術式を使用する際、魔法+1。",
@@ -12007,7 +12007,7 @@
         "branchClass": "通常派生",
         "branchType": "菌核",
         "branchDisplayOrder": 11,
-        "sellPrice": 920,
+        "sellPrice": 812,
         "buyPrice": 1015
       },
       {
@@ -12020,7 +12020,7 @@
         "materialCategory": "",
         "name": "ミラーグリモア",
         "csVisible": "TRUE",
-        "price": 1785,
+        "price": 1572,
         "rank": 2,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -12051,7 +12051,7 @@
         "branchClass": "通常派生",
         "branchType": "反響",
         "branchDisplayOrder": 9,
-        "sellPrice": 1785,
+        "sellPrice": 1572,
         "buyPrice": 1965
       },
       {
@@ -12062,7 +12062,7 @@
         "itemCategory": "魔導書",
         "name": "フォスライトグリモア",
         "csVisible": "TRUE",
-        "price": 1715,
+        "price": 1512,
         "rank": 3,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -12088,7 +12088,7 @@
         "branchClass": "通常派生",
         "branchType": "魔導",
         "branchDisplayOrder": 4,
-        "sellPrice": 1715,
+        "sellPrice": 1512,
         "buyPrice": 1890
       },
       {
@@ -12099,7 +12099,7 @@
         "itemCategory": "魔導書",
         "name": "ヴェルダントグリモア",
         "csVisible": "TRUE",
-        "price": 1750,
+        "price": 1544,
         "rank": 3,
         "equipSlot": "右手/左手",
         "spellSlots": "",
@@ -12126,7 +12126,7 @@
         "branchClass": "ボス派生",
         "branchType": "草角",
         "branchDisplayOrder": 7,
-        "sellPrice": 1750,
+        "sellPrice": 1544,
         "buyPrice": 1930
       },
       {
@@ -12138,7 +12138,7 @@
         "materialCategory": "",
         "name": "大型ボルト",
         "csVisible": "TRUE",
-        "price": "30",
+        "price": "28",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12163,7 +12163,7 @@
         "compatibleWeaponTypes": "大型弩",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "30",
+        "sellPrice": "28",
         "buyPrice": "35"
       },
       {
@@ -12174,7 +12174,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "拘束ボルト",
-        "price": "75",
+        "price": "64",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12201,7 +12201,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "75",
+        "sellPrice": "64",
         "buyPrice": "80"
       },
       {
@@ -12212,7 +12212,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "拘束大型ボルト",
-        "price": "90",
+        "price": "80",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -12239,7 +12239,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "90",
+        "sellPrice": "80",
         "buyPrice": "100"
       },
       {
@@ -12250,7 +12250,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "拘束矢",
-        "price": "65",
+        "price": "56",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12277,7 +12277,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "65",
+        "sellPrice": "56",
         "buyPrice": "70"
       },
       {
@@ -12288,7 +12288,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "毒ボルト",
-        "price": "75",
+        "price": "64",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12315,7 +12315,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "75",
+        "sellPrice": "64",
         "buyPrice": "80"
       },
       {
@@ -12326,7 +12326,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "毒大型ボルト",
-        "price": "95",
+        "price": "80",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -12353,7 +12353,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "95",
+        "sellPrice": "80",
         "buyPrice": "100"
       },
       {
@@ -12364,7 +12364,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "毒矢",
-        "price": "69",
+        "price": "56",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12391,7 +12391,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "69",
+        "sellPrice": "56",
         "buyPrice": "70"
       },
       {
@@ -12404,7 +12404,7 @@
         "materialCategory": "",
         "name": "水流ボルト",
         "csVisible": "TRUE",
-        "price": "65",
+        "price": "56",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12430,7 +12430,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "65",
+        "sellPrice": "56",
         "buyPrice": "70"
       },
       {
@@ -12443,7 +12443,7 @@
         "materialCategory": "",
         "name": "水流大型ボルト",
         "csVisible": "TRUE",
-        "price": "80",
+        "price": "72",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -12469,7 +12469,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "80",
+        "sellPrice": "72",
         "buyPrice": "90"
       },
       {
@@ -12482,7 +12482,7 @@
         "materialCategory": "",
         "name": "水流矢",
         "csVisible": "TRUE",
-        "price": "55",
+        "price": "48",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12508,7 +12508,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "55",
+        "sellPrice": "48",
         "buyPrice": "60"
       },
       {
@@ -12519,7 +12519,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "浄化ボルト",
-        "price": "210",
+        "price": "176",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12546,7 +12546,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "210",
+        "sellPrice": "176",
         "buyPrice": "220"
       },
       {
@@ -12557,7 +12557,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "浄化大型ボルト",
-        "price": "240",
+        "price": "208",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -12584,7 +12584,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "240",
+        "sellPrice": "208",
         "buyPrice": "260"
       },
       {
@@ -12595,7 +12595,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "浄化矢",
-        "price": "200",
+        "price": "168",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12622,7 +12622,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "200",
+        "sellPrice": "168",
         "buyPrice": "210"
       },
       {
@@ -12633,7 +12633,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "火炎ボルト",
-        "price": "69",
+        "price": "56",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12661,7 +12661,7 @@
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
         "element": "火",
-        "sellPrice": "69",
+        "sellPrice": "56",
         "buyPrice": "70"
       },
       {
@@ -12672,7 +12672,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "火炎大型ボルト",
-        "price": "85",
+        "price": "72",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -12700,7 +12700,7 @@
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
         "element": "火",
-        "sellPrice": "85",
+        "sellPrice": "72",
         "buyPrice": "90"
       },
       {
@@ -12711,7 +12711,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "火矢",
-        "price": "59",
+        "price": "48",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12739,7 +12739,7 @@
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
         "element": "火",
-        "sellPrice": "59",
+        "sellPrice": "48",
         "buyPrice": "60"
       },
       {
@@ -12750,7 +12750,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "破甲ボルト",
-        "price": "89",
+        "price": "72",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12777,7 +12777,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "89",
+        "sellPrice": "72",
         "buyPrice": "90"
       },
       {
@@ -12788,7 +12788,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "破甲大型ボルト",
-        "price": "115",
+        "price": "96",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -12815,7 +12815,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "115",
+        "sellPrice": "96",
         "buyPrice": "120"
       },
       {
@@ -12826,7 +12826,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "破甲矢",
-        "price": "75",
+        "price": "64",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12853,7 +12853,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "75",
+        "sellPrice": "64",
         "buyPrice": "80"
       },
       {
@@ -12865,7 +12865,7 @@
         "materialCategory": "",
         "name": "通常ボルト",
         "csVisible": "TRUE",
-        "price": "11",
+        "price": "9",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 20,
@@ -12890,7 +12890,7 @@
         "compatibleWeaponTypes": "弩",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "11",
+        "sellPrice": "9",
         "buyPrice": "12"
       },
       {
@@ -12902,7 +12902,7 @@
         "materialCategory": "",
         "name": "通常矢",
         "csVisible": "TRUE",
-        "price": "9",
+        "price": "8",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 20,
@@ -12927,7 +12927,7 @@
         "compatibleWeaponTypes": "弓",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "9",
+        "sellPrice": "8",
         "buyPrice": "10"
       },
       {
@@ -12938,7 +12938,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "閃光ボルト",
-        "price": "79",
+        "price": "64",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12965,7 +12965,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "79",
+        "sellPrice": "64",
         "buyPrice": "80"
       },
       {
@@ -12976,7 +12976,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "閃光大型ボルト",
-        "price": "90",
+        "price": "80",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -13003,7 +13003,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "90",
+        "sellPrice": "80",
         "buyPrice": "100"
       },
       {
@@ -13014,7 +13014,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "閃光矢",
-        "price": "65",
+        "price": "56",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -13041,7 +13041,7 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "65",
+        "sellPrice": "56",
         "buyPrice": "70"
       },
       {
@@ -13054,7 +13054,7 @@
         "materialCategory": "",
         "name": "風切ボルト",
         "csVisible": "TRUE",
-        "price": "65",
+        "price": "56",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -13080,7 +13080,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "65",
+        "sellPrice": "56",
         "buyPrice": "70"
       },
       {
@@ -13093,7 +13093,7 @@
         "materialCategory": "",
         "name": "風切大型ボルト",
         "csVisible": "TRUE",
-        "price": "80",
+        "price": "72",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -13119,7 +13119,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "80",
+        "sellPrice": "72",
         "buyPrice": "90"
       },
       {
@@ -13132,7 +13132,7 @@
         "materialCategory": "",
         "name": "風切矢",
         "csVisible": "TRUE",
-        "price": "55",
+        "price": "48",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -13158,7 +13158,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "55",
+        "sellPrice": "48",
         "buyPrice": "60"
       },
       {
@@ -13169,7 +13169,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "カラパスバルワーク",
-        "price": "1455",
+        "price": "1280",
         "rank": 2,
         "equipSlot": "右手/左手",
         "effect": "防御行動中に物属性ダメージを受けた場合、最終ダメージをさらに1点軽減する。",
@@ -13189,7 +13189,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "1455",
+        "sellPrice": "1280",
         "buyPrice": "1600",
         "updatedAt": "2026-08-11"
       },
@@ -13265,7 +13265,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "大盾",
-        "price": "210",
+        "price": "184",
         "rank": 1,
         "equipSlot": "右手/左手",
         "effect": "",
@@ -13286,7 +13286,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "210",
+        "sellPrice": "184",
         "buyPrice": "230"
       },
       {
@@ -13297,7 +13297,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "小盾",
-        "price": "90",
+        "price": "80",
         "rank": 1,
         "equipSlot": "右手/左手",
         "effect": "",
@@ -13318,7 +13318,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "90",
+        "sellPrice": "80",
         "buyPrice": "100"
       },
       {
@@ -13329,7 +13329,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "魔導盾",
-        "price": "310",
+        "price": "272",
         "rank": 1,
         "equipSlot": "右手/左手",
         "effect": "防御行動中に術式または異界由来の攻撃を受けた場合、最終ダメージをさらに2点軽減する。",
@@ -13350,7 +13350,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "310",
+        "sellPrice": "272",
         "buyPrice": "340"
       },
       {
@@ -13362,7 +13362,7 @@
         "materialCategory": "",
         "name": "旅人の矢筒",
         "csVisible": "TRUE",
-        "price": "165",
+        "price": "144",
         "rank": 2,
         "equipSlot": "矢筒",
         "quiverCapacity": 3,
@@ -13384,7 +13384,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "165",
+        "sellPrice": "144",
         "buyPrice": "180"
       },
       {
@@ -13396,7 +13396,7 @@
         "materialCategory": "",
         "name": "狩人の矢筒",
         "csVisible": "TRUE",
-        "price": "359",
+        "price": "288",
         "rank": 3,
         "equipSlot": "矢筒",
         "quiverCapacity": 4,
@@ -13418,7 +13418,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "359",
+        "sellPrice": "288",
         "buyPrice": "360"
       },
       {
@@ -13430,7 +13430,7 @@
         "materialCategory": "",
         "name": "簡素な矢筒",
         "csVisible": "TRUE",
-        "price": "90",
+        "price": "80",
         "rank": 1,
         "equipSlot": "矢筒",
         "quiverCapacity": 2,
@@ -13452,7 +13452,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "90",
+        "sellPrice": "80",
         "buyPrice": "100"
       },
       {
@@ -13653,7 +13653,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "白環の聖印",
-        "price": "1635",
+        "price": "1440",
         "rank": 1,
         "equipSlot": "装飾品",
         "maxStack": 1,
@@ -13677,7 +13677,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "1635",
+        "sellPrice": "1440",
         "buyPrice": "1800",
         "updatedAt": "2026-08-11"
       },
@@ -13912,7 +13912,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "薄鉄の護符",
-        "price": "225",
+        "price": "200",
         "rank": 1,
         "equipSlot": "装飾品",
         "effect": "各戦闘で1回、受ける最終ダメージを2点軽減する。",
@@ -13932,7 +13932,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "225",
+        "sellPrice": "200",
         "buyPrice": "250",
         "updatedAt": "2026-08-11"
       },
@@ -14135,7 +14135,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "蒼刻の魔印",
-        "price": "1635",
+        "price": "1440",
         "rank": 1,
         "equipSlot": "装飾品",
         "maxStack": 1,
@@ -14159,7 +14159,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "1635",
+        "sellPrice": "1440",
         "buyPrice": "1800",
         "updatedAt": "2026-08-11"
       },
@@ -14424,7 +14424,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ポーション",
-        "price": "120",
+        "price": "104",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 3,
@@ -14448,7 +14448,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "120",
+        "sellPrice": "104",
         "buyPrice": "130",
         "updatedAt": "2026-08-11"
       },
@@ -14460,7 +14460,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "上級ポーション",
-        "price": "315",
+        "price": "264",
         "rank": 2,
         "equipSlot": "所持品",
         "maxStack": 3,
@@ -14484,7 +14484,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "315",
+        "sellPrice": "264",
         "buyPrice": "330",
         "updatedAt": "2026-08-11"
       },
@@ -14496,7 +14496,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "上級魔力薬",
-        "price": "125",
+        "price": "112",
         "rank": 2,
         "equipSlot": "所持品",
         "maxStack": 3,
@@ -14520,7 +14520,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "125",
+        "sellPrice": "112",
         "buyPrice": "140",
         "updatedAt": "2026-08-11"
       },
@@ -14532,7 +14532,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "魔力薬",
-        "price": "55",
+        "price": "48",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 3,
@@ -14557,7 +14557,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "55",
+        "sellPrice": "48",
         "buyPrice": "60"
       },
       {
@@ -14675,7 +14675,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "小爆弾",
-        "price": "110",
+        "price": "96",
         "rank": 1,
         "equipSlot": "所持品",
         "power": "2D6",
@@ -14699,7 +14699,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "110",
+        "sellPrice": "96",
         "buyPrice": "120",
         "updatedAt": "2026-08-11"
       },
@@ -14956,7 +14956,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "俊足香",
-        "price": "55",
+        "price": "48",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 3,
@@ -14981,7 +14981,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "55",
+        "sellPrice": "48",
         "buyPrice": "60"
       },
       {
@@ -14992,7 +14992,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "硬化薬",
-        "price": "45",
+        "price": "40",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 3,
@@ -15016,7 +15016,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "45",
+        "sellPrice": "40",
         "buyPrice": "50",
         "updatedAt": "2026-08-11"
       },
@@ -15028,7 +15028,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "集中香",
-        "price": "55",
+        "price": "48",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 3,
@@ -15053,7 +15053,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "55",
+        "sellPrice": "48",
         "buyPrice": "60"
       },
       {
@@ -15064,7 +15064,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "浄化水",
-        "price": "160",
+        "price": "136",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 3,
@@ -15088,7 +15088,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "160",
+        "sellPrice": "136",
         "buyPrice": "170",
         "updatedAt": "2026-08-11"
       },
@@ -15101,7 +15101,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "醒香薬",
-        "price": "75",
+        "price": "64",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 3,
@@ -15125,7 +15125,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "75",
+        "sellPrice": "64",
         "buyPrice": "80"
       },
       {
@@ -15137,7 +15137,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "活性薬",
-        "price": "95",
+        "price": "83",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 3,
@@ -15161,7 +15161,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "95",
+        "sellPrice": "83",
         "buyPrice": "100"
       },
       {
@@ -15172,7 +15172,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "解毒薬",
-        "price": "35",
+        "price": "32",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 3,
@@ -15197,7 +15197,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "35",
+        "sellPrice": "32",
         "buyPrice": "40"
       },
       {
@@ -15291,7 +15291,7 @@
         "materialCategory": "",
         "name": "術式鑑定具",
         "csVisible": "TRUE",
-        "price": "1365",
+        "price": "1200",
         "rank": 2,
         "equipSlot": "所持品",
         "maxStack": "1",
@@ -15313,7 +15313,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "1365",
+        "sellPrice": "1200",
         "buyPrice": "1500",
         "updatedAt": "2026-08-11"
       },
@@ -15339,7 +15339,7 @@
         "itemType": "道具",
         "itemCategory": "細工",
         "name": "仕掛け工具箱",
-        "price": "410",
+        "price": "360",
         "rank": 6,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -15361,7 +15361,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "enabled": "FALSE",
-        "sellPrice": "410",
+        "sellPrice": "360",
         "buyPrice": "450"
       },
       {
@@ -15386,7 +15386,7 @@
         "itemType": "道具",
         "itemCategory": "細工",
         "name": "携帯細工具",
-        "price": "200",
+        "price": "176",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -15408,7 +15408,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "enabled": "TRUE",
-        "sellPrice": "200",
+        "sellPrice": "176",
         "buyPrice": "220"
       },
       {
@@ -15433,7 +15433,7 @@
         "itemType": "道具",
         "itemCategory": "細工",
         "name": "精密仕掛け具",
-        "price": "655",
+        "price": "576",
         "rank": 9,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -15455,7 +15455,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "enabled": "FALSE",
-        "sellPrice": "655",
+        "sellPrice": "576",
         "buyPrice": "720"
       },
       {
@@ -15480,7 +15480,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "噛み込み罠",
-        "price": "200",
+        "price": "176",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 2,
@@ -15501,7 +15501,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "200",
+        "sellPrice": "176",
         "buyPrice": "220"
       },
       {
@@ -15526,7 +15526,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "炸裂杭",
-        "price": "565",
+        "price": "496",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -15547,7 +15547,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "565",
+        "sellPrice": "496",
         "buyPrice": "620"
       },
       {
@@ -15572,7 +15572,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "煙幕仕掛け",
-        "price": "255",
+        "price": "224",
         "rank": 2,
         "equipSlot": "所持品",
         "maxStack": 2,
@@ -15593,7 +15593,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "255",
+        "sellPrice": "224",
         "buyPrice": "280"
       },
       {
@@ -15618,7 +15618,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "足絡めワイヤー",
-        "price": "125",
+        "price": "112",
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 2,
@@ -15639,7 +15639,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "125",
+        "sellPrice": "112",
         "buyPrice": "140"
       },
       {
@@ -15664,7 +15664,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "雷糸罠",
-        "price": "380",
+        "price": "336",
         "rank": 2,
         "equipSlot": "所持品",
         "maxStack": 2,
@@ -15685,7 +15685,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "380",
+        "sellPrice": "336",
         "buyPrice": "420"
       },
       {
@@ -15710,7 +15710,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "胞子煙筒",
-        "price": "310",
+        "price": "272",
         "rank": 2,
         "equipSlot": "所持品",
         "maxStack": 2,
@@ -15732,7 +15732,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "310",
+        "sellPrice": "272",
         "buyPrice": "340"
       },
       {
@@ -15757,7 +15757,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "樹脂捕縛罠",
-        "price": "290",
+        "price": "256",
         "rank": 2,
         "equipSlot": "所持品",
         "maxStack": 2,
@@ -15779,7 +15779,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "290",
+        "sellPrice": "256",
         "buyPrice": "320"
       },
       {
@@ -15804,7 +15804,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "腐蝕泥罠",
-        "price": "345",
+        "price": "304",
         "rank": 2,
         "equipSlot": "所持品",
         "maxStack": 2,
@@ -15826,7 +15826,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "345",
+        "sellPrice": "304",
         "buyPrice": "380"
       },
       {
@@ -15851,7 +15851,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "霧針散布器",
-        "price": "420",
+        "price": "368",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -15873,7 +15873,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "420",
+        "sellPrice": "368",
         "buyPrice": "460"
       },
       {
@@ -15898,7 +15898,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "鏡返し罠",
-        "price": "455",
+        "price": "400",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -15920,7 +15920,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "455",
+        "sellPrice": "400",
         "buyPrice": "500"
       },
       {
@@ -15945,7 +15945,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "裂界刃線",
-        "price": "590",
+        "price": "520",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -15967,7 +15967,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "590",
+        "sellPrice": "520",
         "buyPrice": "650"
       },
       {
@@ -15992,7 +15992,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "磁着拘束具",
-        "price": "559",
+        "price": "448",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -16014,7 +16014,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "559",
+        "sellPrice": "448",
         "buyPrice": "560"
       },
       {
@@ -16039,7 +16039,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "鉱震杭",
-        "price": "655",
+        "price": "576",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -16061,7 +16061,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "655",
+        "sellPrice": "576",
         "buyPrice": "720"
       },
       {
@@ -16086,7 +16086,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "風圧跳弾罠",
-        "price": "699",
+        "price": "560",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -16108,7 +16108,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "699",
+        "sellPrice": "560",
         "buyPrice": "700"
       },
       {
@@ -16133,7 +16133,7 @@
         "itemType": "道具",
         "itemCategory": "罠",
         "name": "雷導捕縛網",
-        "price": "745",
+        "price": "624",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -16155,7 +16155,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "745",
+        "sellPrice": "624",
         "buyPrice": "780"
       },
       {
@@ -16167,7 +16167,7 @@
         "materialCategory": "",
         "name": "旅薬師の乳鉢具",
         "csVisible": true,
-        "price": "110",
+        "price": "96",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -16190,7 +16190,7 @@
         "equipmentUpgradeTarget": "",
         "enabled": "TRUE",
         "updatedAt": "2026-08-11",
-        "sellPrice": "110",
+        "sellPrice": "96",
         "buyPrice": "120"
       },
       {
@@ -16524,7 +16524,7 @@
         "materialCategory": "",
         "name": "焼入れ金床具",
         "csVisible": true,
-        "price": "380",
+        "price": "336",
         "rank": 6,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -16547,7 +16547,7 @@
         "equipmentUpgradeTarget": "",
         "enabled": "TRUE",
         "updatedAt": "2026-08-11",
-        "sellPrice": "380",
+        "sellPrice": "336",
         "buyPrice": "420"
       },
       {
@@ -16643,7 +16643,7 @@
         "materialCategory": "",
         "name": "野鍛冶の槌箱",
         "csVisible": true,
-        "price": "135",
+        "price": "120",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 1,
@@ -16666,7 +16666,7 @@
         "equipmentUpgradeTarget": "",
         "enabled": "TRUE",
         "updatedAt": "2026-08-11",
-        "sellPrice": "135",
+        "sellPrice": "120",
         "buyPrice": "150"
       },
       {
@@ -16857,7 +16857,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "鉄紐のベスト",
-        "price": "400",
+        "price": "352",
         "rank": 1,
         "equipSlot": "鎧",
         "effect": "",
@@ -16878,7 +16878,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "400",
+        "sellPrice": "352",
         "buyPrice": "440"
       },
       {
@@ -16920,7 +16920,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "祈り布のストール",
-        "price": "655",
+        "price": "576",
         "rank": 1,
         "equipSlot": "鎧",
         "effect": "各戦闘で最初に使用する祈祷の消費MPを1点軽減する（最低1）。",
@@ -16940,7 +16940,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "655",
+        "sellPrice": "576",
         "buyPrice": "720",
         "updatedAt": "2026-08-11"
       },
@@ -16984,7 +16984,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ラフィンウィンドコート",
-        "price": "1320",
+        "price": "1160",
         "rank": 2,
         "equipSlot": "鎧",
         "effect": "各戦闘で最初に後退した直後、自身が次に攻撃を受ける際の回避+1。攻撃の解決後に解除する。",
@@ -17004,7 +17004,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "1320",
+        "sellPrice": "1160",
         "buyPrice": "1450",
         "updatedAt": "2026-08-11"
       },
@@ -17016,7 +17016,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "旅風のジャケット",
-        "price": "345",
+        "price": "304",
         "rank": 1,
         "equipSlot": "鎧",
         "effect": "",
@@ -17037,7 +17037,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "345",
+        "sellPrice": "304",
         "buyPrice": "380"
       },
       {
@@ -17144,7 +17144,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "鋲打ちの胴衣",
-        "price": "525",
+        "price": "464",
         "rank": 1,
         "equipSlot": "鎧",
         "effect": "",
@@ -17165,7 +17165,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "525",
+        "sellPrice": "464",
         "buyPrice": "580"
       },
       {
@@ -17271,7 +17271,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "星糸のケープ",
-        "price": "425",
+        "price": "376",
         "rank": 1,
         "equipSlot": "鎧",
         "effect": "各戦闘で最初に使用する魔法術式の消費MPを1点軽減する（最低1）。",
@@ -17291,7 +17291,7 @@
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "425",
+        "sellPrice": "376",
         "buyPrice": "470",
         "updatedAt": "2026-08-11"
       },
@@ -20138,7 +20138,7 @@
         "materialType": "特殊素材",
         "materialCategory": "術式素材",
         "name": "祈祷紙",
-        "price": "180",
+        "price": "160",
         "rank": 2,
         "effect": "祈祷スクロールの術式化に使用する素材。集中技能による術式化の際に消費する。",
         "source": "骨董屋（常設） / 薬屋（素材加工）",
@@ -20160,7 +20160,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "180",
+        "sellPrice": "160",
         "buyPrice": "200"
       },
       {
@@ -20415,7 +20415,7 @@
         "materialCategory": "魔導加工",
         "name": "武装融和剤",
         "csVisible": "TRUE",
-        "price": "90",
+        "price": "80",
         "rank": 3,
         "toolRank": "",
         "equipSlot": "",
@@ -20456,7 +20456,7 @@
         "processingResultCount": 2,
         "processingDifficulty": "11",
         "processingFee": 40,
-        "sellPrice": "90",
+        "sellPrice": "80",
         "buyPrice": "100"
       },
       {
@@ -22221,7 +22221,7 @@
         "materialType": "特殊素材",
         "materialCategory": "術式素材",
         "name": "魔導インク",
-        "price": "180",
+        "price": "160",
         "rank": 2,
         "effect": "魔法スクロールの術式化に使用する素材。集中技能による術式化の際に消費する。",
         "source": "骨董屋（常設） / 薬屋（素材加工）",
@@ -22243,7 +22243,7 @@
         "equipmentUpgradeSlotCost": "",
         "equipmentUpgradeTarget": "",
         "updatedAt": "2026-08-11",
-        "sellPrice": "180",
+        "sellPrice": "160",
         "buyPrice": "200"
       },
       {
@@ -24119,7 +24119,7 @@
         "materialCategory": "",
         "name": "防風香油",
         "csVisible": "TRUE",
-        "price": "99",
+        "price": "80",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 5,
@@ -24141,7 +24141,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "99",
+        "sellPrice": "80",
         "buyPrice": "100"
       },
       {
@@ -24154,7 +24154,7 @@
         "materialCategory": "",
         "name": "避雷樹脂",
         "csVisible": "TRUE",
-        "price": "104",
+        "price": "84",
         "rank": 3,
         "equipSlot": "所持品",
         "maxStack": 5,
@@ -24176,7 +24176,7 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-11",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "104",
+        "sellPrice": "84",
         "buyPrice": "105"
       },
       {
@@ -24187,7 +24187,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゼファースティング",
-        "price": 2875,
+        "price": 2532,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24218,7 +24218,7 @@
         "branchClass": "通常派生",
         "branchType": "風翼",
         "branchDisplayOrder": 5,
-        "sellPrice": 2875,
+        "sellPrice": 2532,
         "buyPrice": 3165
       },
       {
@@ -24229,7 +24229,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトニードル",
-        "price": 3075,
+        "price": 2708,
         "rank": 4,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24260,7 +24260,7 @@
         "branchClass": "通常派生",
         "branchType": "雷針",
         "branchDisplayOrder": 6,
-        "sellPrice": 3075,
+        "sellPrice": 2708,
         "buyPrice": 3385
       },
       {
@@ -24271,7 +24271,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "テンペストエッジ",
-        "price": 5830,
+        "price": 5132,
         "rank": 5,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24302,7 +24302,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 15,
-        "sellPrice": 5830,
+        "sellPrice": 5132,
         "buyPrice": 6415
       },
       {
@@ -24313,7 +24313,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゼファーセイバー",
-        "price": 1730,
+        "price": 1524,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24344,7 +24344,7 @@
         "branchClass": "通常派生",
         "branchType": "風翼",
         "branchDisplayOrder": 2,
-        "sellPrice": 1730,
+        "sellPrice": 1524,
         "buyPrice": 1905
       },
       {
@@ -24355,7 +24355,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトセイバー",
-        "price": 1925,
+        "price": 1696,
         "rank": 4,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24386,7 +24386,7 @@
         "branchClass": "通常派生",
         "branchType": "雷刃",
         "branchDisplayOrder": 1,
-        "sellPrice": 1925,
+        "sellPrice": 1696,
         "buyPrice": 2120
       },
       {
@@ -24397,7 +24397,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "テンペストレガリア",
-        "price": 4455,
+        "price": 3924,
         "rank": 5,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24428,7 +24428,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 12,
-        "sellPrice": 4455,
+        "sellPrice": 3924,
         "buyPrice": 4905
       },
       {
@@ -24439,7 +24439,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゲイルハチェット",
-        "price": 3240,
+        "price": 2852,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24470,7 +24470,7 @@
         "branchClass": "通常派生",
         "branchType": "疾駆",
         "branchDisplayOrder": 11,
-        "sellPrice": 3240,
+        "sellPrice": 2852,
         "buyPrice": 3565
       },
       {
@@ -24481,7 +24481,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトクリーヴァ",
-        "price": 2455,
+        "price": 2164,
         "rank": 4,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24512,7 +24512,7 @@
         "branchClass": "通常派生",
         "branchType": "雷牙",
         "branchDisplayOrder": 7,
-        "sellPrice": 2455,
+        "sellPrice": 2164,
         "buyPrice": 2705
       },
       {
@@ -24523,7 +24523,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ストームリーヴァ",
-        "price": 6265,
+        "price": 5516,
         "rank": 5,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24554,7 +24554,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 13,
-        "sellPrice": 6265,
+        "sellPrice": 5516,
         "buyPrice": 6895
       },
       {
@@ -24565,7 +24565,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゲイルメイス",
-        "price": 2580,
+        "price": 2272,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24596,7 +24596,7 @@
         "branchClass": "通常派生",
         "branchType": "風翼",
         "branchDisplayOrder": 11,
-        "sellPrice": 2580,
+        "sellPrice": 2272,
         "buyPrice": 2840
       },
       {
@@ -24607,7 +24607,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "サンダーマレット",
-        "price": 2780,
+        "price": 2448,
         "rank": 4,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24638,7 +24638,7 @@
         "branchClass": "通常派生",
         "branchType": "雷砕",
         "branchDisplayOrder": 8,
-        "sellPrice": 2780,
+        "sellPrice": 2448,
         "buyPrice": 3060
       },
       {
@@ -24649,7 +24649,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "テンペストクラッシャー",
-        "price": 5475,
+        "price": 4820,
         "rank": 5,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24680,7 +24680,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 15,
-        "sellPrice": 5475,
+        "sellPrice": 4820,
         "buyPrice": 6025
       },
       {
@@ -24691,7 +24691,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゼファースピア",
-        "price": 2895,
+        "price": 2548,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24722,7 +24722,7 @@
         "branchClass": "通常派生",
         "branchType": "妨害",
         "branchDisplayOrder": 13,
-        "sellPrice": 2895,
+        "sellPrice": 2548,
         "buyPrice": 3185
       },
       {
@@ -24733,7 +24733,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトランサー",
-        "price": 3090,
+        "price": 2720,
         "rank": 4,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24764,7 +24764,7 @@
         "branchClass": "通常派生",
         "branchType": "雷制",
         "branchDisplayOrder": 14,
-        "sellPrice": 3090,
+        "sellPrice": 2720,
         "buyPrice": 3400
       },
       {
@@ -24775,7 +24775,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ストームパルチザン",
-        "price": 5850,
+        "price": 5152,
         "rank": 5,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24806,7 +24806,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 15,
-        "sellPrice": 5850,
+        "sellPrice": 5152,
         "buyPrice": 6440
       },
       {
@@ -24817,7 +24817,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "エアリアルロッド",
-        "price": 1765,
+        "price": 1556,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24848,7 +24848,7 @@
         "branchClass": "通常派生",
         "branchType": "風導",
         "branchDisplayOrder": 3,
-        "sellPrice": 1765,
+        "sellPrice": 1556,
         "buyPrice": 1945
       },
       {
@@ -24859,7 +24859,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルテージスタッフ",
-        "price": 1870,
+        "price": 1648,
         "rank": 4,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24890,7 +24890,7 @@
         "branchClass": "通常派生",
         "branchType": "雷導",
         "branchDisplayOrder": 2,
-        "sellPrice": 1870,
+        "sellPrice": 1648,
         "buyPrice": 2060
       },
       {
@@ -24901,7 +24901,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "テンペストセプター",
-        "price": 4495,
+        "price": 3956,
         "rank": 5,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -24932,7 +24932,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 4,
-        "sellPrice": 4495,
+        "sellPrice": 3956,
         "buyPrice": 4945
       },
       {
@@ -24943,7 +24943,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゼファーアーチ",
-        "price": 1980,
+        "price": 1744,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -24974,7 +24974,7 @@
         "branchClass": "通常派生",
         "branchType": "風射",
         "branchDisplayOrder": 11,
-        "sellPrice": 1980,
+        "sellPrice": 1744,
         "buyPrice": 2180
       },
       {
@@ -24985,7 +24985,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトハント",
-        "price": 2180,
+        "price": 1920,
         "rank": 4,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -25016,7 +25016,7 @@
         "branchClass": "通常派生",
         "branchType": "雷射",
         "branchDisplayOrder": 13,
-        "sellPrice": 2180,
+        "sellPrice": 1920,
         "buyPrice": 2400
       },
       {
@@ -25027,7 +25027,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "テンペストストリング",
-        "price": 4755,
+        "price": 4188,
         "rank": 5,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -25058,7 +25058,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 12,
-        "sellPrice": 4755,
+        "sellPrice": 4188,
         "buyPrice": 5235
       },
       {
@@ -25069,7 +25069,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゲイルボルター",
-        "price": 2235,
+        "price": 1968,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -25100,7 +25100,7 @@
         "branchClass": "通常派生",
         "branchType": "風射",
         "branchDisplayOrder": 4,
-        "sellPrice": 2235,
+        "sellPrice": 1968,
         "buyPrice": 2460
       },
       {
@@ -25111,7 +25111,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトアーバレスト",
-        "price": 2430,
+        "price": 2140,
         "rank": 4,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -25142,7 +25142,7 @@
         "branchClass": "通常派生",
         "branchType": "雷射",
         "branchDisplayOrder": 8,
-        "sellPrice": 2430,
+        "sellPrice": 2140,
         "buyPrice": 2675
       },
       {
@@ -25153,7 +25153,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "テンペストピアサー",
-        "price": 5060,
+        "price": 4456,
         "rank": 5,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -25184,7 +25184,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 5,
-        "sellPrice": 5060,
+        "sellPrice": 4456,
         "buyPrice": 5570
       },
       {
@@ -25195,7 +25195,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゼファーバリスタ",
-        "price": 2570,
+        "price": 2264,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -25226,7 +25226,7 @@
         "branchClass": "通常派生",
         "branchType": "風砲",
         "branchDisplayOrder": 7,
-        "sellPrice": 2570,
+        "sellPrice": 2264,
         "buyPrice": 2830
       },
       {
@@ -25237,7 +25237,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "サンダーカノン",
-        "price": 2835,
+        "price": 2496,
         "rank": 4,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -25268,7 +25268,7 @@
         "branchClass": "通常派生",
         "branchType": "雷砲",
         "branchDisplayOrder": 8,
-        "sellPrice": 2835,
+        "sellPrice": 2496,
         "buyPrice": 3120
       },
       {
@@ -25279,7 +25279,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ストームスコーピオン",
-        "price": 5460,
+        "price": 4808,
         "rank": 5,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -25310,7 +25310,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 10,
-        "sellPrice": 5460,
+        "sellPrice": 4808,
         "buyPrice": 6010
       },
       {
@@ -25321,7 +25321,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゲイルパイク",
-        "price": 2375,
+        "price": 2092,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25352,7 +25352,7 @@
         "branchClass": "通常派生",
         "branchType": "守護",
         "branchDisplayOrder": 5,
-        "sellPrice": 2375,
+        "sellPrice": 2092,
         "buyPrice": 2615
       },
       {
@@ -25363,7 +25363,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトランス",
-        "price": 2635,
+        "price": 2320,
         "rank": 4,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25394,7 +25394,7 @@
         "branchClass": "通常派生",
         "branchType": "雷衛",
         "branchDisplayOrder": 11,
-        "sellPrice": 2635,
+        "sellPrice": 2320,
         "buyPrice": 2900
       },
       {
@@ -25405,7 +25405,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "テンペストランサー",
-        "price": 5230,
+        "price": 4604,
         "rank": 5,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25436,7 +25436,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 14,
-        "sellPrice": 5230,
+        "sellPrice": 4604,
         "buyPrice": 5755
       },
       {
@@ -25447,7 +25447,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゼファークレイモア",
-        "price": 2295,
+        "price": 2020,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25478,7 +25478,7 @@
         "branchClass": "通常派生",
         "branchType": "風断",
         "branchDisplayOrder": 13,
-        "sellPrice": 2295,
+        "sellPrice": 2020,
         "buyPrice": 2525
       },
       {
@@ -25489,7 +25489,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトブレイカー",
-        "price": 2560,
+        "price": 2256,
         "rank": 4,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25520,7 +25520,7 @@
         "branchClass": "通常派生",
         "branchType": "雷断",
         "branchDisplayOrder": 12,
-        "sellPrice": 2560,
+        "sellPrice": 2256,
         "buyPrice": 2820
       },
       {
@@ -25531,7 +25531,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ストームクレイモア",
-        "price": 5130,
+        "price": 4516,
         "rank": 5,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25562,7 +25562,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 14,
-        "sellPrice": 5130,
+        "sellPrice": 4516,
         "buyPrice": 5645
       },
       {
@@ -25573,7 +25573,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゲイルモール",
-        "price": 2450,
+        "price": 2156,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25604,7 +25604,7 @@
         "branchClass": "通常派生",
         "branchType": "風翼",
         "branchDisplayOrder": 4,
-        "sellPrice": 2450,
+        "sellPrice": 2156,
         "buyPrice": 2695
       },
       {
@@ -25615,7 +25615,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトマウル",
-        "price": 2715,
+        "price": 2392,
         "rank": 4,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25646,7 +25646,7 @@
         "branchClass": "通常派生",
         "branchType": "雷砕",
         "branchDisplayOrder": 12,
-        "sellPrice": 2715,
+        "sellPrice": 2392,
         "buyPrice": 2990
       },
       {
@@ -25657,7 +25657,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ストームブレイカー",
-        "price": 5320,
+        "price": 4684,
         "rank": 5,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25688,7 +25688,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 9,
-        "sellPrice": 5320,
+        "sellPrice": 4684,
         "buyPrice": 5855
       },
       {
@@ -25699,7 +25699,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゼファーサイス",
-        "price": 3620,
+        "price": 3188,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25732,7 +25732,7 @@
         "branchClass": "通常派生",
         "branchType": "風翼",
         "branchDisplayOrder": 3,
-        "sellPrice": 3620,
+        "sellPrice": 3188,
         "buyPrice": 3985
       },
       {
@@ -25743,7 +25743,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトリーパー",
-        "price": 2565,
+        "price": 2260,
         "rank": 4,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25776,7 +25776,7 @@
         "branchClass": "通常派生",
         "branchType": "雷刃",
         "branchDisplayOrder": 7,
-        "sellPrice": 2565,
+        "sellPrice": 2260,
         "buyPrice": 2825
       },
       {
@@ -25787,7 +25787,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "テンペストサイズ",
-        "price": 6720,
+        "price": 5916,
         "rank": 5,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25820,7 +25820,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 6,
-        "sellPrice": 6720,
+        "sellPrice": 5916,
         "buyPrice": 7395
       },
       {
@@ -25831,7 +25831,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ゼファーナックル",
-        "price": 3170,
+        "price": 2792,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25864,7 +25864,7 @@
         "branchClass": "通常派生",
         "branchType": "反撃",
         "branchDisplayOrder": 13,
-        "sellPrice": 3170,
+        "sellPrice": 2792,
         "buyPrice": 3490
       },
       {
@@ -25875,7 +25875,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトブレイサー",
-        "price": 2530,
+        "price": 2228,
         "rank": 4,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25908,7 +25908,7 @@
         "branchClass": "通常派生",
         "branchType": "雷制",
         "branchDisplayOrder": 10,
-        "sellPrice": 2530,
+        "sellPrice": 2228,
         "buyPrice": 2785
       },
       {
@@ -25919,7 +25919,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ストームナックル",
-        "price": 6180,
+        "price": 5440,
         "rank": 5,
         "equipSlot": "両手",
         "skill": "近接",
@@ -25952,7 +25952,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 14,
-        "sellPrice": 6180,
+        "sellPrice": 5440,
         "buyPrice": 6800
       },
       {
@@ -25977,7 +25977,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "ゲイルウィップ",
-        "price": 3080,
+        "price": 2712,
         "rank": 3,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -26002,7 +26002,7 @@
         "branchClass": "通常派生",
         "branchType": "荊棘",
         "branchDisplayOrder": 9,
-        "sellPrice": 3080,
+        "sellPrice": 2712,
         "buyPrice": 3390
       },
       {
@@ -26027,7 +26027,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "ボルトラッシュ",
-        "price": 2365,
+        "price": 2084,
         "rank": 4,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -26052,7 +26052,7 @@
         "branchClass": "通常派生",
         "branchType": "雷糸",
         "branchDisplayOrder": 8,
-        "sellPrice": 2365,
+        "sellPrice": 2084,
         "buyPrice": 2605
       },
       {
@@ -26077,7 +26077,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "テンペストアンカー",
-        "price": 6075,
+        "price": 5348,
         "rank": 5,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -26102,7 +26102,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 12,
-        "sellPrice": 6075,
+        "sellPrice": 5348,
         "buyPrice": 6685
       },
       {
@@ -26113,7 +26113,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "エアリアルコーデックス",
-        "price": 2015,
+        "price": 1776,
         "rank": 3,
         "equipSlot": "右手/左手",
         "effect": "風属性の魔法術式を使用する際、魔法+1。",
@@ -26145,7 +26145,7 @@
         "branchClass": "通常派生",
         "branchType": "風導",
         "branchDisplayOrder": 1,
-        "sellPrice": 2015,
+        "sellPrice": 1776,
         "buyPrice": 2220
       },
       {
@@ -26156,7 +26156,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトグリモア",
-        "price": 2125,
+        "price": 1872,
         "rank": 4,
         "equipSlot": "右手/左手",
         "effect": "雷属性の魔法術式で与えるダメージ+2。その術式では対象の防御値を1点まで無視する。",
@@ -26188,7 +26188,7 @@
         "branchClass": "通常派生",
         "branchType": "雷導",
         "branchDisplayOrder": 2,
-        "sellPrice": 2125,
+        "sellPrice": 1872,
         "buyPrice": 2340
       },
       {
@@ -26199,7 +26199,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "テンペストコーデックス",
-        "price": 4795,
+        "price": 4220,
         "rank": 5,
         "equipSlot": "右手/左手",
         "effect": "風属性の魔法術式を使用する際、魔法+1。1枠目にセットした風属性または雷属性の魔法術式は、消費MP-1（最低1）、ダメージまたはHP回復量+1。",
@@ -26231,7 +26231,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 6,
-        "sellPrice": 4795,
+        "sellPrice": 4220,
         "buyPrice": 5275
       },
       {
@@ -26242,7 +26242,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "エアリアルミサル",
-        "price": 3115,
+        "price": 2744,
         "rank": 3,
         "equipSlot": "右手/左手",
         "effect": "敵を対象とする祈祷を使用する際、祈祷+1。戦闘中1回、その祈祷に成功した時、対象が次に行う命中－1。攻撃の解決後に解除し、重複しない。祈祷の属性は光のまま変更しない。",
@@ -26274,7 +26274,7 @@
         "branchClass": "通常派生",
         "branchType": "風祷",
         "branchDisplayOrder": 13,
-        "sellPrice": 3115,
+        "sellPrice": 2744,
         "buyPrice": 3430
       },
       {
@@ -26285,7 +26285,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ボルトリタニー",
-        "price": 3220,
+        "price": 2836,
         "rank": 4,
         "equipSlot": "右手/左手",
         "effect": "敵を対象とする祈祷を使用する際、祈祷+1。攻撃祈祷で与えるダメージ+1。その祈祷では対象の防御値を1点まで無視する。祈祷の属性は光のまま変更しない。",
@@ -26317,7 +26317,7 @@
         "branchClass": "通常派生",
         "branchType": "雷祷",
         "branchDisplayOrder": 12,
-        "sellPrice": 3220,
+        "sellPrice": 2836,
         "buyPrice": 3545
       },
       {
@@ -26328,7 +26328,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "テンペストミサル",
-        "price": 6115,
+        "price": 5384,
         "rank": 5,
         "equipSlot": "右手/左手",
         "effect": "敵を対象とする祈祷を使用する際、祈祷+1。戦闘中1回、その祈祷に成功した時、対象の次の攻撃の命中－2。攻撃後に解除し、重複しない。2枠目にセットした祈祷によるダメージまたはHP回復量+1。祈祷の属性は光のまま変更しない。",
@@ -26360,7 +26360,7 @@
         "branchClass": "ボス派生",
         "branchType": "嵐翼",
         "branchDisplayOrder": 14,
-        "sellPrice": 6115,
+        "sellPrice": 5384,
         "buyPrice": 6730
       },
       {
@@ -26406,7 +26406,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ハーブロッド",
-        "price": 750,
+        "price": 664,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -26439,7 +26439,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 5,
-        "sellPrice": 750,
+        "sellPrice": 664,
         "buyPrice": 830
       },
       {
@@ -26450,7 +26450,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ブランブルサイズ",
-        "price": 900,
+        "price": 796,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -26485,7 +26485,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 11,
-        "sellPrice": 900,
+        "sellPrice": 796,
         "buyPrice": 995
       },
       {
@@ -26496,7 +26496,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リーフナイフ",
-        "price": 845,
+        "price": 744,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -26529,7 +26529,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 7,
-        "sellPrice": 845,
+        "sellPrice": 744,
         "buyPrice": 930
       },
       {
@@ -26540,7 +26540,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ビーストククリ",
-        "price": 1115,
+        "price": 984,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -26573,7 +26573,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 3,
-        "sellPrice": 1115,
+        "sellPrice": 984,
         "buyPrice": 1230
       },
       {
@@ -26584,7 +26584,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "バークセイバー",
-        "price": 1265,
+        "price": 1116,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -26617,7 +26617,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 3,
-        "sellPrice": 1265,
+        "sellPrice": 1116,
         "buyPrice": 1395
       },
       {
@@ -26628,7 +26628,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "モスハチェット",
-        "price": 1330,
+        "price": 1172,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -26661,7 +26661,7 @@
         "branchClass": "通常派生",
         "branchType": "疾駆",
         "branchDisplayOrder": 11,
-        "sellPrice": 1330,
+        "sellPrice": 1172,
         "buyPrice": 1465
       },
       {
@@ -26672,7 +26672,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ルートメイス",
-        "price": 855,
+        "price": 756,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -26705,7 +26705,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 10,
-        "sellPrice": 855,
+        "sellPrice": 756,
         "buyPrice": 945
       },
       {
@@ -26716,7 +26716,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ビーストマレット",
-        "price": 870,
+        "price": 768,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -26749,7 +26749,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 5,
-        "sellPrice": 870,
+        "sellPrice": 768,
         "buyPrice": 960
       },
       {
@@ -26760,7 +26760,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ブランチスピア",
-        "price": 895,
+        "price": 788,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -26793,7 +26793,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 8,
-        "sellPrice": 895,
+        "sellPrice": 788,
         "buyPrice": 985
       },
       {
@@ -26804,7 +26804,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フェザージャベリン",
-        "price": 1130,
+        "price": 996,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -26837,7 +26837,7 @@
         "branchClass": "通常派生",
         "branchType": "妨害",
         "branchDisplayOrder": 13,
-        "sellPrice": 1130,
+        "sellPrice": 996,
         "buyPrice": 1245
       },
       {
@@ -26848,7 +26848,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "グロウスタッフ",
-        "price": 2105,
+        "price": 1856,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -26881,7 +26881,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 5,
-        "sellPrice": 2105,
+        "sellPrice": 1856,
         "buyPrice": 2320
       },
       {
@@ -26892,7 +26892,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ルートボウ",
-        "price": 1055,
+        "price": 932,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -26925,7 +26925,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 8,
-        "sellPrice": 1055,
+        "sellPrice": 932,
         "buyPrice": 1165
       },
       {
@@ -26936,7 +26936,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "バークアーバレスト",
-        "price": 930,
+        "price": 820,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -26969,7 +26969,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 2,
-        "sellPrice": 930,
+        "sellPrice": 820,
         "buyPrice": 1025
       },
       {
@@ -26980,7 +26980,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ティンバーバリスタ",
-        "price": 1120,
+        "price": 988,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -27013,7 +27013,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 1,
-        "sellPrice": 1120,
+        "sellPrice": 988,
         "buyPrice": 1235
       },
       {
@@ -27024,7 +27024,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "モスカノン",
-        "price": 1130,
+        "price": 996,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -27057,7 +27057,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 11,
-        "sellPrice": 1130,
+        "sellPrice": 996,
         "buyPrice": 1245
       },
       {
@@ -27068,7 +27068,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ブランチパイク",
-        "price": 945,
+        "price": 832,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -27101,7 +27101,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 1,
-        "sellPrice": 945,
+        "sellPrice": 832,
         "buyPrice": 1040
       },
       {
@@ -27112,7 +27112,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "バークグレート",
-        "price": 945,
+        "price": 832,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -27145,7 +27145,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 1,
-        "sellPrice": 945,
+        "sellPrice": 832,
         "buyPrice": 1040
       },
       {
@@ -27156,7 +27156,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ヴァインクレイモア",
-        "price": 1400,
+        "price": 1236,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -27189,7 +27189,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 2,
-        "sellPrice": 1400,
+        "sellPrice": 1236,
         "buyPrice": 1545
       },
       {
@@ -27200,7 +27200,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ルートモール",
-        "price": 995,
+        "price": 876,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -27233,7 +27233,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 6,
-        "sellPrice": 995,
+        "sellPrice": 876,
         "buyPrice": 1095
       },
       {
@@ -27244,7 +27244,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "モスブレイカー",
-        "price": 1005,
+        "price": 888,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -27277,7 +27277,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 2,
-        "sellPrice": 1005,
+        "sellPrice": 888,
         "buyPrice": 1110
       },
       {
@@ -27288,7 +27288,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ブライアリーパー",
-        "price": 2465,
+        "price": 2172,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -27323,7 +27323,7 @@
         "branchClass": "通常派生",
         "branchType": "菌核",
         "branchDisplayOrder": 13,
-        "sellPrice": 2465,
+        "sellPrice": 2172,
         "buyPrice": 2715
       },
       {
@@ -27334,7 +27334,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ビーストナックル",
-        "price": 960,
+        "price": 848,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -27369,7 +27369,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 5,
-        "sellPrice": 960,
+        "sellPrice": 848,
         "buyPrice": 1060
       },
       {
@@ -27380,7 +27380,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ルートブレイサー",
-        "price": 1275,
+        "price": 1124,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -27415,7 +27415,7 @@
         "branchClass": "通常派生",
         "branchType": "反撃",
         "branchDisplayOrder": 13,
-        "sellPrice": 1275,
+        "sellPrice": 1124,
         "buyPrice": 1405
       },
       {
@@ -27440,7 +27440,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "ブランチラッシュ",
-        "price": 1285,
+        "price": 1132,
         "rank": 2,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -27467,7 +27467,7 @@
         "branchClass": "通常派生",
         "branchType": "荊棘",
         "branchDisplayOrder": 9,
-        "sellPrice": 1285,
+        "sellPrice": 1132,
         "buyPrice": 1415
       },
       {
@@ -27478,7 +27478,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フォーカスコーデックス",
-        "price": 1965,
+        "price": 1732,
         "rank": 2,
         "equipSlot": "右手/左手",
         "effect": "身体・精神・状態を対象とする魔法術式を使用する際、魔法+1。戦闘中2回、その魔法術式の消費MPを1点軽減する（最低1）。",
@@ -27512,7 +27512,7 @@
         "branchClass": "通常派生",
         "branchType": "菌核",
         "branchDisplayOrder": 11,
-        "sellPrice": 1965,
+        "sellPrice": 1732,
         "buyPrice": 2165
       },
       {
@@ -27523,7 +27523,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "グロウミサル",
-        "price": 1770,
+        "price": 1560,
         "rank": 2,
         "equipSlot": "右手/左手",
         "effect": "祈祷によるHP回復量+1。対象の現在HPが最大HPの半分以下の場合、さらにHP回復量+1。",
@@ -27557,7 +27557,7 @@
         "branchClass": "通常派生",
         "branchType": "植生",
         "branchDisplayOrder": 7,
-        "sellPrice": 1770,
+        "sellPrice": 1560,
         "buyPrice": 1950
       },
       {
@@ -27568,7 +27568,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ビーストリタニー",
-        "price": 1215,
+        "price": 1072,
         "rank": 2,
         "equipSlot": "右手/左手",
         "effect": "敵を対象とする祈祷を使用する際、祈祷+1。",
@@ -27602,7 +27602,7 @@
         "branchClass": "通常派生",
         "branchType": "獣牙",
         "branchDisplayOrder": 11,
-        "sellPrice": 1215,
+        "sellPrice": 1072,
         "buyPrice": 1340
       },
       {
@@ -27613,7 +27613,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "マッドナイフ",
-        "price": 845,
+        "price": 744,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -27646,7 +27646,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 10,
-        "sellPrice": 845,
+        "sellPrice": 744,
         "buyPrice": 930
       },
       {
@@ -27657,7 +27657,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リードセイバー",
-        "price": 845,
+        "price": 744,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -27690,7 +27690,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 6,
-        "sellPrice": 845,
+        "sellPrice": 744,
         "buyPrice": 930
       },
       {
@@ -27701,7 +27701,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "バブルブレード",
-        "price": 1685,
+        "price": 1484,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -27734,7 +27734,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 6,
-        "sellPrice": 1685,
+        "sellPrice": 1484,
         "buyPrice": 1855
       },
       {
@@ -27745,7 +27745,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "マッドハチェット",
-        "price": 905,
+        "price": 800,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -27778,7 +27778,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 6,
-        "sellPrice": 905,
+        "sellPrice": 800,
         "buyPrice": 1000
       },
       {
@@ -27789,7 +27789,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リードクリーヴァ",
-        "price": 1755,
+        "price": 1548,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -27822,7 +27822,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 6,
-        "sellPrice": 1755,
+        "sellPrice": 1548,
         "buyPrice": 1935
       },
       {
@@ -27833,7 +27833,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "マッドメイス",
-        "price": 1225,
+        "price": 1080,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -27866,7 +27866,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 3,
-        "sellPrice": 1225,
+        "sellPrice": 1080,
         "buyPrice": 1350
       },
       {
@@ -27877,7 +27877,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リードスピア",
-        "price": 895,
+        "price": 788,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -27910,7 +27910,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 3,
-        "sellPrice": 895,
+        "sellPrice": 788,
         "buyPrice": 985
       },
       {
@@ -27921,7 +27921,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミストロッド",
-        "price": 1295,
+        "price": 1140,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -27954,7 +27954,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 11,
-        "sellPrice": 1295,
+        "sellPrice": 1140,
         "buyPrice": 1425
       },
       {
@@ -27965,7 +27965,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リードボウ",
-        "price": 810,
+        "price": 716,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -27998,7 +27998,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 2,
-        "sellPrice": 810,
+        "sellPrice": 716,
         "buyPrice": 895
       },
       {
@@ -28009,7 +28009,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミストアーチ",
-        "price": 1630,
+        "price": 1436,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -28042,7 +28042,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 2,
-        "sellPrice": 1630,
+        "sellPrice": 1436,
         "buyPrice": 1795
       },
       {
@@ -28053,7 +28053,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "マッドボルター",
-        "price": 930,
+        "price": 820,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -28086,7 +28086,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 7,
-        "sellPrice": 930,
+        "sellPrice": 820,
         "buyPrice": 1025
       },
       {
@@ -28097,7 +28097,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リードアーバレスト",
-        "price": 1775,
+        "price": 1564,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -28130,7 +28130,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 7,
-        "sellPrice": 1775,
+        "sellPrice": 1564,
         "buyPrice": 1955
       },
       {
@@ -28141,7 +28141,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リードバリスタ",
-        "price": 1705,
+        "price": 1504,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -28174,7 +28174,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 9,
-        "sellPrice": 1705,
+        "sellPrice": 1504,
         "buyPrice": 1880
       },
       {
@@ -28185,7 +28185,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リードパイク",
-        "price": 950,
+        "price": 836,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -28218,7 +28218,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 9,
-        "sellPrice": 950,
+        "sellPrice": 836,
         "buyPrice": 1045
       },
       {
@@ -28229,7 +28229,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "マッドクレイモア",
-        "price": 950,
+        "price": 836,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -28262,7 +28262,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 3,
-        "sellPrice": 950,
+        "sellPrice": 836,
         "buyPrice": 1045
       },
       {
@@ -28273,7 +28273,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "マッドモール",
-        "price": 1575,
+        "price": 1388,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -28306,7 +28306,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 8,
-        "sellPrice": 1575,
+        "sellPrice": 1388,
         "buyPrice": 1735
       },
       {
@@ -28317,7 +28317,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リードサイス",
-        "price": 935,
+        "price": 824,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -28352,7 +28352,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 9,
-        "sellPrice": 935,
+        "sellPrice": 824,
         "buyPrice": 1030
       },
       {
@@ -28377,7 +28377,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "リードウィップ",
-        "price": 835,
+        "price": 736,
         "rank": 2,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -28404,7 +28404,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 6,
-        "sellPrice": 835,
+        "sellPrice": 736,
         "buyPrice": 920
       },
       {
@@ -28415,7 +28415,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "アクアコーデックス",
-        "price": 1225,
+        "price": 1080,
         "rank": 2,
         "equipSlot": "右手/左手",
         "effect": "水属性の魔法術式によるダメージ+2。",
@@ -28449,7 +28449,7 @@
         "branchClass": "通常派生",
         "branchType": "水膜",
         "branchDisplayOrder": 3,
-        "sellPrice": 1225,
+        "sellPrice": 1080,
         "buyPrice": 1350
       },
       {
@@ -28460,7 +28460,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミストグリモア",
-        "price": 1240,
+        "price": 1092,
         "rank": 2,
         "equipSlot": "右手/左手",
         "effect": "水属性の魔法術式による妨害効果の値を+1する。",
@@ -28494,7 +28494,7 @@
         "branchClass": "通常派生",
         "branchType": "霧核",
         "branchDisplayOrder": 13,
-        "sellPrice": 1240,
+        "sellPrice": 1092,
         "buyPrice": 1365
       },
       {
@@ -28505,7 +28505,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミストミサル",
-        "price": 1800,
+        "price": 1588,
         "rank": 2,
         "equipSlot": "右手/左手",
         "effect": "祈祷によるダメージ軽減量+1。戦闘中1回、ダメージを軽減する祈祷の消費MPを1点軽減する（最低1）。",
@@ -28539,7 +28539,7 @@
         "branchClass": "通常派生",
         "branchType": "泥核",
         "branchDisplayOrder": 4,
-        "sellPrice": 1800,
+        "sellPrice": 1588,
         "buyPrice": 1985
       },
       {
@@ -28550,7 +28550,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "スペクトラナイフ",
-        "price": 1970,
+        "price": 1736,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -28583,7 +28583,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 11,
-        "sellPrice": 1970,
+        "sellPrice": 1736,
         "buyPrice": 2170
       },
       {
@@ -28594,7 +28594,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フェイズセイバー",
-        "price": 1980,
+        "price": 1744,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -28627,7 +28627,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 4,
-        "sellPrice": 1980,
+        "sellPrice": 1744,
         "buyPrice": 2180
       },
       {
@@ -28638,7 +28638,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミラークリーヴァ",
-        "price": 2175,
+        "price": 1916,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -28671,7 +28671,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 1,
-        "sellPrice": 2175,
+        "sellPrice": 1916,
         "buyPrice": 2395
       },
       {
@@ -28682,7 +28682,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フェイズマレット",
-        "price": 2045,
+        "price": 1800,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -28715,7 +28715,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 7,
-        "sellPrice": 2045,
+        "sellPrice": 1800,
         "buyPrice": 2250
       },
       {
@@ -28726,7 +28726,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミラースピア",
-        "price": 2085,
+        "price": 1836,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -28759,7 +28759,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 4,
-        "sellPrice": 2085,
+        "sellPrice": 1836,
         "buyPrice": 2295
       },
       {
@@ -28770,7 +28770,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リフレクトスタッフ",
-        "price": 2025,
+        "price": 1784,
         "rank": 2,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -28803,7 +28803,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 9,
-        "sellPrice": 2025,
+        "sellPrice": 1784,
         "buyPrice": 2230
       },
       {
@@ -28814,7 +28814,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミラージュアーチ",
-        "price": 2090,
+        "price": 1840,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -28847,7 +28847,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 6,
-        "sellPrice": 2090,
+        "sellPrice": 1840,
         "buyPrice": 2300
       },
       {
@@ -28858,7 +28858,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リフトボルター",
-        "price": 2300,
+        "price": 2024,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -28891,7 +28891,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 6,
-        "sellPrice": 2300,
+        "sellPrice": 2024,
         "buyPrice": 2530
       },
       {
@@ -28902,7 +28902,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フェイズバリスタ",
-        "price": 2750,
+        "price": 2424,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -28935,7 +28935,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 2,
-        "sellPrice": 2750,
+        "sellPrice": 2424,
         "buyPrice": 3030
       },
       {
@@ -28946,7 +28946,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミラーパイク",
-        "price": 2295,
+        "price": 2020,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -28979,7 +28979,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 6,
-        "sellPrice": 2295,
+        "sellPrice": 2020,
         "buyPrice": 2525
       },
       {
@@ -28990,7 +28990,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フェイズクレイモア",
-        "price": 2370,
+        "price": 2088,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -29023,7 +29023,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 4,
-        "sellPrice": 2370,
+        "sellPrice": 2088,
         "buyPrice": 2610
       },
       {
@@ -29034,7 +29034,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミラージュモール",
-        "price": 2430,
+        "price": 2140,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -29067,7 +29067,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 3,
-        "sellPrice": 2430,
+        "sellPrice": 2140,
         "buyPrice": 2675
       },
       {
@@ -29078,7 +29078,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フェイズサイス",
-        "price": 2295,
+        "price": 2020,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -29113,7 +29113,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 1,
-        "sellPrice": 2295,
+        "sellPrice": 2020,
         "buyPrice": 2525
       },
       {
@@ -29124,7 +29124,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ミラーナックル",
-        "price": 2245,
+        "price": 1976,
         "rank": 2,
         "equipSlot": "両手",
         "skill": "近接",
@@ -29159,7 +29159,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 4,
-        "sellPrice": 2245,
+        "sellPrice": 1976,
         "buyPrice": 2470
       },
       {
@@ -29184,7 +29184,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "ミラーラッシュ",
-        "price": 2025,
+        "price": 1784,
         "rank": 2,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -29211,7 +29211,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 1,
-        "sellPrice": 2025,
+        "sellPrice": 1784,
         "buyPrice": 2230
       },
       {
@@ -29222,7 +29222,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "リフレインコーデックス",
-        "price": 3325,
+        "price": 2928,
         "rank": 2,
         "equipSlot": "右手/左手",
         "effect": "術式枠+2。",
@@ -29256,7 +29256,7 @@
         "branchClass": "通常派生",
         "branchType": "反響",
         "branchDisplayOrder": 9,
-        "sellPrice": 3325,
+        "sellPrice": 2928,
         "buyPrice": 3660
       },
       {
@@ -29267,7 +29267,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "フェイズミサル",
-        "price": 3235,
+        "price": 2848,
         "rank": 2,
         "equipSlot": "右手/左手",
         "effect": "術式枠+2。",
@@ -29301,7 +29301,7 @@
         "branchClass": "通常派生",
         "branchType": "異界",
         "branchDisplayOrder": 5,
-        "sellPrice": 3235,
+        "sellPrice": 2848,
         "buyPrice": 3560
       },
       {
@@ -29312,7 +29312,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルバーニードル",
-        "price": 2435,
+        "price": 2144,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -29345,7 +29345,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 1,
-        "sellPrice": 2435,
+        "sellPrice": 2144,
         "buyPrice": 2680
       },
       {
@@ -29356,7 +29356,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルバーセイバー",
-        "price": 2575,
+        "price": 2268,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -29389,7 +29389,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 10,
-        "sellPrice": 2575,
+        "sellPrice": 2268,
         "buyPrice": 2835
       },
       {
@@ -29400,7 +29400,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "オアハチェット",
-        "price": 4585,
+        "price": 4036,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -29433,7 +29433,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 2,
-        "sellPrice": 4585,
+        "sellPrice": 4036,
         "buyPrice": 5045
       },
       {
@@ -29444,7 +29444,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "クリスタルマレット",
-        "price": 2585,
+        "price": 2276,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -29477,7 +29477,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 2,
-        "sellPrice": 2585,
+        "sellPrice": 2276,
         "buyPrice": 2845
       },
       {
@@ -29488,7 +29488,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルバースピア",
-        "price": 2575,
+        "price": 2268,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -29521,7 +29521,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 2,
-        "sellPrice": 2575,
+        "sellPrice": 2268,
         "buyPrice": 2835
       },
       {
@@ -29532,7 +29532,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルバーロッド",
-        "price": 2310,
+        "price": 2036,
         "rank": 3,
         "equipSlot": "右手/左手",
         "skill": "近接",
@@ -29565,7 +29565,7 @@
         "branchClass": "通常派生",
         "branchType": "魔晶",
         "branchDisplayOrder": 7,
-        "sellPrice": 2310,
+        "sellPrice": 2036,
         "buyPrice": 2545
       },
       {
@@ -29576,7 +29576,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルバーストリング",
-        "price": 2420,
+        "price": 2132,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -29609,7 +29609,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 1,
-        "sellPrice": 2420,
+        "sellPrice": 2132,
         "buyPrice": 2665
       },
       {
@@ -29620,7 +29620,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルバーボルター",
-        "price": 2675,
+        "price": 2356,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -29653,7 +29653,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 12,
-        "sellPrice": 2675,
+        "sellPrice": 2356,
         "buyPrice": 2945
       },
       {
@@ -29664,7 +29664,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "オアバリスタ",
-        "price": 3440,
+        "price": 3028,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "射撃",
@@ -29697,7 +29697,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 13,
-        "sellPrice": 3440,
+        "sellPrice": 3028,
         "buyPrice": 3785
       },
       {
@@ -29708,7 +29708,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルバーパイク",
-        "price": 2905,
+        "price": 2560,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -29741,7 +29741,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 3,
-        "sellPrice": 2905,
+        "sellPrice": 2560,
         "buyPrice": 3200
       },
       {
@@ -29752,7 +29752,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルバークレイモア",
-        "price": 3175,
+        "price": 2796,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -29785,7 +29785,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 10,
-        "sellPrice": 3175,
+        "sellPrice": 2796,
         "buyPrice": 3495
       },
       {
@@ -29796,7 +29796,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "オアモール",
-        "price": 4705,
+        "price": 4144,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -29829,7 +29829,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 11,
-        "sellPrice": 4705,
+        "sellPrice": 4144,
         "buyPrice": 5180
       },
       {
@@ -29840,7 +29840,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルバーサイス",
-        "price": 3210,
+        "price": 2828,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -29875,7 +29875,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 5,
-        "sellPrice": 3210,
+        "sellPrice": 2828,
         "buyPrice": 3535
       },
       {
@@ -29886,7 +29886,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルバーナックル",
-        "price": 2905,
+        "price": 2560,
         "rank": 3,
         "equipSlot": "両手",
         "skill": "近接",
@@ -29921,7 +29921,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 1,
-        "sellPrice": 2905,
+        "sellPrice": 2560,
         "buyPrice": 3200
       },
       {
@@ -29946,7 +29946,7 @@
         "itemType": "武器",
         "itemCategory": "鞭",
         "name": "シルバーチェイン",
-        "price": 2855,
+        "price": 2516,
         "rank": 3,
         "equipSlot": "右手/左手",
         "maxStack": "",
@@ -29973,7 +29973,7 @@
         "branchClass": "通常派生",
         "branchType": "鎖鋼",
         "branchDisplayOrder": 3,
-        "sellPrice": 2855,
+        "sellPrice": 2516,
         "buyPrice": 3145
       },
       {
@@ -29984,7 +29984,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "ストラタコーデックス",
-        "price": 2110,
+        "price": 1860,
         "rank": 3,
         "equipSlot": "右手/左手",
         "effect": "魔法術式によるダメージ+1。防御値が2以上の対象へ使用する魔法術式では、対象の防御値を2点まで無視する。",
@@ -30018,7 +30018,7 @@
         "branchClass": "通常派生",
         "branchType": "魔晶",
         "branchDisplayOrder": 5,
-        "sellPrice": 2110,
+        "sellPrice": 1860,
         "buyPrice": 2325
       },
       {
@@ -30029,7 +30029,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "シルバーリタニー",
-        "price": 3180,
+        "price": 2800,
         "rank": 3,
         "equipSlot": "右手/左手",
         "effect": "祈祷によるHP回復量+2。戦闘中1回、HPを回復する祈祷の消費MPを1点軽減する（最低1）。",
@@ -30063,7 +30063,7 @@
         "branchClass": "通常派生",
         "branchType": "鉱石",
         "branchDisplayOrder": 1,
-        "sellPrice": 3180,
+        "sellPrice": 2800,
         "buyPrice": 3500
       },
       {
