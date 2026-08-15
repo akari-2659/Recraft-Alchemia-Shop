@@ -1,9 +1,9 @@
 {
   "format": "recraft-alchemia-public-master",
-  "version": "90.8.541",
+  "version": "90.8.542",
   "updatedAt": "2026-08-15",
-  "generatedAt": "2026-08-15T12:58:48+09:00",
-  "description": "Recraft-Alchemia master v90.8.541（反照の水庭の防具5着を★4から★3へ修正。軽装・中装・重装の基礎防御/防御行動値も★3帯へ戻し、異界固有効果による横方向装備として再整理）",
+  "generatedAt": "2026-08-15T13:12:20+09:00",
+  "description": "Recraft-Alchemia master v90.8.542（キャラシ装備プリセット表示崩れ修正。同一武器・同一装飾品の重複装備を禁止）",
   "recordCount": 2697,
   "data": {
     "item_types": [
