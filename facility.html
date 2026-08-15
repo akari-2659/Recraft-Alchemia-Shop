@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.542</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.544</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -139,7 +139,7 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 @media(max-width:620px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/2}.facility-unlock-grid button{width:auto}.facility-unlock-grid #resetKey{grid-column:1/3;justify-self:start}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.542-upgrade-slot-scope-fix">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.544-upgrade-slot-scope-fix">
 
 <style id="raFortuneCommunityV474">
 .community-rule{grid-column:1/-1;border:1px solid var(--line);border-radius:14px;background:#fffaf3;padding:12px;line-height:1.7}
@@ -159,7 +159,7 @@ body.ra-facility .accessory-branch-node button:hover{background:#f5e6d1!importan
 </style>
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.542｜更新：2026年8月15日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.544｜更新：2026年8月15日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -241,7 +241,7 @@ const DEFAULT_GAS_WEB_APP_URL='https://script.google.com/macros/s/AKfycbyjIIKXTX
 const PLAYER_KEY_STORAGE_KEY='recraft_alchemia.player_facility.player_key';
 const UNLOCK_STATE_STORAGE_PREFIX='recraft_alchemia.player_facility.unlocked_area_ids:';
 const SECTION_DEFS={
- smith:[['sales','販売商品','鍛冶屋で購入できる品と、その段階で解放される常設店売りレシピです。宝箱限定レシピはここには表示しません。'],['craft','装備・道具作成','武器・防具・盾・バッグ・矢筒・仕掛けなどの作成です。装飾品は「装飾品」の派生図へまとめています。'],['accessory','装飾品','作成できる装飾品と段階強化を、★ランク列に揃えたひとつの派生図で確認できます。各装飾品を選ぶと必要素材・費用・難易度などの詳細を確認できます。'],['materials','素材加工','自作はレシピ不要で、対応する鍛冶道具と判定成功が必要です。施設依頼は判定不要ですが加工依頼費が必要です。'],['crystal','クリスタル強化','現在の解放エリアで利用できる、スキルクリスタルの強化段階・必要素材・費用です。'],['branches','武器派生','武器種を選び、大枠の素材系統と順当強化・分岐を矢印でつないだ派生図を確認できます。武器の詳細では強化枠、必要素材、派生元、次の派生先を確認できます。未解放の派生先は「？？？」で表示します。']],
+ smith:[['sales','販売商品','鍛冶屋で購入できる品と、その段階で解放される常設店売りレシピです。宝箱限定レシピはここには表示しません。'],['craft','装備・道具作成','武器・防具・盾・バッグ・矢筒・仕掛けなどの作成です。装飾品は「装飾品」の派生図へまとめています。'],['accessory','装飾品','販売品を強化元にする系統も含め、作成できる装飾品と段階強化を★ランク列に揃えたひとつの派生図で確認できます。販売品は、実際に段階強化先が存在するものだけ起点として表示します。'],['materials','素材加工','自作はレシピ不要で、対応する鍛冶道具と判定成功が必要です。施設依頼は判定不要ですが加工依頼費が必要です。'],['crystal','クリスタル強化','現在の解放エリアで利用できる、スキルクリスタルの強化段階・必要素材・費用です。'],['branches','武器派生','武器種を選び、大枠の素材系統と順当強化・分岐を矢印でつないだ派生図を確認できます。武器の詳細では強化枠、必要素材、派生元、次の派生先を確認できます。未解放の派生先は「？？？」で表示します。']],
  apothecary:[['sales','販売商品','薬屋で購入できる調合品・調合道具と、その段階で解放される常設店売りレシピです。宝箱限定レシピはここには表示しません。'],['alchemy','調合品作成','薬品・香・爆弾・瓶などの調合です。'],['materials','素材加工','一般の加工素材はレシピ不要です。魔導インク・祈祷紙は対応レシピが必要な特殊加工としてここに表示します。施設依頼はどちらもレシピ不要・判定不要です。']],
  antique:[['sales','常設販売','骨董屋で常時購入できる品と店売りレシピです。'],['scrolls','未鑑定スクロール価格','販売内容はランダムのため、各ランクの価格だけを表示します。']],
  eatery:[['meals','食材持ち込み料理','必要食材と調理代を確認できます。食事効果は次の探索・依頼から帰還するまで継続し、同時に1種類のみ有効です。']],
@@ -469,7 +469,7 @@ function facilitySafeItem(row){
     materialType:row.materialType||'',materialCategory:row.materialCategory||'',equipSlot:row.equipSlot||'',
     guaranteeUpgradeMaxRank:row.guaranteeUpgradeMaxRank||'',upgradeLimit:row.upgradeLimit||'',
     equipmentUpgradeEffect:row.equipmentUpgradeEffect||'',equipmentUpgradeSlotCost:row.equipmentUpgradeSlotCost||'',equipmentUpgradeDetail:row.equipmentUpgradeDetail||'',equipmentUpgradeTarget:row.equipmentUpgradeTarget||'',
-    description:row.description||'',effect:row.effect||'',
+    description:row.description||'',effect:row.effect||'',source:row.source||'',unlockFacility:row.unlockFacility||'',
     processingSkill:row.processingSkill||'',processingToolType:row.processingToolType||'',processingToolRank:row.processingToolRank||'',
     processingRequiredMaterials:row.processingRequiredMaterials||'',processingResultCount:row.processingResultCount||'',processingDifficulty:row.processingDifficulty||'',processingFee:row.processingFee||0,
     unlockAreaId:row._facilityUnlockAreaId||'',unlockAreaName:row._facilityUnlockAreaName||'',
@@ -757,6 +757,29 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState={}){
       })
       .filter(r=>String(r.itemType||'').trim()===target);
   }
+  function accessoryCatalogRows(){
+    const recipeRows=recipesByResultItemType('鍛冶屋','装飾品');
+    const recipeResultNames=new Set(recipeRows.map(r=>String(r.resultItem||r.name||'').trim()).filter(Boolean));
+    const upgradeBaseNames=new Set(recipeRows.filter(r=>String(r.craftType||'').trim()==='装飾品強化').map(r=>String(r.baseItem||'').trim()).filter(Boolean));
+    const saleRows=items
+      .filter(r=>String(r.itemType||'').trim()==='装飾品'&&unlocked(r)&&(Number(r.buyPrice||0)>0))
+      .filter(r=>upgradeBaseNames.has(String(r.name||'').trim()))
+      .filter(r=>!recipeResultNames.has(String(r.name||'').trim()))
+      .sort(sortRows)
+      .map(r=>{
+        const areaId=requiredAreaId(r),safe=facilitySafeItem({...r,_facilityUnlockAreaId:areaId,_facilityUnlockAreaName:String(areaById[areaId]?.name||'初期エリア')});
+        return{
+          ...safe,locked:false,
+          resultItem:r.name||'',name:r.name||'',rank:Number(r.rank)||1,
+          craftType:'装飾品販売',category:'装飾品',branchType:r.itemCategory||'装飾品',
+          baseItem:'',requiredMaterials:'',price:'',difficulty:'',craftSkill:'',
+          itemType:'装飾品',itemCategory:r.itemCategory||'',
+          source:r.source||r.unlockFacility||'',buyPrice:r.buyPrice||r.price||'',sellPrice:r.sellPrice||r.price||'',
+          unlockOrder:requiredOrder(r),unlockAreaId:areaId,unlockAreaName:String(areaById[areaId]?.name||'初期エリア')
+        };
+      });
+    return saleRows.concat(recipeRows).sort((a,b)=>rankValue(a.rank)-rankValue(b.rank)||String(a.resultItem||a.name||'').localeCompare(String(b.resultItem||b.name||''),'ja'));
+  }
   function processingMaterials(facilityName){
     const ordinary=items.filter(row=>String(row.materialType||'').trim()==='加工素材'&&String(row.processingRequiredMaterials||'').trim()&&facilityMatch(row,facilityName)&&unlocked(row))
       .sort(sortRows)
@@ -958,7 +981,7 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState={}){
       smith:{
         sales:sales('鍛冶屋'),
         craft:normalRecipes('鍛冶屋',['鍛冶','防具製作','バッグ製作','細工']).filter(r=>String(r.itemType||'').trim()!=='装飾品'),
-        accessory:recipesByResultItemType('鍛冶屋','装飾品'),
+        accessory:accessoryCatalogRows(),
         materials:processingMaterials('鍛冶屋'),
         crystal:normalRecipes('鍛冶屋',['クリスタル強化']),
         branches:branchRows
@@ -1051,20 +1074,32 @@ function itemCard(r){const chips=uniqueChips([rankLabel(r.rank),r.dataKind==='�
 function scrollPriceCard(r){const price=String(r.price||'')?`${r.price}G`:'未設定';const title=String(r.name||`未鑑定の${r.type||'術式'}スクロール`).trim();return `<article class="card"><h3>${esc(title)}：${esc(rankLabel(r.rank))}</h3><div class="chips"><span class="chip">${esc(r.type||'術式')}</span><span class="chip">${esc(rankLabel(r.rank))}</span><span class="chip">ランダム販売</span></div><dl><dt>価格</dt><dd>${esc(price)}</dd></dl></article>`;}
 function crystalCard(r){const chips=uniqueChips([rankLabel(r.rank),'スキルクリスタル',r.craftType]);const pairs=[['強化段階',`${r.baseItem||'?'} → ${r.resultItem||'?'}`],['必要素材',r.requiredMaterials||'未設定'],['強化費用',String(r.price||'')?`${r.price}G`:'未設定']];if(r.description)pairs.push(['説明',r.description]);if(r.effect)pairs.push(['効果',r.effect]);return `<article class="card"><h3>${esc(r.name||'クリスタル強化')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
 let accessoryDetailIndex=Object.create(null);
+function accessoryUpgradeKindLabel(r={}){
+  const type=String(r.craftType||'').trim();
+  if(type==='装飾品強化')return '段階強化';
+  if(type==='装飾品販売')return '販売品';
+  return '新規製作';
+}
 function accessoryUpgradeDetailPairs(r={}){
-  const isUpgrade=String(r.craftType||'').trim()==='装飾品強化';
+  const type=String(r.craftType||'').trim(),isUpgrade=type==='装飾品強化',isSale=type==='装飾品販売';
   const pairs=[];
-  pairs.push(['区分',isUpgrade?'段階強化':'新規製作']);
+  pairs.push(['区分',accessoryUpgradeKindLabel(r)]);
   if(isUpgrade)pairs.push(['強化段階',`${r.baseItem||'?'} → ${r.resultItem||'?'}`]);
-  else pairs.push(['完成品',r.resultItem||r.name||'未設定']);
+  else pairs.push([isSale?'商品':'完成品',r.resultItem||r.name||'未設定']);
   if(r.effect)pairs.push(['効果',r.effect]);
   if(Array.isArray(r.performance)&&r.performance.length)pairs.push(['性能',r.performance.map(x=>`${x.label} ${x.value}`).join(' / ')]);
-  pairs.push(['必要素材',r.requiredMaterials||'未設定']);
-  if(String(r.price||''))pairs.push(['施設依頼',`${r.price}G・判定不要`]);
-  if(r.difficulty){
-    pairs.push(['自作技能',r.craftSkill||'細工']);
-    pairs.push(['基礎作成難易度',r.difficulty]);
-    pairs.push(['使用道具',craftingToolName(r.craftSkill,r.craftType)]);
+  if(isSale){
+    if(r.source)pairs.push(['販売・入手先',r.source]);
+    if(String(r.buyPrice||''))pairs.push(['買値',`${r.buyPrice}G`]);
+    if(String(r.sellPrice||''))pairs.push(['売値',`${r.sellPrice}G`]);
+  }else{
+    pairs.push(['必要素材',r.requiredMaterials||'未設定']);
+    if(String(r.price||''))pairs.push(['施設依頼',`${r.price}G・判定不要`]);
+    if(r.difficulty){
+      pairs.push(['自作技能',r.craftSkill||'細工']);
+      pairs.push(['基礎作成難易度',r.difficulty]);
+      pairs.push(['使用道具',craftingToolName(r.craftSkill,r.craftType)]);
+    }
   }
   if(r.unlockAreaName)pairs.push(['解放',r.unlockAreaName]);
   if(r.description)pairs.push(['説明',r.description]);
@@ -1077,7 +1112,7 @@ function openAccessoryUpgradeModal(name){
   const display=String(row.resultItem||row.name||'装飾品').trim();
   title.textContent=display;
   const pairs=accessoryUpgradeDetailPairs(row);
-  body.innerHTML=`<div class="chips">${uniqueChips([rankLabel(row.rank),row.branchType||row.itemCategory||'装飾品',String(row.craftType||'').trim()==='装飾品強化'?'段階強化':'新規製作']).map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`;
+  body.innerHTML=`<div class="chips">${uniqueChips([rankLabel(row.rank),row.branchType||row.itemCategory||'装飾品',accessoryUpgradeKindLabel(row)]).map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`;
   modal.hidden=false;modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
 }
 function closeAccessoryUpgradeModal(){const modal=$('accessoryUpgradeDetailModal');if(!modal)return;modal.hidden=true;modal.setAttribute('aria-hidden','true');document.body.style.overflow='';}
