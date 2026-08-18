@@ -1,9 +1,9 @@
 {
   "format": "recraft-alchemia-public-master",
-  "version": "90.8.572",
-  "updatedAt": "2026-08-18",
-  "generatedAt": "2026-08-18T18:56:12+09:00",
-  "description": "Recraft-Alchemia master v90.8.572（チャットパレットの同種装備補正を合算表示）",
+  "version": "90.8.575",
+  "updatedAt": "2026-08-19",
+  "generatedAt": "2026-08-19T00:50:00+09:00",
+  "description": "Recraft-Alchemia master v90.8.573（チャットパレットの同種装備補正を合算表示）",
   "recordCount": 3027,
   "data": {
     "item_types": [
@@ -48570,7 +48570,7 @@
         "requiredMaterials": "嵐王の大翼膜×1, 風紋布×2, 雷導合金×2, 高原硬材×2",
         "difficulty": 17,
         "description": "嵐王の大翼膜を用いてテンペストクロークを製作する。",
-        "effect": "風属性または雷属性のダメージを受ける際、最終ダメージを1点軽減する。",
+        "effect": "風属性または雷属性のダメージを受ける際、最終ダメージを2点軽減する。",
         "unlockAreaKey": "area_wind_swept_highland",
         "unlockFacility": "鍛冶屋",
         "tags": "防具製作,軽装,ボス素材,高原,★5",
@@ -68107,8 +68107,8 @@
         "encounterComposition": "前衛,灰嶺の大蛇ウルガナ,1",
         "result": "エリアボス「灰嶺の大蛇ウルガナ」と遭遇する。PCはこの場で挑むか、戦闘せず離れるかを選べる。挑む場合のみ戦闘が発生する。勝利するとウルガナはPCたちの実力を認め、「大蛇の褒賞箱」を授ける。採取・解体判定は行わず、ボス固有素材を各素材の設定確率で独立に抽選し、加えて宝箱表「ashcrown_ulgana_cache」からランダム報酬を1枠抽選して同じ箱へ入れる。この褒賞箱には鍵・罠はない。",
         "progressEffect": "初回勝利時、各PCはボーナスポイント2点を獲得する。同じエリアボスへの2回目以降の勝利では獲得しない。",
-        "notes": "任意戦闘。初回勝利時、各PCはボーナスポイント2点を獲得する。同じエリアボスへの2回目以降の勝利では獲得しない。",
-        "updatedAt": "2026-08-13",
+        "notes": "任意戦闘。初回勝利時、各PCはボーナスポイント2点を獲得する。同じエリアボスへの2回目以降の勝利では獲得しない。 確定遭遇噂ID: rumor_ashcrown_boss",
+        "updatedAt": "2026-08-19",
         "ownerKey": "",
         "createdBy": ""
       },
