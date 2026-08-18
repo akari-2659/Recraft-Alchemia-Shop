@@ -1,9 +1,9 @@
 {
   "format": "recraft-alchemia-public-master",
-  "version": "90.8.571",
+  "version": "90.8.572",
   "updatedAt": "2026-08-18",
   "generatedAt": "2026-08-18T18:56:12+09:00",
-  "description": "Recraft-Alchemia master v90.8.571（チャットパレットの同種装備補正を合算表示）",
+  "description": "Recraft-Alchemia master v90.8.572（チャットパレットの同種装備補正を合算表示）",
   "recordCount": 3027,
   "data": {
     "item_types": [
