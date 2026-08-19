@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.589</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.590</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -159,7 +159,7 @@ body.ra-facility .accessory-branch-node button:hover{background:#f5e6d1!importan
 </style>
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.589｜更新：2026年8月19日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.590｜更新：2026年8月20日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -241,7 +241,7 @@ const DEFAULT_GAS_WEB_APP_URL='https://script.google.com/macros/s/AKfycbyjIIKXTX
 const PLAYER_KEY_STORAGE_KEY='recraft_alchemia.player_facility.player_key';
 const UNLOCK_STATE_STORAGE_PREFIX='recraft_alchemia.player_facility.unlocked_area_ids:';
 const SECTION_DEFS={
- smith:[['sales','販売商品','鍛冶屋で購入できる品と、その段階で解放される常設店売りレシピです。宝箱限定レシピはここには表示しません。'],['craft','装備・道具作成','武器・防具・盾・バッグ・矢筒・仕掛けなどの作成です。装飾品は「装飾品」の派生図へまとめています。'],['accessory','装飾品','販売品を強化元にする系統も含め、作成できる装飾品と段階強化を★ランク列に揃えたひとつの派生図で確認できます。販売品は、実際に段階強化先が存在するものだけ起点として表示します。'],['materials','素材加工','自作はレシピ不要で、対応する鍛冶道具と判定成功が必要です。施設依頼は判定不要ですが加工依頼費が必要です。'],['crystal','クリスタル強化','現在の解放エリアで利用できる、スキルクリスタルの強化段階・必要素材・費用です。'],['branches','武器派生','武器種を選び、大枠の素材系統と順当強化・分岐を矢印でつないだ派生図を確認できます。武器の詳細では強化枠、必要素材、派生元、次の派生先を確認できます。未解放の派生先は「？？？」で表示します。']],
+ smith:[['sales','販売商品','鍛冶屋で購入できる品と、その段階で解放される常設店売りレシピです。宝箱限定レシピはここには表示しません。'],['craft','装備・道具作成','武器・防具・盾・バッグ・矢筒・仕掛けなどの作成です。装飾品は「装飾品」の派生図へまとめています。'],['accessory','装飾品','装飾品は完成品を販売せず、すべて作成で入手します。作成できる装飾品とエリア進行で解放される段階強化を、★ランク列に揃えたひとつの派生図で確認できます。'],['materials','素材加工','自作はレシピ不要で、対応する鍛冶道具と判定成功が必要です。施設依頼は判定不要ですが加工依頼費が必要です。'],['crystal','クリスタル強化','現在の解放エリアで利用できる、スキルクリスタルの強化段階・必要素材・費用です。'],['branches','武器派生','武器種を選び、大枠の素材系統と順当強化・分岐を矢印でつないだ派生図を確認できます。武器の詳細では強化枠、必要素材、派生元、次の派生先を確認できます。未解放の派生先は「？？？」で表示します。']],
  apothecary:[['sales','販売商品','薬屋で購入できる調合品・調合道具と、その段階で解放される常設店売りレシピです。宝箱限定レシピはここには表示しません。'],['alchemy','調合品作成','薬品・香・爆弾・瓶などの調合です。'],['materials','素材加工','一般の加工素材はレシピ不要です。魔導インク・祈祷紙は対応レシピが必要な特殊加工としてここに表示します。施設依頼はどちらもレシピ不要・判定不要です。']],
  antique:[['sales','常設販売','骨董屋で常時購入できる品と店売りレシピです。骨董装備はG販売ではなく、魔物素材を使うガチャで入手します。武器種・防具種と★帯を選び、個体ごとに基礎性能・属性・強化枠・固定強化内容が変化します。抽選後の強化追加・変更はできません。抽選個体には通常と同じ形式の登録IDが発行されます。'],['scrolls','未鑑定スクロール価格','販売内容はランダムのため、各ランクの価格だけを表示します。']],
  eatery:[['meals','食材持ち込み料理','必要食材と調理代を確認できます。食事効果は次の探索・依頼から帰還するまで継続し、同時に1種類のみ有効です。']],
@@ -659,6 +659,7 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState={}){
   function sales(facilityName){
     const saleItems=items.filter(r=>{
       if(!String(r.name||'').trim()||!facilityMatch(r,facilityName)||!unlocked(r))return false;
+      if(String(r.itemType||'').trim()==='装飾品')return false;
       // 販売先が明示されている品は、その施設だけで販売する。
       // source に「薬屋（素材加工）」等の加工先が併記されていても、販売先として解釈しない。
       const explicitSaleFacility=String(r.unlockFacility||'').trim();
@@ -758,27 +759,9 @@ function buildFacilityCatalogFromGithub(commonMaster,unlockState={}){
       .filter(r=>String(r.itemType||'').trim()===target);
   }
   function accessoryCatalogRows(){
-    const recipeRows=recipesByResultItemType('鍛冶屋','装飾品');
-    const recipeResultNames=new Set(recipeRows.map(r=>String(r.resultItem||r.name||'').trim()).filter(Boolean));
-    const upgradeBaseNames=new Set(recipeRows.filter(r=>String(r.craftType||'').trim()==='装飾品強化').map(r=>String(r.baseItem||'').trim()).filter(Boolean));
-    const saleRows=items
-      .filter(r=>String(r.itemType||'').trim()==='装飾品'&&unlocked(r)&&(Number(r.buyPrice||0)>0))
-      .filter(r=>upgradeBaseNames.has(String(r.name||'').trim()))
-      .filter(r=>!recipeResultNames.has(String(r.name||'').trim()))
-      .sort(sortRows)
-      .map(r=>{
-        const areaId=requiredAreaId(r),safe=facilitySafeItem({...r,_facilityUnlockAreaId:areaId,_facilityUnlockAreaName:String(areaById[areaId]?.name||'初期エリア')});
-        return{
-          ...safe,locked:false,
-          resultItem:r.name||'',name:r.name||'',rank:Number(r.rank)||1,
-          craftType:'装飾品販売',category:'装飾品',branchType:r.itemCategory||'装飾品',
-          baseItem:'',requiredMaterials:'',price:'',difficulty:'',craftSkill:'',
-          itemType:'装飾品',itemCategory:r.itemCategory||'',
-          source:r.source||r.unlockFacility||'',buyPrice:r.buyPrice||r.price||'',sellPrice:r.sellPrice||r.price||'',
-          unlockOrder:requiredOrder(r),unlockAreaId:areaId,unlockAreaName:String(areaById[areaId]?.name||'初期エリア')
-        };
-      });
-    return saleRows.concat(recipeRows).sort((a,b)=>rankValue(a.rank)-rankValue(b.rank)||String(a.resultItem||a.name||'').localeCompare(String(b.resultItem||b.name||''),'ja'));
+    // 装飾品は完成品販売を行わず、作成・段階強化レシピだけを表示する。
+    return recipesByResultItemType('鍛冶屋','装飾品')
+      .sort((a,b)=>rankValue(a.rank)-rankValue(b.rank)||String(a.resultItem||a.name||'').localeCompare(String(b.resultItem||b.name||''),'ja'));
   }
   function processingMaterials(facilityName){
     const ordinary=items.filter(row=>String(row.materialType||'').trim()==='加工素材'&&String(row.processingRequiredMaterials||'').trim()&&facilityMatch(row,facilityName)&&unlocked(row))
@@ -1077,7 +1060,7 @@ let accessoryDetailIndex=Object.create(null);
 function accessoryUpgradeKindLabel(r={}){
   const type=String(r.craftType||'').trim();
   if(type==='装飾品強化')return '段階強化';
-  if(type==='装飾品販売')return '販売品';
+  if(type==='装飾品販売')return '作成品';
   return '新規製作';
 }
 function accessoryUpgradeDetailPairs(r={}){
