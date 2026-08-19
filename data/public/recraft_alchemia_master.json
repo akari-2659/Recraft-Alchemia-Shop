@@ -1,8 +1,8 @@
 {
   "format": "recraft-alchemia-public-master",
-  "version": "90.8.575",
+  "version": "90.8.577",
   "updatedAt": "2026-08-19",
-  "generatedAt": "2026-08-19T00:50:00+09:00",
+  "generatedAt": "2026-08-19",
   "description": "Recraft-Alchemia master v90.8.573（チャットパレットの同種装備補正を合算表示）",
   "recordCount": 3027,
   "data": {
@@ -17566,9 +17566,9 @@
         "price": 12,
         "rank": 2,
         "maxStack": 99,
-        "description": "傘の裏が淡く光る、香りのよい森茸。",
+        "description": "夜の森で傘の裏が淡く光る、香りのよい森茸。暗くなってから姿を見つけやすい。",
         "effect": "食事処へ持ち込むことで料理の材料として使用できる。",
-        "source": "エリアイベント",
+        "source": "近郊の森（夜のエリアイベント）",
         "usageTags": "料理,食材",
         "tags": "食材,料理専用",
         "notes": "塩・油・穀物などの基礎材料は調理代に含む。",
@@ -17676,7 +17676,7 @@
         "maxStack": 99,
         "description": "澄んだ水底に育つ、歯切れのよい地下茎。",
         "effect": "食事処へ持ち込むことで料理の材料として使用できる。",
-        "source": "エリアイベント",
+        "source": "水辺の湿地（朝／噂イベント）",
         "usageTags": "料理,食材",
         "tags": "食材,料理専用",
         "notes": "塩・油・穀物などの基礎材料は調理代に含む。",
@@ -17728,9 +17728,9 @@
         "price": 10,
         "rank": 2,
         "maxStack": 99,
-        "description": "朝露を長く蓄える、瑞々しい森の若葉。",
+        "description": "朝露を長く蓄える、瑞々しい森の若葉。朝のうちに摘んだものだけが食材として良い状態を保つ。",
         "effect": "食事処へ持ち込むことで料理の材料として使用できる。",
-        "source": "エリアイベント",
+        "source": "近郊の森（朝のエリアイベント）",
         "usageTags": "料理,食材",
         "tags": "食材,料理専用",
         "notes": "塩・油・穀物などの基礎材料は調理代に含む。",
@@ -17863,9 +17863,9 @@
         "price": 20,
         "rank": 3,
         "maxStack": 99,
-        "description": "霧の濃い朝だけ姿を見せる、淡い青色の貝。",
+        "description": "霧の濃い朝だけ姿を見せる、淡い青色の貝。朝の湿地でのみ採取できる。",
         "effect": "食事処へ持ち込むことで料理の材料として使用できる。",
-        "source": "エリアイベント",
+        "source": "水辺の湿地（朝のエリアイベント）",
         "usageTags": "料理,食材",
         "tags": "食材,料理専用",
         "notes": "塩・油・穀物などの基礎材料は調理代に含む。",
@@ -18983,12 +18983,12 @@
         "target": "",
         "checkType": "",
         "effect": "",
-        "source": "街はずれの草原（朝露草の群生地）",
+        "source": "街はずれの草原（朝／朝露草の群生地）",
         "usageTags": "納品,調合,朝露,草花,料理,食用可能",
         "unlockFacility": "",
         "tags": "素材,草花,デイリークエスト,★1,食用可能",
         "notes": "デイリークエスト「朝露草の採取依頼」で入手し、納品用朝露草束の作成に使用する。",
-        "description": "夜明け前の露を葉いっぱいに蓄える草。摘み取った後も淡い冷気を残し、束ねると清涼な香りが立つ。",
+        "description": "夜明け前の露を葉いっぱいに蓄える草。朝のうちだけ採取でき、摘み取った後も淡い冷気と清涼な香りを残す。",
         "equipmentUpgradeEffect": "",
         "publicId": "RCA-DWGR-0213",
         "upgradeLimit": "0",
@@ -22834,9 +22834,9 @@
         "target": "",
         "checkType": "",
         "element": "",
-        "description": "高原の朝霧から集めた冷たい露。魔力をよく馴染ませる。",
+        "description": "高原の朝霧から集めた冷たい露。朝のうちだけ採取でき、魔力をよく馴染ませる。",
         "effect": "",
-        "source": "風渡りの高原・雲間の窪地",
+        "source": "風渡りの高原（朝／雲間の露溜まり）",
         "usageTags": "採取素材,水・液体,調合,高原",
         "equipmentUpgradeEffect": "",
         "equipmentUpgradeTarget": "",
@@ -56152,7 +56152,8 @@
         "recommendedSkills": "採取・戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "街はずれの草原"
+        "questLocation": "街はずれの草原",
+        "timeSlots": ""
       },
       {
         "id": "quest_unlock_nearby_forest",
@@ -56180,7 +56181,8 @@
         "recommendedSkills": "探索・感知・戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "街はずれの草原"
+        "questLocation": "街はずれの草原",
+        "timeSlots": ""
       },
       {
         "id": "quest_unlock_waterside_wetland",
@@ -56208,7 +56210,8 @@
         "recommendedSkills": "運動・探索・戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "近郊の森"
+        "questLocation": "近郊の森",
+        "timeSlots": ""
       },
       {
         "id": "quest_unlock_antique_shop",
@@ -56236,7 +56239,8 @@
         "rewardScope": "各PC",
         "deliveryItems": "",
         "updatedAt": "2026-08-07",
-        "questLocation": "近郊の森"
+        "questLocation": "近郊の森",
+        "timeSlots": ""
       },
       {
         "id": "quest_unlock_reflection_water_garden",
@@ -56264,7 +56268,8 @@
         "recommendedSkills": "戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "水辺の湿地"
+        "questLocation": "水辺の湿地",
+        "timeSlots": ""
       },
       {
         "id": "quest_unlock_foothill_old_mine",
@@ -56292,7 +56297,8 @@
         "recommendedSkills": "探索・力業・戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "水辺の湿地"
+        "questLocation": "水辺の湿地",
+        "timeSlots": ""
       },
       {
         "id": "quest_unlock_wind_swept_highland",
@@ -56320,7 +56326,8 @@
         "recommendedSkills": "操作・探索・戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "山麓の旧鉱山"
+        "questLocation": "山麓の旧鉱山",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_workshop_tools",
@@ -56352,7 +56359,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_apothecary_sort",
@@ -56384,7 +56392,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_dewgrass",
@@ -56400,7 +56409,7 @@
         "rewardItems": "薬草×1",
         "unlockResult": "",
         "description": "朝露を含んだ薬草が薬屋で不足している。草原で傷みの少ないものを集め、扱いやすい束にして持ち帰ってほしい。",
-        "notes": "反復可能。日替わり依頼として再受注可能。非戦闘デイリー。参加人数によって判定目標値・採取数・納品数・報酬を変更しない。納品用朝露草束はクエスト専用の納品物として扱い、倉庫へ登録しない。",
+        "notes": "反復可能。日替わり依頼として再受注可能。非戦闘デイリー。参加人数によって判定目標値・採取数・納品数・報酬を変更しない。納品用朝露草束はクエスト専用の納品物として扱い、倉庫へ登録しない。\n朝露草の採取時刻に合わせ、朝の時間帯のみ進行可能。",
         "updatedAt": "2026-08-07",
         "questCategory": "デイリー",
         "enabled": "TRUE",
@@ -56411,7 +56420,8 @@
         "recommendedSkills": "採取・細工",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "街はずれの草原"
+        "questLocation": "街はずれの草原",
+        "timeSlots": "朝"
       },
       {
         "id": "quest_daily_field_pest",
@@ -56438,7 +56448,8 @@
         "recommendedSkills": "追跡・感知・戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "街はずれの草原"
+        "questLocation": "街はずれの草原",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_grass_monsters",
@@ -56465,7 +56476,8 @@
         "recommendedSkills": "戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "街はずれの草原"
+        "questLocation": "街はずれの草原",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_lost_goods",
@@ -56492,7 +56504,8 @@
         "recommendedSkills": "探索",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "街はずれの草原"
+        "questLocation": "街はずれの草原",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_apothecary_base",
@@ -56520,7 +56533,8 @@
         "description": "薬屋の基礎薬液が不足している。調合に使える濃度へ整えた中和剤と蒸留水を補充してほしい。",
         "notes": "反復可能。デイリー用の加工素材納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_eatery_crate",
@@ -56548,7 +56562,8 @@
         "description": "食事処の仕込みに使う穀実と根菜、香草が不足している。傷みのないものをまとめて納めてほしい。",
         "notes": "反復可能。デイリー用の食材納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_dried_mushroom_sort",
@@ -56580,7 +56595,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_leather_cord",
@@ -56612,7 +56628,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_firewood",
@@ -56639,7 +56656,8 @@
         "recommendedSkills": "力業・採取",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "近郊の森"
+        "questLocation": "近郊の森",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_forest_herbs",
@@ -56666,7 +56684,8 @@
         "recommendedSkills": "採取・知識",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "近郊の森"
+        "questLocation": "近郊の森",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_beast_tracks",
@@ -56693,7 +56712,8 @@
         "recommendedSkills": "追跡・感知・戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "近郊の森"
+        "questLocation": "近郊の森",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_forest_monster",
@@ -56721,7 +56741,8 @@
         "description": "森の魔物から得られる硬質な牙と菌核を、武具と薬品の試作に使いたい。傷みの少ない素材を納めてほしい。",
         "notes": "反復可能。デイリー用の魔物素材納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_slime_filter",
@@ -56753,7 +56774,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_damp_gear",
@@ -56785,7 +56807,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_stream_water",
@@ -56812,7 +56835,8 @@
         "recommendedSkills": "採取・細工",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "水辺の湿地"
+        "questLocation": "水辺の湿地",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_wetland_sound",
@@ -56839,7 +56863,8 @@
         "recommendedSkills": "感知・探索・戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "水辺の湿地"
+        "questLocation": "水辺の湿地",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_mucus_collect",
@@ -56866,7 +56891,8 @@
         "recommendedSkills": "採取・戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "水辺の湿地"
+        "questLocation": "水辺の湿地",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_wetland_material",
@@ -56894,7 +56920,8 @@
         "description": "薬屋と工房で使う湿地粘液と霧針が不足している。混入物を取り除いた状態でまとめて納めてほしい。",
         "notes": "反復可能。デイリー用の採取素材・魔物素材納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_reflection_focus",
@@ -56926,7 +56953,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_reflection_water_garden",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_otherworld_samples",
@@ -56958,7 +56986,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_reflection_water_garden",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_reflection_moss",
@@ -56986,7 +57015,8 @@
         "recommendedSkills": "採取・知識",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "反照の水庭"
+        "questLocation": "反照の水庭",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_return_route",
@@ -57014,7 +57044,8 @@
         "recommendedSkills": "知識・細工",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "反照の水庭"
+        "questLocation": "反照の水庭",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_phase_observation",
@@ -57042,7 +57073,8 @@
         "recommendedSkills": "知識・感知・探索",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "反照の水庭"
+        "questLocation": "反照の水庭",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_otherworld_cull",
@@ -57070,7 +57102,8 @@
         "recommendedSkills": "戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "反照の水庭"
+        "questLocation": "反照の水庭",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_inverted_reed",
@@ -57098,7 +57131,8 @@
         "recommendedSkills": "採取・細工",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "反照の水庭"
+        "questLocation": "反照の水庭",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_reflection_research",
@@ -57126,7 +57160,8 @@
         "description": "異界素材の性質を比較するため、反照苔・逆さ葦・虚ろ雫を同じ採取行程のものとして揃えてほしい。",
         "notes": "反復可能。デイリー用の異界素材納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_mining_tools",
@@ -57158,7 +57193,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_forge_heat",
@@ -57190,7 +57226,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_mine_cull",
@@ -57218,7 +57255,8 @@
         "recommendedSkills": "戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "山麓の旧鉱山"
+        "questLocation": "山麓の旧鉱山",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_mine_tools",
@@ -57246,7 +57284,8 @@
         "recommendedSkills": "力業・細工",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "山麓の旧鉱山"
+        "questLocation": "山麓の旧鉱山",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_mine_collapse",
@@ -57274,7 +57313,8 @@
         "recommendedSkills": "探索・知識",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "山麓の旧鉱山"
+        "questLocation": "山麓の旧鉱山",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_mine_ore",
@@ -57302,7 +57342,8 @@
         "recommendedSkills": "採取",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "山麓の旧鉱山"
+        "questLocation": "山麓の旧鉱山",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_mine_processed",
@@ -57330,7 +57371,8 @@
         "description": "鍛冶場で使う精錬材の在庫が減っている。鍛造に回せる鍛鉄インゴットと、粒を揃えた魔晶粉を補充してほしい。",
         "notes": "反復可能。デイリー用の加工素材納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_lightning_gear",
@@ -57362,7 +57404,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_windcloth",
@@ -57394,7 +57437,8 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_highland_storm",
@@ -57422,7 +57466,8 @@
         "recommendedSkills": "探索・感知",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "風渡りの高原"
+        "questLocation": "風渡りの高原",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_highland_marker",
@@ -57450,7 +57495,8 @@
         "recommendedSkills": "探索・操作",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "風渡りの高原"
+        "questLocation": "風渡りの高原",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_highland_cull",
@@ -57478,7 +57524,8 @@
         "recommendedSkills": "戦闘系技能",
         "rewardScope": "各PC",
         "deliveryItems": "",
-        "questLocation": "風渡りの高原"
+        "questLocation": "風渡りの高原",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_highland_oil",
@@ -57506,7 +57553,8 @@
         "description": "高原へ向かう探索者へ配る防風香油が不足している。香りと粘度を整えた自作品を一本納めてほしい。",
         "notes": "反復可能。デイリー用の調合品納品依頼。報酬はパーティー共通。購入品ではなく自作品を納品する。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_highland_windstone",
@@ -57534,7 +57582,8 @@
         "recommendedSkills": "",
         "rewardScope": "パーティー共通",
         "deliveryItems": "風鳴石×2",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_grass_monster",
@@ -57562,7 +57611,8 @@
         "description": "薬屋の被膜研究と鍛冶場の補修に使うため、草原の魔物から得られる膜と甲殻を納めてほしい。",
         "notes": "反復可能。デイリー用の魔物素材納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_forest_gathered",
@@ -57590,7 +57640,8 @@
         "description": "調合と細工の試作に使う胞子粉と動く根が不足している。乾燥や傷みの少ないものをまとめて納めてほしい。",
         "notes": "反復可能。デイリー用の採取素材納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_forest_food",
@@ -57618,7 +57669,8 @@
         "description": "食事処で森料理の仕込みを行うため、肉・茸・樹蜜を一箱分揃えて納めてほしい。",
         "notes": "反復可能。デイリー用の食材納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_wetland_food",
@@ -57646,7 +57698,8 @@
         "description": "食事処の湿地料理に使う根菜と魚介が不足している。鮮度を保ったまま仕込み箱へまとめてほしい。",
         "notes": "反復可能。デイリー用の食材納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_wetland_liquid",
@@ -57674,7 +57727,8 @@
         "description": "薬屋で軟膏や粘性薬液に使う液材が不足している。異物を取り除いたゼラチン液と湿地粘液を納めてほしい。",
         "notes": "反復可能。デイリー用の採取素材納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-07",
-        "questLocation": "拠点"
+        "questLocation": "拠点",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_guild_notice_sort",
@@ -57706,7 +57760,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_outskirts_grass」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_arrowshaft_check",
@@ -57738,7 +57793,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_outskirts_grass」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_inn_linen_mend",
@@ -57770,7 +57826,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_outskirts_grass」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_herb_drying",
@@ -57802,7 +57859,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_nearby_forest」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_hide_stretch",
@@ -57834,7 +57892,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_nearby_forest」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_resin_lamp",
@@ -57866,7 +57925,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_nearby_forest」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_boot_clean",
@@ -57898,7 +57958,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_waterside_wetland」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_water_filter",
@@ -57930,7 +57991,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_waterside_wetland」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_mosquito_net",
@@ -57962,7 +58024,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_waterside_wetland」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_ore_sort",
@@ -57994,7 +58057,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_foothill_old_mine」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_lamp_wick",
@@ -58026,7 +58090,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_foothill_old_mine」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_cart_brake",
@@ -58058,7 +58123,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_foothill_old_mine」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_mirror_plate",
@@ -58090,7 +58156,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_reflection_water_garden」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_phase_notes",
@@ -58122,7 +58189,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_reflection_water_garden」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_vial_seal",
@@ -58154,7 +58222,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_reflection_water_garden」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_wind_rope",
@@ -58186,7 +58255,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_wind_swept_highland」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_lightning_rod",
@@ -58218,7 +58288,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_wind_swept_highland」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_base_glider_cloth",
@@ -58250,7 +58321,8 @@
         "notes": "反復可能。拠点だけで完結する依頼。報酬は入手アイテム表「reward_wind_swept_highland」から2枠抽選。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_grass_quick_chase",
@@ -58285,7 +58357,8 @@
         "createdBy": "",
         "battleRoundLimit": 3,
         "battleRoundSuccess": "第3ラウンド終了までにラフィンラット4体をすべて倒す。",
-        "battleRoundFailure": "第3ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第3ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_grass_beetle_break",
@@ -58320,7 +58393,8 @@
         "createdBy": "",
         "battleRoundLimit": 3,
         "battleRoundSuccess": "第3ラウンド終了までにカラパスビートル2体をすべて倒す。",
-        "battleRoundFailure": "第3ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第3ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_grass_crystal_outcrop",
@@ -58352,7 +58426,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。参加人数によって判定目標値・入手数・報酬を変更しない。 進行度は1回50%上昇し、50%と100%の2回で採取・資源確認を処理する。",
         "updatedAt": "2026-08-11T00:20:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_grass_windfall_branch",
@@ -58387,7 +58462,8 @@
         "createdBy": "",
         "battleRoundLimit": 5,
         "battleRoundSuccess": "第5ラウンド終了までに、作業役が主行動《固定作業》の作業判定を3回連続で成功させて作業を完了し、その後に場の魔物を全滅させる。作業未完了で敵が全滅した場合はラウンド終了時に小規模増援が出現する。増援も通常の解体・ドロップ対象。",
-        "battleRoundFailure": "第5ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《固定作業》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。"
+        "battleRoundFailure": "第5ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《固定作業》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_grass_cleanse_patch",
@@ -58419,7 +58495,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。参加人数によって判定目標値・入手数・報酬を変更しない。 進行度は1回50%上昇し、50%と100%の2回で採取・資源確認を処理する。",
         "updatedAt": "2026-08-11T00:20:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_grass_old_marker",
@@ -58454,7 +58531,8 @@
         "createdBy": "",
         "battleRoundLimit": "",
         "battleRoundSuccess": "回収時に運搬役をPC1人指定する。帰路の戦闘に勝利し、運搬役への敵の攻撃が一度も命中しなければ成功。",
-        "battleRoundFailure": "運搬役への敵の攻撃が1回でも命中した時点で即座にクエスト失敗。ダメージが0になっても、命中していれば失敗。運搬役は途中変更不可。"
+        "battleRoundFailure": "運搬役への敵の攻撃が1回でも命中した時点で即座にクエスト失敗。ダメージが0になっても、命中していれば失敗。運搬役は途中変更不可。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_forest_root_hound_rush",
@@ -58489,7 +58567,8 @@
         "createdBy": "",
         "battleRoundLimit": 4,
         "battleRoundSuccess": "第4ラウンド終了までにルートハウンド3体をすべて倒す。",
-        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_forest_spore_break",
@@ -58524,7 +58603,8 @@
         "createdBy": "",
         "battleRoundLimit": 3,
         "battleRoundSuccess": "第3ラウンド終了までにマイコニド4体をすべて倒す。",
-        "battleRoundFailure": "第3ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第3ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_forest_patrol_cull",
@@ -58556,7 +58636,8 @@
         "notes": "反復可能。巡回掃討のため固定戦闘を2回行う。各戦闘は対象エリアの候補から人数対応で個別に再抽選し、各戦闘で通常どおり魔物ドロップ判定を行う。固定戦闘以外の進行区切りでは通常のエリアランダムイベントを使用する。",
         "updatedAt": "2026-08-10T22:32:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_forest_spore_sample",
@@ -58588,7 +58669,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。参加人数によって判定目標値・入手数・報酬を変更しない。 同エリア内の同難度依頼と、進行中に得る素材価値を基準に報酬金を再調整。 進行度は1回50%上昇し、50%と100%の2回で採取・資源確認を処理する。",
         "updatedAt": "2026-08-11T00:20:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_forest_moving_root",
@@ -58620,7 +58702,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。参加人数によって判定目標値・入手数・報酬を変更しない。 同エリア内の同難度依頼と、進行中に得る素材価値を基準に報酬金を再調整。 進行度は1回50%上昇し、50%と100%の2回で採取・資源確認を処理する。",
         "updatedAt": "2026-08-11T00:20:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_forest_honey_trace",
@@ -58655,7 +58738,8 @@
         "createdBy": "",
         "battleRoundLimit": "",
         "battleRoundSuccess": "回収時に運搬役をPC1人指定する。帰路の戦闘に勝利し、運搬役が1点以上のダメージを一度も受けなければ成功。",
-        "battleRoundFailure": "運搬役が1点以上のダメージを受けた時点で即座にクエスト失敗。最終ダメージ0なら失敗しない。運搬役は途中変更不可。"
+        "battleRoundFailure": "運搬役が1点以上のダメージを受けた時点で即座にクエスト失敗。最終ダメージ0なら失敗しない。運搬役は途中変更不可。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_forest_branch_route",
@@ -58690,7 +58774,8 @@
         "createdBy": "",
         "battleRoundLimit": 5,
         "battleRoundSuccess": "第5ラウンド終了までに、作業役が主行動《杭打ち作業》の作業判定を3回連続で成功させて作業を完了し、その後に場の魔物を全滅させる。作業未完了で敵が全滅した場合はラウンド終了時に小規模増援が出現する。増援も通常の解体・ドロップ対象。",
-        "battleRoundFailure": "第5ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《杭打ち作業》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。"
+        "battleRoundFailure": "第5ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《杭打ち作業》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_wetland_leech_rush",
@@ -58725,7 +58810,8 @@
         "createdBy": "",
         "battleRoundLimit": 3,
         "battleRoundSuccess": "第3ラウンド終了までにミアズマリーチ4体をすべて倒す。",
-        "battleRoundFailure": "第3ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第3ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_wetland_mosquito_swarm",
@@ -58760,7 +58846,8 @@
         "createdBy": "",
         "battleRoundLimit": 4,
         "battleRoundSuccess": "第4ラウンド終了までにミストモスキート5体をすべて倒す。",
-        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_wetland_path_cull",
@@ -58792,7 +58879,8 @@
         "notes": "反復可能。巡回掃討のため固定戦闘を2回行う。各戦闘は対象エリアの候補から人数対応で個別に再抽選し、各戦闘で通常どおり魔物ドロップ判定を行う。固定戦闘以外の進行区切りでは通常のエリアランダムイベントを使用する。",
         "updatedAt": "2026-08-10T22:32:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_wetland_reed_scale",
@@ -58827,7 +58915,8 @@
         "createdBy": "",
         "battleRoundLimit": "",
         "battleRoundSuccess": "回収時に運搬役をPC1人指定する。帰路の戦闘に勝利し、運搬役が1点以上のダメージを一度も受けなければ成功。",
-        "battleRoundFailure": "運搬役が1点以上のダメージを受けた時点で即座にクエスト失敗。最終ダメージ0なら失敗しない。運搬役は途中変更不可。"
+        "battleRoundFailure": "運搬役が1点以上のダメージを受けた時点で即座にクエスト失敗。最終ダメージ0なら失敗しない。運搬役は途中変更不可。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_wetland_mist_needle",
@@ -58859,7 +58948,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。参加人数によって判定目標値・入手数・報酬を変更しない。 同エリア内の同難度依頼と、進行中に得る素材価値を基準に報酬金を再調整。 進行度は1回50%上昇し、50%と100%の2回で採取・資源確認を処理する。",
         "updatedAt": "2026-08-11T00:20:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_wetland_lotus_root",
@@ -58891,7 +58981,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。参加人数によって判定目標値・入手数・報酬を変更しない。 同エリア内の同難度依頼と、進行中に得る素材価値を基準に報酬金を再調整。 進行度は1回50%上昇し、50%と100%の2回で採取・資源確認を処理する。",
         "updatedAt": "2026-08-11T00:20:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_wetland_safe_stakes",
@@ -58926,7 +59017,8 @@
         "createdBy": "",
         "battleRoundLimit": 6,
         "battleRoundSuccess": "第6ラウンド終了までに、作業役が主行動《杭打ち作業》の作業判定を3回連続で成功させて作業を完了し、その後に場の魔物を全滅させる。作業未完了で敵が全滅した場合はラウンド終了時に小規模増援が出現する。増援も通常の解体・ドロップ対象。",
-        "battleRoundFailure": "第6ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《杭打ち作業》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。"
+        "battleRoundFailure": "第6ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《杭打ち作業》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_mine_mole_rush",
@@ -58961,7 +59053,8 @@
         "createdBy": "",
         "battleRoundLimit": 4,
         "battleRoundSuccess": "第4ラウンド終了までにピックモール3体をすべて倒す。",
-        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_mine_rust_swarm",
@@ -58996,7 +59089,8 @@
         "createdBy": "",
         "battleRoundLimit": 4,
         "battleRoundSuccess": "第4ラウンド終了までにラストマイト4体をすべて倒す。",
-        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_mine_guard_cull",
@@ -59028,7 +59122,8 @@
         "notes": "反復可能。巡回掃討のため固定戦闘を2回行う。各戦闘は対象エリアの候補から人数対応で個別に再抽選し、各戦闘で通常どおり魔物ドロップ判定を行う。固定戦闘以外の進行区切りでは通常のエリアランダムイベントを使用する。 進行度は20%刻み。2回の固定掃討の間に旧坑道の巡回区間を挟む。",
         "updatedAt": "2026-08-14T01:26:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_mine_silver_vein",
@@ -59060,7 +59155,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。参加人数によって判定目標値・入手数・報酬を変更しない。 同エリア内の同難度依頼と、進行中に得る素材価値を基準に報酬金を再調整。 進行度は1回50%上昇し、50%と100%の2回で採取・資源確認を処理する。",
         "updatedAt": "2026-08-11T00:20:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_mine_crystal_echo",
@@ -59095,7 +59191,8 @@
         "createdBy": "",
         "battleRoundLimit": "",
         "battleRoundSuccess": "回収時に運搬役をPC1人指定する。帰路の戦闘に勝利し、運搬役への敵の攻撃が一度も命中しなければ成功。",
-        "battleRoundFailure": "運搬役への敵の攻撃が1回でも命中した時点で即座にクエスト失敗。ダメージが0になっても、命中していれば失敗。運搬役は途中変更不可。"
+        "battleRoundFailure": "運搬役への敵の攻撃が1回でも命中した時点で即座にクエスト失敗。ダメージが0になっても、命中していれば失敗。運搬役は途中変更不可。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_mine_support_beam",
@@ -59130,7 +59227,8 @@
         "createdBy": "",
         "battleRoundLimit": 6,
         "battleRoundSuccess": "第6ラウンド終了までに、作業役が主行動《支柱固定》の作業判定を3回連続で成功させて作業を完了し、その後に場の魔物を全滅させる。作業未完了で敵が全滅した場合はラウンド終了時に小規模増援が出現する。増援も通常の解体・ドロップ対象。",
-        "battleRoundFailure": "第6ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《支柱固定》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。"
+        "battleRoundFailure": "第6ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《支柱固定》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_reflection_void_rush",
@@ -59165,7 +59263,8 @@
         "createdBy": "",
         "battleRoundLimit": 5,
         "battleRoundSuccess": "第5ラウンド終了までにヴォイドハウンド2体をすべて倒す。",
-        "battleRoundFailure": "第5ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第5ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_reflection_crab_break",
@@ -59200,7 +59299,8 @@
         "createdBy": "",
         "battleRoundLimit": 4,
         "battleRoundSuccess": "第4ラウンド終了までにリフトクラブ2体をすべて倒す。",
-        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_reflection_glass_fin",
@@ -59235,7 +59335,8 @@
         "createdBy": "",
         "battleRoundLimit": "",
         "battleRoundSuccess": "回収時に運搬役をPC1人指定する。帰路の戦闘に勝利し、運搬役への敵の攻撃が一度も命中しなければ成功。",
-        "battleRoundFailure": "運搬役への敵の攻撃が1回でも命中した時点で即座にクエスト失敗。ダメージが0になっても、命中していれば失敗。運搬役は途中変更不可。"
+        "battleRoundFailure": "運搬役への敵の攻撃が1回でも命中した時点で即座にクエスト失敗。ダメージが0になっても、命中していれば失敗。運搬役は途中変更不可。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_reflection_echo_seed",
@@ -59267,7 +59368,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。参加人数によって判定目標値・入手数・報酬を変更しない。 同エリア内の同難度依頼と、進行中に得る素材価値を基準に報酬金を再調整。 進行度は1回50%上昇し、50%と100%の2回で採取・資源確認を処理する。",
         "updatedAt": "2026-08-11T00:20:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_reflection_rift_crystal",
@@ -59302,7 +59404,8 @@
         "createdBy": "",
         "battleRoundLimit": 6,
         "battleRoundSuccess": "第6ラウンド終了までに、作業役が主行動《安定化操作》の作業判定を3回連続で成功させて作業を完了し、その後に場の魔物を全滅させる。作業未完了で敵が全滅した場合はラウンド終了時に小規模増援が出現する。増援も通常の解体・ドロップ対象。",
-        "battleRoundFailure": "第6ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《安定化操作》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。"
+        "battleRoundFailure": "第6ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《安定化操作》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_highland_bison_rush",
@@ -59337,7 +59440,8 @@
         "createdBy": "",
         "battleRoundLimit": 4,
         "battleRoundSuccess": "第4ラウンド終了までにボルトバイソン2体をすべて倒す。",
-        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第4ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_highland_glide_break",
@@ -59372,7 +59476,8 @@
         "createdBy": "",
         "battleRoundLimit": 5,
         "battleRoundSuccess": "第5ラウンド終了までにグライドスケイル3体をすべて倒す。",
-        "battleRoundFailure": "第5ラウンド終了時点で対象が1体でも残っていればクエスト失敗。"
+        "battleRoundFailure": "第5ラウンド終了時点で対象が1体でも残っていればクエスト失敗。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_highland_patrol_cull",
@@ -59404,7 +59509,8 @@
         "notes": "反復可能。巡回掃討のため固定戦闘を2回行う。各戦闘は対象エリアの候補から人数対応で個別に再抽選し、各戦闘で通常どおり魔物ドロップ判定を行う。固定戦闘以外の進行区切りでは通常のエリアランダムイベントを使用する。 進行度は20%刻み。複数の風標を巡る5区間の巡回掃討。",
         "updatedAt": "2026-08-14T01:26:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_highland_cloud_cotton",
@@ -59436,7 +59542,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。参加人数によって判定目標値・入手数・報酬を変更しない。 同エリア内の同難度依頼と、進行中に得る素材価値を基準に報酬金を再調整。 進行度は1回50%上昇し、50%と100%の2回で採取・資源確認を処理する。",
         "updatedAt": "2026-08-11T00:20:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_highland_sky_dew",
@@ -59471,7 +59578,8 @@
         "createdBy": "",
         "battleRoundLimit": "",
         "battleRoundSuccess": "回収時に運搬役をPC1人指定する。帰路の戦闘に勝利し、運搬役が1点以上のダメージを一度も受けなければ成功。",
-        "battleRoundFailure": "運搬役が1点以上のダメージを受けた時点で即座にクエスト失敗。最終ダメージ0なら失敗しない。運搬役は途中変更不可。"
+        "battleRoundFailure": "運搬役が1点以上のダメージを受けた時点で即座にクエスト失敗。最終ダメージ0なら失敗しない。運搬役は途中変更不可。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_highland_windgrass",
@@ -59506,7 +59614,8 @@
         "createdBy": "",
         "battleRoundLimit": 6,
         "battleRoundSuccess": "第6ラウンド終了までに、作業役が主行動《同期操作》の作業判定を3回連続で成功させて作業を完了し、その後に場の魔物を全滅させる。作業未完了で敵が全滅した場合はラウンド終了時に小規模増援が出現する。増援も通常の解体・ドロップ対象。",
-        "battleRoundFailure": "第6ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《同期操作》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。"
+        "battleRoundFailure": "第6ラウンド終了までに作業を完了できなければ失敗。作業判定失敗、作業役が1点以上のダメージを受ける、またはそのラウンドに《同期操作》を行わなかった場合、連続成功回数を0に戻す。最終ダメージ0ではリセットしない。毒などの継続ダメージは対象、HPコストは対象外。",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_highland_lightning_vein",
@@ -59538,7 +59647,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。参加人数によって判定目標値・入手数・報酬を変更しない。 同エリア内の同難度依頼と、進行中に得る素材価値を基準に報酬金を再調整。 進行度は1回50%上昇し、50%と100%の2回で採取・資源確認を処理する。",
         "updatedAt": "2026-08-11T00:20:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_grass_gathered",
@@ -59570,7 +59680,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_grass_mineral",
@@ -59602,7 +59713,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_forest_beast",
@@ -59634,7 +59746,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_forest_processed",
@@ -59666,7 +59779,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_wetland_monster",
@@ -59698,7 +59812,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_wetland_processed",
@@ -59730,7 +59845,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_mine_basic_ore",
@@ -59762,7 +59878,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_mine_rare_ore",
@@ -59794,7 +59911,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_mine_monster_hard",
@@ -59826,7 +59944,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_mine_luminous",
@@ -59858,7 +59977,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_reflection_basic",
@@ -59890,7 +60010,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_reflection_monster",
@@ -59922,7 +60043,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_reflection_aquatic",
@@ -59954,7 +60076,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_reflection_echo",
@@ -59986,7 +60109,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_highland_windcloth",
@@ -60018,7 +60142,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_highland_thunder",
@@ -60050,7 +60175,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_delivery_highland_processed",
@@ -60082,7 +60208,8 @@
         "notes": "反復可能。デイリー用の納品依頼。報酬はパーティー共通。 納品報酬は同エリアの制限戦闘より低く、納品物の価値を踏まえたパーティー共通額に調整。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_unlock_ashcrown_canyon",
@@ -60112,7 +60239,8 @@
         "notes": "一度きりの重要クエスト。4人を基準とし、人数差は魔物の能力値ではなく出現数で調整する。エリアボスへの勝利は解放条件ではない。 進行度は20%刻み。高原から峡谷口までを5段階で調査する重要クエスト。",
         "updatedAt": "2026-08-14T01:26:00+09:00",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_ashcrown_heat_route",
@@ -60142,7 +60270,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_ashcrown_obsidian",
@@ -60172,7 +60301,8 @@
         "notes": "反復可能。デイリー用の納品依頼。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_ashcrown_cull",
@@ -60202,7 +60332,8 @@
         "notes": "解放済みエリア向けデイリー。探索進行度を要求しない。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       },
       {
         "id": "quest_daily_ashcrown_moss",
@@ -60232,7 +60363,8 @@
         "notes": "反復可能。非戦闘のエリア依頼。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": ""
       }
     ],
     "exploration_areas": [
@@ -60252,7 +60384,8 @@
         "fieldEffect": "なし",
         "unlockKey": "",
         "unlockOrder": 1,
-        "weatherProfiles": "晴天\t35\t穏やかな日差しが草原を照らし、草花や小動物の動きがよく見える。\tラピットホーン,カラパスビートル\tプチスライム\t\n曇天\t25\t薄い雲が日差しを遮り、草むらの陰で小型獣や地中性の魔物が動きやすくなっている。\tラフィンラット,グラウワーム\t\t\n小雨\t20\t細かな雨が草地を湿らせ、水気を好む魔物と瑞々しい草木が目立つ。\tプチスライム,グラウワーム\tカラパスビートル\t\n強風\t20\t草原を横切る強い風が草を大きく倒し、飛行性の魔物が風に乗って活発に動いている。\tヴェスパット,ラピットホーン\tグラウワーム\t"
+        "weatherProfiles": "晴天\t35\t穏やかな日差しが草原を照らし、草花や小動物の動きがよく見える。\tラピットホーン,カラパスビートル\tプチスライム\t\n曇天\t25\t薄い雲が日差しを遮り、草むらの陰で小型獣や地中性の魔物が動きやすくなっている。\tラフィンラット,グラウワーム\t\t\n小雨\t20\t細かな雨が草地を湿らせ、水気を好む魔物と瑞々しい草木が目立つ。\tプチスライム,グラウワーム\tカラパスビートル\t\n強風\t20\t草原を横切る強い風が草を大きく倒し、飛行性の魔物が風に乗って活発に動いている。\tヴェスパット,ラピットホーン\tグラウワーム\t",
+        "timeProfiles": "朝\t朝露が草先に残り、小型の粘体や若草を食む獣が動き始める。\tプチスライム,ラピットホーン\tカラパスビートル\t\n昼\t日差しが草原を広く照らし、草食獣や飛行する虫の姿を見つけやすい。\tラピットホーン,ヴェスパット\tプチスライム,カラパスビートル\t\n夕\t気温が下がり、物陰に潜んでいた獣や甲殻虫が動き出す。\tカラパスビートル,ラフィンラット\tプチスライム\t\n夜\t草むらと地面の気配が濃くなり、地中性・夜行性の魔物が目立つ。\tカラパスビートル,グラウワーム,ラフィンラット\tラピットホーン,ヴェスパット\t"
       },
       {
         "id": "area_nearby_forest",
@@ -60270,7 +60403,8 @@
         "fieldEffect": "なし",
         "unlockKey": "7UCX-JAUE-E2TH-GLRG-MEGW",
         "unlockOrder": 2,
-        "weatherProfiles": "木漏れ日\t30\t枝葉の隙間から柔らかな光が差し込み、林床の草木と樹上の気配を見つけやすい。\tラスクレイル,ブランチリング\tマイコニド\t\n曇天\t25\t森全体が均一な薄暗さに包まれ、獣たちが警戒を緩めて林内を動いている。\tルートハウンド,モスバック\t\t\n雨\t25\t雨が葉を濡らし、茸や苔が瑞々しく育つ一方、足音や気配が雨音に紛れやすい。\tマイコニド,モスバック\tウィスパウル\t\n朝霧\t20\t低い霧が林床を覆い、姿は見えにくいが音や足跡の気配が近く感じられる。\tウィスパウル,ルートハウンド\tラスクレイル\t"
+        "weatherProfiles": "木漏れ日\t30\t枝葉の隙間から柔らかな光が差し込み、林床の草木と樹上の気配を見つけやすい。\tラスクレイル,ブランチリング\tマイコニド\t\n曇天\t25\t森全体が均一な薄暗さに包まれ、獣たちが警戒を緩めて林内を動いている。\tルートハウンド,モスバック\t\t\n雨\t25\t雨が葉を濡らし、茸や苔が瑞々しく育つ一方、足音や気配が雨音に紛れやすい。\tマイコニド,モスバック\tウィスパウル\t\n朝霧\t20\t低い霧が林床を覆い、姿は見えにくいが音や足跡の気配が近く感じられる。\tウィスパウル,ルートハウンド\tラスクレイル\t",
+        "timeProfiles": "朝\t梢に朝の気配が広がり、樹上を動く魔物や鳴き声を使う魔物が活発になる。\tラスクレイル,ウィスパウル\tマイコニド\t\n昼\t林床まで光が届き、樹上や木立に潜む魔物を見つけやすい。\tラスクレイル,ブランチリング\tマイコニド\t\n夕\t林内が薄暗くなり、獣道を巡る魔物や苔むした獣が動き始める。\tルートハウンド,モスバック,ウィスパウル\tラスクレイル\t\n夜\t湿った林床と梢の影が濃くなり、菌類や待ち伏せ型の魔物が活発になる。\tマイコニド,ルートハウンド,ウィスパウル\tラスクレイル,ラピットホーン\t"
       },
       {
         "id": "area_waterside_wetland",
@@ -60288,7 +60422,8 @@
         "fieldEffect": "【ぬかるみ】戦闘中、PC全員の回避－1。魔物には適用しない。",
         "unlockKey": "DQFU-KXNP-UKGQ-WN93-7LFU",
         "unlockOrder": 3,
-        "weatherProfiles": "曇天\t25\t低い雲の下で湿地の水面が鈍く光り、水辺の大型個体が動きやすい。\tドロマール,リードリザード\t\t\n小雨\t30\t細かな雨が湿地を潤し、粘体や跳躍する小型魔物が浅瀬へ集まっている。\tバブルスライム,マッドホッパー\t\t\n豪雨\t20\t強い雨で水位が上がり、水気を好む魔物が活発になる一方、飛行性の虫は動きにくい。\tバブルスライム,ミアズマリーチ\tミストモスキート\t\n濃霧\t25\t水面近くに濃い霧が溜まり、吸血性や潜伏性の魔物の気配が増している。\tミストモスキート,ミアズマリーチ\tリードリザード\t"
+        "weatherProfiles": "曇天\t25\t低い雲の下で湿地の水面が鈍く光り、水辺の大型個体が動きやすい。\tドロマール,リードリザード\t\t\n小雨\t30\t細かな雨が湿地を潤し、粘体や跳躍する小型魔物が浅瀬へ集まっている。\tバブルスライム,マッドホッパー\t\t\n豪雨\t20\t強い雨で水位が上がり、水気を好む魔物が活発になる一方、飛行性の虫は動きにくい。\tバブルスライム,ミアズマリーチ\tミストモスキート\t\n濃霧\t25\t水面近くに濃い霧が溜まり、吸血性や潜伏性の魔物の気配が増している。\tミストモスキート,ミアズマリーチ\tリードリザード\t",
+        "timeProfiles": "朝\t水面に霧が残り、霧へ紛れる虫や浅瀬の粘体が活発になる。\tミストモスキート,バブルスライム\tドロマール\t\n昼\t霧が晴れて水辺の視界が開け、跳躍する小型魔物や葦に潜む爬虫類が動く。\tマッドホッパー,リードリザード\tミストモスキート,ミアズマリーチ\t\n夕\t再び湿気と霧が濃くなり、浅瀬と葦原の魔物が活動を強める。\tミストモスキート,マッドホッパー,リードリザード\t\t\n夜\t水面が暗く静まり、泥や水底に潜む魔物の気配が強くなる。\tミアズマリーチ,ドロマール,バブルスライム\tリードリザード\t"
       },
       {
         "id": "area_foothill_old_mine",
@@ -60306,7 +60441,8 @@
         "fieldEffect": "なし。落石・粉塵・狭所などの危険はエリアイベントとして処理する。",
         "unlockKey": "9N6J-MDGZ-P2ZK-H2NQ-A3RL",
         "unlockOrder": 4,
-        "weatherProfiles": "晴天\t30\t山麓の露天掘り跡まで明るく、鉱脈や崩落箇所を見分けやすい。坑道深部への影響は小さい。\tピックモール,オアスケイル\t\t\n曇天\t25\t山麓が薄暗く、坑口と露天掘り跡の明暗差が小さくなっている。\tレゾナバット,ラストマイト\t\t\n雨\t20\t雨水が露天掘り跡と坑口へ流れ込み、湿気を好む魔物や菌類が坑道浅部へ寄っている。\tミアズマリーチ,マイコニド\tピックモール\t\n強風\t25\t山麓を抜ける風が坑口や換気孔へ吹き込み、翼を持つ魔物や燐光体が流れに乗っている。\tレゾナバット,ルミナウィスプ\t\t"
+        "weatherProfiles": "晴天\t30\t山麓の露天掘り跡まで明るく、鉱脈や崩落箇所を見分けやすい。坑道深部への影響は小さい。\tピックモール,オアスケイル\t\t\n曇天\t25\t山麓が薄暗く、坑口と露天掘り跡の明暗差が小さくなっている。\tレゾナバット,ラストマイト\t\t\n雨\t20\t雨水が露天掘り跡と坑口へ流れ込み、湿気を好む魔物や菌類が坑道浅部へ寄っている。\tミアズマリーチ,マイコニド\tピックモール\t\n強風\t25\t山麓を抜ける風が坑口や換気孔へ吹き込み、翼を持つ魔物や燐光体が流れに乗っている。\tレゾナバット,ルミナウィスプ\t\t",
+        "timeProfiles": "朝\t坑口から入る朝の光と冷気で、浅部の採食性魔物が動きやすい。\tピックモール,オアスケイル\tレゾナバット,ルミナウィスプ\t\n昼\t露天掘り跡と坑道浅部が明るく、地上寄りの魔物が活動する。\tピックモール,オアスケイル\tレゾナバット\t\n夕\t坑口の明暗差が小さくなり、反響を使う飛行魔物や燐光体が浅部へ出てくる。\tレゾナバット,ルミナウィスプ\tピックモール\t\n夜\t坑道外が暗くなると、暗所を好む飛行魔物や燐光体の活動が増える。\tレゾナバット,ルミナウィスプ,ラストマイト\tピックモール\t"
       },
       {
         "id": "area_reflection_water_garden",
@@ -60319,12 +60455,13 @@
         "eventTableId": "evt_reflection_water_garden_daily",
         "progressStep": 20,
         "description": "上下の境界が曖昧な空の下、鏡のような浅い水面が果てなく続く異界。植物は水面の裏側へ伸び、影や波紋が実物より先に動く。反照する景色は距離感と動作の感覚を狂わせ、探索者の狙いをわずかに惑わせる。",
-        "notes": "任意攻略の異界エリア。山麓の旧鉱山以降を含む通常進行・施設・一般商品・一般レシピの解放条件には使用しない。このエリア固有の素材を実際に使用する装備・消耗品・レシピのみ、このエリアの解放を条件にできる。施設カタログでは、このエリア自身の解放キーを登録した場合だけ表示対象へ追加する。\n人数別ランダム遭遇値幅：1人 4～5／2人 4～6／3人 6～7／4人 6～8／5人 8～9／6人 8～10／7人 10～11。\n戦闘難度上は山麓の旧鉱山より上、風渡りの高原以下（1-ex）として扱う。解放順が特殊なため、unlockOrderや表示順を戦闘難度順として使用しない。",
+        "notes": "任意攻略の異界エリア。山麓の旧鉱山以降を含む通常進行・施設・一般商品・一般レシピの解放条件には使用しない。このエリア固有の素材を実際に使用する装備・消耗品・レシピのみ、このエリアの解放を条件にできる。施設カタログでは、このエリア自身の解放キーを登録した場合だけ表示対象へ追加する。\n人数別ランダム遭遇値幅：1人 4～5／2人 4～6／3人 6～7／4人 6～8／5人 8～9／6人 8～10／7人 10～11。\n戦闘難度上は山麓の旧鉱山より上、風渡りの高原以下（1-ex）として扱う。解放順が特殊なため、unlockOrderや表示順を戦闘難度順として使用しない。\n異界のため天気・時間帯の影響を受けない。",
         "updatedAt": "2026-08-16",
         "fieldEffect": "【反照の眩惑】各ラウンド開始時、PCからランダムに1人を選ぶ。対象の抵抗値が10未満なら、そのターンに行う攻撃・魔法・祈祷に-2。抵抗値が10以上なら効果なし。敵・ボス、防御、道具使用には適用しない。",
         "unlockKey": "54BY-CKSS-K3BR-ZG59-DX7B",
         "unlockOrder": 3.5,
-        "weatherProfiles": "晴映\t25\t白い光が鏡面の水へ幾重にも反射し、実体と反射像の境界がいつもより鮮明に見える。\tグラスレイ,ミラースライム\tフェイズモス\t\n鏡雨\t30\t水面から空へ向かって雨粒が昇り、落ちる影だけが逆向きに揺れている。\tミラースライム,グラスレイ\t\t\n水霧\t25\t薄い水霧が上下の境界を覆い、位相のずれた影や葦の反響だけが先に届く。\tフェイズモス,エコーリード\tグラスレイ\t\n無風\t20\t水面も逆さ葦も完全に静止し、遠くの歪みだけがゆっくり脈打っている。\tヴォイドハウンド,リフトクラブ\tフェイズモス\t"
+        "weatherProfiles": "",
+        "timeProfiles": ""
       },
       {
         "id": "area_wind_swept_highland",
@@ -60344,7 +60481,8 @@
         "unlockOrder": 5,
         "ownerKey": "",
         "createdBy": "",
-        "weatherProfiles": "晴天\t25\t高い空が澄み渡り、遠くの稜線まで見通せる。地上性の魔物や花群が活発になっている。\tクラッグラム,ソノラブルーム\tボルトバイソン\t\n強風\t30\t高原を横断する強風が草原を波のように揺らし、風を利用する魔物が活発に飛び回っている。\tブリーズホップ,カイトビーク,グライドスケイル\tソノラブルーム\t\n濃霧\t15\t雲が地表まで降り、視界が短い。花群や小型獣の気配は近いが、滑空する魔物は動きが鈍い。\tソノラブルーム,ブリーズホップ\tカイトビーク,グライドスケイル\t\n雷雨\t15\t強い風雨と雷が高原を横切り、雷を帯びる大型魔物が縄張りを広げている。\tボルトバイソン,カイトビーク\tブリーズホップ\t\n曇天\t15\t低い雲が高原を覆い、風は安定している。岩場と空の境目を滑る魔物が目立つ。\tグライドスケイル,クラッグラム\t\t"
+        "weatherProfiles": "晴天\t25\t高い空が澄み渡り、遠くの稜線まで見通せる。地上性の魔物や花群が活発になっている。\tクラッグラム,ソノラブルーム\tボルトバイソン\t\n強風\t30\t高原を横断する強風が草原を波のように揺らし、風を利用する魔物が活発に飛び回っている。\tブリーズホップ,カイトビーク,グライドスケイル\tソノラブルーム\t\n濃霧\t15\t雲が地表まで降り、視界が短い。花群や小型獣の気配は近いが、滑空する魔物は動きが鈍い。\tソノラブルーム,ブリーズホップ\tカイトビーク,グライドスケイル\t\n雷雨\t15\t強い風雨と雷が高原を横切り、雷を帯びる大型魔物が縄張りを広げている。\tボルトバイソン,カイトビーク\tブリーズホップ\t\n曇天\t15\t低い雲が高原を覆い、風は安定している。岩場と空の境目を滑る魔物が目立つ。\tグライドスケイル,クラッグラム\t\t",
+        "timeProfiles": "朝\t冷たい朝風が斜面を抜け、小型獣と花群が早くから活動する。\tブリーズホップ,ソノラブルーム\tボルトバイソン\t\n昼\t上昇気流が強まり、滑空・飛行する魔物が高原上空へ集まる。\tカイトビーク,グライドスケイル,クラッグラム\tソノラブルーム\t\n夕\t風向きが揺らぎ、地上性の魔物や花群が再び目立ち始める。\tブリーズホップ,ソノラブルーム,ボルトバイソン\tカイトビーク\t\n夜\t高空の風が冷え、飛行魔物は減る一方、雷を蓄える大型獣や花群が残る。\tボルトバイソン,ソノラブルーム\tカイトビーク,グライドスケイル\t"
       },
       {
         "id": "area_ashcrown_volcanic_canyon",
@@ -60364,7 +60502,8 @@
         "unlockOrder": 6,
         "ownerKey": "",
         "createdBy": "",
-        "weatherProfiles": "晴天\t25\t乾いた光が黒い岩肌を照らし、温度差の少ない斜面で岩棲みの魔物が動いている。\tスコリアゲッコー,グラスケイル\t\t\n乾風\t20\t乾いた風が峡谷を抜け、灰と硫黄臭を巻き上げる。地上を走る大型魔物が活発になっている。\tサルファマーモット,アッシュバイソン\t\t\n灰曇\t20\t灰を含んだ雲が日差しを遮り、薄暗い噴気帯で熱を蓄える魔物が動きやすい。\tシンダースライム,サーマルカイト\t\t\n灰雨\t15\t灰を含む冷たい雨が岩肌を濡らし、熱い地表から蒸気が立ち上っている。\tシンダースライム,ヴェインサラマンダー\tサーマルカイト\t\n熱風\t20\t地熱を含む熱風が峡谷を吹き抜け、火脈周辺の魔物が活発になっている。\tヴェインサラマンダー,サーマルカイト\tサルファマーモット\t"
+        "weatherProfiles": "晴天\t25\t乾いた光が黒い岩肌を照らし、温度差の少ない斜面で岩棲みの魔物が動いている。\tスコリアゲッコー,グラスケイル\t\t\n乾風\t20\t乾いた風が峡谷を抜け、灰と硫黄臭を巻き上げる。地上を走る大型魔物が活発になっている。\tサルファマーモット,アッシュバイソン\t\t\n灰曇\t20\t灰を含んだ雲が日差しを遮り、薄暗い噴気帯で熱を蓄える魔物が動きやすい。\tシンダースライム,サーマルカイト\t\t\n灰雨\t15\t灰を含む冷たい雨が岩肌を濡らし、熱い地表から蒸気が立ち上っている。\tシンダースライム,ヴェインサラマンダー\tサーマルカイト\t\n熱風\t20\t地熱を含む熱風が峡谷を吹き抜け、火脈周辺の魔物が活発になっている。\tヴェインサラマンダー,サーマルカイト\tサルファマーモット\t",
+        "timeProfiles": "朝\t岩肌が温まり始め、岩壁沿いの小型魔物や採食性の獣が動き出す。\tスコリアゲッコー,サルファマーモット\tグラスケイル\t\n昼\t地熱と日差しが重なり、熱い岩盤や上昇気流を好む魔物が最も活発になる。\tグラスケイル,サーマルカイト,アッシュバイソン\tシンダースライム,ヴェインサラマンダー\t\n夕\t岩肌が冷え始め、熱泉と溶岩洞を行き来する魔物が姿を見せる。\tヴェインサラマンダー,サルファマーモット,シンダースライム\tサーマルカイト\t\n夜\t外気が冷え、熱泉・噴気孔・溶岩洞の周囲に熱を求める魔物が集まる。\tシンダースライム,ヴェインサラマンダー\tグラスケイル,サーマルカイト\t"
       }
     ],
     "event_tables": [
@@ -60387,7 +60526,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_02",
@@ -60408,7 +60550,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_03",
@@ -60429,7 +60574,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_04",
@@ -60451,7 +60599,10 @@
         "encounterCountMax": "",
         "encounterComposition": "",
         "encounterFormation": "",
-        "weatherWeights": "小雨:1.8"
+        "weatherWeights": "小雨:1.8",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_05",
@@ -60472,7 +60623,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_06",
@@ -60493,7 +60647,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_07",
@@ -60514,7 +60671,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_08",
@@ -60535,7 +60695,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_09",
@@ -60558,7 +60721,10 @@
         "encounterComposition": "前衛,ラフィンラット,人数半数切上",
         "encounterFormation": "前衛：ラフィンラット",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_10",
@@ -60581,7 +60747,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_12",
@@ -60602,7 +60771,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_13",
@@ -60625,7 +60797,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_14",
@@ -60646,7 +60821,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_15",
@@ -60667,7 +60845,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "2",
         "encounterComposition": "前衛,ラピットホーン,1;前衛,ラフィンラット,1",
-        "encounterFormation": "前衛：ラピットホーン / 前衛：ラフィンラット"
+        "encounterFormation": "前衛：ラピットホーン / 前衛：ラフィンラット",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_16",
@@ -60682,14 +60863,17 @@
         "treasureTableId": "",
         "result": "休息を選ぶ：味方1人のHPまたはMPを2点回復する。休息しない：効果なし。",
         "progressEffect": "",
-        "notes": "小休止。",
+        "notes": "小休止。\n時間帯限定：昼。",
         "updatedAt": "2026-08-16",
         "encounterCountRule": "",
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
         "encounterFormation": "",
-        "weatherWeights": "晴天:2.5;小雨:0.4;強風:0.6"
+        "weatherWeights": "晴天:2.5;小雨:0.4;強風:0.6",
+        "timeSlots": "昼",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_17",
@@ -60710,7 +60894,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_18",
@@ -60731,7 +60918,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_19",
@@ -60752,7 +60942,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,ラピットホーン,人数半数切上",
-        "encounterFormation": "前衛：ラピットホーン"
+        "encounterFormation": "前衛：ラピットホーン",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_20",
@@ -60773,7 +60966,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_21",
@@ -60786,15 +60982,18 @@
         "checkType": "採取>=目標値",
         "targetValue": "8",
         "treasureTableId": "",
-        "result": "判定成功：薬草×1D2、清め草×1を入手。目標値+3以上：薬草または清め草×1を追加で入手。失敗：薬草×1を入手。",
+        "result": "判定成功：朝露草×1D2、清め草×1を入手。目標値+3以上：朝露草×1を追加で入手。失敗：朝露草×1を入手。",
         "progressEffect": "",
-        "notes": "噂条件イベント。",
+        "notes": "噂条件イベント。\n時間帯限定：朝。\n朝露草そのものを入手するイベント。",
         "updatedAt": "",
         "encounterCountRule": "",
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_22",
@@ -60809,13 +61008,16 @@
         "treasureTableId": "",
         "result": "判定成功：薄虫の羽×1を入手。目標値+3以上：小さな水晶片×1を追加で入手。失敗：入手なし。",
         "progressEffect": "",
-        "notes": "噂条件イベント。",
+        "notes": "噂条件イベント。\n時間帯限定：朝。",
         "updatedAt": "",
         "encounterCountRule": "",
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_23",
@@ -60836,7 +61038,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_24",
@@ -60857,7 +61062,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_25",
@@ -60878,7 +61086,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "1",
         "encounterComposition": "前衛,草角王ラグヴェル,1",
-        "encounterFormation": "前衛：草角王ラグヴェル ×1"
+        "encounterFormation": "前衛：草角王ラグヴェル ×1",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_26",
@@ -60899,7 +61110,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,グラウワーム,人数半数切上",
-        "encounterFormation": "前衛：グラウワーム"
+        "encounterFormation": "前衛：グラウワーム",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_27",
@@ -60923,7 +61137,10 @@
         "encounterFormation": "",
         "rewardTableId": "reward_outskirts_grass",
         "rewardDrawCount": 1,
-        "weatherWeights": "強風:2.5;晴天:1.3"
+        "weatherWeights": "強風:2.5;晴天:1.3",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_28",
@@ -60944,7 +61161,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_01",
@@ -60966,7 +61186,10 @@
         "encounterCountMax": "",
         "encounterComposition": "",
         "encounterFormation": "",
-        "weatherWeights": "木漏れ日:2.0;雨:0.7"
+        "weatherWeights": "木漏れ日:2.0;雨:0.7",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_02",
@@ -60987,7 +61210,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_03",
@@ -61008,7 +61234,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_04",
@@ -61029,7 +61258,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "1",
         "encounterComposition": "前衛,ルートハウンド,1",
-        "encounterFormation": "前衛：ルートハウンド"
+        "encounterFormation": "前衛：ルートハウンド",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_05",
@@ -61050,7 +61282,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_06",
@@ -61072,7 +61307,10 @@
         "encounterCountMax": "",
         "encounterComposition": "",
         "encounterFormation": "",
-        "weatherWeights": "雨:2.0"
+        "weatherWeights": "雨:2.0",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_07",
@@ -61093,7 +61331,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "5",
         "encounterComposition": "前衛,カラパスビートル,1;後衛,ヴェスパット,人数半数切上",
-        "encounterFormation": "前衛：カラパスビートル / 後衛：ヴェスパット"
+        "encounterFormation": "前衛：カラパスビートル / 後衛：ヴェスパット",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_08",
@@ -61114,7 +61355,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_09",
@@ -61135,7 +61379,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_10",
@@ -61158,7 +61405,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_11",
@@ -61181,7 +61431,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_13",
@@ -61202,7 +61455,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_14",
@@ -61223,7 +61479,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,ラスクレイル,人数半数切上",
-        "encounterFormation": "前衛：ラスクレイル"
+        "encounterFormation": "前衛：ラスクレイル",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_15",
@@ -61244,7 +61503,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,マイコニド,人数半数切上",
-        "encounterFormation": "前衛：マイコニド"
+        "encounterFormation": "前衛：マイコニド",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_16",
@@ -61265,7 +61527,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,ルートハウンド,人数半数切上",
-        "encounterFormation": "前衛：ルートハウンド"
+        "encounterFormation": "前衛：ルートハウンド",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_17",
@@ -61288,7 +61553,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_19",
@@ -61310,7 +61578,10 @@
         "encounterCountMax": "2",
         "encounterComposition": "前衛,ルートハウンド,1;後衛,マイコニド,1",
         "encounterFormation": "前衛：ルートハウンド / 後衛：マイコニド",
-        "weatherWeights": "朝霧:2.0"
+        "weatherWeights": "朝霧:2.0",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_20",
@@ -61331,7 +61602,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_21",
@@ -61352,7 +61626,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "2",
         "encounterComposition": "前衛,ブランチリング,1;後衛,マイコニド,1",
-        "encounterFormation": "前衛：ブランチリング / 後衛：マイコニド"
+        "encounterFormation": "前衛：ブランチリング / 後衛：マイコニド",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_22",
@@ -61373,7 +61650,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_23",
@@ -61394,7 +61674,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_24",
@@ -61415,7 +61698,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_rumor_spring",
@@ -61435,10 +61721,13 @@
         "encounterComposition": "",
         "result": "魔法成功：湧き水に混じる魔力を安定させ、澄んだ水×1D2・小さな水晶片×1を入手。採取で代用可能（判定-2）。採取成功：澄んだ水×1D2を入手。失敗：澄んだ水×1を入手。",
         "progressEffect": "",
-        "notes": "噂条件イベント。",
+        "notes": "噂条件イベント。\n時間帯限定：朝。",
         "updatedAt": "2026-08-07",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_25",
@@ -61459,7 +61748,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "1",
         "encounterComposition": "前衛,森奥の枝王ヴィルドラン,1",
-        "encounterFormation": "前衛：森奥の枝王ヴィルドラン ×1"
+        "encounterFormation": "前衛：森奥の枝王ヴィルドラン ×1",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_26",
@@ -61480,7 +61772,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_27",
@@ -61503,7 +61798,10 @@
         "encounterComposition": "前衛,ブランチリング,1",
         "encounterFormation": "前衛：ブランチリング",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_28",
@@ -61524,7 +61822,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_29",
@@ -61545,7 +61846,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,ブランチリング,人数半数切上",
-        "encounterFormation": "前衛：ブランチリング"
+        "encounterFormation": "前衛：ブランチリング",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_01",
@@ -61567,7 +61871,10 @@
         "encounterCountMax": "",
         "encounterComposition": "",
         "encounterFormation": "",
-        "weatherWeights": "豪雨:1.6;小雨:1.3"
+        "weatherWeights": "豪雨:1.6;小雨:1.3",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_02",
@@ -61589,7 +61896,10 @@
         "encounterCountMax": "",
         "encounterComposition": "",
         "encounterFormation": "",
-        "weatherWeights": "豪雨:2.0"
+        "weatherWeights": "豪雨:2.0",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_03",
@@ -61610,7 +61920,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_04",
@@ -61631,7 +61944,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_05",
@@ -61653,7 +61969,10 @@
         "encounterCountMax": "7",
         "encounterComposition": "前衛,マッドホッパー,人数半数切上;後衛,ミストモスキート,人数半数切捨",
         "encounterFormation": "前衛：マッドホッパー / 後衛：ミストモスキート",
-        "weatherWeights": "濃霧:2.0;豪雨:0.5"
+        "weatherWeights": "濃霧:2.0;豪雨:0.5",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_06",
@@ -61674,7 +61993,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,マッドホッパー,人数半数切上",
-        "encounterFormation": "前衛：マッドホッパー"
+        "encounterFormation": "前衛：マッドホッパー",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_07",
@@ -61695,7 +62017,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,ドロマール,人数半数切上",
-        "encounterFormation": "前衛：ドロマール"
+        "encounterFormation": "前衛：ドロマール",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_08",
@@ -61716,7 +62041,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_09",
@@ -61739,7 +62067,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_10",
@@ -61760,7 +62091,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_11",
@@ -61783,7 +62117,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_12",
@@ -61804,7 +62141,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "2",
         "encounterComposition": "前衛,マッドホッパー,1;後衛,ミストモスキート,1",
-        "encounterFormation": "前衛：マッドホッパー / 後衛：ミストモスキート"
+        "encounterFormation": "前衛：マッドホッパー / 後衛：ミストモスキート",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_13",
@@ -61825,7 +62165,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_15",
@@ -61846,7 +62189,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,バブルスライム,人数半数切上",
-        "encounterFormation": "前衛：バブルスライム"
+        "encounterFormation": "前衛：バブルスライム",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_16",
@@ -61869,7 +62215,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_17",
@@ -61890,7 +62239,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "2",
         "encounterComposition": "前衛,グラウワーム,1;後衛,ミストモスキート,1",
-        "encounterFormation": "前衛・後衛"
+        "encounterFormation": "前衛・後衛",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_18",
@@ -61911,7 +62263,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_19",
@@ -61932,7 +62287,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_20",
@@ -61953,7 +62311,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_21",
@@ -61974,7 +62335,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "2",
         "encounterComposition": "前衛,プチスライム,1;後衛,バブルスライム,1",
-        "encounterFormation": "前衛・後衛"
+        "encounterFormation": "前衛・後衛",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_22",
@@ -61995,7 +62359,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_23",
@@ -62016,7 +62383,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_rumor_lotus",
@@ -62036,10 +62406,13 @@
         "encounterComposition": "",
         "result": "判定成功：水蓮根×1D2を入手。目標値+3以上：水蓮根×1を追加で入手。失敗：入手なし。",
         "progressEffect": "",
-        "notes": "噂条件イベント。",
+        "notes": "噂条件イベント。\n時間帯限定：朝。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_24",
@@ -62060,7 +62433,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "1",
         "encounterComposition": "前衛,沼主グラボロス,1",
-        "encounterFormation": "前衛：沼主グラボロス ×1"
+        "encounterFormation": "前衛：沼主グラボロス ×1",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_25",
@@ -62081,7 +62457,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_26",
@@ -62102,7 +62481,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,ミストモスキート,人数半数切上",
-        "encounterFormation": "前衛：ミストモスキート"
+        "encounterFormation": "前衛：ミストモスキート",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_27",
@@ -62123,7 +62505,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "1",
         "encounterComposition": "前衛,マイコニド,1",
-        "encounterFormation": "前衛：マイコニド"
+        "encounterFormation": "前衛：マイコニド",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_28",
@@ -62146,7 +62531,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_29",
@@ -62169,7 +62557,10 @@
         "encounterComposition": "前衛,ドロマール,人数半数切上",
         "encounterFormation": "前衛：ドロマール",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "rumor_dew_grass",
@@ -62183,14 +62574,17 @@
         "targetValue": "",
         "treasureTableId": "",
         "result": "朝方の草原では、草先に残る朝露がいつもより多いらしい。薬草も良い状態だという。",
-        "progressEffect": "街はずれの草原探索時、条件イベント「朝露草の群生」が候補に入る。",
+        "progressEffect": "朝の間のみ有効。街はずれの草原探索時、条件イベント「朝露草の群生」が候補に入る。",
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "",
         "encounterCountRule": "",
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": "時間帯"
       },
       {
         "id": "rumor_glowbug_grass",
@@ -62204,14 +62598,17 @@
         "targetValue": "",
         "treasureTableId": "",
         "result": "夜明け前、草原の一角で小さな光がちらついているらしい。虫の羽音も聞こえたという。",
-        "progressEffect": "街はずれの草原探索時、条件イベント「夜光虫の小群れ」が候補に入る。",
+        "progressEffect": "朝の間のみ有効。街はずれの草原探索時、条件イベント「夜光虫の小群れ」が候補に入る。",
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "",
         "encounterCountRule": "",
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": "時間帯"
       },
       {
         "id": "rumor_merchant_goods",
@@ -62232,7 +62629,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_grass_chest",
@@ -62253,7 +62653,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_grass_boss",
@@ -62274,7 +62677,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_walking_branch",
@@ -62295,7 +62701,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_old_stump",
@@ -62316,7 +62725,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_forest_scroll",
@@ -62337,7 +62749,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_forest_blue_spring",
@@ -62356,11 +62771,14 @@
         "encounterFormation": "",
         "encounterComposition": "",
         "result": "森の沢で、朝方だけ青白く光る水場を見た者がいる。水底に小さな晶片が沈んでいるらしい。",
-        "progressEffect": "近郊の森探索時、条件イベント「青光の湧き水」が候補に入る。",
+        "progressEffect": "朝の間のみ有効。近郊の森探索時、条件イベント「青光の湧き水」が候補に入る。",
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": "時間帯"
       },
       {
         "id": "rumor_forest_boss",
@@ -62381,7 +62799,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_bubbling_water",
@@ -62402,7 +62823,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_big_tracks",
@@ -62423,7 +62847,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_sunken_box",
@@ -62444,7 +62871,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_wetland_lotus_island",
@@ -62463,11 +62893,14 @@
         "encounterFormation": "",
         "encounterComposition": "",
         "result": "湿地の霧が薄い朝、水蓮根が密集した小さな浮島が姿を見せるという。日が高くなると流されてしまうらしい。",
-        "progressEffect": "水辺の湿地探索時、条件イベント「水蓮根の浮島」が候補に入る。",
+        "progressEffect": "朝の間のみ有効。水辺の湿地探索時、条件イベント「水蓮根の浮島」が候補に入る。",
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": "時間帯"
       },
       {
         "id": "rumor_swamp_lord",
@@ -62488,7 +62921,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_mine_silver_vein",
@@ -62511,7 +62947,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_mine_supply_box",
@@ -62534,7 +62973,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_mine_blue_light",
@@ -62557,7 +62999,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_mine_blackiron_layer",
@@ -62580,7 +63025,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_mine_boss",
@@ -62601,7 +63049,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_reflection_moss_shelf",
@@ -62624,7 +63075,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_reflection_sealed_box",
@@ -62647,7 +63101,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_reflection_crystal_sand",
@@ -62670,7 +63127,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_reflection_delayed_howl",
@@ -62693,7 +63153,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_reflection_lord",
@@ -62714,7 +63177,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_highland_storm_eye",
@@ -62737,7 +63203,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_highland_windstone",
@@ -62760,7 +63229,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_highland_windmarker_box",
@@ -62783,7 +63255,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_highland_thunder_vein",
@@ -62806,7 +63281,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_highland_boss",
@@ -62829,7 +63307,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。エリア探索時だけ使用。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "evt_grass_iron_vein",
@@ -62850,7 +63331,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "conditionType": "なし",
@@ -62871,7 +63355,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,プチスライム,人数半数切上",
-        "encounterFormation": "前衛：プチスライム"
+        "encounterFormation": "前衛：プチスライム",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "conditionType": "なし",
@@ -62892,7 +63379,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "1",
         "encounterComposition": "前衛,カラパスビートル,1",
-        "encounterFormation": "前衛：カラパスビートル"
+        "encounterFormation": "前衛：カラパスビートル",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "conditionType": "なし",
@@ -62913,7 +63403,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_quest_antique_scroll_cache",
@@ -62934,7 +63427,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_01",
@@ -62955,7 +63451,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_02",
@@ -62976,7 +63475,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_03",
@@ -62997,7 +63499,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_04",
@@ -63018,7 +63523,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "1",
         "encounterComposition": "前衛,ミラースライム,1",
-        "encounterFormation": "前衛：ミラースライム"
+        "encounterFormation": "前衛：ミラースライム",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_05",
@@ -63039,7 +63547,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_06",
@@ -63060,7 +63571,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,フェイズモス,人数半数切上",
-        "encounterFormation": "前衛：フェイズモス"
+        "encounterFormation": "前衛：フェイズモス",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_07",
@@ -63081,7 +63595,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "1",
         "encounterComposition": "前衛,グラスレイ,1",
-        "encounterFormation": "前衛：グラスレイ"
+        "encounterFormation": "前衛：グラスレイ",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_08",
@@ -63102,7 +63619,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "2",
         "encounterComposition": "前衛,ミラースライム,1;後衛,エコーリード,1",
-        "encounterFormation": "前衛：ミラースライム / 後衛：エコーリード"
+        "encounterFormation": "前衛：ミラースライム / 後衛：エコーリード",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_09",
@@ -63123,7 +63643,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "1",
         "encounterComposition": "前衛,リフトクラブ,1",
-        "encounterFormation": "前衛：リフトクラブ"
+        "encounterFormation": "前衛：リフトクラブ",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_10",
@@ -63144,7 +63667,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "2",
         "encounterComposition": "前衛,ヴォイドハウンド,1;後衛,フェイズモス,1",
-        "encounterFormation": "前衛：ヴォイドハウンド / 後衛：フェイズモス"
+        "encounterFormation": "前衛：ヴォイドハウンド / 後衛：フェイズモス",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_11",
@@ -63165,7 +63691,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_12",
@@ -63186,7 +63715,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_13",
@@ -63207,7 +63739,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_rumor_moss",
@@ -63230,7 +63765,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_rumor_sealed_box",
@@ -63253,7 +63791,10 @@
         "notes": "噂条件イベント。 宝箱分類：反照武具箱。",
         "updatedAt": "2026-08-02",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_rumor_crystal",
@@ -63276,7 +63817,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_rumor_howl",
@@ -63299,7 +63843,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_14",
@@ -63320,7 +63867,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "1",
         "encounterComposition": "前衛,反照の淵主ネレイヴ,1",
-        "encounterFormation": "前衛：反照の淵主ネレイヴ"
+        "encounterFormation": "前衛：反照の淵主ネレイヴ",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_34",
@@ -63341,7 +63891,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_35",
@@ -63364,7 +63917,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_37",
@@ -63385,7 +63941,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,ヴェスパット,人数半数切上",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_38",
@@ -63406,7 +63965,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,ラピットホーン,1;前衛,ラフィンラット,人数半数切上",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_40",
@@ -63427,7 +63989,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,プチスライム,人数半数切上",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_41",
@@ -63448,7 +64013,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,カラパスビートル,1;後衛,ヴェスパット,人数半数切上",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_42",
@@ -63469,7 +64037,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_43",
@@ -63490,7 +64061,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,ラフィンラット,1;後衛,ヴェスパット,1",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_44",
@@ -63511,7 +64085,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,グラウワーム,1;前衛,プチスライム,1",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_45",
@@ -63534,7 +64111,10 @@
         "encounterComposition": "前衛,ラフィンラット,人数半数切上",
         "encounterFormation": "",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_33",
@@ -63555,7 +64135,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_34",
@@ -63576,7 +64159,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_35",
@@ -63597,7 +64183,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "後衛,マイコニド,1;前衛,ブランチリング,人数半数切上",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_36",
@@ -63618,7 +64207,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,モスバック,1;前衛,ラフィンラット,人数半数切上",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_37",
@@ -63639,7 +64231,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "7",
         "encounterComposition": "前衛,ラスクレイル,人数半数切上;後衛,ヴェスパット,人数半数切捨",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_38",
@@ -63660,7 +64255,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_39",
@@ -63683,7 +64281,10 @@
         "encounterComposition": "前衛,ラスクレイル,1;後衛,ヴェスパット,1",
         "encounterFormation": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_40",
@@ -63706,7 +64307,10 @@
         "encounterComposition": "前衛,ブランチリング,1;後衛,マイコニド,1",
         "encounterFormation": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_31",
@@ -63727,7 +64331,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_33",
@@ -63748,7 +64355,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_34",
@@ -63769,7 +64379,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "7",
         "encounterComposition": "前衛,バブルスライム,人数半数切上;後衛,ミストモスキート,人数半数切捨",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_35",
@@ -63790,7 +64403,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,リードリザード,人数半数切上;後衛,ミストモスキート,1",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_36",
@@ -63811,7 +64427,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,ドロマール,1;前衛,グラウワーム,人数半数切上",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_41",
@@ -63832,7 +64451,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_42",
@@ -63853,7 +64475,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_43",
@@ -63874,7 +64499,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "2",
         "encounterComposition": "前衛,ウィスパウル,1;後衛,ヴェスパット,1",
-        "encounterFormation": "前衛：ウィスパウル / 後衛：ヴェスパット"
+        "encounterFormation": "前衛：ウィスパウル / 後衛：ヴェスパット",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_44",
@@ -63895,7 +64523,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "5",
         "encounterComposition": "前衛,ルートハウンド,1;後衛,ブランチリング,人数半数切上",
-        "encounterFormation": "前衛：ルートハウンド / 前衛または後衛：ブランチリング"
+        "encounterFormation": "前衛：ルートハウンド / 前衛または後衛：ブランチリング",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_37",
@@ -63916,7 +64547,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_38",
@@ -63937,7 +64571,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_39",
@@ -63958,7 +64595,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_40",
@@ -63979,7 +64619,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "5",
         "encounterComposition": "前衛,バブルスライム,1;後衛,ミストモスキート,人数半数切上",
-        "encounterFormation": "前衛：バブルスライム / 後衛：ミストモスキート"
+        "encounterFormation": "前衛：バブルスライム / 後衛：ミストモスキート",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_41",
@@ -64000,7 +64643,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,ミアズマリーチ,人数半数切上",
-        "encounterFormation": "前衛：ミアズマリーチ"
+        "encounterFormation": "前衛：ミアズマリーチ",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_42",
@@ -64021,7 +64667,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,マイコニド,人数半数切上",
-        "encounterFormation": "前衛：マイコニド"
+        "encounterFormation": "前衛：マイコニド",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_43",
@@ -64042,7 +64691,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_18",
@@ -64063,7 +64715,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_19",
@@ -64085,7 +64740,10 @@
         "encounterCountMax": "",
         "encounterComposition": "",
         "encounterFormation": "",
-        "weatherWeights": "鏡雨:2.0"
+        "weatherWeights": "鏡雨:2.0",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_20",
@@ -64106,7 +64764,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_21",
@@ -64130,7 +64791,10 @@
         "encounterFormation": "",
         "rewardTableId": "reward_reflection_water_garden",
         "rewardDrawCount": 1,
-        "weatherWeights": "水霧:2.0"
+        "weatherWeights": "水霧:2.0",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_22",
@@ -64153,7 +64817,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_reflection_water_garden",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_23",
@@ -64176,7 +64843,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_reflection_water_garden",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_24",
@@ -64197,7 +64867,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_25",
@@ -64221,7 +64894,10 @@
         "encounterFormation": "",
         "rewardTableId": "reward_reflection_water_garden",
         "rewardDrawCount": 1,
-        "weatherWeights": "無風:3.0"
+        "weatherWeights": "無風:3.0",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_26",
@@ -64244,7 +64920,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_reflection_water_garden",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_27",
@@ -64265,7 +64944,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_28",
@@ -64286,7 +64968,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_29",
@@ -64307,7 +64992,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_30",
@@ -64328,7 +65016,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_32",
@@ -64349,7 +65040,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,ミラースライム,人数半数切上",
-        "encounterFormation": "前衛：ミラースライム"
+        "encounterFormation": "前衛：ミラースライム",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_33",
@@ -64370,7 +65064,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,フェイズモス,人数半数切上",
-        "encounterFormation": "前衛：フェイズモス"
+        "encounterFormation": "前衛：フェイズモス",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_34",
@@ -64391,7 +65088,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,グラスレイ,人数半数切上",
-        "encounterFormation": "前衛：グラスレイ"
+        "encounterFormation": "前衛：グラスレイ",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_35",
@@ -64412,7 +65112,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,エコーリード,人数半数切上",
-        "encounterFormation": "前衛：エコーリード"
+        "encounterFormation": "前衛：エコーリード",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_36",
@@ -64433,7 +65136,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "5",
         "encounterComposition": "前衛,リフトクラブ,1;前衛,ミラースライム,人数半数切上",
-        "encounterFormation": "前衛：リフトクラブ / ミラースライム"
+        "encounterFormation": "前衛：リフトクラブ / ミラースライム",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_37",
@@ -64454,7 +65160,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "2",
         "encounterComposition": "前衛,ヴォイドハウンド,1;後衛,フェイズモス,1",
-        "encounterFormation": "前衛：ヴォイドハウンド / 後衛：フェイズモス"
+        "encounterFormation": "前衛：ヴォイドハウンド / 後衛：フェイズモス",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_38",
@@ -64475,7 +65184,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_39",
@@ -64496,7 +65208,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "4",
         "encounterComposition": "前衛,ミラースライム,人数半数切上",
-        "encounterFormation": "前衛：ミラースライム"
+        "encounterFormation": "前衛：ミラースライム",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_40",
@@ -64519,7 +65234,10 @@
         "encounterComposition": "前衛,リフトクラブ,1",
         "encounterFormation": "前衛：リフトクラブ",
         "rewardTableId": "reward_reflection_water_garden",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_01",
@@ -64540,7 +65258,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_02",
@@ -64562,7 +65283,10 @@
         "encounterCountMax": "",
         "encounterComposition": "",
         "encounterFormation": "",
-        "weatherWeights": "晴天:1.8;雨:1.4"
+        "weatherWeights": "晴天:1.8;雨:1.4",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_03",
@@ -64585,7 +65309,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_04",
@@ -64606,7 +65333,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "8",
         "encounterComposition": "",
-        "encounterFormation": "前衛・後衛ランダム"
+        "encounterFormation": "前衛・後衛ランダム",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_05",
@@ -64629,7 +65359,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_06",
@@ -64650,7 +65383,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_07",
@@ -64671,7 +65407,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_08",
@@ -64692,7 +65431,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_09",
@@ -64713,7 +65455,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,ピックモール,1;後衛,レゾナバット,人数半数切上",
-        "encounterFormation": "前衛・後衛"
+        "encounterFormation": "前衛・後衛",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_10",
@@ -64734,7 +65479,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_11",
@@ -64755,7 +65503,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_12",
@@ -64776,7 +65527,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,マインゴーレム,1;前衛,ラストマイト,人数半数切上",
-        "encounterFormation": "前衛中心"
+        "encounterFormation": "前衛中心",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_13",
@@ -64797,7 +65551,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_15",
@@ -64820,7 +65577,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_16",
@@ -64843,7 +65603,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_18",
@@ -64864,7 +65627,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_19",
@@ -64886,7 +65652,10 @@
         "encounterCountMax": "",
         "encounterComposition": "",
         "encounterFormation": "",
-        "weatherWeights": "強風:2.5"
+        "weatherWeights": "強風:2.5",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_20",
@@ -64909,7 +65678,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_21",
@@ -64930,7 +65702,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "後衛,レゾナバット,人数半数切上;前衛,ラストマイト,1",
-        "encounterFormation": "前衛・後衛"
+        "encounterFormation": "前衛・後衛",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_22",
@@ -64951,7 +65726,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,ラストマイト,人数同数",
-        "encounterFormation": "前衛"
+        "encounterFormation": "前衛",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_23",
@@ -64972,7 +65750,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,オアスケイル,人数半数切上",
-        "encounterFormation": "前衛"
+        "encounterFormation": "前衛",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_24",
@@ -64993,7 +65774,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "後衛,ルミナウィスプ,人数半数切上;前衛,ピックモール,1",
-        "encounterFormation": "前衛・後衛"
+        "encounterFormation": "前衛・後衛",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_25",
@@ -65014,7 +65798,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,マインゴーレム,1;後衛,レゾナバット,人数半数切上",
-        "encounterFormation": "前衛・後衛"
+        "encounterFormation": "前衛・後衛",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_26",
@@ -65035,7 +65822,10 @@
         "encounterCountMin": "2",
         "encounterCountMax": "8",
         "encounterComposition": "",
-        "encounterFormation": "前衛・後衛ランダム"
+        "encounterFormation": "前衛・後衛ランダム",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_27",
@@ -65056,7 +65846,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_28",
@@ -65080,7 +65873,10 @@
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
         "rewardDrawCount": 2,
-        "weatherWeights": "雨:2.0"
+        "weatherWeights": "雨:2.0",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_29",
@@ -65101,7 +65897,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_30",
@@ -65122,7 +65921,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_31",
@@ -65145,7 +65947,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_32",
@@ -65166,7 +65971,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_33",
@@ -65187,7 +65995,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_36",
@@ -65208,7 +66019,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "前衛,ルミナウィスプ,人数半数切上",
-        "encounterFormation": "前衛：ルミナウィスプ"
+        "encounterFormation": "前衛：ルミナウィスプ",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_37",
@@ -65229,7 +66043,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_38",
@@ -65250,7 +66067,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_39",
@@ -65271,7 +66091,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_rumor_silver",
@@ -65294,7 +66117,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_rumor_supply",
@@ -65317,7 +66143,10 @@
         "notes": "噂条件イベント。 宝箱分類：旧工房の設計箱。",
         "updatedAt": "2026-08-02",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_rumor_magic_crystal",
@@ -65340,7 +66169,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_rumor_blackiron",
@@ -65363,7 +66195,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_boss",
@@ -65384,7 +66219,10 @@
         "encounterCountMin": "1",
         "encounterCountMax": "1",
         "encounterComposition": "前衛,坑奥の穿王ドルガン,1",
-        "encounterFormation": "前衛：坑奥の穿王ドルガン ×1"
+        "encounterFormation": "前衛：坑奥の穿王ドルガン ×1",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_grass_01",
@@ -65405,7 +66243,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_grass_02",
@@ -65426,7 +66267,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_grass_03",
@@ -65447,7 +66291,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_grass_04",
@@ -65468,7 +66315,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_forest_01",
@@ -65489,7 +66339,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_forest_02",
@@ -65504,13 +66357,16 @@
         "treasureTableId": "",
         "result": "判定成功：月笠茸×1D2を入手。目標値+3以上：月笠茸×1を追加で入手。失敗：入手なし。",
         "progressEffect": "",
-        "notes": "料理専用の食材を入手するイベント。",
+        "notes": "料理専用の食材を入手するイベント。\n時間帯限定：夜。",
         "updatedAt": "2026-07-21",
         "encounterCountRule": "",
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "夜",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_forest_03",
@@ -65531,7 +66387,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_forest_04",
@@ -65546,13 +66405,16 @@
         "treasureTableId": "",
         "result": "判定成功：朝露葉×1D2を入手。目標値+3以上：朝露葉×1を追加で入手。失敗：入手なし。",
         "progressEffect": "",
-        "notes": "料理専用の食材を入手するイベント。",
+        "notes": "料理専用の食材を入手するイベント。\n時間帯限定：朝。",
         "updatedAt": "2026-07-21",
         "encounterCountRule": "",
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_wetland_01",
@@ -65573,7 +66435,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_wetland_02",
@@ -65594,7 +66459,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_wetland_03",
@@ -65609,13 +66477,16 @@
         "treasureTableId": "",
         "result": "判定成功：霧貝×1D2を入手。目標値+3以上：霧貝×1を追加で入手。失敗：入手なし。",
         "progressEffect": "",
-        "notes": "料理専用の食材を入手するイベント。",
+        "notes": "料理専用の食材を入手するイベント。\n時間帯限定：朝。",
         "updatedAt": "2026-07-21",
         "encounterCountRule": "",
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_wetland_04",
@@ -65636,7 +66507,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_reflection_01",
@@ -65657,7 +66531,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_reflection_02",
@@ -65678,7 +66555,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_reflection_03",
@@ -65699,7 +66579,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_reflection_04",
@@ -65720,7 +66603,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_mine_01",
@@ -65741,7 +66627,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_mine_02",
@@ -65762,7 +66651,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_mine_03",
@@ -65783,7 +66675,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_mine_04",
@@ -65804,7 +66699,10 @@
         "encounterCountMin": "",
         "encounterCountMax": "",
         "encounterComposition": "",
-        "encounterFormation": ""
+        "encounterFormation": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_01",
@@ -65827,7 +66725,10 @@
         "notes": "高原の基礎鉱石。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_02",
@@ -65850,7 +66751,10 @@
         "notes": "軽い繊維の採取地点。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_03",
@@ -65873,7 +66777,10 @@
         "notes": "強風に耐えた木材。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_04",
@@ -65897,7 +66804,10 @@
         "updatedAt": "2026-08-16",
         "ownerKey": "",
         "createdBy": "",
-        "weatherWeights": "雷雨:2.0"
+        "weatherWeights": "雷雨:2.0",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_05",
@@ -65920,7 +66830,10 @@
         "notes": "調合素材の採取。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_06",
@@ -65940,10 +66853,13 @@
         "encounterComposition": "",
         "result": "成功：天空露×1D2を入手。目標値+3以上：天空露×1を追加。失敗：入手なし。",
         "progressEffect": "",
-        "notes": "高原の水・液体素材。",
+        "notes": "高原の水・液体素材。\n時間帯限定：朝。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_07",
@@ -65968,7 +66884,10 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_08",
@@ -65986,12 +66905,15 @@
         "encounterCountMax": "",
         "encounterFormation": "",
         "encounterComposition": "",
-        "result": "成功：雷脈石×1、風紋草×1、天空露×1を入手。失敗：入手なし。避雷樹脂未使用なら失敗時に疲労+1。",
+        "result": "成功：雷脈石×1、風紋草×2を入手。失敗：入手なし。避雷樹脂未使用なら失敗時に疲労+1。",
         "progressEffect": "",
         "notes": "高原で設定する疲労増加イベントの2件目。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_09",
@@ -66014,7 +66936,10 @@
         "notes": "固定構成を使わない通常遭遇。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_13",
@@ -66037,7 +66962,10 @@
         "notes": "固定構成を使わない通常遭遇。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_14",
@@ -66060,7 +66988,10 @@
         "notes": "固定構成を使わない通常遭遇。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_15",
@@ -66083,7 +67014,10 @@
         "notes": "固定構成を使わない通常遭遇。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_17",
@@ -66108,7 +67042,10 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_18",
@@ -66133,7 +67070,10 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_19",
@@ -66156,7 +67096,10 @@
         "notes": "",
         "updatedAt": "2026-08-07",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_20",
@@ -66179,7 +67122,10 @@
         "notes": "",
         "updatedAt": "2026-08-07",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_21",
@@ -66204,7 +67150,10 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_22",
@@ -66227,7 +67176,10 @@
         "notes": "高原の広い地形を見渡せる。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_23",
@@ -66250,7 +67202,10 @@
         "notes": "高原固有の障害。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_24",
@@ -66273,7 +67228,10 @@
         "notes": "高原固有の障害。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_25",
@@ -66296,7 +67254,10 @@
         "notes": "高原固有の障害。 宝箱分類：風車工房の設計箱。",
         "updatedAt": "2026-08-02",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_26",
@@ -66319,7 +67280,10 @@
         "notes": "高原固有の障害。",
         "updatedAt": "2026-08-07",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_27",
@@ -66342,7 +67306,10 @@
         "notes": "高原固有の障害。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_28",
@@ -66366,7 +67333,10 @@
         "updatedAt": "2026-08-16",
         "ownerKey": "",
         "createdBy": "",
-        "weatherWeights": "強風:3.0"
+        "weatherWeights": "強風:3.0",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_29",
@@ -66390,7 +67360,10 @@
         "updatedAt": "2026-08-16",
         "ownerKey": "",
         "createdBy": "",
-        "weatherWeights": "雷雨:3.0;晴天:0.4"
+        "weatherWeights": "雷雨:3.0;晴天:0.4",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_30",
@@ -66413,7 +67386,10 @@
         "notes": "ソノラブルームの花粉が残る場所。",
         "updatedAt": "2026-08-09",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_31",
@@ -66437,7 +67413,10 @@
         "updatedAt": "2026-08-16",
         "ownerKey": "",
         "createdBy": "",
-        "weatherWeights": "濃霧:3.0;晴天:0.4"
+        "weatherWeights": "濃霧:3.0;晴天:0.4",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_32",
@@ -66460,7 +67439,10 @@
         "notes": "",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_33",
@@ -66483,7 +67465,10 @@
         "notes": "",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_34",
@@ -66506,7 +67491,10 @@
         "notes": "ボルトバイソンの強さを見せる固定編成。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_35",
@@ -66529,7 +67517,10 @@
         "notes": "ボスの存在を示す痕跡。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_rumor_storm_eye",
@@ -66552,7 +67543,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_rumor_windstone",
@@ -66575,7 +67569,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_rumor_windmarker",
@@ -66598,7 +67595,10 @@
         "notes": "噂条件イベント。 宝箱分類：風標の武具箱。",
         "updatedAt": "2026-08-02",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_rumor_thunder_vein",
@@ -66621,7 +67621,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-07-30",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_36",
@@ -66644,7 +67647,10 @@
         "notes": "任意戦闘。通常探索の攻略時に倒す前提ではない。 確定遭遇噂ID: rumor_highland_boss 初回勝利ボーナス：各PCにボーナスポイント2点（登場エリアの解放時ボーナスポイントと同値。2回目以降なし）。 勝利後はエリアボス自身から褒賞箱を授けられる。ボス素材に採取・解体判定は不要。褒賞箱は無施錠・無罠。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_37",
@@ -66667,7 +67673,10 @@
         "notes": "",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_38",
@@ -66692,7 +67701,10 @@
         "ownerKey": "",
         "createdBy": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_39",
@@ -66715,7 +67727,10 @@
         "notes": "",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_40",
@@ -66738,7 +67753,10 @@
         "notes": "宝箱分類：風標の武具箱。",
         "updatedAt": "2026-08-02",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_highland_01",
@@ -66761,7 +67779,10 @@
         "notes": "料理専用食材。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_highland_02",
@@ -66784,7 +67805,10 @@
         "notes": "料理専用食材。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_highland_03",
@@ -66807,7 +67831,10 @@
         "notes": "料理専用食材。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_food_highland_04",
@@ -66830,7 +67857,10 @@
         "notes": "料理専用食材。",
         "updatedAt": "2026-07-29",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_001",
@@ -66853,7 +67883,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_002",
@@ -66876,7 +67909,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_003",
@@ -66899,7 +67935,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_004",
@@ -66922,7 +67961,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_005",
@@ -66945,7 +67987,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_outskirts_grass",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_006",
@@ -66968,7 +68013,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_007",
@@ -66991,7 +68039,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_008",
@@ -67014,7 +68065,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_009",
@@ -67037,7 +68091,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_010",
@@ -67060,7 +68117,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_nearby_forest",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_011",
@@ -67083,7 +68143,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_012",
@@ -67106,7 +68169,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_013",
@@ -67129,7 +68195,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_014",
@@ -67152,7 +68221,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_015",
@@ -67175,7 +68247,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_waterside_wetland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_016",
@@ -67198,7 +68273,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_reflection_water_garden",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_017",
@@ -67221,7 +68299,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_reflection_water_garden",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_018",
@@ -67244,7 +68325,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_reflection_water_garden",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_019",
@@ -67267,7 +68351,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_reflection_water_garden",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_020",
@@ -67290,7 +68377,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_reflection_water_garden",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_021",
@@ -67313,7 +68403,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_022",
@@ -67336,7 +68429,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_023",
@@ -67359,7 +68455,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_024",
@@ -67382,7 +68481,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_025",
@@ -67405,7 +68507,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_foothill_old_mine",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_026",
@@ -67428,7 +68533,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_027",
@@ -67451,7 +68559,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_028",
@@ -67474,7 +68585,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_029",
@@ -67497,7 +68611,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 2
+        "rewardDrawCount": 2,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_base_030",
@@ -67520,7 +68637,10 @@
         "encounterComposition": "",
         "encounterFormation": "",
         "rewardTableId": "reward_wind_swept_highland",
-        "rewardDrawCount": 1
+        "rewardDrawCount": 1,
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_grass_recipe_merchant",
@@ -67545,7 +68665,10 @@
         "notes": "進行管理HTML専用のレシピ商人イベント。販売商品リストコピーと、選択レシピ情報コピーを使用する。",
         "updatedAt": "2026-08-07",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_forest_recipe_merchant",
@@ -67570,7 +68693,10 @@
         "notes": "進行管理HTML専用のレシピ商人イベント。販売商品リストコピーと、選択レシピ情報コピーを使用する。",
         "updatedAt": "2026-08-07",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_wetland_recipe_merchant",
@@ -67595,7 +68721,10 @@
         "notes": "進行管理HTML専用のレシピ商人イベント。販売商品リストコピーと、選択レシピ情報コピーを使用する。",
         "updatedAt": "2026-08-07",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_mine_recipe_merchant",
@@ -67620,7 +68749,10 @@
         "notes": "進行管理HTML専用のレシピ商人イベント。販売商品リストコピーと、選択レシピ情報コピーを使用する。",
         "updatedAt": "2026-08-07",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_otherworld_recipe_merchant",
@@ -67645,7 +68777,10 @@
         "notes": "進行管理HTML専用のレシピ商人イベント。販売商品リストコピーと、選択レシピ情報コピーを使用する。",
         "updatedAt": "2026-08-07",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_highland_recipe_merchant",
@@ -67670,7 +68805,10 @@
         "notes": "進行管理HTML専用のレシピ商人イベント。販売商品リストコピーと、選択レシピ情報コピーを使用する。",
         "updatedAt": "2026-08-07",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_01",
@@ -67693,7 +68831,10 @@
         "notes": "峡谷の基礎鉱石。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_02",
@@ -67716,7 +68857,10 @@
         "notes": "高温の鉱脈。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_03",
@@ -67740,7 +68884,10 @@
         "updatedAt": "2026-08-16",
         "ownerKey": "",
         "createdBy": "",
-        "weatherWeights": "熱風:1.8"
+        "weatherWeights": "熱風:1.8",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_04",
@@ -67764,7 +68911,10 @@
         "updatedAt": "2026-08-16",
         "ownerKey": "",
         "createdBy": "",
-        "weatherWeights": "灰雨:2.0"
+        "weatherWeights": "灰雨:2.0",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_05",
@@ -67787,7 +68937,10 @@
         "notes": "料理用食材。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_06",
@@ -67810,7 +68963,10 @@
         "notes": "料理用香辛果。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_07",
@@ -67833,7 +68989,10 @@
         "notes": "細工向け素材。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_08",
@@ -67856,7 +69015,10 @@
         "notes": "地熱環境イベント。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_09",
@@ -67879,7 +69041,10 @@
         "notes": "鋭い石片が散る斜面。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_10",
@@ -67902,7 +69067,10 @@
         "notes": "高低差を使った障害。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_11",
@@ -67925,7 +69093,10 @@
         "notes": "危険だけでなく当たりイベントも混ぜる。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_12",
@@ -67949,7 +69120,10 @@
         "updatedAt": "2026-08-16",
         "ownerKey": "",
         "createdBy": "",
-        "weatherWeights": "灰曇:1.8;乾風:1.5"
+        "weatherWeights": "灰曇:1.8;乾風:1.5",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_13",
@@ -67972,7 +69146,10 @@
         "notes": "通常宝箱。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_14",
@@ -67995,7 +69172,10 @@
         "notes": "通常遭遇。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_15",
@@ -68018,7 +69198,10 @@
         "notes": "通常遭遇。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_16",
@@ -68041,7 +69224,10 @@
         "notes": "通常遭遇。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_17",
@@ -68064,7 +69250,10 @@
         "notes": "採取と遭遇の複合イベント。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_18",
@@ -68087,7 +69276,10 @@
         "notes": "ボスの存在を示す痕跡。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_ulgana",
@@ -68110,7 +69302,10 @@
         "notes": "任意戦闘。初回勝利時、各PCはボーナスポイント2点を獲得する。同じエリアボスへの2回目以降の勝利では獲得しない。 確定遭遇噂ID: rumor_ashcrown_boss",
         "updatedAt": "2026-08-19",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_rumor_obsidian",
@@ -68133,7 +69328,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_rumor_spring",
@@ -68156,7 +69354,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_rumor_cache",
@@ -68179,7 +69380,10 @@
         "notes": "噂条件イベント。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "rumor_ashcrown_obsidian",
@@ -68202,7 +69406,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_ashcrown_spring",
@@ -68225,7 +69432,10 @@
         "notes": "宿屋で聞ける噂。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_ashcrown_cache",
@@ -68248,7 +69458,10 @@
         "notes": "宿屋で聞ける噂。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "rumor_ashcrown_boss",
@@ -68271,7 +69484,10 @@
         "notes": "宿屋で聞ける噂。クエスト報酬には影響しない。",
         "updatedAt": "2026-08-13",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": "一日"
       },
       {
         "id": "evt_weather_grass_rain_01",
@@ -68295,7 +69511,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_grass_wind_01",
@@ -68319,7 +69538,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_forest_sun_01",
@@ -68343,7 +69565,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_forest_mist_01",
@@ -68366,8 +69591,11 @@
         "result": "判定成功：朝露葉×1D2を入手。目標値+3以上：清め草×1を追加で入手。失敗：入手なし。",
         "progressEffect": "",
         "weatherWeights": "",
-        "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "notes": "天気専用イベント。\n時間帯限定：朝。",
+        "updatedAt": "2026-08-16",
+        "timeSlots": "朝",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_wetland_heavyrain_01",
@@ -68391,7 +69619,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_wetland_fog_01",
@@ -68415,7 +69646,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_mine_rain_01",
@@ -68439,7 +69673,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_mine_wind_01",
@@ -68463,7 +69700,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_reflection_mirrorrain_01",
@@ -68471,8 +69711,8 @@
         "areaName": "反照の水庭",
         "eventName": "逆さに昇る鏡雨",
         "eventType": "異界現象/採取",
-        "conditionType": "天気",
-        "conditionValue": "鏡雨",
+        "conditionType": "なし",
+        "conditionValue": "",
         "checkType": "魔法>=目標値",
         "targetValue": "13",
         "treasureTableId": "",
@@ -68486,8 +69726,11 @@
         "result": "魔法成功：上昇する雨粒を安定させ、虚ろ雫×1D2を入手。集中で代用可能（判定-2）。集中成功：虚ろ雫×1を入手。失敗：入手なし。",
         "progressEffect": "",
         "weatherWeights": "",
-        "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "notes": "天気専用イベント。\n異界では天気を使用しないため、通常の異界現象イベントとして扱う。",
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_reflection_still_01",
@@ -68495,8 +69738,8 @@
         "areaName": "反照の水庭",
         "eventName": "静止する水鏡",
         "eventType": "異界現象/発見",
-        "conditionType": "天気",
-        "conditionValue": "無風",
+        "conditionType": "なし",
+        "conditionValue": "",
         "checkType": "集中>=目標値",
         "targetValue": "13",
         "treasureTableId": "",
@@ -68510,8 +69753,11 @@
         "result": "集中成功：静止した反射像の綻びを見つけ、反照苔×1を入手。目標値+3以上：裂界晶×1を追加で入手。失敗：効果なし。",
         "progressEffect": "",
         "weatherWeights": "",
-        "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "notes": "天気専用イベント。\n異界では天気を使用しないため、通常の異界現象イベントとして扱う。",
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_highland_wind_01",
@@ -68535,7 +69781,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_highland_storm_01",
@@ -68559,7 +69808,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_highland_fog_01",
@@ -68583,7 +69835,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_ashcrown_ashrain_01",
@@ -68607,7 +69862,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_weather_ashcrown_hotwind_01",
@@ -68631,7 +69889,10 @@
         "progressEffect": "",
         "weatherWeights": "",
         "notes": "天気専用イベント。",
-        "updatedAt": "2026-08-16"
+        "updatedAt": "2026-08-16",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_19",
@@ -68654,7 +69915,10 @@
         "notes": "宝箱分類：灰冠鍛造設計箱。",
         "updatedAt": "2026-08-17",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       },
       {
         "id": "evt_ashcrown_20",
@@ -68677,7 +69941,10 @@
         "notes": "宝箱分類：噴気工房の設計箱。",
         "updatedAt": "2026-08-17",
         "ownerKey": "",
-        "createdBy": ""
+        "createdBy": "",
+        "timeSlots": "",
+        "timeWeights": "",
+        "rumorScope": ""
       }
     ],
     "monsters": [
