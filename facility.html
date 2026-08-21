@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.602</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.605</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -139,7 +139,7 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 @media(max-width:620px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/2}.facility-unlock-grid button{width:auto}.facility-unlock-grid #resetKey{grid-column:1/3;justify-self:start}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.602">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.605">
 
 <style id="raFortuneCommunityV474">
 .community-rule{grid-column:1/-1;border:1px solid var(--line);border-radius:14px;background:#fffaf3;padding:12px;line-height:1.7}
@@ -159,7 +159,7 @@ body.ra-facility .accessory-branch-node button:hover{background:#f5e6d1!importan
 </style>
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.602｜更新：2026年8月21日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.605｜更新：2026年8月21日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -1054,7 +1054,7 @@ function itemTextRows(r){
   }
   return rows.filter(x=>String(x[1]||'').trim());
 }
-function itemCard(r){const chips=uniqueChips([rankLabel(r.rank),r.dataKind==='素材'?(r.materialType||'素材'):(r.itemType||r.dataKind||''),r.dataKind==='素材'?(r.materialCategory||''):(r.itemCategory||r.materialCategory||''),r.equipSlot?`枠:${r.equipSlot}`:'']);const bundleCount=Number(r.bundleCount)||0,bundlePrice=Number(r.bundlePrice)||0;const isRecipe=String(r.itemType||'')==='レシピ';const buy=String(r.buyPrice||r.price||'');const sell=String(r.sellPrice||'');const rows=[[bundleCount?'単品買値':'買値',buy?`${buy}G`:'未設定'],...(sell?[['売値',`${sell}G`]]:[]),...(bundleCount&&bundlePrice?[['まとめ買い',`${bundleCount}本セット ${bundlePrice}G`]]:[]),...itemTextRows(r)];return `<article class="card"><h3>${esc(r.name)}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<dl>${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
+function itemCard(r){const chips=uniqueChips([rankLabel(r.rank),r.dataKind==='素材'?(r.materialType||'素材'):(r.itemType||r.dataKind||''),r.dataKind==='素材'?(r.materialCategory||''):(r.itemCategory||r.materialCategory||''),r.equipSlot?`枠:${r.equipSlot}`:'']);const bundleCount=Number(r.bundleCount)||0,bundlePrice=Number(r.bundlePrice)||0;const isRecipe=String(r.itemType||'')==='レシピ';const buy=String(r.buyPrice||r.price||'');const sell=String(r.sellPrice||'');const type=String(r.itemType||'').trim();const upgradeRows=(['武器','防具','盾'].includes(type)&&String(r.upgradeLimit??'').trim()!=='')?[['強化枠',`${r.upgradeLimit}枠`]]:[];const rows=[[bundleCount?'単品買値':'買値',buy?`${buy}G`:'未設定'],...(sell?[['売値',`${sell}G`]]:[]),...(bundleCount&&bundlePrice?[['まとめ買い',`${bundleCount}本セット ${bundlePrice}G`]]:[]),...upgradeRows,...itemTextRows(r)];return `<article class="card"><h3>${esc(r.name)}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<dl>${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
 function scrollPriceCard(r){const price=String(r.price||'')?`${r.price}G`:'未設定';const title=String(r.name||`未鑑定の${r.type||'術式'}スクロール`).trim();return `<article class="card"><h3>${esc(title)}：${esc(rankLabel(r.rank))}</h3><div class="chips"><span class="chip">${esc(r.type||'術式')}</span><span class="chip">${esc(rankLabel(r.rank))}</span><span class="chip">ランダム販売</span></div><dl><dt>価格</dt><dd>${esc(price)}</dd></dl></article>`;}
 function crystalCard(r){const chips=uniqueChips([rankLabel(r.rank),'スキルクリスタル',r.craftType]);const pairs=[['強化段階',`${r.baseItem||'?'} → ${r.resultItem||'?'}`],['必要素材',r.requiredMaterials||'未設定'],['強化費用',String(r.price||'')?`${r.price}G`:'未設定']];if(r.description)pairs.push(['説明',r.description]);if(r.effect)pairs.push(['効果',r.effect]);return `<article class="card"><h3>${esc(r.name||'クリスタル強化')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
 let accessoryDetailIndex=Object.create(null);
@@ -1181,6 +1181,7 @@ function recipeCard(r){
   if(r.isProcessingRecipe)pairs.push(['レシピ','必要']);
   pairs.push(['必要素材',r.requiredMaterials||'未設定']);
   if(String(r.resultCount||''))pairs.push(['完成数',r.resultCount]);
+  if(!r.locked&&['武器','防具','盾'].includes(String(r.itemType||'').trim())&&String(r.upgradeLimit??'').trim()!=='')pairs.push(['強化枠',`${r.upgradeLimit}枠`]);
   if(String(r.price||''))pairs.push([currentFacility==='eatery'?'調理代':'施設依頼',`${r.price}G`]);
   if(!r.locked&&r.difficulty){
     const difficultyRows=craftingDifficultyRows(r.rank,r.difficulty);
