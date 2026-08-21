@@ -1,6 +1,6 @@
 {
   "format": "recraft-alchemia-initial-data",
-  "version": "90.8.599",
+  "version": "90.8.602",
   "encoding": "UTF-8",
   "description": "Recraft-Alchemia master v90.8.595（魔導書・祈祷書の本体補正を固有効果・強化枠・解放時期込みで再監査）",
   "data": {
@@ -93438,6 +93438,6 @@
       }
     ]
   },
-  "updatedAt": "2026-08-20",
-  "generatedAt": "2026-08-20"
+  "updatedAt": "2026-08-21",
+  "generatedAt": "2026-08-21"
 }
