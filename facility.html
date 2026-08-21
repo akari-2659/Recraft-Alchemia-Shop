@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.608</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.612</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -139,7 +139,7 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 @media(max-width:620px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/2}.facility-unlock-grid button{width:auto}.facility-unlock-grid #resetKey{grid-column:1/3;justify-self:start}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.608">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.612">
 
 <style id="raFortuneCommunityV474">
 .community-rule{grid-column:1/-1;border:1px solid var(--line);border-radius:14px;background:#fffaf3;padding:12px;line-height:1.7}
@@ -159,7 +159,7 @@ body.ra-facility .accessory-branch-node button:hover{background:#f5e6d1!importan
 </style>
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.608｜更新：2026年8月21日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.612｜更新：2026年8月21日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -292,17 +292,21 @@ function craftingToolName(craftSkill='',craftType=''){
   if(skill==='細工') return '細工道具';
   return '対応道具';
 }
-const WEAPON_CRAFT_SUPPORT_NAME='武装融和剤';
-const WEAPON_CRAFT_SUPPORT_MAX_RANK=5;
-const WEAPON_CRAFT_SUPPORT_REDUCTION=2;
-function weaponCraftSupportEligible(row={}){
+const CRAFT_SUPPORT_REDUCTION=2;
+function craftSupportName(row={}){
+  const skill=String(row.craftSkill||row.processingSkill||'').trim();
   const type=String(row.craftType||'').trim();
   const itemType=String(row.itemType||'').trim();
-  const weaponCreation=type==='武器派生'||(type==='鍛冶'&&(itemType==='武器'||itemType==='術式装備'));
-  return weaponCreation&&rankValue(row.rank)<=WEAPON_CRAFT_SUPPORT_MAX_RANK;
+  if(skill==='調合'||type==='調合')return '調合安定剤';
+  if(skill==='設計')return '機巧調整剤';
+  if(skill==='細工'){
+    const weaponCreation=type==='武器派生'||(type==='鍛冶'&&(itemType==='武器'||itemType==='術式装備'));
+    return weaponCreation?'武装融和剤':'工作定着剤';
+  }
+  return '';
 }
-function weaponCraftSupportText(){
-  return `${WEAPON_CRAFT_SUPPORT_NAME}（自作時のみ・任意個数）／1個につき作成難易度－${WEAPON_CRAFT_SUPPORT_REDUCTION}`;
+function craftSupportText(row={}){
+  const name=craftSupportName(row);return name?`${name}（自作時のみ・任意個数）／1個につき作成難易度－${CRAFT_SUPPORT_REDUCTION}`:'';
 }
 function uniqueChips(values){const seen=new Set();return values.map(v=>String(v??'').trim()).filter(v=>{if(!v)return false;const key=v.normalize('NFKC').replace(/\s+/g,'');if(seen.has(key))return false;seen.add(key);return true;});}
 function rankMatches(row){return currentRank==='all'||rankValue(row&&row.rank)===Number(currentRank);}
@@ -1173,6 +1177,7 @@ function recipeCard(r){
     pairs.push(['製作技能',r.craftSkill||'未設定']);
     pairs.push(['対応道具',`${r.toolType||'対応道具'}（★${r.toolRank||'?'}以上）`]);
     if(r.difficulty){pairs.push(['基礎作成難易度',r.difficulty]);pairs.push(['道具使用時',craftingDifficultySummary(r.rank,r.difficulty)]);}
+    const supportText=craftSupportText(r);if(supportText)pairs.push(['任意の作成補助材',supportText]);
     if(r.description)pairs.push(['説明',r.description]);
     if(r.effect)pairs.push(['効果',r.effect]);
     return `<article class="card"><h3>${esc(r.resultItem||r.name||'名称未設定')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;
@@ -1190,7 +1195,7 @@ function recipeCard(r){
       pairs.push(['使用道具',craftingToolName(r.craftSkill,r.craftType)]);
       pairs.push(['基礎作成難易度',r.difficulty]);
       pairs.push(['道具使用時',craftingDifficultySummary(r.rank,r.difficulty)]);
-      if(weaponCraftSupportEligible(r))pairs.push(['任意の作成補助材',weaponCraftSupportText()]);
+      const supportText=craftSupportText(r);if(supportText)pairs.push(['任意の作成補助材',supportText]);
     }else{
       pairs.push(['作成難易度',r.difficulty]);
     }
