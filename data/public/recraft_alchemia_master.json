@@ -1,6 +1,6 @@
 {
   "format": "recraft-alchemia-initial-data",
-  "version": "90.8.613",
+  "version": "90.8.615",
   "encoding": "UTF-8",
   "description": "Recraft-Alchemia 統合初期データ（越境ランダムイベント・重要アイテム・全技能対応種核変化）",
   "data": {
@@ -38371,8 +38371,8 @@
         "materialCategory": "粘体",
         "name": "鏡核片",
         "csVisible": "TRUE",
-        "price": 82,
-        "rank": 4,
+        "price": 62,
+        "rank": 3,
         "toolRank": "",
         "equipSlot": "",
         "skill": "",
@@ -38397,7 +38397,7 @@
         "equipmentUpgradeEffect": "抵抗強化",
         "equipmentUpgradeTarget": "防具",
         "unlockFacility": "",
-        "tags": "素材,魔物素材,粘体,抵抗強化,★4",
+        "tags": "素材,魔物素材,粘体,抵抗強化,★3",
         "notes": "装備強化に使用できる魔物素材。",
         "updatedAt": "2026-08-21",
         "equipmentUpgradeDetail": "抵抗値+1。同名の通常強化は重複し、段階数として累積する。",
@@ -38405,7 +38405,7 @@
         "unlockAreaKey": "area_reflection_water_garden",
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": 1,
-        "sellPrice": 82,
+        "sellPrice": 62,
         "buyPrice": ""
       },
       {
@@ -38541,8 +38541,8 @@
         "materialCategory": "水棲",
         "name": "脚殻片",
         "csVisible": "TRUE",
-        "price": 84,
-        "rank": 4,
+        "price": 66,
+        "rank": 3,
         "toolRank": "",
         "equipSlot": "",
         "skill": "",
@@ -38567,7 +38567,7 @@
         "equipmentUpgradeEffect": "防御行動強化",
         "equipmentUpgradeTarget": "防具・盾",
         "unlockFacility": "",
-        "tags": "素材,魔物素材,水棲,防御行動強化,★4",
+        "tags": "素材,魔物素材,水棲,防御行動強化,★3",
         "notes": "装備強化に使用できる魔物素材。",
         "updatedAt": "2026-08-21",
         "equipmentUpgradeDetail": "防御行動中のみ防御行動値+1。同名の通常強化は重複し、段階数として累積する。",
@@ -38575,7 +38575,7 @@
         "unlockAreaKey": "area_reflection_water_garden",
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": 1,
-        "sellPrice": 84,
+        "sellPrice": 66,
         "buyPrice": ""
       },
       {
@@ -38586,8 +38586,8 @@
         "materialType": "魔物素材",
         "materialCategory": "獣",
         "name": "虚爪",
-        "price": 86,
-        "rank": 4,
+        "price": 72,
+        "rank": 3,
         "equipSlot": "",
         "skill": "",
         "power": "",
@@ -38600,7 +38600,7 @@
         "source": "ヴォイドハウンド",
         "usageTags": "素材,魔物素材,獣,威力強化",
         "unlockFacility": "",
-        "tags": "素材,魔物素材,獣,威力強化,★4",
+        "tags": "素材,魔物素材,獣,威力強化,★3",
         "notes": "装備強化に使用できる魔物素材。",
         "description": "光を吸うように黒い、虚喰い犬の鋭い爪。",
         "equipmentUpgradeEffect": "威力強化",
@@ -38616,7 +38616,7 @@
         "unlockAreaKey": "area_reflection_water_garden",
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": 1,
-        "sellPrice": 86,
+        "sellPrice": 72,
         "buyPrice": ""
       },
       {
@@ -38723,8 +38723,8 @@
         "materialCategory": "爬虫",
         "name": "尾鉱甲",
         "csVisible": "TRUE",
-        "price": 88,
-        "rank": 4,
+        "price": 66,
+        "rank": 3,
         "toolRank": "",
         "equipSlot": "",
         "skill": "",
@@ -38749,7 +38749,7 @@
         "equipmentUpgradeEffect": "回避強化",
         "equipmentUpgradeTarget": "防具",
         "unlockFacility": "",
-        "tags": "素材,魔物素材,爬虫,回避強化,★4",
+        "tags": "素材,魔物素材,爬虫,回避強化,★3",
         "notes": "装備強化に使用できる魔物素材。",
         "updatedAt": "2026-08-21",
         "equipmentUpgradeDetail": "回避値+1。同名の通常強化は重複し、段階数として累積する。",
@@ -38757,7 +38757,7 @@
         "unlockAreaKey": "area_foothill_old_mine",
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": 1,
-        "sellPrice": 88,
+        "sellPrice": 66,
         "buyPrice": ""
       },
       {
@@ -38817,8 +38817,8 @@
         "materialCategory": "造魔",
         "name": "装甲片",
         "csVisible": "TRUE",
-        "price": 90,
-        "rank": 4,
+        "price": 70,
+        "rank": 3,
         "toolRank": "",
         "equipSlot": "",
         "skill": "",
@@ -38843,7 +38843,7 @@
         "equipmentUpgradeEffect": "防御強化",
         "equipmentUpgradeTarget": "防具・盾",
         "unlockFacility": "",
-        "tags": "素材,魔物素材,造魔,防御強化,★4",
+        "tags": "素材,魔物素材,造魔,防御強化,★3",
         "notes": "装備強化に使用できる魔物素材。",
         "updatedAt": "2026-08-21",
         "equipmentUpgradeDetail": "防御値+1。同名の通常強化は重複し、段階数として累積する。",
@@ -38851,7 +38851,7 @@
         "unlockAreaKey": "area_foothill_old_mine",
         "guaranteeUpgradeMaxRank": "",
         "equipmentUpgradeSlotCost": 2,
-        "sellPrice": 90,
+        "sellPrice": 70,
         "buyPrice": ""
       },
       {
@@ -99556,5 +99556,5 @@
     ]
   },
   "updatedAt": "2026-08-21",
-  "generatedAt": "2026-08-21"
+  "generatedAt": "2026-08-21T13:46:33Z"
 }
