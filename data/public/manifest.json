@@ -1,9 +1,9 @@
 {
   "format": "recraft-alchemia-public-manifest",
-  "version": "90.8.644",
+  "version": "90.8.645",
   "updatedAt": "2026-08-25",
   "master": "recraft_alchemia_master.json",
-  "sha256": "d93901e2af693abc6f1bfbbfd2e4ccb11e7cb177d94e1585564d7792c4b74a70",
+  "sha256": "0279c38b8597ab0e795053b2b8ad9f4bbeca30fb030b8ee96474e79ed68460e2",
   "bytes": 4425303,
   "recordCount": 3332,
   "dataKeys": [
