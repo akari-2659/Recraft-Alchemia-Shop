@@ -1,6 +1,6 @@
 {
   "format": "recraft-alchemia-initial-data",
-  "version": "90.8.645",
+  "version": "90.8.646",
   "encoding": "UTF-8",
   "description": "Recraft-Alchemia 統合データ（全魔物監査修正＋食事選択モーダル＋装備強化素材対象判定修正）",
   "data": {
@@ -12560,7 +12560,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "浄化ボルト",
-        "price": "72",
+        "price": 116,
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12587,8 +12587,8 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "72",
-        "buyPrice": "90",
+        "sellPrice": 116,
+        "buyPrice": 145,
         "element": "光"
       },
       {
@@ -12599,7 +12599,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "浄化大型ボルト",
-        "price": "88",
+        "price": 240,
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -12626,8 +12626,8 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "88",
-        "buyPrice": "110",
+        "sellPrice": 240,
+        "buyPrice": 300,
         "element": "光"
       },
       {
@@ -12638,7 +12638,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "浄化矢",
-        "price": "64",
+        "price": 112,
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -12665,8 +12665,8 @@
         "equipmentUpgradeTarget": "",
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
-        "sellPrice": "64",
-        "buyPrice": "80",
+        "sellPrice": 112,
+        "buyPrice": 140,
         "element": "光"
       },
       {
@@ -33931,7 +33931,7 @@
         "materialCategory": "",
         "name": "蝕矢",
         "csVisible": "TRUE",
-        "price": "64",
+        "price": 84,
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -33957,8 +33957,8 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-14",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "64",
-        "buyPrice": "80"
+        "sellPrice": 84,
+        "buyPrice": 105
       },
       {
         "id": "ammo_eclipse_bolt",
@@ -33970,7 +33970,7 @@
         "materialCategory": "",
         "name": "蝕ボルト",
         "csVisible": "TRUE",
-        "price": "72",
+        "price": 84,
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -33996,8 +33996,8 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-14",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "72",
-        "buyPrice": "90"
+        "sellPrice": 84,
+        "buyPrice": 105
       },
       {
         "id": "ammo_eclipse_heavy_bolt",
@@ -34009,7 +34009,7 @@
         "materialCategory": "",
         "name": "蝕大型ボルト",
         "csVisible": "TRUE",
-        "price": "88",
+        "price": 180,
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -34035,8 +34035,8 @@
         "equipmentUpgradeSlotCost": "",
         "updatedAt": "2026-08-14",
         "equipmentUpgradeTarget": "",
-        "sellPrice": "88",
-        "buyPrice": "110"
+        "sellPrice": 180,
+        "buyPrice": 225
       },
       {
         "id": "acc_guard_charm_2",
@@ -34079,7 +34079,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "雷矢",
-        "price": "80",
+        "price": 100,
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -34107,8 +34107,8 @@
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
         "element": "雷",
-        "sellPrice": "80",
-        "buyPrice": "100"
+        "sellPrice": 100,
+        "buyPrice": 125
       },
       {
         "id": "ammo_thunder_bolt",
@@ -34118,7 +34118,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "雷ボルト",
-        "price": "88",
+        "price": 100,
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -34146,8 +34146,8 @@
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
         "element": "雷",
-        "sellPrice": "88",
-        "buyPrice": "110"
+        "sellPrice": 100,
+        "buyPrice": 125
       },
       {
         "id": "ammo_thunder_heavy_bolt",
@@ -34157,7 +34157,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "雷大型ボルト",
-        "price": "104",
+        "price": 212,
         "rank": 1,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -34185,8 +34185,8 @@
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
         "element": "雷",
-        "sellPrice": "104",
-        "buyPrice": "130"
+        "sellPrice": 212,
+        "buyPrice": 265
       },
       {
         "id": "mat_ashcrown_obsidian_steel",
@@ -37057,7 +37057,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "灼熱矢",
-        "price": 128,
+        "price": 132,
         "rank": 4,
         "equipSlot": "所持品",
         "maxStack": 10,
@@ -37085,8 +37085,8 @@
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
         "element": "火",
-        "sellPrice": 128,
-        "buyPrice": 160
+        "sellPrice": 132,
+        "buyPrice": 165
       },
       {
         "id": "ammo_ashcrown_searing_bolt",
@@ -37135,7 +37135,7 @@
         "materialType": "",
         "materialCategory": "",
         "name": "灼熱大型ボルト",
-        "price": 164,
+        "price": 276,
         "rank": 4,
         "equipSlot": "所持品",
         "maxStack": 6,
@@ -37163,8 +37163,8 @@
         "csVisible": "TRUE",
         "ammoUse": "消費あり",
         "element": "火",
-        "sellPrice": 164,
-        "buyPrice": 205
+        "sellPrice": 276,
+        "buyPrice": 345
       },
       {
         "dataKind": "アイテム",
@@ -40120,7 +40120,7 @@
         "name": "旅人の矢筒",
         "rank": 2,
         "price": "35",
-        "recipePrice": "",
+        "recipePrice": "1650",
         "recipeSellPrice": "330",
         "recipeSource": "水辺の湿地の防水工房箱",
         "craftSkill": "細工",
@@ -40140,7 +40140,7 @@
         "tags": "矢筒",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1650"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_quiver_hunter",
@@ -40148,7 +40148,7 @@
         "name": "狩人の矢筒",
         "rank": 3,
         "price": "135",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "反照の水庭の半透明工房箱",
         "craftSkill": "細工",
@@ -40168,7 +40168,7 @@
         "tags": "矢筒",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-09",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_bag_miner_reinforced",
@@ -40176,7 +40176,7 @@
         "name": "鉱夫の補強背嚢製作",
         "rank": 3,
         "price": 480,
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "山麓の旧鉱山の旧工房設計箱",
         "craftSkill": "細工",
@@ -40196,7 +40196,7 @@
         "tags": "バッグ製作,バッグ,★3,鉱山",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-09",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "meal_round_mushroom_soup",
@@ -40904,7 +40904,7 @@
         "name": "アクアランナーナックルへの派生",
         "rank": 2,
         "price": 184,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -40926,7 +40926,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_glassray_bow",
@@ -40934,7 +40934,7 @@
         "name": "アクアリフレインへの派生",
         "rank": 2,
         "price": 580,
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -40956,7 +40956,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_magic_arcana_codex",
@@ -40964,7 +40964,7 @@
         "name": "アルカナコーデックスへの派生",
         "rank": 2,
         "price": 120,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -40986,7 +40986,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_crank_crossbow",
@@ -40994,7 +40994,7 @@
         "name": "アーバレストへの派生",
         "rank": 2,
         "price": 124,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41016,7 +41016,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 12,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_prayer_aegis_litany",
@@ -41024,7 +41024,7 @@
         "name": "イージスリタニーへの派生",
         "rank": 2,
         "price": 120,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -41046,7 +41046,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_wing_spear",
@@ -41054,7 +41054,7 @@
         "name": "ウィングスピアへの派生",
         "rank": 2,
         "price": 98,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41076,7 +41076,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_wing_bracer",
@@ -41084,7 +41084,7 @@
         "name": "ウィングブレイサーへの派生",
         "rank": 2,
         "price": 122,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41106,7 +41106,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_siege_crossbow",
@@ -41114,7 +41114,7 @@
         "name": "ウィンドラスクロスボウへの派生",
         "rank": 2,
         "price": 164,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41136,7 +41136,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_thorn_scythe",
@@ -41144,7 +41144,7 @@
         "name": "ウォーサイスへの派生",
         "rank": 2,
         "price": 150,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41166,7 +41166,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_war_maul",
@@ -41174,7 +41174,7 @@
         "name": "ウォーモールへの派生",
         "rank": 2,
         "price": 152,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41196,7 +41196,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_echo_mace",
@@ -41204,7 +41204,7 @@
         "name": "エコーメイスへの派生",
         "rank": 2,
         "price": 560,
-        "recipePrice": "",
+        "recipePrice": "2250",
         "recipeSellPrice": "450",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -41226,7 +41226,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "2250"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_carapace_greatsword",
@@ -41234,7 +41234,7 @@
         "name": "カラパスグレートへの派生",
         "rank": 2,
         "price": 164,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -41256,7 +41256,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_carapace_saber",
@@ -41264,7 +41264,7 @@
         "name": "カラパスセイバーへの派生",
         "rank": 2,
         "price": 102,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41286,7 +41286,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_carapace_knuckle",
@@ -41294,7 +41294,7 @@
         "name": "カラパスナックルへの派生",
         "rank": 2,
         "price": 128,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -41316,7 +41316,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_carapace_lance",
@@ -41324,7 +41324,7 @@
         "name": "カラパスランスへの派生",
         "rank": 2,
         "price": 154,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -41346,7 +41346,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_crystal_staff",
@@ -41354,7 +41354,7 @@
         "name": "クォータースタッフへの派生",
         "rank": 2,
         "price": 96,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41376,7 +41376,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_crystal_spear",
@@ -41384,7 +41384,7 @@
         "name": "クリスタルスピアへの派生",
         "rank": 2,
         "price": 104,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -41406,7 +41406,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_crystal_mace",
@@ -41414,7 +41414,7 @@
         "name": "クリスタルメイスへの派生",
         "rank": 2,
         "price": 104,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41436,7 +41436,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_crystal_lance",
@@ -41444,7 +41444,7 @@
         "name": "クリスタルランスへの派生",
         "rank": 2,
         "price": 148,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41466,7 +41466,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_magiccrystal_prayer_book",
@@ -41474,7 +41474,7 @@
         "name": "クリスタルリタニーへの派生",
         "rank": 2,
         "price": 145,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41496,7 +41496,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_claymore",
@@ -41504,7 +41504,7 @@
         "name": "クレイモアへの派生",
         "rank": 2,
         "price": 136,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41526,7 +41526,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 10,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_glass_lancer",
@@ -41534,7 +41534,7 @@
         "name": "グラスランサーへの派生",
         "rank": 2,
         "price": 570,
-        "recipePrice": "",
+        "recipePrice": "2300",
         "recipeSellPrice": "460",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -41556,7 +41556,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "2300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_magic_grimoire",
@@ -41564,7 +41564,7 @@
         "name": "グリモワールへの派生",
         "rank": 2,
         "price": 110,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41586,7 +41586,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_magiccore_maul",
@@ -41594,7 +41594,7 @@
         "name": "コアクラッシャーへの派生",
         "rank": 2,
         "price": 198,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -41616,7 +41616,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_core_hammer",
@@ -41624,7 +41624,7 @@
         "name": "コアハンマーへの派生",
         "rank": 2,
         "price": 132,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -41646,7 +41646,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_hunter_bow",
@@ -41654,7 +41654,7 @@
         "name": "コンポジットボウへの派生",
         "rank": 2,
         "price": 94,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41676,7 +41676,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_prayer_salve_missal",
@@ -41684,7 +41684,7 @@
         "name": "サルヴェミサルへの派生",
         "rank": 2,
         "price": 110,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41706,7 +41706,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_thunder_whip_branch",
@@ -41714,7 +41714,7 @@
         "name": "サンダークラックへの派生",
         "rank": 2,
         "price": "220",
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41736,7 +41736,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_carapace_crossbow",
@@ -41744,7 +41744,7 @@
         "name": "シェルブレイカーへの派生",
         "rank": 2,
         "price": 146,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41766,7 +41766,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_wing_bow",
@@ -41774,7 +41774,7 @@
         "name": "シルフィードアーチへの派生",
         "rank": 2,
         "price": 108,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41796,7 +41796,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_stiletto",
@@ -41804,7 +41804,7 @@
         "name": "スティレットへの派生",
         "rank": 2,
         "price": 72,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41826,7 +41826,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_spore_scythe",
@@ -41834,7 +41834,7 @@
         "name": "スポアサイスへの派生",
         "rank": 2,
         "price": 224,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -41856,7 +41856,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_spore_staff",
@@ -41864,7 +41864,7 @@
         "name": "スポアスタッフへの派生",
         "rank": 2,
         "price": 206,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -41886,7 +41886,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_wing_crossbow",
@@ -41894,7 +41894,7 @@
         "name": "ゼファーボルターへの派生",
         "rank": 2,
         "price": 152,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -41916,7 +41916,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_thorn_whip_branch",
@@ -41924,7 +41924,7 @@
         "name": "ソーンウィップへの派生",
         "rank": 2,
         "price": "220",
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -41946,7 +41946,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_chain_whip_branch",
@@ -41954,7 +41954,7 @@
         "name": "チェインウィップへの派生",
         "rank": 2,
         "price": "210",
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -41976,7 +41976,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_beast_claw",
@@ -41984,7 +41984,7 @@
         "name": "バグナクへの派生",
         "rank": 2,
         "price": 108,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -42006,7 +42006,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_shell_hatchet",
@@ -42014,7 +42014,7 @@
         "name": "バトルアックスへの派生",
         "rank": 2,
         "price": 92,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -42036,7 +42036,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 10,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_bubble_rod",
@@ -42044,7 +42044,7 @@
         "name": "バブルロッドへの派生",
         "rank": 2,
         "price": 292,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -42066,7 +42066,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_iron_pike",
@@ -42074,7 +42074,7 @@
         "name": "パイクへの派生",
         "rank": 2,
         "price": 112,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -42096,7 +42096,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_fang_spear",
@@ -42104,7 +42104,7 @@
         "name": "パルチザンへの派生",
         "rank": 2,
         "price": 80,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -42126,7 +42126,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_fang_axe",
@@ -42134,7 +42134,7 @@
         "name": "ファングアックスへの派生",
         "rank": 2,
         "price": 108,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -42156,7 +42156,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_fang_claymore",
@@ -42164,7 +42164,7 @@
         "name": "ファングクレイモアへの派生",
         "rank": 2,
         "price": 178,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -42186,7 +42186,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_fang_knife",
@@ -42194,7 +42194,7 @@
         "name": "ファングナイフへの派生",
         "rank": 2,
         "price": 86,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -42216,7 +42216,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_phase_whip",
@@ -42224,7 +42224,7 @@
         "name": "フェイズウィップへの派生",
         "rank": 2,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2200",
         "recipeSellPrice": "440",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42246,7 +42246,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2200"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_phase_dagger",
@@ -42254,7 +42254,7 @@
         "name": "フェイズダガーへの派生",
         "rank": 2,
         "price": 540,
-        "recipePrice": "",
+        "recipePrice": "2200",
         "recipeSellPrice": "440",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42276,7 +42276,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "2200"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_phase_knuckle",
@@ -42284,7 +42284,7 @@
         "name": "フェイズナックルへの派生",
         "rank": 2,
         "price": 610,
-        "recipePrice": "",
+        "recipePrice": "2450",
         "recipeSellPrice": "490",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42306,7 +42306,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "2450"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_phase_pike",
@@ -42314,7 +42314,7 @@
         "name": "フェイズパイクへの派生",
         "rank": 2,
         "price": 650,
-        "recipePrice": "",
+        "recipePrice": "2600",
         "recipeSellPrice": "520",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42336,7 +42336,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "2600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_fur_bow",
@@ -42344,7 +42344,7 @@
         "name": "ビーストボウへの派生",
         "rank": 2,
         "price": 116,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -42366,7 +42366,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_forge_hammer",
@@ -42374,7 +42374,7 @@
         "name": "フォージハンマーへの派生",
         "rank": 2,
         "price": 182,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -42396,7 +42396,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_steel_ballista",
@@ -42404,7 +42404,7 @@
         "name": "フォートレスアーバレストへの派生",
         "rank": 2,
         "price": 188,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -42426,7 +42426,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_shell_mace",
@@ -42434,7 +42434,7 @@
         "name": "フランジドメイスへの派生",
         "rank": 2,
         "price": 88,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -42456,7 +42456,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_branch_hatchet",
@@ -42464,7 +42464,7 @@
         "name": "ブランチハチェットへの派生",
         "rank": 2,
         "price": 192,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -42486,7 +42486,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_broadsword",
@@ -42494,7 +42494,7 @@
         "name": "ブロードソードへの派生",
         "rank": 2,
         "price": 84,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -42516,7 +42516,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 10,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_core_ballista",
@@ -42524,7 +42524,7 @@
         "name": "マイアカノンへの派生",
         "rank": 2,
         "price": 198,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -42546,7 +42546,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_myco_grimoire",
@@ -42554,7 +42554,7 @@
         "name": "マイセリアグリモアへの派生",
         "rank": 2,
         "price": 224,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -42576,7 +42576,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_mist_staff",
@@ -42584,7 +42584,7 @@
         "name": "ミストスタッフへの派生",
         "rank": 2,
         "price": 600,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42606,7 +42606,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_mirror_edge",
@@ -42614,7 +42614,7 @@
         "name": "ミラーエッジへの派生",
         "rank": 2,
         "price": 530,
-        "recipePrice": "",
+        "recipePrice": "2150",
         "recipeSellPrice": "430",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42636,7 +42636,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "2150"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_mirror_claymore",
@@ -42644,7 +42644,7 @@
         "name": "ミラークレイモアへの派生",
         "rank": 2,
         "price": 660,
-        "recipePrice": "",
+        "recipePrice": "2650",
         "recipeSellPrice": "530",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42666,7 +42666,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "2650"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_mirror_grimoire",
@@ -42674,7 +42674,7 @@
         "name": "ミラーグリモアへの派生",
         "rank": 2,
         "price": 610,
-        "recipePrice": "",
+        "recipePrice": "2450",
         "recipeSellPrice": "490",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42696,7 +42696,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "2450"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_mirage_scythe",
@@ -42704,7 +42704,7 @@
         "name": "ミラージュサイズへの派生",
         "rank": 2,
         "price": 650,
-        "recipePrice": "",
+        "recipePrice": "2600",
         "recipeSellPrice": "520",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42726,7 +42726,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_mirror_crossbow",
@@ -42734,7 +42734,7 @@
         "name": "ミラージュボルターへの派生",
         "rank": 2,
         "price": 640,
-        "recipePrice": "",
+        "recipePrice": "2600",
         "recipeSellPrice": "520",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42756,7 +42756,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "2600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_moss_guard_pike",
@@ -42764,7 +42764,7 @@
         "name": "モスガードパイクへの派生",
         "rank": 2,
         "price": 176,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -42786,7 +42786,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_rift_ballista",
@@ -42794,7 +42794,7 @@
         "name": "リフトデストロイヤーへの派生",
         "rank": 2,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42816,7 +42816,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_rift_hatchet",
@@ -42824,7 +42824,7 @@
         "name": "リフトハチェットへの派生",
         "rank": 2,
         "price": 580,
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42846,7 +42846,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_rift_maul",
@@ -42854,7 +42854,7 @@
         "name": "リフトモールへの派生",
         "rank": 2,
         "price": 690,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42876,7 +42876,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_otherworld_mirror_missal",
@@ -42884,7 +42884,7 @@
         "name": "リフレクトミサルへの派生",
         "rank": 2,
         "price": 610,
-        "recipePrice": "",
+        "recipePrice": "2450",
         "recipeSellPrice": "490",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -42906,7 +42906,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "2450"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_root_saber",
@@ -42914,7 +42914,7 @@
         "name": "ルートセイバーへの派生",
         "rank": 2,
         "price": 198,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -42936,7 +42936,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_venom_scythe",
@@ -42944,7 +42944,7 @@
         "name": "ヴェノムサイスへの派生",
         "rank": 2,
         "price": 335,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -42966,7 +42966,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_venom_needle",
@@ -42974,7 +42974,7 @@
         "name": "ヴェノムニードルへの派生",
         "rank": 2,
         "price": 230,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -42996,7 +42996,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_venom_whip",
@@ -43004,7 +43004,7 @@
         "name": "ヴェノムラッシュへの派生",
         "rank": 2,
         "price": 315,
-        "recipePrice": "",
+        "recipePrice": "1700",
         "recipeSellPrice": "340",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -43026,7 +43026,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_mine_branch_hunter_bow",
@@ -43034,7 +43034,7 @@
         "name": "アイアンストリングへの派生",
         "rank": 3,
         "price": 340,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -43056,7 +43056,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_boss_heartwood_whip",
@@ -43514,7 +43514,7 @@
         "name": "フェラスクレイモアへの派生",
         "rank": 3,
         "price": 390,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -43536,7 +43536,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 10,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_mine_branch_stiletto",
@@ -43544,7 +43544,7 @@
         "name": "フェラススティレットへの派生",
         "rank": 3,
         "price": 260,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -43566,7 +43566,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_mine_branch_broadsword",
@@ -43574,7 +43574,7 @@
         "name": "フェラスセイバーへの派生",
         "rank": 3,
         "price": 300,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -43596,7 +43596,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 10,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_mine_branch_beast_claw",
@@ -43604,7 +43604,7 @@
         "name": "フェラスナックルへの派生",
         "rank": 3,
         "price": 350,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -43626,7 +43626,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_boss_grasshorn_axe",
@@ -44234,7 +44234,7 @@
         "name": "スチールワイヤーへの派生",
         "rank": 3,
         "price": 360,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -44256,7 +44256,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_boss_dolgan_scythe",
@@ -44294,7 +44294,7 @@
         "name": "トンネルブレイカーへの派生",
         "rank": 3,
         "price": 430,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -44316,7 +44316,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_boss_heartwood_maul",
@@ -45344,7 +45344,7 @@
         "name": "フォスライトグリモアへの派生",
         "rank": 3,
         "price": 360,
-        "recipePrice": "",
+        "recipePrice": "2500",
         "recipeSellPrice": "500",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -45366,7 +45366,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "2500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_mine_branch_crystal_staff",
@@ -45374,7 +45374,7 @@
         "name": "リンショウスタッフへの派生",
         "rank": 3,
         "price": 330,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -45396,7 +45396,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_branch_root_pike",
@@ -45524,7 +45524,7 @@
         "name": "レイラインパイクへの派生",
         "rank": 3,
         "price": 350,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -45546,7 +45546,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_mine_branch_prayer_salve_missal",
@@ -45554,7 +45554,7 @@
         "name": "レイラインミサルへの派生",
         "rank": 3,
         "price": 360,
-        "recipePrice": "",
+        "recipePrice": "2500",
         "recipeSellPrice": "500",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -45576,7 +45576,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_mine_branch_shell_mace",
@@ -45584,7 +45584,7 @@
         "name": "ロアメイスへの派生",
         "rank": 3,
         "price": 310,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -45606,7 +45606,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_boss_dolgan_crossbow",
@@ -45644,7 +45644,7 @@
         "name": "ロックハチェットへの派生",
         "rank": 3,
         "price": 320,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -45666,7 +45666,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_mine_branch_fang_spear",
@@ -45674,7 +45674,7 @@
         "name": "ロックピアサーへの派生",
         "rank": 3,
         "price": 290,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -45696,7 +45696,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_mine_branch_war_maul",
@@ -45704,7 +45704,7 @@
         "name": "ロックブレイカーモールへの派生",
         "rank": 3,
         "price": 420,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -45726,7 +45726,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_mine_branch_crank_crossbow",
@@ -45734,7 +45734,7 @@
         "name": "ロックボーラーへの派生",
         "rank": 3,
         "price": 370,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -45756,7 +45756,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 12,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_boss_dolgan_axe",
@@ -45794,7 +45794,7 @@
         "name": "ヴェインサイズへの派生",
         "rank": 3,
         "price": 410,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -45816,7 +45816,7 @@
         "updatedAt": "2026-08-18",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_boss_grasshorn_magic_book",
@@ -46150,7 +46150,7 @@
         "name": "煙幕仕掛け",
         "rank": 2,
         "price": "120",
-        "recipePrice": "",
+        "recipePrice": "1650",
         "recipeSellPrice": "330",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "設計",
@@ -46170,7 +46170,7 @@
         "tags": "設計,罠,★2,宝箱限定レシピ",
         "notes": "店頭購入280G。施設依頼費120G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "1650"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_thunder_thread",
@@ -46178,7 +46178,7 @@
         "name": "雷糸罠",
         "rank": 2,
         "price": "180",
-        "recipePrice": "",
+        "recipePrice": "1650",
         "recipeSellPrice": "330",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "設計",
@@ -46198,7 +46198,7 @@
         "tags": "設計,罠,★2,雷,宝箱限定レシピ",
         "notes": "店頭購入420G。施設依頼費180G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "1650"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_burst_stake",
@@ -46206,7 +46206,7 @@
         "name": "炸裂杭",
         "rank": 3,
         "price": "260",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "山麓の旧鉱山の旧工房設計箱",
         "craftSkill": "設計",
@@ -46226,7 +46226,7 @@
         "tags": "設計,罠,★3,火,鉱山,宝箱限定レシピ",
         "notes": "店頭購入620G。施設依頼費260G。自作時はこのレシピが必要。施設依頼ではレシピ不要。鉱山解放後に入手できる。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_spore_canister",
@@ -46234,7 +46234,7 @@
         "name": "胞子煙筒",
         "rank": 2,
         "price": "150",
-        "recipePrice": "",
+        "recipePrice": "1650",
         "recipeSellPrice": "330",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "設計",
@@ -46254,7 +46254,7 @@
         "tags": "設計,罠,★2,宝箱限定レシピ",
         "notes": "店頭購入340G。施設依頼費150G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "1650"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_resin_snare",
@@ -46262,7 +46262,7 @@
         "name": "樹脂捕縛罠",
         "rank": 2,
         "price": "140",
-        "recipePrice": "",
+        "recipePrice": "1650",
         "recipeSellPrice": "330",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "設計",
@@ -46282,7 +46282,7 @@
         "tags": "設計,罠,★2,宝箱限定レシピ",
         "notes": "店頭購入320G。施設依頼費140G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "1650"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_corrosive_mire",
@@ -46290,7 +46290,7 @@
         "name": "腐蝕泥罠",
         "rank": 2,
         "price": "170",
-        "recipePrice": "",
+        "recipePrice": "1650",
         "recipeSellPrice": "330",
         "recipeSource": "水辺の湿地の防水工房箱",
         "craftSkill": "設計",
@@ -46310,7 +46310,7 @@
         "tags": "設計,罠,★2,宝箱限定レシピ",
         "notes": "店頭購入380G。施設依頼費170G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "1650"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_mist_needle_sprayer",
@@ -46318,7 +46318,7 @@
         "name": "霧針散布器",
         "rank": 3,
         "price": "210",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "水辺の湿地の防水工房箱",
         "craftSkill": "設計",
@@ -46338,7 +46338,7 @@
         "tags": "設計,罠,★3,宝箱限定レシピ",
         "notes": "店頭購入460G。施設依頼費210G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_mirror_reversal",
@@ -46346,7 +46346,7 @@
         "name": "鏡返し罠",
         "rank": 3,
         "price": "230",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "反照の水庭の半透明工房箱",
         "craftSkill": "設計",
@@ -46366,7 +46366,7 @@
         "tags": "設計,罠,★3,宝箱限定レシピ",
         "notes": "店頭購入500G。施設依頼費230G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_rift_blade_line",
@@ -46374,7 +46374,7 @@
         "name": "裂界刃線",
         "rank": 3,
         "price": "280",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "反照の水庭の半透明工房箱",
         "craftSkill": "設計",
@@ -46394,7 +46394,7 @@
         "tags": "設計,罠,★3,宝箱限定レシピ",
         "notes": "店頭購入650G。施設依頼費280G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_magnetic_clamp",
@@ -46402,7 +46402,7 @@
         "name": "磁着拘束具",
         "rank": 3,
         "price": "245",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "山麓の旧鉱山の旧工房設計箱",
         "craftSkill": "設計",
@@ -46422,7 +46422,7 @@
         "tags": "設計,罠,★3,宝箱限定レシピ",
         "notes": "店頭購入560G。施設依頼費245G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_quake_stake",
@@ -46430,7 +46430,7 @@
         "name": "鉱震杭",
         "rank": 3,
         "price": "300",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "山麓の旧鉱山の旧工房設計箱",
         "craftSkill": "設計",
@@ -46450,7 +46450,7 @@
         "tags": "設計,罠,★3,宝箱限定レシピ",
         "notes": "店頭購入720G。施設依頼費300G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_gale_ricochet",
@@ -46458,7 +46458,7 @@
         "name": "風圧跳弾罠",
         "rank": 3,
         "price": "280",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "風渡りの高原の風車工房設計箱",
         "craftSkill": "設計",
@@ -46478,7 +46478,7 @@
         "tags": "設計,罠,★3,宝箱限定レシピ",
         "notes": "店頭購入700G。施設依頼費280G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_thunder_capture_net",
@@ -46486,7 +46486,7 @@
         "name": "雷導捕縛網",
         "rank": 3,
         "price": "340",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "風渡りの高原の風車工房設計箱",
         "craftSkill": "設計",
@@ -46506,7 +46506,7 @@
         "tags": "設計,罠,★3,宝箱限定レシピ",
         "notes": "店頭購入780G。施設依頼費340G。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_flam_bottle",
@@ -46514,7 +46514,7 @@
         "name": "フラム瓶",
         "rank": 1,
         "price": "55",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "調合",
@@ -46534,7 +46534,7 @@
         "tags": "調合,攻撃,火",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_potion",
@@ -46570,7 +46570,7 @@
         "name": "俊足香",
         "rank": 1,
         "price": "10",
-        "recipePrice": "",
+        "recipePrice": "950",
         "recipeSellPrice": "190",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "調合",
@@ -46590,7 +46590,7 @@
         "tags": "調合,補助",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "950"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_bomb",
@@ -46598,7 +46598,7 @@
         "name": "小爆弾",
         "rank": 1,
         "price": "60",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "調合",
@@ -46618,7 +46618,7 @@
         "tags": "攻撃,火,調合,販売レシピ",
         "notes": "店頭購入120G。施設制作は素材代30G＋制作費60G。 自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_water_enchant_drop",
@@ -46655,7 +46655,7 @@
         "name": "氷結瓶",
         "rank": 1,
         "price": "55",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "調合",
@@ -46675,7 +46675,7 @@
         "tags": "調合,攻撃,水",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_purified_water",
@@ -46683,7 +46683,7 @@
         "name": "浄化水",
         "rank": 1,
         "price": "110",
-        "recipePrice": "",
+        "recipePrice": "950",
         "recipeSellPrice": "190",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "調合",
@@ -46703,7 +46703,7 @@
         "tags": "解除,浄化,調合,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-23",
-        "limitedRecipePrice": "950"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_waking_aroma",
@@ -46824,7 +46824,7 @@
         "name": "硬化薬",
         "rank": 1,
         "price": "10",
-        "recipePrice": "",
+        "recipePrice": "950",
         "recipeSellPrice": "190",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "調合",
@@ -46844,7 +46844,7 @@
         "tags": "調合,補助",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "950"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_antidote",
@@ -46880,7 +46880,7 @@
         "name": "酸液瓶",
         "rank": 1,
         "price": "55",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "水辺の湿地の防水工房箱",
         "craftSkill": "調合",
@@ -46900,7 +46900,7 @@
         "tags": "調合,攻撃,投擲",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_flash_ball",
@@ -46908,7 +46908,7 @@
         "name": "閃光玉",
         "rank": 1,
         "price": "40",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "調合",
@@ -46928,7 +46928,7 @@
         "tags": "調合,妨害",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-10",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_focus_incense",
@@ -46936,7 +46936,7 @@
         "name": "集中香",
         "rank": 1,
         "price": "15",
-        "recipePrice": "",
+        "recipePrice": "950",
         "recipeSellPrice": "190",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "調合",
@@ -46956,7 +46956,7 @@
         "tags": "調合,補助",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "950"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_thunder_bottle",
@@ -46964,7 +46964,7 @@
         "name": "雷鳴瓶",
         "rank": 1,
         "price": "70",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "調合",
@@ -46984,7 +46984,7 @@
         "tags": "調合,攻撃,雷",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_mana_potion",
@@ -47020,7 +47020,7 @@
         "name": "上級ポーション",
         "rank": 2,
         "price": "220",
-        "recipePrice": "",
+        "recipePrice": "1500",
         "recipeSellPrice": "300",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "調合",
@@ -47040,7 +47040,7 @@
         "tags": "回復,調合,販売レシピ",
         "notes": "普通以上の道具ランクが必要。 自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-23",
-        "limitedRecipePrice": "1500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_high_mana_potion",
@@ -47048,7 +47048,7 @@
         "name": "上級魔力薬",
         "rank": 2,
         "price": "20",
-        "recipePrice": "",
+        "recipePrice": "1500",
         "recipeSellPrice": "300",
         "recipeSource": "水辺の湿地の防水工房箱",
         "craftSkill": "調合",
@@ -47068,7 +47068,7 @@
         "tags": "調合,回復,★2",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-23",
-        "limitedRecipePrice": "1500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_water_enchant_oil",
@@ -47692,7 +47692,7 @@
         "name": "拘束ボルト",
         "rank": 1,
         "price": "20",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "細工",
@@ -47712,7 +47712,7 @@
         "tags": "矢弾,消耗品,拘束,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-10",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_bind_heavy_bolt",
@@ -47720,7 +47720,7 @@
         "name": "拘束大型ボルト",
         "rank": 1,
         "price": "15",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "細工",
@@ -47740,7 +47740,7 @@
         "tags": "矢弾,消耗品,拘束,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-10",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_bind_arrow",
@@ -47748,7 +47748,7 @@
         "name": "拘束矢",
         "rank": 1,
         "price": "15",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "細工",
@@ -47768,7 +47768,7 @@
         "tags": "矢弾,消耗品,拘束,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-10",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_poison_bolt",
@@ -47776,7 +47776,7 @@
         "name": "毒ボルト",
         "rank": 1,
         "price": "25",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "細工",
@@ -47796,7 +47796,7 @@
         "tags": "矢弾,消耗品,毒,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_poison_heavy_bolt",
@@ -47804,7 +47804,7 @@
         "name": "毒大型ボルト",
         "rank": 1,
         "price": "20",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "細工",
@@ -47824,7 +47824,7 @@
         "tags": "矢弾,消耗品,毒,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_poison_arrow",
@@ -47832,7 +47832,7 @@
         "name": "毒矢",
         "rank": 1,
         "price": "20",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "細工",
@@ -47852,7 +47852,7 @@
         "tags": "矢弾,消耗品,毒,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_purify_bolt",
@@ -47860,7 +47860,7 @@
         "name": "浄化ボルト",
         "rank": 1,
         "price": "130",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -47880,7 +47880,7 @@
         "tags": "矢弾,消耗品,光属性,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_purify_heavy_bolt",
@@ -47888,7 +47888,7 @@
         "name": "浄化大型ボルト",
         "rank": 1,
         "price": "150",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -47908,7 +47908,7 @@
         "tags": "矢弾,消耗品,光属性,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_purify_ammo",
@@ -47916,7 +47916,7 @@
         "name": "浄化矢",
         "rank": 1,
         "price": "120",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -47936,7 +47936,7 @@
         "tags": "矢弾,消耗品,光属性,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_fire_bolt",
@@ -47944,7 +47944,7 @@
         "name": "火炎ボルト",
         "rank": 1,
         "price": "25",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -47964,7 +47964,7 @@
         "tags": "矢弾,消耗品,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_fire_heavy_bolt",
@@ -47972,7 +47972,7 @@
         "name": "火炎大型ボルト",
         "rank": 1,
         "price": "20",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -47992,7 +47992,7 @@
         "tags": "矢弾,消耗品,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_fire_arrow",
@@ -48000,7 +48000,7 @@
         "name": "火矢",
         "rank": 1,
         "price": "20",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48020,7 +48020,7 @@
         "tags": "矢弾,消耗品,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_piercing_bolt",
@@ -48028,7 +48028,7 @@
         "name": "破甲ボルト",
         "rank": 1,
         "price": "35",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48048,7 +48048,7 @@
         "tags": "矢弾,消耗品,貫通,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_piercing_heavy_bolt",
@@ -48056,7 +48056,7 @@
         "name": "破甲大型ボルト",
         "rank": 1,
         "price": "35",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48076,7 +48076,7 @@
         "tags": "矢弾,消耗品,貫通,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_piercing_ammo",
@@ -48084,7 +48084,7 @@
         "name": "破甲矢",
         "rank": 1,
         "price": "25",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48104,7 +48104,7 @@
         "tags": "矢弾,消耗品,貫通,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_normal_bolts",
@@ -48168,7 +48168,7 @@
         "name": "閃光ボルト",
         "rank": 1,
         "price": "30",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48188,7 +48188,7 @@
         "tags": "矢弾,消耗品,妨害,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-10",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_flash_heavy_bolt",
@@ -48196,7 +48196,7 @@
         "name": "閃光大型ボルト",
         "rank": 1,
         "price": "20",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48216,7 +48216,7 @@
         "tags": "矢弾,消耗品,妨害,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-10",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_flash_ammo",
@@ -48224,7 +48224,7 @@
         "name": "閃光矢",
         "rank": 1,
         "price": "20",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48244,7 +48244,7 @@
         "tags": "矢弾,消耗品,妨害,鍛冶,販売レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-10",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_shield_large",
@@ -48252,7 +48252,7 @@
         "name": "大盾製作",
         "rank": 1,
         "price": "50",
-        "recipePrice": "",
+        "recipePrice": "1250",
         "recipeSellPrice": "250",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48272,7 +48272,7 @@
         "tags": "防具製作,鍛冶屋,盾",
         "notes": "施設製作総額181G。店頭購入価格は製作総額より高く設定。 自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1250"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_shield_small",
@@ -48280,7 +48280,7 @@
         "name": "小盾製作",
         "rank": 1,
         "price": "30",
-        "recipePrice": "",
+        "recipePrice": "1250",
         "recipeSellPrice": "250",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48300,7 +48300,7 @@
         "tags": "防具製作,鍛冶屋,盾",
         "notes": "施設製作総額68G。店頭購入価格は製作総額より高く設定。 自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1250"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_armor_travel_jacket",
@@ -48308,7 +48308,7 @@
         "name": "旅風のジャケット製作",
         "rank": 1,
         "price": "180",
-        "recipePrice": "",
+        "recipePrice": "1150",
         "recipeSellPrice": "230",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48328,7 +48328,7 @@
         "tags": "防具製作,鍛冶屋,軽装",
         "notes": "普通ランクの加工素材を使用するため、普通ランク対応の鍛冶道具が必要。店頭購入価格は素材代＋施設制作費より約25％高く設定。 自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1150"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_armor_starweave_cape",
@@ -48336,7 +48336,7 @@
         "name": "星糸のケープ製作",
         "rank": 1,
         "price": "240",
-        "recipePrice": "",
+        "recipePrice": "1150",
         "recipeSellPrice": "230",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48356,7 +48356,7 @@
         "tags": "防具製作,鍛冶屋,魔導衣",
         "notes": "普通ランクの加工素材を使用するため、普通ランク対応の鍛冶道具が必要。店頭購入価格は素材代＋施設制作費より約25％高く設定。 自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1150"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_root_bind_bracelet",
@@ -48364,7 +48364,7 @@
         "name": "根結びの腕輪製作",
         "rank": 1,
         "price": "120",
-        "recipePrice": "",
+        "recipePrice": "1300",
         "recipeSellPrice": "260",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "細工",
@@ -48384,7 +48384,7 @@
         "tags": "防具製作,装飾品,鍛冶屋,★1",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_purifying_herb_charm",
@@ -48392,7 +48392,7 @@
         "name": "清め草の護符製作",
         "rank": 1,
         "price": "120",
-        "recipePrice": "",
+        "recipePrice": "1300",
         "recipeSellPrice": "260",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48412,7 +48412,7 @@
         "tags": "防具製作,装飾品,鍛冶屋,★1",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_beast_fang_charm",
@@ -48420,7 +48420,7 @@
         "name": "獣牙の護符製作",
         "rank": 1,
         "price": "100",
-        "recipePrice": "",
+        "recipePrice": "1300",
         "recipeSellPrice": "260",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48440,7 +48440,7 @@
         "tags": "防具製作,装飾品,鍛冶屋,★1",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_armor_prayer_stole",
@@ -48448,7 +48448,7 @@
         "name": "祈り布のストール製作",
         "rank": 1,
         "price": "240",
-        "recipePrice": "",
+        "recipePrice": "1150",
         "recipeSellPrice": "230",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48468,7 +48468,7 @@
         "tags": "防具製作,鍛冶屋,祈祷衣",
         "notes": "普通ランクの加工素材を使用するため、普通ランク対応の鍛冶道具が必要。店頭購入価格は素材代＋施設制作費より約25％高く設定。 自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1150"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_armor_ironcord_vest",
@@ -48476,7 +48476,7 @@
         "name": "鉄紐のベスト製作",
         "rank": 1,
         "price": "220",
-        "recipePrice": "",
+        "recipePrice": "1150",
         "recipeSellPrice": "230",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48496,7 +48496,7 @@
         "tags": "防具製作,鍛冶屋,中装",
         "notes": "普通ランクの加工素材を使用するため、普通ランク対応の鍛冶道具が必要。店頭購入価格は素材代＋施設制作費より約25％高く設定。 自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1150"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_armor_studded_jerkin",
@@ -48504,7 +48504,7 @@
         "name": "鋲打ちの胴衣製作",
         "rank": 1,
         "price": "250",
-        "recipePrice": "",
+        "recipePrice": "1150",
         "recipeSellPrice": "230",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48524,7 +48524,7 @@
         "tags": "防具製作,鍛冶屋,重装",
         "notes": "普通ランクの加工素材を使用するため、普通ランク対応の鍛冶道具が必要。店頭購入価格は素材代＋施設制作費より約25％高く設定。 自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1150"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_shield_magic",
@@ -48532,7 +48532,7 @@
         "name": "魔導盾製作",
         "rank": 1,
         "price": "70",
-        "recipePrice": "",
+        "recipePrice": "1250",
         "recipeSellPrice": "250",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48552,7 +48552,7 @@
         "tags": "防具製作,鍛冶屋,盾,魔導",
         "notes": "施設製作総額245G。店頭購入価格は製作総額より高く設定。 自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1250"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_resonant_wing_earring",
@@ -48560,7 +48560,7 @@
         "name": "鳴翅の耳飾り製作",
         "rank": 1,
         "price": "110",
-        "recipePrice": "",
+        "recipePrice": "1300",
         "recipeSellPrice": "260",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48580,7 +48580,7 @@
         "tags": "防具製作,装飾品,鍛冶屋,★1",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_carapace_shell_vest",
@@ -48588,7 +48588,7 @@
         "name": "カラパスシェルベスト製作",
         "rank": 2,
         "price": "520",
-        "recipePrice": "",
+        "recipePrice": "2100",
         "recipeSellPrice": "420",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48608,7 +48608,7 @@
         "tags": "防具製作,鍛冶屋,中装",
         "notes": "複数種類・合計複数個の素材を使用。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "2100"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_carapace_bulwark",
@@ -48672,7 +48672,7 @@
         "name": "スポアマント製作",
         "rank": 2,
         "price": "520",
-        "recipePrice": "",
+        "recipePrice": "2100",
         "recipeSellPrice": "420",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "細工",
@@ -48692,7 +48692,7 @@
         "tags": "防具製作,鍛冶屋,魔導衣",
         "notes": "複数種類・合計複数個の素材を使用。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "2100"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_dromarl_plate",
@@ -48700,7 +48700,7 @@
         "name": "ドロマールプレート製作",
         "rank": 2,
         "price": "680",
-        "recipePrice": "",
+        "recipePrice": "2750",
         "recipeSellPrice": "550",
         "recipeSource": "水辺の湿地の防水工房箱",
         "craftSkill": "細工",
@@ -48720,7 +48720,7 @@
         "tags": "防具製作,鍛冶屋,重装",
         "notes": "複数種類・合計複数個の素材を使用。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-23",
-        "limitedRecipePrice": "2750"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_heartwood_guard_vest",
@@ -48784,7 +48784,7 @@
         "name": "ミストプレイヤーヴェール製作",
         "rank": 2,
         "price": "560",
-        "recipePrice": "",
+        "recipePrice": "2250",
         "recipeSellPrice": "450",
         "recipeSource": "水辺の湿地の防水工房箱",
         "craftSkill": "細工",
@@ -48804,7 +48804,7 @@
         "tags": "防具製作,鍛冶屋,祈祷衣",
         "notes": "複数種類・合計複数個の素材を使用。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "2250"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_raffinwind_coat",
@@ -48896,7 +48896,7 @@
         "name": "甲殻の防輪製作",
         "rank": 2,
         "price": "240",
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "街はずれの草原の工房レシピ箱",
         "craftSkill": "細工",
@@ -48916,7 +48916,7 @@
         "tags": "防具製作,装飾品,鍛冶屋,★2",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_grass_horn_power_bangle",
@@ -48952,7 +48952,7 @@
         "name": "オアスケイルベスト製作",
         "rank": 3,
         "price": 920,
-        "recipePrice": "",
+        "recipePrice": "3700",
         "recipeSellPrice": "740",
         "recipeSource": "山麓の旧鉱山の旧工房設計箱",
         "craftSkill": "細工",
@@ -48972,7 +48972,7 @@
         "tags": "防具製作,鍛冶屋,中装,★3",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-09",
-        "limitedRecipePrice": "3700"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_old_drive_guard",
@@ -48980,7 +48980,7 @@
         "name": "ドライブガード製作",
         "rank": 3,
         "price": 900,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "山麓の旧鉱山の旧工房設計箱",
         "craftSkill": "細工",
@@ -49000,7 +49000,7 @@
         "tags": "防具製作,鍛冶屋,盾,★3",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-09",
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_rift_mirror_shield",
@@ -49008,7 +49008,7 @@
         "name": "リフトミラーシールド製作",
         "rank": 3,
         "price": "900",
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "反照の水庭の半透明工房箱",
         "craftSkill": "細工",
@@ -49028,7 +49028,7 @@
         "tags": "防具製作,鍛冶屋,盾",
         "notes": "複数種類・合計複数個の素材を使用。自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-09",
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_phase_ward_charm",
@@ -49036,7 +49036,7 @@
         "name": "位相避けの護符製作",
         "rank": 3,
         "price": "560",
-        "recipePrice": "",
+        "recipePrice": "2500",
         "recipeSellPrice": "500",
         "recipeSource": "反照の水庭の半透明工房箱",
         "craftSkill": "細工",
@@ -49056,7 +49056,7 @@
         "tags": "防具製作,装飾品,鍛冶屋,★3",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "2500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_dreamturn_earring",
@@ -49120,7 +49120,7 @@
         "name": "燐鉱灯の護符製作",
         "rank": 3,
         "price": 620,
-        "recipePrice": "",
+        "recipePrice": "2500",
         "recipeSellPrice": "500",
         "recipeSource": "山麓の旧鉱山の旧工房設計箱",
         "craftSkill": "細工",
@@ -49140,7 +49140,7 @@
         "tags": "防具製作,鍛冶屋,護符,★3",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "2500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_veinpulse_bracelet",
@@ -49176,7 +49176,7 @@
         "name": "玻璃鰭の耳飾り製作",
         "rank": 3,
         "price": "620",
-        "recipePrice": "",
+        "recipePrice": "2500",
         "recipeSellPrice": "500",
         "recipeSource": "反照の水庭の半透明工房箱",
         "craftSkill": "細工",
@@ -49196,7 +49196,7 @@
         "tags": "防具製作,装飾品,鍛冶屋,★3",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "2500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_dolgan_earthshell_plate",
@@ -49288,7 +49288,7 @@
         "name": "防風香油の調合",
         "rank": 3,
         "price": "60",
-        "recipePrice": "",
+        "recipePrice": "2200",
         "recipeSellPrice": "440",
         "recipeSource": "風渡りの高原の風車工房設計箱",
         "craftSkill": "調合",
@@ -49312,7 +49312,7 @@
         "updatedAt": "2026-08-04",
         "ownerKey": "",
         "createdBy": "",
-        "limitedRecipePrice": "2200"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_insulating_resin",
@@ -49320,7 +49320,7 @@
         "name": "避雷樹脂の調合",
         "rank": 3,
         "price": "70",
-        "recipePrice": "",
+        "recipePrice": "2200",
         "recipeSellPrice": "440",
         "recipeSource": "風渡りの高原の風車工房設計箱",
         "craftSkill": "調合",
@@ -49344,7 +49344,7 @@
         "updatedAt": "2026-08-04",
         "ownerKey": "",
         "createdBy": "",
-        "limitedRecipePrice": "2200"
+        "limitedRecipePrice": ""
       },
       {
         "id": "meal_highland_hare_bean_stew",
@@ -49512,7 +49512,7 @@
         "name": "ゼファースティングへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -49538,7 +49538,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_dagger",
@@ -49546,7 +49546,7 @@
         "name": "ボルトニードルへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -49572,7 +49572,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_dagger",
@@ -49614,7 +49614,7 @@
         "name": "ゼファーセイバーへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -49640,7 +49640,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_sword",
@@ -49648,7 +49648,7 @@
         "name": "ボルトセイバーへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -49674,7 +49674,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_sword",
@@ -49716,7 +49716,7 @@
         "name": "ゲイルハチェットへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -49742,7 +49742,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_axe",
@@ -49750,7 +49750,7 @@
         "name": "ボルトクリーヴァへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -49776,7 +49776,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_axe",
@@ -49818,7 +49818,7 @@
         "name": "ゲイルメイスへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -49844,7 +49844,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_mace",
@@ -49852,7 +49852,7 @@
         "name": "サンダーマレットへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -49878,7 +49878,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_mace",
@@ -49920,7 +49920,7 @@
         "name": "ゼファースピアへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -49946,7 +49946,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_spear",
@@ -49954,7 +49954,7 @@
         "name": "ボルトランサーへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -49980,7 +49980,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 14,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_spear",
@@ -50022,7 +50022,7 @@
         "name": "エアリアルロッドへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50048,7 +50048,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_staff",
@@ -50056,7 +50056,7 @@
         "name": "ボルテージスタッフへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50082,7 +50082,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_staff",
@@ -50124,7 +50124,7 @@
         "name": "ゼファーアーチへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50150,7 +50150,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_bow",
@@ -50158,7 +50158,7 @@
         "name": "ボルトハントへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50184,7 +50184,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_bow",
@@ -50226,7 +50226,7 @@
         "name": "ゲイルボルターへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50252,7 +50252,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_crossbow",
@@ -50260,7 +50260,7 @@
         "name": "ボルトアーバレストへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50286,7 +50286,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_crossbow",
@@ -50328,7 +50328,7 @@
         "name": "ゼファーバリスタへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50354,7 +50354,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_heavy_crossbow",
@@ -50362,7 +50362,7 @@
         "name": "サンダーカノンへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50388,7 +50388,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_heavy_crossbow",
@@ -50430,7 +50430,7 @@
         "name": "ゲイルパイクへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50456,7 +50456,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_lance",
@@ -50464,7 +50464,7 @@
         "name": "ボルトランスへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50490,7 +50490,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_lance",
@@ -50532,7 +50532,7 @@
         "name": "ゼファークレイモアへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50558,7 +50558,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_greatsword",
@@ -50566,7 +50566,7 @@
         "name": "ボルトブレイカーへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50592,7 +50592,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 12,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_greatsword",
@@ -50634,7 +50634,7 @@
         "name": "ゲイルモールへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50660,7 +50660,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_maul",
@@ -50668,7 +50668,7 @@
         "name": "ボルトマウルへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50694,7 +50694,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 12,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_maul",
@@ -50736,7 +50736,7 @@
         "name": "ゼファーサイスへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50762,7 +50762,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_scythe",
@@ -50770,7 +50770,7 @@
         "name": "ボルトリーパーへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50796,7 +50796,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_scythe",
@@ -50838,7 +50838,7 @@
         "name": "ゼファーナックルへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50864,7 +50864,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_gauntlet",
@@ -50872,7 +50872,7 @@
         "name": "ボルトブレイサーへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50898,7 +50898,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 10,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_gauntlet",
@@ -50940,7 +50940,7 @@
         "name": "ゲイルウィップへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -50966,7 +50966,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_whip",
@@ -50974,7 +50974,7 @@
         "name": "ボルトラッシュへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3350",
         "recipeSellPrice": "670",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -51000,7 +51000,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "3350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_whip",
@@ -51042,7 +51042,7 @@
         "name": "エアリアルコーデックスへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -51068,7 +51068,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_magic_book",
@@ -51076,7 +51076,7 @@
         "name": "ボルトグリモアへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3400",
         "recipeSellPrice": "680",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -51102,7 +51102,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "3400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_magic_book",
@@ -51144,7 +51144,7 @@
         "name": "エアリアルミサルへの派生",
         "rank": 3,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -51170,7 +51170,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_thunder_prayer_book",
@@ -51178,7 +51178,7 @@
         "name": "ボルトリタニーへの派生",
         "rank": 4,
         "price": 830,
-        "recipePrice": "",
+        "recipePrice": "3400",
         "recipeSellPrice": "680",
         "recipeSource": "風渡りの高原の風標武具箱",
         "craftSkill": "細工",
@@ -51204,7 +51204,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 12,
-        "limitedRecipePrice": "3400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_highland_boss_prayer_book",
@@ -51276,7 +51276,7 @@
         "name": "ハーブロッドへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -51300,7 +51300,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_outskirts_grass_scythe_1",
@@ -51308,7 +51308,7 @@
         "name": "ブランブルサイズへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "街はずれの草原の武具設計箱",
         "craftSkill": "細工",
@@ -51332,7 +51332,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_dagger_1",
@@ -51340,7 +51340,7 @@
         "name": "リーフナイフへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51364,7 +51364,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_dagger_2",
@@ -51372,7 +51372,7 @@
         "name": "ビーストククリへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51396,7 +51396,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_sword_1",
@@ -51404,7 +51404,7 @@
         "name": "バークセイバーへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51428,7 +51428,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_axe_1",
@@ -51436,7 +51436,7 @@
         "name": "モスハチェットへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51460,7 +51460,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_mace_1",
@@ -51468,7 +51468,7 @@
         "name": "ルートメイスへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51492,7 +51492,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 10,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_mace_2",
@@ -51500,7 +51500,7 @@
         "name": "ビーストマレットへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51524,7 +51524,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_spear_1",
@@ -51532,7 +51532,7 @@
         "name": "ブランチスピアへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51556,7 +51556,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_spear_2",
@@ -51564,7 +51564,7 @@
         "name": "フェザージャベリンへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51588,7 +51588,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_staff_1",
@@ -51596,7 +51596,7 @@
         "name": "グロウスタッフへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51620,7 +51620,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_bow_1",
@@ -51628,7 +51628,7 @@
         "name": "ルートボウへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51652,7 +51652,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_crossbow_1",
@@ -51660,7 +51660,7 @@
         "name": "バークアーバレストへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51684,7 +51684,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_heavy_crossbow_1",
@@ -51692,7 +51692,7 @@
         "name": "ティンバーバリスタへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51716,7 +51716,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_heavy_crossbow_2",
@@ -51724,7 +51724,7 @@
         "name": "モスカノンへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51748,7 +51748,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_lance_1",
@@ -51756,7 +51756,7 @@
         "name": "ブランチパイクへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51780,7 +51780,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_greatsword_1",
@@ -51788,7 +51788,7 @@
         "name": "バークグレートへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51812,7 +51812,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_greatsword_2",
@@ -51820,7 +51820,7 @@
         "name": "ヴァインクレイモアへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51844,7 +51844,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_maul_1",
@@ -51852,7 +51852,7 @@
         "name": "ルートモールへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51876,7 +51876,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_maul_2",
@@ -51884,7 +51884,7 @@
         "name": "モスブレイカーへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51908,7 +51908,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_scythe_1",
@@ -51916,7 +51916,7 @@
         "name": "ブライアリーパーへの派生",
         "rank": 3,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51940,7 +51940,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_gauntlet_1",
@@ -51948,7 +51948,7 @@
         "name": "ビーストナックルへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -51972,7 +51972,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_gauntlet_2",
@@ -51980,7 +51980,7 @@
         "name": "ルートブレイサーへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -52004,7 +52004,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_nearby_forest_whip_1",
@@ -52012,7 +52012,7 @@
         "name": "ブランチラッシュへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -52036,7 +52036,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_book_branch_nearby_forest_magic_book_1",
@@ -52044,7 +52044,7 @@
         "name": "フォーカスコーデックスへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -52068,7 +52068,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_book_branch_nearby_forest_prayer_book_1",
@@ -52076,7 +52076,7 @@
         "name": "グロウミサルへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -52100,7 +52100,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_book_branch_nearby_forest_prayer_book_2",
@@ -52108,7 +52108,7 @@
         "name": "ビーストリタニーへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "近郊の森の武具設計箱",
         "craftSkill": "細工",
@@ -52132,7 +52132,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_dagger_1",
@@ -52140,7 +52140,7 @@
         "name": "マッドナイフへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52164,7 +52164,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 10,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_sword_1",
@@ -52172,7 +52172,7 @@
         "name": "リードセイバーへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52196,7 +52196,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_sword_2",
@@ -52204,7 +52204,7 @@
         "name": "バブルブレードへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52228,7 +52228,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_axe_1",
@@ -52236,7 +52236,7 @@
         "name": "マッドハチェットへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52260,7 +52260,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_axe_2",
@@ -52268,7 +52268,7 @@
         "name": "リードクリーヴァへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52292,7 +52292,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_mace_1",
@@ -52300,7 +52300,7 @@
         "name": "マッドメイスへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52324,7 +52324,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_spear_1",
@@ -52332,7 +52332,7 @@
         "name": "リードスピアへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52356,7 +52356,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_staff_1",
@@ -52364,7 +52364,7 @@
         "name": "ミストロッドへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52388,7 +52388,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_bow_1",
@@ -52396,7 +52396,7 @@
         "name": "リードボウへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52420,7 +52420,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_bow_2",
@@ -52428,7 +52428,7 @@
         "name": "ミストアーチへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52452,7 +52452,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_crossbow_1",
@@ -52460,7 +52460,7 @@
         "name": "マッドボルターへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52484,7 +52484,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_crossbow_2",
@@ -52492,7 +52492,7 @@
         "name": "リードアーバレストへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52516,7 +52516,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_heavy_crossbow_1",
@@ -52524,7 +52524,7 @@
         "name": "リードバリスタへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52548,7 +52548,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_lance_1",
@@ -52556,7 +52556,7 @@
         "name": "リードパイクへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52580,7 +52580,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_greatsword_1",
@@ -52588,7 +52588,7 @@
         "name": "マッドクレイモアへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52612,7 +52612,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_maul_1",
@@ -52620,7 +52620,7 @@
         "name": "マッドモールへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52644,7 +52644,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_scythe_1",
@@ -52652,7 +52652,7 @@
         "name": "リードサイスへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52676,7 +52676,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_waterside_wetland_whip_1",
@@ -52684,7 +52684,7 @@
         "name": "リードウィップへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52708,7 +52708,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_book_branch_waterside_wetland_magic_book_1",
@@ -52716,7 +52716,7 @@
         "name": "アクアコーデックスへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52740,7 +52740,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_book_branch_waterside_wetland_magic_book_2",
@@ -52748,7 +52748,7 @@
         "name": "ミストグリモアへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52772,7 +52772,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_book_branch_waterside_wetland_prayer_book_1",
@@ -52780,7 +52780,7 @@
         "name": "ミストミサルへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水武具箱",
         "craftSkill": "細工",
@@ -52804,7 +52804,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_dagger_1",
@@ -52812,7 +52812,7 @@
         "name": "スペクトラナイフへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -52836,7 +52836,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_sword_1",
@@ -52844,7 +52844,7 @@
         "name": "フェイズセイバーへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -52868,7 +52868,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_axe_1",
@@ -52876,7 +52876,7 @@
         "name": "ミラークリーヴァへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -52900,7 +52900,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_mace_1",
@@ -52908,7 +52908,7 @@
         "name": "フェイズマレットへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -52932,7 +52932,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_spear_1",
@@ -52940,7 +52940,7 @@
         "name": "ミラースピアへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -52964,7 +52964,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_staff_1",
@@ -52972,7 +52972,7 @@
         "name": "リフレクトスタッフへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -52996,7 +52996,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_bow_1",
@@ -53004,7 +53004,7 @@
         "name": "ミラージュアーチへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -53028,7 +53028,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_crossbow_1",
@@ -53036,7 +53036,7 @@
         "name": "リフトボルターへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -53060,7 +53060,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_heavy_crossbow_1",
@@ -53068,7 +53068,7 @@
         "name": "フェイズバリスタへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -53092,7 +53092,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_lance_1",
@@ -53100,7 +53100,7 @@
         "name": "ミラーパイクへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -53124,7 +53124,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 6,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_greatsword_1",
@@ -53132,7 +53132,7 @@
         "name": "フェイズクレイモアへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -53156,7 +53156,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_maul_1",
@@ -53164,7 +53164,7 @@
         "name": "ミラージュモールへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -53188,7 +53188,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_scythe_1",
@@ -53196,7 +53196,7 @@
         "name": "フェイズサイスへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -53220,7 +53220,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_gauntlet_1",
@@ -53228,7 +53228,7 @@
         "name": "ミラーナックルへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -53252,7 +53252,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 4,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_reflection_water_garden_whip_1",
@@ -53260,7 +53260,7 @@
         "name": "ミラーラッシュへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -53284,7 +53284,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_book_branch_reflection_water_garden_magic_book_1",
@@ -53292,7 +53292,7 @@
         "name": "リフレインコーデックスへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -53316,7 +53316,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 9,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_book_branch_reflection_water_garden_prayer_book_1",
@@ -53324,7 +53324,7 @@
         "name": "フェイズミサルへの派生",
         "rank": 2,
         "price": 450,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "反照の水庭の反照武具箱",
         "craftSkill": "細工",
@@ -53348,7 +53348,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_dagger_1",
@@ -53356,7 +53356,7 @@
         "name": "シルバーニードルへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53380,7 +53380,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_sword_1",
@@ -53388,7 +53388,7 @@
         "name": "シルバーセイバーへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53412,7 +53412,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 10,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_axe_1",
@@ -53420,7 +53420,7 @@
         "name": "オアハチェットへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53444,7 +53444,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_mace_1",
@@ -53452,7 +53452,7 @@
         "name": "クリスタルマレットへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53476,7 +53476,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_spear_1",
@@ -53484,7 +53484,7 @@
         "name": "シルバースピアへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53508,7 +53508,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 2,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_staff_1",
@@ -53516,7 +53516,7 @@
         "name": "シルバーロッドへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53540,7 +53540,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_bow_1",
@@ -53548,7 +53548,7 @@
         "name": "シルバーストリングへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53572,7 +53572,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_crossbow_1",
@@ -53580,7 +53580,7 @@
         "name": "シルバーボルターへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53604,7 +53604,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 12,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_heavy_crossbow_1",
@@ -53612,7 +53612,7 @@
         "name": "オアバリスタへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53636,7 +53636,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 13,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_lance_1",
@@ -53644,7 +53644,7 @@
         "name": "シルバーパイクへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53668,7 +53668,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_greatsword_1",
@@ -53676,7 +53676,7 @@
         "name": "シルバークレイモアへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53700,7 +53700,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 10,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_maul_1",
@@ -53708,7 +53708,7 @@
         "name": "オアモールへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53732,7 +53732,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 11,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_scythe_1",
@@ -53740,7 +53740,7 @@
         "name": "シルバーサイスへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53764,7 +53764,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_gauntlet_1",
@@ -53772,7 +53772,7 @@
         "name": "シルバーナックルへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53796,7 +53796,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_wpn_branch_foothill_old_mine_whip_1",
@@ -53804,7 +53804,7 @@
         "name": "シルバーチェインへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53828,7 +53828,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 3,
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_book_branch_foothill_old_mine_magic_book_1",
@@ -53836,7 +53836,7 @@
         "name": "ストラタコーデックスへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2500",
         "recipeSellPrice": "500",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53860,7 +53860,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 5,
-        "limitedRecipePrice": "2500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_book_branch_foothill_old_mine_prayer_book_1",
@@ -53868,7 +53868,7 @@
         "name": "シルバーリタニーへの派生",
         "rank": 3,
         "price": 550,
-        "recipePrice": "",
+        "recipePrice": "2500",
         "recipeSellPrice": "500",
         "recipeSource": "山麓の旧鉱山の武具設計庫",
         "craftSkill": "細工",
@@ -53892,7 +53892,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 1,
-        "limitedRecipePrice": "2500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_forest_leafrunner_jacket",
@@ -54376,7 +54376,7 @@
         "name": "水鱗の護符製作",
         "rank": 2,
         "price": 420,
-        "recipePrice": "",
+        "recipePrice": "1800",
         "recipeSellPrice": "360",
         "recipeSource": "水辺の湿地の防水工房箱",
         "craftSkill": "細工",
@@ -54396,7 +54396,7 @@
         "tags": "防具製作,装飾品,鍛冶屋,護符,★2",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "1800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_windbreak_bracelet",
@@ -54404,7 +54404,7 @@
         "name": "風解きの腕輪製作",
         "rank": 3,
         "price": 760,
-        "recipePrice": "",
+        "recipePrice": "3050",
         "recipeSellPrice": "610",
         "recipeSource": "風渡りの高原の風車工房設計箱",
         "craftSkill": "細工",
@@ -54424,7 +54424,7 @@
         "tags": "防具製作,装飾品,鍛冶屋,腕輪,★3",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-09",
-        "limitedRecipePrice": "3050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_stormwing_talisman",
@@ -54460,7 +54460,7 @@
         "name": "ルートバークガード製作",
         "rank": 2,
         "price": "620",
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "近郊の森の工房レシピ箱",
         "craftSkill": "細工",
@@ -54480,7 +54480,7 @@
         "tags": "防具製作,鍛冶屋,盾,近郊の森",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_reedscale_guard",
@@ -54488,7 +54488,7 @@
         "name": "リードスケイルガード製作",
         "rank": 2,
         "price": "680",
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "水辺の湿地の防水工房箱",
         "craftSkill": "細工",
@@ -54508,7 +54508,7 @@
         "tags": "防具製作,鍛冶屋,盾,水辺の湿地",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-04",
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_stormridge_guard",
@@ -54516,7 +54516,7 @@
         "name": "ストームリッジガード製作",
         "rank": 4,
         "price": "1400",
-        "recipePrice": "",
+        "recipePrice": "5200",
         "recipeSellPrice": "1040",
         "recipeSource": "風渡りの高原の風車工房の設計箱",
         "craftSkill": "細工",
@@ -54536,7 +54536,7 @@
         "tags": "防具製作,鍛冶屋,盾,風渡りの高原,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-09",
-        "limitedRecipePrice": "5200"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_crystal_burst_bottle",
@@ -54544,7 +54544,7 @@
         "name": "晶爆瓶",
         "rank": 3,
         "price": "95",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "山麓の旧鉱山の旧工房設計箱",
         "craftSkill": "調合",
@@ -54566,7 +54566,7 @@
         "tags": "調合,攻撃,投擲,範囲,鉱山",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_corrosive_steel_bottle",
@@ -54574,7 +54574,7 @@
         "name": "腐鋼瓶",
         "rank": 3,
         "price": "100",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "山麓の旧鉱山の旧工房設計箱",
         "craftSkill": "調合",
@@ -54596,7 +54596,7 @@
         "tags": "調合,攻撃,投擲,防御低下,鉱山",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_gale_split_bottle",
@@ -54604,7 +54604,7 @@
         "name": "風裂瓶",
         "rank": 3,
         "price": "110",
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "風渡りの高原の風車工房設計箱",
         "craftSkill": "調合",
@@ -54626,7 +54626,7 @@
         "tags": "調合,攻撃,投擲,範囲,風,高原",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_thunder_pierce_bottle",
@@ -54634,7 +54634,7 @@
         "name": "雷穿瓶",
         "rank": 4,
         "price": "125",
-        "recipePrice": "",
+        "recipePrice": "5200",
         "recipeSellPrice": "1040",
         "recipeSource": "風渡りの高原の風車工房設計箱",
         "craftSkill": "調合",
@@ -54656,7 +54656,7 @@
         "tags": "調合,攻撃,投擲,雷,防御値無視,高原",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "5200"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_charm_life_1",
@@ -55440,7 +55440,7 @@
         "name": "蝕矢",
         "rank": 1,
         "price": "120",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "反照の水庭の半透明工房箱",
         "craftSkill": "細工",
@@ -55460,7 +55460,7 @@
         "tags": "矢弾,消耗品,闇属性,鍛冶,限定レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_eclipse_bolt",
@@ -55468,7 +55468,7 @@
         "name": "蝕ボルト",
         "rank": 1,
         "price": "130",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "反照の水庭の半透明工房箱",
         "craftSkill": "細工",
@@ -55488,7 +55488,7 @@
         "tags": "矢弾,消耗品,闇属性,鍛冶,限定レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_eclipse_heavy_bolt",
@@ -55496,7 +55496,7 @@
         "name": "蝕大型ボルト",
         "rank": 1,
         "price": "150",
-        "recipePrice": "",
+        "recipePrice": "1050",
         "recipeSellPrice": "210",
         "recipeSource": "反照の水庭の半透明工房箱",
         "craftSkill": "細工",
@@ -55516,7 +55516,7 @@
         "tags": "矢弾,消耗品,闇属性,鍛冶,限定レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "1050"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_guard_charm_2",
@@ -55552,7 +55552,7 @@
         "name": "雷矢",
         "rank": 1,
         "price": "150",
-        "recipePrice": "",
+        "recipePrice": "2200",
         "recipeSellPrice": "440",
         "recipeSource": "風渡りの高原の風車工房設計箱",
         "craftSkill": "細工",
@@ -55572,7 +55572,7 @@
         "tags": "矢弾,消耗品,雷属性,鍛冶,限定レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "2200"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_thunder_bolt",
@@ -55580,7 +55580,7 @@
         "name": "雷ボルト",
         "rank": 1,
         "price": "160",
-        "recipePrice": "",
+        "recipePrice": "2200",
         "recipeSellPrice": "440",
         "recipeSource": "風渡りの高原の風車工房設計箱",
         "craftSkill": "細工",
@@ -55600,7 +55600,7 @@
         "tags": "矢弾,消耗品,雷属性,鍛冶,限定レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "2200"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_thunder_heavy_bolt",
@@ -55608,7 +55608,7 @@
         "name": "雷大型ボルト",
         "rank": 1,
         "price": "180",
-        "recipePrice": "",
+        "recipePrice": "2200",
         "recipeSellPrice": "440",
         "recipeSource": "風渡りの高原の風車工房設計箱",
         "craftSkill": "細工",
@@ -55628,7 +55628,7 @@
         "tags": "矢弾,消耗品,雷属性,鍛冶,限定レシピ",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "2200"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_01_obsidian",
@@ -55636,7 +55636,7 @@
         "name": "オブシディアンニードルへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -55662,7 +55662,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_01_firevein",
@@ -55670,7 +55670,7 @@
         "name": "シンダースティングへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -55696,7 +55696,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_01_boss",
@@ -55738,7 +55738,7 @@
         "name": "オブシディアンセイバーへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -55764,7 +55764,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_02_firevein",
@@ -55772,7 +55772,7 @@
         "name": "ブレイズブランドへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -55798,7 +55798,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_02_boss",
@@ -55840,7 +55840,7 @@
         "name": "オブシディアンハチェットへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -55866,7 +55866,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_03_firevein",
@@ -55874,7 +55874,7 @@
         "name": "シンダークリーヴァへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -55900,7 +55900,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_03_boss",
@@ -55942,7 +55942,7 @@
         "name": "オブシディアンメイスへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -55968,7 +55968,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_04_firevein",
@@ -55976,7 +55976,7 @@
         "name": "ブレイズマレットへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56002,7 +56002,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_04_boss",
@@ -56044,7 +56044,7 @@
         "name": "オブシディアンスピアへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56070,7 +56070,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_05_firevein",
@@ -56078,7 +56078,7 @@
         "name": "ヒートランサーへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56104,7 +56104,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_05_boss",
@@ -56146,7 +56146,7 @@
         "name": "オブシディアンロッドへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56172,7 +56172,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_06_firevein",
@@ -56180,7 +56180,7 @@
         "name": "ブレイズスタッフへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56206,7 +56206,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_06_boss",
@@ -56248,7 +56248,7 @@
         "name": "オブシディアンウィップへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56274,7 +56274,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_07_firevein",
@@ -56282,7 +56282,7 @@
         "name": "シンダーラッシュへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56308,7 +56308,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_07_boss",
@@ -56350,7 +56350,7 @@
         "name": "オブシディアンクレイモアへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56376,7 +56376,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_08_firevein",
@@ -56384,7 +56384,7 @@
         "name": "ブレイズブレイカーへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56410,7 +56410,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_08_boss",
@@ -56452,7 +56452,7 @@
         "name": "オブシディアンモールへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56478,7 +56478,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_09_firevein",
@@ -56486,7 +56486,7 @@
         "name": "シンダーマウルへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56512,7 +56512,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_09_boss",
@@ -56554,7 +56554,7 @@
         "name": "オブシディアンパイクへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56580,7 +56580,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_10_firevein",
@@ -56588,7 +56588,7 @@
         "name": "ブレイズランスへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56614,7 +56614,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_10_boss",
@@ -56656,7 +56656,7 @@
         "name": "オブシディアンアーチへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56682,7 +56682,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_11_firevein",
@@ -56690,7 +56690,7 @@
         "name": "ブレイズハントへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56716,7 +56716,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_11_boss",
@@ -56758,7 +56758,7 @@
         "name": "オブシディアンボルターへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56784,7 +56784,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_12_firevein",
@@ -56792,7 +56792,7 @@
         "name": "シンダーアーバレストへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56818,7 +56818,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_12_boss",
@@ -56860,7 +56860,7 @@
         "name": "オブシディアンバリスタへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56886,7 +56886,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_13_firevein",
@@ -56894,7 +56894,7 @@
         "name": "ブレイズカノンへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56920,7 +56920,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_13_boss",
@@ -56962,7 +56962,7 @@
         "name": "オブシディアンサイスへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -56988,7 +56988,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_14_firevein",
@@ -56996,7 +56996,7 @@
         "name": "シンダーリーパーへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -57022,7 +57022,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_14_boss",
@@ -57064,7 +57064,7 @@
         "name": "オブシディアンナックルへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -57090,7 +57090,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_15_firevein",
@@ -57098,7 +57098,7 @@
         "name": "ブレイズブレイサーへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -57124,7 +57124,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_15_boss",
@@ -57166,7 +57166,7 @@
         "name": "オブシディアンコーデックスへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -57192,7 +57192,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_16_firevein",
@@ -57200,7 +57200,7 @@
         "name": "ブレイズグリモアへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -57226,7 +57226,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_16_boss",
@@ -57268,7 +57268,7 @@
         "name": "オブシディアンミサルへの派生",
         "rank": 4,
         "price": 950,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -57294,7 +57294,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 7,
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_17_firevein",
@@ -57302,7 +57302,7 @@
         "name": "シンダーリタニーへの派生",
         "rank": 5,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "4300",
         "recipeSellPrice": "860",
         "recipeSource": "灰冠の火山峡谷の灰冠鍛造設計箱",
         "craftSkill": "細工",
@@ -57328,7 +57328,7 @@
         "createdBy": "",
         "branchClass": "通常派生",
         "branchDisplayOrder": 8,
-        "limitedRecipePrice": "4300"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ashcrown_17_boss",
@@ -57370,7 +57370,7 @@
         "name": "スコリアクローク製作",
         "rank": 4,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57390,7 +57390,7 @@
         "tags": "防具製作,軽装,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_arm_ashcrown_ridge_vest",
@@ -57398,7 +57398,7 @@
         "name": "アッシュリッジベスト製作",
         "rank": 4,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57418,7 +57418,7 @@
         "tags": "防具製作,中装,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_arm_ashcrown_obsidian_plate",
@@ -57426,7 +57426,7 @@
         "name": "オブシディアンプレート製作",
         "rank": 4,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57446,7 +57446,7 @@
         "tags": "防具製作,重装,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_arm_ashcrown_vein_rune_robe",
@@ -57454,7 +57454,7 @@
         "name": "ヴェインルーンローブ製作",
         "rank": 4,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57474,7 +57474,7 @@
         "tags": "防具製作,魔導衣,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_arm_ashcrown_ash_prayer_veil",
@@ -57482,7 +57482,7 @@
         "name": "灰祷のヴェール製作",
         "rank": 4,
         "price": 1100,
-        "recipePrice": "",
+        "recipePrice": "3600",
         "recipeSellPrice": "720",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57502,7 +57502,7 @@
         "tags": "防具製作,祈祷衣,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "3600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_shield_ashcrown_obsidian_guard",
@@ -57510,7 +57510,7 @@
         "name": "オブシディアンガード製作",
         "rank": 5,
         "price": 1300,
-        "recipePrice": "",
+        "recipePrice": "4200",
         "recipeSellPrice": "840",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57530,7 +57530,7 @@
         "tags": "防具製作,盾,火山峡谷,★5",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "4200"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_acc_ashcrown_fireward",
@@ -57538,7 +57538,7 @@
         "name": "火避けの護符製作",
         "rank": 4,
         "price": 850,
-        "recipePrice": "",
+        "recipePrice": "3200",
         "recipeSellPrice": "640",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57558,7 +57558,7 @@
         "tags": "装飾品製作,護符,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "3200"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_acc_ashcrown_ember_alchemy",
@@ -57650,7 +57650,7 @@
         "name": "耐熱探査背嚢製作",
         "rank": 4,
         "price": 700,
-        "recipePrice": "",
+        "recipePrice": "3000",
         "recipeSellPrice": "600",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57670,7 +57670,7 @@
         "tags": "バッグ製作,バッグ,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "3000"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_quiver_ashcrown_ashwalker",
@@ -57678,7 +57678,7 @@
         "name": "灰渡りの矢筒",
         "rank": 4,
         "price": 400,
-        "recipePrice": "",
+        "recipePrice": "2600",
         "recipeSellPrice": "520",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57698,7 +57698,7 @@
         "tags": "バッグ製作,矢筒,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ammo_ashcrown_searing_arrow",
@@ -57706,7 +57706,7 @@
         "name": "灼熱矢",
         "rank": 4,
         "price": 260,
-        "recipePrice": "",
+        "recipePrice": "2600",
         "recipeSellPrice": "520",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57726,7 +57726,7 @@
         "tags": "鍛冶,矢弾,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "2600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ammo_ashcrown_searing_bolt",
@@ -57734,7 +57734,7 @@
         "name": "灼熱ボルト",
         "rank": 4,
         "price": 260,
-        "recipePrice": "",
+        "recipePrice": "2600",
         "recipeSellPrice": "520",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57754,7 +57754,7 @@
         "tags": "鍛冶,矢弾,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "2600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_ammo_ashcrown_searing_heavy",
@@ -57762,7 +57762,7 @@
         "name": "灼熱大型ボルト",
         "rank": 4,
         "price": 260,
-        "recipePrice": "",
+        "recipePrice": "2600",
         "recipeSellPrice": "520",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "細工",
@@ -57782,7 +57782,7 @@
         "tags": "鍛冶,矢弾,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-19",
-        "limitedRecipePrice": "2600"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_alchemy_ashcrown_searing_oil",
@@ -57790,7 +57790,7 @@
         "name": "灼熱油の調合",
         "rank": 4,
         "price": 180,
-        "recipePrice": "",
+        "recipePrice": "2800",
         "recipeSellPrice": "560",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "調合",
@@ -57810,7 +57810,7 @@
         "tags": "調合,エンチャント,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "2800"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_alchemy_ashcrown_searing_bottle",
@@ -57818,7 +57818,7 @@
         "name": "灼熱瓶",
         "rank": 4,
         "price": 210,
-        "recipePrice": "",
+        "recipePrice": "3000",
         "recipeSellPrice": "600",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "調合",
@@ -57838,7 +57838,7 @@
         "tags": "調合,攻撃,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "3000"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_alchemy_ashcrown_cooling_draught",
@@ -57846,7 +57846,7 @@
         "name": "冷却薬の調合",
         "rank": 4,
         "price": 140,
-        "recipePrice": "",
+        "recipePrice": "2400",
         "recipeSellPrice": "480",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "調合",
@@ -57866,7 +57866,7 @@
         "tags": "調合,解除,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-24",
-        "limitedRecipePrice": "2400"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_alchemy_ashcrown_heatproof_oil",
@@ -57874,7 +57874,7 @@
         "name": "耐熱香油の調合",
         "rank": 4,
         "price": 150,
-        "recipePrice": "",
+        "recipePrice": "2500",
         "recipeSellPrice": "500",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "調合",
@@ -57894,7 +57894,7 @@
         "tags": "調合,探索補助,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-24",
-        "limitedRecipePrice": "2500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_alchemy_ashcrown_ash_filter",
@@ -57902,7 +57902,7 @@
         "name": "防灰濾布の調合",
         "rank": 4,
         "price": 150,
-        "recipePrice": "",
+        "recipePrice": "2500",
         "recipeSellPrice": "500",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "調合",
@@ -57922,7 +57922,7 @@
         "tags": "調合,探索補助,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-24",
-        "limitedRecipePrice": "2500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_ashcrown_flame_stake",
@@ -57930,7 +57930,7 @@
         "name": "噴炎杭",
         "rank": 4,
         "price": 300,
-        "recipePrice": "",
+        "recipePrice": "3000",
         "recipeSellPrice": "600",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "設計",
@@ -57950,7 +57950,7 @@
         "tags": "仕掛け製作,罠,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "3000"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_trap_ashcrown_obsidian_dropblade",
@@ -57958,7 +57958,7 @@
         "name": "黒曜落刃罠",
         "rank": 4,
         "price": 300,
-        "recipePrice": "",
+        "recipePrice": "3000",
         "recipeSellPrice": "600",
         "recipeSource": "灰冠の火山峡谷の噴気工房の設計箱",
         "craftSkill": "設計",
@@ -57978,7 +57978,7 @@
         "tags": "仕掛け製作,罠,火山峡谷,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-17",
-        "limitedRecipePrice": "3000"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_arm_ashcrown_boss_serpent_scale",
@@ -58246,7 +58246,7 @@
         "name": "清浄薬",
         "rank": 2,
         "price": 70,
-        "recipePrice": "",
+        "recipePrice": "1500",
         "recipeSellPrice": "300",
         "recipeSource": "水辺の湿地の防水工房箱",
         "craftSkill": "調合",
@@ -58266,7 +58266,7 @@
         "tags": "解除,浄化,汚染,調合,★2",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-23",
-        "limitedRecipePrice": "1500"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_hexbreaking_draught",
@@ -58274,7 +58274,7 @@
         "name": "破呪薬",
         "rank": 3,
         "price": 110,
-        "recipePrice": "",
+        "recipePrice": "2350",
         "recipeSellPrice": "470",
         "recipeSource": "反照の水庭の半透明の工房箱",
         "craftSkill": "調合",
@@ -58294,7 +58294,7 @@
         "tags": "解除,浄化,呪い,調合,★3,異界",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-23",
-        "limitedRecipePrice": "2350"
+        "limitedRecipePrice": ""
       },
       {
         "id": "recipe_panacea",
@@ -58302,7 +58302,7 @@
         "name": "万能浄化薬",
         "rank": 4,
         "price": 180,
-        "recipePrice": "",
+        "recipePrice": "2600",
         "recipeSellPrice": "520",
         "recipeSource": "風渡りの高原の風車工房設計箱",
         "craftSkill": "調合",
@@ -58322,7 +58322,7 @@
         "tags": "解除,浄化,万能,調合,★4",
         "notes": "自作時はこのレシピが必要。施設依頼ではレシピ不要。",
         "updatedAt": "2026-08-23",
-        "limitedRecipePrice": "2600"
+        "limitedRecipePrice": ""
       }
     ],
     "spells": [
