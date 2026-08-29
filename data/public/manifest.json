@@ -1,1 +1,35 @@
-{"format":"recraft-alchemia-public-manifest","version":"90.8.660","updatedAt":"2026-08-30T02:20:00+09:00","master":"recraft_alchemia_master.json","sha256":"b3706d9dcd212b569720aa0845f8047787e3985c3a61d3b04489139cd78bfb24","bytes":3414071,"recordCount":3333,"dataKeys":["item_types","item_categories","material_types","material_categories","material_ranks","equipment_categories","items","recipes","spells","quest_rewards","quests","exploration_areas","event_tables","monsters","appraisal_rules","treasure_tables","skills"],"files":{"master":{"file":"recraft_alchemia_master.json","sha256":"b3706d9dcd212b569720aa0845f8047787e3985c3a61d3b04489139cd78bfb24","bytes":3414071}}}
+{
+  "format": "recraft-alchemia-public-manifest",
+  "version": "90.8.661",
+  "updatedAt": "2026-08-30T02:20:00+09:00",
+  "master": "recraft_alchemia_master.json",
+  "sha256": "a07b85eb07507c99d8c82e6cad708447e03a90ea3c6c3d114b6f4d6b478a4663",
+  "bytes": 3414071,
+  "recordCount": 3333,
+  "dataKeys": [
+    "item_types",
+    "item_categories",
+    "material_types",
+    "material_categories",
+    "material_ranks",
+    "equipment_categories",
+    "items",
+    "recipes",
+    "spells",
+    "quest_rewards",
+    "quests",
+    "exploration_areas",
+    "event_tables",
+    "monsters",
+    "appraisal_rules",
+    "treasure_tables",
+    "skills"
+  ],
+  "files": {
+    "master": {
+      "file": "recraft_alchemia_master.json",
+      "sha256": "a07b85eb07507c99d8c82e6cad708447e03a90ea3c6c3d114b6f4d6b478a4663",
+      "bytes": 3414071
+    }
+  }
+}
