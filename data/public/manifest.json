@@ -1,10 +1,10 @@
 {
   "format": "recraft-alchemia-public-manifest",
-  "version": "90.8.695",
-  "updatedAt": "2026-09-02",
+  "version": "v90.8.696",
+  "updatedAt": "2026-09-03T00:23:00+09:00",
   "master": "recraft_alchemia_master.json",
-  "sha256": "0b95ceafbd63e5205fd393ed7db9237844d00a51c35bb199e5c14e053d9bc252",
-  "bytes": 5163940,
+  "sha256": "416812e465c634c34eece809dcd148e393d7340d7a904c5b91b297a9d002ad18",
+  "bytes": 5144692,
   "recordCount": 3521,
   "dataKeys": [
     "item_types",
@@ -28,8 +28,8 @@
   "files": {
     "master": {
       "file": "recraft_alchemia_master.json",
-      "sha256": "0b95ceafbd63e5205fd393ed7db9237844d00a51c35bb199e5c14e053d9bc252",
-      "bytes": 5163940
+      "sha256": "416812e465c634c34eece809dcd148e393d7340d7a904c5b91b297a9d002ad18",
+      "bytes": 5144692
     }
   }
 }
