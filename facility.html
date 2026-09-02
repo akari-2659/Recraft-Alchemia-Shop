@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.687</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.694</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -90,7 +90,8 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 .weapon-modal-header h3{margin:2px 0 0;font-size:22px}.weapon-modal-close{flex:0 0 auto;width:42px;height:42px;padding:0;border-radius:50%;font-size:24px;line-height:1}
 .weapon-modal-body{display:grid;gap:15px;padding:17px 18px 22px}.weapon-modal-performance{padding:12px;border:1px solid #e3cfb4;border-radius:14px;background:#fffdf8}
 .weapon-modal-details{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:7px 12px;margin:0;font-size:14px;line-height:1.65}.weapon-modal-details dt{font-weight:900;color:#5f4935}.weapon-modal-details dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
-.weapon-modal-links{display:grid;gap:9px;padding:13px;border:1px solid #dec8a9;border-radius:14px;background:#fffdf8}.weapon-modal-links h4{margin:0 0 2px;font-size:14px}.weapon-modal-link{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 10px;border:1px solid #e4d2ba;border-radius:11px;background:#fffaf3}.weapon-modal-link strong{overflow-wrap:anywhere}.weapon-modal-link button{flex:0 0 auto;padding:7px 10px}.weapon-modal-link.locked{color:var(--muted);background:#f4eadc}
+.weapon-modal-links{display:grid;gap:9px;padding:13px;border:1px solid #dec8a9;border-radius:14px;background:#fffdf8}.weapon-modal-links h4{margin:0 0 2px;font-size:14px}
+.named-process{border:1px solid #d7bb91;border-radius:14px;background:#fff9ed;overflow:hidden}.named-process>summary{cursor:pointer;list-style:none;padding:12px 14px;font-weight:900;display:flex;align-items:center;gap:8px}.named-process>summary::-webkit-details-marker{display:none}.named-process>summary::before{content:"▶";font-size:11px;transition:transform .14s}.named-process[open]>summary::before{transform:rotate(90deg)}.named-process-body{border-top:1px solid #e5cfad;padding:12px 14px;display:grid;gap:10px}.named-process-change{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:center;padding:9px 10px;border:1px solid #ead9bc;border-radius:11px;background:#fffdf8}.named-process-change .after{font-weight:900}.named-process-note{font-size:12px;color:var(--muted);line-height:1.6}.chip.named{background:#f5e3b8;border-color:#c89b4c;color:#6e4416}.item-detail-button{margin-top:10px;width:100%}.card.compact-detail dl{display:none}.weapon-modal-link{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 10px;border:1px solid #e4d2ba;border-radius:11px;background:#fffaf3}.weapon-modal-link strong{overflow-wrap:anywhere}.weapon-modal-link button{flex:0 0 auto;padding:7px 10px}.weapon-modal-link.locked{color:var(--muted);background:#f4eadc}
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-canvas{--branch-label-width:20px}
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-label{font-size:0;padding:0;border-radius:0 5px 5px 0}
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-label::after{content:'◆';font-size:8px;line-height:1;color:#7b5d3e}
@@ -139,7 +140,7 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 @media(max-width:620px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/2}.facility-unlock-grid button{width:auto}.facility-unlock-grid #resetKey{grid-column:1/3;justify-self:start}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.687">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.694">
 
 <style id="raFortuneCommunityV474">
 .community-rule{grid-column:1/-1;border:1px solid var(--line);border-radius:14px;background:#fffaf3;padding:12px;line-height:1.7}
@@ -159,7 +160,7 @@ body.ra-facility .accessory-branch-node button:hover{background:#f5e6d1!importan
 </style>
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.687｜更新：2026年9月2日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">v90.8.694｜更新：2026年9月2日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -214,6 +215,12 @@ body.ra-facility .accessory-branch-node button:hover{background:#f5e6d1!importan
   <div class="weapon-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="weaponModalTitle">
     <header class="weapon-modal-header"><div><div class="muted">武器派生詳細</div><h3 id="weaponModalTitle">武器詳細</h3></div><button type="button" class="ghost weapon-modal-close" data-close-weapon-modal aria-label="閉じる">×</button></header>
     <div id="weaponModalBody" class="weapon-modal-body"></div>
+  </div>
+</div>
+<div id="itemDetailModal" class="weapon-modal" hidden aria-hidden="true">
+  <div class="weapon-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="itemDetailModalTitle">
+    <header class="weapon-modal-header"><div><div class="muted">アイテム詳細</div><h3 id="itemDetailModalTitle">詳細</h3></div><button type="button" class="ghost weapon-modal-close" data-close-item-detail aria-label="閉じる">×</button></header>
+    <div id="itemDetailModalBody" class="weapon-modal-body"></div>
   </div>
 </div>
 <div id="materialSourceModal" class="material-source-modal" hidden aria-hidden="true">
@@ -464,6 +471,7 @@ function facilityPerformance(item){
   if(String(item.spellSlots||'').trim())add('術式追加枠','+'+String(item.spellSlots));
   return rows;
 }
+function parseNamedProcessingOptions(value){if(Array.isArray(value))return value;if(typeof value==='string'&&value.trim()){try{const parsed=JSON.parse(value);return Array.isArray(parsed)?parsed:[];}catch(_){return[];}}return[];}
 function facilitySafeItem(row){
   const bundle=facilityBundle(row||{});
   return{
@@ -477,6 +485,7 @@ function facilitySafeItem(row){
     description:row.description||'',effect:row.effect||'',source:row.source||'',unlockFacility:row.unlockFacility||'',
     processingSkill:row.processingSkill||'',processingToolType:row.processingToolType||'',processingToolRank:row.processingToolRank||'',
     processingRequiredMaterials:row.processingRequiredMaterials||'',processingResultCount:row.processingResultCount||'',processingDifficulty:row.processingDifficulty||'',processingFee:row.processingFee||0,
+    namedProcessingOptions:parseNamedProcessingOptions(row.namedProcessingOptions),
     unlockAreaId:row._facilityUnlockAreaId||'',unlockAreaName:row._facilityUnlockAreaName||'',
     performance:facilityPerformance(row)
   };
@@ -509,7 +518,7 @@ function facilitySafeRecipe(row,locked,safeBaseItem,resultItem){
     itemType:item.itemType||item.dataKind||'',itemCategory:item.itemCategory||item.materialCategory||'',
     description:resultItem?(item.description||''):(row.description||''),
     effect:resultItem?(item.effect||''):(row.effect||''),
-    upgradeLimit:item.upgradeLimit||'',
+    upgradeLimit:item.upgradeLimit||'',namedProcessingOptions:parseNamedProcessingOptions(item.namedProcessingOptions),
     performance:facilityPerformance(item),unlockOrder:Number(row._facilityUnlockOrder||1)||1,unlockAreaId:row._facilityUnlockAreaId||'',unlockAreaName:row._facilityUnlockAreaName||''
   };
 }
@@ -1059,7 +1068,21 @@ function itemTextRows(r){
   }
   return rows.filter(x=>String(x[1]||'').trim());
 }
-function itemCard(r){const chips=uniqueChips([rankLabel(r.rank),r.dataKind==='素材'?(r.materialType||'素材'):(r.itemType||r.dataKind||''),r.dataKind==='素材'?(r.materialCategory||''):(r.itemCategory||r.materialCategory||''),r.equipSlot?`枠:${r.equipSlot}`:'']);const bundleCount=Number(r.bundleCount)||0,bundlePrice=Number(r.bundlePrice)||0;const isRecipe=String(r.itemType||'')==='レシピ';const buy=String(isRecipe?(r.price||''):(r.buyPrice||''));const sell=String(r.sellPrice||'');const type=String(r.itemType||'').trim();const upgradeRows=(['武器','防具','盾'].includes(type)&&String(r.upgradeLimit??'').trim()!=='')?[['強化枠',`${r.upgradeLimit}枠`]]:[];const rows=[[isRecipe?'販売価格':(bundleCount?'単品買値':'買値'),buy?`${buy}G`:'未設定'],...(sell?[['売値',`${sell}G`]]:[]),...(bundleCount&&bundlePrice?[['まとめ買い',`${bundleCount}本セット ${bundlePrice}G`]]:[]),...upgradeRows,...itemTextRows(r)];return `<article class="card"><h3>${esc(r.name)}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<dl>${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
+let itemDetailIndex=Object.create(null);
+function itemDetailKey(r={}){return [r.resultItem||r.name||'item',r.craftType||r.itemType||r.dataKind||''].join('::');}
+function namedProcessingHtml(options=[]){
+  const rows=Array.isArray(options)?options:[];if(!rows.length)return'';
+  return rows.map(opt=>`<details class="named-process"><summary><span class="chip named">異名加工可能</span>${esc(opt.namedMonster||opt.material||'異名加工')}</summary><div class="named-process-body"><div class="named-process-change"><span>${esc(opt.before||'変更前')}</span><b>→</b><span class="after">${esc(opt.after||'変更後')}</span></div><dl class="weapon-modal-details"><dt>変更項目</dt><dd>${esc(opt.changeLabel||'性能')}</dd><dt>二つ名素材</dt><dd>${esc(opt.material||'')}</dd><dt>必要素材</dt><dd>${weaponMaterialPartsHtml(opt.requiredMaterials||'')}</dd><dt>施設依頼</dt><dd>${esc(String(opt.facilityFeeG||0))}G</dd>${opt.difficulty?`<dt>基礎作成難易度</dt><dd>${esc(opt.difficulty)}</dd>`:''}</dl><div class="named-process-note">${esc(opt.balanceNote||'新しい特殊効果は追加せず、原型装備の既存性能のみを変更します。')}<br>${esc(opt.rule||'同一装備への異名加工は1種類まで。')}</div></div></details>`).join('');
+}
+function genericItemModalHtml(r={}){
+  const chips=uniqueChips([rankLabel(r.rank),r.dataKind==='素材'?(r.materialType||'素材'):(r.itemType||r.dataKind||''),r.itemCategory||r.materialCategory||'',Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'異名加工可能':'']);
+  const pairs=[];const add=(k,v)=>{if(String(v??'').trim())pairs.push([k,String(v)])};
+  add('説明',r.description);add('効果',r.effect);if(String(r.upgradeLimit??'').trim())add('強化枠',`${r.upgradeLimit}枠`);if(r.baseItem)add('派生元',r.baseItem);if(r.requiredMaterials)add('必要素材',r.requiredMaterials);if(String(r.price||''))add(currentFacility==='eatery'?'調理代':'施設依頼',`${r.price}G`);if(String(r.buyPrice||''))add('買値',`${r.buyPrice}G`);if(String(r.sellPrice||''))add('売値',`${r.sellPrice}G`);if(r.difficulty)add('基礎作成難易度',r.difficulty);
+  return `<div class="chips">${chips.filter(Boolean).map(c=>`<span class="chip ${c==='異名加工可能'?'named':''}">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<dl class="weapon-modal-details">${weaponModalDetailRowsHtml(pairs)}</dl>${namedProcessingHtml(r.namedProcessingOptions)}`;
+}
+function openItemDetailModal(key,trigger=null){const r=itemDetailIndex[key];if(!r)return;const modal=$('itemDetailModal');$('itemDetailModalTitle').textContent=`${r.resultItem||r.name||'詳細'}　${rankLabel(r.rank)}`;$('itemDetailModalBody').innerHTML=genericItemModalHtml(r);modal.hidden=false;modal.setAttribute('aria-hidden','false');document.documentElement.classList.add('weapon-modal-open');requestAnimationFrame(()=>modal.querySelector('[data-close-item-detail]')?.focus({preventScroll:true}));}
+function closeItemDetailModal(){const modal=$('itemDetailModal');if(!modal)return;modal.hidden=true;modal.setAttribute('aria-hidden','true');document.documentElement.classList.remove('weapon-modal-open');}
+function itemCard(r){const chips=uniqueChips([rankLabel(r.rank),r.dataKind==='素材'?(r.materialType||'素材'):(r.itemType||r.dataKind||''),r.dataKind==='素材'?(r.materialCategory||''):(r.itemCategory||r.materialCategory||''),Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'異名加工可能':'']);const key=itemDetailKey(r);itemDetailIndex[key]=r;return `<article class="card compact-detail"><h3>${esc(r.name)}</h3><div class="chips">${chips.filter(Boolean).map(c=>`<span class="chip ${c==='異名加工可能'?'named':''}">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<button type="button" class="ghost item-detail-button" data-open-item-detail="${esc(key)}">詳細を見る</button></article>`;}
 function scrollPriceCard(r){const price=String(r.price||'')?`${r.price}G`:'未設定';const title=String(r.name||`未鑑定の${r.type||'術式'}スクロール`).trim();return `<article class="card"><h3>${esc(title)}：${esc(rankLabel(r.rank))}</h3><div class="chips"><span class="chip">${esc(r.type||'術式')}</span><span class="chip">${esc(rankLabel(r.rank))}</span><span class="chip">ランダム販売</span></div><dl><dt>価格</dt><dd>${esc(price)}</dd></dl></article>`;}
 function crystalCard(r){const chips=uniqueChips([rankLabel(r.rank),'スキルクリスタル',r.craftType]);const pairs=[['強化段階',`${r.baseItem||'?'} → ${r.resultItem||'?'}`],['必要素材',r.requiredMaterials||'未設定'],['強化費用',String(r.price||'')?`${r.price}G`:'未設定']];if(r.description)pairs.push(['説明',r.description]);if(r.effect)pairs.push(['効果',r.effect]);return `<article class="card"><h3>${esc(r.name||'クリスタル強化')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
 let accessoryDetailIndex=Object.create(null);
@@ -1181,7 +1204,7 @@ function recipeCard(r){
     const supportText=craftSupportText(r);if(supportText)pairs.push(['任意の作成補助材',supportText]);
     if(r.description)pairs.push(['説明',r.description]);
     if(r.effect)pairs.push(['効果',r.effect]);
-    return `<article class="card"><h3>${esc(r.resultItem||r.name||'名称未設定')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;
+    const key=itemDetailKey(r);itemDetailIndex[key]=r;return `<article class="card compact-detail"><h3>${esc(r.resultItem||r.name||'名称未設定')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><button type="button" class="ghost item-detail-button" data-open-item-detail="${esc(key)}">詳細を見る</button></article>`;
   }
   if(r.baseItem)pairs.push(['派生元',r.baseItem]);
   if(r.isProcessingRecipe)pairs.push(['レシピ','必要']);
@@ -1203,7 +1226,7 @@ function recipeCard(r){
   }
   if(!r.locked&&r.description)pairs.push(['説明',r.description]);
   if(r.effect)pairs.push(['効果',r.effect]);
-  return `<article class="card ${r.locked?'locked':''}"><h3>${esc(r.resultItem||r.name||'名称未設定')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${!r.locked?performanceHtml(r.performance):''}<dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;
+  if(r.locked)return `<article class="card locked"><h3>？？？</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div></article>`;const key=itemDetailKey(r);itemDetailIndex[key]=r;return `<article class="card compact-detail"><h3>${esc(r.resultItem||r.name||'名称未設定')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<button type="button" class="ghost item-detail-button" data-open-item-detail="${esc(key)}">詳細を見る</button></article>`;
 }
 
 function salesCategoryLabel(r){
@@ -1551,7 +1574,7 @@ function closeMaterialSourceModal(){const modal=$('materialSourceModal');if(!mod
 function weaponModalDetailRowsHtml(pairs=[]){return pairs.map(([k,v,isHtml])=>`<dt>${esc(k)}</dt><dd>${isHtml?v:esc(v)}</dd>`).join('');}
 function weaponModalHtml(entry){
   const isBase=!!entry.isBase;
-  const chips=uniqueChips([rankLabel(entry.rank),isBase?'基礎武器':`${entry.branchLabel||''}派生`,entry.itemCategory]);
+  const chips=uniqueChips([rankLabel(entry.rank),isBase?'基礎武器':`${entry.branchLabel||''}派生`,entry.itemCategory,Array.isArray(entry.namedProcessingOptions)&&entry.namedProcessingOptions.length?'異名加工可能':'']);
   let pairs=[];
   if(isBase){pairs=itemTextRows(entry);if(String(entry.sellPrice||'').trim())pairs.unshift(['売値',`${entry.sellPrice}G`]);if(String(entry.buyPrice||'').trim())pairs.unshift(['買値',`${entry.buyPrice}G`]);if(Number(entry.upgradeLimit||0)>0)pairs.unshift(['強化枠',`${entry.upgradeLimit}枠`]);}
   else{
@@ -1567,7 +1590,7 @@ function weaponModalHtml(entry){
   const parentHtml=parent?`<section class="weapon-modal-links"><h4>派生元</h4>${modalLinkHtml(parent,'派生元の詳細を見る')}</section>`:'';
   const next=Array.isArray(entry.nextBranches)?entry.nextBranches:[];
   const nextHtml=next.length?`<section class="weapon-modal-links"><h4>次の派生先</h4>${next.map(child=>modalLinkHtml(child,'詳細を見る')).join('')}</section>`:'';
-  return `<div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>${entry.performance&&entry.performance.length?`<div class="weapon-modal-performance">${performanceHtml(entry.performance)}</div>`:''}<dl class="weapon-modal-details">${weaponModalDetailRowsHtml(pairs)}</dl>${parentHtml}${nextHtml}`;
+  return `<div class="chips">${chips.map(c=>`<span class="chip ${c==='異名加工可能'?'named':''}">${esc(c)}</span>`).join('')}</div>${entry.performance&&entry.performance.length?`<div class="weapon-modal-performance">${performanceHtml(entry.performance)}</div>`:''}<dl class="weapon-modal-details">${weaponModalDetailRowsHtml(pairs)}</dl>${namedProcessingHtml(entry.namedProcessingOptions)}${parentHtml}${nextHtml}`;
 }
 function openWeaponModal(name,trigger=null){
   const entry=branchDetailIndex[String(name||'').trim()];if(!entry||entry.locked)return;
@@ -1888,6 +1911,9 @@ document.addEventListener('click',e=>{
   const materialSource=e.target.closest('[data-material-source]');if(materialSource){openMaterialSourceModal(materialSource.dataset.materialSource||'');return;}
   if(e.target.closest('[data-close-material-source]')){closeMaterialSourceModal();return;}
   const sourceModal=$('materialSourceModal');if(e.target===sourceModal){closeMaterialSourceModal();return;}
+  const itemOpen=e.target.closest('[data-open-item-detail]');if(itemOpen){openItemDetailModal(itemOpen.dataset.openItemDetail||'',itemOpen);return;}
+  if(e.target.closest('[data-close-item-detail]')){closeItemDetailModal();return;}
+  if(e.target===$('itemDetailModal')){closeItemDetailModal();return;}
   const open=e.target.closest('[data-open-weapon-modal]');if(open){openWeaponModal(open.dataset.openWeaponModal||'',open);return;}
   const openCard=e.target.closest('[data-open-weapon-card]');if(openCard&&!e.target.closest('button')){openWeaponModal(openCard.dataset.openWeaponCard||'',openCard.querySelector('button')||openCard);return;}
   const modalLink=e.target.closest('[data-modal-weapon]');if(modalLink){openWeaponModal(modalLink.dataset.modalWeapon||'',modalLink);return;}
