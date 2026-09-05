@@ -172,7 +172,7 @@ body.ra-facility .accessory-branch-node button:hover{background:#f5e6d1!importan
 </style>
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">Version：v90.8.735 / 最終更新日：2026年9月5日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">Version：v90.8.735 / 最終更新日：2026年9月6日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -402,10 +402,8 @@ let commonMasterPromise=null;
 let facilityEquipmentCategoryMaster=[];
 function facilityNormalizeVersion(value){return String(value||'').trim().replace(/^v/i,'');}
 function facilityGithubBaseCandidates(){
-  const bases=[];
-  try{bases.push(new URL('./data/public/',window.location.href).toString());}catch(_e){}
-  bases.push(GITHUB_COMMON_DB_BASE);
-  return [...new Set(bases.filter(Boolean))];
+  // 施設側の複製data/publicは参照しない。Managerの共通GitHub DBを唯一の正本にする。
+  return [GITHUB_COMMON_DB_BASE];
 }
 function facilityManifestMasterInfo(manifest={}){
   const nested=manifest&&manifest.files&&manifest.files.master;
@@ -575,10 +573,18 @@ function facilityValidateGithubMaster(masterDocument,manifest={}){
     uiVersionWarning:htmlDbMismatch?`施設HTML ${FACILITY_EXPECTED_DB_VERSION} / 共通DB ${effectiveVersion}`:''
   };
 }
-async function facilityFetchGithubJson(url,{fresh=false}={}){
-  const response=await fetch(url,{cache:fresh?'no-store':'force-cache'});
-  if(!response.ok)throw new Error(`HTTP ${response.status}`);
-  return response.json();
+async function facilityFetchGithubJson(url,{fresh=false,timeoutMs=15000,cacheMode=''}={}){
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),Math.max(1000,Number(timeoutMs)||15000));
+  const mode=cacheMode||(fresh?'no-cache':'force-cache');
+  try{
+    const response=await fetch(url,{cache:mode,signal:controller.signal});
+    if(!response.ok)throw new Error(`HTTP ${response.status}`);
+    return await response.json();
+  }catch(error){
+    if(error&&error.name==='AbortError')throw new Error(`GitHub共通DBの取得がタイムアウトしました（${Math.round((Number(timeoutMs)||15000)/1000)}秒）`);
+    throw error;
+  }finally{clearTimeout(timer);}
 }
 async function fetchGithubCommonMaster({force=false}={}){
   if(commonMasterPromise&&!force)return commonMasterPromise;
@@ -587,26 +593,25 @@ async function fetchGithubCommonMaster({force=false}={}){
     let usableMismatch=null;
     for(const base of facilityGithubBaseCandidates()){
       let lastError=null;
-      for(let attempt=0;attempt<3;attempt++){
-        const token=`${Date.now()}_${attempt}_${Math.random().toString(36).slice(2)}`;
+      for(let attempt=0;attempt<2;attempt++){
         try{
           const manifestUrl=new URL('manifest.json',base);
-          manifestUrl.searchParams.set('_ra',token);
-          const manifest=await facilityFetchGithubJson(manifestUrl.toString(),{fresh:true});
+          const manifest=await facilityFetchGithubJson(manifestUrl.toString(),{timeoutMs:6000,cacheMode:'no-cache'});
           const info=facilityManifestMasterInfo(manifest);
           if(!info.file||info.file.includes('..')||info.file.includes('\\'))throw new Error('共通DBのmanifestに有効なmasterファイル名がありません。');
           const masterUrl=new URL(info.file,base);
-          masterUrl.searchParams.set('v',info.sha256||String(manifest.version||'master'));
-          const result=facilityValidateGithubMaster(await facilityFetchGithubJson(masterUrl.toString()),manifest);
+          masterUrl.searchParams.set('_ra',info.sha256||String(manifest.version||'master'));
+          const masterCacheMode=(force||attempt>0)?'reload':'force-cache';
+          const result=facilityValidateGithubMaster(await facilityFetchGithubJson(masterUrl.toString(),{timeoutMs:15000,cacheMode:masterCacheMode}),manifest);
           if(!result.versionWarning)return{...result,base};
           usableMismatch={...result,base};
           lastError=new Error(`共通DBの更新反映待ちです（${result.versionWarning}）。`);
         }catch(error){lastError=error;}
-        if(attempt<2)await facilityGithubDelay(250*(attempt+1));
+        if(attempt<1)await facilityGithubDelay(300);
       }
       try{
         const directUrl=new URL('recraft_alchemia_master.json',base);
-        return{...facilityValidateGithubMaster(await facilityFetchGithubJson(directUrl.toString(),{fresh:true}),{master:'recraft_alchemia_master.json'}),base};
+        return{...facilityValidateGithubMaster(await facilityFetchGithubJson(directUrl.toString(),{timeoutMs:15000,cacheMode:'no-cache'}),{master:'recraft_alchemia_master.json'}),base};
       }catch(directError){
         errors.push(`${base}: ${[lastError&&lastError.message,directError&&directError.message].filter(Boolean).join(' / ')}`);
       }
