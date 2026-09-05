@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>リクラフト・アルケミア 施設カタログ v90.8.733</title>
+<title>リクラフト・アルケミア 施設カタログ v90.8.735</title>
 <style>
 :root{--bg:#f6efe2;--paper:#fffaf0;--ink:#2f251c;--muted:#766757;--line:#d9c5a8;--accent:#98612f;--green:#58765f;--danger:#a54d43;--shadow:0 14px 36px rgba(78,50,22,.13)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Sans",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#ffe8bf 0,transparent 28rem),linear-gradient(180deg,#fff9ee,var(--bg));min-height:100svh}
@@ -152,7 +152,7 @@ button.weapon-material-part:hover{background:#e2f2f5;transform:none}
 @media(max-width:620px){.facility-unlock-grid{grid-template-columns:1fr auto}.facility-unlock-grid .field{grid-column:1/2}.facility-unlock-grid button{width:auto}.facility-unlock-grid #resetKey{grid-column:1/3;justify-self:start}}
 </style>
 
-<link rel="stylesheet" href="ra-design-system.css?v=90.8.733-named-process-branch-stack">
+<link rel="stylesheet" href="ra-design-system.css?v=90.8.735-named-process-branch-stack">
 
 <style id="raFortuneCommunityV474">
 .community-rule{grid-column:1/-1;border:1px solid var(--line);border-radius:14px;background:#fffaf3;padding:12px;line-height:1.7}
@@ -172,7 +172,7 @@ body.ra-facility .accessory-branch-node button:hover{background:#f5e6d1!importan
 </style>
 </head>
 <body class="ra-app ra-player ra-facility">
-<header><div class="hero"><div class="hero-head"><div><div class="build">Version：v90.8.733 / 最終更新日：2026年9月5日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
+<header><div class="hero"><div class="hero-head"><div><div class="build">Version：v90.8.735 / 最終更新日：2026年9月5日</div><h1>施設カタログ</h1></div><div class="hero-brand" aria-label="Recraft Alchemia">RECRAFT ALCHEMIA</div></div><p class="subtitle">鍛冶屋・薬屋・骨董屋・食事処と、広場の共同採取設備を確認できます。装備強化の実行はこのページでは扱いません。</p></div></header>
 <main>
 <details class="panel unlock-panel" id="unlockPanel" open>
   <summary><span>プレイヤー別の解放設定</span><span id="unlockSummary">確認中</span></summary>
@@ -397,7 +397,7 @@ async function jsonpAction(action,params={},options={}){const attempts=Math.max(
 function facilityPostAction(action,params={},timeoutMs=30000){return new Promise((resolve,reject)=>{const token='raFacilityPost_'+Date.now()+'_'+Math.random().toString(36).slice(2),frame=document.createElement('iframe'),frameName='raFacilityFrame_'+Date.now()+'_'+Math.random().toString(36).slice(2),form=document.createElement('form');frame.name=frameName;frame.style.display='none';frame.setAttribute('aria-hidden','true');form.method='POST';const actionUrl=new URL(DEFAULT_GAS_WEB_APP_URL);actionUrl.searchParams.set('action',action);actionUrl.searchParams.set('responseMode','postMessage');actionUrl.searchParams.set('token',token);form.action=actionUrl.toString();form.target=frameName;form.enctype='text/plain';form.acceptCharset='UTF-8';form.style.display='none';const payloadField=document.createElement('textarea');payloadField.name='payload';payloadField.value=JSON.stringify({...params,token});payloadField.style.display='none';form.appendChild(payloadField);let settled=false;const timer=setTimeout(()=>finishReject(new Error('施設データの保存応答がタイムアウトしました。')),timeoutMs);function cleanup(){clearTimeout(timer);window.removeEventListener('message',onMessage);setTimeout(()=>{try{form.remove();frame.remove();}catch(_e){}},0);}function finishResolve(value){if(settled)return;settled=true;cleanup();resolve(value);}function finishReject(error){if(settled)return;settled=true;cleanup();reject(error);}function onMessage(event){if(event.source!==frame.contentWindow)return;const data=event.data||{};if(data.type!=='recraft-db-post-result'||String(data.token||'')!==token)return;const result=data.result||{ok:false,error:'施設保存結果が空です。'};if(result.ok===false){finishReject(new Error(result.error||'施設データの保存に失敗しました。'));return;}finishResolve(result);}window.addEventListener('message',onMessage);document.body.appendChild(frame);document.body.appendChild(form);try{form.submit();}catch(e){finishReject(e);}});}
 
 const GITHUB_COMMON_DB_BASE='https://akari-2659.github.io/Recraft-Alchemia-Manager/data/public/';
-const FACILITY_EXPECTED_DB_VERSION='v90.8.733';
+const FACILITY_EXPECTED_DB_VERSION='v90.8.735';
 let commonMasterPromise=null;
 let facilityEquipmentCategoryMaster=[];
 function facilityNormalizeVersion(value){return String(value||'').trim().replace(/^v/i,'');}
@@ -1110,12 +1110,12 @@ function namedProcessingHtml(options=[]){
 function genericItemModalHtml(r={}){
   const chips=uniqueChips([rankLabel(r.rank),r.dataKind==='素材'?(r.materialType||'素材'):(r.itemType||r.dataKind||''),r.itemCategory||r.materialCategory||'',Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'異名加工可':'']);
   const pairs=[];const add=(k,v)=>{if(String(v??'').trim())pairs.push([k,String(v)])};
-  add('説明',r.description);if(!['武器','防具','盾'].includes(String(r.itemType||'').trim()))add('効果',r.effect);if(r.source)add(String(r.materialType||'')==='魔物素材'?'ドロップ元':'入手先',r.source);if(String(r.upgradeLimit??'').trim())add('強化枠',`${r.upgradeLimit}枠`);if(r.baseItem)add('派生元',r.baseItem);if(r.requiredMaterials)add('必要素材',r.requiredMaterials);if(String(r.price||''))add(currentFacility==='eatery'?'調理代':'施設依頼',`${r.price}G`);if(String(r.buyPrice||''))add('買値',`${r.buyPrice}G`);if(String(r.sellPrice||''))add('売値',`${r.sellPrice}G`);if(r.difficulty)add('基礎作成難易度',r.difficulty);
+  add('説明',r.description);if(!['武器','防具','盾'].includes(String(r.itemType||'').trim()))add('効果',r.effect);if(r.source)add(String(r.materialType||'')==='魔物素材'?'ドロップ元':'入手先',r.source);if(String(r.upgradeLimit??'').trim())add('強化枠',`${r.upgradeLimit}枠`);if(r.baseItem)add('派生元',r.baseItem);if(r.requiredMaterials)add('必要素材',r.requiredMaterials);if(String(r.resultCount??'').trim())add('完成数',`${r.resultCount}個`);if(String(r.price||''))add(currentFacility==='eatery'?'調理代':'施設依頼',`${r.price}G`);if(String(r.buyPrice||''))add('買値',`${r.buyPrice}G`);if(Number(r.bundleCount)>0&&Number(r.bundlePrice)>0)add('まとめ買い',`${r.bundleCount}本 ${r.bundlePrice}G`);if(String(r.sellPrice||''))add('売値',`${r.sellPrice}G`);if(r.difficulty)add('基礎作成難易度',r.difficulty);
   return `<div class="chips">${chips.filter(Boolean).map(c=>`<span class="chip ${c==='異名加工可'?'named':''}">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<dl class="weapon-modal-details">${weaponModalDetailRowsHtml(pairs)}</dl>${facilityEquipmentEffectHtml(r)}${namedProcessingHtml(r.namedProcessingOptions)}`;
 }
 function openItemDetailModal(key,trigger=null){const r=itemDetailIndex[key];if(!r)return;const modal=$('itemDetailModal');$('itemDetailModalTitle').textContent=`${r.resultItem||r.name||'詳細'}　${rankLabel(r.rank)}`;$('itemDetailModalBody').innerHTML=genericItemModalHtml(r);modal.hidden=false;modal.setAttribute('aria-hidden','false');document.documentElement.classList.add('weapon-modal-open');requestAnimationFrame(()=>modal.querySelector('[data-close-item-detail]')?.focus({preventScroll:true}));}
 function closeItemDetailModal(){const modal=$('itemDetailModal');if(!modal)return;modal.hidden=true;modal.setAttribute('aria-hidden','true');document.documentElement.classList.remove('weapon-modal-open');}
-function itemCard(r){const chips=uniqueChips([rankLabel(r.rank),r.dataKind==='素材'?(r.materialType||'素材'):(r.itemType||r.dataKind||''),r.dataKind==='素材'?(r.materialCategory||''):(r.itemCategory||r.materialCategory||''),Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'異名加工可':'']);const key=itemDetailKey(r);itemDetailIndex[key]=r;return `<article class="card compact-detail ${Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'has-named-processing':''}"><h3>${esc(r.name)}</h3><div class="chips">${chips.filter(Boolean).map(c=>`<span class="chip ${c==='異名加工可'?'named':''}">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<button type="button" class="ghost item-detail-button" data-open-item-detail="${esc(key)}">詳細を見る</button></article>`;}
+function itemCard(r){const chips=uniqueChips([rankLabel(r.rank),r.dataKind==='素材'?(r.materialType||'素材'):(r.itemType||r.dataKind||''),r.dataKind==='素材'?(r.materialCategory||''):(r.itemCategory||r.materialCategory||''),Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'異名加工可':'']);const key=itemDetailKey(r);itemDetailIndex[key]=r;const bundleLine=Number(r.bundleCount)>0&&Number(r.bundlePrice)>0?`<div class="muted"><b>まとめ買い：</b>${esc(String(r.bundleCount))}本 ${esc(String(r.bundlePrice))}G${String(r.buyPrice||'').trim()?`（単価 ${esc(String(r.buyPrice))}G）`:''}</div>`:'';return `<article class="card compact-detail ${Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'has-named-processing':''}"><h3>${esc(r.name)}</h3><div class="chips">${chips.filter(Boolean).map(c=>`<span class="chip ${c==='異名加工可'?'named':''}">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}${bundleLine}<button type="button" class="ghost item-detail-button" data-open-item-detail="${esc(key)}">詳細を見る</button></article>`;}
 function scrollPriceCard(r){const price=String(r.price||'')?`${r.price}G`:'未設定';const title=String(r.name||`未鑑定の${r.type||'術式'}スクロール`).trim();return `<article class="card"><h3>${esc(title)}：${esc(rankLabel(r.rank))}</h3><div class="chips"><span class="chip">${esc(r.type||'術式')}</span><span class="chip">${esc(rankLabel(r.rank))}</span><span class="chip">ランダム販売</span></div><dl><dt>価格</dt><dd>${esc(price)}</dd></dl></article>`;}
 function crystalCard(r){const chips=uniqueChips([rankLabel(r.rank),'スキルクリスタル',r.craftType]);const pairs=[['強化段階',`${r.baseItem||'?'} → ${r.resultItem||'?'}`],['必要素材',r.requiredMaterials||'未設定'],['強化費用',String(r.price||'')?`${r.price}G`:'未設定']];if(r.description)pairs.push(['説明',r.description]);if(r.effect)pairs.push(['効果',r.effect]);return `<article class="card"><h3>${esc(r.name||'クリスタル強化')}</h3><div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><dl>${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></article>`;}
 let accessoryDetailIndex=Object.create(null);
@@ -1224,6 +1224,7 @@ function scheduleAccessoryConnections(){cancelAnimationFrame(accessoryConnection
 
 function recipeCard(r){
   const chips=uniqueChips([rankLabel(r.rank),r.craftType,r.category,r.itemType,r.itemCategory,Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'異名加工可':'']);
+  const resultCountLine=String(r.resultCount??'').trim()?`<div class="muted"><b>完成数：</b>${esc(String(r.resultCount))}個</div>`:'';
   const pairs=[];
   if(r.isProcessingRule){
     pairs.push(['レシピ','不要']);
@@ -1237,7 +1238,7 @@ function recipeCard(r){
     const supportText=craftSupportText(r);if(supportText)pairs.push(['任意の作成補助材',supportText]);
     if(r.description)pairs.push(['説明',r.description]);
     if(r.effect)pairs.push(['効果',r.effect]);
-    const key=itemDetailKey(r);itemDetailIndex[key]=r;return `<article class="card compact-detail ${Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'has-named-processing':''}"><h3>${esc(r.resultItem||r.name||'名称未設定')}</h3><div class="chips">${chips.map(c=>`<span class="chip ${c==='異名加工可'?'named':''}">${esc(c)}</span>`).join('')}</div><button type="button" class="ghost item-detail-button" data-open-item-detail="${esc(key)}">詳細を見る</button></article>`;
+    const key=itemDetailKey(r);itemDetailIndex[key]=r;return `<article class="card compact-detail ${Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'has-named-processing':''}"><h3>${esc(r.resultItem||r.name||'名称未設定')}</h3><div class="chips">${chips.map(c=>`<span class="chip ${c==='異名加工可'?'named':''}">${esc(c)}</span>`).join('')}</div>${resultCountLine}<button type="button" class="ghost item-detail-button" data-open-item-detail="${esc(key)}">詳細を見る</button></article>`;
   }
   if(r.baseItem)pairs.push(['派生元',r.baseItem]);
   if(r.isProcessingRecipe)pairs.push(['レシピ','必要']);
@@ -1259,7 +1260,7 @@ function recipeCard(r){
   }
   if(!r.locked&&r.description)pairs.push(['説明',r.description]);
   if(r.effect)pairs.push(['効果',r.effect]);
-  if(r.locked)return `<article class="card locked"><h3>？？？</h3><div class="chips">${chips.map(c=>`<span class="chip ${c==='異名加工可'?'named':''}">${esc(c)}</span>`).join('')}</div></article>`;const key=itemDetailKey(r);itemDetailIndex[key]=r;return `<article class="card compact-detail ${Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'has-named-processing':''}"><h3>${esc(r.resultItem||r.name||'名称未設定')}</h3><div class="chips">${chips.map(c=>`<span class="chip ${c==='異名加工可'?'named':''}">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}<button type="button" class="ghost item-detail-button" data-open-item-detail="${esc(key)}">詳細を見る</button></article>`;
+  if(r.locked)return `<article class="card locked"><h3>？？？</h3><div class="chips">${chips.map(c=>`<span class="chip ${c==='異名加工可'?'named':''}">${esc(c)}</span>`).join('')}</div></article>`;const key=itemDetailKey(r);itemDetailIndex[key]=r;return `<article class="card compact-detail ${Array.isArray(r.namedProcessingOptions)&&r.namedProcessingOptions.length?'has-named-processing':''}"><h3>${esc(r.resultItem||r.name||'名称未設定')}</h3><div class="chips">${chips.map(c=>`<span class="chip ${c==='異名加工可'?'named':''}">${esc(c)}</span>`).join('')}</div>${performanceHtml(r.performance)}${resultCountLine}<button type="button" class="ghost item-detail-button" data-open-item-detail="${esc(key)}">詳細を見る</button></article>`;
 }
 
 function salesCategoryLabel(r){
