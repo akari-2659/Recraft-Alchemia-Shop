@@ -2,9 +2,10 @@ name: RA v733 facility common DB compatibility
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
-      - '.github/workflows/ra-v733-facility-common-db-compat.yml'
+      - .github/workflows/ra-v733-facility-common-db-compat.yml
 
 permissions:
   contents: write
@@ -14,46 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Patch facility common DB compatibility
-        shell: bash
+      - name: Patch facility
+        run: python .github/ra-v733-facility-patch.py
+      - name: Commit facility
         run: |
-          python - <<'PY'
-          from pathlib import Path
-          import re
-          p=Path('facility.html')
-          s=p.read_text(encoding='utf-8')
-          old="""  if(!effectiveVersion||facilityNormalizeVersion(effectiveVersion)!==facilityNormalizeVersion(FACILITY_EXPECTED_DB_VERSION)){
-    throw new Error(`施設HTML ${FACILITY_EXPECTED_DB_VERSION} に対して共通DBが ${effectiveVersion||'不明'} です。data/public を同じ版へ更新してください。`);
-  }
-  return{
-    manifest,document:masterDocument,data,version:masterVersion||manifestVersion,
-    versionWarning:manifestVersion&&masterVersion&&manifestVersion!==masterVersion
-      ?`manifest ${manifestVersion} / master ${masterVersion}`:''
-  };"""
-          new="""  if(!effectiveVersion)throw new Error('共通DBのバージョンを確認できません。');
-  const manifestMasterMismatch=manifestVersion&&masterVersion&&facilityNormalizeVersion(manifestVersion)!==facilityNormalizeVersion(masterVersion);
-  const htmlDbMismatch=facilityNormalizeVersion(effectiveVersion)!==facilityNormalizeVersion(FACILITY_EXPECTED_DB_VERSION);
-  return{
-    manifest,document:masterDocument,data,version:effectiveVersion,
-    versionWarning:manifestMasterMismatch?`manifest ${manifestVersion} / master ${masterVersion}`:'',
-    uiVersionWarning:htmlDbMismatch?`施設HTML ${FACILITY_EXPECTED_DB_VERSION} / 共通DB ${effectiveVersion}`:''
-  };"""
-          if old not in s:
-              if 'uiVersionWarning:htmlDbMismatch' not in s:
-                  raise SystemExit('expected strict-version block not found')
-          else:
-              s=s.replace(old,new,1)
-          s=s.replace("${commonMaster.versionWarning?'（更新反映待ち）':''}`,commonMaster.versionWarning?'':'ok'", "${(commonMaster.versionWarning||commonMaster.uiVersionWarning)?'（版差あり）':''}`,(commonMaster.versionWarning||commonMaster.uiVersionWarning)?'':'ok'")
-          s=re.sub(r'v90\.8\.(?:731|732)', 'v90.8.733', s)
-          s=re.sub(r'(?<![\d.])90\.8\.(?:731|732)(?!\d)', '90.8.733', s)
-          p.write_text(s,encoding='utf-8')
-          PY
-      - name: Commit facility patch
-        shell: bash
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add facility.html
           git diff --cached --quiet && exit 0
-          git commit -m 'Allow compatible common DB versions in facility v90.8.733'
+          git commit -m "Allow compatible common DB versions in facility v90.8.733"
           git push
