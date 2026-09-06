@@ -110,10 +110,11 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 .branch-graph-node-name-inline{grid-area:name;display:block;min-width:0;color:var(--ink);font-weight:1000;line-height:1.35;white-space:normal;overflow-wrap:anywhere;word-break:normal}
 .branch-graph-node-named-badge{grid-area:badge;justify-self:end;display:inline-flex;align-items:center;min-height:20px;border:1px solid #8b3f2e;background:#8b3f2e;color:#fff8df;border-radius:999px;padding:2px 7px;font-size:10px;font-weight:1000;line-height:1;white-space:nowrap}
 .branch-graph-node.has-named-processing::after{content:none!important;display:none!important}
-.branch-graph-node.has-named-processing .branch-graph-node-trigger{position:relative!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;gap:6px!important;min-height:96px!important;padding:27px 10px 9px!important}
-.branch-graph-node.has-named-processing .branch-graph-node-rank-inline{position:absolute;top:8px;left:10px;z-index:1}
-.branch-graph-node.has-named-processing .branch-graph-node-named-badge{align-self:flex-start;justify-self:auto;margin-top:0}
-.branch-graph-node.has-named-processing .branch-graph-node-name-inline{display:block;width:100%;min-width:0}
+.branch-graph-node.has-named-processing{overflow:visible!important;min-height:104px}
+.branch-graph-node.has-named-processing .branch-graph-node-trigger{position:relative!important;display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;grid-template-areas:"rank badge" "name name"!important;grid-template-rows:auto minmax(38px,auto)!important;align-content:center!important;align-items:start!important;gap:7px 8px!important;min-height:104px!important;height:auto!important;padding:10px!important}
+.branch-graph-node.has-named-processing .branch-graph-node-rank-inline{position:static!important;grid-area:rank!important;align-self:center!important}
+.branch-graph-node.has-named-processing .branch-graph-node-named-badge{grid-area:badge!important;align-self:center!important;justify-self:end!important;margin:0!important}
+.branch-graph-node.has-named-processing .branch-graph-node-name-inline{grid-area:name!important;display:block!important;width:100%!important;min-width:0!important;white-space:normal!important;overflow:visible!important;overflow-wrap:anywhere!important;word-break:normal!important;line-height:1.35!important}
 .branch-graph-node-locked-label{display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;gap:5px 7px!important;align-content:center!important;color:var(--ink)!important}
 .weapon-material-parts{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .weapon-material-part{display:inline-flex;align-items:center;min-height:30px;padding:4px 8px;border:1px solid #dfccb2;border-radius:999px;background:#fffdf8;color:inherit;font-size:13px;font-weight:800}
