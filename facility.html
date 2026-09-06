@@ -98,24 +98,26 @@ select{width:100%;border:1px solid var(--line);border-radius:12px;background:#ff
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-label{font-size:0;padding:0;border-radius:0 5px 5px 0}
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-label::after{content:'◆';font-size:8px;line-height:1;color:#7b5d3e}
 .branch-graph-scroll.branch-labels-collapsed .branch-graph-label.base::after{content:'◇'}
-@media(max-width:720px){.branch-controls{grid-template-columns:1fr}.branch-graph-canvas{--branch-label-width:112px;gap:10px 22px}.branch-graph-label{padding:6px 2px;font-size:11px}.branch-graph-node{width:150px}.weapon-modal-details{grid-template-columns:1fr}.weapon-modal-link{align-items:flex-start;flex-direction:column}.weapon-modal-link button{width:100%}}
+@media(max-width:720px){.branch-controls{grid-template-columns:1fr}.branch-graph-canvas{--branch-label-width:112px;gap:10px 22px}.branch-graph-label{padding:6px 2px;font-size:11px}.branch-graph-node{width:184px!important;min-height:88px!important}.branch-graph-node-trigger,.branch-graph-node-locked-label{min-height:88px!important;padding:9px 10px!important}.branch-graph-node-name-inline{font-size:14px}.weapon-modal-details{grid-template-columns:1fr}.weapon-modal-link{align-items:flex-start;flex-direction:column}.weapon-modal-link button{width:100%}}
 
 
 /* v90.8.404: 派生図の表示座標・タップ判定と素材入手先表示 */
-.branch-graph-node{position:relative!important;padding:0!important;overflow:hidden}
-.branch-graph-node-trigger,.branch-graph-node-locked-label{width:100%!important;height:auto!important;min-height:86px!important;padding:9px 10px!important}
-.branch-graph-node-trigger{display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;grid-template-areas:"rank badge" "name name"!important;align-content:center!important;align-items:center!important;gap:5px 7px!important;border-radius:inherit!important;background:#fffaf3!important;color:var(--ink)!important;text-align:left!important;box-shadow:none!important;transform:none!important}
+.branch-graph-node{position:relative!important;padding:0!important;overflow:visible!important;width:228px!important;min-height:94px!important}
+.branch-graph-node-trigger,.branch-graph-node-locked-label{width:100%!important;height:auto!important;min-height:94px!important;padding:10px 12px!important}
+.branch-graph-node-trigger{display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;grid-template-areas:"rank badge" "name name"!important;align-content:start!important;align-items:start!important;gap:6px 8px!important;border-radius:inherit!important;background:#fffaf3!important;color:var(--ink)!important;text-align:left!important;box-shadow:none!important;transform:none!important}
 .branch-graph-node-trigger:hover{filter:brightness(.985)!important;transform:none!important}
-.branch-graph-node-rank-inline{grid-area:rank;display:block;color:var(--muted);font-size:11px;font-weight:1000;line-height:1.2;white-space:nowrap}
-.branch-graph-node-name-inline{grid-area:name;display:block;min-width:0;color:var(--ink);font-weight:1000;line-height:1.35;white-space:normal;overflow-wrap:anywhere;word-break:normal}
-.branch-graph-node-named-badge{grid-area:badge;justify-self:end;display:inline-flex;align-items:center;min-height:20px;border:1px solid #8b3f2e;background:#8b3f2e;color:#fff8df;border-radius:999px;padding:2px 7px;font-size:10px;font-weight:1000;line-height:1;white-space:nowrap}
+.branch-graph-node-rank-inline{grid-area:rank;display:block;color:var(--muted);font-size:11px;font-weight:1000;line-height:1.2;white-space:nowrap;margin-top:2px}
+.branch-graph-node-name-inline{grid-area:name;display:block;min-width:0;color:var(--ink);font-weight:1000;font-size:15px;line-height:1.35;white-space:normal;overflow-wrap:break-word;word-break:keep-all;line-break:strict}
+.branch-graph-node-named-badge{grid-area:badge;justify-self:end;display:inline-flex;align-items:center;min-height:18px;border:1px solid #8b3f2e;background:#8b3f2e;color:#fff8df;border-radius:999px;padding:2px 7px;font-size:9px;font-weight:1000;line-height:1;white-space:nowrap;max-width:100%}
 .branch-graph-node.has-named-processing::after{content:none!important;display:none!important}
-.branch-graph-node.has-named-processing{overflow:visible!important;min-height:104px}
-.branch-graph-node.has-named-processing .branch-graph-node-trigger{position:relative!important;display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;grid-template-areas:"rank badge" "name name"!important;grid-template-rows:auto minmax(38px,auto)!important;align-content:center!important;align-items:start!important;gap:7px 8px!important;min-height:104px!important;height:auto!important;padding:10px!important}
-.branch-graph-node.has-named-processing .branch-graph-node-rank-inline{position:static!important;grid-area:rank!important;align-self:center!important}
-.branch-graph-node.has-named-processing .branch-graph-node-named-badge{grid-area:badge!important;align-self:center!important;justify-self:end!important;margin:0!important}
-.branch-graph-node.has-named-processing .branch-graph-node-name-inline{grid-area:name!important;display:block!important;width:100%!important;min-width:0!important;white-space:normal!important;overflow:visible!important;overflow-wrap:anywhere!important;word-break:normal!important;line-height:1.35!important}
-.branch-graph-node-locked-label{display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;gap:5px 7px!important;align-content:center!important;color:var(--ink)!important}
+.branch-graph-node.has-named-processing{overflow:visible!important;min-height:94px}
+.branch-graph-node.has-named-processing .branch-graph-node-trigger{position:relative!important;display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;grid-template-areas:"rank badge" "name name"!important;align-content:start!important;align-items:start!important;gap:6px 8px!important;min-height:94px!important;height:auto!important;padding:10px 12px!important}
+.branch-graph-node.has-named-processing .branch-graph-node-rank-inline{position:static!important;grid-area:rank!important;align-self:start!important;top:auto!important;left:auto!important;z-index:auto!important}
+.branch-graph-node.has-named-processing .branch-graph-node-named-badge{grid-area:badge!important;align-self:start!important;justify-self:end!important;margin:0!important}
+.branch-graph-node.has-named-processing .branch-graph-node-name-inline{grid-area:name!important;display:block!important;width:100%!important;min-width:0!important;white-space:normal!important;overflow:visible!important;overflow-wrap:break-word!important;word-break:keep-all!important;line-break:strict!important;line-height:1.35!important}
+.branch-graph-node-locked-label{display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;grid-template-areas:"rank rank" "name name"!important;gap:6px 8px!important;align-content:start!important;align-items:start!important;color:var(--ink)!important}
+.branch-graph-node-locked-label .branch-graph-node-rank-inline{grid-area:rank}
+.branch-graph-node-locked-label .branch-graph-node-name-inline{grid-area:name}
 .weapon-material-parts{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .weapon-material-part{display:inline-flex;align-items:center;min-height:30px;padding:4px 8px;border:1px solid #dfccb2;border-radius:999px;background:#fffdf8;color:inherit;font-size:13px;font-weight:800}
 button.weapon-material-part{color:#315f70;background:#eef8fa;border-color:#a9c9d2;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;cursor:pointer}
@@ -1483,7 +1485,7 @@ function branchGraphCatalog(current){
   let cursor=2;
   visibleRanks.forEach(rank=>{rankStart.set(rank,cursor);cursor+=rankSlots.get(rank)||1;});
   const totalNodeCols=Math.max(1,cursor-2),totalRows=ordered.length+1;
-  const style=`grid-template-columns:var(--branch-label-width) repeat(${totalNodeCols},178px);grid-template-rows:30px repeat(${totalRows},minmax(42px,auto))`;
+  const style=`grid-template-columns:var(--branch-label-width) repeat(${totalNodeCols},236px);grid-template-rows:30px repeat(${totalRows},minmax(42px,auto))`;
   const labels=[`<div class="branch-graph-label base" style="grid-column:1;grid-row:2"><span>基礎武器</span></div>`];
   ordered.forEach((meta,index)=>labels.push(`<div class="branch-graph-label ${meta.branch.isBossBranch?'boss':''}" style="grid-column:1;grid-row:${index+3}"><span>${esc(meta.branch.label||'？？？')}派生</span></div>`));
   const rankBands=visibleRanks.map(rank=>{
@@ -1696,17 +1698,11 @@ function branchCatalog(categories){
     return {...cat,source:cat,baseWeapons,matched,count};
   }).filter(cat=>cat.count>0);
   if(!available.length){select.innerHTML='';branchDetailIndex=Object.create(null);return '<div class="empty">検索・★ランク条件に一致する武器派生はありません。</div>';}
-  if(currentWeaponCategory!=='all'&&!available.some(cat=>cat.category===currentWeaponCategory))currentWeaponCategory=available[0].category;
-  if(!currentWeaponCategory)currentWeaponCategory='all';
+  // 派生図は武器種ごとに経路を追うUI。全武器種を同じグリッドへ重ねると
+  // ノード同士が衝突するため、必ず利用可能な1武器種を選択状態にする。
+  if(!available.some(cat=>cat.category===currentWeaponCategory))currentWeaponCategory=available[0].category;
   raStorage.set(WEAPON_CATEGORY_STORAGE_KEY,currentWeaponCategory);
-  select.innerHTML=[`<option value="all" ${currentWeaponCategory==='all'?'selected':''}>全て</option>`,...available.map(cat=>`<option value="${esc(cat.category)}" ${cat.category===currentWeaponCategory?'selected':''}>${esc(cat.category)}</option>`)].join('');
-  if(currentWeaponCategory==='all'){
-    rebuildBranchDetailIndex({
-      baseWeapons:available.flatMap(cat=>(cat.source?.baseWeapons||[])),
-      branches:available.flatMap(cat=>(cat.source?.branches||[]))
-    });
-    return `<div class="branch-category-all">${available.map(cat=>`<section class="branch-category-block"><div class="branch-category-heading"><h3>${esc(cat.category)}</h3></div>${branchGraphCatalog(cat)}</section>`).join('')}</div>`;
-  }
+  select.innerHTML=available.map(cat=>`<option value="${esc(cat.category)}" ${cat.category===currentWeaponCategory?'selected':''}>${esc(cat.category)}</option>`).join('');
   const current=available.find(cat=>cat.category===currentWeaponCategory)||available[0];
   rebuildBranchDetailIndex(current.source||current);
   return branchGraphCatalog(current);
@@ -2057,7 +2053,8 @@ function run(){
    pList.innerHTML=rows.length?rows.map(row=>`<button type="button" class="ra-category-choice ${row.value===currentWeaponCategory?'active':''}" data-ra-facility-category-choose="${escHtml(row.value)}">${escHtml(row.label||row.value)}</button>`).join(''):'<p class="muted">表示できる武器種がありません。</p>';
  }
  function chooseCategory(category){
-   currentWeaponCategory=category||'all';
+   const fallback=select?.options?.[0]?.value||'';
+   currentWeaponCategory=category||fallback;
    try{raStorage.set(WEAPON_CATEGORY_STORAGE_KEY,currentWeaponCategory)}catch(_){}
    if(select)select.value=currentWeaponCategory;
    render();
@@ -2065,8 +2062,8 @@ function run(){
  }
  if(select){
    select.classList.add('ra-picker-native');
-   const trigger=document.createElement('button');trigger.type='button';trigger.className='ra-category-picker-trigger';trigger.innerHTML='<span data-ra-category-label>全て</span><span aria-hidden="true">▾</span>';select.insertAdjacentElement('afterend',trigger);
-   const sync=()=>{trigger.querySelector('[data-ra-category-label]').textContent=currentWeaponCategory==='all'?'全て':(currentWeaponCategory||'全て')};
+   const trigger=document.createElement('button');trigger.type='button';trigger.className='ra-category-picker-trigger';trigger.innerHTML='<span data-ra-category-label>武器種を選択</span><span aria-hidden="true">▾</span>';select.insertAdjacentElement('afterend',trigger);
+   const sync=()=>{const selected=select.selectedOptions?.[0]?.textContent||currentWeaponCategory||'武器種を選択';trigger.querySelector('[data-ra-category-label]').textContent=selected};
    trigger.addEventListener('click',()=>{pickerRender();dialog.showModal()});
    select.addEventListener('change',sync);sync();
    if(typeof render==='function'){const old=render;render=function(){const result=old();requestAnimationFrame(sync);return result}}
