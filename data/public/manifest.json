@@ -1,35 +1,12 @@
 {
   "format": "recraft-alchemia-public-manifest",
-  "version": "v90.8.745",
+  "version": "v90.8.746",
   "updatedAt": "2026-09-08",
-  "master": "recraft_alchemia_master.json",
-  "sha256": "510dbf87e17b8ac64d098abb7a5a9c36bcf30c5bc1a6e5ba63352da90cec6453",
-  "bytes": 5826802,
-  "recordCount": 3814,
-  "dataKeys": [
-    "item_types",
-    "item_categories",
-    "material_types",
-    "material_categories",
-    "material_ranks",
-    "equipment_categories",
-    "items",
-    "recipes",
-    "spells",
-    "quest_rewards",
-    "quests",
-    "exploration_areas",
-    "event_tables",
-    "monsters",
-    "appraisal_rules",
-    "treasure_tables",
-    "skills"
-  ],
   "files": {
     "master": {
       "file": "recraft_alchemia_master.json",
-      "sha256": "510dbf87e17b8ac64d098abb7a5a9c36bcf30c5bc1a6e5ba63352da90cec6453",
-      "bytes": 5826802,
+      "sha256": "d824ff140a45d143da48f459cff54baee59ee36e87a9726a97c34ead1ba7129b",
+      "bytes": 5859792,
       "recordCount": 3814,
       "dataKeys": [
         "item_types",
